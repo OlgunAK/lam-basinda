@@ -1,0 +1,174 @@
+{
+ "id": "M1",
+ "title": "Mukozal Hastalıklar 1",
+ "date": "27 Ekim 2026",
+ "questions": [
+  {
+   "id": "W1",
+   "type": "WORDCLOUD",
+   "label": "Isınma",
+   "q": "Ağızda 'yara' deyince aklına gelen ilk hastalık hangisi?",
+   "scored": false
+  },
+  {
+   "id": "W2",
+   "type": "POLL",
+   "label": "Açılış vakası: tahminin ne?",
+   "q": "Bu hastada ön tanın ne?",
+   "scored": false,
+   "img": "img/hn415_0.jpg",
+   "opts": [
+    "Müköz membran pemfigoidi",
+    "Eritema multiforme",
+    "Pemfigus vulgaris",
+    "Majör aftöz stomatit",
+    "Eroziv oral liken planus"
+   ],
+   "hide": true
+  },
+  {
+   "id": "W3",
+   "type": "IMGMCQ",
+   "label": "Soru 1: Nerede?",
+   "q": "İkisi de tekrarlayan ülser. Hangisi rekürren herpes?",
+   "scored": true,
+   "img": "img/woo_aft_herpes.jpg",
+   "opts": [
+    "A fotoğrafı",
+    "B fotoğrafı"
+   ],
+   "a": 1,
+   "exp": "B: sert damak. Rekürren herpes kemiğe yapışık, keratinize mukozayı (sert damak, yapışık dişeti) sever. A dudak iç yüzünde, hareketli mukozada: tipik minör aft."
+  },
+  {
+   "id": "W4",
+   "type": "FINDIMG",
+   "label": "Soru 2: Hangi düzeyde?",
+   "q": "Pemfigus vulgariste yarık hangi düzeyde oluşur? Şemada o noktaya dokun.",
+   "scored": true,
+   "img": "img/woo_epitel.jpg",
+   "exp": "Pemfigus vulgaris: suprabazal akantoliz. Bazal hücreler hemidesmozomla bazal membrana bağlı kalır (mezar taşı). Pemfigoidde yarık bunun altında, bazal membran düzeyinde (subepitelyal).",
+   "answer": "Bazal hücre sırasının hemen üstü (suprabazal)",
+   "region": {
+    "kind": "rect",
+    "x0": 0,
+    "x1": 1,
+    "y0": 0.48,
+    "y1": 0.575
+   }
+  },
+  {
+   "id": "W5",
+   "type": "MCQ",
+   "label": "DUS Molası 1/2",
+   "q": "Pemfigus vulgaris düşünülen bir hastadan alınan perilezyonel biyopsinin direkt immünofloresan (DIF) incelemesinde aşağıdakilerden hangisi beklenir?",
+   "scored": true,
+   "opts": [
+    "Bazal membran zonu boyunca lineer IgG ve C3",
+    "Keratinositler arasında ağ (balık ağı) tarzında IgG ve C3",
+    "Bazal membran zonu boyunca granüler IgM ve C3",
+    "Bazal membran zonunda saçaklı (shaggy) fibrinojen",
+    "Damar duvarlarında IgA birikimi"
+   ],
+   "a": 1,
+   "exp": "Hedef antijen desmozomal desmoglein 3 (mukokutanöz formda ek olarak desmoglein 1). Antikor keratinosit yüzeyine bağlandığı için hücreler arası ağ deseni oluşur. Lineer BMZ: pemfigoidler; granüler BMZ: lupus; saçaklı fibrinojen: liken planus."
+  },
+  {
+   "id": "W6",
+   "type": "MCQ",
+   "label": "DUS Molası 2/2",
+   "q": "Dişetinde deskuamatif gingivit ve konjonktivada simblefaron gelişen 64 yaşındaki kadının biyopsisinde epitelin bağ dokusundan bütün halinde ayrıldığı görülüyor. En olası tanı hangisidir?",
+   "scored": true,
+   "opts": [
+    "Pemfigus vulgaris",
+    "Eritema multiforme",
+    "Oral liken planus",
+    "Müköz membran pemfigoidi",
+    "Rekürren aftöz stomatit"
+   ],
+   "a": 3,
+   "exp": "Subepitelyal ayrışma ve skarlaşan göz tutulumu müköz membran pemfigoidini düşündürür. Hedef antijenler BP180 (kollajen XVII) ve laminin-332. Hasta körlük riski nedeniyle göz hekimine yönlendirilmelidir."
+  },
+  {
+   "id": "W7",
+   "type": "OPEN",
+   "label": "Hekim gibi düşün",
+   "q": "Tekrarlayan aft şikayetiyle gelen 22 yaşındaki erkek hastaya soracağın en önemli soru ne? Kendi cümlenle yaz.",
+   "scored": false,
+   "model": "Genital bölgede yara oldu mu? Gözünde kızarıklık ya da bulanık görme var mı? Ailede benzer şikayet var mı? (Behçet sorgusu.) Kan tahlili yaptırdı mı (demir, B12, folat)?"
+  },
+  {
+   "id": "W8",
+   "type": "SCT",
+   "label": "Patolog gibi düşün",
+   "q": "Deskuamatif gingiviti olan 64 yaşındaki kadında ön tanın müköz membran pemfigoidi.",
+   "scored": true,
+   "a": 0,
+   "exp": "Uzman cevabı −2: hücreler arası ağ deseni pemfigus vulgarisin imzasıdır. Pemfigoidde bazal membran zonu boyunca lineer birikim beklenir.",
+   "info": "Perilezyonel biyopsinin DIF incelemesinde keratinositler arasında ağ tarzında IgG ve C3 saptandı.",
+   "scale": [
+    "−2 Çok zayıflatır",
+    "−1 Zayıflatır",
+    "0 Etkilemez",
+    "+1 Güçlendirir",
+    "+2 Çok güçlendirir"
+   ]
+  },
+  {
+   "id": "W9",
+   "type": "POLL",
+   "label": "Vakaya dönüş: şimdi ne diyorsun?",
+   "q": "Dersin başındaki hasta: şimdi ön tanın ne?",
+   "scored": false,
+   "img": "img/nnd123_0.jpg",
+   "opts": [
+    "Müköz membran pemfigoidi",
+    "Eritema multiforme",
+    "Pemfigus vulgaris",
+    "Majör aftöz stomatit",
+    "Eroziv oral liken planus"
+   ],
+   "a": 2,
+   "compare": "W2"
+  },
+  {
+   "id": "W10",
+   "type": "MCQ",
+   "label": "Hızlı tekrar 1/2",
+   "q": "Oral liken planusun histopatolojik bulguları arasında aşağıdakilerden hangisi yer almaz?",
+   "scored": true,
+   "opts": [
+    "Bazal tabakada vakuoler (likefaksiyon) dejenerasyon",
+    "Civatte (kolloid) cisimcikleri",
+    "Suprabazal akantoliz",
+    "Lamina propriada bant tarzı lenfosit infiltrasyonu",
+    "Hiperkeratoz"
+   ],
+   "a": 2,
+   "exp": "Liken planus T hücre aracılı bir interface hastalığıdır: hedef bazal keratinosittir. Akantoliz pemfigus grubunun bulgusudur."
+  },
+  {
+   "id": "W11",
+   "type": "MCQ",
+   "label": "Hızlı tekrar 2/2",
+   "q": "Tek taraflı, eski bir amalgam dolgunun temas ettiği yanak mukozasında retiküler beyaz çizgilenmeler var. Dolgu değiştirilince lezyon geriliyor. Tanı hangisidir?",
+   "scored": true,
+   "opts": [
+    "Oral likenoid temas reaksiyonu",
+    "Oral liken planus",
+    "Homojen lökoplaki",
+    "Frictional keratoz",
+    "Kronik hiperplastik kandidiyazis"
+   ],
+   "a": 0,
+   "exp": "Liken planus genellikle bilateral ve simetriktir. Tek taraflı, restorasyonla temas eden ve restorasyon değişince gerileyen lezyon likenoid temas reaksiyonudur. İlaçlar ve graft-versus-host hastalığı da likenoid tablo yapar."
+  },
+  {
+   "id": "W12",
+   "type": "WORDCLOUD",
+   "label": "Çıkış bileti",
+   "q": "Bugün en çok kafanı karıştıran konu hangisiydi? (Tek kelime ya da kısa ifade)",
+   "scored": false
+  }
+ ]
+}

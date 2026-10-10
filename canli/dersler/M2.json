@@ -1,0 +1,257 @@
+{
+ "id": "M2",
+ "title": "Mukozal Hastalıklar 2 ve Dil Hastalıkları",
+ "date": "27 Ekim 2026",
+ "questions": [
+  {
+   "id": "W1",
+   "type": "WORDCLOUD",
+   "label": "Isınma",
+   "q": "Ağızda silinmeyen beyaz bir lezyon gördün. Aklına gelen ilk tanı ne?",
+   "scored": false
+  },
+  {
+   "id": "W2",
+   "type": "POLL",
+   "label": "Açılış vakası: tahmin 1",
+   "q": "Ön tanın ne?",
+   "scored": false,
+   "img": "img/hn487_0.jpg",
+   "opts": [
+    "Psödomembranöz kandidiyazis",
+    "Frictional keratoz",
+    "Oral liken planus",
+    "Non-homojen (benekli) lökoplaki",
+    "Oral kıllı lökoplaki"
+   ],
+   "hide": true
+  },
+  {
+   "id": "W3",
+   "type": "POLL",
+   "label": "Açılış vakası: tahmin 2",
+   "q": "Şimdi ne yaparsın?",
+   "scored": false,
+   "opts": [
+    "İki hafta antifungal verip izlerim",
+    "Kırmızı alanları içeren insizyonel biyopsi",
+    "Lazerle buharlaştırırım, biyopsiye gerek yok",
+    "Altı ay sonra kontrole çağırırım",
+    "Fırça sitolojisi yeterli"
+   ],
+   "hide": true
+  },
+  {
+   "id": "W4",
+   "type": "SORTGROUP",
+   "label": "Silinir mi, silinmez mi?",
+   "q": "Her beyaz lezyonu doğru gruba yerleştir.",
+   "scored": true,
+   "exp": "En çok karışan lökoödem: silinmez de, ama asıl özelliği yanak gerilince kaybolması. Aspirin yanığında nekrotik epitel sıyrılır, altında ağrılı erozyon kalır.",
+   "groups": [
+    "Silinir",
+    "Silinmez",
+    "Germekle kaybolur"
+   ],
+   "items": [
+    "Materia alba",
+    "Psödomembranöz kandidiyazis",
+    "Lökoplaki",
+    "Aspirin yanığı (kimyasal nekroz)",
+    "Oral kıllı lökoplaki",
+    "Lökoödem",
+    "Beyaz süngerimsi nevüs"
+   ],
+   "key": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "W5",
+   "type": "SCT",
+   "label": "Klinisyen gibi düşün",
+   "q": "Tam protez kullanan 70 yaşındaki hastada dişsiz alveoler sırtta beyaz plak; ön tanın frictional keratoz.",
+   "scored": true,
+   "a": 0,
+   "exp": "Uzman cevabı −2: reaktif keratoz nedeni ortadan kalkınca 2–4 haftada geriler. Gerilemeyen beyaz plak artık klinik olarak lökoplakidir ve biyopsiye gider.",
+   "info": "Protez düzeltildikten 4 hafta sonra lezyon hiç değişmemiş.",
+   "scale": [
+    "−2 Çok zayıflatır",
+    "−1 Zayıflatır",
+    "0 Etkilemez",
+    "+1 Güçlendirir",
+    "+2 Çok güçlendirir"
+   ]
+  },
+  {
+   "id": "W6",
+   "type": "SORTORDER",
+   "label": "Basamakları sırala",
+   "q": "Değişiklikleri en hafiften en ağıra doğru sırala.",
+   "scored": true,
+   "exp": "Karsinoma in situ tam kat atipidir ama bazal membran sağlamdır; bazal membran aşılınca invaziv karsinom.",
+   "items": [
+    "Orta displazi",
+    "İnvaziv skuamöz hücreli karsinom",
+    "Hiperkeratoz (displazi yok)",
+    "Karsinoma in situ",
+    "Hafif displazi",
+    "Ağır displazi"
+   ],
+   "key": [
+    2,
+    4,
+    0,
+    5,
+    3,
+    1
+   ]
+  },
+  {
+   "id": "W7",
+   "type": "MCQ",
+   "label": "DUS Molası 1/2",
+   "q": "Lökoplaki ile ilgili aşağıdakilerden hangisi doğrudur?",
+   "scored": true,
+   "opts": [
+    "Histopatolojik bir tanıdır",
+    "Malign dönüşüm potansiyeli yoktur",
+    "Gazlı bezle silinebilen beyaz plaktır",
+    "Diğer bilinen beyaz lezyonlar dışlandıktan sonra konan klinik bir terimdir",
+    "En yüksek riski sert damak yerleşimi taşır"
+   ],
+   "a": 3,
+   "exp": "Lökoplaki klinik bir dışlama tanısıdır; histopatoloji hiperkeratozdan invaziv karsinoma kadar değişebilir. Yüksek riskli yerler ağız tabanı ve dilin ventrolateral yüzüdür."
+  },
+  {
+   "id": "W8",
+   "type": "MCQ",
+   "label": "DUS Molası 2/2",
+   "q": "Aşağıdaki lezyonlardan hangisinin malign dönüşüm riski en yüksektir?",
+   "scored": true,
+   "opts": [
+    "Homojen lökoplaki",
+    "Frictional keratoz",
+    "Lökoödem",
+    "Nikotinik stomatit",
+    "Eritroplaki"
+   ],
+   "a": 4,
+   "exp": "Eritroplaki az görülür ama biyopsilerinin büyük çoğunluğunda ağır displazi, karsinoma in situ ya da invaziv skuamöz hücreli karsinom saptanır."
+  },
+  {
+   "id": "W9",
+   "type": "IMGMCQ",
+   "label": "Dört pigment, bir tehlike",
+   "q": "Bu dört pigmente lezyondan hangisi melanom?",
+   "scored": true,
+   "img": "img/woo_pigment.jpg",
+   "opts": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "a": 2,
+   "exp": "C: damak ve maksiller dişette düzensiz, çok renkli, büyüyen lezyon melanomdur. A dudakta melanotik makül, B damakta mavi nevüs, D amalgam dövmesi."
+  },
+  {
+   "id": "W10",
+   "type": "FINDIMG",
+   "label": "Dil haritası",
+   "q": "Lingual tiroid dilin neresinde bulunur? Şemada dokun.",
+   "scored": true,
+   "img": "img/woo_dil_harita.jpg",
+   "exp": "Foramen çekum: V şeklindeki sulkus terminalisin tepesi, orta hat. Tiroid embriyoda buradan boyna iner; inemezse dilde kalır.",
+   "answer": "Foramen çekum (V şeklindeki sulkus terminalisin tepesi, orta hat)",
+   "region": {
+    "kind": "ellipse",
+    "cx": 0.4875,
+    "cy": 0.2444,
+    "rx": 0.085,
+    "ry": 0.066
+   }
+  },
+  {
+   "id": "W11",
+   "type": "MATCH",
+   "label": "Dili tanı",
+   "q": "Fotoğrafları tanılarla eşleştir.",
+   "scored": true,
+   "img": "img/woo_dil_galeri.jpg",
+   "exp": "1 coğrafik dil, 2 kıllı dil, 3 median rhomboid glossit, 4 lingual tiroid.",
+   "left": [
+    "Fotoğraf 1",
+    "Fotoğraf 2",
+    "Fotoğraf 3",
+    "Fotoğraf 4"
+   ],
+   "right": [
+    "Median rhomboid glossit",
+    "Lingual tiroid",
+    "Kıllı dil",
+    "Coğrafik dil"
+   ],
+   "key": [
+    "Coğrafik dil",
+    "Kıllı dil",
+    "Median rhomboid glossit",
+    "Lingual tiroid"
+   ]
+  },
+  {
+   "id": "W12",
+   "type": "OPEN",
+   "label": "Hekim gibi düşün",
+   "q": "Dilin yan kenarında 3 haftadır geçmeyen, sert kenarlı ülseri olan, sigara içen 60 yaşındaki hastaya ilk ne yaparsın? Kendi cümlenle yaz.",
+   "scored": false,
+   "model": "Travma nedeni (keskin diş, protez) varsa kaldır; ama 3 hafta geçmiş, sert kenarlı ülser ve sigara: beklemeden derin insizyonel biyopsi ya da ağız-diş-çene cerrahisi / KBB'ye sevk."
+  },
+  {
+   "id": "W13",
+   "type": "POLL",
+   "label": "Vakaya dönüş: şimdi ne diyorsun?",
+   "q": "Dersin başındaki hasta: şimdi ne yaparsın?",
+   "scored": false,
+   "img": "img/hn487_0.jpg",
+   "opts": [
+    "İki hafta antifungal verip izlerim",
+    "Kırmızı alanları içeren insizyonel biyopsi",
+    "Lazerle buharlaştırırım, biyopsiye gerek yok",
+    "Altı ay sonra kontrole çağırırım",
+    "Fırça sitolojisi yeterli"
+   ],
+   "a": 1,
+   "compare": "W3"
+  },
+  {
+   "id": "W14",
+   "type": "MCQ",
+   "label": "Hızlı tekrar",
+   "q": "Dil sırtında ağrısız, sert, submukozal nodül. Biyopside geniş, eozinofilik granüler sitoplazmalı hücreler (S100+, SOX10+) ve üstteki epitelde psödoepitelyomatöz hiperplazi var. Tanı hangisidir?",
+   "scored": true,
+   "opts": [
+    "Erişkin rabdomiyom",
+    "İyi diferansiye skuamöz hücreli karsinom",
+    "Schwannom",
+    "Konjenital epulis",
+    "Granüler hücreli tümör"
+   ],
+   "a": 4,
+   "exp": "En sık dilde görülür, Schwann hücresi kökenlidir. Yüzeyel biyopside psödoepitelyomatöz hiperplazi karsinomla karıştırılabilir. Konjenital epulis yenidoğanda alveoler sırtta çıkar ve S100 negatiftir."
+  },
+  {
+   "id": "W15",
+   "type": "WORDCLOUD",
+   "label": "Çıkış bileti",
+   "q": "Bugün en çok kafanı karıştıran konu hangisiydi? (Tek kelime ya da kısa ifade)",
+   "scored": false
+  }
+ ]
+}
