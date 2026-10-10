@@ -20,6 +20,7 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0;height:100%}
+html{font-size:clamp(16px,1.05vw,26px)}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);overflow:hidden;font-size:clamp(14px,1.15vw,22px)}
 button{font:inherit;color:inherit;cursor:pointer}
 :focus-visible{outline:3px solid var(--dus);outline-offset:2px}
@@ -46,19 +47,20 @@ main{min-height:0;overflow:hidden;padding:2vh 2.2vw 1vh;display:flex;flex-direct
 .viz{flex:1;min-height:0;display:flex;gap:2vw}
 .viz .side{flex:0 0 auto;max-width:38%;display:flex;align-items:flex-start}
 .viz .side img{max-width:100%;max-height:100%;border-radius:.6em;object-fit:contain;background:#fff}
-.viz .res{flex:1;min-width:0;min-height:0;display:flex;flex-direction:column;gap:1.2vh;justify-content:center}
+.viz .res{flex:1;min-width:0;min-height:0;display:flex;flex-direction:column;gap:1.2vh;justify-content:safe center}
 .bars{display:flex;flex-direction:column;gap:1.3vh}
 .barrow{display:grid;grid-template-columns:2.2em 1fr 7.5em;align-items:center;gap:.8em}
 .barrow .L{width:1.9em;height:1.9em;border-radius:50%;display:grid;place-items:center;background:var(--hema);font-weight:800}
 .barrow .T{position:relative;background:var(--panel2);border-radius:.5em;min-height:3em;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
 .barrow .T .f{position:absolute;inset:0 auto 0 0;background:var(--hema);transition:width .5s ease}
 .barrow .T .f.g{background:rgba(251,233,240,.8);top:auto;bottom:0;height:22%}
-.barrow .T span{position:relative;padding:.4em .9em;font-weight:700;font-size:1.3rem}
+.barrow .T span{position:relative;padding:.35em .9em;font-weight:700;font-size:1.45rem}
 .barrow .N{font-family:var(--f-mono);text-align:right;font-weight:700;font-size:1.45rem}
 .barrow .N small{display:block;color:var(--muted);font-weight:500;font-size:.75rem}
 .barrow.ok .L{background:var(--ok);color:var(--bg)}
-.barrow.ok .T .f{background:var(--ok)}
-.barrow.ok .T span{color:var(--bg)}
+.barrow.ok .T{box-shadow:inset 0 0 0 3px var(--ok)}
+.barrow.ok .T .f{background:#17744E}
+.barrow.ok .T span{color:#fff}
 .legend{display:flex;gap:1.5em;color:var(--muted);font-size:.9rem}
 .legend i{display:inline-block;width:1.4em;height:.7em;border-radius:.2em;margin-right:.4em;vertical-align:middle}
 .endv{flex:1;display:flex;align-items:center;justify-content:center;gap:5vw;padding:4vh 4vw}
@@ -95,11 +97,11 @@ main{min-height:0;overflow:hidden;padding:2vh 2.2vw 1vh;display:flex;flex-direct
 .grid col.rh{width:28%}
 .grid th{color:var(--soft);font-weight:700;font-size:1.05rem;text-align:center;padding:.2em;overflow-wrap:anywhere}
 .grid th.r{text-align:left}
-.grid td{background:var(--panel2);border-radius:.4em;text-align:center;font-family:var(--f-mono);font-weight:700;font-size:1.3rem;padding:.6em .3em;transition:background .4s}
+.grid td{background:var(--panel2);border-radius:.4em;text-align:center;font-family:var(--f-mono);font-weight:700;font-size:1.3rem;padding:clamp(.2em,.8vh,.6em) .3em;transition:background .4s}
 .grid td.ok{outline:3px solid var(--ok);outline-offset:-3px}
 .kpi{display:flex;gap:2vw;align-items:baseline;color:var(--soft)}
 .kpi b{font-family:var(--f-mono);font-size:2.2rem;color:var(--dus)}
-.exp{background:var(--panel);border-left:.35em solid var(--ok);border-radius:.4em;padding:.8em 1.1em;font-size:1.1rem;line-height:1.4;color:var(--soft)}
+.exp{background:var(--panel);border-left:.35em solid var(--ok);border-radius:.4em;padding:.6em 1.1em;font-size:clamp(18px,2.7vh,34px);line-height:1.35;color:var(--ink);flex:0 0 auto}
 .exp b{color:var(--ok)}
 /* oylama açıkken içerik görünümü */
 .masked{display:flex;gap:2vw;align-items:flex-start;height:100%;min-height:0}
@@ -199,7 +201,7 @@ input.pin{font-family:var(--f-mono);font-size:1.8rem;letter-spacing:.2em;padding
   <footer class="ctrl" id="ctrl"></footer>
 </div>
 <div id="lobby" class="lobby hidden"></div>
-<script>window.__V="1791673694"</script><script src="config.js?v=1791673694"></script>
-<script src="perde.js?v=1791673694"></script>
+<script>window.__V="1791675198"</script><script src="config.js?v=1791675198"></script>
+<script src="perde.js?v=1791675198"></script>
 </body>
 </html>
