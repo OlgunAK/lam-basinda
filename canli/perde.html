@@ -126,6 +126,19 @@ main{min-height:0;overflow:hidden;padding:2vh 2.2vw 1vh;display:flex;flex-direct
 .phase.board,.phase.end,.phase.lobby{background:var(--panel2)}
 .phase.reveal{background:var(--dus);color:var(--bg)}
 .timer{font-family:var(--f-mono);font-weight:800;font-size:1.6rem;color:var(--dus)}
+/* slayt katmanı */
+.slide{position:absolute;inset:0;background:#000;z-index:2;display:grid;place-items:center}
+.slide img{width:100%;height:100%;object-fit:contain;display:block}
+.badge{position:absolute;top:1.5vh;right:1.2vw;display:flex;gap:.6em;align-items:center;background:rgba(36,22,58,.92);border-radius:.7em;padding:.45em .6em}
+.badge .qr{width:min(6vw,10vh);aspect-ratio:1;background:#fff;border-radius:.3em;padding:.2em}
+.badge .qr svg{width:100%;height:100%;display:block}
+.badge b{display:block;font-family:var(--f-mono);font-size:1.5rem;color:var(--dus);letter-spacing:.1em}
+.badge small{color:var(--soft)}
+.ctrl{position:relative;z-index:3}
+.pair{background:var(--panel);border-radius:.9em;padding:1.4em;margin-top:3vh;max-width:52em;display:flex;flex-direction:column;gap:.8em}
+.pair h2{font-family:var(--f-display);margin:0}
+.pair label{display:flex;flex-direction:column;gap:.3em;color:var(--soft);font-weight:700}
+input.pin{font-family:var(--f-mono);font-size:1.8rem;letter-spacing:.2em;padding:.4em .6em;border-radius:.5em;border:2px solid var(--panel2);background:var(--bg);color:var(--ink);width:9em;text-transform:uppercase}
 /* başlangıç */
 .start{position:fixed;inset:0;overflow:auto;padding:6vh 6vw;background:var(--bg);z-index:6}
 .start h1{font-family:var(--f-display);font-size:clamp(28px,3vw,60px);margin:0}
@@ -153,6 +166,7 @@ main{min-height:0;overflow:hidden;padding:2vh 2.2vw 1vh;display:flex;flex-direct
     <div class="join" id="joinMini"><div class="qr" id="qrMini"></div><div class="u"><small id="urlMini"></small><b id="codeMini">----</b></div></div>
   </header>
   <main id="main"></main>
+  <div id="slide" class="slide hidden"><img id="slideImg" alt=""><div id="badge" class="badge hidden"><div class="qr"></div><div><b></b><small></small></div></div></div>
   <footer class="ctrl" id="ctrl"></footer>
 </div>
 <div id="lobby" class="lobby hidden"></div>
