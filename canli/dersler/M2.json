@@ -207,6 +207,22 @@
   },
   {
    "id": "W12",
+   "type": "MCQ",
+   "label": "Kitleyi tanı",
+   "q": "28 yaşında, 7 aylık gebe hastada üst ön dişetinde iki ayda hızla büyüyen, fırçalarken kanayan, kırmızı, saplı kitle. Histolojide ülsere yüzeyin altında lobüller hâlinde küçük kapillerler var. Tanı?",
+   "scored": true,
+   "opts": [
+    "Fibrom",
+    "Piyojenik granülom",
+    "Periferik dev hücreli granülom",
+    "Kaposi sarkomu",
+    "Papillom"
+   ],
+   "a": 1,
+   "exp": "Piyojenik granülom (lobüler kapiller hemanjiyom): gebelikte büyür, en sık dişetinde; doğumdan sonra küçülebilir. Periferik dev hücreli granülom da dişetinde kırmızı-mor kitledir ama histolojide çok çekirdekli dev hücreler görülür."
+  },
+  {
+   "id": "W13",
    "type": "OPEN",
    "label": "Hekim gibi düşün",
    "q": "Dilin yan kenarında 3 haftadır geçmeyen, sert kenarlı ülseri olan, sigara içen 60 yaşındaki hastaya ilk ne yaparsın? Kendi cümlenle yaz.",
@@ -214,7 +230,7 @@
    "model": "Travma nedeni (keskin diş, protez) varsa kaldır; ama 3 hafta geçmiş, sert kenarlı ülser ve sigara: beklemeden derin insizyonel biyopsi ya da ağız-diş-çene cerrahisi / KBB'ye sevk."
   },
   {
-   "id": "W13",
+   "id": "W14",
    "type": "POLL",
    "label": "Vakaya dönüş: şimdi ne diyorsun?",
    "q": "Dersin başındaki hasta: şimdi ne yaparsın?",
@@ -231,7 +247,7 @@
    "compare": "W3"
   },
   {
-   "id": "W14",
+   "id": "W15",
    "type": "WORDCLOUD",
    "label": "Çıkış bileti",
    "q": "Bugün en çok kafanı karıştıran konu hangisiydi? (Tek kelime ya da kısa ifade)",
@@ -276,12 +292,12 @@
   {
    "img": "slaytlar/M2/07.jpg",
    "title": "Mukoza neden beyaz, neden kırmızı?",
-   "notes": "[3:05–3:55]\nNormal mukoza pembedir, çünkü ince epitelin altından damarlar görünür. Epitel kalınlaşırsa, özellikle keratin artarsa, tükürükle ıslanan keratin opaklaşır ve beyaz görürüz. Soldaki beyaz süngerimsi nevüs bunun uç örneği. Epitel incelirse ya da damarlar artarsa kırmızı görürüz. Sağdaki eritroplaki: incelmiş, displastik epitel ve yüzeye yaklaşmış damarlar. Bu yüzden ağızda kırmızı, beyazdan daha tehlikelidir."
+   "notes": "[3:05–3:50]\nNormal mukoza pembedir, çünkü ince epitelin altından damarlar görünür. Epitel kalınlaşırsa, özellikle keratin artarsa, tükürükle ıslanan keratin opaklaşır ve beyaz görürüz. Soldaki beyaz süngerimsi nevüs bunun uç örneği. Epitel incelirse ya da damarlar artarsa kırmızı görürüz. Sağdaki eritroplaki: incelmiş, displastik epitel ve yüzeye yaklaşmış damarlar. Bu yüzden ağızda kırmızı, beyazdan daha tehlikelidir."
   },
   {
    "img": "slaytlar/M2/08.jpg",
    "title": "Beyaz lezyonda üç soru",
-   "notes": "[3:55–4:40]\nKlinikte üç soru sorun. Bir: gazlı bezle silinir mi? Silinirse epitelin parçası değildir: kandida, nekroz, yiyecek artığı. İki: yanağı gerince kaybolur mu? Kayboluyorsa lökoödem, normal varyasyon. Üç: belirgin bir neden var mı: sürtünme, ısırma, tütün? Varsa nedeni kaldırın, 2-4 hafta bekleyin. Gerilemezse ya da hiç neden yoksa: biyopsi. Şimdi bu algoritmayı telefonda deneyelim."
+   "notes": "[3:50–4:40]\nKlinikte üç soru sorun. Bir: gazlı bezle silinir mi? Silinirse epitelin parçası değildir: kandida, nekroz, yiyecek artığı. İki: yanağı gerince kaybolur mu? Kayboluyorsa lökoödem, normal varyasyon. Üç: belirgin bir neden var mı: sürtünme, ısırma, tütün? Varsa nedeni kaldırın, 2-4 hafta bekleyin. Gerilemezse ya da hiç neden yoksa: biyopsi. Şimdi bu algoritmayı deneyelim."
   },
   {
    "img": "slaytlar/M2/09.jpg",
@@ -308,12 +324,12 @@
   {
    "img": "slaytlar/M2/13.jpg",
    "title": "Hiperkeratozdan karsinoma: displazi basamakları",
-   "notes": "[8:35–9:20]\nPatoloğun raporunda gördüğünüz kelimeler bunlar. Atipik hücreler epitelin alt üçte birinde ise hafif, üçte ikiye kadar orta, daha fazlası ağır displazi. Tam kat tutulum karsinoma in situ. Bazal membran aşıldığında artık invaziv karsinom. Güncel sınıflama bunları düşük ve yüksek dereceli diye ikiye de ayırıyor. Sizin için pratik karşılığı: rapor 'ağır displazi' diyorsa bu lezyon artık izlenmez, çıkarılır."
+   "notes": "[8:35–9:15]\nPatoloğun raporunda gördüğünüz kelimeler bunlar. Atipik hücreler epitelin alt üçte birinde ise hafif, üçte ikiye kadar orta, daha fazlası ağır displazi. Tam kat tutulum karsinoma in situ. Bazal membran aşıldığında artık invaziv karsinom. Güncel sınıflama bunları düşük ve yüksek dereceli diye ikiye de ayırıyor. Sizin için pratik karşılığı: rapor 'ağır displazi' diyorsa bu lezyon artık izlenmez, çıkarılır."
   },
   {
    "img": "slaytlar/M2/14.jpg",
    "title": "Basamakları sırala",
-   "notes": "[9:20–10:00]\nTelefonunuzda şıklar karışık gelecek; doğru sıraya dizin. (Sonuç.) Karsinoma in situ ile ağır displazinin yerini karıştıran çok olur: in situ tam kattır ama bazal membran hâlâ sağlam.\n\nCANLI (W6, Sıralama): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. T: 30 sn süre.",
+   "notes": "[9:15–10:00]\nTelefonunuzda şıklar karışık gelecek; doğru sıraya dizin. (Sonuç.) Karsinoma in situ ile ağır displazinin yerini karıştıran çok olur: in situ tam kattır ama bazal membran hâlâ sağlam.\n\nCANLI (W6, Sıralama): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. T: 30 sn süre.",
    "q": "W6"
   },
   {
@@ -324,100 +340,126 @@
   {
    "img": "slaytlar/M2/16.jpg",
    "title": "Kaçırılmaması gereken: skuamöz hücreli karsinom",
-   "notes": "[11:10–11:55]\nBu dersin konusu değil ama göstermeden geçemem; ayrıntısı 3 Kasım'daki epitelyal tümörler dersinde. Ağız boşluğu kanserlerinin yüzde 90'ından fazlası skuamöz hücreli karsinom. Ağız içi karsinomların yüzde 40-50'si dilin yan ve alt yüzünde. Sert kenarlı, iyileşmeyen ülser ya da kırmızı-beyaz bir alan. Bu fotoğrafları bir kez görün ki kliniğinizde ilk kez gördüğünüzde tanıyın."
+   "notes": "[11:10–11:50]\nBu dersin konusu değil ama göstermeden geçemem; ayrıntısı 3 Kasım'daki epitelyal tümörler dersinde. Ağız boşluğu kanserlerinin yüzde 90'ından fazlası skuamöz hücreli karsinom. Ağız içi karsinomların yüzde 40-50'si dilin yan ve alt yüzünde. Sert kenarlı, iyileşmeyen ülser ya da kırmızı-beyaz bir alan. Bu fotoğrafları bir kez görün ki kliniğinizde ilk kez gördüğünüzde tanıyın."
   },
   {
    "img": "slaytlar/M2/17.jpg",
    "title": "DUS Molası 1/2",
-   "notes": "[11:55–12:35]\n(Sonuç.) Lökoplaki klinik bir dışlama tanısı. Patoloji raporunda lökoplaki yazmaz.\n\nCANLI (W7, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn süre.",
+   "notes": "[11:50–12:30]\n(Sonuç.) Lökoplaki klinik bir dışlama tanısı. Patoloji raporunda lökoplaki yazmaz.\n\nCANLI (W7, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn süre.",
    "q": "W7"
   },
   {
    "img": "slaytlar/M2/18.jpg",
    "title": "DUS Molası 2/2",
-   "notes": "[12:35–13:15]\n(Sonuç.) Eritroplaki. Kırmızı, beyazdan tehlikelidir.\n\nCANLI (W8, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: E. T: 30 sn süre.",
+   "notes": "[12:30–13:15]\n(Sonuç.) Eritroplaki. Kırmızı, beyazdan tehlikelidir.\n\nCANLI (W8, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: E. T: 30 sn süre.",
    "q": "W8"
   },
   {
    "img": "slaytlar/M2/19.jpg",
    "title": "Mantar mı, virüs mü? Enfeksiyöz beyazlar",
-   "notes": "[13:15–14:00]\nKısa bir köprü; ayrıntısı 24 Kasım'da. Soldaki dil kandidiyazis: süzme peynir gibi plaklar silinir, altında kırmızı mukoza kalır. Ortadaki damak protez stomatiti: kandidanın kırmızı yüzü; protezin altında kalan alan kızarıyor. Sağdaki dilin kenarındaki dikey çizgiler oral kıllı lökoplaki: silinmez, etkeni Epstein-Barr virüsü ve çoğunlukla bağışıklığı baskılanmış hastada görülür. HIV tanısının ilk ipucu olabilir. Premalign değildir."
+   "notes": "[13:15–13:55]\nKısa bir köprü; ayrıntısı 24 Kasım'da. Soldaki dil kandidiyazis: süzme peynir gibi plaklar silinir, altında kırmızı mukoza kalır. Ortadaki damak protez stomatiti: kandidanın kırmızı yüzü; protezin altında kalan alan kızarıyor. Sağdaki dilin kenarındaki dikey çizgiler oral kıllı lökoplaki: silinmez, etkeni Epstein-Barr virüsü ve çoğunlukla bağışıklığı baskılanmış hastada görülür. HIV tanısının ilk ipucu olabilir. Premalign değildir."
   },
   {
    "img": "slaytlar/M2/20.jpg",
    "title": "Dört pigment, bir tehlike",
-   "notes": "[14:00–14:40]\nDört pigment. Biri hayati tehlike. Hangisi? (Sonuç.) C: damakta ve maksiller dişette düzensiz, çok renkli, büyüyen lezyon melanomdur. A dudakta melanotik makül, B damakta mavi nevüs, D amalgam dövmesi.\n\nCANLI (W9, Görselli çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: C. T: 30 sn süre.",
+   "notes": "[13:55–14:35]\nDört pigment. Biri hayati tehlike. Hangisi? (Sonuç.) C: damakta ve maksiller dişette düzensiz, çok renkli, büyüyen lezyon melanomdur. A dudakta melanotik makül, B damakta mavi nevüs, D amalgam dövmesi.\n\nCANLI (W9, Görselli çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: C. T: 30 sn süre.",
    "q": "W9"
   },
   {
    "img": "slaytlar/M2/21.jpg",
    "title": "Kahverengi, mavi, siyah: pigment nereden geliyor?",
-   "notes": "[14:40–15:50]\nPigment iki yerden gelir: dışarıdan ya da içeriden. Dışarıdan geleni en sık amalgam dövmesi: dolguların yanında mavi-gri leke; radyografide metal görürsünüz. Bazen hasta kendi ister: sağ alttaki dudak dövmesine bakın. İçeriden gelen melanindir. Alt dudakta tek, düzgün kahverengi leke melanotik maküldür, zararsızdır. Damakta mavi nevüs. Ama damakta ya da maksiller dişette yeni çıkan, büyüyen, düzensiz bir pigment melanom olabilir: ağız melanomlarının yaklaşık yüzde 80'i bu iki yerde, yarısından fazlasında boyun metastazı var ve prognoz kötü. Çok sayıda pigment görürseniz sistemik düşünün: dudaklarda çil gibi lekeler Peutz-Jeghers sendromu, bağırsakta polip ve kanser riski demektir."
+   "notes": "[14:35–15:45]\nPigment iki yerden gelir: dışarıdan ya da içeriden. Dışarıdan geleni en sık amalgam dövmesi: dolguların yanında mavi-gri leke; radyografide metal görürsünüz. Bazen hasta kendi ister: sağ alttaki dudak dövmesine bakın. İçeriden gelen melanindir. Alt dudakta tek, düzgün kahverengi leke melanotik maküldür, zararsızdır. Damakta mavi nevüs. Ama damakta ya da maksiller dişette yeni çıkan, büyüyen, düzensiz bir pigment melanom olabilir: ağız melanomlarının yaklaşık yüzde 80'i bu iki yerde, yarısından fazlasında boyun metastazı var ve prognoz kötü. Çok sayıda pigment görürseniz sistemik düşünün: dudaklarda çil gibi lekeler Peutz-Jeghers sendromu, bağırsakta polip ve kanser riski demektir."
   },
   {
    "img": "slaytlar/M2/22.jpg",
-   "title": "Dil haritası",
-   "notes": "[15:50–16:30]\nŞemada üstte V şeklinde çizgi ve boncuklar: sirkumvallat papillalar. Lingual tiroid nerede? (Isı haritası.) Doğru yer: V'nin tepesindeki siyah nokta, foramen çekum. Tiroid embriyoda buradan boyna iner; inemezse dilde kalır.\n\nCANLI (W10, Görüntüde bul): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru alan: Foramen çekum (V şeklindeki sulkus terminalisin tepesi, orta hat). T: 30 sn süre.",
-   "q": "W10"
+   "title": "Kırmızı ve mor lezyonlar: bas ve bak",
+   "notes": "[15:45–17:00]\nKırmızı ya da mor bir lezyon gördünüz. Elinizdeki en ucuz tanı aracı bir cam lam ya da şeffaf bir spatül: lezyonun üstüne bastırın. Buna diaskopi diyoruz. Rengi soluyorsa kan hâlâ damarın içindedir: varis, hemanjiyom, vasküler malformasyon, telanjiektazi. Solmuyorsa kan damarın dışına çıkmıştır: peteşi, ekimoz, hematom; ya da renk pigmentten gelir. Birinci fotoğraf dil altı varisleri: altmış yaş üstünde çok sık, zararsız. İkinci dudakta venöz göl: yaşlıda, güneş gören dudakta mavi, yumuşak bir kabarıklık; basınca söner. Üçüncü dilde vasküler malformasyon; ayrıntısı 17 Kasım'daki yumuşak doku dersinde. Dördüncü yumuşak damakta peteşiler: öksürük, kusma ya da emme travması tek seferlik yapar; tekrarlıyorsa ya da başka yerde de varsa hemogram ve trombosit sayısı. Beşinci Kaposi sarkomu: HHV-8 ile ilişkili bir damar tümörü; HIV'li hastada ağızda en sık sert damakta mor, solmayan bir plak olarak görülür. Bazen HIV tanısını ilk siz koyarsınız."
   },
   {
    "img": "slaytlar/M2/23.jpg",
-   "title": "Dil haritası: hangi hastalık nerede?",
-   "notes": "[16:30–17:05]\nDilin her bölgesinin kendi hastası var. Foramen çekumda lingual tiroid. V'nin hemen önünde orta hatta median rhomboid glossit. Arka yan kenarda foliat papillalar: lenfoid doku, tümör sanılıp biyopsi yapılır. Yan kenar ise dilin en riskli yeri: skuamöz hücreli karsinom ve kıllı lökoplaki burada. Sırtta granüler hücreli tümör ve coğrafik dil, alt yüzde yaşlılarda varisler."
+   "title": "Ağız kanın aynası: sistemik hastalığın ilk işareti",
+   "notes": "[17:00–17:55]\nBazen kan hastalığının ilk bulgusunu hematolog değil diş hekimi görür. Soldaki dişeti akut lösemide: lösemik hücreler dişetini doldurmuş, şiş, kanayan, morumsu bir dişeti. Özellikle monositik tip akut miyeloid lösemide sık. Ortada trombosit düşüklüğü: dişetinde ve yanakta peteşiler, fırçalarken kanama, kendiliğinden kan bülü. Sağda demir, B12 ya da folat eksikliğinde atrofik dil: papillalar silinmiş, kırmızı, yanan bir dil; yanında angüler keilit ve tekrarlayan aft. Bir de nötropeni: iltihap belirtisi az, derin, kirli ülserler; siklik nötropenide bu ülserler yaklaşık üç haftada bir tekrarlar. Kural: açıklanamayan dişeti büyümesi, kanama, peteşi ya da iyileşmeyen ülser, üstüne halsizlik ya da ateş varsa hemogram isteyin. Ayrıntısı 24 Kasım'daki hematoloji dersinde."
   },
   {
    "img": "slaytlar/M2/24.jpg",
-   "title": "Dili tanı",
-   "notes": "[17:05–17:40]\nDört dil, dört tanı. Eşleştirin. (Sonuç.) 1 coğrafik, 2 kıllı dil, 3 median rhomboid glossit, 4 lingual tiroid. Şimdi tek tek bakalım.\n\nCANLI (W11, Eşleştirme): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. T: 30 sn süre.",
-   "q": "W11"
+   "title": "Dil haritası",
+   "notes": "[17:55–18:35]\nŞemada üstte V şeklinde çizgi ve boncuklar: sirkumvallat papillalar. Lingual tiroid nerede? (Isı haritası.) Doğru yer: V'nin tepesindeki siyah nokta, foramen çekum. Tiroid embriyoda buradan boyna iner; inemezse dilde kalır.\n\nCANLI (W10, Görüntüde bul): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru alan: Foramen çekum (V şeklindeki sulkus terminalisin tepesi, orta hat). T: 30 sn süre.",
+   "q": "W10"
   },
   {
    "img": "slaytlar/M2/25.jpg",
-   "title": "Dört dil, dört hikâye",
-   "notes": "[17:40–18:40]\nBir: coğrafik dil. Kırmızı alanlar beyaz-sarı kıvrımlı kenarlarla çevrili ve günler içinde yer değiştiriyor; toplumun yüzde 1 ile 2,5 arasında görülür. Mikroskopta psoriazise benzer. Zararsız; hastaya bunu anlatmak tedavinin kendisi. İki: kıllı dil. Filiform papillalar uzamış, keratin dökülemiyor, bakteriler boyuyor. Sigara, antibiyotik, kötü hijyen. Tedavisi diş fırçası. Üç: median rhomboid glossit, kandidanın orta hattaki kırmızı plağı. Dört: lingual tiroid. Hastaların dörtte üçünden fazlasında vücuttaki tek çalışan tiroid dokusu. Eksizyondan önce sintigrafi yapılmazsa hasta ömür boyu tiroid hapı içer. Bir de fissürlü dil: Melkersson-Rosenthal sendromunun parçası; diğer ikisi dudak şişliği ve yüz felci."
+   "title": "Dil haritası: hangi hastalık nerede?",
+   "notes": "[18:35–19:10]\nDilin her bölgesinin kendi hastası var. Foramen çekumda lingual tiroid. V'nin hemen önünde orta hatta median rhomboid glossit. Arka yan kenarda foliat papillalar: lenfoid doku, tümör sanılıp biyopsi yapılır. Yan kenar ise dilin en riskli yeri: skuamöz hücreli karsinom ve kıllı lökoplaki burada. Sırtta granüler hücreli tümör ve coğrafik dil, alt yüzde yaşlılarda varisler."
   },
   {
    "img": "slaytlar/M2/26.jpg",
-   "title": "Dilde kitle: patoloğun tuzağı",
-   "notes": "[18:40–19:35]\nDil sırtında ağrısız, sert bir nodül. Biyopsi yapıyorsunuz ve rapor 'iyi diferansiye skuamöz hücreli karsinom' diye dönüyor. Gerçekten mi? Granüler hücreli tümörün üzerindeki epitel bazen o kadar kalınlaşır ki karsinomu taklit eder; buna psödoepitelyomatöz hiperplazi diyoruz. Ortadaki fotoğrafa bakın: aşağı uzanan epitel adaları. Derine bakınca bol, pembe, granüler sitoplazmalı hücreleri görüyoruz; S100 ve SOX10 pozitif. Ders: yüzeyel biyopsi tuzaktır, derin alın. Sağdaki bebek ise konjenital epulis: yenidoğanda, çoğunlukla kızlarda, alveoler sırtta; granüler hücreler ama S100 negatif."
+   "title": "Dili tanı",
+   "notes": "[19:10–19:50]\nDört dil, dört tanı. Eşleştirin. (Sonuç.) 1 coğrafik, 2 kıllı dil, 3 median rhomboid glossit, 4 lingual tiroid. Şimdi tek tek bakalım.\n\nCANLI (W11, Eşleştirme): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. T: 30 sn süre.",
+   "q": "W11"
   },
   {
    "img": "slaytlar/M2/27.jpg",
-   "title": "Hekim gibi düşün",
-   "notes": "[19:35–20:15]\nBir dakika. (Cevapları oku.) Beklediğim: keskin diş, protez gibi travma nedenini ara ve kaldır, iki haftada iyileşmiyorsa, ki zaten üç hafta olmuş, hemen biyopsi; ya da bir ağız-diş-çene cerrahına veya KBB'ye sevk. 'Antibiyotik verip bekleriz' yazan varsa onu birlikte konuşalım.\n\nCANLI (W12, Açık uçlu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Cevaplar gizli gelir; H ile göster. → kapatır, → beklenen cevabı açar, → sonraki slayt. T: 30 sn süre.",
-   "q": "W12"
+   "title": "Dört dil, dört hikâye",
+   "notes": "[19:50–20:45]\nBir: coğrafik dil. Kırmızı alanlar beyaz-sarı kıvrımlı kenarlarla çevrili ve günler içinde yer değiştiriyor; toplumun yüzde 1 ile 2,5 arasında görülür. Mikroskopta psoriazise benzer. Zararsız; hastaya bunu anlatmak tedavinin kendisi. İki: kıllı dil. Filiform papillalar uzamış, keratin dökülemiyor, bakteriler boyuyor. Sigara, antibiyotik, kötü hijyen. Tedavisi diş fırçası. Üç: median rhomboid glossit, kandidanın orta hattaki kırmızı plağı. Dört: lingual tiroid. Hastaların dörtte üçünden fazlasında vücuttaki tek çalışan tiroid dokusu. Eksizyondan önce sintigrafi yapılmazsa hasta ömür boyu tiroid hapı içer. Bir de fissürlü dil: Melkersson-Rosenthal sendromunun parçası; diğer ikisi dudak şişliği ve yüz felci."
   },
   {
    "img": "slaytlar/M2/28.jpg",
-   "title": "Vakaya dönüş: şimdi ne diyorsun?",
-   "notes": "[20:15–20:40]\nAynı hasta, ikinci soru. (Dersin başındaki dağılımla karşılaştır.)\n\nCANLI (W13, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn süre.",
-   "q": "W13"
+   "title": "Yanan ağız: görünen bir şey yoksa",
+   "notes": "[20:45–21:35]\nHasta 'dilim yanıyor' diyor, siz bakıyorsunuz ve hiçbir şey göremiyorsunuz. Tipik hasta menopoz döneminde bir kadın; yanma dil ucunda ve kenarlarında, sabah hafif, akşama doğru artıyor; tat değişikliği ve ağız kuruluğu hissi eşlik ediyor. Önce görünmeyen nedenleri arayın: eritematöz kandida, demir, B12, folat ya da çinko eksikliği, diyabet, ağız kuruluğu yapan ilaçlar ve Sjögren, ACE inhibitörleri, protez alerjisi ya da uyumsuz protez, dil itme gibi alışkanlıklar, reflü. Bunların hepsi normalse primer yanan ağız sendromu deriz; bu bir dışlama tanısıdır ve biyopsi tanı koydurmaz. Tedavinin ilk adımı hastaya 'kanser değil, bunu ciddiye alıyorum' demek; sonra topikal klonazepam, yani tableti ağızda tutup tükürmek, ve bilişsel davranışçı terapi."
   },
   {
    "img": "slaytlar/M2/29.jpg",
-   "title": "Tanı: lökoplaki; biyopside ağır displazi",
-   "notes": "[20:40–21:25]\nBu hasta silinmeyen, nedeni olmayan, beyaz bir plakla geldi: klinik tanı lökoplaki. Yerleşim dilin yan kenarı, en riskli bölge. Sigara ve alkol birlikte. Biyopsi: ağır displazi. Yönetim: sigara ve alkolün bırakılması, lezyonun tamamen çıkarılması ve ömür boyu takip. Antifungal verip altı ay bekleseydik bu hasta bir yıl sonra karşımıza ülsere bir kanserle gelebilirdi."
+   "title": "Dilde kitle: patoloğun tuzağı",
+   "notes": "[21:35–22:30]\nDil sırtında ağrısız, sert bir nodül. Biyopsi yapıyorsunuz ve rapor 'iyi diferansiye skuamöz hücreli karsinom' diye dönüyor. Gerçekten mi? Granüler hücreli tümörün üzerindeki epitel bazen o kadar kalınlaşır ki karsinomu taklit eder; buna psödoepitelyomatöz hiperplazi diyoruz. Ortadaki fotoğrafa bakın: aşağı uzanan epitel adaları. Derine bakınca bol, pembe, granüler sitoplazmalı hücreleri görüyoruz; S100 ve SOX10 pozitif. Ders: yüzeyel biyopsi tuzaktır, derin alın. Sağdaki bebek ise konjenital epulis: yenidoğanda, çoğunlukla kızlarda, alveoler sırtta; granüler hücreler ama S100 negatif."
   },
   {
    "img": "slaytlar/M2/30.jpg",
-   "title": "Gözden kaçmasın: beyaz ve kırmızının diğer yüzleri",
-   "notes": "[21:25–22:30]\nHızlı tur, her fotoğrafa on saniye. Submukoz fibrozis: areka, yani betel çiğneyenlerde; mukoza sertleşir, ağız açıklığı daralır. Potansiyel malign bozukluk listesindedir; ülkemizde nadir ama DUS'un sevdiği bir tablo. Hiperplastik kandidiyazis: silinmeyen kandida plağı, çoğunlukla komissürde ya da dil kenarında; antifungalden sonra gerilemiyorsa biyopsi. Eritematöz kandidiyazis: kırmızı, yanan dil; antibiyotik, inhaler steroid, protez. Lökoödem: gerince kaybolan süt beyazı, varyasyon. Atrofik glossit: demir, B12, folat eksikliği; disfaji de varsa Plummer–Vinson. Kronik GVHD: kök hücre naklinden sonra liken planusa benzeyen beyaz ağ; skuamöz hücreli karsinom riski taşır."
+   "title": "Ağızdaki şişlikler: en sık dört kitle",
+   "notes": "[22:30–23:55]\nSon olarak ağızda en sık göreceğiniz dört şişlik; muayenehanede haftada bir karşınıza çıkar. Mukosel: genç hastada alt dudakta, ısırmadan sonra çıkan, büyüyüp sönen, mavimsi, yumuşak bir kubbe. Küçük tükürük bezinin kanalı yırtılmış, müsin dokuya sızmış. Mikroskopta epitelle döşeli bir boşluk yok; müsin havuzu ve onu yiyen köpüklü makrofajlar. Bu yüzden ona psödokist diyoruz. Ağız tabanında büyüğüne ranula denir. Piyojenik granülom: adı yanıltıcı, ne irin var ne granülom. Hızla büyüyen, dokununca kanayan kırmızı bir kitle; en sık dişetinde ve gebelikte; doğumdan sonra küçülebilir. Mikroskopta lobüller hâlinde küçük kapillerler. Fibrom: ağzın en sık 'tümörü', ama aslında tümör değil; kronik tahrişe verilen reaktif yanıt. Yanakta dişlerin kapandığı hatta, sert, pembe, düzgün yüzeyli. Papillom: HPV 6 ve 11; dilde, damakta, uvulada parmaksı, beyaz, karnabahar gibi bir çıkıntı. Dördünün ortak kuralı: çıkarılan doku çöpe değil, patolojiye gider. Ayrıntıları 17 Kasım'da."
   },
   {
    "img": "slaytlar/M2/31.jpg",
-   "title": "Gözden kaçmasın: pigment ve dil",
-   "notes": "[22:30–23:45]\nPigmentin çoğu zararsızdır, ama nedenini bilmek gerekir. En sık pigment fizyolojiktir: koyu tenlilerde, simetrik, dişetinde. Sigara içenlerde ön alt dişette sigara melanozu; bırakınca azalır. İlaçlar: antimalaryaller, minosiklin, zidovudin. Yaygın pigment ve halsizlik, düşük tansiyon varsa Addison düşünün; kortizol bakılır. Dişeti kenarında mavi-siyah çizgi ağır metaldir: bizmut, kurşun. Damakta mavi makül mavi nevüs olabilir, ama melanomdan ancak biyopsi ayırır. Dilde iki tablo daha: makroglossi; amiloidoz, hipotiroidi, Down sendromu, lenfanjiyom; dil kenarında diş izleri. Ve ankiloglossi: kısa frenulum; emzirme ve konuşma güçlüğü yaparsa frenotomi."
+   "title": "Kitleyi tanı",
+   "notes": "[23:55–24:35]\n30 saniye. (Sonuç.) B: piyojenik granülom. Gebelik, dişeti, hızlı büyüme ve kanama; mikroskopta lobüler kapillerler. Periferik dev hücreli granülom diyenler: o da dişetinde kırmızı-mor bir kitle, ama mikroskopta çok çekirdekli dev hücreler görürüz.\n\nCANLI (W12, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn süre.",
+   "q": "W12"
   },
   {
    "img": "slaytlar/M2/32.jpg",
-   "title": "Akılda kalacak beş cümle",
-   "notes": "[23:45–24:25]\nBeş cümleyle kapatıyorum. Bir: beyaz lezyonda sırayla sor; silinir mi, gerilir mi, nedeni var mı. İki: lökoplaki bir kelime, tanıyı biyopsi koyar. Üç: kırmızı beyazdan tehlikelidir; biyopsiyi kırmızı alandan alın. Dört: damakta yeni çıkan ya da büyüyen pigment biyopsiye gider. Beş: dil kenarındaki ülser ve kitlede karsinomu dışlayın, biyopsiyi derin alın."
+   "title": "Hekim gibi düşün",
+   "notes": "[24:35–25:15]\nBir dakika. (Cevapları oku.) Beklediğim: keskin diş, protez gibi travma nedenini ara ve kaldır, iki haftada iyileşmiyorsa, ki zaten üç hafta olmuş, hemen biyopsi; ya da bir ağız-diş-çene cerrahına veya KBB'ye sevk. 'Antibiyotik verip bekleriz' yazan varsa onu birlikte konuşalım.\n\nCANLI (W13, Açık uçlu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Cevaplar gizli gelir; H ile göster. → kapatır, → beklenen cevabı açar, → sonraki slayt. T: 30 sn süre.",
+   "q": "W13"
   },
   {
    "img": "slaytlar/M2/33.jpg",
-   "title": "Çıkış bileti",
-   "notes": "[24:25–24:45]\nSon kelime bulutu. Dersin başındaki buluta bakın; o zaman 'mantar' vardı. Şimdi kafanızı karıştıranı yazın; en büyük kelimeyle bir sonraki derse başlayacağım.\n\nCANLI (W14, Kelime bulutu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Bulut canlı akar. → kapatır, → sonraki slayt. T: 30 sn süre.",
+   "title": "Vakaya dönüş: şimdi ne diyorsun?",
+   "notes": "[25:15–25:40]\nAynı hasta, ikinci soru. (Perde iki dağılımı yan yana gösterir.)\n\nCANLI (W14, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn süre.",
    "q": "W14"
+  },
+  {
+   "img": "slaytlar/M2/34.jpg",
+   "title": "Tanı: lökoplaki; biyopside ağır displazi",
+   "notes": "[25:40–26:25]\nBu hasta silinmeyen, nedeni olmayan, beyaz bir plakla geldi: klinik tanı lökoplaki. Yerleşim dilin yan kenarı, en riskli bölge. Sigara ve alkol birlikte. Biyopsi: ağır displazi. Yönetim: sigara ve alkolün bırakılması, lezyonun tamamen çıkarılması ve ömür boyu takip. Antifungal verip altı ay bekleseydik bu hasta bir yıl sonra karşımıza ülsere bir kanserle gelebilirdi."
+  },
+  {
+   "img": "slaytlar/M2/35.jpg",
+   "title": "Gözden kaçmasın: beyaz ve kırmızının diğer yüzleri",
+   "notes": "[26:25–27:30]\nHızlı tur, her fotoğrafa on saniye. Submukoz fibrozis: areka, yani betel çiğneyenlerde; mukoza sertleşir, ağız açıklığı daralır. Potansiyel malign bozukluk listesindedir; ülkemizde nadir ama DUS'un sevdiği bir tablo. Hiperplastik kandidiyazis: silinmeyen kandida plağı, çoğunlukla komissürde ya da dil kenarında; antifungalden sonra gerilemiyorsa biyopsi. Eritematöz kandidiyazis: kırmızı, yanan dil; antibiyotik, inhaler steroid, protez. Lökoödem: gerince kaybolan süt beyazı, varyasyon. Atrofik glossit: demir, B12, folat eksikliği; disfaji de varsa Plummer–Vinson. Kronik GVHD: kök hücre naklinden sonra liken planusa benzeyen beyaz ağ; skuamöz hücreli karsinom riski taşır."
+  },
+  {
+   "img": "slaytlar/M2/36.jpg",
+   "title": "Gözden kaçmasın: pigment ve dil",
+   "notes": "[27:30–28:45]\nPigmentin çoğu zararsızdır, ama nedenini bilmek gerekir. En sık pigment fizyolojiktir: koyu tenlilerde, simetrik, dişetinde. Sigara içenlerde ön alt dişette sigara melanozu; bırakınca azalır. İlaçlar: antimalaryaller, minosiklin, zidovudin. Yaygın pigment ve halsizlik, düşük tansiyon varsa Addison düşünün; kortizol bakılır. Dişeti kenarında mavi-siyah çizgi ağır metaldir: bizmut, kurşun. Damakta mavi makül mavi nevüs olabilir, ama melanomdan ancak biyopsi ayırır. Dilde iki tablo daha: makroglossi; amiloidoz, hipotiroidi, Down sendromu, lenfanjiyom; dil kenarında diş izleri. Ve ankiloglossi: kısa frenulum; emzirme ve konuşma güçlüğü yaparsa frenotomi."
+  },
+  {
+   "img": "slaytlar/M2/37.jpg",
+   "title": "Akılda kalacak beş cümle",
+   "notes": "[28:45–29:25]\nBeş cümleyle kapatıyorum. Bir: beyaz lezyonda sırayla sor; silinir mi, gerilir mi, nedeni var mı. İki: lökoplaki bir kelime, tanıyı biyopsi koyar. Üç: kırmızı beyazdan tehlikelidir; biyopsiyi kırmızı alandan alın. Dört: damakta yeni çıkan pigment ya da basınca solmayan mor lezyon biyopsiye gider. Beş: dil kenarındaki ülser ve kitlede karsinomu dışlayın, biyopsiyi derin alın."
+  },
+  {
+   "img": "slaytlar/M2/38.jpg",
+   "title": "Çıkış bileti",
+   "notes": "[29:25–29:45]\nSon kelime bulutu. Dersin başındaki buluta bakın; o zaman 'mantar' vardı. Şimdi kafanızı karıştıranı yazın; en büyük kelimeyle bir sonraki derse başlayacağım.\n\nCANLI (W15, Kelime bulutu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Bulut canlı akar. → kapatır, → sonraki slayt. T: 30 sn süre.",
+   "q": "W15"
   },
   {
    "board": true,
@@ -425,9 +467,9 @@
    "notes": "Liderlik tablosu. İlk üçü alkışlayalım. Eşit puanda hızlı olan önde."
   },
   {
-   "img": "slaytlar/M2/34.jpg",
+   "img": "slaytlar/M2/39.jpg",
    "title": "Kaynaklar ve evde tekrar",
-   "notes": "[24:45–25:00]\nEvde tekrar için karekod. Teşekkürler."
+   "notes": "[29:45–30:00]\nLiderlik tablosu bu slayttan hemen önce perdede çıkar. Evde tekrar için karekodu okutun. Teşekkürler."
   }
  ]
 }
