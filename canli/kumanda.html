@@ -38,6 +38,14 @@ h1,h2{font-family:var(--f-display);margin:0;line-height:1.2}
 @keyframes fl{from{opacity:0}to{opacity:1}}
 @keyframes pop{from{transform:scale(.3)}to{transform:scale(1)}}
 @media (prefers-reduced-motion:reduce){.flash,.flash .ok{animation:none}}
+.tools button:disabled{opacity:.3}
+.eopt{display:flex;flex-direction:column;align-items:flex-start;gap:3px;text-align:left;width:100%;border-radius:12px;padding:14px 16px;border:2px solid var(--panel2);background:var(--panel2);color:var(--ink)}
+.eopt b{font-size:1.05rem}
+.eopt small{color:var(--soft);font-size:.82rem}
+.eopt.bitir{background:var(--bad);border-color:var(--bad);color:var(--bg)}
+.eopt.bitir small{color:var(--bg);opacity:.85}
+.eopt.acil{background:transparent;border-color:var(--bad)}
+.eopt.acil b{color:var(--bad)}
 .btn.end{background:transparent;border:2px solid var(--bad);color:var(--bad)}
 .btn.end.armed{background:var(--bad);color:var(--bg)}
 .phase.end{background:var(--bad);color:var(--bg)}
@@ -86,7 +94,7 @@ h1,h2{font-family:var(--f-display);margin:0;line-height:1.2}
 </head>
 <body>
 <div id="app"></div>
-<script src="config.js"></script>
-<script src="kumanda.js"></script>
+<script>window.__V="1791673694"</script><script src="config.js?v=1791673694"></script>
+<script src="kumanda.js?v=1791673694"></script>
 </body>
 </html>
