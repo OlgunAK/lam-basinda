@@ -77,6 +77,22 @@ service cloud.firestore {
         allow delete: if hoca();
       }
 
+      // Takma ad kaydı: belge adı küçük harfe çevrilmiş ad, içerik { uid, pin, nick, t }
+      // İlk alan sahip olur. Başkası ancak aynı PIN ile (başka cihazdan) devralabilir.
+      match /nicks/{key} {
+        allow read: if hoca() || (girisli() && resource.data.uid == request.auth.uid);
+        allow create: if girisli()
+          && request.resource.data.uid == request.auth.uid
+          && request.resource.data.pin is string
+          && request.resource.data.pin.size() >= 4 && request.resource.data.pin.size() <= 8;
+        allow update: if girisli()
+          && request.resource.data.uid == request.auth.uid
+          && request.resource.data.pin is string
+          && request.resource.data.pin.size() >= 4 && request.resource.data.pin.size() <= 8
+          && (resource.data.uid == request.auth.uid || request.resource.data.pin == resource.data.pin);
+        allow delete: if hoca();
+      }
+
       // Cevaplar: belge adı "<soruId>_<uid>", içerik { q, uid, v, t, nick }
       match /answers/{doc} {
         allow read: if yonetici(code);
