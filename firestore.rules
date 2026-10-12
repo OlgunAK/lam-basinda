@@ -28,6 +28,18 @@ service cloud.firestore {
         && request.auth.token.email in hocaListesi();
     }
 
+    // Perde hesabı: e-posta/şifre ile açılmış sabit hesap (config.js içindeki PERDE_EPOSTA ile aynı).
+    // Sınıf bilgisayarı bir kez şifreyle girer; kod eşleşmesi gerekmez.
+    function perdeListesi() {
+      return ['perde@lam-basinda.app'];
+    }
+
+    function perdeHesabi() {
+      return girisli()
+        && request.auth.token.email != null
+        && request.auth.token.email in perdeListesi();
+    }
+
     // Hocanın güvenilir ekranı mı? Kumanda, bir kez kodla eşleşen perdeyi 12 saatliğine buraya yazar.
     function guvenli(code) {
       return girisli()
@@ -46,14 +58,14 @@ service cloud.firestore {
     }
 
     function yonetici(code) {
-      return hoca() || perde(code);
+      return hoca() || perdeHesabi() || perde(code);
     }
 
     // Ders başına açık oturum kaydı: { s: oturum kodu, t: zaman }
     // Öğrenci ekranı buradan açık oturumu bulur; kumanda ve perde canlı dinler.
     match /aktif/{lesson} {
       allow read: if girisli();
-      allow write: if hoca();
+      allow write: if hoca() || perdeHesabi();
     }
 
     // Güvenilir ekranlar: guven/{hocaUid}/ekran/{perdeUid} = { t, code }.
@@ -72,13 +84,14 @@ service cloud.firestore {
       // Oturum belgesi: phase, q, cur, key, n, slide, cmd, board, done.*, opened.*,
       // src ("perde"), wantRemote, remote {uid, t} (kumanda yazar), remoteSeen (perde yazar).
       allow read: if girisli();
-      allow create: if hoca() && request.resource.data.owner == request.auth.uid;
+      allow create: if (hoca() || perdeHesabi()) && request.resource.data.owner == request.auth.uid;
       allow update: if yonetici(code);
       allow delete: if false;
 
       // Bağlantı kodu; yalnız hoca görür.
       match /gizli/{doc} {
-        allow read, write: if hoca();
+        allow read: if hoca() || perdeHesabi();
+        allow write: if hoca() || perdeHesabi();
       }
 
       // Eşleşmiş perdeler: perde kendi belgesini doğru pin ile yazar.

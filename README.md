@@ -22,11 +22,20 @@ Katılım ekranı, ders başlığı slaytını karekod ve oturum koduyla yan yan
 
 Oturumu iki yoldan başlatabilirsin:
 
-1. **Perdeden** (Google ile girişli perde): derste **Kumandayla başlat** ya da **Kumandasız başlat** seçilir. Kumandayla seçilince perde 4 haneli kodu gösterip bekler; telefondaki kumandada aynı dersin kartında anında **Perde kumanda bekliyor · Katıl** düğmesi belirir. Dokununca iki ekran da yeşil yanar ve kumanda açılır. Kumandasız başlatılan oturuma da kumanda sonradan **Perdedeki oturuma katıl** ile bağlanabilir.
+1. **Perdeden** (girişli perde: **perde hesabı** ya da hocanın Google hesabı): derste **Kumandayla başlat** ya da **Kumandasız başlat** seçilir. Kumandayla seçilince perde 4 haneli kodu gösterip bekler; telefondaki kumandada aynı dersin kartında anında **Perde kumanda bekliyor · Katıl** düğmesi belirir. Dokununca iki ekran da yeşil yanar ve kumanda açılır. Kumandasız başlatılan oturuma da kumanda sonradan **Perdedeki oturuma katıl** ile bağlanabilir.
 2. **Kumandadan**: **Yeni oturum başlat** iki kod üretir (oturum ve bağlantı kodu); bu kodlar girişsiz perdeye yazılır. Perde bağlanınca telefon titrer ve iki ekran yeşil onay verir.
    Kodlar bir kez yazılır: eşleşen perde güven kaydını kendisi yazar ve 12 saat boyunca hocanın **güvenilir ekranı** olur (`guven/{hoca}/ekran/{perde}`), sonraki oturumlara kod gerekmeden kendiliğinden bağlanır. Oturum bitince bekler, hoca yeni oturum açınca (kumanda yenilenmiş olsa bile) yarım saniye içinde geçer; perde sayfası yenilense de kaldığı yerden devam eder. Yalnız mevcut oturumdan daha yeni oturumlara geçer, eski açık kalmış oturumlara atlamaz.
 
 Kumandadaki ders listesi açık oturumu canlı izler; perdede açılan oturum bir saniye içinde görünür.
+
+**Perde hesabı (önerilen):** Sınıf bilgisayarı Google yerine sabit bir e-posta/şifre hesabıyla girer: perde sayfasındaki **Perde hesabıyla gir** kutusuna şifre yazılır, e-posta `canli/config.js` içindeki `PERDE_EPOSTA` (`perde@lam-basinda.app`) ile sabittir. Bir kez girince tarayıcı girişi saklar; kod eşleşmesi, güven kaydı ya da süre sınırı yoktur. Bu perde hocanın açtığı her oturumu (kumandadan ya da başka perdeden, son 12 saat içinde açılmış ve bitmemiş) kendiliğinden izler, ders bitince sıradakine geçer, sayfa yenilense ya da bilgisayar uyuyup uyansa kaldığı oturuma döner; eşleşme ekranına bir daha düşmez. Kurulum (bir kez):
+
+1. Firebase konsolu → **Authentication → Sign-in method** → **Email/Password** sağlayıcısını aç.
+2. **Authentication → Users → Add user**: e-posta `perde@lam-basinda.app`, istediğin şifre.
+3. `firestore.rules` dosyasını yeniden yayımla (`perdeListesi()` içinde aynı e-posta yazılı olmalı).
+4. Sınıf bilgisayarında `canli/perde.html` aç, şifreyi yaz, **Gir**.
+
+Hesabın e-postasını değiştirmek için `canli/config.js` içindeki `PERDE_EPOSTA` ve kurallardaki `perdeListesi()` birlikte güncellenir.
 
 **Soru aralığı (`qopen`):** Bir slayta `"qopen": "W3"` yazılırsa soru o slayta gelince telefonlarda açılır ama perde slaytı göstermeye devam eder (açılış vakası: vaka metni ve fotoğraf perdede, şıklar telefonda). Oylama, sorunun kendi slaytına (`"q": "W3"`, dağılım) kadar ve geri gidişlerde açık kalır; ancak o slaytta → ile kapanır.
 
@@ -46,6 +55,7 @@ Kumandadaki ders listesi açık oturumu canlı izler; perdede açılan oturum bi
   - `ekran/{uid}`: perde kendi belgesini ancak doğru bağlantı koduyla yazabilir.
   - `participants/{pid}` ve `answers/{soru_pid}`: kişi kimliği (pid) takma adın anahtarı ya da anonim uid; bir adın altında yalnız adın güncel sahibi yazabilir. Hoca ve eşleşmiş perde okur.
   - `guven/{hoca}/ekran/{perde}`: kumandanın yazdığı güvenilir ekran kaydı (12 saat); perde bununla kod girmeden sonraki oturumlara eşleşir.
+  - Perde hesabı (`perdeListesi()`): oturum açıp yönetebilir, bağlantı kodunu okuyup kendi ekran kaydını yazar; cevap ve katılımcı listelerini okur. Öğrenci verisini silemez, `guven` kayıtlarına dokunamaz.
   - `nicks/{ad}`: takma ad kaydı (herkes okur). PIN düz metin saklanmaz, SHA-256 özeti (`ph`) tutulur. İlk alan sahip olur; aynı adı başkası alamaz ("bu derste başkasında" uyarısı). Ad sahibi başka bir cihazdan aynı PIN ile adını geri alır. Kayıt kurallar yüzünden reddedilirse telefon bunu ayrı bir mesajla söyler ("Sunucu kuralları güncel olmayabilir").
 - Kurallar main'e her gidişinde GitHub Actions (`.github/workflows/firestore-rules.yml`) tarafından Firebase'e kendiliğinden yayınlanır. Bunun için repo ayarlarında (Settings → Secrets and variables → Actions) iki gizli anahtar olmalı:
   - `HOCA_EPOSTA` (isteğe bağlı): hoca e-postalarını dosyadaki listenin yerine koymak için; virgülle birden fazla yazılabilir.
