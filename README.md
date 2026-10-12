@@ -18,6 +18,8 @@ Tüm sayfalar GitHub Pages üzerinden yayınlanır. Aşağıdaki bağlantılar �
 - **Kumanda**: Hoca bu sayfadan oturumu ve soruları yönetir.
 - **Perde**: Duvardaki ekranda açık kalır, gelen cevapları ve katılımcı sayısını canlı gösterir. Yeni oturum başladığında onu takip eder.
 
+Katılım ekranı, ders başlığı slaytını karekod ve oturum koduyla yan yana gösterir; öğrenciler daha ilk slaytta okutur. L tuşu (kumandada Katılım) kaplamayı kapatıp yalnız slaytı gösterir, tekrar basınca geri gelir.
+
 Oturumu iki yoldan başlatabilirsin:
 
 1. **Perdeden** (Google ile girişli perde): derste **Kumandayla başlat** ya da **Kumandasız başlat** seçilir. Kumandayla seçilince perde 4 haneli kodu gösterip bekler; telefondaki kumandada aynı dersin kartında anında **Perde kumanda bekliyor · Katıl** düğmesi belirir. Dokununca iki ekran da yeşil yanar ve kumanda açılır. Kumandasız başlatılan oturuma da kumanda sonradan **Perdedeki oturuma katıl** ile bağlanabilir.
