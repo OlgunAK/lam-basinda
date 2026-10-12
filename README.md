@@ -25,6 +25,8 @@ Oturumu iki yoldan başlatabilirsin:
 
 Kumandadaki ders listesi açık oturumu canlı izler; perdede açılan oturum bir saniye içinde görünür.
 
+**Tempo göstergesi:** Kumandanın üstündeki şerit, slayt notlarındaki plan damgalarını (`[12:30–13:15]`) gerçek süreyle karşılaştırır. Yeşil "Planda", kırmızı "Hızlan · 2:31 geride", sarı "Yavaşla · 1:10 ileride"; başlık çubuğu da aynı renge boyanır. Saat ikinci slayta geçince başlar; şeride dokununca plan o anki slayta eşitlenir.
+
 **Blok ders (arka arkaya iki ders):** Birinci ders bitince kumandadan ya da perdeden ikinci dersin oturumu açılır. Öğrencilerin telefonunda "Sıradaki ders: … · Sıradaki derse geç" kartı belirir; tek dokunuşla aynı takma adla yeni oturuma geçerler, tekrar karekod okutmaları gerekmez. Eski karekod bağlantısı da kendiliğinden yeni oturuma yönlendirir. Girişli perde yeni oturumu kendiliğinden izler ve kumandaya yeşil onay verir.
 - **Öğrenci ekranı**: Öğrenciler telefondan açıp oturum koduyla katılır ve soruları cevaplar. Tek sütun, telefon öncelikli tasarlanmıştır.
 

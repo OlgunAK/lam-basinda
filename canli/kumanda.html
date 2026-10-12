@@ -55,7 +55,7 @@ h1,h2{font-family:var(--f-display);margin:0;line-height:1.2}
 .muted{color:var(--muted);font-size:.9rem}
 .err{color:var(--bad)}
 /* uzaktan kumanda düzeni */
-#remote{position:fixed;inset:0;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto auto;grid-template-columns:minmax(0,1fr);width:100%;max-width:640px;margin:0 auto;overflow:hidden}
+#remote{position:fixed;inset:0;display:grid;grid-template-rows:auto auto auto minmax(0,1fr) auto auto;grid-template-columns:minmax(0,1fr);width:100%;max-width:640px;margin:0 auto;overflow:hidden}
 #remote>*{min-width:0}
 .hd{display:flex;align-items:center;gap:8px;padding:8px 12px 6px;padding-top:max(8px,env(safe-area-inset-top))}
 .hd .t{flex:1;min-width:0}
@@ -64,6 +64,7 @@ h1,h2{font-family:var(--f-display);margin:0;line-height:1.2}
 .stat{text-align:center;flex:none;min-width:2.8em}
 .stat b{display:block;font-family:var(--f-mono);font-size:1.25rem;line-height:1}
 .stat small{color:var(--muted);font-size:.66rem}
+.pace{margin:0 12px 8px;border-radius:10px;padding:7px 12px;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.92rem;cursor:pointer}.pace b{font-weight:800}.pace span{font-family:var(--f-mono);font-size:.85rem;opacity:.85}.pace.ok{background:var(--ok);color:var(--bg)}.pace.slow{background:var(--bad);color:#fff}.pace.fast{background:var(--dus);color:var(--bg)}.pace.idle{background:var(--panel2);color:var(--muted)}#remote.p-slow .hd{background:rgba(255,122,112,.22)}#remote.p-fast .hd{background:rgba(242,183,5,.22)}#remote.p-ok .hd{background:rgba(63,212,154,.16)}
 .now{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:8px;padding:0 12px}
 .thumb{position:relative;border-radius:8px;overflow:hidden;background:#000;aspect-ratio:16/9;display:grid;place-items:center}
 .thumb img{width:100%;height:100%;object-fit:contain;display:block}
@@ -95,7 +96,7 @@ h1,h2{font-family:var(--f-display);margin:0;line-height:1.2}
 </head>
 <body>
 <div id="app"></div>
-<script>window.__V="1760000200"</script><script src="config.js?v=1760000200"></script>
-<script src="kumanda.js?v=1760000200"></script>
+<script>window.__V="1760000300"</script><script src="config.js?v=1760000300"></script>
+<script src="kumanda.js?v=1760000300"></script>
 </body>
 </html>
