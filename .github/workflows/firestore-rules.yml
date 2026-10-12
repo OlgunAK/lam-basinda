@@ -1,0 +1,50 @@
+name: Firestore kurallarını yayınla
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - firestore.rules
+      - firebase.json
+      - .github/workflows/firestore-rules.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Gizli anahtarları kontrol et
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          EPOSTA: ${{ secrets.HOCA_EPOSTA }}
+        run: |
+          if [ -z "$SA" ]; then echo "::error::FIREBASE_SERVICE_ACCOUNT gizli anahtarı yok (repo Settings → Secrets and variables → Actions)."; exit 1; fi
+          if [ -z "$EPOSTA" ]; then echo "::error::HOCA_EPOSTA gizli anahtarı yok: perde ve kumandaya girdiğin Google e-postası."; exit 1; fi
+
+      - name: Hoca e-postasını kurallara yaz
+        env:
+          EPOSTA: ${{ secrets.HOCA_EPOSTA }}
+        run: |
+          # Birden fazla e-posta virgülle ayrılabilir: a@gmail.com,b@gmail.com
+          LIST=$(printf '%s' "$EPOSTA" | tr -d ' ' | awk -F, '{for(i=1;i<=NF;i++){printf "%s'\''%s'\''", (i>1?", ":""), $i}}')
+          sed -i "s|return \['HOCA_EPOSTA@gmail.com'\];|return [$LIST];|" firestore.rules
+          grep -q "HOCA_EPOSTA@gmail.com" firestore.rules && { echo "::error::Yer tutucu değiştirilemedi"; exit 1; }
+          echo "Kural listesi güncellendi ($(printf '%s' "$EPOSTA" | awk -F, '{print NF}') hesap)."
+
+      - name: Kuralları yayınla
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          printf '%s' "$SA" > "$RUNNER_TEMP/sa.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json"
+          npx --yes firebase-tools@13 deploy --only firestore:rules --project lam-basinda --non-interactive
+          rm -f "$RUNNER_TEMP/sa.json"

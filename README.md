@@ -43,7 +43,11 @@ Kumandadaki ders listesi açık oturumu canlı izler; perdede açılan oturum bi
   - `gizli/pin`: yalnız hoca.
   - `ekran/{uid}`: perde kendi belgesini ancak doğru bağlantı koduyla yazabilir.
   - `participants/{uid}` ve `answers/{soru_uid}`: öğrenci yalnız kendi belgesini yazar; hoca ve eşleşmiş perde okur.
-- Yayınlamak için dosyadaki `HOCA_EPOSTA@gmail.com` yerine kendi Google e-postanı yaz, sonra Firebase Console → Firestore Database → Rules sekmesine yapıştırıp **Publish** de (ya da `firebase deploy --only firestore:rules`).
+- Kurallar main'e her gidişinde GitHub Actions (`.github/workflows/firestore-rules.yml`) tarafından Firebase'e kendiliğinden yayınlanır. Bunun için repo ayarlarında (Settings → Secrets and variables → Actions) iki gizli anahtar olmalı:
+  - `HOCA_EPOSTA`: perde ve kumandaya giriş yaptığın Google e-postası (birden fazlaysa virgülle). Dosyadaki `HOCA_EPOSTA@gmail.com` yer tutucusu yayın sırasında bununla değiştirilir; e-posta repoda görünmez.
+  - `FIREBASE_SERVICE_ACCOUNT`: Firebase Console → Proje ayarları (dişli) → Service accounts → **Generate new private key** ile inen JSON dosyasının tamamı.
+  - İş akışı Actions sekmesinden elle de çalıştırılabilir (**Run workflow**).
+- Elle yayınlamak istersen: yer tutucuya e-postanı yazıp Firebase Console → Firestore Database → Rules sekmesine yapıştır ve **Publish** de.
 
 ## Ders içerikleri
 
@@ -58,7 +62,9 @@ Canlı oturumlardaki sorular `canli/dersler/` altında JSON olarak durur, slaytl
 
 ```
 index.html          Ana sunum
-firestore.rules     Firestore güvenlik kuralları (konsola yapıştırılır)
+firestore.rules     Firestore güvenlik kuralları (Actions ile yayınlanır)
+firebase.json       Firebase CLI ayarı (kural dosyasının yeri)
+.github/workflows/  Kuralları Firebase'e yayınlayan iş akışı
 canli/
   index.html        Öğrenci ekranı
   perde.html        Perde
