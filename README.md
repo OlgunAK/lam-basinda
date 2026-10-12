@@ -39,6 +39,18 @@ Hesabın e-postasını değiştirmek için `canli/config.js` içindeki `PERDE_EP
 
 **Soru aralığı (`qopen`):** Bir slayta `"qopen": "W3"` yazılırsa soru o slayta gelince telefonlarda açılır ama perde slaytı göstermeye devam eder (açılış vakası: vaka metni ve fotoğraf perdede, şıklar telefonda). Oylama, sorunun kendi slaytına (`"q": "W3"`, dağılım) kadar ve geri gidişlerde açık kalır; ancak o slaytta → ile kapanır.
 
+**Kumandadaki araçlar:** Üst sırada Aç/Kapat (oylama), Sonuçlar, Cevap, Süre (sorunun kendi süresi), Katılım (karekod ekranı), Liderlik, Slaytlar (slayta git) ve **Daha ⋯**. Notların üstünde açık sorunun canlı dağılımı görünür (seçenek başına çubuk ve sayı, doğru şık ✓, katılım yüzdesi). Daha ⋯ menüsü:
+
+- **Hızlı anket:** slaytta olmayan bir soruyu anında sor; A–E, A–D, Evet/Hayır, Doğru/Yanlış, 1–5 ya da kelime bulutu. Perde slaytı gizleyip dağılımı gösterir, telefonlarda şıklar açılır; puanlanmaz. İleri tuşu anketi kapatır, bir daha basınca slayta döner (oturum belgesinde `adhoc`).
+- **Süre seç:** 15–120 sn geri sayım (`timer` komutu `s` ile), süre bitince oylama kapanır; **Süreyi durdur** (`tstop`).
+- **Duyuru:** perdede 12 sn büyük yazı (`msg`), telefonlarda bildirim (`notice`); hazır metinler (10 dk ara…).
+- **Karartma:** perde simsiyah olur (`black`; perdede `.` tuşu); tekrar dokununca slayt geri gelir.
+- **Katılım rozeti:** slaytın köşesinde karekod + kişi sayısı.
+- **Kişiler:** katılımcı listesi; **Çıkar** kişinin kaydını ve ad kaydını siler, ad serbest kalır, telefon "Hoca seni dersten çıkardı" görür; aynı ad ve PIN ile yeniden katılabilir.
+- **Soruyu sıfırla:** açık sorunun cevaplarını siler ve soruyu yeniden açar (iki dokunuşla onay).
+- **Yoklama / sonuçları indir:** CSV (noktalı virgül, Excel uyumlu): ad, kimlik, katılım saati, her sorunun cevabı, doğru ve cevap sayısı. Telefonda paylaşım penceresi, bilgisayarda indirme.
+- **Öğrenci bağlantısını paylaş:** katılım bağlantısını paylaşır ya da panoya kopyalar.
+
 **Tempo göstergesi:** Kumandanın üstündeki şerit, slayt notlarındaki plan damgalarını (`[12:30–13:15]`) gerçek süreyle karşılaştırır. Yeşil "Planda", kırmızı "Hızlan · 2:31 geride", sarı "Yavaşla · 1:10 ileride"; başlık çubuğu da aynı renge boyanır. Saat ikinci slayta geçince başlar; şeride dokununca plan o anki slayta eşitlenir.
 
 **Blok ders (arka arkaya iki ders):** Birinci ders bitince kumandadan ya da perdeden ikinci dersin oturumu açılır. Öğrencilerin telefonunda "Sıradaki ders: … · Sıradaki derse geç" kartı belirir; tek dokunuşla aynı takma adla yeni oturuma geçerler, tekrar karekod okutmaları gerekmez. Eski karekod bağlantısı da kendiliğinden yeni oturuma yönlendirir. Girişli perde yeni oturumu kendiliğinden izler ve kumandaya yeşil onay verir.
