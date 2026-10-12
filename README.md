@@ -46,7 +46,7 @@ Kumandadaki ders listesi açık oturumu canlı izler; perdede açılan oturum bi
   - `ekran/{uid}`: perde kendi belgesini ancak doğru bağlantı koduyla yazabilir.
   - `participants/{pid}` ve `answers/{soru_pid}`: kişi kimliği (pid) takma adın anahtarı ya da anonim uid; bir adın altında yalnız adın güncel sahibi yazabilir. Hoca ve eşleşmiş perde okur.
   - `guven/{hoca}/ekran/{perde}`: kumandanın yazdığı güvenilir ekran kaydı (12 saat); perde bununla kod girmeden sonraki oturumlara eşleşir.
-  - `nicks/{ad}`: takma ad kaydı. İlk alan sahip olur; aynı adı başkası alamaz ("bu derste başkasında" uyarısı). Ad sahibi başka bir cihazdan aynı PIN ile adını geri alabilir. PIN sunucuda karşılaştırılır, telefona okunmaz.
+  - `nicks/{ad}`: takma ad kaydı (herkes okur). PIN düz metin saklanmaz, SHA-256 özeti (`ph`) tutulur. İlk alan sahip olur; aynı adı başkası alamaz ("bu derste başkasında" uyarısı). Ad sahibi başka bir cihazdan aynı PIN ile adını geri alır. Kayıt kurallar yüzünden reddedilirse telefon bunu ayrı bir mesajla söyler ("Sunucu kuralları güncel olmayabilir").
 - Kurallar main'e her gidişinde GitHub Actions (`.github/workflows/firestore-rules.yml`) tarafından Firebase'e kendiliğinden yayınlanır. Bunun için repo ayarlarında (Settings → Secrets and variables → Actions) iki gizli anahtar olmalı:
   - `HOCA_EPOSTA` (isteğe bağlı): hoca e-postalarını dosyadaki listenin yerine koymak için; virgülle birden fazla yazılabilir.
   - `FIREBASE_SERVICE_ACCOUNT`: Firebase Console → Proje ayarları (dişli) → Service accounts → **Generate new private key** ile inen JSON dosyasının tamamı.

@@ -112,19 +112,18 @@ service cloud.firestore {
         allow delete: if hoca();
       }
 
-      // Takma ad kaydı: belge adı küçük harfe çevrilmiş ad, içerik { uid, pin, nick, t }
-      // İlk alan sahip olur. Başkası ancak aynı PIN ile (başka cihazdan) devralabilir.
+      // Takma ad kaydı: belge adı küçük harfe çevrilmiş ad, içerik { uid, ph, nick, t }
+      // ph: PIN'in SHA-256 özeti (düz PIN saklanmaz). İlk alan sahip olur; başkası ancak aynı PIN ile devralır.
+      // Herkes okuyabilir: telefon "ad alınmış" ile "izin yok" durumunu böyle ayırt eder.
       match /nicks/{key} {
-        allow read: if hoca() || (girisli() && resource.data.uid == request.auth.uid);
+        allow read: if girisli();
         allow create: if girisli()
           && request.resource.data.uid == request.auth.uid
-          && request.resource.data.pin is string
-          && request.resource.data.pin.size() >= 4 && request.resource.data.pin.size() <= 8;
+          && request.resource.data.ph is string && request.resource.data.ph.size() == 64;
         allow update: if girisli()
           && request.resource.data.uid == request.auth.uid
-          && request.resource.data.pin is string
-          && request.resource.data.pin.size() >= 4 && request.resource.data.pin.size() <= 8
-          && (resource.data.uid == request.auth.uid || request.resource.data.pin == resource.data.pin);
+          && request.resource.data.ph is string && request.resource.data.ph.size() == 64
+          && (resource.data.uid == request.auth.uid || request.resource.data.ph == resource.data.get('ph', ''));
         allow delete: if hoca();
       }
 
