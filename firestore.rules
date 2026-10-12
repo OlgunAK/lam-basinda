@@ -81,7 +81,7 @@ service cloud.firestore {
     }
 
     match /sessions/{code} {
-      // Oturum belgesi: phase, q, cur, key, n, slide, cmd, board, done.*, opened.*,
+      // Oturum belgesi: phase, q, cur, key, n, slide, cmd, board, done.*, opened.*, prev (blokta önceki oturum),
       // src ("perde"), wantRemote, remote {uid, t} (kumanda yazar), remoteSeen (perde yazar).
       allow read: if girisli();
       allow create: if (hoca() || perdeHesabi()) && request.resource.data.owner == request.auth.uid;
@@ -125,18 +125,35 @@ service cloud.firestore {
         allow delete: if hoca();
       }
 
+      // Blok ders: oturum belgesindeki prev, aynı blokta bir önceki oturumun kodu (hoca yazar).
+      // Önceki derste PIN ile alınmış bir ad, yeni derste de yalnız aynı PIN ile alınabilir.
+      function onceki() {
+        return get(/databases/$(database)/documents/sessions/$(code)).data.get('prev', '');
+      }
+
+      function oncekiAdVar(key) {
+        return onceki() is string && onceki() != ''
+          && exists(/databases/$(database)/documents/sessions/$(onceki())/nicks/$(key));
+      }
+
+      function oncekiAdPh(key) {
+        return get(/databases/$(database)/documents/sessions/$(onceki())/nicks/$(key)).data.get('ph', '');
+      }
+
       // Takma ad kaydı: belge adı küçük harfe çevrilmiş ad, içerik { uid, ph, nick, t }
-      // ph: PIN'in SHA-256 özeti (düz PIN saklanmaz). İlk alan sahip olur; başkası ancak aynı PIN ile devralır.
+      // ph: PIN'in SHA-256 özeti (düz PIN saklanmaz). İlk alan sahip olur; kayıt varsa PIN eşleşmeden
+      // kimse (adın şu anki cihazı bile) yazamaz; başka cihaz aynı PIN ile devralır.
       // Herkes okuyabilir: telefon "ad alınmış" ile "izin yok" durumunu böyle ayırt eder.
       match /nicks/{key} {
         allow read: if girisli();
         allow create: if girisli()
           && request.resource.data.uid == request.auth.uid
-          && request.resource.data.ph is string && request.resource.data.ph.size() == 64;
+          && request.resource.data.ph is string && request.resource.data.ph.size() == 64
+          && (!oncekiAdVar(key) || oncekiAdPh(key) == request.resource.data.ph);
         allow update: if girisli()
           && request.resource.data.uid == request.auth.uid
           && request.resource.data.ph is string && request.resource.data.ph.size() == 64
-          && (resource.data.uid == request.auth.uid || request.resource.data.ph == resource.data.get('ph', ''));
+          && request.resource.data.ph == resource.data.get('ph', '');
         allow delete: if hoca();
       }
 
