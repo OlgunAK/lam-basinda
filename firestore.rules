@@ -40,7 +40,7 @@ service cloud.firestore {
     function perde(code) {
       return girisli()
         && exists(/databases/$(database)/documents/sessions/$(code)/ekran/$(request.auth.uid))
-        && (get(/databases/$(database)/documents/sessions/$(code)/ekran/$(request.auth.uid)).data.pin
+        && (get(/databases/$(database)/documents/sessions/$(code)/ekran/$(request.auth.uid)).data.get('pin', '')
               == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin
             || guvenli(code));
     }
@@ -56,10 +56,16 @@ service cloud.firestore {
       allow write: if hoca();
     }
 
-    // Güvenilir ekranlar: guven/{hocaUid}/ekran/{perdeUid} = { t }. Yalnız hoca yazar.
+    // Güvenilir ekranlar: guven/{hocaUid}/ekran/{perdeUid} = { t, code }.
+    // Hoca (kumanda) yazar; perde de bağlantı koduyla eşleştiği oturumu göstererek kendini yazabilir.
     match /guven/{owner}/ekran/{uid} {
       allow read: if hoca() || (girisli() && request.auth.uid == uid);
-      allow write: if hoca() && request.auth.uid == owner;
+      allow write: if (hoca() && request.auth.uid == owner)
+        || (girisli() && request.auth.uid == uid
+            && request.resource.data.code is string
+            && get(/databases/$(database)/documents/sessions/$(request.resource.data.code)).data.owner == owner
+            && get(/databases/$(database)/documents/sessions/$(request.resource.data.code)/ekran/$(uid)).data.get('pin', '')
+               == get(/databases/$(database)/documents/sessions/$(request.resource.data.code)/gizli/pin).data.pin);
     }
 
     match /sessions/{code} {
@@ -81,12 +87,12 @@ service cloud.firestore {
         allow read: if hoca() || (girisli() && request.auth.uid == uid);
         allow create: if girisli()
           && request.auth.uid == uid
-          && (request.resource.data.pin
+          && (request.resource.data.get('pin', '')
                 == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin
               || guvenli(code));
         allow update: if hoca() || (girisli()
           && request.auth.uid == uid
-          && (request.resource.data.pin
+          && (request.resource.data.get('pin', '')
                 == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin
               || guvenli(code)));
         allow delete: if hoca();

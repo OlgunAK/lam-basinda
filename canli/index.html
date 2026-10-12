@@ -73,7 +73,7 @@ textarea.in{min-height:120px;resize:vertical}
 .status{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:12px;background:var(--hema-soft);font-weight:600}
 .status.ok{background:var(--ok-soft);color:var(--ok)}
 .dsheet{position:fixed;inset:0;z-index:9;background:rgba(20,10,40,.55);display:flex;align-items:flex-end;justify-content:center}.dsheet .in{background:var(--panel,#fff);color:var(--ink);border-radius:16px 16px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom));width:100%;max-width:560px;display:flex;flex-direction:column;gap:12px;max-height:85vh;overflow:auto}.dsheet h2{margin:0;font-family:var(--f-display)}.dsheet .krow{display:flex;gap:10px}.dsheet .krow div{flex:1;background:var(--hema-soft);border-radius:12px;padding:10px;text-align:center}.dsheet .krow b{display:block;font-family:var(--f-mono);font-size:1.4rem}.dsheet .krow small{color:var(--muted)}.dsheet .lb .r{display:flex;gap:10px;align-items:center;padding:6px 8px;border-radius:8px}.dsheet .lb .r.me{background:var(--ok-soft);color:var(--ok)}.dsheet .lb .r span{flex:1}.dsheet .eyebrow{margin:0 0 4px;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-#codepill{cursor:pointer}
+#codepill{cursor:pointer}#skorbtn{border:0;background:var(--dus);color:var(--bg);cursor:pointer}
 .nxcard{background:var(--hema-soft);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:10px;margin:6px 0}.nxcard p{margin:0;font-weight:600}
 .nxbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:8;background:var(--dus);color:var(--bg);border-radius:12px;padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.35)}.nxbar button{border:0;border-radius:10px;padding:10px 14px;font-weight:800;background:var(--bg);color:var(--dus)}
 .status.bad{background:var(--bad-soft);color:var(--bad)}
@@ -114,11 +114,12 @@ a{color:var(--hema)}
     <div class="mark" aria-hidden="true"></div>
     <div class="t"><b>Lam Başında Canlı</b><span id="sub">4. Sınıf Patoloji</span></div>
     <span class="pill hidden" id="codepill"></span>
+    <button class="pill hidden" id="skorbtn" type="button">Skor</button>
     <span class="net" id="net" title="Bağlantı"></span>
   </header>
   <main id="app" aria-live="polite"></main>
 </div>
-<script>window.__V="1760001000"</script><script src="config.js?v=1760001000"></script>
-<script src="ogrenci.js?v=1760001000"></script>
+<script>window.__V="1760001100"</script><script src="config.js?v=1760001100"></script>
+<script src="ogrenci.js?v=1760001100"></script>
 </body>
 </html>
