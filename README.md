@@ -24,7 +24,7 @@ Oturumu iki yoldan başlatabilirsin:
 
 1. **Perdeden** (Google ile girişli perde): derste **Kumandayla başlat** ya da **Kumandasız başlat** seçilir. Kumandayla seçilince perde 4 haneli kodu gösterip bekler; telefondaki kumandada aynı dersin kartında anında **Perde kumanda bekliyor · Katıl** düğmesi belirir. Dokununca iki ekran da yeşil yanar ve kumanda açılır. Kumandasız başlatılan oturuma da kumanda sonradan **Perdedeki oturuma katıl** ile bağlanabilir.
 2. **Kumandadan**: **Yeni oturum başlat** iki kod üretir (oturum ve bağlantı kodu); bu kodlar girişsiz perdeye yazılır. Perde bağlanınca telefon titrer ve iki ekran yeşil onay verir.
-   Kodlar bir kez yazılır: kumandadan sonraki oturum açıldığında perde yeni oturuma kendiliğinden geçer (bağlantı kodu yalnız eşleşmiş perdenin okuyabildiği yere yazılır). Perde sayfası yenilense ya da bilgisayar uyandırılsa da aynı yerden devam eder; tarayıcı kapanıp site verisi silinmedikçe kod istemez.
+   Kodlar bir kez yazılır: eşleşen perde 12 saat boyunca hocanın **güvenilir ekranı** olur (`guven/{hoca}/ekran/{perde}`), sonraki oturumlara kod gerekmeden kendiliğinden bağlanır. Oturum bitince bekler, hoca yeni oturum açınca (kumanda yenilenmiş olsa bile) yarım saniye içinde geçer; perde sayfası yenilense de kaldığı yerden devam eder. Yalnız mevcut oturumdan daha yeni oturumlara geçer, eski açık kalmış oturumlara atlamaz.
 
 Kumandadaki ders listesi açık oturumu canlı izler; perdede açılan oturum bir saniye içinde görünür.
 
@@ -34,7 +34,7 @@ Kumandadaki ders listesi açık oturumu canlı izler; perdede açılan oturum bi
 
 **Blok ders (arka arkaya iki ders):** Birinci ders bitince kumandadan ya da perdeden ikinci dersin oturumu açılır. Öğrencilerin telefonunda "Sıradaki ders: … · Sıradaki derse geç" kartı belirir; tek dokunuşla aynı takma adla yeni oturuma geçerler, tekrar karekod okutmaları gerekmez. Eski karekod bağlantısı da kendiliğinden yeni oturuma yönlendirir. Girişli perde yeni oturumu kendiliğinden izler ve kumandaya yeşil onay verir.
 - **Öğrenci ekranı**: Öğrenciler telefondan açıp oturum koduyla katılır ve soruları cevaplar. Tek sütun, telefon öncelikli tasarlanmıştır.
-  Takma ad yazan öğrenci 4 haneli bir PIN de belirler: ad o derste ona ait olur, aynı adı ikinci kişi alamaz; cihaz değiştirirse ad + PIN ile devam eder. Blok geçişinde ad ve PIN telefonda saklı kaldığı için yeni oturumda da aynı ad kendiliğinden alınır.
+  Takma ad yazan öğrenci 4 haneli bir PIN de belirler: ad o derste ona ait olur, aynı adı ikinci kişi alamaz. Kimlik ad üzerinden yürür: aynı ad + PIN ile başka cihazdan girince kayıt (cevaplar, puan) oradan devam eder, eski cihaz "Başka cihazdan giriş yapıldı" ekranı görür ve cevap yazamaz; liderlik tablosunda kişi tek satırdır. Üstteki oturum koduna dokununca "Durumum" açılır: ad, cevaplanan ve doğru sayısı, sıra ve son liderlik tablosu. Blok geçişinde ad ve PIN telefonda saklı kaldığı için yeni oturumda da aynı ad kendiliğinden alınır.
 
 ## Güvenlik ve Firestore kuralları
 
@@ -44,7 +44,8 @@ Kumandadaki ders listesi açık oturumu canlı izler; perdede açılan oturum bi
   - `sessions/{kod}`: herkes okur; yalnız hoca oluşturur; hoca ya da bağlantı koduyla eşleşmiş perde günceller (yeni `remote`, `remoteSeen`, `src`, `wantRemote` alanları dahil).
   - `gizli/pin`: yalnız hoca.
   - `ekran/{uid}`: perde kendi belgesini ancak doğru bağlantı koduyla yazabilir.
-  - `participants/{uid}` ve `answers/{soru_uid}`: öğrenci yalnız kendi belgesini yazar; hoca ve eşleşmiş perde okur.
+  - `participants/{pid}` ve `answers/{soru_pid}`: kişi kimliği (pid) takma adın anahtarı ya da anonim uid; bir adın altında yalnız adın güncel sahibi yazabilir. Hoca ve eşleşmiş perde okur.
+  - `guven/{hoca}/ekran/{perde}`: kumandanın yazdığı güvenilir ekran kaydı (12 saat); perde bununla kod girmeden sonraki oturumlara eşleşir.
   - `nicks/{ad}`: takma ad kaydı. İlk alan sahip olur; aynı adı başkası alamaz ("bu derste başkasında" uyarısı). Ad sahibi başka bir cihazdan aynı PIN ile adını geri alabilir. PIN sunucuda karşılaştırılır, telefona okunmaz.
 - Kurallar main'e her gidişinde GitHub Actions (`.github/workflows/firestore-rules.yml`) tarafından Firebase'e kendiliğinden yayınlanır. Bunun için repo ayarlarında (Settings → Secrets and variables → Actions) iki gizli anahtar olmalı:
   - `HOCA_EPOSTA` (isteğe bağlı): hoca e-postalarını dosyadaki listenin yerine koymak için; virgülle birden fazla yazılabilir.

@@ -28,12 +28,21 @@ service cloud.firestore {
         && request.auth.token.email in hocaListesi();
     }
 
-    // Bu oturuma bağlantı koduyla eşleşmiş perde mi?
+    // Hocanın güvenilir ekranı mı? Kumanda, bir kez kodla eşleşen perdeyi 12 saatliğine buraya yazar.
+    function guvenli(code) {
+      return girisli()
+        && exists(/databases/$(database)/documents/guven/$(get(/databases/$(database)/documents/sessions/$(code)).data.owner)/ekran/$(request.auth.uid))
+        && get(/databases/$(database)/documents/guven/$(get(/databases/$(database)/documents/sessions/$(code)).data.owner)/ekran/$(request.auth.uid)).data.t
+           > request.time - duration.value(12, 'h');
+    }
+
+    // Bu oturuma bağlantı koduyla ya da güvenilir ekran olarak eşleşmiş perde mi?
     function perde(code) {
       return girisli()
         && exists(/databases/$(database)/documents/sessions/$(code)/ekran/$(request.auth.uid))
-        && get(/databases/$(database)/documents/sessions/$(code)/ekran/$(request.auth.uid)).data.pin
-           == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin;
+        && (get(/databases/$(database)/documents/sessions/$(code)/ekran/$(request.auth.uid)).data.pin
+              == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin
+            || guvenli(code));
     }
 
     function yonetici(code) {
@@ -45,6 +54,12 @@ service cloud.firestore {
     match /aktif/{lesson} {
       allow read: if girisli();
       allow write: if hoca();
+    }
+
+    // Güvenilir ekranlar: guven/{hocaUid}/ekran/{perdeUid} = { t }. Yalnız hoca yazar.
+    match /guven/{owner}/ekran/{uid} {
+      allow read: if hoca() || (girisli() && request.auth.uid == uid);
+      allow write: if hoca() && request.auth.uid == owner;
     }
 
     match /sessions/{code} {
@@ -66,19 +81,28 @@ service cloud.firestore {
         allow read: if hoca() || (girisli() && request.auth.uid == uid);
         allow create: if girisli()
           && request.auth.uid == uid
-          && request.resource.data.pin
-             == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin;
+          && (request.resource.data.pin
+                == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin
+              || guvenli(code));
         allow update: if hoca() || (girisli()
           && request.auth.uid == uid
-          && request.resource.data.pin
-             == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin);
+          && (request.resource.data.pin
+                == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin
+              || guvenli(code)));
         allow delete: if hoca();
       }
 
-      // Katılımcılar: { nick, t }
-      match /participants/{uid} {
+      // Kişi kimliği (pid): takma adı olan için adın anahtarı, anonim için uid.
+      // Bir adın altında yalnız adın güncel sahibi (nicks/{ad}.uid) yazabilir; eski cihaz devre dışı kalır.
+      function kisi(pid) {
+        return pid == request.auth.uid
+          || get(/databases/$(database)/documents/sessions/$(code)/nicks/$(pid)).data.uid == request.auth.uid;
+      }
+
+      // Katılımcılar: belge adı pid, içerik { nick, uid, t }
+      match /participants/{pid} {
         allow read: if yonetici(code);
-        allow create, update: if girisli() && request.auth.uid == uid;
+        allow create, update: if girisli() && kisi(pid);
         allow delete: if hoca();
       }
 
@@ -98,12 +122,13 @@ service cloud.firestore {
         allow delete: if hoca();
       }
 
-      // Cevaplar: belge adı "<soruId>_<uid>", içerik { q, uid, v, t, nick }
+      // Cevaplar: belge adı "<soruId>_<pid>", içerik { q, pid, uid, v, t, nick }
       match /answers/{doc} {
         allow read: if yonetici(code);
         allow create, update: if girisli()
           && request.resource.data.uid == request.auth.uid
-          && doc == request.resource.data.q + '_' + request.auth.uid;
+          && doc == request.resource.data.q + '_' + request.resource.data.pid
+          && kisi(request.resource.data.pid);
         allow delete: if hoca();
       }
     }
