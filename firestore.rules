@@ -61,12 +61,17 @@ service cloud.firestore {
       }
 
       // Eşleşmiş perdeler: perde kendi belgesini doğru pin ile yazar.
+      // Hoca (kumanda) yeni oturum açınca buraya next {code, pin} yazar; perde yeni oturuma kendiliğinden geçer.
       match /ekran/{uid} {
         allow read: if hoca() || (girisli() && request.auth.uid == uid);
-        allow create, update: if girisli()
+        allow create: if girisli()
           && request.auth.uid == uid
           && request.resource.data.pin
              == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin;
+        allow update: if hoca() || (girisli()
+          && request.auth.uid == uid
+          && request.resource.data.pin
+             == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin);
         allow delete: if hoca();
       }
 
