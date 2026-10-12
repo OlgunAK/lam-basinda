@@ -24,7 +24,20 @@ Oturumu iki yoldan başlatabilirsin:
 2. **Kumandadan**: **Yeni oturum başlat** iki kod üretir (oturum ve bağlantı kodu); bu kodlar girişsiz perdeye yazılır. Perde bağlanınca telefon titrer ve iki ekran yeşil onay verir.
 
 Kumandadaki ders listesi açık oturumu canlı izler; perdede açılan oturum bir saniye içinde görünür.
+
+**Blok ders (arka arkaya iki ders):** Birinci ders bitince kumandadan ya da perdeden ikinci dersin oturumu açılır. Öğrencilerin telefonunda "Sıradaki ders: … · Sıradaki derse geç" kartı belirir; tek dokunuşla aynı takma adla yeni oturuma geçerler, tekrar karekod okutmaları gerekmez. Eski karekod bağlantısı da kendiliğinden yeni oturuma yönlendirir. Girişli perde yeni oturumu kendiliğinden izler ve kumandaya yeşil onay verir.
 - **Öğrenci ekranı**: Öğrenciler telefondan açıp oturum koduyla katılır ve soruları cevaplar. Tek sütun, telefon öncelikli tasarlanmıştır.
+
+## Güvenlik ve Firestore kuralları
+
+- `canli/config.js` içindeki Firebase web anahtarı gizli değildir; tarayıcıya gitmek için tasarlanmıştır ve sitede zaten herkes görür. GitHub'ın `AIza…` uyarısı bu yüzden "False positive" olarak kapatılabilir. Yine de Google Cloud Console → APIs & Services → Credentials altında anahtara **Website restrictions** (`olgunak.github.io/*`, `lam-basinda.firebaseapp.com/*`) ve **API restrictions** (Identity Toolkit, Cloud Firestore, Firebase Installations) ekleyin.
+- Asıl koruma Firestore kurallarıdır. Repo kökündeki `firestore.rules` dosyası canlı oturumun tüm koleksiyonlarını kapsar:
+  - `aktif/{ders}`: herkes okur, yalnız hoca yazar.
+  - `sessions/{kod}`: herkes okur; yalnız hoca oluşturur; hoca ya da bağlantı koduyla eşleşmiş perde günceller (yeni `remote`, `remoteSeen`, `src`, `wantRemote` alanları dahil).
+  - `gizli/pin`: yalnız hoca.
+  - `ekran/{uid}`: perde kendi belgesini ancak doğru bağlantı koduyla yazabilir.
+  - `participants/{uid}` ve `answers/{soru_uid}`: öğrenci yalnız kendi belgesini yazar; hoca ve eşleşmiş perde okur.
+- Yayınlamak için dosyadaki `HOCA_EPOSTA@gmail.com` yerine kendi Google e-postanı yaz, sonra Firebase Console → Firestore Database → Rules sekmesine yapıştırıp **Publish** de (ya da `firebase deploy --only firestore:rules`).
 
 ## Ders içerikleri
 
@@ -39,6 +52,7 @@ Canlı oturumlardaki sorular `canli/dersler/` altında JSON olarak durur, slaytl
 
 ```
 index.html          Ana sunum
+firestore.rules     Firestore güvenlik kuralları (konsola yapıştırılır)
 canli/
   index.html        Öğrenci ekranı
   perde.html        Perde

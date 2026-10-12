@@ -1,0 +1,90 @@
+rules_version = '2';
+
+// Lam Başında canlı oturum kuralları.
+// Firebase konsolu → Firestore Database → Rules sekmesine yapıştırıp "Publish" de,
+// ya da Firebase CLI ile: firebase deploy --only firestore:rules
+//
+// Roller:
+//   hoca   : Google ile girmiş, aşağıdaki listedeki e-posta. Kumanda ve girişli perde.
+//   perde  : Anonim giriş; oturum kodu + bağlantı kodu (pin) ile eşleşmiş ekran.
+//   öğrenci: Anonim giriş; oturum koduyla katılır, cevap yazar.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Dersi yönetebilecek hesaplar. Kendi e-postanı yaz; birden fazla olabilir.
+    function hocaListesi() {
+      return ['HOCA_EPOSTA@gmail.com'];
+    }
+
+    function girisli() {
+      return request.auth != null;
+    }
+
+    function hoca() {
+      return girisli()
+        && request.auth.token.email != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email in hocaListesi();
+    }
+
+    // Bu oturuma bağlantı koduyla eşleşmiş perde mi?
+    function perde(code) {
+      return girisli()
+        && exists(/databases/$(database)/documents/sessions/$(code)/ekran/$(request.auth.uid))
+        && get(/databases/$(database)/documents/sessions/$(code)/ekran/$(request.auth.uid)).data.pin
+           == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin;
+    }
+
+    function yonetici(code) {
+      return hoca() || perde(code);
+    }
+
+    // Ders başına açık oturum kaydı: { s: oturum kodu, t: zaman }
+    // Öğrenci ekranı buradan açık oturumu bulur; kumanda ve perde canlı dinler.
+    match /aktif/{lesson} {
+      allow read: if girisli();
+      allow write: if hoca();
+    }
+
+    match /sessions/{code} {
+      // Oturum belgesi: phase, q, cur, key, n, slide, cmd, board, done.*, opened.*,
+      // src ("perde"), wantRemote, remote {uid, t} (kumanda yazar), remoteSeen (perde yazar).
+      allow read: if girisli();
+      allow create: if hoca() && request.resource.data.owner == request.auth.uid;
+      allow update: if yonetici(code);
+      allow delete: if false;
+
+      // Bağlantı kodu; yalnız hoca görür.
+      match /gizli/{doc} {
+        allow read, write: if hoca();
+      }
+
+      // Eşleşmiş perdeler: perde kendi belgesini doğru pin ile yazar.
+      match /ekran/{uid} {
+        allow read: if hoca() || (girisli() && request.auth.uid == uid);
+        allow create, update: if girisli()
+          && request.auth.uid == uid
+          && request.resource.data.pin
+             == get(/databases/$(database)/documents/sessions/$(code)/gizli/pin).data.pin;
+        allow delete: if hoca();
+      }
+
+      // Katılımcılar: { nick, t }
+      match /participants/{uid} {
+        allow read: if yonetici(code);
+        allow create, update: if girisli() && request.auth.uid == uid;
+        allow delete: if hoca();
+      }
+
+      // Cevaplar: belge adı "<soruId>_<uid>", içerik { q, uid, v, t, nick }
+      match /answers/{doc} {
+        allow read: if yonetici(code);
+        allow create, update: if girisli()
+          && request.resource.data.uid == request.auth.uid
+          && doc == request.resource.data.q + '_' + request.auth.uid;
+        allow delete: if hoca();
+      }
+    }
+  }
+}
