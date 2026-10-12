@@ -12,9 +12,9 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Dersi yönetebilecek hesaplar. Kendi e-postanı yaz; birden fazla olabilir.
+    // Dersi yönetebilecek Google hesapları; birden fazla olabilir.
     function hocaListesi() {
-      return ['HOCA_EPOSTA@gmail.com'];
+      return ['m.olgun.ak@gmail.com'];
     }
 
     function girisli() {

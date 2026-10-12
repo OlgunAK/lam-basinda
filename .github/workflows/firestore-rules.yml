@@ -28,17 +28,16 @@ jobs:
           EPOSTA: ${{ secrets.HOCA_EPOSTA }}
         run: |
           if [ -z "$SA" ]; then echo "::error::FIREBASE_SERVICE_ACCOUNT gizli anahtarı yok (repo Settings → Secrets and variables → Actions)."; exit 1; fi
-          if [ -z "$EPOSTA" ]; then echo "::error::HOCA_EPOSTA gizli anahtarı yok: perde ve kumandaya girdiğin Google e-postası."; exit 1; fi
 
-      - name: Hoca e-postasını kurallara yaz
+      - name: Hoca e-postasını kurallara yaz (isteğe bağlı HOCA_EPOSTA gizli anahtarı)
         env:
           EPOSTA: ${{ secrets.HOCA_EPOSTA }}
         run: |
+          if [ -z "$EPOSTA" ]; then echo "HOCA_EPOSTA yok; dosyadaki liste olduğu gibi yayınlanır."; exit 0; fi
           # Birden fazla e-posta virgülle ayrılabilir: a@gmail.com,b@gmail.com
           LIST=$(printf '%s' "$EPOSTA" | tr -d ' ' | awk -F, '{for(i=1;i<=NF;i++){printf "%s'\''%s'\''", (i>1?", ":""), $i}}')
-          sed -i "s|return \['HOCA_EPOSTA@gmail.com'\];|return [$LIST];|" firestore.rules
-          grep -q "HOCA_EPOSTA@gmail.com" firestore.rules && { echo "::error::Yer tutucu değiştirilemedi"; exit 1; }
-          echo "Kural listesi güncellendi ($(printf '%s' "$EPOSTA" | awk -F, '{print NF}') hesap)."
+          sed -i "s|return \[.*\];|return [$LIST];|" firestore.rules
+          echo "Kural listesi gizli anahtardan güncellendi."
 
       - name: Kuralları yayınla
         env:

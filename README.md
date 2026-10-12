@@ -44,10 +44,10 @@ Kumandadaki ders listesi açık oturumu canlı izler; perdede açılan oturum bi
   - `ekran/{uid}`: perde kendi belgesini ancak doğru bağlantı koduyla yazabilir.
   - `participants/{uid}` ve `answers/{soru_uid}`: öğrenci yalnız kendi belgesini yazar; hoca ve eşleşmiş perde okur.
 - Kurallar main'e her gidişinde GitHub Actions (`.github/workflows/firestore-rules.yml`) tarafından Firebase'e kendiliğinden yayınlanır. Bunun için repo ayarlarında (Settings → Secrets and variables → Actions) iki gizli anahtar olmalı:
-  - `HOCA_EPOSTA`: perde ve kumandaya giriş yaptığın Google e-postası (birden fazlaysa virgülle). Dosyadaki `HOCA_EPOSTA@gmail.com` yer tutucusu yayın sırasında bununla değiştirilir; e-posta repoda görünmez.
+  - `HOCA_EPOSTA` (isteğe bağlı): hoca e-postalarını dosyadaki listenin yerine koymak için; virgülle birden fazla yazılabilir.
   - `FIREBASE_SERVICE_ACCOUNT`: Firebase Console → Proje ayarları (dişli) → Service accounts → **Generate new private key** ile inen JSON dosyasının tamamı.
   - İş akışı Actions sekmesinden elle de çalıştırılabilir (**Run workflow**).
-- Elle yayınlamak istersen: yer tutucuya e-postanı yazıp Firebase Console → Firestore Database → Rules sekmesine yapıştır ve **Publish** de.
+- Elle yayınlamak istersen: dosyanın tamamını Firebase Console → Firestore Database → Rules sekmesine yapıştır ve **Publish** de.
 
 ## Ders içerikleri
 
