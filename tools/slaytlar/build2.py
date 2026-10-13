@@ -428,6 +428,22 @@ M2_PRACTICAL = {
     ("Enfeksiyöz mononükleoz", ["Sert-yumuşak damak birleşiminde peteşi: güzel bir klinik ipucu", "Boğaz ağrısı, lenfadenopati, halsizlik; EBV; ampisilin verme (döküntü)"], "pink"),
     ("Trombositopeni", ["Bas ve bak: solmayan nokta kanaması; dişeti kanaması, ekimoz", "Tam kan sayımı; lösemi, ITP, ilaç; kanamalı işlemden önce trombosit sayısı"], "")],
     photo=("petesi_damak.jpg", "Damakta peteşi", "Sert-yumuşak damak birleşimi; bas ve bak"), lid="M2"),
+ "notropeni": make_cards("Nötropeni ve agranülositoz: metamizol uyarısı", [
+    ("Nötropeni", ["ANC < 500/µL ağır nötropeni: iltihap belirtisi az, derin, kirli, nekrotik ülser; ağır periodontit", "Siklik nötropeni (ELANE): ~21 günlük döngüde ateş + aft benzeri ülser"], ""),
+    ("Metamizol (Novalgin)", ["Yerel ve kritik: Türkiye'de çok kullanılır, agranülositoz yapabilir", "Metamizol alan hastada ateş, boğaz ağrısı, nekrotik ağız ülseri = acil hemogram", "Diş hekimi bu ilacı hem yazar hem de ilk komplikasyonu görür"], "pink"),
+    ("Ortak kural", ["Açıklanamayan dişeti büyümesi, kanama, peteşi ya da iyileşmeyen ülser + halsizlik ya da ateş = hemogram"], "")], lid="M2"),
+ "freud": make_cards("Freud'un damağı: 33 ameliyat ve alan kanserizasyonu", [
+    ("1923: 'lökoplaki'", ["Freud'un damağındaki lezyona lökoplaki dendi; biyopsi karsinom çıktı", "Yirmi yıl günde 20 puro; damak ve çene kısmen çıkarıldı"], ""),
+    ("Diş hekimi Hans Pichler", ["Sonraki 16 yılda onu 33 kez ameliyat etti ve bu protezi yaptı: Freud ona 'canavar' diyordu", "Yeni lezyonlar çıkmaya devam etti"], ""),
+    ("Alan kanserizasyonu (Slaughter, 1953)", ["Kanser yalnız lezyonda değil, puroyla yanmış bütün mukozadaydı", "Bugünkü karşılığı: sigara içen hastada tek lezyonu çıkarmak yetmez, bütün ağız izlenir"], "pink")],
+    photo=("freud_protez.jpg", "Freud'un obturatör protezi ('canavar')", "Pichler'in yaptığı damak protezi; konuşma ve yemeği zorlaştırıyordu"), lid="M2"),
+ "uyari": make_cards("Yazarken üç uyarı", [
+    ("Steroid yazmadan önce", ["Kandida ve herpesi dışlayın: herpese steroid, yangına benzin", "Gerekirse önce antifungal/antiviral, sonra steroid"], "pink"),
+    ("Tanısız ülsere steroid yazmayın", ["Karsinomu maskeler ve iki hafta kuralını bozar", "Önce tanı, sonra ilaç"], "pink"),
+    ("Etkileşim", ["Antifungal (azoller) ve antiviral ilaçları hastanın ilaç listesiyle karşılaştırın", "Statin, varfarin, bazı antiaritmikler ve immünsupresanlar azollerle etkileşir"], "")], lid="M2"),
+ "hiv": make_cards("Kıllı lökoplaki gördüm: HIV testi isteyebilir miyim?", [
+    ("Evet, ama", ["Hastayı bilgilendirip onamıyla test istenebilir", "Ya da enfeksiyon hastalıklarına yönlendirilir; yönlendirmenin nedenini açıkça söyleyin"], ""),
+    ("Neden önemli", ["Ağız bulgusu HIV'in ilk ipucu olabilir: kıllı lökoplaki, tekrarlayan kandida, Kaposi, nekrotizan periodontit", "Bu farkındalık hayat kurtarır; erken tedavi bulaşı da keser"], "pink")], lid="M2"),
  "pj": make_cards("Dudakta çil gibi lekeler: Peutz-Jeghers", [
     ("Görünüm", ["Dudaklarda ve ağız içinde çok sayıda küçük kahverengi makül; çocuklukta başlar", "Otozomal dominant (STK11); dudaktaki lekeler yaşla solabilir, ağız içindekiler kalır"], ""),
     ("Gastroya gönder", ["Bağırsakta hamartomatöz polipler: invajinasyon, kanama; gastrointestinal ve diğer kanser riski yüksek", "Tanıyı koyan ağız olabilir: hastayı gastroenterolojiye yönlendirin, aile taraması"], "pink"),
@@ -487,6 +503,9 @@ M1[find(M1, src=14)]["title"] = "3 Desen: floresan ne diyor?"
 
 M1_NOTES = dict(B.M1_NOTES)
 M1_NOTES.pop(4)   # the opening-case note is rewritten in the plan
+M1_NOTES[13] = rep("Ağızda pemfigoid tanısı koyduğunuz hastaların yarısına kadarında gözde de tutulum olabilir", "Ağızdan başlayan hastaların yaklaşık dörtte birinde zamanla göz de tutulur; tüm pemfigoid hastalarında oran daha yüksektir")
+M1_NOTES[17] = rep("olguların yaklaşık yüzde 90'ı bir enfeksiyonla ilişkili.", "olguların yaklaşık yüzde 90'ı bir enfeksiyonla ilişkili, ama tetikleyici her zaman bulunamaz.")
+M1_NOTES[21] = rep("Toplumun yaklaşık üçte birinde hayatı boyunca aft olur. Yani bu sınıfta en az 20 kişi şu an 'ben' diyor.", "Her beş kişiden birinde hayatı boyunca aft olur. Yani bu sınıfta en az 12 kişi şu an 'ben' diyor.")
 M1_NOTES[15] = rep("Diğer şıkları da az önce gördük; her biri başka bir hastalığın adresi.",
                    "Floresan desenlerini birkaç slayt önce gördük; her biri başka bir hastalığın adresi. Bu ara büllöz bloğu kapatıyor; sırada aft.")
 M1_NOTES[23] = rep("Uluslararası kriterlere göre tanı için", "1990 ISG ölçütlerine göre tanı için")
@@ -579,16 +598,30 @@ M2.insert(find(M2, src=10) + 1, S(src=None, make=M2_PRACTICAL["nikotin"], dur=35
     notes="Nikotinik stomatitte suçlu duman değil, sıcak: pipo ve sıcak içecek. Damak beyazlaşır, üstündeki kırmızı noktalar iltihaplı küçük tükürük bezi kanal ağızları. Bırakınca geriler, premalign değil; damağı yanmış çaycı kanser adayı değil. Ama neler neler var: ters sigara içimi, yanan uç ağzın içinde. O artık DSÖ 2020 potansiyel malign bozukluklar listesinde; damaktaki lezyon biyopsiye gider."))
 M2.insert(find(M2, src=10) + 2, S(src=None, make=M2_PRACTICAL["kese"], dur=40, strip={1, 2, 3}, title="Dumansız tütün keratozu ve Maraş otu",
     notes="Tütün kesesi keratozu: tütünün tutulduğu vestibülde gri-beyaz, kırışık, cezir sonrası kum gibi bir alan; verrüköz karsinomla ilişkili. Tütün bırakılınca yoğun beyaz olmayan lezyonların yüzde 98'i iki haftada düzelir; altı haftada gerilemeyen lezyon gerçek lökoplaki sayılır, biyopsi. Yerel not: Kahramanmaraş ve çevresinde Maraş otu, Nicotiana rustica artı odun külü, alt dudak vestibülünde tutulur; kullanıcılarda lökoplaki sık bildirilmiş, ağız kanseriyle ilişkisi tartışmalı. Maraşlı hastanın dudağını kaldırıp bakın."))
+M2.insert(find(M2, src=16) + 1, S(src=None, make=M2_PRACTICAL["freud"], dur=35, strip={3}, title="Freud'un damağı: 33 ameliyat ve alan kanserizasyonu",
+    notes="Bir hikâye. Freud'un damağındaki lezyona 1923'te lökoplaki dendi; biyopsi karsinom çıktı. Sonraki 16 yılda bir diş hekimi, Hans Pichler, onu 33 kez ameliyat etti ve soldaki protezi yaptı; Freud ona canavar diyordu. Yeni lezyonlar çıkmaya devam etti, çünkü kanser yalnız lezyonda değil, puroyla yanmış bütün mukozadaydı. Slaughter buna 1953'te alan kanserizasyonu adını verdi. Bugünkü karşılığı: sigara içen hastada tek lezyonu çıkarmak yetmez, bütün ağız ömür boyu izlenir."))
+M2.insert(find(M2, src=19) + 1, S(src=None, make=M2_PRACTICAL["hiv"], dur=20, title="Kıllı lökoplaki gördüm: HIV testi isteyebilir miyim?",
+    notes="Bunu sormazlarsa ben soruyorum: kıllı lökoplaki görürsem HIV testi isteyebilir miyim? Evet: hastayı bilgilendirip onamıyla test istenebilir ya da enfeksiyon hastalıklarına yönlendirilir. Ağız bulgusu HIV'in ilk ipucu olabilir; bu farkındalık hayat kurtarır."))
+M2.insert(find(M2, src=23) + 1, S(src=None, make=M2_PRACTICAL["notropeni"], dur=30, title="Nötropeni ve agranülositoz: metamizol uyarısı",
+    notes="Nötropeni: ANC 500'ün altı ağır; iltihap belirtisi az, derin, kirli, nekrotik ülser ve ağır periodontit. Siklik nötropeni, ELANE mutasyonu, yaklaşık 21 günlük döngüde ateş ve aft benzeri ülser. Yerel ve kritik not: Türkiye'de çok kullanılan metamizol, Novalgin, agranülositoz yapabilir; metamizol alan hastada ateş, boğaz ağrısı ve nekrotik ağız ülseri acil hemogram demektir. Diş hekimi bu ilacı hem yazar hem de ilk komplikasyonu görür. Ortak kural slayttaki."))
+M2.insert(find(M2, src=37), S(src=None, make=M2_PRACTICAL["uyari"], dur=30, title="Yazarken üç uyarı",
+    notes="Reçete yazarken üç uyarı. Steroid yazmadan önce kandida ve herpesi dışlayın; herpese steroid, yangına benzin. Tanısız ülsere steroid yazmayın: karsinomu maskeler ve iki hafta kuralını bozar. Antifungal ve antiviral ilaç etkileşimlerini hastanın ilaç listesiyle karşılaştırın; azoller statin, varfarin ve immünsupresanlarla etkileşir."))
 M2.insert(find(M2, key="22B") + 1, S(src=None, make=M2_PRACTICAL["petesi"], dur=25, title="Damakta peteşi: üç soru sor",
     notes="Damakta peteşi görünce üç soru. Mekanik mi: öksürük, kusma, ıkınma, yumuşak damakta emme travması (nedenini sözlü anlat). Enfeksiyöz mononükleoz mu: sert-yumuşak damak birleşiminde peteşi güzel bir klinik ipucudur; boğaz ağrısı, lenfadenopati, EBV; ampisilin verilirse döküntü. Trombositopeni mi: bas ve bak, solmaz; dişeti kanaması, ekimoz; tam kan sayımı, lösemi, ITP, ilaç. Kanamalı işlemden önce trombosit sayısı."))
 M2.insert(find(M2, key="21B") + 1, S(src=None, make=M2_PRACTICAL["pj"], dur=25, title="Dudakta çil gibi lekeler: Peutz-Jeghers",
     notes="Dudaklarda ve ağız içinde çil gibi çok sayıda kahverengi makül: Peutz-Jeghers. Otozomal dominant, STK11. Bağırsakta hamartomatöz polipler, invajinasyon ve kanser riski. Tanıyı ağızdan koyan siz olabilirsiniz: gastroya gönderin, aileyi taratın. Ayırıcıda Addison, Laugier-Hunziker ve ilaç pigmentasyonu."))
 for key, dur in [(("src", 1), 90), (("src", 9), 65), (("src", 14), 65), (("src", 17), 65), (("src", 18), 50), (("src", 20), 50), (("src", 26), 65), (("src", 23), 65),
-                 (("src", 32), 80), (("src", 25), 35), (("src", 33), 35), (("src", 34), 40), (("src", 28), 35), (("src", 29), 35), (("src", 30), 60), (("src", 35), 40), (("src", 36), 40), (("src", 39), 20), (("key", "22B"), 35)]:
+                 (("src", 32), 75), (("src", 25), 30), (("src", 33), 35), (("src", 34), 40), (("src", 28), 35), (("src", 7), 35), (("src", 10), 55), (("src", 11), 65), (("src", 13), 40), (("src", 15), 55), (("src", 16), 40), (("src", 27), 65), (("src", 37), 40), (("src", 38), 40), (("src", 29), 35), (("src", 30), 60), (("src", 35), 40), (("src", 36), 40), (("src", 39), 20), (("key", "22B"), 35)]:
     M2[find(M2, **{key[0]: key[1]})]["dur"] = dur
 M2[find(M2, cloud={"q": "W11", "from": "prev"})]["dur"] = 35
+for key, dur in [(("src", 9), 60), (("src", 14), 60), (("src", 23), 55), (("src", 26), 60), (("src", 35), 35), (("src", 36), 35)]:
+    M2[find(M2, **{key[0]: key[1]})]["dur"] = dur
+M2[[i for i, it in enumerate(M2) if it.get("make") is M2_PRACTICAL["neden"]][0]]["dur"] = 35
+M2[[i for i, it in enumerate(M2) if it.get("make") is m2_dysplasia_micro][0]]["dur"] = 50
 
 M2_NOTES = dict(B.M2_NOTES)
+_old21b = M2_NOTES["21B"]
+M2_NOTES["21B"] = lambda s: _old21b(s).replace("yarısından fazlasında boyun metastazı var ve prognoz kötü", "önemli bir kısmında tanı anında boyun metastazı var; beş yıllık sağkalım yüzde 15–20 civarı")
 M2_NOTES[7] = lambda s: s + " Sıradaki slaytta mekanizmaların listesi var."
 M2_NOTES[8] = lambda s: "Çerçevemizin adı 3G: gazlı bezle gider mi, gerince geçer mi, gerekçesi var mı? Ama akışa girmeden önce kırmızı bayrak: dil kenarı ya da ağız tabanında yerleşen, kırmızı alanı, sertliği ya da ülseri olan lezyon beklemez, doğrudan biyopsiye gider; açılış hastamız tam bu kutuda. Üçüncü soru da yeni: tanınabilir bir tablo mu? Liken planusun dantelini, süngerimsi nevüsü, kıllı lökoplakiyi tanırsanız lökoplaki demezsiniz. Tütünü nedenler kutusundan çıkardım: sigara içen hastanın plağına 'bırak, bekle' denmez. " + s
 M2_NOTES[10] = lambda s: "Üstteki dört fotoğraf ile alttaki dört kart artık aynı tablolar: linea alba, yanak ısırma, Fordyce, nikotinik stomatit. Fotoğrafsız üç tablo ve tuzak alt şeritte. " + s
