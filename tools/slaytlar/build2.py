@@ -50,12 +50,12 @@ def text_rows(img, box, dark_thresh=140):
 def m1_s1_teaser(img):
     d = ImageDraw.Draw(img)
     rrect(d, (112, 880, 1180, 985), 18, YELLOW)
-    d.text((140, 902), "Açılış vakası: 4 ay, 2 diş hekimi, tanı yok.", font=F("serif", 40), fill=NAVY)
+    d.text((140, 902), "Dört aydır geçmeyen yaralar, iki diş hekimi, tanı yok.", font=F("serif", 40), fill=NAVY)
 
 def m2_s1_teaser(img):
     d = ImageDraw.Draw(img)
     rrect(d, (112, 880, 1215, 985), 18, YELLOW)
-    d.text((140, 902), "Açılış vakası: 6 ay, dil kenarında plak, 40 paket-yıl.", font=F("serif", 40), fill=NAVY)
+    d.text((140, 902), "Altı aydır dilde silinmeyen bir plak, kırk paket-yıl.", font=F("serif", 40), fill=NAVY)
 
 def m1_s4_hide(img):
     """Opening case without the back photo and without Nikolsky: the surprise is kept for the return."""
@@ -74,7 +74,7 @@ def m1_s4_hide(img):
     rrect(d, (1459, 200, 1833, 576), 14, NAVY2)
     ctext(d, 1646, 290, "?", F("serif", 150), YELLOW)
     fb = F("bold", 24)
-    for i, ln in enumerate(wrap(fb, "Hastanın geri kalanı: vakaya dönüşte", 330)):
+    for i, ln in enumerate(wrap(fb, "Devamı dersin sonunda", 330)):
         ctext(d, 1646, 490 + i * 32, ln, fb, SOFT)
 
 def m1_s4_reveal(img):
@@ -86,7 +86,7 @@ def m1_s4_reveal(img):
     rrect(d, (1062, 625, 1833, 890), 18, YELLOW)
     fb = F("serif", 36)
     y = 660
-    for ln in wrap(fb, "Vakaya dönüş: iki yeni bulgu. Sırtta kabarcıklar ve Nikolsky pozitif. Şimdi tahminini yenile.", 700):
+    for ln in wrap(fb, "İki bulgu daha: sırtta kabarcıklar, Nikolsky pozitif. Tahminin değişti mi?", 700):
         d.text((1100, y), ln, font=fb, fill=NAVY); y += 48
     top_right_tag(img, "VAKAYA DÖNÜŞ", PINK, WHITE)
 
@@ -101,13 +101,13 @@ def m1_s6_bridge(img):
         pill(d, (x0 + x1) / 2 - w / 2, 760, lab, f, PINK, WHITE, padx=20, pady=9)
     rrect(d, (86, 830, 1829, 965), 18, YELLOW)
     fb = F("serif", 34)
-    lines = wrap(fb, "Söz: bu üç soruyu soran öğrenci, DUS'taki büllöz hastalık sorularının çoğunu ezberlemeden çözer.", 1650)
+    lines = wrap(fb, "Bu üç soruyu sormayı öğrenen, DUS'un büllöz hastalık sorularının çoğunu ezberlemeden çözer.", 1650)
     y = 898 - len(lines) * 22
     for ln in lines:
         ctext(d, 957, y, ln, fb, NAVY); y += 44
 
 def m1_roadmap_tag(img):
-    top_right_tag(img, "YOL HARİTASI · SONDA DOLACAK", YELLOW, NAVY)
+    top_right_tag(img, "Yol haritası", YELLOW, NAVY)
 
 def m1_s8_map(img):
     """Liken planus belongs to the lining mucosa (cheek), not the tongue dorsum."""
@@ -124,7 +124,7 @@ def m1_s23_isg(img):
     top_right_tag(img, "ISG 1990 ölçütleri", YELLOW, NAVY)
 
 def m1_s34_promise(img):
-    top_right_tag(img, "SÖZ VERMİŞTİM: 3D, DUS'U ÇÖZER", YELLOW, NAVY)
+    top_right_tag(img, "3D: Dağılım · Düzey · Desen", YELLOW, NAVY)
 
 NEVILLE5 = "Neville BW, Damm DD, Allen CM, Chi AC. Oral and Maxillofacial Pathology. 5. baskı. Elsevier; 2023. (Klinik fotoğraflar)"
 
@@ -137,7 +137,7 @@ def refs_edit(img, neville_row, cta_box):
     d.text((118, y0 - 9), NEVILLE5, font=f, fill=NAVY)
     rrect(d, cta_box, 18, PINK)
     fb = F("serif", 34)
-    lines = wrap(fb, "Ödev: evde tekrarı 3 Kasım'a kadar bitir. İlk üç isim bir sonraki derste perdede.", cta_box[2] - cta_box[0] - 60)
+    lines = wrap(fb, "Evde tekrarı 3 Kasım'a kadar bir kez geçin. İlk üçü gelecek derste burada anarım.", cta_box[2] - cta_box[0] - 60)
     y = (cta_box[1] + cta_box[3]) / 2 - len(lines) * 22
     for ln in lines:
         d.text((cta_box[0] + 32, y), ln, font=fb, fill=WHITE); y += 44
@@ -153,9 +153,9 @@ def m2_s8_algo(img):
     # red flag first
     rrect(d, (86, 200, 1829, 292), 16, PINK)
     fb = F("bold", 28)
-    rich_line(d, 112, 218, [("Önce kırmızı bayrak: ", F("black", 28), YELLOW),
-                            ("dil kenarı ya da ağız tabanı, kırmızı alan, sertlik ya da ülser → beklemeden biyopsi.", fb, WHITE)])
-    d.text((112, 254), "Bu lezyon aşağıdaki akışa girmez.", font=F("sans", 22), fill=ROSE)
+    rich_line(d, 112, 218, [("Önce şuna bak: ", F("black", 28), YELLOW),
+                            ("dil kenarı ya da ağız tabanında, kırmızı alanı, sertliği ya da ülseri olan lezyon beklemez, biyopsiye gider.", fb, WHITE)])
+    d.text((112, 254), "Gerisi için üç soru:", font=F("sans", 22), fill=ROSE)
     # question row
     xs = [86, 448, 810, 1172, 1534]; w = 292; y0, y1 = 330, 455
     qs = ["Gazlı bezle silinir mi?", "Germekle kaybolur mu?", "Tanınabilir bir tablo mu?",
@@ -191,7 +191,7 @@ def m2_s8_algo(img):
     # frame legend
     rrect(d, (86, 830, 1829, 972), 16, NAVY2)
     rich_line(d, 116, 850, [("3G  ", F("black", 30), YELLOW), ("= Gazlı bezle gider mi?  ·  Gerince geçer mi?  ·  Gerekçesi var mı?", F("bold", 28), WHITE)])
-    d.text((116, 900), "Gerekçe: tanınabilir bir tablo ya da belirgin bir neden. İkisi de yoksa adı lökoplaki, yolu biyopsi.", font=F("sans", 24), fill=SOFT)
+    d.text((116, 900), "Gerekçe: tanınabilir bir tablo ya da belirgin bir neden. İkisi de yoksa buna lökoplaki diyoruz ve biyopsi alıyoruz.", font=F("sans", 24), fill=SOFT)
 
 def m2_s10_cards(img):
     d = ImageDraw.Draw(img); bg = bgcolor(img)
@@ -417,8 +417,8 @@ M2_PRACTICAL = {
     ("Kırmızı", ["Epitel atrofisi, keratin kaybı", "İltihap ve vazodilatasyon, damar artışı", "Eritroplakide epitel keratin yapamayacak kadar olgunlaşmamış ya da incelmiştir: displazinin kırmızı görünmesinin nedeni budur", "Bu yüzden ağızda kırmızı, beyazdan tehlikelidir"], "pink")], lid="M2"),
  "nikotin": make_cards("Neler neler var: pipo, sıcak çay ve ters sigara", [
     ("Suçlu duman değil, sıcak", ["Nikotinik stomatit: pipo ve sıcak içecek; dumandaki kanserojen değil, ısı yapar", "Damak beyaz zemin, üstünde kırmızı noktalar: iltihaplı küçük tükürük bezi kanal ağızları"], ""),
-    ("Bırakınca geçer", ["Sigara ve sıcak bırakılınca geriler; premalign değil", "Yani: 'damağı yanmış çaycı' kanser adayı değil, sadece çayını fazla sıcak seviyor"], ""),
-    ("Ama neler neler var", ["Ters sigara içimi: yanan uç ağzın içinde (Hindistan, Güney Amerika, bizde de rastlanır)", "Bu artık DSÖ 2020 potansiyel malign bozukluklar listesinde: damak lezyonu biyopsiye gider"], "pink")], lid="M2"),
+    ("Bırakınca geçer", ["Sigara ve sıcak bırakılınca geriler; premalign değil", "Çayını çok sıcak içen hastanın damağı korkutmasın; soğutmasını söyleyin"], ""),
+    ("Bir de şu var", ["Ters sigara içimi: yanan uç ağzın içinde (Hindistan, Güney Amerika, bizde de rastlanır)", "Bu artık DSÖ 2020 potansiyel malign bozukluklar listesinde: damak lezyonu biyopsiye gider"], "pink")], lid="M2"),
  "kese": make_cards("Dumansız tütün keratozu ve Maraş otu", [
     ("Tütün kesesi keratozu", ["Tütünün tutulduğu vestibülde gri-beyaz, kırışık alan: 'cezir sonrası kum' gibi", "Verrüköz karsinomla ilişkili ('snuff dipper's cancer')"], ""),
     ("Bırakınca ne olur?", ["Yoğun beyaz olmayan lezyonların %98'i iki haftada düzelir", "6 haftada gerilemeyen lezyon gerçek lökoplaki sayılır: biyopsi"], ""),
@@ -484,7 +484,7 @@ M1.insert(find(M1, src=24) + 1, S(src=24, dur=35, q="W13", key="24Q", strip={1},
 M1[find(M1, src=29)].update(title="Biyopsiyi nereden alırsın?", notes="Fotoğrafta pemfigus şüpheli bir erozyon. Biyopsiyi nereden alırsınız? Telefonda fotoğrafa dokunun. (Isı haritası.) Doğru yer lezyonun kenarı: erozyonla sağlam görünen mukozanın sınırı, yani perilezyonel. Ortadan alınan parçada epitel yoktur, yarığın düzeyini göremem; uzaktan alınan parçada yarık yoktur. Kenar, iki kavanoz, hemen.")
 M1[find(M1, src=29)]["strip"] = {1, 2, 3}
 M1.insert(find(M1, src=30), S(src=4, dur=30, key="4R", edits=[m1_s4_reveal], title="Vakaya dönüş: hastanın geri kalanı",
-                               notes="Söz verdiğim iki bulgu: son iki haftada sırtta kolay patlayan kabarcıklar; sağlam görünen mukozaya parmakla bastırıp kaydırınca epitel kayıyor, Nikolsky pozitif. Önce ağız, sonra deri. Şimdi tahmininizi yenileyin; sıradaki slaytta ilk tahminle karşılaştıracağız."))
+                               notes="Başta sakladığım iki bulgu: son iki haftada sırtta kolay patlayan kabarcıklar; sağlam görünen mukozaya parmakla bastırıp kaydırınca epitel kayıyor, Nikolsky pozitif. Önce ağız, sonra deri. Şimdi tahmininizi yenileyin; sıradaki slaytta ilk tahminle karşılaştıracağız."))
 M1[find(M1, src=31)]["dur"] = 50
 M1[find(M1, src=30)]["dur"] = 45
 M1[find(M1, src=34)]["edits"] = [m1_s34_promise]
@@ -511,8 +511,8 @@ M1_NOTES[15] = rep("Diğer şıkları da az önce gördük; her biri başka bir 
 M1_NOTES[23] = rep("Uluslararası kriterlere göre tanı için", "1990 ISG ölçütlerine göre tanı için")
 _old23 = M1_NOTES[23]
 M1_NOTES[23] = lambda s: _old23(s) + " Daha yeni ICBD 2014 puanlamasında ağız ülseri zorunlu değil; sınavda sorulan hâlâ ISG."
-M1_NOTES[34] = lambda s: "Söz vermiştim: üç soru, yani 3D, DUS'un büllöz sorularını çözer; beş cümle bunun özeti. " + s
-M1_NOTES[36] = lambda s: s + " Ödev: evde tekrar modülünü 3 Kasım'a kadar bitirin; ilk üç ismi bir sonraki derste perdede göstereceğim."
+M1_NOTES[34] = lambda s: "Dersin başında üç soru demiştim; bu beş cümle onların özeti. " + s
+M1_NOTES[36] = lambda s: s + " Evde tekrarı 3 Kasım'a kadar bir kez geçin; ilk üçü gelecek derste burada anarım."
 M1_NOTES["32B"] = lambda s: B.M1_NOTES["32B"](s).replace("Şimdi hastalıkları yerleştirelim. ", "Dersin başındaki boş tabloya döndük; şimdi hastalıkları yerleştirelim. ")
 
 
@@ -564,7 +564,7 @@ M1_QADD = [
 M2 = copy.deepcopy(B.M2_PLAN)
 M2[find(M2, src=1)]["edits"] = [m2_s1_teaser]
 M2[find(M2, src=3)] = S(cloud={"q": "W11", "from": "prev"}, dur=45, title="Geçen dersin çıkış bileti",
-                        notes="Söz vermiştim: ilk dersin çıkış biletindeki en büyük kelime bu. (Buluta bak; en büyük kelimeyi iki cümleyle cevapla, ikinciyi de söyle.) Sonra beyaz lezyonlara geçiyoruz. Önceki oturum bulunamadıysa bu slaytı → ile atla.")
+                        notes="İlk dersin sonunda en çok kafa karıştıran konuyu sormuştum; en büyük kelime bu. (Buluta bak; en büyük kelimeyi iki cümleyle cevapla, ikinciyi de söyle.) Sonra beyaz lezyonlara geçiyoruz. Önceki oturum bulunamadıysa bu slaytı → ile atla.")
 M2[find(M2, src=8)].update(edits=[m2_s8_algo], strip={1, 2, 3})
 M2[find(M2, src=9)]["dur"] = 75
 M2[find(M2, src=10)].update(edits=[m2_s10_cards], strip={1, 2})
@@ -595,7 +595,7 @@ M2[find(M2, src=7)].update(edits=[m2_s7_cannon], dur=40)
 M2.insert(find(M2, src=7) + 1, S(src=None, make=M2_PRACTICAL["neden"], dur=40, title="Neden beyaz, neden kırmızı? Mekanizmalar",
     notes="Mekanizmayı bir kez anlayın, listeyi ezberlemeyin. Beyaz: kalınlaşmış keratin tükürükle ıslanınca su emer ve opaklaşır; deride nasır, bulaşık suyunda kalan parmak ucu gibi. Akantoz damar rengini örter. Hücre içi ödem lökoödem yapar. Yüzeydeki psödomembran kandida ya da nekrozdur. Damarlanmanın azalması ve fibroz submüköz fibroz. Kırmızı: epitel atrofisi, keratin kaybı, iltihap ve vazodilatasyon, damar artışı. Eritroplakide epitel keratin yapamayacak kadar olgunlaşmamış ya da incelmiştir; displazinin kırmızı görünmesinin nedeni bu."))
 M2.insert(find(M2, src=10) + 1, S(src=None, make=M2_PRACTICAL["nikotin"], dur=35, strip={1, 2}, title="Neler neler var: pipo, sıcak çay ve ters sigara",
-    notes="Nikotinik stomatitte suçlu duman değil, sıcak: pipo ve sıcak içecek. Damak beyazlaşır, üstündeki kırmızı noktalar iltihaplı küçük tükürük bezi kanal ağızları. Bırakınca geriler, premalign değil; damağı yanmış çaycı kanser adayı değil. Ama neler neler var: ters sigara içimi, yanan uç ağzın içinde. O artık DSÖ 2020 potansiyel malign bozukluklar listesinde; damaktaki lezyon biyopsiye gider."))
+    notes="Nikotinik stomatitte suçlu duman değil, sıcak: pipo ve sıcak içecek. Damak beyazlaşır, üstündeki kırmızı noktalar iltihaplı küçük tükürük bezi kanal ağızları. Bırakınca geriler, premalign değil; çayını çok sıcak içen hastaya soğutmasını söylemek yeter. Bir de şu var: ters sigara içimi, yanan uç ağzın içinde. O artık DSÖ 2020 potansiyel malign bozukluklar listesinde; damaktaki lezyon biyopsiye gider."))
 M2.insert(find(M2, src=10) + 2, S(src=None, make=M2_PRACTICAL["kese"], dur=40, strip={1, 2, 3}, title="Dumansız tütün keratozu ve Maraş otu",
     notes="Tütün kesesi keratozu: tütünün tutulduğu vestibülde gri-beyaz, kırışık, cezir sonrası kum gibi bir alan; verrüköz karsinomla ilişkili. Tütün bırakılınca yoğun beyaz olmayan lezyonların yüzde 98'i iki haftada düzelir; altı haftada gerilemeyen lezyon gerçek lökoplaki sayılır, biyopsi. Yerel not: Kahramanmaraş ve çevresinde Maraş otu, Nicotiana rustica artı odun külü, alt dudak vestibülünde tutulur; kullanıcılarda lökoplaki sık bildirilmiş, ağız kanseriyle ilişkisi tartışmalı. Maraşlı hastanın dudağını kaldırıp bakın."))
 M2.insert(find(M2, src=16) + 1, S(src=None, make=M2_PRACTICAL["freud"], dur=35, strip={3}, title="Freud'un damağı: 33 ameliyat ve alan kanserizasyonu",
@@ -623,7 +623,7 @@ M2_NOTES = dict(B.M2_NOTES)
 _old21b = M2_NOTES["21B"]
 M2_NOTES["21B"] = lambda s: _old21b(s).replace("yarısından fazlasında boyun metastazı var ve prognoz kötü", "önemli bir kısmında tanı anında boyun metastazı var; beş yıllık sağkalım yüzde 15–20 civarı")
 M2_NOTES[7] = lambda s: s + " Sıradaki slaytta mekanizmaların listesi var."
-M2_NOTES[8] = lambda s: "Çerçevemizin adı 3G: gazlı bezle gider mi, gerince geçer mi, gerekçesi var mı? Ama akışa girmeden önce kırmızı bayrak: dil kenarı ya da ağız tabanında yerleşen, kırmızı alanı, sertliği ya da ülseri olan lezyon beklemez, doğrudan biyopsiye gider; açılış hastamız tam bu kutuda. Üçüncü soru da yeni: tanınabilir bir tablo mu? Liken planusun dantelini, süngerimsi nevüsü, kıllı lökoplakiyi tanırsanız lökoplaki demezsiniz. Tütünü nedenler kutusundan çıkardım: sigara içen hastanın plağına 'bırak, bekle' denmez. " + s
+M2_NOTES[8] = lambda s: "Çerçevemizin adı 3G: gazlı bezle gider mi, gerince geçer mi, gerekçesi var mı? Ama akışa girmeden önce şuna bakın: dil kenarı ya da ağız tabanında yerleşen, kırmızı alanı, sertliği ya da ülseri olan lezyon beklemez, doğrudan biyopsiye gider; açılış hastamız tam bu kutuda. Üçüncü soru da yeni: tanınabilir bir tablo mu? Liken planusun dantelini, süngerimsi nevüsü, kıllı lökoplakiyi tanırsanız lökoplaki demezsiniz. Tütünü nedenler kutusundan çıkardım: sigara içen hastanın plağına 'bırak, bekle' denmez. " + s
 M2_NOTES[10] = lambda s: "Üstteki dört fotoğraf ile alttaki dört kart artık aynı tablolar: linea alba, yanak ısırma, Fordyce, nikotinik stomatit. Fotoğrafsız üç tablo ve tuzak alt şeritte. " + s
 M2_NOTES[13] = rep("Güncel sınıflama bunları düşük ve yüksek dereceli diye ikiye de ayırıyor. Sizin için pratik karşılığı: rapor 'ağır displazi' diyorsa bu lezyon artık izlenmez, çıkarılır.",
                    "Yerleşik sistem hâlâ üç basamaklı: hafif, orta, ağır; ağızda karsinoma in situ ağır displaziyle eş anlamlı sayılıyor. İki basamaklı sistem bir öneri: düşük dereceli hafif displazi, yüksek dereceli orta ve ağır; epitelin ne kadarının tutulduğuna değil kriter sayısına bakıyor. Sizin için pratik karşılığı: rapor 'ağır displazi' diyorsa bu lezyon artık izlenmez, çıkarılır.")
@@ -633,7 +633,7 @@ M2_NOTES[15] = rep("uzun takipte hastaların yaklaşık yüzde 60'ında karsinom
 M2_NOTES[27] = rep("Hastaların dörtte üçünden fazlasında vücuttaki tek çalışan tiroid dokusu.", "Hastaların yaklaşık yüzde 70'inde vücuttaki tek tiroid dokusu.")
 M2_NOTES[37] = rep("İki: lökoplaki bir kelime, tanıyı biyopsi koyar.", "İki: silinmeyen, nedeni bulunmayan beyaz plak bekletilmez; lökoplaki bir kelime, tanıyı biyopsi koyar.")
 M2_NOTES[38] = lambda s: s.replace("en büyük kelimeyle bir sonraki derse başlayacağım", "en büyük kelimeyi bir sonraki dersin başında cevaplayacağım")
-M2_NOTES[39] = lambda s: s + " Ödev: evde tekrar modülünü 3 Kasım'a kadar bitirin; ilk üç ismi bir sonraki derste perdede göstereceğim."
+M2_NOTES[39] = lambda s: s + " Evde tekrarı 3 Kasım'a kadar bir kez geçin; ilk üçü gelecek derste burada anarım."
 
 W3_OPTS = ["İki hafta antifungal verip izlerim", "En şüpheli alandan insizyonel biyopsi", "Lazerle buharlaştırırım, biyopsiye gerek yok", "Altı ay sonra kontrole çağırırım", "Fırça sitolojisi yeterli"]
 M2_QEDIT = {
@@ -652,10 +652,10 @@ if __name__ == "__main__":
     if os.path.exists(B.OUT): shutil.rmtree(B.OUT)
     B.build_lesson("M1", M1, qdrop={"W7"}, qedit=M1_QEDIT, note_edit=M1_NOTES, qadd=M1_QADD,
                    strip_cfg=(("1 Dağılım", "2 Düzey", "3 Desen"), "3D"),
-                   cta="Evde tekrarı 3 Kasım'a kadar bitir; ilk üç isim bir sonraki derste perdede.", frame="3D: Dağılım, Düzey, Desen")
+                   cta="Evde tekrarı 3 Kasım'a kadar bir kez geçin. İlk üçü gelecek derste burada anarım.", frame="3D: Dağılım, Düzey, Desen")
     B.build_lesson("M2", M2, qdrop={"W1", "W2", "W10", "W12"}, qedit=M2_QEDIT, note_edit=M2_NOTES,
                    strip_cfg=(("1 Gider mi", "2 Geçer mi", "3 Gerekçe"), "3G"),
-                   cta="Evde tekrarı 3 Kasım'a kadar bitir; ilk üç isim bir sonraki derste perdede.", frame="3G: Gazlı bezle gider mi, gerince geçer mi, gerekçesi var mı?")
+                   cta="Evde tekrarı 3 Kasım'a kadar bir kez geçin. İlk üçü gelecek derste burada anarım.", frame="3G: Gazlı bezle gider mi, gerince geçer mi, gerekçesi var mı?")
     idx = json.load(open(os.path.join(B.ORIG_JSON, "index.json"), encoding="utf-8"))
     for e in idx:
         L = json.load(open(os.path.join(B.ROOT, "dersler", e["id"] + ".json"), encoding="utf-8")); e["n"] = len(L["questions"])
