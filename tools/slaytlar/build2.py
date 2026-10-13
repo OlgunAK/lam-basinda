@@ -287,6 +287,121 @@ def m2_s37_line2(img):
     d.rectangle((195, 400, 1900, 470), fill=NAVY)
     d.text((219, 408), "Silinmeyen, nedeni bulunmayan beyaz plak bekletilmez; tanıyı biyopsi koyar.", font=F("sans", 36), fill=WHITE)
 
+
+# ================= generated "practical" slides (M1) =================
+def _footer_from(lid, n):
+    base = Image.open(os.path.join(B.ORIG, lid, "%02d.jpg" % n)).convert("RGB")
+    bg = bgcolor(base)
+    img = Image.new("RGB", (1920, 1080), bg)
+    img.paste(base.crop((0, 1000, 1920, 1080)), (0, 1000))
+    ImageDraw.Draw(img).rectangle((1700, 1000, 1920, 1080), fill=bg)
+    return img
+
+def photo_frame(img, box, fn, cap, sub=None, dark=False):
+    d = ImageDraw.Draw(img)
+    path = os.path.join(IMG, fn)
+    inner = (box[0], box[1], box[2], box[3] - (72 if sub else 56))
+    if os.path.exists(path):
+        ph = Image.open(path).convert("RGB")
+        w, h = inner[2] - inner[0], inner[3] - inner[1]
+        r = max(w / ph.width, h / ph.height)
+        ph = ph.resize((int(ph.width * r) + 1, int(ph.height * r) + 1))
+        ph = ph.crop(((ph.width - w) // 2, (ph.height - h) // 2, (ph.width - w) // 2 + w, (ph.height - h) // 2 + h))
+        img.paste(ph, (inner[0], inner[1]))
+    else:
+        d.rectangle(inner, fill=(226, 218, 236) if not dark else (70, 58, 98))
+        fp = F("italic", 24)
+        for i, ln in enumerate(wrap(fp, "Fotoğraf yeri: %s. Dosya: canli/img/%s (slayt yeniden üretilince yerleşir)." % (cap, fn), inner[2] - inner[0] - 60)):
+            ctext(d, (inner[0] + inner[2]) / 2, (inner[1] + inner[3]) / 2 - 30 + i * 32, ln, fp, GREY if not dark else SOFT)
+    d.rectangle((box[0], inner[3], box[2], box[3]), fill=NAVY)
+    d.text((box[0] + 18, inner[3] + 10), cap, font=F("bold", 26), fill=WHITE)
+    if sub: d.text((box[0] + 18, inner[3] + 42), sub, font=F("sans", 18), fill=SOFT)
+
+def make_cards(title, cards, photo=None, kicker=None):
+    """cards: list of (heading, lines, accent). photo: (file, caption, sub) on the left."""
+    def build():
+        img = _footer_from("M1", 13)
+        d = ImageDraw.Draw(img)
+        d.rectangle((880, 1000, 1700, 1080), fill=bgcolor(img))   # no photo credit on generated slides
+        d.text((86, 72), title, font=F("serif", 54 if len(title) < 46 else 46), fill=NAVY)
+        x0, y0, x1, y1 = 86, 190, 1834, 985
+        if photo:
+            photo_frame(img, (86, 190, 760, 985), *photo)
+            x0 = 800
+        if kicker:
+            rrect(d, (x0, y0, x1, y0 + 70), 14, YELLOW)
+            d.text((x0 + 24, y0 + 18), kicker, font=F("bold", 27), fill=NAVY)
+            y0 += 90
+        n = len(cards)
+        cols = 1 if photo else (n if n <= 3 else 2)
+        rows = (n + cols - 1) // cols
+        gap = 22
+        cw = (x1 - x0 - gap * (cols - 1)) / cols
+        fh = F("serif", 34)
+        pad = 26
+        def layout(size):
+            fb = F("sans", size)
+            heights = []
+            for head, lines, acc in cards:
+                h = pad + 50
+                for ln in lines:
+                    h += len(wrap(fb, ln, cw - 2 * pad - 30)) * size * 1.32 + 8
+                heights.append(h + pad - 8)
+            return fb, heights
+        for size in (31, 29, 27, 25, 23):
+            fb, heights = layout(size)
+            row_h = [max(heights[r * cols:(r + 1) * cols]) for r in range(rows)]
+            if sum(row_h) + gap * (rows - 1) <= y1 - y0: break
+        y = y0
+        for r in range(rows):
+            for c in range(cols):
+                i = r * cols + c
+                if i >= n: break
+                head, lines, acc = cards[i]
+                box = (int(x0 + c * (cw + gap)), int(y), int(x0 + c * (cw + gap) + cw), int(y + row_h[r]))
+                rrect(d, box, 16, ROSE if acc == "pink" else LILAC)
+                yy = box[1] + pad
+                d.text((box[0] + pad, yy), head, font=fh, fill=PINK if acc == "pink" else PURPLE); yy += 50
+                for ln in lines:
+                    for j, sub in enumerate(wrap(fb, ln, cw - 2 * pad - 30)):
+                        d.text((box[0] + pad, yy), ("•  " if j == 0 else "    ") + sub, font=fb, fill=NAVY); yy += fb.size * 1.32
+                    yy += 8
+            y += row_h[r] + gap
+        return img
+    return build
+
+M1_PRACTICAL = {
+ "pemfigus": make_cards("Pemfigus hastası koltukta: diş hekimi için pratik", [
+    ("Uzun süre steroid alıyor", ["Adrenal supresyon: stres dozu gerekebilir, hekimine danışın", "Enfeksiyona yatkınlık; kandida sık, ağızda beyaz plağı yanlış okumayın"], ""),
+    ("Koltukta", ["Randevular kısa, travma az; Nikolsky pozitif mukozayı çekiştirmeyin", "Dudakları kayganlaştırın; ekartör ve aspiratörü nazik kullanın"], ""),
+    ("İyi haber", ["Dişeti lezyonları iyi ağız hijyeniyle belirgin azalır", "Plak kontrolü tedavinin parçasıdır; hastayı sık görün"], "pink")]),
+ "mmp": make_cards("Pemfigoid yalnız ağızdaysa: tedavi diş hekimiyle başlar", [
+    ("Güçlü topikal steroid", ["Klobetazol %0,05 merhem ya da jel, lezyona günde 2 kez", "Kandida için izleyin; gerekirse antifungal ekleyin"], ""),
+    ("Dişeti için esnek plak (tray)", ["Steroidi plağın içine koyup dişetine oturtun: ilaç yerinde kalır", "Günde 2 kez 10–15 dakika"], ""),
+    ("Hijyen tedavidir", ["İyi ağız hijyeni steroid ihtiyacını azaltır", "Göz, burun, genital tutulum ya da yaygın hastalıkta sistemik tedavi: dermatoloji ve göz"], "pink")]),
+ "sjs": make_cards("Dudakta kanlı kabuk: SJS/TEN ve diş hekimi bağlantısı", [
+    ("Trigeminal nevralji sizden geçer", ["Hastayı ilk gören çoğu zaman diş hekimidir; karbamazepini diş hekimi de yazabilir", "En sık tetikleyiciler: antiepileptikler, sülfonamidler, allopurinol"], ""),
+    ("İlaçtan sonraki haftalarda", ["Ateş, boğaz ağrısı, göz yanması, dudakta kabuk", "= ilacı kes, hastaneye gönder; saatler önemli"], "pink"),
+    ("SJS ve TEN", ["Eritema multiforme'nin ağır kuzenleri; deri soyulması <%10 SJS, >%30 TEN", "Ağız neredeyse her zaman tutulur: ilk belirti dudak ve ağızda olabilir"], "")]),
+ "hsv_tx": make_cards("Herpes: tedavi", [
+    ("Primer gingivostomatit", ["İlk 72 saatte asiklovir süspansiyon 15 mg/kg (en çok 200 mg/doz), günde 5 kez, 5–7 gün; 'çalkala-yut'", "Ateş ve ağrı: parasetamol/ibuprofen. Çocukta viskoz lidokain (nöbet) ve benzokain (methemoglobinemi) kullanılmaz"], ""),
+    ("Herpes labialis", ["Prodromda valasiklovir 2 g, 12 saat sonra 2 g (tek gün); topikal pensiklovir iyileşmeyi yalnızca ~1 gün kısaltır", "Diş işleminin tetiklediği tekrarlarda işlem günü profilaksi"], ""),
+    ("Sürekli baskılayıcı tedavi", ["Yılda 6'dan fazla atak, HSV'ye bağlı eritema multiforme, immünsupresyon"], "pink")],
+    photo=("zoster_trigeminal.jpg", "Zona (VZV): trigeminal dermatom", "Tek taraflı, orta hatta durur; ağızda da aynı taraf")),
+ "hsv_tx2": make_cards("Herpes bulaşır: hasta, hekim ve ekip", [
+    ("Aktif uçukta elektif tedavi ertelenir", ["Kabuklanmaya kadar bekleyin: hastayı, ekibi ve aerosolle yayılmayı düşünün", "Acil işlem gerekiyorsa koruyucu ekipman ve lastik örtü"], "pink"),
+    ("Herpetik dolama (whitlow)", ["Eldiven öncesi dönemde diş hekimlerinin parmağında meslek hastalığıydı", "Ağrılı, veziküler parmak; apse sanıp açmayın"], ""),
+    ("Hastaya söyleyin", ["Dudak lezyonu varken göze dokunmasın; lens takanlar dikkat", "Bebeği öpmesin: neonatal herpes"], "")],
+    photo=("herpetik_dolama.jpg", "Herpetik dolama (whitlow)", "Parmakta veziküller; diş hekiminin eski meslek hastalığı")),
+ "behcet": make_cards("Behçet hastası diş hekiminde", [
+    ("Ağız sağlığı hastalığı etkiler", ["Türk serilerinde (Mumcu ve ark.) kötü ağız sağlığı daha ağır hastalıkla ilişkili bulundu", "Periodontal bakım bir tedavi basamağıdır; hastayı düzenli görün"], ""),
+    ("İşlemden sonra alevlenme", ["Diş çekimi ya da periodontal tedavi sonrası ağız ülserlerinde geçici alevlenme bildirildi", "Hastayı önceden uyarın; romatoloğuyla haberleşin (kolşisin, immünsupresyon)"], "pink")]),
+ "mukozit": make_cards("Mukozit: kanıta dayalı önleme ve diş hekiminin rolü", [
+    ("Önleme (MASCC/ISOO 2020)", ["Ağız bakım protokolü: yumuşak fırça, florlu macun, alkolsüz gargara", "Oral kriyoterapi (buz emme, 30 dk): bolus 5-FU ve yüksek doz melfalan", "Fotobiyomodülasyon (düşük düzeyli lazer): kök hücre nakli ve baş-boyun RT", "Benzidamin gargarası: orta doz (<50 Gy) baş-boyun RT", "Palifermin (KGF-1): tüm vücut ışınlamalı otolog nakil", "Radyoterapide önleme amacıyla klorheksidin önerilmez"], ""),
+    ("Diş hekiminin rolü", ["Tedaviden önce enfeksiyon odaklarını temizleyin", "RT alanındaki umutsuz dişler RT'den en az 2 hafta önce çekilir: osteoradyonekroz riski RT sonrası çekimde en yüksek", "Kişiye özel flüor kaşıkları: radyasyon çürüğüne karşı", "Kemoterapide işlemi nötrofil ve trombosit sayısına göre zamanlayın"], "pink")],
+    kicker="DSÖ derecesi: 0 yok · 1 ağrı ± eritem · 2 eritem + ülser, katı yiyebilir · 3 ülser, yalnız sıvı · 4 ağızdan beslenemez"),
+}
+
 # ================= plans =================
 def find(plan, **k):
     for i, it in enumerate(plan):
@@ -347,6 +462,30 @@ M1_NOTES[23] = lambda s: _old23(s) + " Daha yeni ICBD 2014 puanlamasında ağız
 M1_NOTES[34] = lambda s: "Söz vermiştim: üç soru, yani 3D, DUS'un büllöz sorularını çözer; beş cümle bunun özeti. " + s
 M1_NOTES[36] = lambda s: s + " Ödev: evde tekrar modülünü 3 Kasım'a kadar bitirin; ilk üç ismi bir sonraki derste perdede göstereceğim."
 M1_NOTES["32B"] = lambda s: B.M1_NOTES["32B"](s).replace("Şimdi hastalıkları yerleştirelim. ", "Dersin başındaki boş tabloya döndük; şimdi hastalıkları yerleştirelim. ")
+
+
+# --- practical slides for the dentist (M1)
+M1.insert(find(M1, key="12Q") + 1, S(src=None, make=M1_PRACTICAL["pemfigus"], dur=35, strip={2, 3}, title="Pemfigus hastası koltukta: diş hekimi için pratik",
+    notes="Bu hasta size kadar gelecek; üç şeyi aklınızda tutun. Uzun süre steroid alıyor: adrenal supresyon var, stres dozu gerekebilir, hekimine danışın; enfeksiyona yatkın, kandida sık. Koltukta randevu kısa, travma az; Nikolsky pozitif mukozayı çekiştirmeyin, dudakları kayganlaştırın. İyi haber: dişeti lezyonları iyi ağız hijyeniyle belirgin azalır; plak kontrolü tedavinin parçası."))
+M1.insert(find(M1, src=13) + 1, S(src=None, make=M1_PRACTICAL["mmp"], dur=30, strip={2, 3}, title="Pemfigoid yalnız ağızdaysa: tedavi diş hekimiyle başlar",
+    notes="Yalnız ağız tutulumunda tedavi sizin elinizde: güçlü topikal steroid, klobetazol yüzde 0,05. Dişeti için esnek plak, yani tray: steroidi plağın içine koyup dişetine oturtursunuz, ilaç yerinde kalır. İyi ağız hijyeni steroid ihtiyacını azaltır. Göz ya da yaygın tutulumda sistemik tedavi; dermatoloji ve göz hekimi."))
+M1.insert(find(M1, src=17) + 1, S(src=None, make=M1_PRACTICAL["sjs"], dur=35, strip={1}, title="Dudakta kanlı kabuk: SJS/TEN ve diş hekimi bağlantısı",
+    notes="Diş hekimi bağlantısı: trigeminal nevraljili hastayı ilk gören çoğu zaman diş hekimidir ve karbamazepini diş hekimi de yazabilir. Başladıktan sonraki haftalarda ateş, boğaz ağrısı, göz yanması, dudakta kabuk görürseniz ilacı kesin, hastaneye gönderin; SJS ve TEN'de saatler önemli. Deri soyulması yüzde 10'un altında SJS, yüzde 30'un üstünde TEN; ağız neredeyse her zaman tutulur."))
+M1.insert(find(M1, src=20) + 1, S(src=None, make=M1_PRACTICAL["hsv_tx"], dur=40, strip={1}, title="Herpes: tedavi",
+    notes="Tedavi. Primer gingivostomatit: ilk 72 saatte asiklovir süspansiyon, 15 mg/kg, en çok 200 mg/doz, günde 5 kez, 5–7 gün, çalkala-yut. Ateş ve ağrı için parasetamol ya da ibuprofen; çocukta viskoz lidokain nöbet, benzokain methemoglobinemi yapar, kullanmayın. Herpes labialis: prodromda valasiklovir 2 gram, 12 saat sonra 2 gram, tek gün; topikal pensiklovir yalnızca bir gün kazandırır. Diş işleminin tetiklediği tekrarlarda işlem günü profilaksi. Yılda altıdan fazla atak, HSV'ye bağlı eritema multiforme ve immünsupresyonda sürekli baskılayıcı tedavi. Soldaki fotoğraf zona: trigeminal dermatom, tek taraflı, orta hatta durur."))
+M1.insert(find(M1, src=20) + 2, S(src=None, make=M1_PRACTICAL["hsv_tx2"], dur=30, strip={1}, title="Herpes bulaşır: hasta, hekim ve ekip",
+    notes="Bulaş. Aktif veziküler uçuk varken elektif tedaviyi kabuklanmaya kadar erteleyin: hastayı ve ekibi korumak, aerosolle yayılmayı önlemek için. Eldiven öncesi dönemde diş hekimlerinin parmağında herpetik dolama, whitlow, bir meslek hastalığıydı; fotoğraf solda. Hastaya da söyleyin: göze dokunmasın, bebeği öpmesin."))
+M1.insert(find(M1, src=23) + 1, S(src=None, make=M1_PRACTICAL["behcet"], dur=20, strip={1}, title="Behçet hastası diş hekiminde",
+    notes="Diş hekimi için: Türk serilerinde, Mumcu ve arkadaşları, kötü ağız sağlığı daha ağır hastalıkla ilişkili bulundu. Diş çekimi ya da periodontal tedavi sonrası ağız ülserlerinde geçici alevlenme bildirildi; hastayı önceden uyarın, romatoloğuyla haberleşin."))
+M1.insert(find(M1, src=25) + 1, S(src=None, make=M1_PRACTICAL["mukozit"], dur=45, optional=True, strip={1}, title="Mukozit: kanıta dayalı önleme ve diş hekiminin rolü",
+    notes="DSÖ derecelendirmesi üstte; önceki slayttaki tablo bununla uyumlu. Kanıta dayalı önleme, MASCC/ISOO 2020: ağız bakım protokolü; oral kriyoterapi bolus 5-FU ve yüksek doz melfalanda; fotobiyomodülasyon kök hücre nakli ve baş-boyun radyoterapisinde; benzidamin orta doz radyoterapide; palifermin tüm vücut ışınlamalı otolog nakilde; radyoterapide önleme için klorheksidin önerilmez. Diş hekiminin rolü: enfeksiyon odaklarını tedaviden önce temizleyin; radyoterapi alanındaki umutsuz dişleri en az iki hafta önce çekin, osteoradyonekroz riski radyoterapi sonrası çekimde en yüksek; kişiye özel flüor kaşıkları; kemoterapide nötrofil ve trombosit sayısına göre zamanlama."))
+# --- time trims to stay at 35:00
+for key, dur in [(("src", 1), 120), (("src", 2), 40), (("src", 7), 55), (("src", 9), 55), (("src", 11), 70), (("src", 13), 50), (("src", 22), 75),
+                 (("src", 14), 40), (("src", 17), 50), (("key", "18B"), 40), (("src", 20), 40), (("src", 21), 45), (("src", 23), 40), (("src", 16), 50),
+                 (("src", 26), 50), (("src", 28), 40), (("src", 30), 40), (("src", 31), 45), (("key", "32B"), 35), (("src", 34), 40), (("src", 35), 45),
+                 (("key", "32R"), 15), (("key", "27A"), 20), (("key", "27B"), 30), (("key", "12Q"), 30), (("key", "24Q"), 30), (("src", 33), 30), (("src", 25), 35), (("src", 36), 20)]:
+    M1[find(M1, **{key[0]: key[1]})]["dur"] = dur
+M1_NOTES[25] = lambda s: s + " DSÖ derecesi: 0 yok; 1 ağrı ve/veya eritem; 2 eritem ve ülser, katı yiyebilir; 3 ülser, yalnız sıvı; 4 ağızdan beslenemez. Tablo bununla uyumlu."
 
 M1_QEDIT = {
     "W3": {"label": "1 Dağılım: Nerede?"},
