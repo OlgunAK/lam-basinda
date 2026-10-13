@@ -317,10 +317,10 @@ def photo_frame(img, box, fn, cap, sub=None, dark=False):
     d.text((box[0] + 18, inner[3] + 10), cap, font=F("bold", 26), fill=WHITE)
     if sub: d.text((box[0] + 18, inner[3] + 42), sub, font=F("sans", 18), fill=SOFT)
 
-def make_cards(title, cards, photo=None, kicker=None):
+def make_cards(title, cards, photo=None, kicker=None, lid="M1"):
     """cards: list of (heading, lines, accent). photo: (file, caption, sub) on the left."""
     def build():
-        img = _footer_from("M1", 13)
+        img = _footer_from(lid, 13)
         d = ImageDraw.Draw(img)
         d.rectangle((880, 1000, 1700, 1080), fill=bgcolor(img))   # no photo credit on generated slides
         d.text((86, 72), title, font=F("serif", 54 if len(title) < 46 else 46), fill=NAVY)
@@ -400,6 +400,39 @@ M1_PRACTICAL = {
     ("Önleme (MASCC/ISOO 2020)", ["Ağız bakım protokolü: yumuşak fırça, florlu macun, alkolsüz gargara", "Oral kriyoterapi (buz emme, 30 dk): bolus 5-FU ve yüksek doz melfalan", "Fotobiyomodülasyon (düşük düzeyli lazer): kök hücre nakli ve baş-boyun RT", "Benzidamin gargarası: orta doz (<50 Gy) baş-boyun RT", "Palifermin (KGF-1): tüm vücut ışınlamalı otolog nakil", "Radyoterapide önleme amacıyla klorheksidin önerilmez"], ""),
     ("Diş hekiminin rolü", ["Tedaviden önce enfeksiyon odaklarını temizleyin", "RT alanındaki umutsuz dişler RT'den en az 2 hafta önce çekilir: osteoradyonekroz riski RT sonrası çekimde en yüksek", "Kişiye özel flüor kaşıkları: radyasyon çürüğüne karşı", "Kemoterapide işlemi nötrofil ve trombosit sayısına göre zamanlayın"], "pink")],
     kicker="DSÖ derecesi: 0 yok · 1 ağrı ± eritem · 2 eritem + ülser, katı yiyebilir · 3 ülser, yalnız sıvı · 4 ağızdan beslenemez"),
+}
+
+
+def m2_s7_cannon(img):
+    """Left photo on the white/red slide is a white sponge nevus: say so in the caption."""
+    d = ImageDraw.Draw(img)
+    bar = (86, 648, 695, 718)
+    col = img.getpixel((100, 700))
+    d.rectangle(bar, fill=col)
+    d.text((104, 660), "Beyaz süngerimsi nevüs (Cannon): kalıtsal", font=F("bold", 26), fill=WHITE)
+
+M2_PRACTICAL = {
+ "neden": make_cards("Neden beyaz, neden kırmızı? Mekanizmalar", [
+    ("Beyaz", ["Kalınlaşmış keratin tükürükle ıslanınca su emer ve opaklaşır: deride nasır, bulaşık suyunda kalan parmak ucu gibi", "Akantoz (kalın epitel) damar rengini örter", "Hücre içi ödem: lökoödem", "Yüzeyde psödomembran: kandida, nekroz", "Damarlanmanın azalması ve fibroz: submüköz fibroz"], ""),
+    ("Kırmızı", ["Epitel atrofisi, keratin kaybı", "İltihap ve vazodilatasyon, damar artışı", "Eritroplakide epitel keratin yapamayacak kadar olgunlaşmamış ya da incelmiştir: displazinin kırmızı görünmesinin nedeni budur", "Bu yüzden ağızda kırmızı, beyazdan tehlikelidir"], "pink")], lid="M2"),
+ "nikotin": make_cards("Neler neler var: pipo, sıcak çay ve ters sigara", [
+    ("Suçlu duman değil, sıcak", ["Nikotinik stomatit: pipo ve sıcak içecek; dumandaki kanserojen değil, ısı yapar", "Damak beyaz zemin, üstünde kırmızı noktalar: iltihaplı küçük tükürük bezi kanal ağızları"], ""),
+    ("Bırakınca geçer", ["Sigara ve sıcak bırakılınca geriler; premalign değil", "Yani: 'damağı yanmış çaycı' kanser adayı değil, sadece çayını fazla sıcak seviyor"], ""),
+    ("Ama neler neler var", ["Ters sigara içimi: yanan uç ağzın içinde (Hindistan, Güney Amerika, bizde de rastlanır)", "Bu artık DSÖ 2020 potansiyel malign bozukluklar listesinde: damak lezyonu biyopsiye gider"], "pink")], lid="M2"),
+ "kese": make_cards("Dumansız tütün keratozu ve Maraş otu", [
+    ("Tütün kesesi keratozu", ["Tütünün tutulduğu vestibülde gri-beyaz, kırışık alan: 'cezir sonrası kum' gibi", "Verrüköz karsinomla ilişkili ('snuff dipper's cancer')"], ""),
+    ("Bırakınca ne olur?", ["Yoğun beyaz olmayan lezyonların %98'i iki haftada düzelir", "6 haftada gerilemeyen lezyon gerçek lökoplaki sayılır: biyopsi"], ""),
+    ("Yerel not: Maraş otu", ["Kahramanmaraş ve çevresi: Nicotiana rustica + odun külü, alt dudak vestibülünde tutulur", "Kullanıcılarda lökoplaki sık bildirilmiştir; ağız kanseriyle ilişkisi tartışmalı. Dudağı kaldırıp bakın"], "pink")], lid="M2"),
+ "petesi": make_cards("Damakta peteşi: üç soru sor", [
+    ("Mekanik", ["Öksürük, kusma, ıkınma: ani basınç artışı", "Yumuşak damakta emme travması"], ""),
+    ("Enfeksiyöz mononükleoz", ["Sert-yumuşak damak birleşiminde peteşi: güzel bir klinik ipucu", "Boğaz ağrısı, lenfadenopati, halsizlik; EBV; ampisilin verme (döküntü)"], "pink"),
+    ("Trombositopeni", ["Bas ve bak: solmayan nokta kanaması; dişeti kanaması, ekimoz", "Tam kan sayımı; lösemi, ITP, ilaç; kanamalı işlemden önce trombosit sayısı"], "")],
+    photo=("petesi_damak.jpg", "Damakta peteşi", "Sert-yumuşak damak birleşimi; bas ve bak"), lid="M2"),
+ "pj": make_cards("Dudakta çil gibi lekeler: Peutz-Jeghers", [
+    ("Görünüm", ["Dudaklarda ve ağız içinde çok sayıda küçük kahverengi makül; çocuklukta başlar", "Otozomal dominant (STK11); dudaktaki lekeler yaşla solabilir, ağız içindekiler kalır"], ""),
+    ("Gastroya gönder", ["Bağırsakta hamartomatöz polipler: invajinasyon, kanama; gastrointestinal ve diğer kanser riski yüksek", "Tanıyı koyan ağız olabilir: hastayı gastroenterolojiye yönlendirin, aile taraması"], "pink"),
+    ("Ayırıcı", ["Addison: diffüz, yorgunluk, hipotansiyon", "Laugier-Hunziker: dudak ve tırnak, polip yok", "İlaç: hidroksiklorokin, minosiklin, imatinib"], "")],
+    photo=("peutz_jeghers.jpg", "Peutz-Jeghers: perioral ve oral maküller", "Dudak, yanak, damak; çocuklukta başlar"), lid="M2"),
 }
 
 # ================= plans =================
@@ -537,7 +570,26 @@ M2[find(M2, src=39)]["title"] = "Kaynaklar ve evde tekrar"
 M2[find(M2, src=6)]["title"] = "Açılış vakası: ne yaparsın?"
 M2[find(M2, src=8)]["title"] = "3G: beyaz lezyonda üç soru"
 
+
+# --- M2 additions
+M2[find(M2, src=7)].update(edits=[m2_s7_cannon], dur=40)
+M2.insert(find(M2, src=7) + 1, S(src=None, make=M2_PRACTICAL["neden"], dur=40, title="Neden beyaz, neden kırmızı? Mekanizmalar",
+    notes="Mekanizmayı bir kez anlayın, listeyi ezberlemeyin. Beyaz: kalınlaşmış keratin tükürükle ıslanınca su emer ve opaklaşır; deride nasır, bulaşık suyunda kalan parmak ucu gibi. Akantoz damar rengini örter. Hücre içi ödem lökoödem yapar. Yüzeydeki psödomembran kandida ya da nekrozdur. Damarlanmanın azalması ve fibroz submüköz fibroz. Kırmızı: epitel atrofisi, keratin kaybı, iltihap ve vazodilatasyon, damar artışı. Eritroplakide epitel keratin yapamayacak kadar olgunlaşmamış ya da incelmiştir; displazinin kırmızı görünmesinin nedeni bu."))
+M2.insert(find(M2, src=10) + 1, S(src=None, make=M2_PRACTICAL["nikotin"], dur=35, strip={1, 2}, title="Neler neler var: pipo, sıcak çay ve ters sigara",
+    notes="Nikotinik stomatitte suçlu duman değil, sıcak: pipo ve sıcak içecek. Damak beyazlaşır, üstündeki kırmızı noktalar iltihaplı küçük tükürük bezi kanal ağızları. Bırakınca geriler, premalign değil; damağı yanmış çaycı kanser adayı değil. Ama neler neler var: ters sigara içimi, yanan uç ağzın içinde. O artık DSÖ 2020 potansiyel malign bozukluklar listesinde; damaktaki lezyon biyopsiye gider."))
+M2.insert(find(M2, src=10) + 2, S(src=None, make=M2_PRACTICAL["kese"], dur=40, strip={1, 2, 3}, title="Dumansız tütün keratozu ve Maraş otu",
+    notes="Tütün kesesi keratozu: tütünün tutulduğu vestibülde gri-beyaz, kırışık, cezir sonrası kum gibi bir alan; verrüköz karsinomla ilişkili. Tütün bırakılınca yoğun beyaz olmayan lezyonların yüzde 98'i iki haftada düzelir; altı haftada gerilemeyen lezyon gerçek lökoplaki sayılır, biyopsi. Yerel not: Kahramanmaraş ve çevresinde Maraş otu, Nicotiana rustica artı odun külü, alt dudak vestibülünde tutulur; kullanıcılarda lökoplaki sık bildirilmiş, ağız kanseriyle ilişkisi tartışmalı. Maraşlı hastanın dudağını kaldırıp bakın."))
+M2.insert(find(M2, key="22B") + 1, S(src=None, make=M2_PRACTICAL["petesi"], dur=25, title="Damakta peteşi: üç soru sor",
+    notes="Damakta peteşi görünce üç soru. Mekanik mi: öksürük, kusma, ıkınma, yumuşak damakta emme travması (nedenini sözlü anlat). Enfeksiyöz mononükleoz mu: sert-yumuşak damak birleşiminde peteşi güzel bir klinik ipucudur; boğaz ağrısı, lenfadenopati, EBV; ampisilin verilirse döküntü. Trombositopeni mi: bas ve bak, solmaz; dişeti kanaması, ekimoz; tam kan sayımı, lösemi, ITP, ilaç. Kanamalı işlemden önce trombosit sayısı."))
+M2.insert(find(M2, key="21B") + 1, S(src=None, make=M2_PRACTICAL["pj"], dur=25, title="Dudakta çil gibi lekeler: Peutz-Jeghers",
+    notes="Dudaklarda ve ağız içinde çil gibi çok sayıda kahverengi makül: Peutz-Jeghers. Otozomal dominant, STK11. Bağırsakta hamartomatöz polipler, invajinasyon ve kanser riski. Tanıyı ağızdan koyan siz olabilirsiniz: gastroya gönderin, aileyi taratın. Ayırıcıda Addison, Laugier-Hunziker ve ilaç pigmentasyonu."))
+for key, dur in [(("src", 1), 90), (("src", 9), 65), (("src", 14), 65), (("src", 17), 65), (("src", 18), 50), (("src", 20), 50), (("src", 26), 65), (("src", 23), 65),
+                 (("src", 32), 80), (("src", 25), 35), (("src", 33), 35), (("src", 34), 40), (("src", 28), 35), (("src", 29), 35), (("src", 30), 60), (("src", 35), 40), (("src", 36), 40), (("src", 39), 20), (("key", "22B"), 35)]:
+    M2[find(M2, **{key[0]: key[1]})]["dur"] = dur
+M2[find(M2, cloud={"q": "W11", "from": "prev"})]["dur"] = 35
+
 M2_NOTES = dict(B.M2_NOTES)
+M2_NOTES[7] = lambda s: s + " Sıradaki slaytta mekanizmaların listesi var."
 M2_NOTES[8] = lambda s: "Çerçevemizin adı 3G: gazlı bezle gider mi, gerince geçer mi, gerekçesi var mı? Ama akışa girmeden önce kırmızı bayrak: dil kenarı ya da ağız tabanında yerleşen, kırmızı alanı, sertliği ya da ülseri olan lezyon beklemez, doğrudan biyopsiye gider; açılış hastamız tam bu kutuda. Üçüncü soru da yeni: tanınabilir bir tablo mu? Liken planusun dantelini, süngerimsi nevüsü, kıllı lökoplakiyi tanırsanız lökoplaki demezsiniz. Tütünü nedenler kutusundan çıkardım: sigara içen hastanın plağına 'bırak, bekle' denmez. " + s
 M2_NOTES[10] = lambda s: "Üstteki dört fotoğraf ile alttaki dört kart artık aynı tablolar: linea alba, yanak ısırma, Fordyce, nikotinik stomatit. Fotoğrafsız üç tablo ve tuzak alt şeritte. " + s
 M2_NOTES[13] = rep("Güncel sınıflama bunları düşük ve yüksek dereceli diye ikiye de ayırıyor. Sizin için pratik karşılığı: rapor 'ağır displazi' diyorsa bu lezyon artık izlenmez, çıkarılır.",
