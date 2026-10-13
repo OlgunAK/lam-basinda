@@ -16,7 +16,12 @@ Tüm sayfalar GitHub Pages üzerinden yayınlanır. Aşağıdaki bağlantılar �
 ### Nasıl kullanılır
 
 - **Kumanda**: Hoca bu sayfadan oturumu ve soruları yönetir.
-- **Perde**: Duvardaki ekranda açık kalır, gelen cevapları ve katılımcı sayısını canlı gösterir. Yeni oturum başladığında onu takip eder.
+- **Perde**: Duvardaki ekranda açık kalır, gelen cevapları ve katılımcı sayısını canlı gösterir. Yeni oturum başladığında onu takip eder. Üst çubukta öğrencilerin gördüğü ad "Lam Başında" ve "Soru 7/12" sayacıdır; iç kodlar (W7) görünmez. Alt kontrol çubuğu slayt gösterilirken 2,5 saniye sonra kendiliğinden gizlenir (fare oynayınca geri gelir); katılım ekranındaki "başlamak için →" notu artık yalnız bu çubukta, öğrenciye görünmez.
+  - **Açık uçlu cevaplar** aynı metinler tek kartta toplanır (×6 rozeti), sayfa başına 18 kart; sayfa kumandadaki **Cevapları yönet** düğmeleriyle ya da perdede `[` `]` tuşlarıyla çevrilir.
+  - **Kelime bulutu** "aft / afta / aftlar" gibi kök + 3 harfe kadar uzantıları tek kelimede birleştirir; boyut sayıyla doğrusal büyür (en çok söylenen en büyük).
+  - **Moderasyon** paylaşımlıdır: kumandadan ya da perdede çift tıklayarak gizlenen cevap/kelime oturum belgesine yazılır (`hidden.*`, `hiddenWords`), her perdede aynı anda kalkar.
+  - **Vakaya dönüş** anketinde doğru şıkkın ders başındaki ve şimdiki yüzdesi büyük rakamla ve farkla gösterilir; **senaryo uyum testinde** (SCT) uzman cevabının bir yanındaki şık yarım puan alır.
+  - Dersin sonunda perdede ve son slaytta **çağrı** (`cta` alanı: ödev, son tarih, ödül) görünür.
 
 Katılım ekranı, ders başlığı slaytını karekod ve oturum koduyla yan yana gösterir; öğrenciler daha ilk slaytta okutur. L tuşu (kumandada Katılım) kaplamayı kapatıp yalnız slaytı gösterir, tekrar basınca geri gelir.
 
@@ -50,6 +55,7 @@ Hesabın e-postasını değiştirmek için `canli/config.js` içindeki `PERDE_EP
 - **Soruyu sıfırla:** açık sorunun cevaplarını siler ve soruyu yeniden açar (iki dokunuşla onay).
 - **Yoklama / sonuçları indir:** CSV (noktalı virgül, Excel uyumlu): ad, kimlik, katılım saati, her sorunun cevabı, doğru ve cevap sayısı. Telefonda paylaşım penceresi, bilgisayarda indirme.
 - **Öğrenci bağlantısını paylaş:** katılım bağlantısını paylaşır ya da panoya kopyalar.
+- **Cevapları yönet:** açık sorunun serbest metin cevaplarını (gruplanmış, yazan adıyla) ve bulut kelimelerini listeler; Gizle/Göster perdeye anında yansır. Açık uçlu soruda perdenin sayfasını çevirir.
 
 **Tempo göstergesi:** Kumandanın üstündeki şerit, slayt notlarındaki plan damgalarını (`[12:30–13:15]`) gerçek süreyle karşılaştırır. Yeşil "Planda", kırmızı "Hızlan · 2:31 geride", sarı "Yavaşla · 1:10 ileride"; başlık çubuğu da aynı renge boyanır. Saat ikinci slayta geçince başlar; şeride dokununca plan o anki slayta eşitlenir.
 
@@ -78,7 +84,11 @@ Hesabın e-postasını değiştirmek için `canli/config.js` içindeki `PERDE_EP
 
 ## Ders içerikleri
 
-Canlı oturumlardaki sorular `canli/dersler/` altında JSON olarak durur, slaytlar `canli/slaytlar/` altındadır.
+Canlı oturumlardaki sorular `canli/dersler/` altında JSON olarak durur, slaytlar `canli/slaytlar/` altındadır. İki dersin çerçevesi adlandırıldı: M1 **3D** (Dağılım, Düzey, Desen), M2 **3G** (Gazlı bezle gider mi, gerince geçer mi, gerekçesi var mı); slayt alt şeridi ve soru etiketleri bu adları taşır (`frame` alanı).
+
+Ders JSON'undaki özel slayt alanları: `lobby` (katılım ekranı), `qopen` (soru açılır, slayt kalır), `q` (soru/dağılım), `board` + `top: 5` (ara liderlik, ilk 5), `cloud: {"q":"W11","from":"prev"}` (bir önceki oturumun kelime bulutu; M2 böyle açılır ve M1'in çıkış biletini cevaplar), `cta` (bitiş çağrısı). Soru bölgesi türleri: `rect`, `ellipse`, `ring` (halka: biyopsiyi lezyonun kenarından alma sorusu).
+
+Slaytlar `tools/slaytlar/build.py` + `build2.py` ile orijinal görsellerden yeniden üretilir (PIL; Lora ve Lato fontları; orijinal slaytlar ilk sürümden: `git show 2d6da82:canli/slaytlar/M1/01.jpg`). M2'deki "Mikroskopta displazi" slaytı iki fotoğraf bekler: `canli/img/displazi_normal.jpg` ve `canli/img/displazi_agir.jpg` (H&E kesit). Dosyalar konup slaytlar yeniden üretilince çerçevelere yerleşir; şimdilik çerçevelerde yer tutucu yazı var.
 
 | Kod | Ders | Tarih |
 |---|---|---|
