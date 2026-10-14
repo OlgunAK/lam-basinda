@@ -467,9 +467,6 @@ M1[find(M1, src=6)]["edits"] = [m1_s6_bridge]
 M1[find(M1, src=7)]["dur"] = 65
 M1[find(M1, src=9)]["dur"] = 65
 M1[find(M1, src=11)]["dur"] = 80
-M1.insert(find(M1, src=6) + 1, S(src=32, dur=20, strip={1, 2, 3}, key="32R", edits=[B.m1_s32_A, m1_roadmap_tag],
-                                 title="Yol haritası: ülserde zaman ve sayı (sonda dolacak)",
-                                 notes="Yol haritamız bu tablo. Ülser gören hekim iki soru sorar: ne zamandır ve kaç tane? Dört kolon şimdilik boş; dersin sonunda bugünkü hastalıkları buraya yerleştireceğiz. Üç soru (3D) her kolonun içinde çalışır."))
 M1[find(M1, src=8)]["edits"] = [m1_s8_map]
 M1.insert(find(M1, src=12) + 1, S(src=12, dur=35, q="W12", key="12Q", strip={2, 3}, title="İki kavanoz: cevap",
                                    notes="Kontrol sorusu: iki parça nereye konur? (Sonuç.) Doğru B: biri formaline, rutin boya için; diğeri Michel solüsyonuna, immünofloresan için. Formaline giren parçada floresan yapılamaz; Michel yoksa serum fizyolojikli gazlı bezle hemen gönderin."))
@@ -513,7 +510,6 @@ _old23 = M1_NOTES[23]
 M1_NOTES[23] = lambda s: _old23(s) + " Daha yeni ICBD 2014 puanlamasında ağız ülseri zorunlu değil; sınavda sorulan hâlâ ISG."
 M1_NOTES[34] = lambda s: "Dersin başında üç soru demiştim; bu beş cümle onların özeti. " + s
 M1_NOTES[36] = lambda s: s + " Evde tekrarı 3 Kasım'a kadar bir kez geçin; ilk üçü gelecek derste burada anarım."
-M1_NOTES["32B"] = lambda s: B.M1_NOTES["32B"](s).replace("Şimdi hastalıkları yerleştirelim. ", "Dersin başındaki boş tabloya döndük; şimdi hastalıkları yerleştirelim. ")
 
 
 # --- practical slides for the dentist (M1)
@@ -535,7 +531,7 @@ M1.insert(find(M1, src=25) + 1, S(src=None, make=M1_PRACTICAL["mukozit"], dur=45
 for key, dur in [(("src", 1), 120), (("src", 2), 40), (("src", 7), 55), (("src", 9), 55), (("src", 11), 70), (("src", 13), 50), (("src", 22), 75),
                  (("src", 14), 40), (("src", 17), 50), (("key", "18B"), 40), (("src", 20), 40), (("src", 21), 45), (("src", 23), 40), (("src", 16), 50),
                  (("src", 26), 50), (("src", 28), 40), (("src", 30), 40), (("src", 31), 45), (("key", "32B"), 35), (("src", 34), 40), (("src", 35), 45),
-                 (("key", "32R"), 15), (("key", "27A"), 20), (("key", "27B"), 30), (("key", "12Q"), 30), (("key", "24Q"), 30), (("src", 33), 30), (("src", 25), 35), (("src", 36), 20)]:
+                 (("key", "27A"), 20), (("key", "27B"), 30), (("key", "12Q"), 30), (("key", "24Q"), 30), (("src", 33), 30), (("src", 25), 35), (("src", 36), 20)]:
     M1[find(M1, **{key[0]: key[1]})]["dur"] = dur
 M1_NOTES[25] = lambda s: s + " DSÖ derecesi: 0 yok; 1 ağrı ve/veya eritem; 2 eritem ve ülser, katı yiyebilir; 3 ülser, yalnız sıvı; 4 ağızdan beslenemez. Tablo bununla uyumlu."
 
@@ -647,9 +643,50 @@ M2_QEDIT = {
            "exp": "Hafif displazi izlenir: nedeni kaldır, 3–6 ayda kontrol, büyürse yeniden biyopsi. Ağır displazi ve karsinoma in situ tam eksizyon. İnvaziv karsinom baş-boyun cerrahisine sevk."},
 }
 
+
+# ================= hızlı mod: çekirdek + "zaman kalırsa" bloğu =================
+def ident(it):
+    if it.get("key"): return it["key"]
+    if it.get("make"):
+        for d in (M1_PRACTICAL, M2_PRACTICAL):
+            for k, v in d.items():
+                if v is it["make"]: return "mk:" + k
+        return "mk:micro" if it["make"] is m2_dysplasia_micro else "mk:?"
+    if it.get("cloud"): return "cloud"
+    if it.get("src") is None: return "board5" if it.get("top") else "board"
+    return it["src"]
+
+def fastify(plan, core, before_src):
+    """core: {ident: dur}. Everything else becomes optional and moves in front of before_src (the five-sentence slide),
+    keeping its original order. Items after before_src (closing block) stay where they are."""
+    cut = next(i for i, it in enumerate(plan) if it.get("src") == before_src)
+    head, tail = plan[:cut], plan[cut:]
+    keep, opt = [], []
+    for it in head:
+        k = ident(it)
+        if k in core:
+            it["dur"] = core[k]; it.pop("optional", None); keep.append(it)
+        else:
+            it["optional"] = True; opt.append(it)
+    for it in tail:
+        k = ident(it)
+        if k in core: it["dur"] = core[k]
+    plan[:] = keep + opt + tail
+    return sum(core.values())
+
+M1_CORE = {1: 90, 2: 40, 4: 45, 5: 45, 6: 30, 7: 55, 8: 45, 9: 55, 10: 40, 11: 55, 12: 45, "12Q": 30, 13: 45, 14: 40,
+           "18A": 30, "18B": 35, 15: 45, 16: 45, "board5": 15, 21: 45, 22: 60, 23: 40, 24: 45, "24Q": 30,
+           26: 45, 29: 45, "4R": 30, 30: 40, 31: 45, "32A": 20, "32B": 35,
+           34: 40, 35: 45, "board": 30, 36: 20}
+M2_CORE = {1: 90, "cloud": 35, 4: 45, 6: 45, 7: 35, 8: 45, 9: 60, 19: 45, "mk:hiv": 20, 10: 50, "mk:kese": 35, 11: 60,
+           12: 40, 13: 40, 14: 55, 15: 50, 16: 40, "mk:freud": 35, 17: 45, 18: 45, "board5": 15, 20: 50, "21A": 20, "21B": 35,
+           "22A": 20, "22B": 35, 23: 40, 25: 30, 26: 55, 27: 40, 32: 45, 33: 35, 34: 40,
+           37: 40, 38: 40, "board": 30, 39: 20}
+
 if __name__ == "__main__":
     import shutil
     if os.path.exists(B.OUT): shutil.rmtree(B.OUT)
+    print("M1 çekirdek", B.ts(fastify(M1, M1_CORE, 34)), "· M2 çekirdek", B.ts(fastify(M2, M2_CORE, 37)))
     B.build_lesson("M1", M1, qdrop={"W7"}, qedit=M1_QEDIT, note_edit=M1_NOTES, qadd=M1_QADD,
                    strip_cfg=(("1 Dağılım", "2 Düzey", "3 Desen"), "3D"),
                    cta="Evde tekrarı 3 Kasım'a kadar bir kez geçin. İlk üçü gelecek derste burada anarım.", frame="3D: Dağılım, Düzey, Desen")
