@@ -156,6 +156,7 @@ footer{color:var(--muted);font-size:.8rem;text-align:center}
   }
   var h0=(location.hash||'').slice(1), s0=SETS.filter(function(x){return x.id===h0})[0];
   if(s0) start(s0,null); else home();
+  window.addEventListener('hashchange',function(){var h=(location.hash||'').slice(1),x=SETS.filter(function(y){return y.id===h})[0];if(x)start(x,null)});
 })();
 </script>
 </body>
