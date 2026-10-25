@@ -24,7 +24,7 @@ def _index(book):
     if os.path.exists(cache):
         _idx[book] = json.load(open(cache)); return _idx[book]
     d = pymupdf.open(os.path.join(KITAP, pdf))
-    rng = range(470, 588) if book == "n" else range(1, d.page_count + 1)
+    rng = range(1, 946) if book == "n" else range(1, d.page_count + 1)   # Neville: bütün bölümler (ek sorular hariç)
     idx = {}
     for pn in rng:
         p = d[pn - 1]
