@@ -92,10 +92,17 @@ Ders JSON'undaki özel slayt alanları: `lobby` (katılım ekranı), `qopen` (so
 
 Slaytlar `tools/slaytlar/build.py` + `build2.py` ile orijinal görsellerden yeniden üretilir (PIL; Lora ve Lato fontları; orijinal slaytlar ilk sürümden: `git show 2d6da82:canli/slaytlar/M1/01.jpg`). M1'de diş hekimi için yedi pratik slayt var (pemfigus hastası koltukta, pemfigoid tedavisi, SJS/TEN–karbamazepin, herpes tedavisi, herpes bulaşı, Behçet, mukozit önleme; `tools/slaytlar/build2.py` içinde `M1_PRACTICAL`). M2'de on ek slayt: beyaz/kırmızı mekanizmaları, kıllı lökoplaki–HIV sorusu, nikotinik stomatit ve ters sigara, dumansız tütün keratozu ve Maraş otu, Freud'un damağı ve alan kanserizasyonu (fotoğraf `canli/img/freud_protez.jpg`), Peutz-Jeghers, peteşi, nötropeni ve metamizol, yazarken üç uyarı (`M2_PRACTICAL`). Fotoğraf bekleyen çerçeveler: `canli/img/zoster_trigeminal.jpg` (trigeminal zona), `canli/img/herpetik_dolama.jpg` (herpetik dolama), `canli/img/peutz_jeghers.jpg` (Peutz-Jeghers), `canli/img/petesi_damak.jpg` (damakta peteşi). M2'deki "Mikroskopta displazi" slaytı iki fotoğraf bekler: `canli/img/displazi_normal.jpg` ve `canli/img/displazi_agir.jpg` (H&E kesit). Dosyalar konup slaytlar yeniden üretilince çerçevelere yerleşir; şimdilik çerçevelerde yer tutucu yazı var.
 
+**M3 ve M4 (17 Kasım 2026, blok ders):** Yumuşak doku hastalıkları ve tükürük bezi hastalıkları, her biri 25 dakika. Akış mukozal derslerle aynı: açılış vakası, çerçeve, bloklar, DUS molası (Neville 5. baskı bölüm sonu sorularından), vakaya dönüş, çıkış bileti; her derste bir "Patoloğun notu" kutusu (M3: granüler hücreli tümörde yüzeysel biyopsi tuzağı, M4: nekrotizan sialometaplazide istek formu). Çerçeveler: M3 **Önce adres** (diş etinde mi, değilse hangi doku), M4 **Adres** (hangi bez, ağızda nerede; bez küçüldükçe tehlike büyür). M4 açılışta M3'ün çıkış biletini gösterir. Rakamlar ve adlar Neville 5. baskı (2024) ve WHO 2022'den; klinik fotoğraflar Neville 5 ve Laskaris 4. baskıdan.
+
+Bu iki dersin slaytları HTML olarak kurulup tarayıcıda JPG'ye çevrilir: `tools/slaytlar/yeni/` (`deck.py` bileşenler ve ders JSON'u, `render.mjs` Playwright ile çizim ve taşma denetimi, `foto.py` kitap PDF'lerinden fotoğraf kesme, `m3.py`, `m4.py` ders içerikleri). Yeniden üretmek için kitap PDF'leri (`neville5.pdf`, `laskaris.pdf`) bir klasörde olmalı ve Lora/Lato fontları `tools/slaytlar/fonts/` altında: `KITAP=/kitap/klasoru python3 tools/slaytlar/yeni/m3.py` (yalnız bazı slaytlar için sonuna numara: `m3.py 5 6`). Kitaplar ve fontlar repoda değildir.
+
+
 | Kod | Ders | Tarih |
 |---|---|---|
 | M1 | Mukozal Hastalıklar 1 | 27 Ekim 2026 |
 | M2 | Mukozal Hastalıklar 2 ve Dil Hastalıkları | 27 Ekim 2026 |
+| M3 | Yumuşak Doku Hastalıkları | 17 Kasım 2026 |
+| M4 | Tükürük Bezi Hastalıkları ve Tümörleri | 17 Kasım 2026 |
 
 ## Klasör yapısı
 
@@ -104,11 +111,12 @@ index.html          Ana sunum
 firestore.rules     Firestore güvenlik kuralları (Actions ile yayınlanır)
 firebase.json       Firebase CLI ayarı (kural dosyasının yeri)
 .github/workflows/  Kuralları Firebase'e yayınlayan iş akışı
+tools/slaytlar/     Slayt üreticileri (build.py/build2.py: M1–M2; yeni/: M3–M4)
 canli/
   index.html        Öğrenci ekranı
   perde.html        Perde
   kumanda.html      Kumanda
-  dersler/          Ders ve soru tanımları (M1.json, M2.json, index.json)
-  slaytlar/         Ders slaytları (M1, M2)
+  dersler/          Ders ve soru tanımları (M1–M4.json, index.json)
+  slaytlar/         Ders slaytları (M1–M4)
   img/              Soru görselleri
 ```
