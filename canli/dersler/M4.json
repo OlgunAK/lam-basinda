@@ -144,7 +144,7 @@
  ],
  "slides": [
   {
-   "img": "slaytlar/M4/01.jpg?v=1",
+   "img": "slaytlar/M4/01.jpg?v=2",
    "title": "Tükürük Bezi Hastalıkları ve Tümörleri",
    "lobby": true,
    "notes": "[0:00–1:00]\nSağdaki deliklere bakın: İsviçre peyniri gibi. Bugünün en sinsi tümörü bu desenle tanınıyor; adını dersin ortasında söyleyeceğim. Katılım ekranı bu slaytta açık. İlk dersten gelenler telefondaki 'Sıradaki derse geç' düğmesine dokunur; tekrar kod okutmak gerekmez. Yeni gelenler için kod perdede. Herkes girince L ile kapatıp başlıyoruz."
@@ -158,61 +158,61 @@
    "notes": "[1:00–1:25]\nAz önceki dersin sonunda en çok kafa karıştıran konuyu sormuştum; en büyük kelime bu. (Bir cümleyle cevapla.) Şimdi tükürük bezleri."
   },
   {
-   "img": "slaytlar/M4/03.jpg?v=1",
+   "img": "slaytlar/M4/03.jpg?v=2",
    "title": "Açılış vakası: damakta kitle",
    "qopen": "W1",
    "notes": "[1:25–2:25]\nKırk beş yaşında bir kadın. Sert damakta, orta hattın yanında bir kitle; iki yıldır yavaş büyüyor, ağrısı yok, üstündeki mukoza sağlam. Fotoğrafa bakın ve tahmininizi girin; şıklar telefonunuzda açık. Cevabı dersin sonunda açacağım.\n\nCANLI (W1, Anket): Soru bu slayta gelince telefonlarda açılır; perde slaytı göstermeye devam eder. Oylama bir sonraki slayta (dağılım) kadar açık kalır, geri gelsen de kapanmaz. → sonraki slayt. T: 45 sn."
   },
   {
-   "img": "slaytlar/M4/04.jpg?v=1",
+   "img": "slaytlar/M4/04.jpg?v=2",
    "title": "Açılış vakası: tahminin ne?",
    "q": "W1",
    "notes": "[2:25–3:10]\nDağılımı gösteriyorum, yorum yok. Beş şıktan biri tümör değil, biri iyi huylu, üçü kötü huylu. Dersin sonunda hastanın söylemediği bir şikâyeti öğreneceğiz.\n\nCANLI (W1, Anket): Soru önceki slaytta açıldı, oylama hâlâ açık. → oylamayı kapatıp dağılımı gösterir, → sonraki slayt."
   },
   {
-   "img": "slaytlar/M4/05.jpg?v=1",
+   "img": "slaytlar/M4/05.jpg?v=2",
    "title": "Bugünün çerçevesi: bez küçüldükçe tehlike büyür",
    "notes": "[3:10–3:45]\nBütün dersi iki soruya bağlıyorum. Bir: bu şişlik bir tümör mü? Mukosel, taş, iltihap, Sjögren tümör değil; önce onları göreceğiz. İki: tümörse adresi ne? Kural Neville'den: bez küçüldükçe kötü huylu olma olasılığı artar. Parotiste tümörlerin üçte biri bile malign değil; küçük bezlerde yaklaşık yarısı; sublingual bezde neredeyse hepsi."
   },
   {
-   "img": "slaytlar/M4/06.jpg?v=1",
+   "img": "slaytlar/M4/06.jpg?v=2",
    "title": "Mukosel, ranula ve tükürük kanalı kisti",
    "notes": "[3:45–5:00]\nŞişliklerin en sığı mukosel. Alt dudağı ısırırsınız, küçük bir kanal yırtılır, müsin dokuya dökülür. Mikroskopta epitel yok, müsin ve köpüklü makrofajlar var; bu yüzden gerçek kist değil. Neville'in 1715 olguluk serisinde yüzde 82'si alt dudakta, üst dudakta bir tane bile yok; birazdan bu cümleye döneceğim. Tedavide besleyen küçük bezleri de çıkarın, yoksa nükseder. Ağız tabanındaki büyük kardeşi ranula; sublingual bezden gelir, milohyoidi geçerse boyunda şişlik yapar. Tedavi sublingual bezi çıkarmak. Tükürük kanalı kisti ise epitelle döşeli gerçek bir kist; erişkinde görülür."
   },
   {
-   "img": "slaytlar/M4/07.jpg?v=1",
+   "img": "slaytlar/M4/07.jpg?v=2",
    "title": "Taş ve iltihap",
    "notes": "[5:00–6:00]\nTaşların yüzde 80'i submandibuler bezde. Nedeni anatomi: Wharton kanalı uzun, yukarı doğru kıvrılıyor ve bezin salgısı daha koyu. Hasta yemekte şişen, ağrıyan bir bezle gelir. Okluzal film en iyi gösterir; panoramikte kemiğin üstüne düşen taş kemik içi lezyon sanılabilir ve her taş radyoopak değildir. İltihapta iki tablo: kabakulak, çoğu iki taraflı parotis; ve akut bakteriyel parotit. Bakteriyel parotit akış azalınca olur: sıvı kaybı, ameliyat sonrası, kuruluk yapan ilaçlar. Bezi masaj yapınca Stensen kanalından irin gelir."
   },
   {
-   "img": "slaytlar/M4/08.jpg?v=1",
+   "img": "slaytlar/M4/08.jpg?v=2",
    "title": "Sjögren: dudaktan alınan biyopsi",
    "notes": "[6:00–7:15]\nSjögren'de diş hekiminin elinde bir tanı aracı var: dudak biyopsisi. Normal görünen alt dudak mukozasından küçük bir kesiyle en az beş küçük tükürük bezi alınır. Patolog her 4 milimetrekarede en az 50 lenfositlik odak sayar; odak skoru 1 ve üstü 3 puan. Anti-SSA da 3 puan; göz ve tükürük testleri birer puan. Toplam 4 ve üstü primer Sjögren. Hastaların onda dokuzu kadın. Akılda tutun: yaşam boyu lenfoma riski yüzde 5 ila 10, genel nüfusun 15 ila 20 katı; parotis sürekli büyükse beklemeyin. Sırada telefon: puanı siz hesaplayacaksınız."
   },
   {
-   "img": "slaytlar/M4/09.jpg?v=1",
+   "img": "slaytlar/M4/09.jpg?v=2",
    "title": "Sjögren: puanla",
    "q": "W2",
    "notes": "[7:15–8:00]\nHesaplayın. (Sonuç.) Doğru A: biyopsi 3, Schirmer 1, toplam 4. Anti-SSA negatif olabilir; biyopsi bu yüzden değerli. Ama önce dışlama ölçütlerine bakın; ilki bir sonraki slaytta.\n\nCANLI (W2, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
-   "img": "slaytlar/M4/10.jpg?v=1",
+   "img": "slaytlar/M4/10.jpg?v=2",
    "title": "Sjögren'i taklit edenler: IgG4, siyaladenoz, kserostomi",
    "notes": "[8:00–8:45]\nÜç taklitçi, tek cümleyle. IgG4 ilişkili hastalık: çoğu iki taraflı, sert submandibuler büyüme; plazma hücreleri IgG4 boyar, fibrozis storiform desen yapar; steroide hızlı yanıt verir ve Sjögren'in dışlama ölçütüdür. Siyaladenoz iltihapsız büyüme: diyabet, alkolizm, bulimia. Kserostomi bir yakınma; en sık nedeni ilaçlar."
   },
   {
-   "img": "slaytlar/M4/11.jpg?v=1",
+   "img": "slaytlar/M4/11.jpg?v=2",
    "title": "Nekrotizan sialometaplazi: karsinom değil",
    "notes": "[8:45–9:45]\nBu dersin patoloğun notu burada. Nekrotizan sialometaplazi küçük bezlerin enfarktı: kan akımı kesilir, bez ölür. Çoğu arka damakta; önce şişlik, iki üç hafta içinde krater gibi bir ülser. Hasta 'damağımın bir parçası düştü' diye gelir. Neden olanlar: travma, anestezi iğnesi, protez, yakın bir ameliyat. Klinikte karsinoma benzer; mikroskopta daha da çok: ölen bezlerin kanalları skuamöz metaplazi yapar ve üstteki epitel aşağı dallanır. Bu tablo skuamöz hücreli karsinom ya da mukoepidermoid karsinom sanılabilir. Benim size ricam: istek formunu boş göndermeyin. 'İki hafta önce bu bölgede anestezi yapıldı', 'yeni protez', 'birden başladı' cümleleri patoloğun karşısındaki en değerli bilgidir. Lezyon kendiliğinden iyileşir; iyileşmezse yeniden biyopsi."
   },
   {
-   "img": "slaytlar/M4/12.jpg?v=1",
+   "img": "slaytlar/M4/12.jpg?v=2",
    "title": "DUS Molası 1/2",
    "q": "W3",
-   "notes": "[9:45–10:30]\nNeville'in bölüm sonu sorularından. 30 saniye. (Sonuç.) Üst dudak. Bu cümleyi birazdan tümörlerde kullanacağız.\n\nCANLI (W3, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+   "notes": "[9:45–10:30]\nNeville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Üst dudak. Bu cümleyi birazdan tümörlerde kullanacağız.\n\nCANLI (W3, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
-   "img": "slaytlar/M4/13.jpg?v=1",
+   "img": "slaytlar/M4/13.jpg?v=2",
    "title": "DUS Molası 2/2",
    "q": "W4",
    "notes": "[10:30–11:10]\n(Sonuç.) Lenfoma; çoğu MALT. Bu ara tümör dışı bloğu kapatıyor; sırada tümörler.\n\nCANLI (W4, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
@@ -224,80 +224,80 @@
    "top": 5
   },
   {
-   "img": "slaytlar/M4/15.jpg?v=1",
+   "img": "slaytlar/M4/15.jpg?v=2",
    "title": "Hangi bez? Sayılar kuralı söylüyor",
    "notes": "[11:25–12:35]\nRakamlar Neville'in tablolarından, beş büyük serinin aralığı. Tükürük bezi tümörlerinin çoğu parotiste ve parotis tümörlerinin üçte ikisinden fazlası iyi huylu. Submandibuler bezde malign oranı yaklaşık iki kat, en sık malign tümör adenoid kistik karsinom. Küçük bezlerde yaklaşık yarısı malign; en sık yer damak. Sublingual tümör nadirdir ama gördüğünüzde neredeyse hep malign. Her bezde en sık tümör yine pleomorfik adenom."
   },
   {
-   "img": "slaytlar/M4/16.jpg?v=1",
+   "img": "slaytlar/M4/16.jpg?v=2",
    "title": "Ağızda nerede? Mukosel alt dudağı, tümör üst dudağı sever",
    "notes": "[12:35–13:35]\nAğızdaki adres de konuşur. Mukoselin tersine, tümör üst dudağı sever; üst dudak tümörlerinin yalnızca dörtte biri ya da daha azı malign, çünkü çoğu kanaliküler adenom. Alt dudakta tümör nadirdir ama çıkarsa yarıdan fazlası malign, çoğu mukoepidermoid karsinom. Dil, ağız tabanı ve retromolar bölgede tümörlerin büyük çoğunluğu malign. Damak ortada: yaklaşık yarı yarıya; bu yüzden açılış vakamız zor bir vaka."
   },
   {
-   "img": "slaytlar/M4/17.jpg?v=1",
+   "img": "slaytlar/M4/17.jpg?v=2",
    "title": "Pleomorfik adenom: karışık tümör",
    "notes": "[13:35–15:00]\nEn sık tümör, eski adıyla benign miks tümör. Adındaki pleomorfizm hücrelerin değil yapının: kanallar, miyoepitel hücreleri ve bu hücrelerin yaptığı miksoid ya da kıkırdak benzeri bir zemin bir arada. Klinikte yavaş büyüyen, ağrısız, sert bir kitle; parotiste kulak altında, ağızda damakta orta hattın yanında. Kapsül eksik olabilir ve tümör küçük çıkıntılarla kapsülün dışına uzanır. Bu yüzden enükleasyon yapılmaz: tümör yatağına ekilir ve çok odaklı nükseder. Uzun süre bırakılırsa yüzde 3 ila 4'üne kadar malign dönüşür ve risk süreyle artar; buna karsinom ex pleomorfik adenom diyoruz."
   },
   {
-   "img": "slaytlar/M4/18.jpg?v=1",
+   "img": "slaytlar/M4/18.jpg?v=2",
    "title": "Warthin tümörü: sigara ve parotis kuyruğu",
    "notes": "[15:00–15:55]\nParotisin ikinci sık tümörü. Neredeyse yalnız parotiste, mandibula açısının hemen üstünde, kuyruk bölümünde. Sigarayla en güçlü ilişkili tükürük bezi tümörü: risk sekiz kat. Yüzde 5 ila 17'si iki taraflı. Eskiden erkek tümörü denirdi; kadınlar sigara içtikçe oran eşitlendi. Mikroskopta görüntü unutulmaz: iki sıra pembe onkositik hücre ve altında germinal merkezli lenfoid doku."
   },
   {
-   "img": "slaytlar/M4/19.jpg?v=1",
+   "img": "slaytlar/M4/19.jpg?v=2",
    "title": "Üç iyi huylu tümör, birer cümle",
    "notes": "[15:55–16:40]\nÜç küçük iyi huylu tümör. Kanaliküler adenom üst dudağın tümörü; yaşlı hastada mavimsi bir nodül olarak gelir ve mukosel sanılabilir. Bazal hücreli adenom çoğunlukla parotiste. Onkositom nadir, çoğu parotiste. Eskiden 'monomorfik adenom' diye bir torba vardı; artık bu ad önerilmiyor. Sırada telefon: üst dudakta bir nodül."
   },
   {
-   "img": "slaytlar/M4/20.jpg?v=1",
+   "img": "slaytlar/M4/20.jpg?v=2",
    "title": "Üst dudakta nodül",
    "q": "W5",
    "notes": "[16:40–17:25]\n(Sonuç.) Doğru B: kanaliküler adenom. İki ipucu: üst dudak ve yaş. Mukosel üst dudakta neredeyse hiç olmaz; DUS sorusunu hatırlayın.\n\nCANLI (W5, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
-   "img": "slaytlar/M4/21.jpg?v=1",
+   "img": "slaytlar/M4/21.jpg?v=2",
    "title": "Mukoepidermoid karsinom: en sık malign",
    "notes": "[17:25–18:40]\nEn sık malign tükürük bezi tümörü ve çocukta da en sık malign tümör. Adı hücrelerinden: mukus hücreleri, epidermoid hücreler ve aradaki ara hücreler. Düşük dereceli tümörde kistler ve bol mukus hücresi var; yüksek dereceli olan solid ve skuamöz hücreli karsinoma benzer. Prognozu derece belirler: düşük ve orta derecede beş yıllık sağkalım yüzde 90 dolayında, yüksek derecede yarı yarıya. Ağızda mavi-kırmızı olunca mukosel sanılır. Bir de kemik içinde görülür: santral mukoepidermoid karsinom, en sık kemik içi tükürük bezi tümörü, arka mandibulada çok gözlü radyolüsensi."
   },
   {
-   "img": "slaytlar/M4/22.jpg?v=1",
+   "img": "slaytlar/M4/22.jpg?v=2",
    "title": "Adenoid kistik karsinom: sinirin peşinde",
    "notes": "[18:40–19:55]\nBaşlık slaytındaki delikler bu tümörün. Kribriform desen, İsviçre peyniri gibi. Bu tümör sinirleri sever: sinir kılıfı boyunca ilerler ve kafa tabanına kadar gidebilir. Bu yüzden hasta şişlikten önce ağrı ya da uyuşma tarif edebilir. Submandibuler bezin en sık malign tümörü. Lenf noduna az gider ama yıllar sonra akciğere gider. Neville'in cümlesi: beş yıllık sağkalım bu tümörde şifa demek değil; yirmi yılda hastaların yarısından fazlası kaybedilir."
   },
   {
-   "img": "slaytlar/M4/23.jpg?v=1",
+   "img": "slaytlar/M4/23.jpg?v=2",
    "title": "Dört isim daha: PAC, asinik, ex PA, sekretuar",
    "notes": "[19:55–21:10]\nDört isim, birer cümle. Polimorf adenokarsinom neredeyse yalnız küçük bezlerde, çoğu damakta; eski adı düşük dereceli polimorf adenokarsinom. Perinöral invazyon yapar ama prognozu iyi. Asinik hücreli karsinom parotiste; hücreleri seröz asinüs hücresine benzer. Karsinom ex pleomorfik adenom: yıllardır duran bir kitle birden hızla büyümeye başlarsa. Sekretuar karsinom ETV6::NTRK3 füzyonu taşır; WHO bu füzyonun TRK inhibitörleri için bir hedef olabileceğini söylüyor. Sırada telefon: genetik barkod."
   },
   {
-   "img": "slaytlar/M4/24.jpg?v=1",
+   "img": "slaytlar/M4/24.jpg?v=2",
    "title": "Genetik barkod",
    "q": "W6",
    "notes": "[21:10–22:10]\nTelefonda dört tümör, dört gen. Eşleştirin. (Sonuç.) Pleomorfik adenom PLAG1 ya da HMGA2; mukoepidermoid karsinom MAML2; adenoid kistik karsinom MYB::NFIB; sekretuar karsinom ETV6::NTRK3. Neden önemli? Küçük bir biyopside patolog tanıyı bu barkodla doğruluyor.\n\nCANLI (W6, Eşleştirme): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. T: 60 sn (perdede T düğmesi bu soruda 60 sn sayar)."
   },
   {
-   "img": "slaytlar/M4/25.jpg?v=1",
+   "img": "slaytlar/M4/25.jpg?v=2",
    "title": "Açılış vakası: hastanın söylemediği",
    "notes": "[22:10–22:40]\nHasta başta söylemedi: son iki ayda damağında karıncalanma ve uyuşma var. Bu bir sinir bulgusu. Şimdi tahmininizi yenileyin."
   },
   {
-   "img": "slaytlar/M4/26.jpg?v=1",
+   "img": "slaytlar/M4/26.jpg?v=2",
    "title": "Vakaya dönüş: şimdi ne diyorsun?",
    "q": "W7",
    "notes": "[22:40–23:20]\nAynı şıklar. Dersin başındaki dağılımı hatırlayın. (İki sonucu yan yana göster.)\n\nCANLI (W7, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: C. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
   },
   {
-   "img": "slaytlar/M4/27.jpg?v=1",
+   "img": "slaytlar/M4/27.jpg?v=2",
    "title": "En olası: adenoid kistik karsinom",
    "notes": "[23:20–24:00]\nKanıtlar: adres damak, küçük bez; tümörlerin yaklaşık yarısı malign. Klinik pleomorfik adenomu düşündürüyordu ve en olası tanı oydu. Ama karıncalanma ve uyuşma sinir tutulumu demek; damakta bu adenoid kistik karsinomu, daha az olasılıkla polimorf adenokarsinomu düşündürür. Tanıyı insizyonel biyopsi koyar. Bu hastayı yirmi yıl izleyeceğiz."
   },
   {
-   "img": "slaytlar/M4/28.jpg?v=1",
+   "img": "slaytlar/M4/28.jpg?v=2",
    "title": "(Zaman kalırsa) Eski ad, yeni ad: WHO 2022",
    "notes": "[24:00–24:45] ZAMAN KALIRSA; yoksa → ile atla.\nZaman kalırsa; yoksa atlayın. Solda adı değişenler. Sağda WHO 2022'nin getirdikleri: iki yeni malign, üç yeni benign tümör; sklerozan polikistik adenom benign tümörler arasına alındı; ince iğne sitolojisinde Milan sistemi öneriliyor."
   },
   {
-   "img": "slaytlar/M4/29.jpg?v=1",
+   "img": "slaytlar/M4/29.jpg?v=2",
    "title": "Çıkış bileti",
    "q": "W8",
    "notes": "[24:45–25:20]\nSon kelime bulutu. Hangi konu kafanızı karıştırdı? En büyük kelimeyle 24 Kasım'da başlayacağım.\n\nCANLI (W8, Kelime bulutu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Bulut canlı akar. → kapatır, → sonraki slayt. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
@@ -308,12 +308,12 @@
    "notes": "[25:20–25:40]\nLiderlik tablosu. İlk üçü alkışlayalım. Eşit puanda hızlı olan önde."
   },
   {
-   "img": "slaytlar/M4/31.jpg?v=1",
+   "img": "slaytlar/M4/31.jpg?v=2",
    "title": "Kaynaklar ve evde tekrar",
-   "notes": "[25:40–25:50]\nKaynaklar burada. 24 Kasım'a kadar Neville'in bölüm sonundaki örnek soruları bir kez çözün; ilk üçü gelecek derste burada anarım."
+   "notes": "[25:40–25:50]\nKaynaklar burada. 24 Kasım'a kadar Neville'in 11. bölümünü bir kez okuyun; ilk üçü gelecek derste burada anarım."
   }
  ],
  "duration": "25:50",
- "cta": "24 Kasım'a kadar Neville Bölüm 11'in sonundaki örnek soruları çözün. İlk üçü gelecek derste burada anarım.",
+ "cta": "24 Kasım'a kadar Neville Bölüm 11'i (tükürük bezi patolojisi) bir kez okuyun. İlk üçü gelecek derste burada anarım.",
  "frame": "Bez küçüldükçe tehlike büyür; ağızda adres tanıyı daraltır."
 }

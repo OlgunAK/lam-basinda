@@ -14,7 +14,7 @@ l = lambda k, **kw: F("l", k, **kw)
 L = Lesson("M4", "Tükürük Bezi Hastalıkları ve Tümörleri", "Tükürük Bezi Hastalıkları", "17 Kasım 2026",
            frame="Bez küçüldükçe tehlike büyür; ağızda adres tanıyı daraltır.",
            strip=("Adres", ["1 Hangi bez?", "2 Ağızda nerede?"]),
-           cta="24 Kasım'a kadar Neville Bölüm 11'in sonundaki örnek soruları çözün. İlk üçü gelecek derste burada anarım.")
+           cta="24 Kasım'a kadar Neville Bölüm 11'i (tükürük bezi patolojisi) bir kez okuyun. İlk üçü gelecek derste burada anarım.")
 
 IMG = os.path.join(CANLI, "img")
 
@@ -160,7 +160,7 @@ L.add(title="Nekrotizan sialometaplazi: karsinom değil", dur=60, dus=True, cred
       notes="Bu dersin patoloğun notu burada. Nekrotizan sialometaplazi küçük bezlerin enfarktı: kan akımı kesilir, bez ölür. Çoğu arka damakta; önce şişlik, iki üç hafta içinde krater gibi bir ülser. Hasta 'damağımın bir parçası düştü' diye gelir. Neden olanlar: travma, anestezi iğnesi, protez, yakın bir ameliyat. Klinikte karsinoma benzer; mikroskopta daha da çok: ölen bezlerin kanalları skuamöz metaplazi yapar ve üstteki epitel aşağı dallanır. Bu tablo skuamöz hücreli karsinom ya da mukoepidermoid karsinom sanılabilir. Benim size ricam: istek formunu boş göndermeyin. 'İki hafta önce bu bölgede anestezi yapıldı', 'yeni protez', 'birden başladı' cümleleri patoloğun karşısındaki en değerli bilgidir. Lezyon kendiliğinden iyileşir; iyileşmezse yeniden biyopsi.")
 
 L.add(title="DUS Molası 1/2", dur=45, theme="dark", q=W3, body=qbody(Q[W3]),
-      notes="Neville'in bölüm sonu sorularından. 30 saniye. (Sonuç.) Üst dudak. Bu cümleyi birazdan tümörlerde kullanacağız.")
+      notes="Neville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Üst dudak. Bu cümleyi birazdan tümörlerde kullanacağız.")
 
 L.add(title="DUS Molası 2/2", dur=40, theme="dark", q=W4, body=qbody(Q[W4]),
       notes="(Sonuç.) Lenfoma; çoğu MALT. Bu ara tümör dışı bloğu kapatıyor; sırada tümörler.")
@@ -300,7 +300,7 @@ L.add(title="Kaynaklar ve evde tekrar", dur=10,
                    "Shiboski CH ve ark. 2016 ACR/EULAR primer Sjögren sınıflama ölçütleri. *Arthritis Rheumatol.* 2017;69:35–45.",
                    "Laskaris G. *Color Atlas of Oral Diseases.* 4. baskı. Thieme; 2017. (Klinik fotoğraflar)"], size=30, gap=18),
                box("pink", None, html_="<div class='big' style='font-size:36px'>%s</div>" % md(L.cta), style="padding:30px 34px;margin-top:30px")),
-      notes="Kaynaklar burada. 24 Kasım'a kadar Neville'in bölüm sonundaki örnek soruları bir kez çözün; ilk üçü gelecek derste burada anarım.")
+      notes="Kaynaklar burada. 24 Kasım'a kadar Neville'in 11. bölümünü bir kez okuyun; ilk üçü gelecek derste burada anarım.")
 
 if __name__ == "__main__":
     only = set(int(x) for x in sys.argv[1:]) or None

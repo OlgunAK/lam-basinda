@@ -183,7 +183,7 @@ def steps(items, size=30):
 
 # ---------------- slide shell ----------------
 class Lesson:
-    def __init__(self, lid, title, short, date, frame=None, strip=None, cta=None, ver="1"):
+    def __init__(self, lid, title, short, date, frame=None, strip=None, cta=None, ver="2"):
         self.lid, self.title, self.short, self.date = lid, title, short, date
         self.frame, self.strip_cfg, self.cta, self.ver = frame, strip, cta, ver
         self.slides = []      # dicts

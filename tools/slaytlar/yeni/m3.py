@@ -14,7 +14,7 @@ l = lambda k, **kw: F("l", k, **kw)
 L = Lesson("M3", "Yumuşak Doku Hastalıkları", "Yumuşak Doku Hastalıkları", "17 Kasım 2026",
            frame="Önce adres: diş etinde mi? Değilse hangi doku?",
            strip=("Önce adres", ["1 Diş eti mi?", "2 Hangi doku?"]),
-           cta="24 Kasım'a kadar Neville Bölüm 12'nin sonundaki örnek soruları çözün. İlk üçü gelecek derste burada anarım.")
+           cta="24 Kasım'a kadar Neville Bölüm 12'yi (yumuşak doku tümörleri) bir kez okuyun. İlk üçü gelecek derste burada anarım.")
 
 IMG = os.path.join(CANLI, "img")
 
@@ -151,7 +151,7 @@ L.add(title="Protezin açtığı kitleler", dur=55, strip={2}, cred=NEV,
       notes="İki protez lezyonu. Epulis fissuratum uyumsuz bir protez kenarının açtığı kıvrımlar: protezin kenarı iki kıvrımın arasındaki yarığa oturur. Eksizyon yeterli değil; protezi yenilemezseniz geri gelir. İnflamatuvar papiller hiperplazi sert damakta, protezin altında, çakıl taşı gibi kırmızı papiller. Protezi gece gündüz takanların yaklaşık beşte birinde görülür; çoğunda kandida da vardır. Erken dönemde protezi geceleri çıkarmak ve antifungal yeter. Patolog için not: ikisinde de yüzey epiteli psödoepitelyomatöz hiperplazi yapabilir, karsinom sanılmamalı.")
 
 L.add(title="DUS Molası 1/2", dur=45, theme="dark", q=W3, body=qbody(Q[W3]),
-      notes="İlk DUS sorusu, Neville'in bölüm sonu sorularından. 30 saniye. (Sonuç.) Piyojenik granülom: ikisi de diş etinde kırmızı, ülserli kitle. Ayırımı mikroskop yapar.")
+      notes="İlk DUS sorusu, Neville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Piyojenik granülom: ikisi de diş etinde kırmızı, ülserli kitle. Ayırımı mikroskop yapar.")
 
 L.add(title="DUS Molası 2/2", dur=40, theme="dark", q=W4, body=qbody(Q[W4]),
       notes="İkinci soru bir tanım. (Sonuç.) Epulis bir yer adı: diş eti ya da alveol kreti. Epulis fissuratum, konjenital epulis, epulis granulomatosa; hepsinin ortak noktası adresleri. Bu ara diş eti bloğunu kapatıyor; sırada sinir.")
@@ -289,7 +289,7 @@ L.add(title="Kaynaklar ve evde tekrar", dur=15,
                    "WHO Classification of Tumours Editorial Board. *Head and Neck Tumours.* 5. baskı. IARC; 2022. Bölüm 6 (ağız boşluğu) ve 10 (yumuşak doku).",
                    "Laskaris G. *Color Atlas of Oral Diseases.* 4. baskı. Thieme; 2017. (Klinik fotoğraflar)"], size=30, gap=18),
                box("pink", None, html_="<div class='big' style='font-size:36px'>%s</div>" % md(L.cta), style="padding:30px 34px;margin-top:30px")),
-      notes="Kaynaklar burada. 24 Kasım'a kadar Neville'in bölüm sonundaki örnek soruları bir kez çözün; ilk üçü gelecek derste burada anarım. On dakika ara; sonra tükürük bezleri. Telefonlarınızı kapatmayın: aynı adla 'Sıradaki derse geç' düğmesi çıkacak.")
+      notes="Kaynaklar burada. 24 Kasım'a kadar Neville'in 12. bölümünü bir kez okuyun; ilk üçü gelecek derste burada anarım. On dakika ara; sonra tükürük bezleri. Telefonlarınızı kapatmayın: aynı adla 'Sıradaki derse geç' düğmesi çıkacak.")
 
 if __name__ == "__main__":
     only = set(int(x) for x in sys.argv[1:]) or None
