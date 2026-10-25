@@ -13,6 +13,7 @@ l = lambda k, **kw: F("l", k, **kw)
 
 L = Lesson("M3", "Yumuşak Doku Hastalıkları", "Yumuşak Doku Hastalıkları", "17 Kasım 2026",
            frame="Önce adres: diş etinde mi? Değilse hangi doku?",
+           quiz="../quiz/#yd",
            strip=("Önce adres", ["1 Diş eti mi?", "2 Hangi doku?"]),
            cta="24 Kasım'a kadar isteyen Neville'in örnek sorularını Türkçe quiz olarak çözsün: olgunak.github.io/lam-basinda/quiz. İlk üçü gelecek derste burada anarım.")
 

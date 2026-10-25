@@ -183,9 +183,9 @@ def steps(items, size=30):
 
 # ---------------- slide shell ----------------
 class Lesson:
-    def __init__(self, lid, title, short, date, frame=None, strip=None, cta=None, ver="3"):
+    def __init__(self, lid, title, short, date, frame=None, strip=None, cta=None, ver="3", quiz=None):
         self.lid, self.title, self.short, self.date = lid, title, short, date
-        self.frame, self.strip_cfg, self.cta, self.ver = frame, strip, cta, ver
+        self.frame, self.strip_cfg, self.cta, self.ver, self.quiz = frame, strip, cta, ver, quiz
         self.slides = []      # dicts
         self.questions = []
         self.qmap = {}
@@ -302,6 +302,8 @@ class Lesson:
             L["cta"] = self.cta
         if self.frame:
             L["frame"] = self.frame
+        if self.quiz:
+            L["quiz"] = self.quiz   # ders sonunda telefonda quiz bağlantısı
         json.dump(L, open(os.path.join(CANLI, "dersler", self.lid + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         core = sum(s["dur"] for s in self.slides if not s.get("optional"))
         print("%s: %d slayt, %d soru, toplam %s (çekirdek %s)" % (self.lid, n, len(self.questions), ts(t), ts(core)))

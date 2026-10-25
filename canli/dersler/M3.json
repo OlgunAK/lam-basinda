@@ -269,5 +269,6 @@
  ],
  "duration": "25:25",
  "cta": "24 Kasım'a kadar isteyen Neville'in örnek sorularını Türkçe quiz olarak çözsün: olgunak.github.io/lam-basinda/quiz. İlk üçü gelecek derste burada anarım.",
- "frame": "Önce adres: diş etinde mi? Değilse hangi doku?"
+ "frame": "Önce adres: diş etinde mi? Değilse hangi doku?",
+ "quiz": "../quiz/#yd"
 }

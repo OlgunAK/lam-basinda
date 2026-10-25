@@ -474,5 +474,6 @@
  ],
  "duration": "32:15",
  "cta": "Evde tekrarı 3 Kasım'a kadar bir kez geçin. İlk üçü gelecek derste burada anarım.",
- "frame": "3G: Gazlı bezle gider mi, gerince geçer mi, gerekçesi var mı?"
+ "frame": "3G: Gazlı bezle gider mi, gerince geçer mi, gerekçesi var mı?",
+ "quiz": "../quiz/#m2"
 }

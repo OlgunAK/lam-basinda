@@ -13,6 +13,7 @@ l = lambda k, **kw: F("l", k, **kw)
 
 L = Lesson("M4", "Tükürük Bezi Hastalıkları ve Tümörleri", "Tükürük Bezi Hastalıkları", "17 Kasım 2026",
            frame="Bez küçüldükçe tehlike büyür; ağızda adres tanıyı daraltır.",
+           quiz="../quiz/#tb",
            strip=("Adres", ["1 Hangi bez?", "2 Ağızda nerede?"]),
            cta="24 Kasım'a kadar isteyen Neville'in örnek sorularını Türkçe quiz olarak çözsün: olgunak.github.io/lam-basinda/quiz. İlk üçü gelecek derste burada anarım.")
 

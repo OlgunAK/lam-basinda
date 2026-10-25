@@ -235,6 +235,8 @@ def strip_old(notes):
     notes = STAMP.sub("", notes.strip())
     return re.sub(r"\n\nCANLI \(.*$", "", notes, flags=re.S).strip()
 
+QUIZ = {"M1": "../quiz/#m1", "M2": "../quiz/#m2"}
+
 def build_lesson(lid, plan, qdrop, qedit, note_edit, qadd=(), strip_cfg=None, cta=None, frame=None):
     L = load(lid)
     orig_slides = L["slides"]
@@ -308,6 +310,7 @@ def build_lesson(lid, plan, qdrop, qedit, note_edit, qadd=(), strip_cfg=None, ct
     L["duration"] = ts(t)
     if cta: L["cta"] = cta
     if frame: L["frame"] = frame
+    if lid in QUIZ: L["quiz"] = QUIZ[lid]   # ders sonunda telefonda quiz bağlantısı
     json.dump(L, open(os.path.join(ROOT, "dersler", lid + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(lid, "slides", len(new_slides), "questions", len(questions), "total", ts(t))
     return L
