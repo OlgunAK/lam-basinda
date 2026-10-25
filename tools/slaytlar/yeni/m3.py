@@ -14,7 +14,7 @@ l = lambda k, **kw: F("l", k, **kw)
 L = Lesson("M3", "Yumuşak Doku Hastalıkları", "Yumuşak Doku Hastalıkları", "17 Kasım 2026",
            frame="Önce adres: diş etinde mi? Değilse hangi doku?",
            strip=("Önce adres", ["1 Diş eti mi?", "2 Hangi doku?"]),
-           cta="24 Kasım'a kadar Neville Bölüm 12'yi (yumuşak doku tümörleri) bir kez okuyun. İlk üçü gelecek derste burada anarım.")
+           cta="24 Kasım'a kadar isteyen Neville'in örnek sorularını Türkçe quiz olarak çözsün: olgunak.github.io/lam-basinda/quiz. İlk üçü gelecek derste burada anarım.")
 
 IMG = os.path.join(CANLI, "img")
 
@@ -288,8 +288,12 @@ L.add(title="Kaynaklar ve evde tekrar", dur=15,
       body=col(bl(["Neville BW, Damm DD, Allen CM, Chi AC. *Oral and Maxillofacial Pathology.* 5. baskı. Elsevier; 2024. Bölüm 12: Yumuşak doku tümörleri.",
                    "WHO Classification of Tumours Editorial Board. *Head and Neck Tumours.* 5. baskı. IARC; 2022. Bölüm 6 (ağız boşluğu) ve 10 (yumuşak doku).",
                    "Laskaris G. *Color Atlas of Oral Diseases.* 4. baskı. Thieme; 2017. (Klinik fotoğraflar)"], size=30, gap=18),
-               box("pink", None, html_="<div class='big' style='font-size:36px'>%s</div>" % md(L.cta), style="padding:30px 34px;margin-top:30px")),
-      notes="Kaynaklar burada. 24 Kasım'a kadar Neville'in 12. bölümünü bir kez okuyun; ilk üçü gelecek derste burada anarım. On dakika ara; sonra tükürük bezleri. Telefonlarınızı kapatmayın: aynı adla 'Sıradaki derse geç' düğmesi çıkacak.")
+               div("<div style='display:flex;gap:34px;align-items:center;background:%s;border-radius:16px;padding:22px 28px;margin-top:22px'>"
+                   "<img src='file://%s' style='width:190px;height:190px;border-radius:8px'>"
+                   "<div style='font-size:30px;line-height:1.35'><b>Evde tekrar: quiz (isteyen çözsün)</b><br>%s<br>"
+                   "<span style='font:700 34px monospace;color:%s'>olgunak.github.io/lam-basinda/quiz</span></div></div>" % (C["lilac"], os.path.join(CANLI, "img", "quiz_qr.png"), "24 soru: Neville'in örnek sınav soruları, Türkçe, cevap açıklamalı.", C["pink"])),
+               box("pink", None, html_="<div class='big' style='font-size:34px'>İlk üçü 24 Kasım'da burada anarım.</div>", style="padding:24px 34px;margin-top:22px")),
+      notes="Kaynaklar burada. Evde tekrar için quiz: Neville'in örnek sınav soruları Türkçe, cevap açıklamalı; isteyen karekodu okutup çözsün. İlk üçü gelecek derste burada anarım. On dakika ara; sonra tükürük bezleri. Telefonlarınızı kapatmayın: aynı adla 'Sıradaki derse geç' düğmesi çıkacak.")
 
 if __name__ == "__main__":
     only = set(int(x) for x in sys.argv[1:]) or None

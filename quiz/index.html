@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lam Başında · Quiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Ana sayfayla aynı dil: H&E renkleri, tek sütun, telefon öncelikli. */
+:root{
+  --bg:#FBF8FC; --card:#FFFFFF; --ink:#24163A; --muted:#6B5D7B; --line:#E6DCEE;
+  --hema:#4A2C82; --hema-soft:#EFE8FA; --eosin:#C2366A; --eosin-soft:#FBE9F0;
+  --ok:#17744E; --ok-soft:#E3F4EC; --bad:#B02E2A; --bad-soft:#FBE7E6;
+  --f-display:"Literata",Georgia,"Times New Roman",serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#150E1E; --card:#20172C; --ink:#F2EBF7; --muted:#A898B9; --line:#382A49;
+  --hema:#B9A0EE; --hema-soft:#2C2142; --eosin:#F27CA3; --eosin-soft:#3A1E2C;
+  --ok:#55C792; --ok-soft:#173327; --bad:#F3776F; --bad-soft:#3B1C1B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#150E1E; --card:#20172C; --ink:#F2EBF7; --muted:#A898B9; --line:#382A49;
+  --hema:#B9A0EE; --hema-soft:#2C2142; --eosin:#F27CA3; --eosin-soft:#3A1E2C;
+  --ok:#55C792; --ok-soft:#173327; --bad:#F3776F; --bad-soft:#3B1C1B; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:640px;margin:0 auto;padding:20px 16px 48px;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.2}
+p{margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--hema);outline-offset:2px}
+.top{display:flex;align-items:center;gap:12px}
+.mark{width:44px;height:44px;flex:none;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--eosin) 0 22%,transparent 23%),radial-gradient(circle at 66% 60%,var(--hema) 0 16%,transparent 17%),var(--eosin-soft);border:1px solid var(--line)}
+.brand h1{font-size:1.5rem}
+.brand p{color:var(--muted);font-size:.85rem}
+.note{color:var(--muted);font-size:.88rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.set{display:flex;flex-direction:column;gap:6px;text-align:left;width:100%;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.set:hover{border-color:var(--hema)}
+.eyebrow{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--eosin);font-weight:700}
+.set h2{font-size:1.2rem}
+.set .s{color:var(--muted);font-size:.9rem}
+.set .prog{font-size:.85rem;font-weight:600;color:var(--hema)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.back{background:none;border:0;padding:6px 0;color:var(--hema);font-weight:600}
+.count{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.track{height:6px;border-radius:99px;background:var(--hema-soft);overflow:hidden}
+.track i{display:block;height:100%;background:var(--hema);border-radius:99px;transition:width .25s}
+.qtext{font-family:var(--f-display);font-size:1.2rem;font-weight:500;line-height:1.35}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.opt:hover:not(:disabled){border-color:var(--hema)}
+.opt b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--hema-soft);color:var(--hema);display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.opt span{padding-top:2px}
+.opt:disabled{cursor:default}
+.opt.ok{border-color:var(--ok);background:var(--ok-soft)}
+.opt.ok b{background:var(--ok);color:var(--bg)}
+.opt.bad{border-color:var(--bad);background:var(--bad-soft)}
+.opt.bad b{background:var(--bad);color:var(--bg)}
+.exp{border-radius:12px;padding:14px;background:var(--hema-soft);display:flex;flex-direction:column;gap:6px}
+.exp .v{font-weight:700}
+.exp .v.ok{color:var(--ok)} .exp .v.bad{color:var(--bad)}
+.btn{border:0;border-radius:10px;padding:13px 18px;font-weight:700;background:var(--hema);color:var(--bg);width:100%}
+.btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink);font-weight:600}
+.score{font-family:var(--f-display);font-size:3rem;font-weight:700;color:var(--hema);line-height:1}
+.wrongs{display:flex;flex-direction:column;gap:10px}
+.wrongs .card p+p{margin-top:4px}
+.small{font-size:.88rem}
+.k{color:var(--ok);font-weight:600}
+footer{color:var(--muted);font-size:.8rem;text-align:center}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"></main>
+<script src="sorular.js"></script>
+<script>
+(function(){
+  var app=document.getElementById('app'), L="ABCDE";
+  var store={get:function(k){try{return JSON.parse(localStorage.getItem('lbq_'+k))}catch(e){return null}},
+             set:function(k,v){try{localStorage.setItem('lbq_'+k,JSON.stringify(v))}catch(e){}}};
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function el(h){var d=document.createElement('div');d.innerHTML=h;return d}
+  var S=null; // {set, order, i, ans:{qi:choice}}
+
+  function home(){
+    S=null;
+    var h='<div class="top"><div class="mark" aria-hidden="true"></div><div class="brand"><h1>Lam Başında · Quiz</h1><p>4. Sınıf Patoloji · Diş Hekimliği</p></div></div>'+
+      '<p class="note">İsteyen çözsün; puan kaydedilmez, kimse görmez. Sorular Neville, <i>Oral and Maxillofacial Pathology</i> 5. baskının örnek sınav sorularından Türkçeye çevrildi; eski adlar WHO 2022\'ye göre güncellendi.</p>';
+    app.innerHTML=h;
+    QUIZ.forEach(function(set){
+      var last=store.get('best_'+set.id);
+      var b=document.createElement('button'); b.className='set';
+      b.innerHTML='<span class="eyebrow">'+esc(set.ders)+'</span><h2>'+esc(set.title)+'</h2><span class="s">'+esc(set.sub)+'</span>'+
+        (last!=null?'<span class="prog">En iyi sonucun: '+last+' / '+set.qs.length+'</span>':'');
+      b.onclick=function(){start(set,null)};
+      app.appendChild(b);
+    });
+    app.appendChild(el('<footer>olgunak.github.io/lam-basinda/quiz</footer>').firstChild);
+    window.scrollTo(0,0);
+  }
+
+  function start(set,only){
+    var order=only||set.qs.map(function(_,i){return i});
+    S={set:set,order:order,i:0,ans:{},retry:!!only};
+    show();
+  }
+
+  function show(){
+    var set=S.set, qi=S.order[S.i], q=set.qs[qi], n=S.order.length, done=S.ans.hasOwnProperty(qi);
+    var h='<div class="bar"><button class="back" id="bk">← Dersler</button><span class="count">'+(S.i+1)+' / '+n+(S.retry?' · tekrar':'')+'</span></div>'+
+      '<div class="track"><i style="width:'+Math.round(100*S.i/n)+'%"></i></div>'+
+      '<p class="eyebrow">'+esc(set.title)+'</p><p class="qtext">'+esc(q.q)+'</p><div class="opts">';
+    q.o.forEach(function(o,j){
+      var c=''; if(done){ if(j===q.a)c=' ok'; else if(j===S.ans[qi])c=' bad'; }
+      h+='<button class="opt'+c+'" data-j="'+j+'"'+(done?' disabled':'')+'><b>'+L[j]+'</b><span>'+esc(o)+'</span></button>';
+    });
+    h+='</div>';
+    if(done){
+      var ok=S.ans[qi]===q.a;
+      h+='<div class="exp"><span class="v '+(ok?'ok':'bad')+'">'+(ok?'Doğru':'Yanlış · doğru cevap '+L[q.a])+'</span><p class="small">'+esc(q.e)+'</p></div>'+
+         '<button class="btn" id="nx">'+(S.i+1<n?'Sonraki soru':'Sonucu gör')+'</button>';
+    }
+    app.innerHTML=h;
+    document.getElementById('bk').onclick=home;
+    [].forEach.call(app.querySelectorAll('.opt'),function(b){b.onclick=function(){S.ans[qi]=+b.dataset.j;show()}});
+    var nx=document.getElementById('nx'); if(nx){nx.onclick=function(){if(S.i+1<n){S.i++;show();window.scrollTo(0,0)}else result()};nx.focus()}
+  }
+
+  function result(){
+    var set=S.set, right=0, wrong=[];
+    S.order.forEach(function(qi){ if(S.ans[qi]===set.qs[qi].a) right++; else wrong.push(qi); });
+    if(!S.retry){var best=store.get('best_'+set.id); if(best==null||right>best) store.set('best_'+set.id,right);}
+    var n=S.order.length;
+    var h='<div class="bar"><button class="back" id="bk">← Dersler</button><span class="count">'+esc(set.title)+'</span></div>'+
+      '<div class="card" style="display:flex;flex-direction:column;gap:8px;align-items:flex-start"><span class="eyebrow">Sonuç</span>'+
+      '<span class="score">'+right+' / '+n+'</span><p class="note">'+(right===n?'Hepsi doğru. Tebrikler.':wrong.length+' yanlış. Aşağıda doğru cevaplarla birlikte.')+'</p></div>';
+    if(wrong.length){
+      h+='<button class="btn" id="rt">Yanlışları tekrar çöz</button><div class="wrongs">';
+      wrong.forEach(function(qi){var q=set.qs[qi];
+        h+='<div class="card"><p class="small" style="font-weight:600">'+esc(q.q)+'</p><p class="small"><span class="k">'+L[q.a]+') '+esc(q.o[q.a])+'</span></p><p class="small note">'+esc(q.e)+'</p></div>';});
+      h+='</div>';
+    }
+    h+='<button class="btn ghost" id="again">Baştan çöz</button>';
+    app.innerHTML=h; window.scrollTo(0,0);
+    document.getElementById('bk').onclick=home;
+    document.getElementById('again').onclick=function(){start(set,null)};
+    var rt=document.getElementById('rt'); if(rt) rt.onclick=function(){start(set,wrong)};
+  }
+  home();
+})();
+</script>
+</body>
+</html>
