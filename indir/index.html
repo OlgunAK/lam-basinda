@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lam Başında · Dersler</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Quiz sayfasıyla aynı dil: H&E renkleri, tek sütun, telefon öncelikli. Bu dosya tools/slaytlar/yeni/pptx_yap.py ile üretilir. */
+:root{
+  --bg:#FBF8FC; --card:#FFFFFF; --ink:#24163A; --muted:#6B5D7B; --line:#E6DCEE;
+  --hema:#4A2C82; --hema-soft:#EFE8FA; --eosin:#C2366A; --eosin-soft:#FBE9F0;
+  --f-display:"Literata",Georgia,"Times New Roman",serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#150E1E; --card:#20172C; --ink:#F2EBF7; --muted:#A898B9; --line:#382A49;
+  --hema:#B9A0EE; --hema-soft:#2C2142; --eosin:#F27CA3; --eosin-soft:#3A1E2C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#150E1E; --card:#20172C; --ink:#F2EBF7; --muted:#A898B9; --line:#382A49;
+  --hema:#B9A0EE; --hema-soft:#2C2142; --eosin:#F27CA3; --eosin-soft:#3A1E2C; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:640px;margin:0 auto;padding:20px 16px 48px;display:flex;flex-direction:column;gap:20px}
+h1,h2{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.2}
+p{margin:0}
+a:focus-visible{outline:3px solid var(--hema);outline-offset:2px}
+.top{display:flex;align-items:center;gap:12px}
+.mark{width:44px;height:44px;flex:none;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--eosin) 0 22%,transparent 23%),radial-gradient(circle at 66% 60%,var(--hema) 0 16%,transparent 17%),var(--eosin-soft);border:1px solid var(--line)}
+.brand h1{font-size:1.5rem}
+.brand p{color:var(--muted);font-size:.85rem}
+.note{color:var(--muted);font-size:.88rem}
+.set{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.eyebrow{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--eosin);font-weight:700}
+.set h2{font-size:1.2rem}
+.set .s{color:var(--muted);font-size:.9rem}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.btn{display:inline-block;text-decoration:none;text-align:center;border-radius:10px;padding:12px 16px;font-weight:700;background:var(--hema);color:var(--bg);flex:1 1 180px}
+.btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink);font-weight:600}
+footer{color:var(--muted);font-size:.8rem;text-align:center}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="top"><div class="mark" aria-hidden="true"></div><div class="brand"><h1>Lam Başında · Dersler</h1><p>4. Sınıf Patoloji · Diş Hekimliği</p></div></div>
+<p class="note">Canlı derslerin internetsiz sürümü. PowerPoint, Keynote ya da Google Slaytlar ile açılır. Konuşma notları ve soruların doğru cevapları her slaytın not bölümünde. Liderlik tablosu ve kelime bulutu yalnız canlı derste olduğu için dosyada yok.</p>
+<article class="set"><span class="eyebrow">27 Ekim 2026</span><h2>Mukozal Hastalıklar 1</h2><span class="s">56 slayt · 14,2 MB · PowerPoint</span><div class="acts"><a class="btn" href="M1.pptx" download>İndir (.pptx)</a><a class="btn ghost" href="../quiz/#m1">Quiz: kendini sına</a></div></article>
+<article class="set"><span class="eyebrow">27 Ekim 2026</span><h2>Mukozal Hastalıklar 2 ve Dil Hastalıkları</h2><span class="s">51 slayt · 12,8 MB · PowerPoint</span><div class="acts"><a class="btn" href="M2.pptx" download>İndir (.pptx)</a><a class="btn ghost" href="../quiz/#m2">Quiz: kendini sına</a></div></article>
+<article class="set"><span class="eyebrow">17 Kasım 2026</span><h2>Yumuşak Doku Hastalıkları</h2><span class="s">26 slayt · 5,9 MB · PowerPoint</span><div class="acts"><a class="btn" href="M3.pptx" download>İndir (.pptx)</a><a class="btn ghost" href="../quiz/#yd">Quiz: kendini sına</a></div></article>
+<article class="set"><span class="eyebrow">17 Kasım 2026</span><h2>Tükürük Bezi Hastalıkları ve Tümörleri</h2><span class="s">28 slayt · 5,9 MB · PowerPoint</span><div class="acts"><a class="btn" href="M4.pptx" download>İndir (.pptx)</a><a class="btn ghost" href="../quiz/#tb">Quiz: kendini sına</a></div></article>
+<p class="note">Kendini sınamak için: <a href="../quiz/">bütün quizler</a></p>
+<footer>olgunak.github.io/lam-basinda/indir</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+ {
+  "id": "M1",
+  "title": "Mukozal Hastalıklar 1",
+  "date": "27 Ekim 2026",
+  "slides": 56,
+  "mb": 14.2,
+  "file": "M1.pptx",
+  "quiz": "../quiz/#m1"
+ },
+ {
+  "id": "M2",
+  "title": "Mukozal Hastalıklar 2 ve Dil Hastalıkları",
+  "date": "27 Ekim 2026",
+  "slides": 51,
+  "mb": 12.8,
+  "file": "M2.pptx",
+  "quiz": "../quiz/#m2"
+ },
+ {
+  "id": "M3",
+  "title": "Yumuşak Doku Hastalıkları",
+  "date": "17 Kasım 2026",
+  "slides": 26,
+  "mb": 5.9,
+  "file": "M3.pptx",
+  "quiz": "../quiz/#yd"
+ },
+ {
+  "id": "M4",
+  "title": "Tükürük Bezi Hastalıkları ve Tümörleri",
+  "date": "17 Kasım 2026",
+  "slides": 28,
+  "mb": 5.9,
+  "file": "M4.pptx",
+  "quiz": "../quiz/#tb"
+ }
+]
