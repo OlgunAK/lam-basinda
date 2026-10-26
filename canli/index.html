@@ -108,6 +108,9 @@ textarea.in{min-height:120px;resize:vertical}
 .score{font-family:var(--f-display);font-size:2.4rem;font-weight:700;color:var(--hema)}
 a{color:var(--hema)}
 .hidden{display:none!important}
+.links{display:flex;justify-content:space-between;gap:10px;margin-top:-4px}
+.links a{flex:0 1 auto;display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:600;font-size:.9rem;color:var(--hema);background:var(--hema-soft);border:1px solid var(--line);border-radius:999px;padding:8px 14px}
+.links a:hover{border-color:var(--hema)}
 </style>
 </head>
 <body>
@@ -121,6 +124,7 @@ a{color:var(--hema)}
     <button class="pill hidden" id="skorbtn" type="button">Skor</button>
     <span class="net" id="net" title="Bağlantı"></span>
   </header>
+  <nav class="links" aria-label="Ders dışı bağlantılar"><a href="../indir/">← Slaytlar</a><a href="../quiz/">Quizler →</a></nav>
   <main id="app" aria-live="polite"></main>
 </div>
 <script>window.__V="1760002500"</script><script src="config.js?v=1760002500"></script>
