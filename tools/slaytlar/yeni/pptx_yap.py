@@ -72,15 +72,26 @@ def build(lid):
 
 
 def page(info):
+    """indir/index.html and the site home page (index.html) list the same decks."""
     import html
     tpl = open(os.path.join(HERE, "indir_sablon.html"), encoding="utf-8").read()
-    cards = []
-    for i in info:
-        quiz = ('<a class="btn ghost" href="%s">Quiz: kendini sına</a>' % html.escape(i["quiz"])) if i.get("quiz") else ""
-        cards.append('<article class="set"><span class="eyebrow">%s</span><h2>%s</h2><span class="s">%d slayt · %s MB · PowerPoint</span>'
-                     '<div class="acts"><a class="btn" href="%s" download>İndir (.pptx)</a>%s</div></article>'
-                     % (html.escape(i["date"]), html.escape(i["title"]), i["slides"], str(i["mb"]).replace(".", ","), html.escape(i["file"]), quiz))
-    open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(tpl.replace("<!--DERSLER-->", "\n".join(cards)))
+    for out, f, r, url, ust in [
+            (os.path.join(OUT, "index.html"), "", "../", "olgunak.github.io/lam-basinda/indir", ""),
+            (os.path.join(REPO, "index.html"), "indir/", "", "olgunak.github.io/lam-basinda",
+             '<nav class="top-acts"><a href="canli/">← Canlı derse katıl</a><a href="quiz/">Quizler →</a></nav>')]:
+        cards = []
+        for i in info:
+            q = i.get("quiz", "").replace("../", r)
+            quiz = ('<a class="btn ghost" href="%s">Quiz: kendini sına</a>' % html.escape(q)) if q else ""
+            cards.append('<article class="set"><span class="eyebrow">%s</span><h2>%s</h2><span class="s">%d slayt · %s MB · PowerPoint</span>'
+                         '<div class="acts"><a class="btn" href="%s" download>İndir (.pptx)</a>%s</div></article>'
+                         % (html.escape(i["date"]), html.escape(i["title"]), i["slides"], str(i["mb"]).replace(".", ","), html.escape(f + i["file"]), quiz))
+        t = tpl.replace("<!--DERSLER-->", "\n".join(cards)).replace("{{R}}", r).replace("{{URL}}", url).replace("<!--UST-->", ust)
+        if not ust:
+            t = t.replace("Lam Başında · Dersler</h1>", "Lam Başında · Dersler</h1>")
+        else:
+            t = t.replace("<title>Lam Başında · Dersler</title>", "<title>Lam Başında</title>").replace("Lam Başında · Dersler</h1>", "Lam Başında</h1>")
+        open(out, "w", encoding="utf-8").write(t)
 
 
 if __name__ == "__main__":

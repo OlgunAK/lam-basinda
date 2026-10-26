@@ -8,7 +8,7 @@ Tüm sayfalar GitHub Pages üzerinden yayınlanır. Aşağıdaki bağlantılar �
 
 | Sayfa | Adres | Kimin için |
 |---|---|---|
-| Ana sayfa (Lam Başında) | https://olgunak.github.io/lam-basinda/ | Ders sunumu |
+| Ana sayfa (Lam Başında) | https://olgunak.github.io/lam-basinda/ | Ders slaytları (PowerPoint) ve quizler; canlı derse bağlantı |
 | Canlı oturum, öğrenci ekranı | https://olgunak.github.io/lam-basinda/canli/ | Öğrenciler (telefondan) |
 | Perde | https://olgunak.github.io/lam-basinda/canli/perde.html | Projeksiyon / duvardaki ekran |
 | Kumanda | https://olgunak.github.io/lam-basinda/canli/kumanda.html | Dersi yöneten hoca |
@@ -111,7 +111,7 @@ Bu iki dersin slaytları HTML olarak kurulup tarayıcıda JPG'ye çevrilir: `too
 ## Klasör yapısı
 
 ```
-index.html          Ana sunum
+index.html          Ana sayfa: derslerin PowerPoint sürümleri ve quizler (pptx_yap.py üretir)
 indir/              Derslerin PowerPoint sürümleri ve indirme sayfası (tools/slaytlar/yeni/pptx_yap.py üretir)
 quiz/               Evde tekrar quizi (index.html, sorular_mukoza.js, sorular.js)
 firestore.rules     Firestore güvenlik kuralları (Actions ile yayınlanır)

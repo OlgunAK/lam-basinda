@@ -7,230 +7,56 @@
 <title>Lam Başında</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Figtree:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: tek sütun, telefon öncelikli; liste ekranı ve etkinlik ekranı aynı kart dilini paylaşır. Renkler H&E boyasından: hematoksilen moru, eozin pembesi. */
+/* Quiz sayfasıyla aynı dil: H&E renkleri, tek sütun, telefon öncelikli. Bu dosya tools/slaytlar/yeni/pptx_yap.py ile üretilir. */
 :root{
   --bg:#FBF8FC; --card:#FFFFFF; --ink:#24163A; --muted:#6B5D7B; --line:#E6DCEE;
   --hema:#4A2C82; --hema-soft:#EFE8FA; --eosin:#C2366A; --eosin-soft:#FBE9F0;
-  --ok:#17744E; --ok-soft:#E3F4EC; --bad:#B02E2A; --bad-soft:#FBE7E6;
   --f-display:"Literata",Georgia,"Times New Roman",serif;
   --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
   --r:14px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#150E1E; --card:#20172C; --ink:#F2EBF7; --muted:#A898B9; --line:#382A49;
-  --hema:#B9A0EE; --hema-soft:#2C2142; --eosin:#F27CA3; --eosin-soft:#3A1E2C;
-  --ok:#55C792; --ok-soft:#173327; --bad:#F3776F; --bad-soft:#3B1C1B; color-scheme:dark}}
+  --hema:#B9A0EE; --hema-soft:#2C2142; --eosin:#F27CA3; --eosin-soft:#3A1E2C; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#150E1E; --card:#20172C; --ink:#F2EBF7; --muted:#A898B9; --line:#382A49;
-  --hema:#B9A0EE; --hema-soft:#2C2142; --eosin:#F27CA3; --eosin-soft:#3A1E2C;
-  --ok:#55C792; --ok-soft:#173327; --bad:#F3776F; --bad-soft:#3B1C1B; color-scheme:dark}
+  --hema:#B9A0EE; --hema-soft:#2C2142; --eosin:#F27CA3; --eosin-soft:#3A1E2C; color-scheme:dark}
 *{box-sizing:border-box}
+html,body{margin:0}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
-.wrap{max-width:640px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:flex;flex-direction:column;gap:20px}
-h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.2}
+.wrap{max-width:640px;margin:0 auto;padding:20px 16px 48px;display:flex;flex-direction:column;gap:20px}
+h1,h2{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.2}
 p{margin:0}
-button{font:inherit;color:inherit;cursor:pointer}
-button:focus-visible,input:focus-visible{outline:3px solid var(--hema);outline-offset:2px}
+a:focus-visible{outline:3px solid var(--hema);outline-offset:2px}
 .top{display:flex;align-items:center;gap:12px}
-.mark{width:44px;height:44px;flex:none;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--eosin) 0 22%,transparent 23%),radial-gradient(circle at 66% 60%,var(--hema) 0 16%,transparent 17%),radial-gradient(circle at 40% 72%,var(--hema) 0 10%,transparent 11%),var(--eosin-soft);border:2px solid var(--line)}
+.mark{width:44px;height:44px;flex:none;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--eosin) 0 22%,transparent 23%),radial-gradient(circle at 66% 60%,var(--hema) 0 16%,transparent 17%),var(--eosin-soft);border:1px solid var(--line)}
 .brand h1{font-size:1.5rem}
 .brand p{color:var(--muted);font-size:.85rem}
-.codebox{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:10px}
-.codebox label{font-weight:600;font-size:.95rem}
-.coderow{display:flex;gap:8px}
-.coderow input{flex:1;min-width:0;font-family:var(--f-mono);font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;padding:12px 14px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink)}
-.btn{border:0;border-radius:10px;padding:12px 18px;font-weight:700;background:var(--hema);color:var(--bg)}
-.btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink);font-weight:600}
-.hint{color:var(--bad);font-size:.88rem;min-height:1.2em}
-.lesson{display:flex;flex-direction:column;gap:10px}
-.lesson-head{display:flex;flex-direction:column;gap:2px}
+.note{color:var(--muted);font-size:.88rem}
+.set{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
 .eyebrow{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--eosin);font-weight:700}
-.lesson-head h2{font-size:1.25rem}
-.lesson-head p{color:var(--muted);font-size:.9rem}
-.acts{display:flex;flex-direction:column;gap:8px}
-.act{display:flex;align-items:center;gap:12px;text-align:left;width:100%;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
-.act:hover{border-color:var(--hema)}
-.chip{font-family:var(--f-mono);font-weight:700;font-size:.85rem;padding:4px 8px;border-radius:8px;background:var(--hema-soft);color:var(--hema);flex:none}
-.act .t{flex:1;min-width:0;font-weight:600}
-.act .k{font-size:.78rem;color:var(--muted);flex:none}
-.view{display:flex;flex-direction:column;gap:16px}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.back{background:none;border:0;padding:8px 0;color:var(--hema);font-weight:600}
-.view h2{font-size:1.4rem}
-.progress{display:flex;gap:6px;flex-wrap:wrap}
-.dot{width:26px;height:6px;border-radius:3px;background:var(--line)}
-.dot.on{background:var(--hema)}.dot.ok{background:var(--ok)}.dot.bad{background:var(--bad)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:14px}
-.stem{font-size:1.02rem}
-.qnum{font-family:var(--f-mono);font-size:.8rem;color:var(--muted)}
-.opts{display:flex;flex-direction:column;gap:8px}
-.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg)}
-.opt .L{font-family:var(--f-mono);font-weight:700;color:var(--hema);flex:none;width:1.2em}
-.opt span:last-child{min-width:0}
-.opt:not([disabled]):hover{border-color:var(--hema)}
-.opt[disabled]{cursor:default}
-.opt.ok{border-color:var(--ok);background:var(--ok-soft)}
-.opt.ok .L{color:var(--ok)}
-.opt.bad{border-color:var(--bad);background:var(--bad-soft)}
-.opt.bad .L{color:var(--bad)}
-.opt.picked{border-color:var(--hema);background:var(--hema-soft)}
-.fb{border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px}
-.fb.ok{background:var(--ok-soft)}.fb.bad{background:var(--bad-soft)}.fb.neutral{background:var(--hema-soft)}
-.fb strong{font-size:1rem}
-.fb.ok strong{color:var(--ok)}.fb.bad strong{color:var(--bad)}.fb.neutral strong{color:var(--hema)}
-.item{font-family:var(--f-display);font-size:1.25rem;font-weight:700;padding:16px;border-radius:12px;background:var(--eosin-soft);color:var(--ink);text-wrap:balance}
-.item.long{font-family:var(--f-body);font-size:1.02rem;font-weight:600}
-.score{text-align:center;display:flex;flex-direction:column;gap:6px;align-items:center}
-.score .big{font-family:var(--f-display);font-size:3rem;font-weight:700;color:var(--hema);font-variant-numeric:tabular-nums}
-.row{display:flex;gap:8px;flex-wrap:wrap}
-.dx{font-family:var(--f-display);font-size:1.3rem;font-weight:700;color:var(--eosin)}
-.cmp{display:flex;flex-direction:column;gap:10px}
-.cmp .q{font-weight:600}
-.cmp .a{font-size:.95rem}
-.ev{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px}
-.foot{color:var(--muted);font-size:.8rem;text-align:center}
-@media (prefers-reduced-motion:no-preference){.view{animation:in .25s ease-out}@keyframes in{from{transform:translateY(6px)}to{transform:none}}}
+.set h2{font-size:1.2rem}
+.set .s{color:var(--muted);font-size:.9rem}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.btn{display:inline-block;text-decoration:none;text-align:center;border-radius:10px;padding:12px 16px;font-weight:700;background:var(--hema);color:var(--bg);flex:1 1 180px}
+.top-acts{display:flex;justify-content:space-between;gap:10px}
+.top-acts a{text-decoration:none;font-weight:600;font-size:.9rem;color:var(--hema);background:var(--hema-soft);border:1px solid var(--line);border-radius:999px;padding:8px 14px}
+.btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink);font-weight:600}
+footer{color:var(--muted);font-size:.8rem;text-align:center}
 </style>
 </head>
 <body>
-
-
-<div class="wrap" id="app"></div>
-
-<script>
-const DATA = {"lessons": [{"id": "M1", "title": "Mukozal Hastalıklar 1", "subtitle": "Vezikülobüllöz, ülseratif ve immün aracılı lezyonlar", "date": "27 Ekim 2026", "activities": [{"code": "M1-1", "type": "vaka", "title": "Açılış vakası: Ağızdan başlayan yaralar", "stem": "45 yaşında kadın. 4 aydır geçmeyen, yemek yerken çok ağrıyan ağız yaraları var. Son iki haftada sırtında kolayca patlayan, su dolu kabarcıklar çıkmış. Muayenede yumuşak damak, yanak mukozası ve dudak iç yüzünde düzensiz sınırlı, geniş, sığ erozyonlar görülüyor. Sağlam görünen mukozaya parmakla bastırıp kaydırınca epitel sıyrılıyor (Nikolsky +).", "steps": [{"q": "Ön tanın ne?", "opts": ["Müköz membran pemfigoidi", "Eritema multiforme", "Pemfigus vulgaris", "Majör aftöz stomatit", "Eroziv oral liken planus"], "a": 2}, {"q": "Biyopsiyi nereden alır, nasıl gönderirsin?", "opts": ["Ülser tabanından, formalinde", "Perilezyonel sağlam görünen mukozadan; biri formalinde, biri Michel solüsyonunda (DIF)", "Ülser kenarındaki nekrotik dokudan, alkolde", "Biyopsi gerekmez, Tzanck yaymasıyla tanı konur", "Deri lezyonundan, yalnızca formalinde"], "a": 1}], "revealCode": "M1-6"}, {"code": "M1-2", "type": "sort", "title": "Yarık nerede?", "intro": "Her hastalıkta vezikül ya da bül hangi düzeyde oluşur? Seç, hemen geri bildirim al.", "bins": ["Suprabazal (epitel içi)", "Subepitelyal", "Epitel içi balonlaşma (viral)"], "items": [{"t": "Pemfigus vulgaris", "b": 0, "why": "Desmoglein 3'e karşı antikor, bazal tabakanın hemen üstünde akantoliz yapar."}, {"t": "Müköz membran pemfigoidi", "b": 1, "why": "BP180 ve laminin-332 bazal membran bileşenidir; epitel bütün halinde ayrılır."}, {"t": "Herpes simpleks enfeksiyonu", "b": 2, "why": "Virüs keratinositleri balonlaştırır; çok çekirdekli dev hücreler ve Cowdry A cisimcikleri görülür."}, {"t": "Büllöz pemfigoid", "b": 1, "why": "BP180 ve BP230; hemidesmozom düzeyinde subepitelyal ayrışma."}, {"t": "Paraneoplastik pemfigus", "b": 0, "why": "Suprabazal akantoliz, buna ek olarak liken planus benzeri interface değişiklik."}, {"t": "Varisella-zoster enfeksiyonu", "b": 2, "why": "Herpes grubu virüs; HSV ile aynı sitopatik etki."}]}, {"code": "M1-3", "type": "quiz", "title": "DUS Molası 1: Büllöz hastalıklar", "questions": [{"q": "Pemfigus vulgaris düşünülen bir hastadan alınan perilezyonel biyopsinin direkt immünofloresan (DIF) incelemesinde aşağıdakilerden hangisi beklenir?", "opts": ["Bazal membran zonu boyunca lineer IgG ve C3", "Keratinositler arasında ağ (balık ağı) tarzında IgG ve C3", "Bazal membran zonu boyunca granüler IgM ve C3", "Bazal membran zonunda saçaklı (shaggy) fibrinojen", "Damar duvarlarında IgA birikimi"], "a": 1, "exp": "Hedef antijen desmozomal desmoglein 3 (mukokutanöz formda ek olarak desmoglein 1). Antikor keratinosit yüzeyine bağlandığı için hücreler arası ağ deseni oluşur. Lineer BMZ: pemfigoidler; granüler BMZ: lupus; saçaklı fibrinojen: liken planus."}, {"q": "Pemfigus vulgaris histopatolojisinde tanımlanan \"mezar taşı (tombstone)\" görünümü aşağıdakilerden hangisini ifade eder?", "opts": ["Spinöz tabakada hücreler arası ödem", "Bazal tabakadaki apoptotik keratinositler", "Suprabazal ayrışmadan sonra bazal membrana tutunmaya devam eden bazal hücre sırası", "Viral enfekte, balonlaşmış çok çekirdekli hücreler", "Epitel içinde keratin incileri"], "a": 2, "exp": "Bazal hücreler hemidesmozomlarla bazal membrana bağlı kalır; üstlerindeki epitel ayrılınca yan yana dizili mezar taşlarına benzer. Apoptotik keratinositler (Civatte cisimcikleri) liken planusa aittir."}, {"q": "Vezikülobüllöz hastalık ön tanısıyla direkt immünofloresan için alınan biyopsi nasıl gönderilmelidir?", "opts": ["%10 tamponlu formalin içinde", "%70 alkol içinde", "Bouin solüsyonu içinde", "Glutaraldehit içinde", "Michel transport solüsyonu içinde ya da taze olarak"], "a": 4, "exp": "Formalin, immünoglobulin ve kompleman epitoplarını bozar; DIF yapılamaz. Doğru pratik: perilezyonel sağlam görünen mukozadan iki örnek, biri formalinde (H&E), biri Michel solüsyonunda ya da serum fizyolojikle nemlendirilmiş gazlı bezde hemen laboratuvara (DIF)."}, {"q": "Dişetinde deskuamatif gingivit ve konjonktivada simblefaron gelişen 64 yaşındaki kadının biyopsisinde epitelin bağ dokusundan bütün halinde ayrıldığı görülüyor. En olası tanı hangisidir?", "opts": ["Pemfigus vulgaris", "Eritema multiforme", "Oral liken planus", "Müköz membran pemfigoidi", "Rekürren aftöz stomatit"], "a": 3, "exp": "Subepitelyal ayrışma ve skarlaşan göz tutulumu müköz membran pemfigoidini düşündürür. Hedef antijenler BP180 (kollajen XVII) ve laminin-332. Hasta körlük riski nedeniyle göz hekimine yönlendirilmelidir."}, {"q": "Paraneoplastik pemfigusla en sık birlikte görülen neoplazi hangisidir?", "opts": ["Non-Hodgkin lenfoma", "Akciğer adenokarsinomu", "Kolon adenokarsinomu", "Meme karsinomu", "Malign melanom"], "a": 0, "exp": "En sık non-Hodgkin lenfoma ve kronik lenfositik lösemi; ardından Castleman hastalığı ve timoma gelir. Tedaviye dirençli, şiddetli stomatit ve hemorajik dudak kabukları tipiktir."}]}, {"code": "M1-4", "type": "quiz", "title": "DUS Molası 2: Ülseratif lezyonlar", "questions": [{"q": "Minör rekürren aftöz stomatit için aşağıdakilerden hangisi yanlıştır?", "opts": ["En sık görülen tipidir", "Lezyonlar genellikle 1 cm'den küçüktür", "7–14 günde iyileşir", "Sıklıkla sert damak ve yapışık dişetini tutar", "Skar bırakmadan iyileşir"], "a": 3, "exp": "Aftlar keratinize olmayan, hareketli mukozayı tercih eder: yanak, dudak iç yüzü, ağız tabanı, dil ventrali. Sert damak ve yapışık dişeti rekürren intraoral herpesin tipik yeridir."}, {"q": "Uluslararası Çalışma Grubu (ISG) Behçet hastalığı tanı kriterlerinde bulunması zorunlu olan bulgu hangisidir?", "opts": ["12 ay içinde en az 3 kez tekrarlayan oral ülser", "Rekürren genital ülser", "Üveit", "Pozitif paterji testi", "Eritema nodozum"], "a": 0, "exp": "Tekrarlayan oral ülser zorunludur; buna genital ülser, göz lezyonu, deri lezyonu ve pozitif paterji testinden en az ikisi eklenmelidir. Hastalığın dünyada en sık görüldüğü ülke Türkiye'dir; HLA-B51 ile ilişkilidir."}, {"q": "22 yaşında erkek. Bir hafta önce dudağında uçuk çıkmış. Şimdi dudaklarda hemorajik kabuklar, ağız ön bölümünde yaygın erozyonlar ve el sırtında iç içe halkalardan oluşan lezyonlar var. En olası tanı hangisidir?", "opts": ["Pemfigus vulgaris", "Müköz membran pemfigoidi", "Primer herpetik gingivostomatit", "Behçet hastalığı", "Eritema multiforme"], "a": 4, "exp": "HSV enfeksiyonundan 1–3 hafta sonra gelişen akut, kendini sınırlayan hipersensitivite reaksiyonu. Tipik kabarık hedef (iris) lezyonlar ve hemorajik dudak kabukları görülür. Çoğunlukla ilaçla tetiklenen Stevens-Johnson sendromu ve toksik epidermal nekroliz bugün ayrı bir hastalık grubu kabul edilir."}]}, {"code": "M1-5", "type": "sort", "title": "DIF desenini eşleştir", "intro": "Floresan mikroskopta gördüğün desen hangi hastalığa ait?", "bins": ["Hücreler arası ağ (IgG, C3)", "BMZ boyunca lineer (IgG, C3)", "BMZ'de saçaklı fibrinojen", "BMZ'de granüler bant (lupus bandı)"], "items": [{"t": "Pemfigus vulgaris", "b": 0, "why": "Desmoglein hücre yüzeyinde; antikor her keratinositin çevresini çizer."}, {"t": "Müköz membran pemfigoidi", "b": 1, "why": "Antijen bazal membranda; ince, düzgün tek bir çizgi."}, {"t": "Oral liken planus", "b": 2, "why": "Bazal hasar alanında fibrinojen birikir; kenarları düzensiz, saçaklı."}, {"t": "Lupus eritematozus", "b": 3, "why": "Immün kompleksler BMZ boyunca kaba granüler bant yapar (IgG, IgM, C3)."}, {"t": "Büllöz pemfigoid", "b": 1, "why": "BP180 ve BP230; pemfigoid grubunun ortak deseni."}]}, {"code": "M1-6", "type": "reveal", "title": "Vakaya dönüş: Tanı ne çıktı?", "vaka": "M1-1", "diagnosis": "Pemfigus vulgaris (mukokutanöz form)", "evidence": ["Tablo ağızdan başlayıp deriye yayıldı: önce desmoglein 3, sonra desmoglein 1'e karşı antikor gelişti.", "Nikolsky pozitifliği epitel içinde bağlantıların zayıfladığını gösterir.", "H&E: suprabazal yarık, yuvarlaklaşmış akantolitik (Tzanck) hücreler, mezar taşı dizilimi.", "DIF: keratinositler arasında ağ tarzında IgG ve C3. ELISA ile anti-desmoglein 3 ve 1 pozitif.", "Tedavi: sistemik kortikosteroid ve rituksimab. Diş hekiminin rolü erken tanı: hastaların çoğunda ilk bulgu ağızda çıkar."]}, {"code": "M1-7", "type": "quiz", "title": "Hızlı tekrar", "questions": [{"q": "Oral liken planusun histopatolojik bulguları arasında aşağıdakilerden hangisi yer almaz?", "opts": ["Bazal tabakada vakuoler (likefaksiyon) dejenerasyon", "Civatte (kolloid) cisimcikleri", "Suprabazal akantoliz", "Lamina propriada bant tarzı lenfosit infiltrasyonu", "Hiperkeratoz"], "a": 2, "exp": "Liken planus T hücre aracılı bir interface hastalığıdır: hedef bazal keratinosittir. Akantoliz pemfigus grubunun bulgusudur."}, {"q": "Rekürren intraoral herpesi minör aftöz ülserden ayırmada en yardımcı bulgu hangisidir?", "opts": ["Keratinize olmayan mukozada tek ülser", "1 cm'den büyük ülser", "Skar bırakarak iyileşme", "Kadınlarda daha sık görülmesi", "Sert damak ya da yapışık dişetinde küme yapan küçük vezikül ve ülserler"], "a": 4, "exp": "Rekürren intraoral herpes periosta sıkı yapışık, keratinize mukozayı tutar ve iğne başı veziküller kümeler halinde çıkar. Aft keratinize olmayan mukozayı seçer."}, {"q": "Tek taraflı, eski bir amalgam dolgunun temas ettiği yanak mukozasında retiküler beyaz çizgilenmeler var. Dolgu değiştirilince lezyon geriliyor. Tanı hangisidir?", "opts": ["Oral likenoid temas reaksiyonu", "Oral liken planus", "Homojen lökoplaki", "Frictional keratoz", "Kronik hiperplastik kandidiyazis"], "a": 0, "exp": "Liken planus genellikle bilateral ve simetriktir. Tek taraflı, restorasyonla temas eden ve restorasyon değişince gerileyen lezyon likenoid temas reaksiyonudur. İlaçlar ve graft-versus-host hastalığı da likenoid tablo yapar."}, {"q": "Ağız mukozasında, olası neden ortadan kaldırıldığı halde iki haftayı aşkın süredir iyileşmeyen tek ülserde ilk yapılması gereken hangisidir?", "opts": ["Topikal steroid verip takip", "Antiviral tedavi", "Antifungal tedavi", "Biyopsi", "3 ay sonra kontrol"], "a": 3, "exp": "İki hafta kuralı: nedeni giderildiği halde iyileşmeyen ülser skuamöz hücreli karsinom dışlanana kadar şüphelidir ve biyopsi gerekir."}, {"q": "Pemfigus vulgariste hastalık aktivitesiyle en iyi korelasyon gösteren laboratuvar testi hangisidir?", "opts": ["Nikolsky belirtisi", "ELISA ile dolaşan anti-desmoglein antikor düzeyi", "Tzanck yayması", "Biyopsinin H&E incelemesi", "Paterji testi"], "a": 1, "exp": "Dolaşan anti-desmoglein 3 ve 1 antikor düzeyleri (ELISA ya da indirekt IF titresi) hastalık aktivitesiyle paralel seyreder ve tedavi takibinde kullanılır."}]}]}, {"id": "M2", "title": "Mukozal Hastalıklar 2 ve Dil Hastalıkları", "subtitle": "Beyaz, kırmızı ve pigmente lezyonlar; dilin hastalıkları", "date": "27 Ekim 2026", "activities": [{"code": "M2-1", "type": "vaka", "title": "Açılış vakası: Dilin kenarındaki plak", "stem": "62 yaşında erkek. 40 paket-yıl sigara, her gün alkol. 6 aydır dilinin sol yan kenarında fark ettiği, ağrısız, 2,5 cm'lik bir plak var. Gazlı bezle silinmiyor; beyaz zemin üzerinde kırmızı benekler içeriyor. Bölgede keskin diş ya da protez yok.", "steps": [{"q": "Ön tanın ne?", "opts": ["Psödomembranöz kandidiyazis", "Frictional keratoz", "Oral liken planus", "Non-homojen (benekli) lökoplaki", "Oral kıllı lökoplaki"], "a": 3}, {"q": "Şimdi ne yaparsın?", "opts": ["İki hafta antifungal verip izlerim", "Kırmızı alanları içeren insizyonel biyopsi", "Lazerle buharlaştırırım, biyopsiye gerek yok", "Altı ay sonra kontrole çağırırım", "Fırça sitolojisi yeterli"], "a": 1}], "revealCode": "M2-6"}, {"code": "M2-2", "type": "sort", "title": "Silinir mi, silinmez mi?", "intro": "Beyaz lezyonda ilk ayırıcı özellik hangisi? Her lezyonu doğru kutuya koy.", "bins": ["Silinir", "Silinmez", "Germekle kaybolur"], "items": [{"t": "Psödomembranöz kandidiyazis", "b": 0, "why": "Hif, spor ve deskuame epitelden oluşan plak silinir; altta kırmızı, kanamaya eğilimli mukoza kalır."}, {"t": "Lökoödem", "b": 2, "why": "Silinmez de; ama asıl ayırıcı özelliği yanak gerilince opaklığın kaybolmasıdır. Epitel içi ödem; varyasyondur, tedavi gerekmez."}, {"t": "Lökoplaki", "b": 1, "why": "Kalınlaşmış keratin epitelin parçasıdır, silinmez. Biyopsi gerekir."}, {"t": "Aspirin yanığı (kimyasal nekroz)", "b": 0, "why": "Nekrotik epitel sıyrılır, altta ağrılı erozyon kalır."}, {"t": "Oral kıllı lökoplaki", "b": 1, "why": "EBV ilişkili hiperkeratoz; silinmez. Premalign değildir."}, {"t": "Beyaz süngerimsi nevüs", "b": 1, "why": "Kalıtsal keratin bozukluğu; kalın, katlantılı beyaz mukoza silinmez."}, {"t": "Materia alba", "b": 0, "why": "Yiyecek artığı, bakteri ve deskuame hücreler; kolayca silinir."}]}, {"code": "M2-3", "type": "quiz", "title": "DUS Molası 1: Potansiyel malign bozukluklar", "questions": [{"q": "Lökoplaki ile ilgili aşağıdakilerden hangisi doğrudur?", "opts": ["Histopatolojik bir tanıdır", "Malign dönüşüm potansiyeli yoktur", "Gazlı bezle silinebilen beyaz plaktır", "Diğer bilinen beyaz lezyonlar dışlandıktan sonra konan klinik bir terimdir", "En yüksek riski sert damak yerleşimi taşır"], "a": 3, "exp": "Lökoplaki klinik bir dışlama tanısıdır; histopatoloji hiperkeratozdan invaziv karsinoma kadar değişebilir. Yüksek riskli yerler ağız tabanı ve dilin ventrolateral yüzüdür."}, {"q": "Aşağıdaki lezyonlardan hangisinin malign dönüşüm riski en yüksektir?", "opts": ["Homojen lökoplaki", "Frictional keratoz", "Lökoödem", "Nikotinik stomatit", "Eritroplaki"], "a": 4, "exp": "Eritroplaki az görülür ama biyopsilerinin büyük çoğunluğunda ağır displazi, karsinoma in situ ya da invaziv skuamöz hücreli karsinom saptanır."}, {"q": "Oral epitelyal displazide atipik değişikliklerin epitel kalınlığının alt üçte biriyle sınırlı olması geleneksel üç basamaklı sistemde hangi dereceye karşılık gelir?", "opts": ["Hafif displazi", "Orta displazi", "Ağır displazi", "Karsinoma in situ", "Mikroinvaziv karsinom"], "a": 0, "exp": "Alt 1/3 hafif, 2/3'e kadar orta, 2/3'ün üstü ağır displazi; tam kat tutulum karsinoma in situ. Güncel WHO sınıflaması mimari ve sitolojik kriterleri birlikte değerlendirir ve iki basamaklı (düşük/yüksek dereceli) sistemi de kabul eder."}, {"q": "Proliferatif verrüköz lökoplaki için aşağıdakilerden hangisi yanlıştır?", "opts": ["Yaşlı kadınlarda daha sık görülür", "Tütün kullanımıyla güçlü ve zorunlu bir ilişkisi vardır", "Multifokal ve ilerleyicidir", "Dişeti sık tutulur", "Malign dönüşüm oranı yüksektir"], "a": 1, "exp": "Hastaların önemli bir kısmı hiç sigara içmemiştir. Lezyonlar yıllar içinde yayılır, nüks eder ve verrüköz ya da skuamöz hücreli karsinoma dönüşme oranı yüksektir."}, {"q": "Keratin 4 ya da keratin 13 genindeki mutasyona bağlı, çocuklukta başlayan, bilateral yanak mukozasında kalın, katlantılı beyaz lezyonlarla seyreden hastalık hangisidir?", "opts": ["Lökoödem", "Linea alba", "Beyaz süngerimsi nevüs", "Morsicatio buccarum", "Oral kıllı lökoplaki"], "a": 2, "exp": "Otozomal dominant geçişli, benign bir genodermatoz. Histolojide belirgin intrasellüler ödem ve perinükleer keratin kondensasyonu görülür. Tedavi gerekmez."}]}, {"code": "M2-4", "type": "sort", "title": "Dili tanı", "intro": "Tarifi oku, hangi dil hastalığı olduğunu seç.", "bins": ["Coğrafik dil", "Fissürlü dil", "Siyah kıllı dil", "Median rhomboid glossit", "Atrofik glossit"], "items": [{"t": "Beyaz-sarı kıvrımlı kenarlarla çevrili, günler içinde yer değiştiren, papillasız kırmızı alanlar", "b": 0, "why": "Filiform papilla atrofisi; histolojisi psoriazise benzer."}, {"t": "Dil sırtında derin oluklar; Melkersson-Rosenthal sendromunun bileşeni", "b": 1, "why": "Yaşla sıklığı artar; Down sendromunda sık. Oluklarda yiyecek birikirse halitozis ve inflamasyon olur."}, {"t": "Filiform papillalar uzamış, kahverengi-siyah; antibiyotik kullanımı ve sigara sonrası", "b": 2, "why": "Keratin dökülemez, kromojenik bakteriler renklendirir. Dil fırçalama yeterlidir."}, {"t": "Sirkumvallat papillaların önünde, orta hatta sabit, eşkenar dörtgen kırmızı alan", "b": 3, "why": "Kronik kandida enfeksiyonu ile ilişkili; damakta karşılıklı 'öpüşen' lezyon görülebilir."}, {"t": "Tüm dil yüzeyi pürüzsüz, kırmızı ve yanıcı; demir ya da B12 eksikliği", "b": 4, "why": "Papillalar kaybolur. B12 eksikliğindeki tabloya Hunter (Moeller) glossiti denir."}]}, {"code": "M2-5", "type": "quiz", "title": "DUS Molası 2: Enfeksiyon, pigment ve dil", "questions": [{"q": "HIV pozitif hastada dilin lateral kenarlarında bilateral, silinemeyen, dikey çizgilenmeler gösteren beyaz lezyon izleniyor. Etken hangisidir?", "opts": ["Epstein-Barr virüsü", "HPV-16", "HSV-1", "Sitomegalovirüs", "Candida albicans"], "a": 0, "exp": "Oral kıllı lökoplaki. Histolojide üst tabakalarda balonlaşmış hücreler ve nükleer 'boncuk' kromatin görülür; EBER in situ hibridizasyonu ile doğrulanır. Premalign değildir, immünsüpresyonun göstergesidir."}, {"q": "Mandibular molar bölgesinde, eski amalgam dolgulu dişin komşuluğundaki alveoler mukozada mavi-gri, düz, asemptomatik makül var. Periapikal radyografide küçük radyoopak partiküller görülüyor. En olası tanı hangisidir?", "opts": ["Oral melanotik makül", "Mukozal nevüs", "Oral melanom", "Amalgam dövmesi", "Hemanjiyom"], "a": 3, "exp": "En sık görülen eksojen oral pigmentasyon. Histolojide siyah-kahverengi granüller kollajen lifleri ve damar duvarları boyunca dizilir. Radyografide metal görülmezse biyopsi gerekir."}, {"q": "Dil sırtında, sirkumvallat papillaların hemen önünde, orta hatta yerleşen, papillasız, eşkenar dörtgen biçimli kırmızı alan saptanıyor. En çok ilişkili etken hangisidir?", "opts": ["HPV", "B12 eksikliği", "Candida albicans", "Demir eksikliği", "EBV"], "a": 2, "exp": "Median rhomboid glossit. Eskiden tüberkülum imparın kalıntısı sanılırdı; bugün kronik atrofik kandidiyazis formu olarak kabul edilir. Biyopside PAS ile hifler gösterilebilir."}, {"q": "Dil sırtında ağrısız, sert, submukozal nodül. Biyopside geniş, eozinofilik granüler sitoplazmalı hücreler (S100+, SOX10+) ve üstteki epitelde psödoepitelyomatöz hiperplazi var. Tanı hangisidir?", "opts": ["Erişkin rabdomiyom", "İyi diferansiye skuamöz hücreli karsinom", "Schwannom", "Konjenital epulis", "Granüler hücreli tümör"], "a": 4, "exp": "En sık dilde görülür, Schwann hücresi kökenlidir. Yüzeyel biyopside psödoepitelyomatöz hiperplazi karsinomla karıştırılabilir. Konjenital epulis yenidoğanda alveoler sırtta çıkar ve S100 negatiftir."}, {"q": "Dil kökünde, foramen çekum düzeyinde kitle saptanan genç kadın hastada eksizyon planlanmadan önce yapılması gereken en önemli işlem hangisidir?", "opts": ["İnsizyonel biyopsi", "Boyunda normal yerleşimli tiroid dokusu olup olmadığının sintigrafi ya da USG ile araştırılması", "Radyoterapi", "Kriyoterapi", "Antibiyotik tedavisi"], "a": 1, "exp": "Lingual tiroid hastaların çoğunda vücuttaki tek fonksiyonel tiroid dokusudur. Bilinmeden çıkarılırsa kalıcı hipotiroidi gelişir."}]}, {"code": "M2-6", "type": "reveal", "title": "Vakaya dönüş: Biyopsi ne gösterdi?", "vaka": "M2-1", "diagnosis": "Non-homojen (benekli) lökoplaki; biyopside ağır (yüksek dereceli) epitelyal displazi", "evidence": ["Yüksek riskli yerleşim: dilin lateral kenarı ve ağız tabanı.", "Non-homojen görünüm: beyaz zemin üzerinde kırmızı alanlar, homojen lökoplakiden belirgin şekilde daha yüksek risk taşır.", "Büyük boyut, uzun süre, sigara ve alkolün birlikte kullanımı riski artırır.", "Biyopsi kırmızı alanlardan alınır: displazi en ağır orada olur.", "Yönetim: sigara ve alkolün bırakılması, lezyonun tam eksizyonu ve ömür boyu düzenli takip."]}, {"code": "M2-7", "type": "quiz", "title": "Hızlı tekrar", "questions": [{"q": "Pernisiyöz anemili hastada görülen, papillaları atrofik, kırmızı, yanan dil tablosuna verilen isim hangisidir?", "opts": ["Coğrafik dil", "Median rhomboid glossit", "Hunter (Moeller) glossiti", "Siyah kıllı dil", "Fissürlü dil"], "a": 2, "exp": "B12 eksikliğinde papilla atrofisi gelişir. Demir eksikliğinde de benzer atrofik glossit görülür; disfaji ve özofagus webi eşlik ediyorsa Plummer-Vinson sendromu düşünülür."}, {"q": "Uzun yıllar pipo içen 70 yaşındaki erkekte sert damakta kırmızı noktalı, yaygın gri-beyaz, çatlaklı mukoza görülüyor. Kırmızı noktaların karşılığı hangisidir?", "opts": ["İnflame küçük tükürük bezi kanal ağızları", "Displastik odaklar", "Kandida kolonileri", "Peteşiyal kanamalar", "Ektopik sebase bezler"], "a": 0, "exp": "Nikotinik stomatit. Isıya bağlı reaktif bir lezyondur, premalign kabul edilmez ve sigara bırakılınca geriler. Ters sigara içimindeki damak lezyonları ise yüksek risk taşır."}, {"q": "Coğrafik dilin histopatolojisi aşağıdaki hastalıklardan hangisine en çok benzer?", "opts": ["Liken planus", "Pemfigus vulgaris", "Lupus eritematozus", "Psoriazis", "Kandidiyazis"], "a": 3, "exp": "Psoriaziform epitel hiperplazisi ve yüzeyde nötrofil mikroabseleri (Munro benzeri) görülür."}, {"q": "Perioral bölgede ve yanak mukozasında çok sayıda melanotik makül ile gastrointestinal hamartomatöz polipleri olan hastada sorumlu gen hangisidir?", "opts": ["APC", "PTEN", "KIT", "BRAF", "STK11 (LKB1)"], "a": 4, "exp": "Peutz-Jeghers sendromu. Otozomal dominant; gastrointestinal, pankreas ve meme kanseri riski artmıştır. APC: familyal adenomatöz polipozis; PTEN: Cowden sendromu."}]}]}]};
-const TYPE_LABEL = {quiz:"DUS soruları", vaka:"Vaka", sort:"Oyun", reveal:"Vaka çözümü"};
-const LET = ["A","B","C","D","E"];
-const app = document.getElementById("app");
-const ACTS = {};
-DATA.lessons.forEach(l => l.activities.forEach(a => { a.lesson = l; ACTS[a.code] = a; }));
-
-function store(k, v){ try{ if(v===undefined){ return JSON.parse(localStorage.getItem(k)); } localStorage.setItem(k, JSON.stringify(v)); }catch(e){ return null; } }
-function el(tag, attrs, ...kids){ const n=document.createElement(tag); if(attrs) for(const [k,v] of Object.entries(attrs)){ if(k==="class") n.className=v; else if(k.startsWith("on")) n.addEventListener(k.slice(2),v); else n.setAttribute(k,v);} kids.flat().forEach(c=>{ if(c==null) return; n.append(c.nodeType?c:document.createTextNode(c)); }); return n; }
-function norm(s){ return (s||"").toUpperCase().replace(/\s+/g,"").replace(/[^A-Z0-9-]/g,"").replace(/^M(\d)(\d)$/,"M$1-$2"); }
-function go(code){ if(location.hash.slice(1)===code){ route(); } else { location.hash = code; } }
-function home(){ history.replaceState(null,"",location.pathname+location.search); route(); }
-
-function renderHome(){
-  app.replaceChildren();
-  app.append(el("header",{class:"top"}, el("div",{class:"mark","aria-hidden":"true"}),
-    el("div",{class:"brand"}, el("h1",null,"Lam Başında"), el("p",null,"4. Sınıf Patoloji · Uzm. Dr. M. Olgun Ak"))));
-  const inp = el("input",{id:"code",placeholder:"M1-3",autocomplete:"off",autocapitalize:"characters",inputmode:"text","aria-describedby":"codehint"});
-  const hint = el("p",{class:"hint",id:"codehint"});
-  const open = () => { const c = norm(inp.value); if(ACTS[c]) go(c); else hint.textContent = c ? `"${c}" diye bir etkinlik yok. Slayttaki kodu kontrol et (ör. M1-3).` : "Önce slayttaki kodu yaz."; };
-  inp.addEventListener("keydown", e => { if(e.key==="Enter") open(); });
-  app.append(el("section",{class:"codebox"}, el("label",{for:"code"},"Slayttaki kodu yaz"), el("div",{class:"coderow"}, inp, el("button",{class:"btn",onclick:open},"Aç")), hint));
-  DATA.lessons.forEach(l => {
-    app.append(el("section",{class:"lesson"},
-      el("div",{class:"lesson-head"}, el("span",{class:"eyebrow"}, l.date), el("h2",null,l.title), el("p",null,l.subtitle)),
-      el("div",{class:"acts"}, l.activities.map(a => el("button",{class:"act",onclick:()=>go(a.code)}, el("span",{class:"chip"},a.code), el("span",{class:"t"},a.title), el("span",{class:"k"},TYPE_LABEL[a.type]))))
-    ));
-  });
-  app.append(el("p",{class:"foot"},"Cevapların yalnızca bu telefonda tutulur, kimseyle paylaşılmaz."));
-}
-
-function shell(a){
-  app.replaceChildren();
-  const v = el("section",{class:"view"});
-  v.append(el("div",{class:"bar"}, el("button",{class:"back",onclick:home},"← Tüm etkinlikler"), el("span",{class:"chip"},a.code)));
-  v.append(el("div",null, el("span",{class:"eyebrow"}, a.lesson.title), el("h2",null,a.title)));
-  app.append(v); window.scrollTo(0,0); return v;
-}
-
-function optList(opts, onPick){
-  const wrap = el("div",{class:"opts"});
-  const btns = opts.map((o,i) => el("button",{class:"opt",onclick:()=>onPick(i,btns)}, el("span",{class:"L"},LET[i]), el("span",null,o)));
-  wrap.append(...btns); return [wrap, btns];
-}
-
-function renderQuiz(a){
-  const v = shell(a); const qs = a.questions; let i = 0; const res = [];
-  const prog = el("div",{class:"progress","aria-hidden":"true"}, qs.map(()=>el("span",{class:"dot"})));
-  const body = el("div",{class:"card"}); v.append(prog, body);
-  function paint(){ [...prog.children].forEach((d,k)=>{ d.className = "dot" + (res[k]===true?" ok":res[k]===false?" bad":k===i?" on":""); }); }
-  function show(){
-    paint(); body.replaceChildren(); const q = qs[i];
-    body.append(el("span",{class:"qnum"},`Soru ${i+1} / ${qs.length}`), el("p",{class:"stem"},q.q));
-    const [w] = optList(q.opts, (p,btns) => {
-      btns.forEach(b=>b.disabled=true); btns[q.a].classList.add("ok"); if(p!==q.a) btns[p].classList.add("bad");
-      res[i] = p===q.a; paint();
-      const last = i===qs.length-1;
-      body.append(el("div",{class:"fb "+(res[i]?"ok":"bad")}, el("strong",null, res[i]?"Doğru.":`Yanlış. Doğru cevap ${LET[q.a]}.`), el("p",null,q.exp)),
-        el("button",{class:"btn",onclick:()=>{ if(last) end(); else { i++; show(); } }}, last?"Sonucu gör":"Sonraki soru"));
-    });
-    body.append(w);
-  }
-  function end(){
-    const n = res.filter(Boolean).length; paint(); body.replaceChildren();
-    body.append(el("div",{class:"score"}, el("span",{class:"big"},`${n}/${qs.length}`), el("p",null, n===qs.length?"Tam isabet. Bunlar DUS'ta karşına çıkarsa hazırsın.":"Yanlış yaptıklarını ders notlarından tekrar gözden geçir.")),
-      el("div",{class:"row"}, el("button",{class:"btn",onclick:()=>renderQuiz(a)},"Tekrar çöz"), el("button",{class:"btn ghost",onclick:home},"Tüm etkinlikler")));
-  }
-  show();
-}
-
-function renderSort(a){
-  const v = shell(a); let i = 0, n = 0;
-  v.append(el("p",null,a.intro));
-  const body = el("div",{class:"card"}); v.append(body);
-  function show(){
-    body.replaceChildren(); const it = a.items[i];
-    body.append(el("span",{class:"qnum"},`${i+1} / ${a.items.length}`), el("div",{class:"item"+(it.t.length>40?" long":"")}, it.t));
-    const [w] = optList(a.bins, (p,btns) => {
-      btns.forEach(b=>b.disabled=true); btns[it.b].classList.add("ok"); if(p!==it.b) btns[p].classList.add("bad"); else n++;
-      const last = i===a.items.length-1;
-      body.append(el("div",{class:"fb "+(p===it.b?"ok":"bad")}, el("strong",null,p===it.b?"Doğru.":`Doğrusu: ${a.bins[it.b]}.`), el("p",null,it.why)),
-        el("button",{class:"btn",onclick:()=>{ if(last) end(); else { i++; show(); } }}, last?"Sonucu gör":"Sonraki"));
-    });
-    body.append(w);
-  }
-  function end(){
-    body.replaceChildren();
-    body.append(el("div",{class:"score"}, el("span",{class:"big"},`${n}/${a.items.length}`), el("p",null,"Tamamlandı.")),
-      el("div",{class:"row"}, el("button",{class:"btn",onclick:()=>renderSort(a)},"Tekrar oyna"), el("button",{class:"btn ghost",onclick:home},"Tüm etkinlikler")));
-  }
-  show();
-}
-
-function renderVaka(a){
-  const v = shell(a); const key = "lb-"+a.code; const saved = store(key) || [];
-  v.append(el("div",{class:"card"}, el("span",{class:"eyebrow"},"Hasta"), el("p",{class:"stem"},a.stem)));
-  a.steps.forEach((s,k) => {
-    const c = el("div",{class:"card"}, el("span",{class:"qnum"},`Adım ${k+1} / ${a.steps.length}`), el("p",{class:"stem"}, s.q));
-    const note = el("div",{class:"fb neutral"}, el("strong",null,"Tahminin kaydedildi."), el("p",null,`Doğru cevabı dersin sonunda ${a.revealCode} kodlu etkinlikte göreceksin. Fikrin değişirse başka bir şıkka dokun.`));
-    note.hidden = saved[k]==null;
-    const [w, btns] = optList(s.opts, (p) => { saved[k]=p; store(key, saved); btns.forEach((b,j)=>b.classList.toggle("picked", j===p)); note.hidden=false; });
-    if(saved[k]!=null && btns[saved[k]]) btns[saved[k]].classList.add("picked");
-    c.append(w, note); v.append(c);
-  });
-}
-
-function renderReveal(a){
-  const v = shell(a); const src = ACTS[a.vaka]; const saved = store("lb-"+src.code) || [];
-  v.append(el("div",{class:"card"}, el("span",{class:"eyebrow"},"Tanı"), el("p",{class:"dx"},a.diagnosis)));
-  const cmp = el("div",{class:"card cmp"}, el("span",{class:"eyebrow"}, "Senin tahminlerin"));
-  src.steps.forEach((s,k) => {
-    const mine = saved[k]; const right = mine===s.a;
-    cmp.append(el("p",{class:"q"},s.q),
-      mine==null ? el("p",{class:"a"},`Bu telefonda ${src.code} için tahmin kaydı yok. Doğru cevap: ${s.opts[s.a]}`)
-      : el("div",{class:"fb "+(right?"ok":"bad")}, el("strong",null, right?"Tuttu.":"Tutmadı."), el("p",null, right?s.opts[s.a]:`Senin cevabın: ${s.opts[mine]}. Doğrusu: ${s.opts[s.a]}`)));
-  });
-  v.append(cmp);
-  v.append(el("div",{class:"card"}, el("span",{class:"eyebrow"},"Kanıt zinciri"), el("ol",{class:"ev"}, a.evidence.map(e=>el("li",null,e)))));
-  v.append(el("div",{class:"row"}, el("button",{class:"btn ghost",onclick:home},"Tüm etkinlikler")));
-}
-
-function route(){
-  const c = norm(decodeURIComponent(location.hash.slice(1)));
-  const a = ACTS[c];
-  if(!a) return renderHome();
-  ({quiz:renderQuiz, sort:renderSort, vaka:renderVaka, reveal:renderReveal})[a.type](a);
-}
-window.addEventListener("hashchange", route);
-route();
-</script>
-
+<main class="wrap">
+<div class="top"><div class="mark" aria-hidden="true"></div><div class="brand"><h1>Lam Başında</h1><p>4. Sınıf Patoloji · Diş Hekimliği</p></div></div>
+<nav class="top-acts"><a href="canli/">← Canlı derse katıl</a><a href="quiz/">Quizler →</a></nav><p class="note">Canlı derslerin internetsiz sürümü. PowerPoint, Keynote ya da Google Slaytlar ile açılır. Konuşma notları ve soruların doğru cevapları her slaytın not bölümünde. Liderlik tablosu ve kelime bulutu yalnız canlı derste olduğu için dosyada yok.</p>
+<article class="set"><span class="eyebrow">27 Ekim 2026</span><h2>Mukozal Hastalıklar 1</h2><span class="s">56 slayt · 14,2 MB · PowerPoint</span><div class="acts"><a class="btn" href="indir/M1.pptx" download>İndir (.pptx)</a><a class="btn ghost" href="quiz/#m1">Quiz: kendini sına</a></div></article>
+<article class="set"><span class="eyebrow">27 Ekim 2026</span><h2>Mukozal Hastalıklar 2 ve Dil Hastalıkları</h2><span class="s">51 slayt · 12,8 MB · PowerPoint</span><div class="acts"><a class="btn" href="indir/M2.pptx" download>İndir (.pptx)</a><a class="btn ghost" href="quiz/#m2">Quiz: kendini sına</a></div></article>
+<article class="set"><span class="eyebrow">17 Kasım 2026</span><h2>Yumuşak Doku Hastalıkları</h2><span class="s">26 slayt · 5,9 MB · PowerPoint</span><div class="acts"><a class="btn" href="indir/M3.pptx" download>İndir (.pptx)</a><a class="btn ghost" href="quiz/#yd">Quiz: kendini sına</a></div></article>
+<article class="set"><span class="eyebrow">17 Kasım 2026</span><h2>Tükürük Bezi Hastalıkları ve Tümörleri</h2><span class="s">28 slayt · 5,9 MB · PowerPoint</span><div class="acts"><a class="btn" href="indir/M4.pptx" download>İndir (.pptx)</a><a class="btn ghost" href="quiz/#tb">Quiz: kendini sına</a></div></article>
+<p class="note">Kendini sınamak için: <a href="quiz/" style="color:var(--hema)">bütün quizler</a> · Derse katılmak için: <a href="canli/" style="color:var(--hema)">canlı ders</a></p>
+<footer>olgunak.github.io/lam-basinda</footer>
+</main>
 </body>
 </html>
