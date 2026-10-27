@@ -14,6 +14,7 @@ Tüm sayfalar GitHub Pages üzerinden yayınlanır. Aşağıdaki bağlantılar �
 | Kumanda | https://olgunak.github.io/lam-basinda/canli/kumanda.html | Dersi yöneten hoca |
 | Quiz (evde tekrar) | https://olgunak.github.io/lam-basinda/quiz/ | Öğrenciler (isteğe bağlı) |
 | Dersler (PowerPoint, internetsiz) | https://olgunak.github.io/lam-basinda/indir/ | Öğrenciler, hoca |
+| Ders günü flaş paketi | https://olgunak.github.io/lam-basinda/indir/flas.zip | Hoca: kısayollar (perde, kumanda, öğrenci), BASLAT.html (kumanda karekodu, kontrol listesi) ve dört dersin PowerPoint'i; `tools/slaytlar/yeni/flas_yap.py` ile üretilir (pptx_yap.py'den sonra) |
 
 ### Nasıl kullanılır
 
