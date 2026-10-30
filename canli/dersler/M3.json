@@ -961,9 +961,67 @@
    "top": 5
   },
   {
-   "img": "slaytlar/M3/23.jpg?v=4",
-   "title": "Hemanjiyom mu, vasküler malformasyon mu?",
-   "notes": "[14:54–15:54]\nDamar lezyonlarında iki ayrı grup var; ISSVA sınıflaması bunları ayırır. Hemanjiyom bir tümör: çoğu doğumda yoktur, ilk haftalarda çıkar, hızla büyür, sonra geriler; yarısı beş yaşında, yüzde 90'ı dokuz yaşında kaybolur. GLUT1 pozitiftir; çoğunu bekleriz, gerekirse propranolol veririz. Malformasyon ise damar yapısının gelişim bozukluğu: doğumda vardır, çocukla birlikte büyür ve gerilemez; GLUT1 negatif. Venöz malformasyon mor-mavidir ve bastırınca kolayca söner. Neville'den pratik uyarı: tanısı konmamış kemik içi bir lezyonda biyopsiden önce iğneyle aspirasyon yapın; malformasyonun yanında diş çekiminden sonra ölümcül kanamalar bildirildi."
+   "img": "slaytlar/M3/23a.jpg?v=4",
+   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 1/7",
+   "step": [
+    1,
+    7
+   ],
+   "notes": "[14:54–15:02]\nDamar lezyonlarında iki ayrı grup var. Hemanjiyom bir tümör: çoğu doğumda yoktur, ilk haftalarda çıkar ve hızla büyür."
+  },
+  {
+   "img": "slaytlar/M3/23b.jpg?v=4",
+   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 2/7",
+   "step": [
+    2,
+    7
+   ],
+   "notes": "[15:02–15:09]\nSonra geriler: yarısı beş yaşında, yüzde 90'ı dokuz yaşında kaybolur."
+  },
+  {
+   "img": "slaytlar/M3/23c.jpg?v=4",
+   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 3/7",
+   "step": [
+    3,
+    7
+   ],
+   "notes": "[15:09–15:17]\nGLUT1 pozitiftir. Çoğunu bekleriz; gerekirse propranolol veririz."
+  },
+  {
+   "img": "slaytlar/M3/23d.jpg?v=4",
+   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 4/7",
+   "step": [
+    4,
+    7
+   ],
+   "notes": "[15:17–15:26]\nMalformasyon damar yapısının gelişim bozukluğu: doğumda vardır, çocukla birlikte büyür ve gerilemez; GLUT1 negatif."
+  },
+  {
+   "img": "slaytlar/M3/23e.jpg?v=4",
+   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 5/7",
+   "step": [
+    5,
+    7
+   ],
+   "notes": "[15:26–15:33]\nVenöz malformasyon mor-mavidir ve bastırınca kolayca söner."
+  },
+  {
+   "img": "slaytlar/M3/23f.jpg?v=4",
+   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 6/7",
+   "step": [
+    6,
+    7
+   ],
+   "notes": "[15:33–15:39]\nISSVA sınıflaması bu iki grubu ayırır: vasküler tümörler ve vasküler malformasyonlar."
+  },
+  {
+   "img": "slaytlar/M3/23g.jpg?v=4",
+   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 7/7",
+   "step": [
+    7,
+    7
+   ],
+   "notes": "[15:39–15:54]\nNeville'den pratik uyarı: tanısı konmamış kemik içi bir lezyonda biyopsiden önce iğneyle aspirasyon yapın. Malformasyonun yanında diş çekiminden sonra ölümcül kanamalar bildirildi."
   },
   {
    "img": "slaytlar/M3/24a.jpg?v=4",
@@ -993,34 +1051,418 @@
    "notes": "[16:07–16:14]\nBebeğin melanotik nöroektodermal tümörü: bir yaşın altında, üst çene ön bölgede hızla büyüyen, mavi-siyah bir kitle; idrarda vanilmandelik asit yüksek olabilir."
   },
   {
-   "img": "slaytlar/M3/25.jpg?v=4",
-   "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom",
-   "notes": "[16:14–17:09]\nİki damar lezyonu daha. Lenfanjiyom, Neville'in yeni baskısında lenfatik malformasyon adıyla geçiyor; WHO hâlâ lenfanjiyom diyor, ikisini de bilin. Yarısı doğumda vardır, yüzde 90'ı iki yaşına kadar ortaya çıkar. Ağızda en sık dilin ön üçte ikisinde; yüzey küçük, saydam kabarcıklarla kaplıdır ve dil büyür. Boyundaki büyük kistli formuna kistik higroma deniyor; yenidoğanda havayolunu tıkayabilir. Nazofarengeal anjiyofibrom neredeyse yalnız ergen erkeklerde görülür: burun tıkanıklığı ve tekrarlayan burun kanaması. Hücreleri androjen reseptörü taşır. Damar duvarlarında kas tabakası eksik ve elastik lif yok; bu yüzden ameliyatta çok kanar ve önce embolizasyon yapılır. WHO 2022'deki adı sinonazal anjiyofibrom."
+   "img": "slaytlar/M3/25a.jpg?v=4",
+   "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 1/7",
+   "step": [
+    1,
+    7
+   ],
+   "notes": "[16:14–16:21]\nLenfanjiyom Neville'in yeni baskısında lenfatik malformasyon adıyla geçiyor; WHO hâlâ lenfanjiyom diyor. İkisini de bilin."
   },
   {
-   "img": "slaytlar/M3/26.jpg?v=4",
-   "title": "Kas kökenli iyi huylu tümörler ve diğerleri",
-   "notes": "[17:09–17:54]\nİyi huylu tümörlerin sonuncusu kas. Leiomiyom düz kas tümörü; ağızda nadir ve çoğu damar duvarındaki düz kastan köken alır: dörtte üçü anjiyomiyom. Dudak, dil, damak ve yanakta görülür; anjiyomiyom ağrılı olabilir. Mikroskopta küt uçlu, puro biçimli çekirdekler ve SMA pozitifliği. Rabdomiyom çizgili kas tümörü: erişkin tip orta ve ileri yaşta, büyük çoğunluğu erkekte; ağız tabanında, yumuşak damakta, dil kökünde. Hücrelerin sitoplazması vakuollüdür, örümcek ağı gibi görünür. Çocuktaki fetal tipi rabdomiyosarkomla karışabilir. Sağda iki tek satır: paragangliom en sık karotis cisimciğinde, hücreler yuvalar yapar; tendon kılıfının dev hücreli tümörü resmi slaytta var ama ağızda çok nadir."
+   "img": "slaytlar/M3/25b.jpg?v=4",
+   "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 2/7",
+   "step": [
+    2,
+    7
+   ],
+   "notes": "[16:21–16:27]\nYarısı doğumda vardır, yüzde 90'ı iki yaşına kadar ortaya çıkar."
   },
   {
-   "img": "slaytlar/M3/27.jpg?v=4",
-   "title": "Sarkomlar: ortak özellikler",
-   "notes": "[17:54–18:34]\nÜçüncü grup: sarkomlar, yumuşak dokunun kötü huylu tümörleri. Ağız ve çene bölgesinde nadirdir; Neville'e göre bu bölgedeki kanserlerin yüzde birinden azı. Lokal agresif büyür, önce çevre dokuyu yıkar. Karsinomların aksine lenf noduna az gider; uzak metastaz en sık akciğere. Risk etkenleri: yıllar önce alınmış radyoterapi, kronik travma, yanık skarı, metal implant ve kalıtsal hastalıklar, özellikle nörofibromatozis. Davranışını tipi, derecesi, boyutu, evresi ve cerrahi sınır belirler. Baş-boyunda geniş sınır bırakmak zor olduğu için yerel nüks sık."
+   "img": "slaytlar/M3/25c.jpg?v=4",
+   "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 3/7",
+   "step": [
+    3,
+    7
+   ],
+   "notes": "[16:27–16:35]\nAğızda en sık dilin ön üçte ikisinde; damarlar epitelin hemen altında olduğu için yüzey küçük, saydam kabarcıklarla kaplıdır ve dil büyür."
   },
   {
-   "img": "slaytlar/M3/28.jpg?v=4",
-   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom",
-   "notes": "[18:34–19:34]\nLif ve yağ kökenli sarkomlar. İndiferansiye pleomorfik sarkom, eski adıyla malign fibröz histiyositom: yaşlı hastada, daha çok bacakta ve gövdede; baş-boyunda burun ve sinüslerde. Bir kısmı radyoterapiden yıllar sonra gelişir. Mikroskopta girdap gibi demetler ve tuhaf, çok çekirdekli dev hücreler. Fibrosarkom bugün bir dışlama tanısı: iğsi hücreler balık kılçığı deseninde dizilir. Liposarkom ağızda en sık dilde ve yanakta; ağızdakilerin üçte ikisi iyi diferansiye tip, lipoma benzer ama lipoblast ve atipik hücreler içerir; MDM2 ve CDK4 pozitif. Bir uyuşmazlık: resmi slayt en sık sarkom olarak pleomorfik sarkomu sayıyor. Neville 5'e göre bu eski bir bilgi; malign fibröz histiyositom denen tümörlerin çoğu başka sarkomlara ayrıldı ve bugün en sık sarkom liposarkom."
+   "img": "slaytlar/M3/25d.jpg?v=4",
+   "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 4/7",
+   "step": [
+    4,
+    7
+   ],
+   "notes": "[16:35–16:42]\nBoyundaki büyük kistli formuna kistik higroma deniyor; yenidoğanda havayolunu tıkayabilir."
   },
   {
-   "img": "slaytlar/M3/29.jpg?v=4",
-   "title": "Sinir ve damar kökenli sarkomlar",
-   "notes": "[19:34–20:34]\nSinir ve damar sarkomları. Malign periferik sinir kılıfı tümörü, eski adıyla malign schwannom: dörtte biri ile yarısı NF1'li hastalarda gelişir; bu yüzden NF1'de büyüyen bir kitle hemen biyopsi ister. Prognozu kötü. Olfaktör nöroblastom burun tavanında, koku epitelinden köken alır; adındaki nöroblastoma rağmen çocukta değil erişkinde görülür. Mikroskopta küçük, yuvarlak, mavi hücreler ve rozetler. Anjiyosarkom yaşlıda en sık saçlı deride ve alında; ağızda çok nadir. Erken dönemde morluk gibi görünür, bu yüzden tanı gecikir. Kaposi sarkomu HHV-8 ile ilişkili; dört formu var. Resmi slayt endemik formu HIV ve HHV-8 ile ilişkilendiriyor; Neville'e göre dört formun hepsinin etkeni HHV-8, HIV yalnız AIDS formunda. AIDS'li hastaların yaklaşık yüzde 70'inde ağız lezyonu olur, en sık sert damakta."
+   "img": "slaytlar/M3/25e.jpg?v=4",
+   "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 5/7",
+   "step": [
+    5,
+    7
+   ],
+   "notes": "[16:42–16:50]\nNazofarengeal anjiyofibrom neredeyse yalnız ergen erkeklerde görülür: burun tıkanıklığı ve tekrarlayan burun kanaması. Hücreleri androjen reseptörü taşır."
   },
   {
-   "img": "slaytlar/M3/30.jpg?v=4",
-   "title": "Kas kökenli sarkomlar ve diğerleri",
-   "notes": "[20:34–21:34]\nSon sarkom grubu. Leiomiyosarkom düz kas sarkomu; ağızda nadir, üçte biri alt çenede. Çekirdekler puro biçimli; on büyük büyütme alanında beş ya da daha fazla mitoz varsa malign kabul edilir. Rabdomiyosarkom çocukların sarkomu: çocukluk çağı yumuşak doku sarkomlarının yarısı, en sık baş-boyunda. Üç tipi var: embriyonal en sık ve ilk on yaşta, alveoler ergenlik ve gençlikte, pleomorfik erişkinde. Ağız içinde en sık damakta. Sinovyal sarkom eklem çevresinde görülür ama adına rağmen sinovyadan köken almaz; baş-boyunda en sık parafarenkste. Resmi slayt genellikle bifazik olduğunu söylüyor; Neville'e göre monofazik tip daha sık. Tanıyı SS18::SSX füzyonu koydurur. Alveoler yumuşak doku sarkomu nadir; çocukta en sık orbitada ve dilde; hücrelerde PAS pozitif kristaller görülür."
+   "img": "slaytlar/M3/25f.jpg?v=4",
+   "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 6/7",
+   "step": [
+    6,
+    7
+   ],
+   "notes": "[16:50–16:57]\nDamar duvarlarında kas tabakası eksik ve elastik lif yok; bu yüzden çok kanar."
+  },
+  {
+   "img": "slaytlar/M3/25g.jpg?v=4",
+   "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 7/7",
+   "step": [
+    7,
+    7
+   ],
+   "notes": "[16:57–17:04]\nAmeliyattan önce embolizasyon yapılır; yüzde 20 ila 40 nükseder. WHO 2022'deki adı sinonazal anjiyofibrom."
+  },
+  {
+   "img": "slaytlar/M3/26a.jpg?v=4",
+   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 1/7",
+   "step": [
+    1,
+    7
+   ],
+   "notes": "[17:04–17:11]\nİyi huylu tümörlerin sonuncusu kas. Leiomiyom düz kas tümörü; ağızda nadir ve dörtte üçü damar duvarındaki kastan, yani anjiyomiyom."
+  },
+  {
+   "img": "slaytlar/M3/26b.jpg?v=4",
+   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 2/7",
+   "step": [
+    2,
+    7
+   ],
+   "notes": "[17:11–17:16]\nDudak, dil, damak ve yanakta görülür; anjiyomiyom ağrılı olabilir."
+  },
+  {
+   "img": "slaytlar/M3/26c.jpg?v=4",
+   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 3/7",
+   "step": [
+    3,
+    7
+   ],
+   "notes": "[17:16–17:21]\nMikroskopta küt uçlu, puro biçimli çekirdekler; SMA pozitif."
+  },
+  {
+   "img": "slaytlar/M3/26d.jpg?v=4",
+   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 4/7",
+   "step": [
+    4,
+    7
+   ],
+   "notes": "[17:21–17:28]\nRabdomiyom çizgili kas tümörü: erişkin tip orta ve ileri yaşta, yüzde 80'i erkekte; ağız tabanında, yumuşak damakta, dil kökünde."
+  },
+  {
+   "img": "slaytlar/M3/26e.jpg?v=4",
+   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 5/7",
+   "step": [
+    5,
+    7
+   ],
+   "notes": "[17:28–17:34]\nHücrelerin sitoplazması vakuollüdür, örümcek ağı gibi görünür. Çocuktaki fetal tipi rabdomiyosarkomla karışabilir."
+  },
+  {
+   "img": "slaytlar/M3/26f.jpg?v=4",
+   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 6/7",
+   "step": [
+    6,
+    7
+   ],
+   "notes": "[17:34–17:41]\nParagangliom en sık karotis cisimciğinde; hücreler yuvalar yapar, buna zellballen denir. Üçte biri kadarı kalıtsal."
+  },
+  {
+   "img": "slaytlar/M3/26g.jpg?v=4",
+   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 7/7",
+   "step": [
+    7,
+    7
+   ],
+   "notes": "[17:41–17:46]\nTendon kılıfının dev hücreli tümörü resmi slaytta var ama ağızda çok nadir."
+  },
+  {
+   "img": "slaytlar/M3/27a.jpg?v=4",
+   "title": "Sarkomlar: ortak özellikler · 1/6",
+   "step": [
+    1,
+    6
+   ],
+   "notes": "[17:46–17:52]\nÜçüncü grup: sarkomlar, yumuşak dokunun kötü huylu tümörleri. Ağız ve çene bölgesinde nadir: Neville'e göre bu bölgedeki kanserlerin yüzde birinden azı."
+  },
+  {
+   "img": "slaytlar/M3/27b.jpg?v=4",
+   "title": "Sarkomlar: ortak özellikler · 2/6",
+   "step": [
+    2,
+    6
+   ],
+   "notes": "[17:52–17:57]\nLokal agresif büyür; önce çevre dokuyu yıkar."
+  },
+  {
+   "img": "slaytlar/M3/27c.jpg?v=4",
+   "title": "Sarkomlar: ortak özellikler · 3/6",
+   "step": [
+    3,
+    6
+   ],
+   "notes": "[17:57–18:03]\nKarsinomların aksine lenf noduna az gider; uzak metastaz en sık akciğere."
+  },
+  {
+   "img": "slaytlar/M3/27d.jpg?v=4",
+   "title": "Sarkomlar: ortak özellikler · 4/6",
+   "step": [
+    4,
+    6
+   ],
+   "notes": "[18:03–18:10]\nRisk etkenleri: yıllar önce alınmış radyoterapi, kronik travma, yanık skarı, metal implant."
+  },
+  {
+   "img": "slaytlar/M3/27e.jpg?v=4",
+   "title": "Sarkomlar: ortak özellikler · 5/6",
+   "step": [
+    5,
+    6
+   ],
+   "notes": "[18:10–18:16]\nKalıtsal zemin: nörofibromatozis ve retinoblastom."
+  },
+  {
+   "img": "slaytlar/M3/27f.jpg?v=4",
+   "title": "Sarkomlar: ortak özellikler · 6/6",
+   "step": [
+    6,
+    6
+   ],
+   "notes": "[18:16–18:26]\nDavranışını tipi, derecesi, boyutu, evresi ve cerrahi sınır belirler. Baş-boyunda geniş sınır bırakmak zor; yerel nüks sık."
+  },
+  {
+   "img": "slaytlar/M3/28a.jpg?v=4",
+   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 1/8",
+   "step": [
+    1,
+    8
+   ],
+   "notes": "[18:26–18:33]\nİndiferansiye pleomorfik sarkom, eski adıyla malign fibröz histiyositom: yaşlı hastada, daha çok bacakta ve gövdede."
+  },
+  {
+   "img": "slaytlar/M3/28b.jpg?v=4",
+   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 2/8",
+   "step": [
+    2,
+    8
+   ],
+   "notes": "[18:33–18:39]\nMikroskopta girdap gibi demetler ve tuhaf, çok çekirdekli dev hücreler."
+  },
+  {
+   "img": "slaytlar/M3/28c.jpg?v=4",
+   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 3/8",
+   "step": [
+    3,
+    8
+   ],
+   "notes": "[18:39–18:46]\nBaş-boyunda burun ve sinüslerde; bir kısmı radyoterapiden yıllar sonra gelişir. Yüzde 40'ı nükseder."
+  },
+  {
+   "img": "slaytlar/M3/28d.jpg?v=4",
+   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 4/8",
+   "step": [
+    4,
+    8
+   ],
+   "notes": "[18:46–18:52]\nFibrosarkom bugün bir dışlama tanısı; olguların yüzde 10 ila 19'u baş-boyunda."
+  },
+  {
+   "img": "slaytlar/M3/28e.jpg?v=4",
+   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 5/8",
+   "step": [
+    5,
+    8
+   ],
+   "notes": "[18:52–18:58]\nİğsi hücreler balık kılçığı deseninde dizilir."
+  },
+  {
+   "img": "slaytlar/M3/28f.jpg?v=4",
+   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 6/8",
+   "step": [
+    6,
+    8
+   ],
+   "notes": "[18:58–19:05]\nLiposarkom ağızda en sık dilde ve yanakta; ağızdakilerin üçte ikisi iyi diferansiye tip."
+  },
+  {
+   "img": "slaytlar/M3/28g.jpg?v=4",
+   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 7/8",
+   "step": [
+    7,
+    8
+   ],
+   "notes": "[19:05–19:11]\nLipoma benzer ama lipoblast ve atipik hücreler içerir; MDM2 ve CDK4 pozitif. Ağızdakiler iyi seyirli."
+  },
+  {
+   "img": "slaytlar/M3/28h.jpg?v=4",
+   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 8/8",
+   "step": [
+    8,
+    8
+   ],
+   "notes": "[19:11–19:26]\nBir uyuşmazlık: resmi slayt en sık sarkom olarak pleomorfik sarkomu sayıyor. Neville 5'e göre bu eski bilgi; malign fibröz histiyositom denen tümörlerin çoğu başka sarkomlara ayrıldı ve bugün en sık sarkom liposarkom."
+  },
+  {
+   "img": "slaytlar/M3/29a.jpg?v=4",
+   "title": "Sinir ve damar kökenli sarkomlar · 1/9",
+   "step": [
+    1,
+    9
+   ],
+   "notes": "[19:26–19:33]\nMalign periferik sinir kılıfı tümörü, eski adıyla malign schwannom: dörtte biri ile yarısı NF1'li hastalarda gelişir; NF1'de büyüyen kitle hemen biyopsi ister."
+  },
+  {
+   "img": "slaytlar/M3/29b.jpg?v=4",
+   "title": "Sinir ve damar kökenli sarkomlar · 2/9",
+   "step": [
+    2,
+    9
+   ],
+   "notes": "[19:33–19:39]\nMikroskopta dalgalı çekirdekli atipik iğsi hücreler; prognozu kötü."
+  },
+  {
+   "img": "slaytlar/M3/29c.jpg?v=4",
+   "title": "Sinir ve damar kökenli sarkomlar · 3/9",
+   "step": [
+    3,
+    9
+   ],
+   "notes": "[19:39–19:46]\nOlfaktör nöroblastom burun tavanında koku epitelinden köken alır; adına rağmen çocukta değil erişkinde görülür."
+  },
+  {
+   "img": "slaytlar/M3/29d.jpg?v=4",
+   "title": "Sinir ve damar kökenli sarkomlar · 4/9",
+   "step": [
+    4,
+    9
+   ],
+   "notes": "[19:46–19:52]\nMikroskopta küçük, yuvarlak, mavi hücreler ve rozetler; kromogranin ve sinaptofizin pozitif."
+  },
+  {
+   "img": "slaytlar/M3/29e.jpg?v=4",
+   "title": "Sinir ve damar kökenli sarkomlar · 5/9",
+   "step": [
+    5,
+    9
+   ],
+   "notes": "[19:52–19:59]\nAnjiyosarkomun yarısı baş-boyunda, en sık saçlı deride ve alında; ağızda çok nadir."
+  },
+  {
+   "img": "slaytlar/M3/29f.jpg?v=4",
+   "title": "Sinir ve damar kökenli sarkomlar · 6/9",
+   "step": [
+    6,
+    9
+   ],
+   "notes": "[19:59–20:04]\nErken dönemde morluk gibi görünür, bu yüzden tanı gecikir; CD31 ve ERG pozitif."
+  },
+  {
+   "img": "slaytlar/M3/29g.jpg?v=4",
+   "title": "Sinir ve damar kökenli sarkomlar · 7/9",
+   "step": [
+    7,
+    9
+   ],
+   "notes": "[20:04–20:12]\nKaposi sarkomu HHV-8 ile ilişkili; dört formu var. Resmi slayt endemik formu HIV ve HHV-8 ile ilişkilendiriyor; Neville'e göre dört formun hepsinin etkeni HHV-8, HIV yalnız AIDS formunda."
+  },
+  {
+   "img": "slaytlar/M3/29h.jpg?v=4",
+   "title": "Sinir ve damar kökenli sarkomlar · 8/9",
+   "step": [
+    8,
+    9
+   ],
+   "notes": "[20:12–20:18]\nAIDS'li hastaların yaklaşık yüzde 70'inde ağız lezyonu olur, en sık sert damakta."
+  },
+  {
+   "img": "slaytlar/M3/29i.jpg?v=4",
+   "title": "Sinir ve damar kökenli sarkomlar · 9/9",
+   "step": [
+    9,
+    9
+   ],
+   "notes": "[20:18–20:26]\nMikroskopta iğsi hücreler, yarık benzeri damarlar ve ekstravaze eritrositler."
+  },
+  {
+   "img": "slaytlar/M3/30a.jpg?v=4",
+   "title": "Kas kökenli sarkomlar ve diğerleri · 1/9",
+   "step": [
+    1,
+    9
+   ],
+   "notes": "[20:26–20:32]\nLeiomiyosarkom düz kas sarkomu; ağızda nadir, üçte biri alt çenede."
+  },
+  {
+   "img": "slaytlar/M3/30b.jpg?v=4",
+   "title": "Kas kökenli sarkomlar ve diğerleri · 2/9",
+   "step": [
+    2,
+    9
+   ],
+   "notes": "[20:32–20:38]\nÇekirdekler puro biçimli; on büyük büyütme alanında beş ya da daha fazla mitoz varsa malign kabul edilir."
+  },
+  {
+   "img": "slaytlar/M3/30c.jpg?v=4",
+   "title": "Kas kökenli sarkomlar ve diğerleri · 3/9",
+   "step": [
+    3,
+    9
+   ],
+   "notes": "[20:38–20:45]\nRabdomiyosarkom çocukların sarkomu: çocukluk çağı yumuşak doku sarkomlarının yarısı, en sık baş-boyunda."
+  },
+  {
+   "img": "slaytlar/M3/30d.jpg?v=4",
+   "title": "Kas kökenli sarkomlar ve diğerleri · 4/9",
+   "step": [
+    4,
+    9
+   ],
+   "notes": "[20:45–20:51]\nEmbriyonal tip en sık ve ilk on yaşta; alveoler tip ergenlik ve gençlikte; pleomorfik tip erişkinde."
+  },
+  {
+   "img": "slaytlar/M3/30e.jpg?v=4",
+   "title": "Kas kökenli sarkomlar ve diğerleri · 5/9",
+   "step": [
+    5,
+    9
+   ],
+   "notes": "[20:51–20:57]\nAğız içinde en sık damakta; desmin ve miyogenin pozitif."
+  },
+  {
+   "img": "slaytlar/M3/30f.jpg?v=4",
+   "title": "Kas kökenli sarkomlar ve diğerleri · 6/9",
+   "step": [
+    6,
+    9
+   ],
+   "notes": "[20:57–21:05]\nSinovyal sarkom eklem çevresinde görülür ama adına rağmen sinovyadan köken almaz; baş-boyunda en sık parafarenkste."
+  },
+  {
+   "img": "slaytlar/M3/30g.jpg?v=4",
+   "title": "Kas kökenli sarkomlar ve diğerleri · 7/9",
+   "step": [
+    7,
+    9
+   ],
+   "notes": "[21:05–21:11]\nTanıyı SS18::SSX füzyonu koydurur. Resmi slayt genellikle bifazik der; Neville'e göre monofazik tip daha sık."
+  },
+  {
+   "img": "slaytlar/M3/30h.jpg?v=4",
+   "title": "Kas kökenli sarkomlar ve diğerleri · 8/9",
+   "step": [
+    8,
+    9
+   ],
+   "notes": "[21:11–21:17]\nAlveoler yumuşak doku sarkomu nadir; çocukta baş-boyunda en sık orbitada ve dilde."
+  },
+  {
+   "img": "slaytlar/M3/30i.jpg?v=4",
+   "title": "Kas kökenli sarkomlar ve diğerleri · 9/9",
+   "step": [
+    9,
+    9
+   ],
+   "notes": "[21:17–21:22]\nHücrelerde PAS pozitif, diastaza dirençli kristaller; TFE3 pozitif."
   },
   {
    "img": "slaytlar/M3/31a.jpg?v=4",
@@ -1029,7 +1471,7 @@
     1,
     2
    ],
-   "notes": "[21:34–21:41]\nSon olarak metastaz. Ağız yumuşak dokusuna gelen metastazların yarıdan fazlası diş etinde ve piyojenik granülom gibi görünebilir."
+   "notes": "[21:22–21:29]\nSon olarak metastaz. Ağız yumuşak dokusuna gelen metastazların yarıdan fazlası diş etinde ve piyojenik granülom gibi görünebilir."
   },
   {
    "img": "slaytlar/M3/31b.jpg?v=4",
@@ -1038,47 +1480,118 @@
     2,
     2
    ],
-   "notes": "[21:41–21:49]\nErkekte en sık akciğerden, kadında memeden gelir; hastaların dörtte birinde ağızdaki lezyon kanserin ilk bulgusu. Bu yüzden çıkardığınız her doku patolojiye gider."
+   "notes": "[21:29–21:37]\nErkekte en sık akciğerden, kadında memeden gelir; hastaların dörtte birinde ağızdaki lezyon kanserin ilk bulgusu. Bu yüzden çıkardığınız her doku patolojiye gider."
   },
   {
-   "img": "slaytlar/M3/32.jpg?v=4",
-   "title": "Açılış vakası: biyopsi sonucu",
-   "notes": "[21:49–22:19]\nHastamıza yüzeysel bir biyopsi yapıldı. Rapor: yüzeyde psödoepitelyomatöz hiperplazi, invaziv karsinom dışlanamadı. Epitel aşağı doğru dallar yapıyor ve bu görüntü karsinoma benziyor. Şimdi tahmininizi yenileyin; sıradaki slaytta ilk tahminle karşılaştıracağız."
+   "img": "slaytlar/M3/32a.jpg?v=4",
+   "title": "Açılış vakası: biyopsi sonucu · 1/3",
+   "step": [
+    1,
+    3
+   ],
+   "notes": "[21:37–21:45]\nDersin başındaki hastamıza dönüyoruz: dil sırtında ağrısız, sarımsı nodül."
+  },
+  {
+   "img": "slaytlar/M3/32b.jpg?v=4",
+   "title": "Açılış vakası: biyopsi sonucu · 2/3",
+   "step": [
+    2,
+    3
+   ],
+   "notes": "[21:45–21:52]\nYüzeysel bir insizyonel biyopsi yapıldı."
+  },
+  {
+   "img": "slaytlar/M3/32c.jpg?v=4",
+   "title": "Açılış vakası: biyopsi sonucu · 3/3",
+   "step": [
+    3,
+    3
+   ],
+   "notes": "[21:52–22:07]\nRapor: yüzeyde psödoepitelyomatöz hiperplazi, invaziv karsinom dışlanamadı. Epitel aşağı doğru dallar yapıyor ve karsinoma benziyor. Tahmininizi yenileyin; sıradaki slaytta ilk tahminle karşılaştıracağız."
   },
   {
    "img": "slaytlar/M3/33.jpg?v=4",
    "title": "Vakaya dönüş: şimdi ne diyorsun?",
    "q": "W6",
-   "notes": "[22:19–22:59]\nAynı soru, aynı şıklar. Dersin başındaki dağılımı hatırlayın. (İki sonucu yan yana göster.)\n\nCANLI (W6, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
+   "notes": "[22:07–22:47]\nAynı soru, aynı şıklar. Dersin başındaki dağılımı hatırlayın. (İki sonucu yan yana göster.)\n\nCANLI (W6, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
   },
   {
-   "img": "slaytlar/M3/34.jpg?v=4",
-   "title": "Tanı: granüler hücreli tümör",
-   "notes": "[22:59–23:59]\nKanıtları sırayla koyalım. Yer: dil sırtı; granüler hücreli tümörün en sık yeri, ama ağız kanserinin olağan yeri değil. Klinik: ağrısız, sert, sarımsı nodül, orta yaşta kadın. Yüzeysel biyopsi epitelin aşağı uzanan dallarını gösterdi; buna psödoepitelyomatöz hiperplazi diyoruz ve karsinoma çok benzer. Derin biyopsi altındaki asıl tümörü gösterdi: iri, granüler sitoplazmalı hücreler, S100 ve PAS pozitif. Patoloğun notu: Neville bu görüntü yüzünden karsinom tanısı konup gereksiz kanser ameliyatı yapılan hastalardan söz ediyor. Dil sırtındaki bir nodülde biyopsiyi derin alın ve istek formuna yeri ve kliniği yazın. Tedavi konservatif eksizyon; nüks nadir."
+   "img": "slaytlar/M3/34a.jpg?v=4",
+   "title": "Tanı: granüler hücreli tümör · 1/6",
+   "step": [
+    1,
+    6
+   ],
+   "notes": "[22:47–22:57]\nKanıtları sırayla koyalım. Yer: dil sırtı; granüler hücreli tümörün en sık yeri, ama ağız kanserinin olağan yeri değil."
+  },
+  {
+   "img": "slaytlar/M3/34b.jpg?v=4",
+   "title": "Tanı: granüler hücreli tümör · 2/6",
+   "step": [
+    2,
+    6
+   ],
+   "notes": "[22:57–23:04]\nKlinik: ağrısız, sert, sarımsı nodül; orta yaşta kadın."
+  },
+  {
+   "img": "slaytlar/M3/34c.jpg?v=4",
+   "title": "Tanı: granüler hücreli tümör · 3/6",
+   "step": [
+    3,
+    6
+   ],
+   "notes": "[23:04–23:13]\nYüzeysel biyopsi epitelin aşağı uzanan dallarını gösterdi; psödoepitelyomatöz hiperplazi karsinoma çok benzer."
+  },
+  {
+   "img": "slaytlar/M3/34d.jpg?v=4",
+   "title": "Tanı: granüler hücreli tümör · 4/6",
+   "step": [
+    4,
+    6
+   ],
+   "notes": "[23:13–23:22]\nDerin biyopsi altındaki asıl tümörü gösterdi: iri, granüler sitoplazmalı hücreler, S100 ve PAS pozitif. Tanı granüler hücreli tümör."
+  },
+  {
+   "img": "slaytlar/M3/34e.jpg?v=4",
+   "title": "Tanı: granüler hücreli tümör · 5/6",
+   "step": [
+    5,
+    6
+   ],
+   "notes": "[23:22–23:28]\nTedavi konservatif eksizyon; nüks nadir."
+  },
+  {
+   "img": "slaytlar/M3/34f.jpg?v=4",
+   "title": "Tanı: granüler hücreli tümör · 6/6",
+   "step": [
+    6,
+    6
+   ],
+   "notes": "[23:28–23:47]\nPatoloğun notu: Neville bu görüntü yüzünden karsinom tanısı konup gereksiz kanser ameliyatı yapılan hastalardan söz ediyor. Dil sırtındaki bir nodülde biyopsiyi derin alın ve istek formuna yeri ve kliniği yazın."
   },
   {
    "img": "slaytlar/M3/35.jpg?v=4",
    "title": "(Zaman kalırsa) Eski ad, yeni ad",
-   "notes": "[23:59–24:39] ZAMAN KALIRSA; yoksa → ile atla.\nZaman kalırsa; yoksa atlayın. Adı değişen tümörler; sınavda iki adı da görebilirsiniz."
+   "notes": "[23:47–24:27] ZAMAN KALIRSA; yoksa → ile atla.\nZaman kalırsa; yoksa atlayın. Adı değişen tümörler; sınavda iki adı da görebilirsiniz."
   },
   {
    "img": "slaytlar/M3/36.jpg?v=4",
    "title": "Çıkış bileti",
    "q": "W7",
-   "notes": "[24:39–25:19]\nSon kelime bulutu. Hangi konu kafanızı karıştırdı? En büyük çıkan kelimeyle hemen sonraki derse, tükürük bezlerine başlayacağım.\n\nCANLI (W7, Kelime bulutu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Bulut canlı akar. → kapatır, → sonraki slayt. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
+   "notes": "[24:27–25:07]\nSon kelime bulutu. Hangi konu kafanızı karıştırdı? En büyük çıkan kelimeyle hemen sonraki derse, tükürük bezlerine başlayacağım.\n\nCANLI (W7, Kelime bulutu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Bulut canlı akar. → kapatır, → sonraki slayt. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
   },
   {
    "board": true,
    "title": "Liderlik tablosu",
-   "notes": "[25:19–25:44]\nLiderlik tablosu. İlk üçü alkışlayalım. Eşit puanda hızlı olan önde."
+   "notes": "[25:07–25:32]\nLiderlik tablosu. İlk üçü alkışlayalım. Eşit puanda hızlı olan önde."
   },
   {
    "img": "slaytlar/M3/38.jpg?v=4",
    "title": "Kaynaklar ve evde tekrar",
-   "notes": "[25:44–25:54]\nKaynaklar burada. Evde tekrar için quiz: Neville'in örnek sınav soruları Türkçe, cevap açıklamalı; isteyen karekodu okutup çözsün. İlk üçü gelecek derste burada anarım. On dakika ara; sonra tükürük bezleri. Telefonlarınızı kapatmayın: aynı adla 'Sıradaki derse geç' düğmesi çıkacak."
+   "notes": "[25:32–25:42]\nKaynaklar burada. Evde tekrar için quiz: Neville'in örnek sınav soruları Türkçe, cevap açıklamalı; isteyen karekodu okutup çözsün. İlk üçü gelecek derste burada anarım. On dakika ara; sonra tükürük bezleri. Telefonlarınızı kapatmayın: aynı adla 'Sıradaki derse geç' düğmesi çıkacak."
   }
  ],
- "duration": "25:54",
+ "duration": "25:42",
  "cta": "24 Kasım'a kadar isteyen Neville'in örnek sorularını Türkçe quiz olarak çözsün: olgunak.github.io/lam-basinda/quiz. İlk üçü gelecek derste burada anarım.",
  "frame": "Üç grup: neoplastik olmayan kitleler, iyi huylu tümörler, sarkomlar",
  "quiz": "../quiz/#yd"
