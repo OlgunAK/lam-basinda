@@ -242,10 +242,22 @@ class Lesson:
         jobs = []
         slides_json = []
         t = 0
-        n = 0
+        # Adım adım açılan slaytlar (seq): her adım ayrı bir kare, numara aynı kalır.
+        flat, disp = [], 0
         for s in self.slides:
-            n += 1
+            disp += 1
+            if not s.get("seq"):
+                flat.append((s, disp)); continue
+            N = len(s["seq"])
+            for k, st in enumerate(s["seq"]):
+                s2 = dict(s, body=s["body_fn"](k), dur=st["dur"], notes=st["note"], _step=(k, N))
+                if k < N - 1:
+                    s2.pop("qopen", None); s2.pop("q", None)
+                flat.append((s2, disp))
+        for s, n in flat:
             dur = s["dur"]
+            step = s.get("_step")
+            suf = "abcdefghijklmnopqrstuvwxyz"[step[0]] if step else ""
             stamp = "[%s–%s]" % (ts(t), ts(t + dur))
             if s.get("optional"):
                 stamp += " ZAMAN KALIRSA; yoksa → ile atla."
@@ -260,7 +272,11 @@ class Lesson:
             title = s["title"]
             if s.get("optional"):
                 title = "(Zaman kalırsa) " + title
-            j = {"img": "slaytlar/%s/%02d.jpg?v=%s" % (self.lid, n, self.ver), "title": title}
+            if step:
+                title += " · %d/%d" % (step[0] + 1, step[1])
+            j = {"img": "slaytlar/%s/%02d%s.jpg?v=%s" % (self.lid, n, suf, self.ver), "title": title}
+            if step:
+                j["step"] = [step[0] + 1, step[1]]
             if s.get("lobby"):
                 j["lobby"] = True
             if s.get("qopen"):
@@ -280,10 +296,10 @@ class Lesson:
                     notes += "\n\n" + live_block(qq, lobby=bool(s.get("lobby")))
             j["notes"] = notes
             slides_json.append(j)
-            fn = os.path.join(out_html, "%02d.html" % n)
+            fn = os.path.join(out_html, "%02d%s.html" % (n, suf))
             open(fn, "w", encoding="utf-8").write(self.page(s, n))
             if only is None or n in only:
-                jobs.append([fn, os.path.join(out_img, "%02d.jpg" % n)])
+                jobs.append([fn, os.path.join(out_img, "%02d%s.jpg" % (n, suf))])
             t += dur
         # drop stale jpgs
         keep = {os.path.basename(x["img"].split("?")[0]) for x in slides_json if x.get("img")}
@@ -305,7 +321,7 @@ class Lesson:
         if self.quiz:
             L["quiz"] = self.quiz   # ders sonunda telefonda quiz bağlantısı
         json.dump(L, open(os.path.join(CANLI, "dersler", self.lid + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-        core = sum(s["dur"] for s in self.slides if not s.get("optional"))
+        core = sum(s["dur"] for s, _ in flat if not s.get("optional"))
         print("%s: %d slayt, %d soru, toplam %s (çekirdek %s)" % (self.lid, n, len(self.questions), ts(t), ts(core)))
         return L
 

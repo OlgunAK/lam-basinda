@@ -68,167 +68,272 @@ W6 = L.q(id="W6", type="POLL", label="Vakaya dönüş: şimdi ne diyorsun?", q="
 W7 = L.q(id="W7", type="WORDCLOUD", label="Çıkış bileti", q="Bugün en çok kafanı karıştıran konu hangisiydi? (Tek kelime ya da kısa ifade)", scored=False)
 Q = L.qmap
 
+R = os.path.join(HERE, "resmi")
+r = lambda f: os.path.join(R, f)
+RESMI = "Fakültenin resmi ders slaytı (Z. Kahyaoğlu Akkaya)"
+
+
+def seq_list(items, k, size=34, dark=False):
+    out = []
+    for i, it in enumerate(items):
+        if i > k:
+            vis = "visibility:hidden;"
+        else:
+            vis = ""
+        now = i == k
+        bg = (C["navy2"] if dark else C["lilac"]) if now else "transparent"
+        bar = C["pink"] if now else ("#4a3d63" if dark else C["line"] if "line" in C else "#e3dbee")
+        col_ = ("#fff" if dark else C["navy"]) if now else ("#bdb3cc" if dark else "#6e6282")
+        h = ("<div style='font:700 %dpx Lora;color:%s;margin:0 0 4px'>%s</div>" % (size - 4, C["pink"], md(it["h"]))) if it.get("h") else ""
+        out.append("<div style='%sbackground:%s;border-left:7px solid %s;border-radius:10px;padding:12px 20px;color:%s;"
+                   "font-size:%dpx;line-height:1.28;font-weight:%s'>%s%s</div>" % (vis, bg, bar, col_, size, 700 if now else 400, h, md(it["t"])))
+    return "".join(out)
+
+
+def seq_add(title, items, size=34, vis_w=1040, theme="light", gap=14, **kw):
+    """Maddeler sırayla açılır; soldaki görsel o maddenin görseli (yoksa bir öncekinin)."""
+    def body(k):
+        v = None
+        for it in items[:k + 1]:
+            if it.get("v"):
+                v = it["v"]
+        lst = div(seq_list(items, k, size, theme == "dark"), "flex:1;display:flex;flex-direction:column;gap:%dpx;justify-content:flex-start" % gap)
+        return row(div(v or "", "flex:0 0 %dpx;display:flex" % vis_w), lst, gap=40, style="flex:1")
+    L.add(title=title, seq=[{"note": it["note"], "dur": it["dur"]} for it in items], body_fn=body, theme=theme, **kw)
+
+
+def P(src, cap=None, sub=None, **kw):
+    return ph(src, cap, sub, style="flex:1", **kw)
+
+
+def P2(a, b):
+    return row(a, b, gap=16, style="flex:1")
+
+
+def keloid_svg(k):
+    """Basit çizim: yara çizgisi, hipertrofik skar sınır içinde, keloid sınırı aşar."""
+    skin = "#f3d2c1"; scar = "#c9879a"; line = C["navy"]
+    parts = ["<svg viewBox='0 0 1000 820' style='width:100%;height:100%' xmlns='http://www.w3.org/2000/svg'>",
+             "<rect width='1000' height='820' rx='16' fill='#fbf3ee'/>"]
+    for i, (x, lab) in enumerate([(250, "Hipertrofik skar"), (750, "Keloid")]):
+        parts.append("<rect x='%d' y='330' width='420' height='300' rx='14' fill='%s'/>" % (x - 210, skin))
+        parts.append("<line x1='%d' y1='330' x2='%d' y2='330' stroke='%s' stroke-width='4' stroke-dasharray='10 8'/>" % (x - 90, x + 90, line))
+        parts.append("<text x='%d' y='700' text-anchor='middle' font-family='Lora' font-weight='700' font-size='40' fill='%s'>%s</text>" % (x, line, lab))
+    parts.append("<text x='500' y='120' text-anchor='middle' font-family='Lato' font-size='32' fill='%s'>Kesikli çizgi: yaranın sınırı</text>" % C["grey"])
+    if k >= 1:
+        parts.append("<path d='M160 330 Q250 230 340 330 Z' fill='%s'/>" % scar)
+    if k >= 2:
+        parts.append("<path d='M540 330 Q600 150 750 170 Q900 150 960 330 Z' fill='%s'/>" % scar)
+        parts.append("<text x='750' y='265' text-anchor='middle' font-family='Lato' font-weight='700' font-size='30' fill='#fff'>sınırı aşar</text>")
+    parts.append("</svg>")
+    return "".join(parts)
+
+
 # ---------------- slides ----------------
 L.add(title="Yumuşak Doku Hastalıkları", dur=60, lobby=True, nonum=True, raw=title_page(
     "4. Sınıf Patoloji  ·  Diş Hekimliği", "Yumuşak Doku Hastalıkları",
     "Neoplastik olmayan kitleler, iyi huylu tümörler ve sarkomlar",
     "17 Kasım 2026  ·  Uzm. Dr. M. Olgun Ak", "42 yaşında kadın, dil sırtında bir yıldır büyüyen ağrısız nodül.",
     n("12.61"), NEV),
-    notes="Günaydın. Bugün iki ders arka arkaya: önce ağzın yumuşak doku hastalıkları, sonra tükürük bezleri. Sağdaki görüntü bir schwannom; dersin ortasında mikroskopta tanıyacaksınız. Karekod perdede: okutun; hesap yok, uygulama yok. Takma ad isterseniz yazın; dersin sonunda liderlik tablosu var, doğru ve hızlı olan kazanıyor. Herkes girince → ile vakaya geçiyoruz. (L: katılım ekranını gizle/göster.)")
+    notes="Günaydın. Bugün iki ders arka arkaya: önce ağzın yumuşak doku hastalıkları, sonra tükürük bezleri. Sağdaki görüntü bir schwannom; dersin ortasında mikroskopta tanıyacaksınız. Karekod perdede: okutun; hesap yok, uygulama yok. Takma ad isterseniz yazın; dersin sonunda liderlik tablosu var. Herkes girince → ile vakaya geçiyoruz. (L: katılım ekranını gizle/göster.)")
 
-L.add(title="Açılış vakası: dil sırtında nodül", dur=60, theme="dark", qopen=W1, cred=NEV,
-      body=row(div(bl(["42 yaşında kadın",
-                       "Dil sırtında 1 cm, sert, sarımsı nodül",
-                       "Bir yıldır yavaş büyüyor; ağrısız",
-                       "Üstündeki mukoza sağlam; travma öyküsü yok",
-                       "Sigara ve alkol kullanmıyor"], size=36, gap=26), "flex:0 0 900px"),
-               col(row(ph(n("12.84"), "Dil sırtı"), qmark(), style="height:470px"),
-                   box("yellow", None, html_="<div class='big' style='font-size:40px'>Tahminini telefondan gir. Cevap dersin sonunda.</div>", style="padding:50px 36px"),
-                   style="flex:1"), gap=40),
-      notes="Hastamız 42 yaşında bir kadın. Dil sırtında bir santimetrelik, sert, sarımsı bir nodül var; bir yıldır yavaş büyüyor ve ağrımıyor. Üstündeki mukoza sağlam, travma öyküsü yok, sigara içmiyor. Fotoğrafa bakın ve tahmininizi girin; şıklar telefonunuzda açık. Cevabı dersin sonunda açacağım, sonraki slaytta yalnız dağılımı göreceğiz.")
+VAKA_V = col(row(ph(n("12.84"), "Dil sırtı", style="flex:1"), qmark(), style="flex:1"),
+             box("yellow", None, html_="<div class='big' style='font-size:38px'>Tahminini telefondan gir. Cevap dersin sonunda.</div>", style="padding:36px 32px"),
+             style="flex:1")
+seq_add("Açılış vakası: dil sırtında nodül", [
+    dict(t="42 yaşında kadın", v=VAKA_V, dur=10, note="Hastamız 42 yaşında bir kadın."),
+    dict(t="Dil sırtında 1 cm, sert, sarımsı nodül", dur=12, note="Dil sırtında bir santimetrelik, sert, sarımsı bir nodül var."),
+    dict(t="Bir yıldır yavaş büyüyor; ağrısız", dur=12, note="Bir yıldır yavaş yavaş büyüyor ve ağrımıyor."),
+    dict(t="Üstündeki mukoza sağlam; travma öyküsü yok", dur=12, note="Üstündeki mukoza sağlam; ısırma ya da travma öyküsü yok."),
+    dict(t="Sigara ve alkol kullanmıyor", dur=14, note="Sigara ve alkol kullanmıyor. Fotoğrafa bakın ve tahmininizi telefondan girin; şıklar açık. Cevabı dersin sonunda açacağım."),
+], size=38, vis_w=900, theme="dark", qopen=W1, cred=NEV)
 
 L.add(title="Açılış vakası: tahminin ne?", dur=40, theme="dark", q=W1, cont=True, cred=NEV,
       body=qbody(Q[W1], photo=ph(n("12.84"))),
-      notes="Sonuçları gösteriyorum ama yorum yapmıyorum. Şıklardan biri kötü huylu, dördü iyi huylu ya da reaktif. Bu dağılımın fotoğrafını çekin; dersin sonunda biyopsi sonucuyla birlikte aynı soruyu yeniden soracağım.")
+      notes="Sonuçları gösteriyorum ama yorum yapmıyorum. Şıklardan biri kötü huylu, dördü iyi huylu ya da reaktif. Dersin sonunda biyopsi sonucuyla birlikte aynı soruyu yeniden soracağım.")
 
-L.add(title="Dersin planı: üç grup", dur=45,
-      body=col(row(
-          box("navy", "1 · Neoplastik olmayan kitleler", ["Hamartom ve koristom", "Juvenil hiyalen fibromatozis", "Fibromatozis colli (tortikollis)",
-                                                          "Keloid ve hipertrofik skar", "Nodüler fasiitis", "Oral fokal müsinozis", "Travmatik nöroma"], size=30, gap=12, style="flex:1"),
-          box("lilac", "2 · İyi huylu tümörler", None, html_=table([
-              ["Lif, histiyosit", "fibröz histiyositom, fibromatozis, miyofibrom, soliter fibröz tümör"],
-              ["Yağ", "lipom"],
-              ["Sinir", "palizatlı kapsüllü nöroma, schwannom, nörofibrom, paragangliom, granüler hücreli tümör, konjenital epulis"],
-              ["Damar", "hemanjiyom, lenfanjiyom, nazofarengeal anjiyofibrom"],
-              ["Kas", "leiomiyom, rabdomiyom"]], size=26, w1=170), style="flex:0 0 760px;padding:22px 24px"),
-          box("rose", "3 · Sarkomlar", ["Pleomorfik sarkom, fibrosarkom, liposarkom", "Malign periferik sinir kılıfı tümörü, olfaktör nöroblastom",
-                                        "Anjiyosarkom, Kaposi sarkomu", "Leiomiyosarkom, rabdomiyosarkom", "Sinovyal sarkom, alveoler yumuşak doku sarkomu"],
-              size=29, gap=16, style="flex:1"), style="flex:1"),
-          box("yellow", None, ["Her hastalıkta aynı dört soruyu soruyoruz: **hangi dokudan** köken alıyor, **kaç yaşında**, **ağızda nerede**, **mikroskopta ne görülür**."],
-              size=28, style="padding:20px 30px")),
-      notes="Ders fakültemizin resmi slaytıyla aynı sırada ilerliyor: üç grup. Birincisi neoplastik olmayan kitleler; tümör gibi görünürler ama gerçek tümör değildirler. İkincisi iyi huylu tümörler; köken aldıkları dokuya göre sıraladım: lif, yağ, sinir, damar, kas. Üçüncüsü sarkomlar, yani yumuşak dokunun kötü huylu tümörleri. Her hastalıkta aynı dört soruyu soracağız: hangi dokudan köken alıyor, kaç yaşında görülüyor, ağızda en sık nerede, mikroskopta ne görülüyor. Rakamlar Neville 5. baskıdan; resmi slaytla Neville'in ayrıldığı yerleri ayrıca söyleyeceğim.")
+PLAN = [
+    box("navy", "1 · Neoplastik olmayan kitleler", ["Hamartom ve koristom", "Juvenil hiyalen fibromatozis", "Fibromatozis colli (tortikollis)",
+                                                    "Keloid ve hipertrofik skar", "Nodüler fasiitis", "Oral fokal müsinozis", "Travmatik nöroma"], size=30, gap=12, style="flex:1"),
+    box("lilac", "2 · İyi huylu tümörler", None, html_=table([
+        ["Lif, histiyosit", "fibröz histiyositom, fibromatozis, miyofibrom, soliter fibröz tümör"],
+        ["Yağ", "lipom"],
+        ["Sinir", "palizatlı kapsüllü nöroma, schwannom, nörofibrom, paragangliom, granüler hücreli tümör, konjenital epulis"],
+        ["Damar", "hemanjiyom, lenfanjiyom, nazofarengeal anjiyofibrom"],
+        ["Kas", "leiomiyom, rabdomiyom"]], size=26, w1=170), style="flex:1;padding:22px 24px"),
+    box("rose", "3 · Sarkomlar", ["Pleomorfik sarkom, fibrosarkom, liposarkom", "Malign periferik sinir kılıfı tümörü, olfaktör nöroblastom",
+                                  "Anjiyosarkom, Kaposi sarkomu", "Leiomiyosarkom, rabdomiyosarkom", "Sinovyal sarkom, alveoler yumuşak doku sarkomu"],
+        size=29, gap=16, style="flex:1"),
+    box("yellow", None, ["Her hastalıkta aynı dört soru: **hangi dokudan** köken alıyor, **kaç yaşında**, **ağızda nerede**, **mikroskopta ne görülür**."],
+        size=28, style="padding:20px 30px")]
+
+
+def plan_body(k):
+    fx = ["flex:1", "flex:0 0 760px", "flex:1", ""]
+    hid = lambda i: div(PLAN[i], "display:flex;flex-direction:column;%s;%s" % (fx[i], "" if i <= k else "visibility:hidden"))
+    return col(row(*[hid(i) for i in range(3)], style="flex:1"), hid(3))
+
+
+L.add(title="Dersin planı: üç grup", body_fn=plan_body, seq=[
+    dict(dur=12, note="Ders fakültemizin resmi slaytıyla aynı sırada: üç grup. Birincisi neoplastik olmayan kitleler; tümör gibi görünürler ama gerçek tümör değildirler."),
+    dict(dur=12, note="İkincisi iyi huylu tümörler; köken aldıkları dokuya göre sıraladım: lif, yağ, sinir, damar, kas."),
+    dict(dur=10, note="Üçüncüsü sarkomlar, yani yumuşak dokunun kötü huylu tümörleri."),
+    dict(dur=11, note="Her hastalıkta aynı dört soruyu soracağız: hangi doku, kaç yaş, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5. baskıdan; resmi slaytla ayrıldığı yerleri ayrıca söyleyeceğim.")])
 
 # ---- 1. Neoplastik olmayan kitleler ----
-L.add(title="Hamartom ve koristom", dur=40, strip={1}, dus=True, cred=NEV,
-      body=col(row(ph(n("12.127"), "Koristom: dil kökünde sert nodül"), ph(n("12.128"), "Epitel altında olgun lameller kemik"),
-                   ph(n("12.116"), "Leiomiyomatöz hamartom", "7 yaşında çocuk, üst alveol kreti"), style="flex:1"),
-               row(box("lilac", "Hamartom", ["O bölgede **normalde bulunan** dokuların düzensiz büyümesi", "Tümör gibi sürekli büyümez",
-                                             "Örnek: leiomiyomatöz hamartom; üst ön diş eti (insiziv papilla) ya da dil sırtı orta hat; doğumda varsa konjenital epulis sanılır"],
-                       size=25, gap=6, style="flex:1;padding:20px 24px"),
-                   box("lilac", "Koristom", ["Normal doku, **olmaması gereken** bir yerde", "Ağızda en sık kemik ve kıkırdak; ayrıca mide mukozası, glial doku, yağ bezi",
-                                             "Kemik-kıkırdak koristomlarının %85'i dilde, çoğu foramen çekum çevresinde; 0,5–2 cm",
-                                             "Tedavi: eksizyon; nüks bildirilmemiş"], size=25, gap=6, style="flex:1;padding:20px 24px"))),
-      notes="İki tanım, sınavda sık karıştırılır. Hamartom: o bölgede normalde bulunan dokuların düzensiz büyümesi; tümör gibi sürekli büyümez. Ağızdaki örneği leiomiyomatöz hamartom: üst ön diş etinde insiziv papilla bölgesinde ya da dil sırtının orta hattında küçük bir kabarıklık; doğumda varsa konjenital epulis sanılabilir. Koristom: normal doku ama olmaması gereken bir yerde. Ağızda en sık kemik ve kıkırdak koristomu görülür; Neville'e göre bunların yüzde 85'i dilde, çoğu dil kökünde foramen çekum çevresinde. Hasta öğürme ya da yutma güçlüğünden yakınabilir. Eksizyon yeterli, nüks bildirilmemiş.")
+seq_add("Hamartom ve koristom", [
+    dict(h="Hamartom", t="O bölgede normalde bulunan dokunun düzensiz büyümesi", v=P(n("12.116"), "Leiomiyomatöz hamartom", "7 yaşında çocuk, üst alveol kreti"), dur=8,
+         note="Hamartom: o bölgede normalde bulunan dokunun düzensiz büyümesi."),
+    dict(t="Sürekli büyümez; gerçek tümör değildir", dur=5, note="Tümör gibi sürekli büyümez."),
+    dict(t="Ağızda örnek: leiomiyomatöz hamartom; üst ön diş eti ya da dil sırtı", dur=7,
+         note="Ağızdaki örneği leiomiyomatöz hamartom: üst ön diş etinde ya da dil sırtının orta hattında; doğumda varsa konjenital epulis sanılabilir."),
+    dict(h="Koristom", t="Normal doku, olmaması gereken bir yerde", v=P(n("12.127"), "Kemik koristomu", "Dil kökünde sert nodül"), dur=7,
+         note="Koristom: normal doku ama olmaması gereken bir yerde."),
+    dict(t="Ağızda en sık kemik ve kıkırdak; %85'i dilde, foramen çekum çevresinde", v=P(n("12.128"), "Epitel altında olgun lameller kemik"), dur=8,
+         note="Ağızda en sık kemik ve kıkırdak koristomu görülür; Neville'e göre yüzde 85'i dilde, çoğu foramen çekum çevresinde. Hasta öğürmeden yakınabilir."),
+    dict(t="Tedavi eksizyon; nüks bildirilmemiş", dur=5, note="Eksizyon yeterli; nüks bildirilmemiş."),
+], strip={1}, dus=True, cred=NEV)
 
-L.add(title="Çocukta iki fibröz lezyon; keloid", dur=45, strip={1}, dus=True,
-      body=col(row(box("lilac", "Juvenil hiyalen fibromatozis", ["Otozomal resesif; akraba evliliğinde sık", "Başlangıç 2–5 yaş; baş-boyunda mm'den 5 cm'ye kadar papül ve nodüller",
-                                                               "Ağızda en sık bulgu **diş eti büyümesi**", "Eklem kontraktürleri eşlik edebilir",
-                                                               "Mikroskop: hücreden fakir, hiyalinize matriks; **PAS ve Alcian mavisi** ile boyanır"],
-                           size=30, gap=16, style="flex:1;padding:22px 26px"),
-                       box("lilac", "Fibromatozis colli (tortikollis)", ["Sternokleidomastoid kasın alt bölümünde", "Doğumdan sonraki 2.–4. haftada boyunda şişlik",
-                                                                        "Zor doğumda travma ve kanamayla ilişkili; neoplazi değil, onarım süreci",
-                                                                        "Kas çekince baş lezyon tarafına eğilir", "Tedavi: fizik tedavi; kendiliğinden gerileyebilir; tedavisiz kalırsa yüzde asimetri"],
-                           size=30, gap=16, style="flex:1;padding:22px 26px"),
-                       box("lilac", "Keloid ve hipertrofik skar", ["İkisi de yara iyileşmesinde aşırı kollajen birikimi",
-                                                                  "Hipertrofik skar yaranın sınırları içinde kalır, zamanla yumuşar",
-                                                                  "Keloid yaranın sınırını aşar; çıkarılınca sık nükseder",
-                                                                  "Mikroskop: keloidde kalın, camsı (hiyalinize) kollajen demetleri"],
-                           size=30, gap=16, style="flex:1;padding:22px 26px"), style="flex:1"),
-               div("Kaynak: fakültenin resmi ders slaytı. Bu üç konu Neville 5'te ayrı başlık olarak yok.", GREY)),
-      notes="Üç lezyon, resmi slaytımızda var ama Neville'de ayrı başlık olarak yok; bu yüzden fotoğraf koymadım, bilgiler resmi slayttan. Juvenil hiyalen fibromatozis otozomal resesif bir hastalık; 2 ile 5 yaş arasında başlar, baş-boyunda nodüller yapar ve ağızda en sık bulgu diş eti büyümesidir. Mikroskopta hücreden fakir, camsı bir matriks görürüz; PAS ve Alcian mavisi ile boyanır. Fibromatozis colli yenidoğanda sternokleidomastoid kasın alt bölümünde şişlik; zor doğumla ilişkili bir onarım süreci, gerçek tümör değil. Kas kısalınca baş o tarafa eğilir; fizik tedaviyle düzelir. Keloid ve hipertrofik skar: hipertrofik skar yaranın sınırında kalır, keloid sınırı aşar ve çıkarılınca sık nükseder.")
+seq_add("Juvenil hiyalen fibromatozis", [
+    dict(t="Otozomal resesif; akraba evliliğinde sık", v=P(r("jhf_yuz.jpg"), "Yüzde ve kulakta nodüller"), dur=6,
+         note="Juvenil hiyalen fibromatozis otozomal resesif bir hastalık; akraba evliliğinde daha sık."),
+    dict(t="2–5 yaşta başlar; baş-boyunda papül ve nodüller", dur=6, note="İki ile beş yaş arasında başlar; baş-boyunda milimetreden beş santimetreye kadar nodüller yapar."),
+    dict(t="Ağızda en sık bulgu: diş eti büyümesi", v=P(r("jhf_dis_eti.jpg"), "Diş eti büyümesi"), dur=6, note="Ağızda en sık bulgu diş eti büyümesi."),
+    dict(t="Eklem kontraktürleri eşlik edebilir", dur=4, note="Eklemlerde kontraktür eşlik edebilir."),
+    dict(t="Mikroskop: hücreden fakir, camsı (hiyalin) matriks; PAS ve Alcian mavisi pozitif", v=P(r("jhf_mikroskop.jpg"), "Hiyalinize matriks"), dur=8,
+         note="Mikroskopta hücreden fakir, camsı bir matriks görürüz; PAS ve Alcian mavisi ile boyanır."),
+], strip={1}, dus=True, cred=RESMI)
 
-L.add(title="Nodüler fasiitis: hızlı büyür ama iyi huyludur", dur=50, strip={1}, dus=True,
-      body=row(col(box("navy", "Klinik", ["Genç erişkin (WHO: en sık 3.–4. dekat); cinsiyet farkı yok", "Birkaç haftada hızla büyür; ameliyata kadar çoğu 2–3 ay",
-                                          "Çoğu **≤3 cm**; sıklıkla ağrılı", "Baş-boyunda olguların %25'ine kadarı; ağızda herhangi bir yerde",
-                                          "Hızlı büyüdüğü için klinikte **sarkom sanılır**"], size=33, gap=18, style="padding:24px 30px"), style="flex:1"),
-               col(box("lilac", "Mikroskop", ["Gevşek miksoid ya da kollajenli zeminde düzensiz demetler yapan, iğsi-yıldızsı fibroblast ve miyofibroblastlar",
-                                              "Mitoz bol olabilir, **atipik mitoz yok**; pleomorfizm yok",
-                                              "Ekstravaze eritrositler, lenfosit ve makrofajlar",
-                                              "SMA pozitif"], size=30, gap=14, style="padding:24px 30px"),
-                   box("yellow", "Resmi slayt ile WHO 2022", ["Resmi slayt neoplastik olmayan grupta sayar. WHO 2022 ise **USP6** gen yeniden düzenlenmesi bulunduğu için 'kendiliğinden geçen bir neoplazi' olarak tanımlar.",
-                                                             "İkisinde de sonuç aynı: yerel eksizyon yeterli, nüks nadir."], size=27, gap=10, style="padding:20px 26px"),
-                   style="flex:1;gap:18px"), gap=30),
-      notes="Nodüler fasiitis bu grubun en önemli lezyonu, çünkü sarkomla karışır. Genç erişkinde birkaç haftada hızla büyüyen, çoğu 3 santimetreden küçük, sıklıkla ağrılı bir kitle. Mikroskopta iğsi ve yıldızsı fibroblastlar düzensiz demetler yapar; mitoz bol olabilir. Sarkomdan ayıran: atipik mitoz yok, hücrelerde pleomorfizm yok; zeminde ekstravaze eritrositler ve iltihap hücreleri var. Resmi slaytımız bunu neoplastik olmayan grupta sayıyor; WHO 2022 ise USP6 geninde yeniden düzenleme bulunduğu için kendiliğinden geçen bir neoplazi diyor. Tedavi açısından fark yok: yerel eksizyon yeterli, nüks nadir. Şimdi telefon: bir biyopsi raporu okuyacaksınız.")
+seq_add("Fibromatozis colli (tortikollis)", [
+    dict(t="Sternokleidomastoid kasın alt bölümünde fibröz kitle", v=P(r("colli_bebek.jpg"), "Yenidoğanda boyunda şişlik"), dur=6,
+         note="Fibromatozis colli sternokleidomastoid kasın alt bölümünde bir fibröz kitle."),
+    dict(t="Doğumdan 2–4 hafta sonra boyunda şişlik", dur=5, note="Doğumdan iki ile dört hafta sonra boyunda şişlik olarak fark edilir."),
+    dict(t="Zor doğumda travma ve kanamayla ilişkili; tümör değil, onarım süreci", dur=7, note="Zor doğumdaki travma ve kanamayla ilişkili; gerçek tümör değil, bir onarım süreci."),
+    dict(t="Kas kısalır, baş lezyon tarafına eğilir", dur=5, note="Fibröz doku çekince kas kısalır ve baş lezyon tarafına eğilir."),
+    dict(t="Mikroskop: kası infiltre eden fibroblastlar; atipi yok", v=P(r("colli_mikroskop.jpg"), "Kas lifleri arasında fibroblastlar"), dur=6,
+         note="Mikroskopta kas lifleri arasına giren fibroblastlar; atipi yok, zamanla kollajen artar."),
+    dict(t="Fizik tedavi; kendiliğinden gerileyebilir", dur=6, note="Tedavi fizik tedavi; kendiliğinden gerileyebilir. Tedavi edilmezse ileride yüzde asimetri kalabilir."),
+], strip={1}, dus=True, cred=RESMI)
+
+seq_add("Keloid ve hipertrofik skar", [
+    dict(t="İkisi de yara iyileşmesinde aşırı kollajen birikimi", dur=6, note="Keloid ve hipertrofik skar: ikisi de yara iyileşirken aşırı kollajen birikmesi."),
+    dict(t="Hipertrofik skar yaranın sınırları içinde kalır, zamanla yumuşar", dur=6, note="Hipertrofik skar yaranın sınırları içinde kalır ve zamanla yumuşar."),
+    dict(t="Keloid yaranın sınırını aşar; çıkarılınca sık nükseder", dur=6, note="Keloid yaranın sınırını aşar; çıkarılınca sık nükseder."),
+    dict(t="Mikroskop: keloidde kalın, camsı kollajen demetleri", dur=5, note="Mikroskopta keloidde kalın, camsı kollajen demetleri görürüz."),
+], strip={1})
+# keloid: görsel adım adım değişen çizim
+L.slides[-1]["body_fn"] = (lambda items: (lambda k: row(div(keloid_svg(min(k, 2)), "flex:0 0 1000px;display:flex"),
+                                                        div(seq_list(items, k, 34), "flex:1;display:flex;flex-direction:column;gap:14px"), gap=40, style="flex:1")))(
+    [dict(t="İkisi de yara iyileşmesinde aşırı kollajen birikimi"), dict(t="Hipertrofik skar yaranın sınırları içinde kalır, zamanla yumuşar"),
+     dict(t="Keloid yaranın sınırını aşar; çıkarılınca sık nükseder"), dict(t="Mikroskop: keloidde kalın, camsı kollajen demetleri")])
+
+seq_add("Nodüler fasiitis: hızlı büyür ama iyi huyludur", [
+    dict(t="Genç erişkin; birkaç haftada hızla büyüyen, sıklıkla ağrılı kitle", v=P(r("nf_yanak.jpg"), "Yanakta kitle"), dur=8,
+         note="Nodüler fasiitis genç erişkinde birkaç haftada hızla büyüyen, sıklıkla ağrılı bir kitle."),
+    dict(t="Çoğu 3 cm'den küçük; ağızda herhangi bir yerde", v=P(r("nf_retromolar.jpg"), "Retromolar bölgede kitle"), dur=6,
+         note="Çoğu üç santimetreden küçük; ağızda herhangi bir yerde olabilir."),
+    dict(t="Hızlı büyüdüğü için klinikte sarkom sanılır", dur=5, note="Hızlı büyüdüğü için klinikte sarkom sanılır; bu lezyonu bilmenin nedeni bu."),
+    dict(t="Mikroskop: düzensiz demetler yapan iğsi-yıldızsı miyofibroblastlar", v=P(r("nf_mikroskop.jpg"), "Miksoid zeminde iğsi hücreler"), dur=7,
+         note="Mikroskopta gevşek, miksoid bir zeminde düzensiz demetler yapan iğsi ve yıldızsı miyofibroblastlar."),
+    dict(t="Mitoz bol olabilir ama atipik mitoz ve pleomorfizm yok", dur=7, note="Mitoz bol olabilir; ama atipik mitoz yok, hücrelerde pleomorfizm yok. Sarkomdan ayıran bu."),
+    dict(t="Ekstravaze eritrositler, lenfosit ve makrofajlar", dur=5, note="Zeminde ekstravaze eritrositler, lenfosit ve makrofajlar var."),
+    dict(t="WHO 2022: USP6 nedeniyle kendiliğinden geçen bir neoplazi; nüks nadir", dur=8,
+         note="Resmi slaytımız bunu neoplastik olmayan grupta sayıyor; WHO 2022 ise USP6 gen değişikliği nedeniyle kendiliğinden geçen bir neoplazi diyor. Tedavi değişmiyor: yerel eksizyon yeterli, nüks nadir. Şimdi telefon."),
+], size=31, gap=10, strip={1}, dus=True, cred=RESMI)
 
 L.add(title="Patolog gibi düşün", dur=60, theme="dark", q=W5, strip={1}, body=qbody(Q[W5], qsize=32, osize=29),
       notes="Rapor geldi. Ne dersiniz, ne yaparsınız? (Sonuç.) Doğru B: nodüler fasiitis, yerel eksizyon yeterli. Hızlı büyüme ve bol mitoz sizi sarkoma götürebilir; ama atipik mitoz yok, pleomorfizm yok ve ekstravaze eritrositler var. Bu hastaya geniş rezeksiyon yapmak en büyük hata olur.")
 
-L.add(title="Oral fokal müsinozis ve travmatik nöroma", dur=55, strip={1}, dus=True, cred=NEV,
-      body=col(row(ph(n("12.31"), "Oral fokal müsinozis", "Alt azı dişleri arasında diş eti"), ph(n("12.33"), "Gevşek, miksoid bağ dokusu"),
-                   ph(n("12.54"), "Travmatik nöroma", "Mental sinir boyunca nodül; ameliyatta"), ph(n("12.55"), "Skar içinde düzensiz sinir demetleri"), style="flex:1"),
-               row(box("lilac", "Oral fokal müsinozis", ["Derinin fokal müsinozisinin ağızdaki karşılığı", "Genç erişkin; K:E 2:1; yarıdan fazlası **diş etinde**, sonra sert damak",
-                                                         "Yüzeyi normal renkte nodül", "Mikroskop: iyi sınırlı miksoid alan; hiyalüronik asit, Alcian mavisi pozitif", "Eksizyon; nüks yok"],
-                       size=24, gap=6, style="flex:1;padding:20px 24px"),
-                   box("lilac", "Travmatik nöroma", ["Kesilen sinirin düzensiz rejenerasyonu: akson, Schwann hücresi ve fibroblastlardan oluşan skar",
-                                                     "En sık **mental foramen** bölgesi, dil, alt dudak; diş çekimi ya da cerrahi öyküsü",
-                                                     "Kitaplar 'ağrılı' der; Neville'e göre yalnız **¼–⅓'i** ağrılı; mental sinirdeki protez bastırınca ağrır",
-                                                     "Kemik içindeyse radyolüsent; tedavi: sinirin proksimal ucuyla birlikte eksizyon"],
-                       size=24, gap=6, style="flex:1;padding:20px 24px"))),
-      notes="Bu grubun son iki lezyonu. Oral fokal müsinozis derinin fokal müsinozisinin ağızdaki karşılığı: genç erişkinde, kadında iki kat sık, yarıdan fazlası diş etinde. Üstündeki mukoza normal renkte. Mikroskopta iyi sınırlı, gevşek, miksoid bir alan; içindeki hiyalüronik asit Alcian mavisiyle boyanır. Nüks etmez. Travmatik nöroma kesilen bir sinirin düzensiz iyileşmesi: akson, Schwann hücresi ve fibroblastlardan oluşan bir skar. En sık mental foramen bölgesinde, dilde ve alt dudakta; hastada diş çekimi ya da cerrahi öyküsü vardır. Resmi slayt ağrılı der; Neville'e göre ancak dörtte biri ile üçte biri ağrılı. Mental sinirdekiler protez bastırınca ağrır. Tedavi sinirin proksimal ucuyla birlikte eksizyon. Sırada iyi huylu tümörler.")
+seq_add("Oral fokal müsinozis", [
+    dict(t="Derinin fokal müsinozisinin ağızdaki karşılığı", v=P(n("12.31"), "Diş etinde nodül", "Alt azı dişleri arası"), dur=5,
+         note="Oral fokal müsinozis derinin fokal müsinozisinin ağızdaki karşılığı."),
+    dict(t="Genç erişkin; kadında 2 kat sık", dur=4, note="Genç erişkinde, kadında iki kat sık."),
+    dict(t="Yarıdan fazlası diş etinde; sonra sert damak", dur=5, note="Yarıdan fazlası diş etinde, sonra sert damakta."),
+    dict(t="Mikroskop: iyi sınırlı miksoid alan; Alcian mavisi pozitif", v=P(n("12.33"), "Gevşek, miksoid bağ dokusu"), dur=7,
+         note="Mikroskopta iyi sınırlı, gevşek, miksoid bir alan; içindeki hiyalüronik asit Alcian mavisiyle boyanır."),
+    dict(t="Eksizyon; nüks yok", dur=4, note="Eksizyon yeterli, nüks etmez."),
+], strip={1}, dus=True, cred=NEV)
+
+seq_add("Travmatik nöroma", [
+    dict(t="Kesilen sinirin düzensiz iyileşmesi: akson, Schwann hücresi ve skar", v=P(n("12.54"), "Mental sinir boyunca nodül", "Ameliyat sırasında"), dur=7,
+         note="Travmatik nöroma kesilen bir sinirin düzensiz iyileşmesi: akson, Schwann hücresi ve fibroblastlardan oluşan bir skar."),
+    dict(t="En sık mental foramen bölgesi, dil, alt dudak", dur=5, note="En sık mental foramen bölgesinde, dilde ve alt dudakta."),
+    dict(t="Diş çekimi ya da cerrahi öyküsü var", dur=4, note="Hastada diş çekimi ya da cerrahi öyküsü vardır."),
+    dict(t="Yalnız ¼–⅓'i ağrılı; mental sinirdeki protez bastırınca ağrır", dur=7,
+         note="Resmi slayt ağrılı der; Neville'e göre yalnız dörtte biri ile üçte biri ağrılı. Mental sinirdekiler protez bastırınca ağrır."),
+    dict(t="Mikroskop: skar içinde düzensiz sinir demetleri", v=P(n("12.55"), "Fibröz doku içinde sinir demetleri"), dur=5, note="Mikroskopta fibröz doku içinde gelişigüzel sinir demetleri."),
+    dict(t="Tedavi: sinirin proksimal ucuyla birlikte eksizyon", dur=5, note="Tedavi sinirin proksimal ucuyla birlikte eksizyon. Sırada iyi huylu tümörler."),
+], strip={1}, dus=True, cred=NEV)
 
 # ---- 2. İyi huylu tümörler ----
-L.add(title="Lif ve histiyosit kökenli iyi huylu tümörler", dur=55, strip={2}, dus=True, cred=NEV,
-      body=col(row(ph(n("12.21"), "Fibröz histiyositom", "Dil sırtı"), ph(n("12.26"), "Fibromatozis", "Alt çene lingual diş eti"),
-                   ph(n("12.28"), "Miyofibrom", "Üst çene diş eti"), ph(n("12.24"), "Soliter fibröz tümör", "Retromolar bölge"), style="flex:1;min-height:300px"),
-               div(table([
-                   ["Fibröz histiyositom (dermatofibrom)", "Deride sık, ağızda nadir; ağrısız küçük nodül", "İğsi hücreler girdap gibi (**storiform**) dizilir; dev hücre, köpüksü makrofaj"],
-                   ["Fibromatozis (desmoid tip)", "Çocuk ve genç erişkin; **lokal agresif**, sınırları düzensiz; metastaz yapmaz", "Nükleer β-katenin; nüks ~%30"],
-                   ["Miyofibrom", "Ort. 23 yaş; ağızda en sık **alt çene**; çok odaklı formu miyofibromatozis (bebek)", "Fibroblast ve düz kas özellikli iğsi hücreler; SMA+"],
-                   ["Soliter fibröz tümör", "Ağızda en sık yanak (~%45); eski 'hemanjiyoperisitomların' çoğu", "'Geyik boynuzu' damarlar; CD34, **STAT6** pozitif"]],
-                   size=23, w1=360))),
-      notes="İkinci grup, iyi huylu tümörler; önce lif ve histiyosit kökenliler. Fibröz histiyositom deride dermatofibrom adıyla sık, ağızda nadir; mikroskopta iğsi hücreler girdap gibi dizilir, buna storiform desen diyoruz. Fibromatozis, desmoid tip: iyi huylu ama lokal agresif; sınırları düzensiz olduğu için tam çıkarmak zor ve yaklaşık üçte birinde nükseder, metastaz yapmaz. Resmi slayt 'gingival fibromatozis' diyor; kalıtsal diş eti büyümesiyle karıştırmayın, burada kastedilen diş etine yerleşen desmoid tip fibromatozis. Miyofibrom genç hastada, ağızda en sık alt çenede; bebeklerde çok odaklı formu var. Soliter fibröz tümör: eskiden hemanjiyoperisitom denen tümörlerin çoğu bu; geyik boynuzu gibi dallanan damarlar ve STAT6 pozitifliği tanı koydurur.")
+seq_add("Lif ve histiyosit kökenli iyi huylu tümörler", [
+    dict(t="**Fibröz histiyositom:** deride sık, ağızda nadir", v=P(n("12.21"), "Fibröz histiyositom", "Dil sırtı"), dur=6,
+         note="İyi huylu tümörlere lif ve histiyosit kökenlilerle başlıyoruz. Fibröz histiyositom deride dermatofibrom adıyla sık, ağızda nadir."),
+    dict(t="İğsi hücreler girdap gibi (storiform) dizilir", v=P(n("12.22"), "Storiform desen"), dur=5, note="Mikroskopta iğsi hücreler girdap gibi dizilir; buna storiform desen diyoruz."),
+    dict(t="**Fibromatozis (desmoid):** iyi huylu ama lokal agresif; metastaz yapmaz", v=P(n("12.26"), "Fibromatozis", "Alt çene lingual diş eti"), dur=8,
+         note="Fibromatozis, desmoid tip: iyi huylu ama lokal agresif; metastaz yapmaz. Resmi slayttaki 'gingival fibromatozis' kalıtsal diş eti büyümesiyle karışmasın; burada diş etindeki desmoid tip kastediliyor."),
+    dict(t="Nükleer β-katenin; nüks ~%30", v=P(n("12.27"), "Uzun demetler yapan fibroblastlar"), dur=5, note="Nükleer beta-katenin pozitif; yaklaşık üçte biri nükseder."),
+    dict(t="**Miyofibrom:** genç hasta; ağızda en sık alt çene", v=P(n("12.28"), "Miyofibrom", "Üst çene diş eti"), dur=5, note="Miyofibrom genç hastada; ağızda en sık alt çenede."),
+    dict(t="SMA pozitif; bebekte çok odaklı form (miyofibromatozis)", v=P(n("12.30"), "İğsi hücreler; SMA"), dur=5, note="SMA pozitif; bebeklerde çok odaklı formu var, miyofibromatozis."),
+    dict(t="**Soliter fibröz tümör:** ağızda en sık yanak; eski 'hemanjiyoperisitomların' çoğu", v=P(n("12.24"), "Soliter fibröz tümör", "Retromolar bölge"), dur=7,
+         note="Soliter fibröz tümör ağızda en sık yanakta; eskiden hemanjiyoperisitom denen tümörlerin çoğu bu."),
+    dict(t="Geyik boynuzu damarlar; CD34 ve STAT6 pozitif", v=P(n("12.25"), "Geyik boynuzu damarlar", pos="50% 100%"), dur=5, note="Geyik boynuzu gibi dallanan damarlar; CD34 ve STAT6 pozitif."),
+], size=30, gap=10, strip={2}, dus=True, cred=NEV)
 
-L.add(title="Lipom", dur=45, strip={2}, dus=True, cred=NEV,
-      body=row(ph(n("12.50"), "Yanak mukozasında nodül", style="flex:0 0 560px"),
-               ph(n("12.52"), "Olgun yağ hücreleri", "Normal yağ dokusundan ayırt edilemez", style="flex:0 0 520px"),
-               col(bl(["Ağız-çene tümörlerinin yalnız **%1–4**'ü", "Yumuşak, sarımsı, ağrısız nodül; çoğu **40 yaş üstü**",
-                       "Ağızda en sık **yanak ve vestibül** (~yarısı); sonra dil, ağız tabanı, dudak",
-                       "Mikroskop: ince kapsüllü olgun yağ dokusu", "Tipler: fibrolipom (en sık), iğsi hücreli (CD34+), anjiyolipom, miksoid, pleomorfik",
-                       "Tedavi: eksizyon; nüks nadir"], size=27, gap=12),
-                   box("yellow", None, ["Atipik hücre varsa **MDM2/CDK4** ile iyi diferansiye liposarkom dışlanır."], size=25, style="padding:18px 24px"),
-                   style="flex:1;gap:16px")),
-      notes="Lipom, yağ dokusunun iyi huylu tümörü. Ağızda beklenenden az: ağız-çene tümörlerinin yüzde 1 ila 4'ü. Yumuşak, sarımsı, ağrısız bir nodül; çoğu 40 yaşın üstünde. Resmi slayt en sık yeri dil olarak sıralıyor; Neville'e göre yanak ve vestibül olguların yaklaşık yarısını oluşturuyor. Mikroskopta ince bir kapsülle çevrili olgun yağ dokusu görürüz. Tiplerinden en sık fibrolipom; iğsi hücreli lipom CD34 pozitif. Hücrelerde atipi görürsek MDM2 ve CDK4 boyalarıyla iyi diferansiye liposarkomu dışlarız; buna sarkomlar bölümünde döneceğiz.")
+seq_add("Lipom", [
+    dict(t="Yağ dokusunun iyi huylu tümörü; ağız-çene tümörlerinin yalnız %1–4'ü", v=P(n("12.50"), "Yanak mukozasında nodül"), dur=7,
+         note="Lipom yağ dokusunun iyi huylu tümörü; ağızda beklenenden az, ağız-çene tümörlerinin yüzde 1 ila 4'ü."),
+    dict(t="Yumuşak, sarımsı, ağrısız; çoğu 40 yaş üstü", dur=5, note="Yumuşak, sarımsı, ağrısız bir nodül; çoğu 40 yaşın üstünde."),
+    dict(t="Ağızda en sık yanak ve vestibül (~yarısı)", dur=6, note="Resmi slayt en sık yeri dil olarak sıralıyor; Neville'e göre yanak ve vestibül olguların yaklaşık yarısı."),
+    dict(t="Mikroskop: ince kapsüllü olgun yağ dokusu", v=P(n("12.52"), "Olgun yağ hücreleri"), dur=5, note="Mikroskopta ince bir kapsülle çevrili olgun yağ dokusu."),
+    dict(t="Tipler: fibrolipom (en sık), iğsi hücreli, anjiyolipom, miksoid, pleomorfik", dur=6, note="Tiplerinden en sık fibrolipom; iğsi hücreli lipom CD34 pozitif."),
+    dict(t="Atipi varsa MDM2/CDK4 ile liposarkom dışlanır", dur=6, note="Hücrelerde atipi görürsek MDM2 ve CDK4 boyalarıyla iyi diferansiye liposarkomu dışlarız. Tedavi eksizyon; nüks nadir."),
+], strip={2}, dus=True, cred=NEV)
 
-L.add(title="Palizatlı kapsüllü nöroma ve schwannom", dur=55, strip={2}, dus=True, cred=NEV,
-      body=col(row(ph(n("12.57"), "Palizatlı kapsüllü nöroma", "Sert damakta ağrısız nodül"), ph(n("12.58"), "İyi sınırlı nöral proliferasyon"),
-                   ph(n("12.60"), "Schwannom", "Ağız tabanı"), ph(n("12.61"), "Antoni A ve B alanları"), style="flex:1;min-height:320px"),
-               row(box("lilac", "Palizatlı kapsüllü nöroma (soliter sınırlı nöroma)", ["Olguların %90'ı yüzde; ağızda sert damak, diş eti, dudak", "Çoğu <1 cm; **travma öyküsü yok**",
-                                                                                        "NF ya da MEN 2B ile ilişkisi yok", "Mikroskop: kapsüllü Schwann hücresi proliferasyonu, içinde aksonlar"],
-                       size=24, gap=6, style="flex:1;padding:20px 24px"),
-                   box("lilac", "Schwannom", ["Schwann hücresinden; **kapsüllü**, yavaş büyür", "Baş-boyunda %25–48; ağızda en sık **dil** ve dudak",
-                                              "Kemik içinde: alt çene arka bölge, mandibular kanal", "**Antoni A** (palizat, Verocay cisimcikleri) + **Antoni B** (gevşek, miksoid)",
-                                              "Yaygın S100+; malign dönüşüm yok denecek kadar nadir"], size=24, gap=6, style="flex:1;padding:20px 24px"))),
-      notes="Sinir kökenli tümörlere geçiyoruz. Palizatlı kapsüllü nöroma küçük, ağrısız, kapsüllü bir nodül; çoğu yüzde, ağızda sert damakta ve diş etinde. Travmatik nöromadan farkı: travma öyküsü yok. NF ve MEN 2B ile ilişkisi yok. Schwannom Schwann hücresinden köken alan kapsüllü bir tümör; ağızda en sık dilde. Mikroskopta iki alan var: Antoni A'da hücre çekirdekleri sıra sıra dizilir, buna palizat diyoruz; iki sıra çekirdek arasındaki pembe alana Verocay cisimciği denir. Antoni B gevşek ve miksoiddir. S100 yaygın pozitiftir; kötü huylu dönüşüm neredeyse hiç olmaz.")
+seq_add("Palizatlı kapsüllü nöroma ve schwannom", [
+    dict(h="Palizatlı kapsüllü nöroma", t="Küçük, ağrısız, kapsüllü nodül; %90'ı yüzde", v=P(n("12.57"), "Sert damakta nodül"), dur=7,
+         note="Sinir kökenli tümörler. Palizatlı kapsüllü nöroma küçük, ağrısız, kapsüllü bir nodül; yüzde 90'ı yüzde."),
+    dict(t="Ağızda sert damak, diş eti, dudak; travma öyküsü yok", dur=6, note="Ağızda sert damakta, diş etinde, dudakta. Travmatik nöromadan farkı: travma öyküsü yok."),
+    dict(t="NF ve MEN 2B ile ilişkisi yok", v=P(n("12.58"), "İyi sınırlı nöral proliferasyon"), dur=5, note="Nörofibromatozis ve MEN 2B ile ilişkisi yok."),
+    dict(h="Schwannom", t="Schwann hücresinden; kapsüllü, yavaş büyür", v=P(n("12.60"), "Ağız tabanında kitle"), dur=6, note="Schwannom Schwann hücresinden köken alan, kapsüllü, yavaş büyüyen bir tümör."),
+    dict(t="Ağızda en sık dil; kemik içinde alt çene arka bölge", dur=6, note="Ağızda en sık dilde; kemik içindekiler alt çenenin arka bölgesinde, mandibular kanal boyunca."),
+    dict(t="Antoni A: palizat çekirdekler, Verocay cisimcikleri", v=P(n("12.61"), "Antoni A ve B"), dur=8,
+         note="Mikroskopta iki alan var. Antoni A'da çekirdekler sıra sıra dizilir; iki sıra arasındaki pembe alana Verocay cisimciği denir."),
+    dict(t="Antoni B: gevşek, miksoid; S100 yaygın pozitif", dur=7, note="Antoni B gevşek ve miksoiddir. S100 yaygın pozitif; kötü huylu dönüşüm neredeyse hiç olmaz."),
+], size=29, gap=8, strip={2}, dus=True, cred=NEV)
 
-L.add(title="Nörofibrom ve nörofibromatozis tip 1", dur=60, strip={2}, dus=True, cred=NEV,
-      body=col(row(ph(n("12.62"), "Nörofibrom", "Üst çene diş eti"), ph(n("12.65"), "Dalgalı çekirdekli iğsi hücreler"),
-                   ph(n("12.69"), "NF1: dilin tek taraflı büyümesi"), ph(n("12.68"), "Café-au-lait lekeleri"), style="flex:1;min-height:320px"),
-               row(box("lilac", "Nörofibrom", ["Periferik sinir kılıfının **en sık** tümörü; Schwann hücresi + perinöral fibroblast", "Kapsülsüz, sinirle devamlı; ağrısız, yavaş büyür",
-                                               "Ağızda dil, damak, yanak; kemik içinde radyolüsent", "Mikroskop: gevşek miksoid zeminde dalgalı çekirdekli iğsi hücreler, mast hücreleri"],
-                       size=24, gap=6, style="flex:1;padding:20px 24px"),
-                   box("lilac", "NF1", ["Nörofibrom görürsen hastayı **NF1** için muayene et", "Otozomal dominant; yarısı yeni mutasyon",
-                                        "Café-au-lait lekeleri, aksiller çillenme, Lisch nodülleri; pleksiform nörofibrom tanı koydurur",
-                                        "Malign periferik sinir kılıfı tümörü riski **%8–13**"], size=24, gap=6, style="flex:1;padding:20px 24px"),
-                   box("rose", "Ayrıca: MEN 2B", ["Dil ucu ve dudaklarda çok sayıda mukozal nöroma; çoğu zaman ilk bulgu",
-                                                  "Medüller tiroid karsinomu hastaların hepsinde: endokrinolojiye yönlendir"], size=23, gap=6, style="flex:0 0 430px;padding:20px 24px"))),
-      notes="Nörofibrom periferik sinir kılıfının en sık tümörü. Schwannomdan farkları: kapsülü yok, sinirle iç içe büyür, mikroskopta dalgalı çekirdekli iğsi hücreler ve aralarda mast hücreleri görülür. Tek başına olabilir; ama bir nörofibrom gördüğünüzde hastayı nörofibromatozis tip 1 için muayene edin. NF1 otozomal dominant; deride café-au-lait lekeleri, koltuk altında çillenme, gözde Lisch nodülleri. Pleksiform nörofibrom tek başına tanı koydurur. Hastaların yüzde 8 ila 13'ünde malign periferik sinir kılıfı tümörü gelişir; bu yüzden büyüyen ya da ağrıyan bir nörofibrom beklemez. Sağda bir not: dil ucunda ve dudaklarda çok sayıda küçük nöroma MEN 2B'yi düşündürür; bu hastaların hepsinde medüller tiroid karsinomu gelişir. Resmi slaytta yok, ama Neville'de önemli bir konu.")
+seq_add("Nörofibrom ve nörofibromatozis tip 1", [
+    dict(h="Nörofibrom", t="Periferik sinir kılıfının en sık tümörü", v=P(n("12.62"), "Üst çene diş etinde nodül"), dur=6, note="Nörofibrom periferik sinir kılıfının en sık tümörü."),
+    dict(t="Kapsülsüz; sinirle iç içe büyür", dur=5, note="Schwannomdan farkı: kapsülü yok, sinirle iç içe büyür."),
+    dict(t="Mikroskop: dalgalı çekirdekli iğsi hücreler, mast hücreleri", v=P(n("12.65"), "Dalgalı çekirdekler"), dur=6, note="Mikroskopta dalgalı çekirdekli iğsi hücreler ve aralarda mast hücreleri."),
+    dict(h="NF1", t="Nörofibrom görürsen hastayı NF1 için muayene et", v=P(n("12.68"), "Café-au-lait lekeleri"), dur=6,
+         note="Bir nörofibrom gördüğünüzde hastayı nörofibromatozis tip 1 için muayene edin."),
+    dict(t="Otozomal dominant; café-au-lait, aksiller çillenme, Lisch nodülleri", dur=8, note="NF1 otozomal dominant; deride café-au-lait lekeleri, koltuk altında çillenme, gözde Lisch nodülleri."),
+    dict(t="Malign periferik sinir kılıfı tümörü riski %8–13", v=P(n("12.69"), "Dilin tek taraflı büyümesi"), dur=7,
+         note="Hastaların yüzde 8 ila 13'ünde malign periferik sinir kılıfı tümörü gelişir; büyüyen ya da ağrıyan bir nörofibrom beklemez."),
+    dict(h="Ayrıca: MEN 2B", t="Dil ucunda çok sayıda nöroma → medüller tiroid karsinomu", v=P(n("12.74"), "MEN 2B: dil ucunda nöromalar"), dur=8,
+         note="Bir not: dil ucunda ve dudaklarda çok sayıda küçük nöroma MEN 2B'yi düşündürür; bu hastaların hepsinde medüller tiroid karsinomu gelişir. Endokrinolojiye yönlendirin."),
+], size=29, gap=8, strip={2}, dus=True, cred=NEV)
 
 L.add(title="Dört mikroskop görüntüsü: hangisi schwannom?", dur=40, theme="dark", q=W2, strip={2}, cred=NEV,
       body=qbody(Q[W2], qsize=40, photo=col(row(ph(n("12.65"), label="A"), ph(n("12.61"), label="B"), style="flex:1"),
                                             row(ph(n("12.118"), label="C"), ph(n("12.33"), label="D"), style="flex:1"), gap=16, style="flex:1")),
       notes="Dört mikroskop görüntüsü. Hangisi schwannom? (Sonuç.) Doğru B: çekirdeklerin sıra sıra dizildiği Antoni A alanı. A nörofibrom: dalgalı çekirdekli, düzensiz iğsi hücreler. C leiomiyom: küt uçlu çekirdekli düz kas demetleri. D oral fokal müsinozis: gevşek, miksoid bağ dokusu.")
 
-L.add(title="Granüler hücreli tümör ve konjenital epulis", dur=70, strip={2}, dus=True, cred=NEV,
-      body=col(row(ph(n("12.85"), "Granüler hücreli tümör", "Yanak, ağız köşesine yakın"), ph(n("12.86"), "İri, granüler sitoplazmalı hücreler"),
-                   ph(n("12.88"), "Konjenital epulis", "Yenidoğan, üst alveol kreti"), ph(n("12.89"), "Yüzey epiteli ince, reteler atrofik"), style="flex:1;min-height:320px"),
-               row(box("lilac", "Granüler hücreli tümör", ["Ağız (deriyle birlikte) en sık yeri; ağızda olguların **⅓–½'i dil sırtında**", "4.–6. dekat; K:E 3:1; çoğu <2 cm, kapsülsüz",
-                                                          "Poligonal hücreler, geniş granüler eozinofilik sitoplazma; **PAS+**, **S100+** (WHO: SOX10+)",
-                                                          "Yüzeyde psödoepitelyomatöz hiperplazi: olguların yarısına kadar"],
-                       size=24, gap=6, style="flex:1;padding:20px 24px"),
-                   box("rose", "Konjenital epulis", ["Yenidoğanın alveol mukozası; üst çene alt çeneden 2–3 kat sık", "Olguların ~%90'ı **kız**; doğumda var",
-                                                     "Benzer granüler hücreler ama **S100 negatif**; yüzeyde hiperplazi yok, reteler atrofik",
-                                                     "Nüksetmez; kendiliğinden gerileyebilir"], size=24, gap=6, style="flex:1;padding:20px 24px"))),
-      notes="Granüler hücreli tümör: hücreler iri, poligonal ve sitoplazmaları ince pembe granüllerle dolu; PAS ve S100 pozitif, yani Schwann hücresi özellikleri taşıyor. Vücutta en sık ağızda ve deride görülür; ağızda olguların üçte biri ile yarısı dil sırtında. Kadında üç kat sık, çoğu 40 ile 60 yaş arasında. Önemli bir ayrıntı: olguların yarısına kadarında üstteki epitel aşağı doğru uzanan dallar yapar; buna psödoepitelyomatöz hiperplazi diyoruz. Yenidoğandaki benzeri konjenital epulis: doğumda alveol kretinde polipoid bir kitle, yaklaşık yüzde 90'ı kız bebek. Hücreleri benzer ama S100 negatif, yüzeyde hiperplazi yok, reteler incelmiş. Nüksetmez, hatta kendiliğinden küçülebilir.")
+seq_add("Granüler hücreli tümör ve konjenital epulis", [
+    dict(h="Granüler hücreli tümör", t="En sık ağızda (ve deride); ağızda ⅓–½'i dil sırtında", v=P(n("12.85"), "Yanakta nodül"), dur=8,
+         note="Granüler hücreli tümör vücutta en sık ağızda ve deride görülür; ağızda üçte biri ile yarısı dil sırtında."),
+    dict(t="4.–6. dekat; kadında 3 kat sık; çoğu <2 cm", dur=6, note="Kırk ile altmış yaş arasında, kadında üç kat sık; çoğu iki santimetreden küçük."),
+    dict(t="İri, poligonal, granüler sitoplazmalı hücreler; PAS ve S100 pozitif", v=P(n("12.86"), "Granüler hücreler"), dur=8,
+         note="Hücreler iri, poligonal ve sitoplazmaları ince pembe granüllerle dolu; PAS ve S100 pozitif, yani Schwann hücresi özellikleri taşıyor."),
+    dict(t="Yarısına kadarında yüzeyde psödoepitelyomatöz hiperplazi", v=P(n("12.87"), "Epitelde aşağı uzanan dallar"), dur=8,
+         note="Olguların yarısına kadarında üstteki epitel aşağı doğru dallar yapar; buna psödoepitelyomatöz hiperplazi diyoruz. Bunu dersin sonunda tekrar göreceğiz."),
+    dict(h="Konjenital epulis", t="Yenidoğanın alveol kretinde; ~%90'ı kız", v=P(n("12.88"), "Yenidoğan, üst alveol kreti"), dur=7,
+         note="Yenidoğandaki benzeri konjenital epulis: doğumda alveol kretinde polipoid kitle; yaklaşık yüzde 90'ı kız bebek."),
+    dict(t="Benzer hücreler ama S100 negatif; reteler atrofik", v=P(n("12.89"), "İnce yüzey epiteli"), dur=7,
+         note="Hücreleri benzer ama S100 negatif; yüzeyde hiperplazi yok, reteler incelmiş."),
+    dict(t="Nüksetmez; kendiliğinden gerileyebilir", dur=5, note="Nüksetmez; hatta kendiliğinden küçülebilir."),
+], size=32, gap=10, strip={2}, dus=True, cred=NEV)
 
 L.add(title="DUS Molası 1/2", dur=45, theme="dark", q=W3, body=qbody(Q[W3]),
       notes="İlk DUS sorusu, Neville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Konjenital epulis: yaklaşık yüzde 90'ı kız bebek. Granüler hücreli tümör de kadında sık, ama oran üçe bir.")

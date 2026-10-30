@@ -49,6 +49,8 @@ def build(lid):
     for s in L["slides"]:
         if not s.get("img"):
             continue
+        if s.get("step") and s["step"][0] != s["step"][1]:
+            continue          # adım adım slaytın yalnız son (tam) hâli
         n += 1
         sl = prs.slides.add_slide(blank)
         sl.shapes.add_picture(os.path.join(CANLI, s["img"].split("?")[0]), 0, 0, W, H)
