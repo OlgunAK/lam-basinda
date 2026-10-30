@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """M3 · Yumuşak Doku Hastalıkları (17 Kasım 2026, blok dersin birincisi, 25 dk).
 
-Sıra fakültenin resmi ders slaytını izler (10. hafta, Yumuşak Doku Hastalıkları
+Sıra fakültenin ders notunu izler (10. hafta, Yumuşak Doku Hastalıkları
 Patolojisi): neoplastik olmayan kitleler, iyi huylu tümörler, sarkomlar.
 Rakamlar Neville 5'ten; Neville'de olmayan konular (juvenil hiyalen
 fibromatozis, fibromatozis colli, keloid, tendon kılıfı dev hücreli tümörü)
-resmi slayttan, nodüler fasiitis WHO 2022'den.
+ders notundan, nodüler fasiitis WHO 2022'den.
 """
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -70,7 +70,7 @@ Q = L.qmap
 
 R = os.path.join(HERE, "resmi")
 r = lambda f: os.path.join(R, f)
-RESMI = "Fakültenin resmi ders slaytı (Z. Kahyaoğlu Akkaya)"
+RESMI = "Fakülte ders notları"
 
 
 def seq_list(items, k, size=34, dark=False):
@@ -175,10 +175,10 @@ def plan_body(k):
 
 
 L.add(title="Dersin planı: üç grup", body_fn=plan_body, seq=[
-    dict(dur=12, note="Ders fakültemizin resmi slaytıyla aynı sırada: üç grup. Birincisi neoplastik olmayan kitleler; tümör gibi görünürler ama gerçek tümör değildirler."),
+    dict(dur=12, note="Üç grup. Birincisi neoplastik olmayan kitleler; tümör gibi görünürler ama gerçek tümör değildirler."),
     dict(dur=12, note="İkincisi iyi huylu tümörler; köken aldıkları dokuya göre sıraladım: lif, yağ, sinir, damar, kas."),
     dict(dur=10, note="Üçüncüsü sarkomlar, yani yumuşak dokunun kötü huylu tümörleri."),
-    dict(dur=11, note="Her hastalıkta aynı dört soruyu soracağız: hangi doku, kaç yaş, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5. baskıdan; resmi slaytla ayrıldığı yerleri ayrıca söyleyeceğim.")])
+    dict(dur=11, note="Her hastalıkta aynı dört soruyu soracağız: hangi doku, kaç yaş, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5. baskıdan; kaynakların ayrıldığı yerleri ayrıca söyleyeceğim.")])
 
 # ---- 1. Neoplastik olmayan kitleler ----
 seq_add("Hamartom ve koristom", [
@@ -196,7 +196,7 @@ seq_add("Hamartom ve koristom", [
 
 seq_add("Juvenil hiyalen fibromatozis", [
     dict(t="Otozomal resesif; akraba evliliğinde sık", v=P(r("jhf_yuz.jpg"), "Yüzde ve kulakta nodüller"), dur=6,
-         note="Juvenil hiyalen fibromatozis otozomal resesif bir hastalık; akraba evliliğinde daha sık."),
+         note="Bu konu patoloji kaynaklarında böyle geçiyor; Neville'de ayrı başlık olarak doğrulayamadım. Juvenil hiyalen fibromatozis otozomal resesif bir hastalık; akraba evliliğinde daha sık."),
     dict(t="2–5 yaşta başlar; baş-boyunda papül ve nodüller", dur=6, note="İki ile beş yaş arasında başlar; baş-boyunda milimetreden beş santimetreye kadar nodüller yapar."),
     dict(t="Ağızda en sık bulgu: diş eti büyümesi", v=P(r("jhf_dis_eti.jpg"), "Diş eti büyümesi"), dur=6, note="Ağızda en sık bulgu diş eti büyümesi."),
     dict(t="Eklem kontraktürleri eşlik edebilir", dur=4, note="Eklemlerde kontraktür eşlik edebilir."),
@@ -206,7 +206,7 @@ seq_add("Juvenil hiyalen fibromatozis", [
 
 seq_add("Fibromatozis colli (tortikollis)", [
     dict(t="Sternokleidomastoid kasın alt bölümünde fibröz kitle", v=P(r("colli_bebek.jpg"), "Yenidoğanda boyunda şişlik"), dur=6,
-         note="Fibromatozis colli sternokleidomastoid kasın alt bölümünde bir fibröz kitle."),
+         note="Bu da Neville'de doğrulayamadığım, patoloji kaynaklarındaki bir konu. Fibromatozis colli sternokleidomastoid kasın alt bölümünde bir fibröz kitle."),
     dict(t="Doğumdan 2–4 hafta sonra boyunda şişlik", dur=5, note="Doğumdan iki ile dört hafta sonra boyunda şişlik olarak fark edilir."),
     dict(t="Zor doğumda travma ve kanamayla ilişkili; tümör değil, onarım süreci", dur=7, note="Zor doğumdaki travma ve kanamayla ilişkili; gerçek tümör değil, bir onarım süreci."),
     dict(t="Kas kısalır, baş lezyon tarafına eğilir", dur=5, note="Fibröz doku çekince kas kısalır ve baş lezyon tarafına eğilir."),
@@ -216,7 +216,7 @@ seq_add("Fibromatozis colli (tortikollis)", [
 ], strip={1}, dus=True, cred=RESMI)
 
 seq_add("Keloid ve hipertrofik skar", [
-    dict(t="İkisi de yara iyileşmesinde aşırı kollajen birikimi", dur=6, note="Keloid ve hipertrofik skar: ikisi de yara iyileşirken aşırı kollajen birikmesi."),
+    dict(t="İkisi de yara iyileşmesinde aşırı kollajen birikimi", dur=6, note="Keloid ve hipertrofik skar da Neville'in bu bölümünde yok; genel patolojiden anlatıyorum. İkisi de yara iyileşirken aşırı kollajen birikmesi."),
     dict(t="Hipertrofik skar yaranın sınırları içinde kalır, zamanla yumuşar", dur=6, note="Hipertrofik skar yaranın sınırları içinde kalır ve zamanla yumuşar."),
     dict(t="Keloid yaranın sınırını aşar; çıkarılınca sık nükseder", dur=6, note="Keloid yaranın sınırını aşar; çıkarılınca sık nükseder."),
     dict(t="Mikroskop: keloidde kalın, camsı kollajen demetleri", dur=5, note="Mikroskopta keloidde kalın, camsı kollajen demetleri görürüz."),
@@ -238,7 +238,7 @@ seq_add("Nodüler fasiitis: hızlı büyür ama iyi huyludur", [
     dict(t="Mitoz bol olabilir ama atipik mitoz ve pleomorfizm yok", dur=7, note="Mitoz bol olabilir; ama atipik mitoz yok, hücrelerde pleomorfizm yok. Sarkomdan ayıran bu."),
     dict(t="Ekstravaze eritrositler, lenfosit ve makrofajlar", dur=5, note="Zeminde ekstravaze eritrositler, lenfosit ve makrofajlar var."),
     dict(t="WHO 2022: USP6 nedeniyle kendiliğinden geçen bir neoplazi; nüks nadir", dur=8,
-         note="Resmi slaytımız bunu neoplastik olmayan grupta sayıyor; WHO 2022 ise USP6 gen değişikliği nedeniyle kendiliğinden geçen bir neoplazi diyor. Tedavi değişmiyor: yerel eksizyon yeterli, nüks nadir. Şimdi telefon."),
+         note="Patoloji kaynaklarında genellikle neoplastik olmayan lezyonlar arasında sayılır; WHO 2022 ise USP6 gen değişikliği nedeniyle kendiliğinden geçen bir neoplazi diyor. Tedavi değişmiyor: yerel eksizyon yeterli, nüks nadir. Şimdi telefon."),
 ], size=31, gap=10, strip={1}, dus=True, cred=RESMI)
 
 L.add(title="Patolog gibi düşün", dur=60, theme="dark", q=W5, strip={1}, body=qbody(Q[W5], qsize=32, osize=29),
@@ -260,14 +260,14 @@ seq_add("Travmatik nöroma", [
     dict(t="En sık mental foramen bölgesi, dil, alt dudak", dur=5, note="En sık mental foramen bölgesinde, dilde ve alt dudakta."),
     dict(t="Diş çekimi ya da cerrahi öyküsü var", dur=4, note="Hastada diş çekimi ya da cerrahi öyküsü vardır."),
     dict(t="Yalnız ¼–⅓'i ağrılı; mental sinirdeki protez bastırınca ağrır", dur=7,
-         note="Resmi slayt ağrılı der; Neville'e göre yalnız dörtte biri ile üçte biri ağrılı. Mental sinirdekiler protez bastırınca ağrır."),
+         note="Patolojide 'ağrılı tümör' diye geçer; ama Neville'e göre yalnız dörtte biri ile üçte biri ağrılı. Mental sinirdekiler protez bastırınca ağrır."),
     dict(t="Mikroskop: skar içinde düzensiz sinir demetleri", v=P(n("12.55"), "Fibröz doku içinde sinir demetleri"), dur=5, note="Mikroskopta fibröz doku içinde gelişigüzel sinir demetleri."),
     dict(t="Tedavi: sinirin proksimal ucuyla birlikte eksizyon", dur=5, note="Tedavi sinirin proksimal ucuyla birlikte eksizyon. Sırada iyi huylu tümörler."),
 ], strip={1}, dus=True, cred=NEV)
 
 seq_add("Diş eti ve protezle ilişkili reaktif kitleler", [
     dict(h="Diş eti", t="Piyojenik granülom: kırmızı, kolay kanayan, hızla büyüyen kitle; gebelikte sık", v=P(n("12.34"), "Piyojenik granülom", "Üst ön diş eti"), dur=8,
-         note="Neville'in bu bölümünde olup resmi slaytımızda olmayan reaktif kitleler; her birine bir cümle. Piyojenik granülom: kırmızı, kolay kanayan, hızla büyüyen bir diş eti kitlesi; gebelikte sık, doğumdan sonra küçülebilir."),
+         note="Neville'in bu bölümündeki reaktif kitleler; her birine bir cümle. Piyojenik granülom: kırmızı, kolay kanayan, hızla büyüyen bir diş eti kitlesi; gebelikte sık, doğumdan sonra küçülebilir."),
     dict(t="Periferik dev hücreli granülom: mor-mavi; yalnız diş eti ve alveol kretinde", v=P(n("12.41"), "Periferik dev hücreli granülom"), dur=7,
          note="Periferik dev hücreli granülom mor-mavi renktedir ve yalnız diş etinde ya da dişsiz alveol kretinde görülür; mikroskopta çok çekirdekli dev hücreler."),
     dict(t="Periferik ossifiye fibrom: yalnız diş etinde; içinde kemik; genç kadında", v=P(n("12.46"), "Periferik ossifiye fibrom"), dur=7,
@@ -286,7 +286,7 @@ seq_add("Lif ve histiyosit kökenli iyi huylu tümörler", [
          note="İyi huylu tümörlere lif ve histiyosit kökenlilerle başlıyoruz. Fibröz histiyositom deride dermatofibrom adıyla sık, ağızda nadir."),
     dict(t="İğsi hücreler girdap gibi (storiform) dizilir", v=P(n("12.22"), "Storiform desen"), dur=5, note="Mikroskopta iğsi hücreler girdap gibi dizilir; buna storiform desen diyoruz."),
     dict(t="**Fibromatozis (desmoid):** iyi huylu ama lokal agresif; metastaz yapmaz", v=P(n("12.26"), "Fibromatozis", "Alt çene lingual diş eti"), dur=8,
-         note="Fibromatozis, desmoid tip: iyi huylu ama lokal agresif; metastaz yapmaz. Resmi slayttaki 'gingival fibromatozis' kalıtsal diş eti büyümesiyle karışmasın; burada diş etindeki desmoid tip kastediliyor."),
+         note="Fibromatozis, desmoid tip: iyi huylu ama lokal agresif; metastaz yapmaz. 'Gingival fibromatozis' adı kalıtsal diş eti büyümesiyle karışmasın; burada diş etindeki desmoid tip kastediliyor."),
     dict(t="Nükleer β-katenin; nüks ~%30", v=P(n("12.27"), "Uzun demetler yapan fibroblastlar"), dur=5, note="Nükleer beta-katenin pozitif; yaklaşık üçte biri nükseder."),
     dict(t="**Miyofibrom:** genç hasta; ağızda en sık alt çene", v=P(n("12.28"), "Miyofibrom", "Üst çene diş eti"), dur=5, note="Miyofibrom genç hastada; ağızda en sık alt çenede."),
     dict(t="SMA pozitif; bebekte çok odaklı form (miyofibromatozis)", v=P(n("12.30"), "İğsi hücreler; SMA"), dur=5, note="SMA pozitif; bebeklerde çok odaklı formu var, miyofibromatozis."),
@@ -299,7 +299,7 @@ seq_add("Lipom", [
     dict(t="Yağ dokusunun iyi huylu tümörü; ağız-çene tümörlerinin yalnız %1–4'ü", v=P(n("12.50"), "Yanak mukozasında nodül"), dur=7,
          note="Lipom yağ dokusunun iyi huylu tümörü; ağızda beklenenden az, ağız-çene tümörlerinin yüzde 1 ila 4'ü."),
     dict(t="Yumuşak, sarımsı, ağrısız; çoğu 40 yaş üstü", dur=5, note="Yumuşak, sarımsı, ağrısız bir nodül; çoğu 40 yaşın üstünde."),
-    dict(t="Ağızda en sık yanak ve vestibül (~yarısı)", dur=6, note="Resmi slayt en sık yeri dil olarak sıralıyor; Neville'e göre yanak ve vestibül olguların yaklaşık yarısı."),
+    dict(t="Ağızda en sık yanak ve vestibül (~yarısı)", dur=6, note="Bazı kaynaklar en sık yeri dil olarak sıralar; Neville'e göre yanak ve vestibül olguların yaklaşık yarısı."),
     dict(t="Mikroskop: ince kapsüllü olgun yağ dokusu", v=P(n("12.52"), "Olgun yağ hücreleri"), dur=5, note="Mikroskopta ince bir kapsülle çevrili olgun yağ dokusu."),
     dict(t="Tipler: fibrolipom (en sık), iğsi hücreli, anjiyolipom, miksoid, pleomorfik", dur=6, note="Tiplerinden en sık fibrolipom; iğsi hücreli lipom CD34 pozitif."),
     dict(t="Atipi varsa MDM2/CDK4 ile liposarkom dışlanır", dur=6, note="Hücrelerde atipi görürsek MDM2 ve CDK4 boyalarıyla iyi diferansiye liposarkomu dışlarız. Tedavi eksizyon; nüks nadir."),
@@ -409,7 +409,7 @@ seq_add("Kas kökenli iyi huylu tümörler ve diğerleri", [
          note="Hücrelerin sitoplazması vakuollüdür, örümcek ağı gibi görünür. Çocuktaki fetal tipi rabdomiyosarkomla karışabilir."),
     dict(h="Tek satır", t="Paragangliom: en sık karotis cisimciği; hücre yuvaları (zellballen)", v=P(n("12.83"), "Paragangliom: hücre yuvaları"), dur=7,
          note="Paragangliom en sık karotis cisimciğinde; hücreler yuvalar yapar, buna zellballen denir. Üçte biri kadarı kalıtsal."),
-    dict(t="Tendon kılıfının dev hücreli tümörü: ağızda çok nadir", dur=5, note="Tendon kılıfının dev hücreli tümörü resmi slaytta var ama ağızda çok nadir."),
+    dict(t="Tendon kılıfının dev hücreli tümörü: ağızda çok nadir", dur=5, note="Tendon kılıfının dev hücreli tümörü patoloji kaynaklarında geçer ama ağızda çok nadir; Neville'de bu başlığı doğrulayamadım."),
 ], size=28, gap=8, strip={2}, dus=True, cred=NEV)
 
 # ---- 3. Sarkomlar ----
@@ -435,8 +435,8 @@ seq_add("Pleomorfik sarkom, fibrosarkom, liposarkom", [
     dict(h="Liposarkom", t="Ağızda dil ve yanak; ağızdakilerin %67'si iyi diferansiye", v=P(n("12.132"), "Vakuollü lipoblastlar"), dur=7,
          note="Liposarkom ağızda en sık dilde ve yanakta; ağızdakilerin üçte ikisi iyi diferansiye tip."),
     dict(t="Lipoblastlar; MDM2/CDK4 pozitif; ağızdakiler iyi seyirli", dur=6, note="Lipoma benzer ama lipoblast ve atipik hücreler içerir; MDM2 ve CDK4 pozitif. Ağızdakiler iyi seyirli."),
-    dict(t="En sık sarkom: resmi slayt pleomorfik sarkom der; Neville 5'e göre bugün liposarkom", dur=15,
-         note="Bir uyuşmazlık: resmi slayt en sık sarkom olarak pleomorfik sarkomu sayıyor. Neville 5'e göre bu eski bilgi; malign fibröz histiyositom denen tümörlerin çoğu başka sarkomlara ayrıldı ve bugün en sık sarkom liposarkom."),
+    dict(t="En sık sarkom: eski kaynaklarda pleomorfik sarkom; Neville 5'e göre bugün liposarkom", dur=15,
+         note="Bir uyuşmazlık: patoloji kaynaklarında en sık sarkom olarak pleomorfik sarkom geçer. Neville 5'e göre bu eski bilgi; malign fibröz histiyositom denen tümörlerin çoğu başka sarkomlara ayrıldı ve bugün en sık sarkom liposarkom."),
 ], size=27, gap=7, vis_w=960, strip={3}, dus=True, cred=NEV)
 
 seq_add("Sinir ve damar kökenli sarkomlar", [
@@ -451,7 +451,7 @@ seq_add("Sinir ve damar kökenli sarkomlar", [
          note="Anjiyosarkomun yarısı baş-boyunda, en sık saçlı deride ve alında; ağızda çok nadir."),
     dict(t="Erken lezyon morluk gibi; CD31 ve ERG pozitif", dur=5, note="Erken dönemde morluk gibi görünür, bu yüzden tanı gecikir; CD31 ve ERG pozitif."),
     dict(h="Kaposi sarkomu", t="HHV-8; dört form: klasik, endemik, nakil, AIDS", v=P(n("7.42"), "HIV; sert damakta nodüler büyüme"), dur=8,
-         note="Kaposi sarkomu HHV-8 ile ilişkili; dört formu var. Resmi slayt endemik formu HIV ve HHV-8 ile ilişkilendiriyor; Neville'e göre dört formun hepsinin etkeni HHV-8, HIV yalnız AIDS formunda."),
+         note="Kaposi sarkomu HHV-8 ile ilişkili; dört formu var. Bazı kaynaklar endemik formu HIV ve HHV-8 ile ilişkilendirir; Neville'e göre dört formun hepsinin etkeni HHV-8, HIV yalnız AIDS formunda."),
     dict(t="AIDS'li hastaların ~%70'inde ağız lezyonu; en sık sert damak", dur=6, note="AIDS'li hastaların yaklaşık yüzde 70'inde ağız lezyonu olur, en sık sert damakta."),
     dict(t="İğsi hücreler, yarık benzeri damarlar, ekstravaze eritrositler", v=P(n("12.139"), "İğsi hücreler ve yarık benzeri damarlar"), dur=8,
          note="Mikroskopta iğsi hücreler, yarık benzeri damarlar ve ekstravaze eritrositler."),
@@ -471,7 +471,7 @@ seq_add("Kas kökenli sarkomlar ve diğerleri", [
     dict(h="Sinovyal sarkom", t="Eklem çevresinde ama sinovyadan köken almaz; baş-boyunda parafarenks", v=P(n("12.146"), "İğsi hücreler ve bez benzeri yapılar"), dur=8,
          note="Sinovyal sarkom eklem çevresinde görülür ama adına rağmen sinovyadan köken almaz; baş-boyunda en sık parafarenkste."),
     dict(t="SS18::SSX füzyonu; Neville'e göre monofazik tip daha sık", dur=6,
-         note="Tanıyı SS18::SSX füzyonu koydurur. Resmi slayt genellikle bifazik der; Neville'e göre monofazik tip daha sık."),
+         note="Tanıyı SS18::SSX füzyonu koydurur. Kaynaklarda genellikle bifazik diye geçer; Neville'e göre monofazik tip daha sık."),
     dict(h="Alveoler yumuşak doku sarkomu", t="Çocukta baş-boyunda: orbita ve dil", v=P(n("12.147"), "Alveol benzeri yuvalar"), dur=6,
          note="Alveoler yumuşak doku sarkomu nadir; çocukta baş-boyunda en sık orbitada ve dilde."),
     dict(t="PAS pozitif, diastaza dirençli kristaller; TFE3 pozitif", dur=5, note="Hücrelerde PAS pozitif, diastaza dirençli kristaller; TFE3 pozitif."),
@@ -538,7 +538,7 @@ L.add(title="Kaynaklar ve evde tekrar", dur=10,
       body=col(bl(["Neville BW, Damm DD, Allen CM, Chi AC. *Oral and Maxillofacial Pathology.* 5. baskı. Elsevier; 2024. Bölüm 12: Yumuşak doku tümörleri.",
                    "WHO Classification of Tumours Editorial Board. *Head and Neck Tumours.* 5. baskı. IARC; 2022. Bölüm 10 (yumuşak doku).",
                    "Laskaris G. *Color Atlas of Oral Diseases.* 4. baskı. Thieme; 2017. (Klinik fotoğraflar)",
-                   "Kahyaoğlu Akkaya Z. Yumuşak doku hastalıkları patolojisi. Fakülte ders slaytı (sıra ve Neville'de olmayan konular)."], size=28, gap=14),
+                   "Kahyaoğlu Akkaya Z. Yumuşak doku hastalıkları patolojisi. Fakülte ders notu (sıra ve bazı görseller)."], size=28, gap=14),
                div("<div style='display:flex;gap:34px;align-items:center;background:%s;border-radius:16px;padding:22px 28px;margin-top:18px'>"
                    "<img src='file://%s' style='width:190px;height:190px;border-radius:8px'>"
                    "<div style='font-size:30px;line-height:1.35'><b>Evde tekrar: slaytlar ve quiz (isteyen çözsün)</b><br>%s<br>"

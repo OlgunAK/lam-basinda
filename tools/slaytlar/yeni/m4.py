@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """M4 · Tükürük Bezi Hastalıkları ve Tümörleri (17 Kasım 2026, blok dersin ikincisi, 25 dk).
 
-Sıra fakültenin resmi ders slaytını izler (9. hafta, Tükürük Bezi Hastalıkları
+Sıra fakültenin ders notunu izler (9. hafta, Tükürük Bezi Hastalıkları
 Patolojisi): genel bilgi, tümör dışı hastalıklar, iyi huylu tümörler, kötü
 huylu tümörler. Rakamlar Neville 5 ve WHO 2022'den; Neville'de ayrıntısı
 olmayan konular (ektopi, lenfoepitelyal kist, duktus karsinomu, lenfoepitelyal
-karsinom, epitelyal-miyoepitelyal karsinom) resmi slayttan. Neville'de olup
-resmi slaytta olmayan mukosel, ranula ve sialadenoz birer cümleyle eklendi.
+karsinom, epitelyal-miyoepitelyal karsinom) ders notundan; Neville'den mukosel,
+ranula, sialadenoz ve sekretuar karsinom birer cümleyle eklendi.
 Bütün içerik slaytları adım adım açılır (seq).
 """
 import os, sys
@@ -16,8 +16,8 @@ from foto import F
 
 NEV = "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
 LAS = "Laskaris, *Color Atlas of Oral Diseases*, 4. baskı (Thieme, 2017)"
-RESMI = "Fakültenin resmi ders slaytı (Z. Kahyaoğlu Akkaya)"
-IKI = "Neville 5. baskı (2024) · fakültenin resmi ders slaytı"
+RESMI = "Fakülte ders notları"
+IKI = "Neville 5. baskı (2024) · fakülte ders notları"
 n = lambda k, **kw: F("n", k, **kw)
 l = lambda k, **kw: F("l", k, **kw)
 r = lambda f: os.path.join(HERE, "resmi", f)
@@ -137,7 +137,7 @@ def plan_body(k):
 
 
 L.add(title="Dersin planı: üç grup", body_fn=plan_body, seq=[
-    dict(dur=10, note="Ders fakültemizin resmi slaytıyla aynı sırada. Birinci grup tümör dışı hastalıklar: gelişim bozuklukları, kistler, taş, iltihap, otoimmün hastalıklar."),
+    dict(dur=10, note="Birinci grup tümör dışı hastalıklar: gelişim bozuklukları, kistler, taş, iltihap, otoimmün hastalıklar."),
     dict(dur=8, note="İkinci grup iyi huylu tümörler; en sık olanı pleomorfik adenom."),
     dict(dur=8, note="Üçüncü grup kötü huylu tümörler; en sık olanı mukoepidermoid karsinom."),
     dict(dur=9, note="Her hastalıkta aynı dört soruyu soracağız: hangi bez, kaç yaşında, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5 ve WHO 2022'den.")])
@@ -159,13 +159,13 @@ S("Gelişim bozuklukları: aplazi, hipoplazi, ektopi", [
          note="Aplazide bez hiç yoktur, hipoplazide az gelişmiştir; nadir ve erkekte iki kat sık. Treacher Collins gibi sendromlarla birlikte olabilir."),
     dict(t="Sonuç: ağır kuruluk, çürük ve diş erozyonu", dur=6, note="Sonuç ağır ağız kuruluğu: dil deri gibi olur, çürük ve diş erozyonu artar."),
     dict(h="Ektopi", t="Bez dokusu başka yerde; en sık lenf nodunda", v=P(r("tb_ektopi.jpg"), "Lenf nodunda tükürük bezi dokusu"), dur=8,
-         note="Ektopide tükürük bezi dokusu normal yeri dışında bulunur; en sık boyundaki lenf nodlarının içinde. Mandibulada kemik içinde de olabilir."),
+         note="Ektopi patoloji kaynaklarında böyle geçiyor; Neville'de ayrıntısını doğrulayamadım. Ektopide tükürük bezi dokusu normal yeri dışında bulunur; en sık boyundaki lenf nodlarının içinde. Mandibulada kemik içinde de olabilir."),
     dict(t="Ektopik bezden de kist ve tümör gelişebilir", dur=6, note="Ektopik bezden de normal bezde olduğu gibi kist ve tümör gelişebilir."),
 ], strip={1}, cred=IKI)
 
 S("Mukosel, ranula ve tükürük kanalı kisti", [
     dict(h="Mukosel", t="Küçük kanal yırtılır, müsin dokuya dökülür", v=P(n("11.2"), "Alt dudakta mavimsi nodül"), dur=7,
-         note="Resmi slaytta yok ama ağızda en sık gördüğünüz şişlik: mukosel. Alt dudağı ısırırsınız, küçük bir kanal yırtılır, müsin dokuya dökülür."),
+         note="Ağızda en sık gördüğünüz şişlik: mukosel. Alt dudağı ısırırsınız, küçük bir kanal yırtılır, müsin dokuya dökülür."),
     dict(t="%82'si alt dudakta; üst dudakta neredeyse hiç yok", dur=6, note="Neville'in 1715 olguluk serisinde yüzde 82'si alt dudakta, üst dudakta bir tane bile yok. Bu cümleyi tümörlerde kullanacağız."),
     dict(t="Epitel yok: gerçek kist değil; besleyen bezlerle birlikte çıkar", v=P(n("11.6"), "Dökülmüş müsin; epitel yok"), dur=7,
          note="Mikroskopta epitel yok; müsin ve köpüklü makrofajlar var, bu yüzden gerçek kist değil. Besleyen küçük bezleri de çıkarın, yoksa nükseder."),
@@ -220,7 +220,7 @@ S("Sialore, kserostomi ve sialadenoz", [
          note="Yaşlıda nedeni çoğu zaman yaşlanma değil, ilaçlar: 500'den fazla ilaç kuruluk yapar ve ilaç sayısı arttıkça kuruluk artar."),
     dict(t="Sonuç: kandida, kök çürüğü, protez güçlüğü", v=P(n("11.25"), "Kuru, fissürlü dil"), dur=6, note="Sonuçları: kandida, kök çürüğü, çiğneme ve protez güçlüğü."),
     dict(h="Sialadenoz", t="İltihapsız, iki taraflı parotis büyümesi: diyabet, alkol, bulimia", v=P(n("11.30"), "Alkolizmde parotis ve submandibuler büyüme"), dur=8,
-         note="Resmi slaytta yok: sialadenoz. İltihapsız, iki taraflı parotis büyümesi; diyabet, alkolizm, bulimia ve kötü beslenmede görülür."),
+         note="Sialadenoz: iltihapsız, iki taraflı parotis büyümesi; diyabet, alkolizm, bulimia ve kötü beslenmede görülür."),
 ], size=30, gap=8, strip={1}, cred=NEV)
 
 S("Lenfoepitelyal sialadenit", [
@@ -238,7 +238,7 @@ S("Sjögren sendromu", [
     dict(t="Primer: tek başına; sekonder: romatoid artrit (%15), lupus (%30)", dur=7, note="Primer Sjögren tek başınadır; sekonder Sjögren başka bir otoimmün hastalıkla birliktedir: romatoid artritlilerin yüzde 15'i, lupuslu hastaların yüzde 30'u."),
     dict(t="Kadın:erkek 9:1; orta yaş", dur=5, note="Hastaların onda dokuzu kadın; orta yaşta."),
     dict(t="Bulgular: kuruluk, kandida, boyun çürükleri; hastaların ⅓–½'inde bez büyümesi", dur=7,
-         note="Ağızda kuruluk, kandida, boyun çürükleri; hastaların üçte biri ile yarısında majör bez büyümesi. Resmi slayt tek taraflı der; Neville'e göre büyüme çoğu zaman iki taraflı."),
+         note="Ağızda kuruluk, kandida, boyun çürükleri; hastaların üçte biri ile yarısında majör bez büyümesi. Kaynaklarda tek taraflı diye geçer; Neville'e göre büyüme çoğu zaman iki taraflı."),
     dict(t="Sialografi: 'meyveli dalsız ağaç'", v=P(n("11.27"), "Noktasal sialektazi"), dur=5, note="Sialografide kanal dalları kaybolur, uçlarda noktasal genişlemeler kalır: meyveli dalsız ağaç."),
     dict(t="Dudak biyopsisi: ≥50 lenfositlik odak / 4 mm² = odak skoru ≥1", v=P(n("11.29"), "Dudak bezlerinde lenfosit odakları"), dur=8,
          note="Diş hekiminin tanı aracı: normal görünen alt dudaktan en az beş küçük bez alınır. Dört milimetrekarede en az 50 lenfositlik bir odak, odak skoru 1 demek."),
@@ -269,7 +269,7 @@ S("Nekrotizan sialometaplazi", [
 
 S("Lenfoepitelyal kistler", [
     dict(h="Benign lenfoepitelyal kist", t="Çoğu parotiste; ağrısız şişlik", v=P(r("tb_le_kist.jpg"), "Yassı epitel, altında lenfoid doku"), dur=6,
-         note="Benign lenfoepitelyal kist çoğu parotiste, ağrısız bir şişlik."),
+         note="Bu iki lezyon patoloji kaynaklarında böyle geçiyor; Neville'de ayrıntısını doğrulayamadım. Benign lenfoepitelyal kist çoğu parotiste, ağrısız bir şişlik."),
     dict(t="Yassı epitelle döşeli kist; duvarında germinal merkezli lenfoid doku", dur=6, note="Kist yassı, bazen silyalı epitelle döşeli; duvarında germinal merkezli lenfoid doku var."),
     dict(h="HIV'de kistik lenfoepitelyal lezyon", t="Çoğu HIV pozitif hastada; iki taraflı, çok sayıda parotis kisti", v=P(r("tb_hiv_ln.jpg"), "AIDS: lenf nodunda bez inklüzyonları"), dur=7,
          note="Kistik lenfoepitelyal lezyon büyük çoğunlukla HIV pozitif hastada görülür: iki taraflı, çok sayıda parotis kisti."),
@@ -294,7 +294,7 @@ S("Tükürük bezi tümörleri: genel", [
     dict(t="Submandibulerde %26–45", v=bars(BARS, upto=1), dur=5, note="Submandibuler bezde yüzde 26 ila 45; en sık malign tümörü adenoid kistik karsinom."),
     dict(t="Küçük bezlerde %38–54; en sık yer damak", v=bars(BARS, upto=2), dur=6, note="Küçük bezlerde yaklaşık yarısı; en sık yer damak."),
     dict(t="Sublingualde %70–97: bez küçüldükçe malign olasılığı artar", v=bars(BARS, upto=3), dur=8,
-         note="Sublingual bezde tümör nadir ama gördüğünüzde neredeyse hep malign. Kural: bez küçüldükçe malign olasılığı artar. Rakamlar Neville'in beş büyük serisinden; resmi slayttaki oranlar da aynı yönde."),
+         note="Sublingual bezde tümör nadir ama gördüğünüzde neredeyse hep malign. Kural: bez küçüldükçe malign olasılığı artar. Rakamlar Neville'in beş büyük serisinden."),
 ], size=33, strip={2}, dus=True)
 
 S("Pleomorfik adenom", [
@@ -315,8 +315,8 @@ S("Warthin tümörü", [
          note="Warthin tümörü ikinci en sık iyi huylu tümör; neredeyse yalnız parotiste, kuyruk bölümünde."),
     dict(t="Sigara içende 8 kat risk; 6.–7. dekat", dur=6, note="Sigarayla en güçlü ilişkili tükürük bezi tümörü: risk sekiz kat. Çoğu 60'lı ve 70'li yaşlarda."),
     dict(t="İki taraflı ve çok sayıda olma olasılığı en yüksek tümör (%5–17)", dur=6, note="İki taraflı ve çok odaklı olma olasılığı en yüksek tükürük bezi tümörü; yüzde 5 ila 17'si iki taraflı."),
-    dict(t="Resmi slayt erkekte sık der; Neville: kadınlar sigara içtikçe oran eşitlendi", dur=6,
-         note="Resmi slayt erkekte sık diyor; Neville'e göre bu eskide kaldı, kadınlar sigara içtikçe oran eşitlendi."),
+    dict(t="Eski kaynaklar erkekte sık der; Neville: kadınlar sigara içtikçe oran eşitlendi", dur=6,
+         note="Patoloji kaynaklarında erkekte sık diye geçer; Neville'e göre bu eskide kaldı, kadınlar sigara içtikçe oran eşitlendi."),
     dict(t="Mikroskop: iki sıra onkositik epitel + germinal merkezli lenfoid stroma", v=P(n("11.49"), "İki sıra onkositik epitel"), dur=6,
          note="Mikroskopta papiller kistik yapılar: iki sıra pembe onkositik hücre ve altında germinal merkezli lenfoid doku."),
 ], size=33, strip={2}, dus=True, cred=NEV)
@@ -371,7 +371,7 @@ S("Asinik hücreli karsinom ve sekretuar karsinom", [
          note="Sitoplazma bazofilik ve granüllü; zimojen granülleri PAS pozitif."),
     dict(t="Düşük dereceli; prognoz iyi", dur=4, note="Düşük dereceli bir tümör; prognozu iyi."),
     dict(h="Sekretuar karsinom", t="ETV6::NTRK3; memenin sekretuar karsinomuna benzer", v=P(n("11.68"), "Yanakta mavimsi şişlik", "Mukosel sanılabilir"), dur=8,
-         note="Resmi slaytta yok: sekretuar karsinom. Memenin sekretuar karsinomuyla aynı ETV6::NTRK3 füzyonunu taşır; 2010'dan önce çoğu asinik hücreli karsinom sanılıyordu."),
+         note="Sekretuar karsinom memenin sekretuar karsinomuyla aynı ETV6::NTRK3 füzyonunu taşır; 2010'dan önce çoğu asinik hücreli karsinom sanılıyordu."),
     dict(t="TRK inhibitörleri için olası hedef", dur=5, note="Bu füzyon TRK inhibitörü ilaçlar için bir hedef olabilir."),
 ], size=32, gap=10, strip={3}, cred=NEV)
 
@@ -392,7 +392,7 @@ S("Diğer kötü huylu tümörler", [
     dict(h="Bazal hücreli adenokarsinom", t="Bazal hücreli adenomun malign karşılığı; nodüller hâlinde infiltrasyon", v=P(r("tb_bhak.jpg"), "İnfiltratif bazaloid adalar"), dur=7,
          note="Bazal hücreli adenokarsinom bazal hücreli adenomun malign karşılığı; adenomdan ayıran nodüler infiltrasyon, atipi ve mitoz."),
     dict(h="Tükürük bezi duktus karsinomu", t="Yüksek dereceli; yaşlı erkek, parotis; memenin duktal karsinomuna benzer", v=P(r("tb_duktus.jpg"), "Pleomorfik hücreler"), dur=8,
-         note="Tükürük bezi duktus karsinomu yüksek dereceli bir tümör; yaşlı erkekte, parotiste. Memenin duktal karsinomuna benzer; yüzde 90'ından fazlası androjen reseptörü pozitif; prognozu kötü."),
+         note="Bu slayttaki son dört tümörün ayrıntısını Neville'de doğrulayamadım; patoloji kaynaklarındaki bilgiyi veriyorum. Tükürük bezi duktus karsinomu yüksek dereceli bir tümör; yaşlı erkekte, parotiste. Memenin duktal karsinomuna benzer; yüzde 90'ından fazlası androjen reseptörü pozitif; prognozu kötü."),
     dict(h="Lenfoepitelyal karsinom", t="EBV ilişkili; nazofarenks karsinomunun benzeri; önce nazofarenksi dışla", v=P(r("tb_lek.jpg"), "Lenfoid stroma içinde tümör adaları"), dur=8,
          note="Lenfoepitelyal karsinom EBV ile ilişkili; nazofarenks karsinomunun benzeri. Tanıdan önce nazofarenkste bir tümör dışlanmalı."),
     dict(h="Epitelyal-miyoepitelyal karsinom", t="Parotiste (%70); iç sıra kanal hücresi, dış sıra berrak miyoepitel", v=P(r("tb_emk.jpg"), "İki sıralı yapı"), dur=7,
@@ -455,7 +455,7 @@ L.add(title="Kaynaklar ve evde tekrar", dur=10,
                    "WHO Classification of Tumours Editorial Board. *Head and Neck Tumours.* 5. baskı. IARC; 2022. Bölüm 5 (tükürük bezleri).",
                    "Shiboski CH ve ark. 2016 ACR/EULAR primer Sjögren sınıflama ölçütleri. *Arthritis Rheumatol.* 2017;69:35–45.",
                    "Laskaris G. *Color Atlas of Oral Diseases.* 4. baskı. Thieme; 2017. (Klinik fotoğraflar)",
-                   "Kahyaoğlu Akkaya Z. Tükürük bezi hastalıkları patolojisi. Fakülte ders slaytı (sıra ve bazı görseller)."], size=28, gap=14),
+                   "Kahyaoğlu Akkaya Z. Tükürük bezi hastalıkları patolojisi. Fakülte ders notu (sıra ve bazı görseller)."], size=28, gap=14),
                div("<div style='display:flex;gap:34px;align-items:center;background:%s;border-radius:16px;padding:22px 28px;margin-top:18px'>"
                    "<img src='file://%s' style='width:190px;height:190px;border-radius:8px'>"
                    "<div style='font-size:30px;line-height:1.35'><b>Evde tekrar: slaytlar ve quiz (isteyen çözsün)</b><br>%s<br>"
