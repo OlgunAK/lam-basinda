@@ -286,7 +286,7 @@ class Lesson:
                 jobs.append([fn, os.path.join(out_img, "%02d.jpg" % n)])
             t += dur
         # drop stale jpgs
-        keep = {"%02d.jpg" % i for i in range(1, n + 1)}
+        keep = {os.path.basename(x["img"].split("?")[0]) for x in slides_json if x.get("img")}
         for f in os.listdir(out_img):
             if f not in keep:
                 os.remove(os.path.join(out_img, f))
