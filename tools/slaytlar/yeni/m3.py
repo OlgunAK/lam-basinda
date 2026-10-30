@@ -145,10 +145,10 @@ seq_add("Açılış vakası: dil sırtında nodül", [
     dict(t="Dil sırtında 1 cm, sert, sarımsı nodül", dur=12, note="Dil sırtında bir santimetrelik, sert, sarımsı bir nodül var."),
     dict(t="Bir yıldır yavaş büyüyor; ağrısız", dur=12, note="Bir yıldır yavaş yavaş büyüyor ve ağrımıyor."),
     dict(t="Üstündeki mukoza sağlam; travma öyküsü yok", dur=12, note="Üstündeki mukoza sağlam; ısırma ya da travma öyküsü yok."),
-    dict(t="Sigara ve alkol kullanmıyor", dur=14, note="Sigara ve alkol kullanmıyor. Fotoğrafa bakın ve tahmininizi telefondan girin; şıklar açık. Cevabı dersin sonunda açacağım."),
+    dict(t="Sigara ve alkol kullanmıyor", dur=11, note="Sigara ve alkol kullanmıyor. Fotoğrafa bakın ve tahmininizi telefondan girin; şıklar açık. Cevabı dersin sonunda açacağım."),
 ], size=38, vis_w=900, theme="dark", qopen=W1, cred=NEV)
 
-L.add(title="Açılış vakası: tahminin ne?", dur=40, theme="dark", q=W1, cont=True, cred=NEV,
+L.add(title="Açılış vakası: tahminin ne?", dur=35, theme="dark", q=W1, cont=True, cred=NEV,
       body=qbody(Q[W1], photo=ph(n("12.84"))),
       notes="Sonuçları gösteriyorum ama yorum yapmıyorum. Şıklardan biri kötü huylu, dördü iyi huylu ya da reaktif. Dersin sonunda biyopsi sonucuyla birlikte aynı soruyu yeniden soracağım.")
 
@@ -265,6 +265,21 @@ seq_add("Travmatik nöroma", [
     dict(t="Tedavi: sinirin proksimal ucuyla birlikte eksizyon", dur=5, note="Tedavi sinirin proksimal ucuyla birlikte eksizyon. Sırada iyi huylu tümörler."),
 ], strip={1}, dus=True, cred=NEV)
 
+seq_add("Diş eti ve protezle ilişkili reaktif kitleler", [
+    dict(h="Diş eti", t="Piyojenik granülom: kırmızı, kolay kanayan, hızla büyüyen kitle; gebelikte sık", v=P(n("12.34"), "Piyojenik granülom", "Üst ön diş eti"), dur=8,
+         note="Neville'in bu bölümünde olup resmi slaytımızda olmayan reaktif kitleler; her birine bir cümle. Piyojenik granülom: kırmızı, kolay kanayan, hızla büyüyen bir diş eti kitlesi; gebelikte sık, doğumdan sonra küçülebilir."),
+    dict(t="Periferik dev hücreli granülom: mor-mavi; yalnız diş eti ve alveol kretinde", v=P(n("12.41"), "Periferik dev hücreli granülom"), dur=7,
+         note="Periferik dev hücreli granülom mor-mavi renktedir ve yalnız diş etinde ya da dişsiz alveol kretinde görülür; mikroskopta çok çekirdekli dev hücreler."),
+    dict(t="Periferik ossifiye fibrom: yalnız diş etinde; içinde kemik; genç kadında", v=P(n("12.46"), "Periferik ossifiye fibrom"), dur=7,
+         note="Periferik ossifiye fibrom da yalnız diş etinde, diş arası papilladan çıkar; içinde kemik ya da kalsifikasyon vardır, çoğu genç kadında."),
+    dict(t="Fibrom: ağzın en sık 'tümörü'; aslında reaktif, en sık yanakta ısırma hattında", v=P(n("12.1"), "Fibrom", "Yanakta ısırma hattı"), dur=7,
+         note="Fibrom ağzın en sık tümörü sayılır ama aslında reaktif bir hiperplazi; en sık yanakta, ısırma hattında. Diş eti lezyonlarında kural: periosta kadar çıkar, komşu dişleri temizle."),
+    dict(h="Protez", t="Epulis fissuratum: uyumsuz protez kenarının açtığı kıvrımlar", v=P(n("12.13"), "Epulis fissuratum", "Ön vestibül"), dur=7,
+         note="Epulis fissuratum uyumsuz bir protez kenarının açtığı kıvrımlar; protez kenarı iki kıvrım arasındaki yarığa oturur."),
+    dict(t="İnflamatuvar papiller hiperplazi: protez altında, sert damakta çakıl taşı görünümü", v=P(n("12.18"), "İnflamatuvar papiller hiperplazi", "Sert damak"), dur=8,
+         note="İnflamatuvar papiller hiperplazi protezin altında, sert damakta çakıl taşı gibi papiller. İkisinde de protez düzeltilmezse lezyon geri gelir."),
+], size=31, gap=10, strip={1}, dus=True, cred=NEV)
+
 # ---- 2. İyi huylu tümörler ----
 seq_add("Lif ve histiyosit kökenli iyi huylu tümörler", [
     dict(t="**Fibröz histiyositom:** deride sık, ağızda nadir", v=P(n("12.21"), "Fibröz histiyositom", "Dil sırtı"), dur=6,
@@ -344,7 +359,7 @@ L.add(title="DUS Molası 2/2", dur=40, theme="dark", q=W4, body=qbody(Q[W4]),
 L.add(title="Ara liderlik: ilk 5", dur=15, board=True, top=5,
       notes="On saniye: ilk beş. (→ ile devam.)")
 
-L.add(title="Hemanjiyom mu, vasküler malformasyon mu?", dur=65, strip={2}, dus=True, cred=NEV,
+L.add(title="Hemanjiyom mu, vasküler malformasyon mu?", dur=60, strip={2}, dus=True, cred=NEV,
       body=row(col(ph(n("12.93"), "İnfantil hemanjiyom", "4 yaşında çocuk, üst dudak"), ph(n("12.94"), "Venöz malformasyon", "Dil, mor-mavi"), style="flex:0 0 520px"),
                col(div(table([["Doğumda", "Çoğu yok; ilk haftalarda çıkar", "Var"],
                               ["Seyir", "Hızlı büyür, sonra geriler: 5 yaşta %50, 9 yaşta %90", "Çocukla birlikte büyür, gerilemez"],
@@ -358,7 +373,16 @@ L.add(title="Hemanjiyom mu, vasküler malformasyon mu?", dur=65, strip={2}, dus=
                    style="flex:1;gap:14px"), gap=30),
       notes="Damar lezyonlarında iki ayrı grup var; ISSVA sınıflaması bunları ayırır. Hemanjiyom bir tümör: çoğu doğumda yoktur, ilk haftalarda çıkar, hızla büyür, sonra geriler; yarısı beş yaşında, yüzde 90'ı dokuz yaşında kaybolur. GLUT1 pozitiftir; çoğunu bekleriz, gerekirse propranolol veririz. Malformasyon ise damar yapısının gelişim bozukluğu: doğumda vardır, çocukla birlikte büyür ve gerilemez; GLUT1 negatif. Venöz malformasyon mor-mavidir ve bastırınca kolayca söner. Neville'den pratik uyarı: tanısı konmamış kemik içi bir lezyonda biyopsiden önce iğneyle aspirasyon yapın; malformasyonun yanında diş çekiminden sonra ölümcül kanamalar bildirildi.")
 
-L.add(title="Lenfanjiyom ve nazofarengeal anjiyofibrom", dur=60, strip={2}, dus=True, cred=NEV,
+seq_add("Sturge-Weber ve melanotik nöroektodermal tümör", [
+    dict(h="Sturge-Weber sendromu", t="Yüzde trigeminal dağılımda porto şarabı lekesi", v=P(n("12.103"), "Porto şarabı lekesi", "Trigeminal birinci dal"), dur=6,
+         note="Sturge-Weber sendromu: yüzde trigeminal sinir dağılımında porto şarabı lekesi; leke birinci dalı tutuyorsa risk yüzde 15 ila 20."),
+    dict(t="Aynı tarafta beyin zarında damar anomalisi: nöbet, zihinsel yetersizlik", v=P(n("12.104"), "Kafa grafisinde 'tramvay rayı' kalsifikasyonları"), dur=7,
+         note="Aynı tarafta beyin zarında damar anomalisi olur: nöbet ve zihinsel yetersizlik. Ağızda o bölgede cerrahi ciddi kanayabilir."),
+    dict(h="Bebeğin melanotik nöroektodermal tümörü", t="1 yaşın altında, üst çene ön bölgede hızla büyüyen kitle", v=P(n("12.77"), "Üst çene ön bölgede kitle", "Bebek"), dur=7,
+         note="Bebeğin melanotik nöroektodermal tümörü: bir yaşın altında, üst çene ön bölgede hızla büyüyen, mavi-siyah bir kitle; idrarda vanilmandelik asit yüksek olabilir."),
+], size=32, strip={2}, dus=True, cred=NEV)
+
+L.add(title="Lenfanjiyom ve nazofarengeal anjiyofibrom", dur=55, strip={2}, dus=True, cred=NEV,
       body=col(row(ph(n("12.110"), "Dilde lenfatik malformasyon", "Kabarcıklı yüzey"), ph(n("12.109"), "Kistik higroma", pos="50% 30%"),
                    ph(n("12.106"), "Nazofarengeal anjiyofibrom", "BT: nazofarenkste kitle"), ph(n("12.108"), "Fibröz doku içinde ince duvarlı damarlar"), style="flex:1;min-height:320px"),
                row(box("lilac", "Lenfanjiyom (lenfatik malformasyon)", ["Neville 5 'lenfatik malformasyon' der; WHO 2022 'lenfanjiyom' adını korur",
@@ -372,7 +396,7 @@ L.add(title="Lenfanjiyom ve nazofarengeal anjiyofibrom", dur=60, strip={2}, dus=
                        size=24, gap=6, style="flex:1;padding:20px 24px"))),
       notes="İki damar lezyonu daha. Lenfanjiyom, Neville'in yeni baskısında lenfatik malformasyon adıyla geçiyor; WHO hâlâ lenfanjiyom diyor, ikisini de bilin. Yarısı doğumda vardır, yüzde 90'ı iki yaşına kadar ortaya çıkar. Ağızda en sık dilin ön üçte ikisinde; yüzey küçük, saydam kabarcıklarla kaplıdır ve dil büyür. Boyundaki büyük kistli formuna kistik higroma deniyor; yenidoğanda havayolunu tıkayabilir. Nazofarengeal anjiyofibrom neredeyse yalnız ergen erkeklerde görülür: burun tıkanıklığı ve tekrarlayan burun kanaması. Hücreleri androjen reseptörü taşır. Damar duvarlarında kas tabakası eksik ve elastik lif yok; bu yüzden ameliyatta çok kanar ve önce embolizasyon yapılır. WHO 2022'deki adı sinonazal anjiyofibrom.")
 
-L.add(title="Kas kökenli iyi huylu tümörler ve diğerleri", dur=50, strip={2}, dus=True, cred=NEV,
+L.add(title="Kas kökenli iyi huylu tümörler ve diğerleri", dur=45, strip={2}, dus=True, cred=NEV,
       body=col(row(ph(n("12.115"), "Leiomiyom", "Sert damakta pembe-kırmızı nodül"), ph(n("12.118"), "Küt uçlu çekirdekli düz kas demetleri"),
                    ph(n("12.121"), "Erişkin rabdomiyom", "Yanakta kitle (ok)"), ph(n("12.123"), "Geniş eozinofilik sitoplazmalı poligonal hücreler"), style="flex:1;min-height:300px"),
                row(box("lilac", "Leiomiyom", ["Ağızda nadir; çoğu damar düz kasından", "Olguların ~%75'i **anjiyomiyom** (vasküler leiomiyom); bazen ağrılı",
@@ -414,7 +438,7 @@ L.add(title="Pleomorfik sarkom, fibrosarkom, liposarkom", dur=60, strip={3}, dus
                    size=23, style="padding:16px 24px")),
       notes="Lif ve yağ kökenli sarkomlar. İndiferansiye pleomorfik sarkom, eski adıyla malign fibröz histiyositom: yaşlı hastada, daha çok bacakta ve gövdede; baş-boyunda burun ve sinüslerde. Bir kısmı radyoterapiden yıllar sonra gelişir. Mikroskopta girdap gibi demetler ve tuhaf, çok çekirdekli dev hücreler. Fibrosarkom bugün bir dışlama tanısı: iğsi hücreler balık kılçığı deseninde dizilir. Liposarkom ağızda en sık dilde ve yanakta; ağızdakilerin üçte ikisi iyi diferansiye tip, lipoma benzer ama lipoblast ve atipik hücreler içerir; MDM2 ve CDK4 pozitif. Bir uyuşmazlık: resmi slayt en sık sarkom olarak pleomorfik sarkomu sayıyor. Neville 5'e göre bu eski bir bilgi; malign fibröz histiyositom denen tümörlerin çoğu başka sarkomlara ayrıldı ve bugün en sık sarkom liposarkom.")
 
-L.add(title="Sinir ve damar kökenli sarkomlar", dur=65, strip={3}, dus=True, cred=NEV,
+L.add(title="Sinir ve damar kökenli sarkomlar", dur=60, strip={3}, dus=True, cred=NEV,
       body=col(row(ph(n("12.71"), "Malign periferik sinir kılıfı tümörü", "NF1'li hastada yanak"), ph(n("12.134"), "Olfaktör nöroblastom", "Küçük, bazofilik hücreler"),
                    ph(n("12.136"), "Anjiyosarkom", "Atipik endotelle döşeli kanallar"), ph(n("7.42"), "Kaposi sarkomu", "HIV; sert damakta nodüler büyüme"), style="flex:1;min-height:290px"),
                row(box("lilac", "MPNST (malign schwannom)", ["Sarkomların %5–10'u; **¼–½'i NF1'li** hastada", "Genç erişkin; ağızda çene, dudak, yanak",
@@ -431,7 +455,7 @@ L.add(title="Sinir ve damar kökenli sarkomlar", dur=65, strip={3}, dus=True, cr
                        size=22, gap=5, style="flex:1;padding:16px 20px"))),
       notes="Sinir ve damar sarkomları. Malign periferik sinir kılıfı tümörü, eski adıyla malign schwannom: dörtte biri ile yarısı NF1'li hastalarda gelişir; bu yüzden NF1'de büyüyen bir kitle hemen biyopsi ister. Prognozu kötü. Olfaktör nöroblastom burun tavanında, koku epitelinden köken alır; adındaki nöroblastoma rağmen çocukta değil erişkinde görülür. Mikroskopta küçük, yuvarlak, mavi hücreler ve rozetler. Anjiyosarkom yaşlıda en sık saçlı deride ve alında; ağızda çok nadir. Erken dönemde morluk gibi görünür, bu yüzden tanı gecikir. Kaposi sarkomu HHV-8 ile ilişkili; dört formu var. Resmi slayt endemik formu HIV ve HHV-8 ile ilişkilendiriyor; Neville'e göre dört formun hepsinin etkeni HHV-8, HIV yalnız AIDS formunda. AIDS'li hastaların yaklaşık yüzde 70'inde ağız lezyonu olur, en sık sert damakta.")
 
-L.add(title="Kas kökenli sarkomlar ve diğerleri", dur=65, strip={3}, dus=True, cred=NEV,
+L.add(title="Kas kökenli sarkomlar ve diğerleri", dur=60, strip={3}, dus=True, cred=NEV,
       body=col(row(ph(n("12.140"), "Leiomiyosarkom", "Üst alveol kretinde ülserli kitle"), ph(n("12.142"), "Embriyonal rabdomiyosarkom", "Çocukta maksillada kitle"),
                    ph(n("12.146"), "Sinovyal sarkom", "İğsi hücreler ve bez benzeri yapılar"), ph(n("12.147"), "Alveoler yumuşak doku sarkomu"), style="flex:1;min-height:290px"),
                row(box("lilac", "Leiomiyosarkom", ["Sarkomların %5–10'u; ağızda nadir, **⅓'ü alt çenede**", "Puro biçimli çekirdekli iğsi hücreler", "≥5 mitoz/10 BBA: malign kabul",
@@ -447,8 +471,15 @@ L.add(title="Kas kökenli sarkomlar ve diğerleri", dur=65, strip={3}, dus=True,
                        size=22, gap=5, style="flex:1;padding:16px 20px"))),
       notes="Son sarkom grubu. Leiomiyosarkom düz kas sarkomu; ağızda nadir, üçte biri alt çenede. Çekirdekler puro biçimli; on büyük büyütme alanında beş ya da daha fazla mitoz varsa malign kabul edilir. Rabdomiyosarkom çocukların sarkomu: çocukluk çağı yumuşak doku sarkomlarının yarısı, en sık baş-boyunda. Üç tipi var: embriyonal en sık ve ilk on yaşta, alveoler ergenlik ve gençlikte, pleomorfik erişkinde. Ağız içinde en sık damakta. Sinovyal sarkom eklem çevresinde görülür ama adına rağmen sinovyadan köken almaz; baş-boyunda en sık parafarenkste. Resmi slayt genellikle bifazik olduğunu söylüyor; Neville'e göre monofazik tip daha sık. Tanıyı SS18::SSX füzyonu koydurur. Alveoler yumuşak doku sarkomu nadir; çocukta en sık orbitada ve dilde; hücrelerde PAS pozitif kristaller görülür.")
 
+seq_add("Ağız yumuşak dokusuna metastaz", [
+    dict(t="En sık diş eti (%54); piyojenik granülom gibi görünebilir", v=P(n("12.148"), "Melanom metastazı", "Alt çene diş eti"), dur=7,
+         note="Son olarak metastaz. Ağız yumuşak dokusuna gelen metastazların yarıdan fazlası diş etinde ve piyojenik granülom gibi görünebilir."),
+    dict(t="Erkekte akciğer, kadında meme; %25'inde kanserin ilk bulgusu", v=P(n("12.150"), "Kolon adenokarsinomu metastazı", "Retromolar bölge"), dur=8,
+         note="Erkekte en sık akciğerden, kadında memeden gelir; hastaların dörtte birinde ağızdaki lezyon kanserin ilk bulgusu. Bu yüzden çıkardığınız her doku patolojiye gider."),
+], size=34, strip={3}, dus=True, cred=NEV)
+
 # ---- Vakaya dönüş ----
-L.add(title="Açılış vakası: biyopsi sonucu", dur=35, theme="dark", tag=("pink", "VAKAYA DÖNÜŞ"), cred=NEV,
+L.add(title="Açılış vakası: biyopsi sonucu", dur=30, theme="dark", tag=("pink", "VAKAYA DÖNÜŞ"), cred=NEV,
       body=row(div(bl(["42 yaşında kadın; dil sırtında 1 cm, ağrısız, sarımsı nodül",
                        "Yüzeysel insizyonel biyopsi yapıldı",
                        "Rapor: **yüzeyde psödoepitelyomatöz hiperplazi; invaziv karsinom dışlanamadı**"], size=36, gap=28), "flex:0 0 860px"),
@@ -472,7 +503,7 @@ L.add(title="Tanı: granüler hücreli tümör", dur=60, cred=NEV,
                         size=23, style="padding:18px 22px 18px 26px"), style="flex:1;gap:16px")),
       notes="Kanıtları sırayla koyalım. Yer: dil sırtı; granüler hücreli tümörün en sık yeri, ama ağız kanserinin olağan yeri değil. Klinik: ağrısız, sert, sarımsı nodül, orta yaşta kadın. Yüzeysel biyopsi epitelin aşağı uzanan dallarını gösterdi; buna psödoepitelyomatöz hiperplazi diyoruz ve karsinoma çok benzer. Derin biyopsi altındaki asıl tümörü gösterdi: iri, granüler sitoplazmalı hücreler, S100 ve PAS pozitif. Patoloğun notu: Neville bu görüntü yüzünden karsinom tanısı konup gereksiz kanser ameliyatı yapılan hastalardan söz ediyor. Dil sırtındaki bir nodülde biyopsiyi derin alın ve istek formuna yeri ve kliniği yazın. Tedavi konservatif eksizyon; nüks nadir.")
 
-L.add(title="Eski ad, yeni ad ve resmi slaytta olmayanlar", dur=40, optional=True,
+L.add(title="Eski ad, yeni ad", dur=40, optional=True,
       body=row(col(box("lilac", "Eski ad → güncel ad", None, html_=table([
                        ["Malign fibröz histiyositom", "İndiferansiye pleomorfik sarkom"],
                        ["Hemanjiyoperisitom", "Soliter fibröz tümör"],
@@ -480,13 +511,8 @@ L.add(title="Eski ad, yeni ad ve resmi slaytta olmayanlar", dur=40, optional=Tru
                        ["Estezyonöroblastom", "Olfaktör nöroblastom"],
                        ["Nazofarengeal anjiyofibrom", "Sinonazal anjiyofibrom (WHO 2022)"],
                        ["Lenfanjiyom", "Lenfatik malformasyon (Neville 5; WHO hâlâ lenfanjiyom)"],
-                       ["Nodüler fasiitis", "WHO 2022: kendiliğinden geçen neoplazi (USP6)"]], size=26, w1=380), style="padding:22px 26px"), style="flex:1"),
-               col(box("rose", "Neville 12. bölümde var, resmi slaytta yok", ["**Diş etinin reaktif lezyonları:** piyojenik granülom, periferik dev hücreli granülom, periferik ossifiye fibrom, fibrom",
-                                                                            "**Protez hiperplazileri:** epulis fissuratum, inflamatuvar papiller hiperplazi",
-                                                                            "**MEN 2B**, bebeğin melanotik nöroektodermal tümörü, Sturge-Weber",
-                                                                            "**Ağız yumuşak dokusuna metastaz:** en sık diş eti"], size=30, gap=22, style="padding:22px 26px"),
-                   div("Bunlar quizde var; isteyen oradan çalışsın.", GREY), style="flex:1;gap:10px")),
-      notes="Zaman kalırsa; yoksa atlayın. Solda adı değişen tümörler; sınavda iki adı da görebilirsiniz. Sağda Neville'in bu bölümünde olup resmi slaytımızda olmayan konular: diş etinin reaktif lezyonları, protez hiperplazileri, MEN 2B, metastazlar. Bunlar quizde var; isteyen oradan çalışsın.")
+                       ["Nodüler fasiitis", "WHO 2022: kendiliğinden geçen neoplazi (USP6)"]], size=30, w1=520), style="padding:26px 30px"), style="flex:0 0 1300px")),
+      notes="Zaman kalırsa; yoksa atlayın. Adı değişen tümörler; sınavda iki adı da görebilirsiniz.")
 
 L.add(title="Çıkış bileti", dur=40, theme="dark", q=W7,
       body=div("<div class='live'>CANLI · W7 · Kelime bulutu</div><div class='qq' style='font-size:56px;margin-top:60px;max-width:1500px'>%s</div>"
@@ -496,7 +522,7 @@ L.add(title="Çıkış bileti", dur=40, theme="dark", q=W7,
 L.add(title="Liderlik tablosu", dur=25, board=True,
       notes="Liderlik tablosu. İlk üçü alkışlayalım. Eşit puanda hızlı olan önde.")
 
-L.add(title="Kaynaklar ve evde tekrar", dur=15,
+L.add(title="Kaynaklar ve evde tekrar", dur=10,
       body=col(bl(["Neville BW, Damm DD, Allen CM, Chi AC. *Oral and Maxillofacial Pathology.* 5. baskı. Elsevier; 2024. Bölüm 12: Yumuşak doku tümörleri.",
                    "WHO Classification of Tumours Editorial Board. *Head and Neck Tumours.* 5. baskı. IARC; 2022. Bölüm 10 (yumuşak doku).",
                    "Laskaris G. *Color Atlas of Oral Diseases.* 4. baskı. Thieme; 2017. (Klinik fotoğraflar)",
