@@ -418,3 +418,41 @@ def grid_img(paths, out, labels="ABCD", cols=2, cell=(800, 560), crops=None):
         d.text((x + 59 - (b[2] - b[0]) / 2 - b[0], y + 59 - (b[3] - b[1]) / 2 - b[1]), labels[i], font=f, fill=(36, 22, 58))
     im.save(out, quality=86)
     return out
+
+
+# ---------------- adım adım slaytlar (seq) ----------------
+def seq_list(items, k, size=34, dark=False):
+    """Maddeler: k'ya kadar görünür, k vurgulu, sonrakiler yer tutar ama görünmez."""
+    out = []
+    for i, it in enumerate(items):
+        now = i == k
+        bg = (C["navy2"] if dark else C["lilac"]) if now else "transparent"
+        bar = C["pink"] if now else ("#4a3d63" if dark else "#e3dbee")
+        col_ = ("#fff" if dark else C["navy"]) if now else ("#bdb3cc" if dark else "#6e6282")
+        h = ("<div style='font:700 %dpx Lora;color:%s;margin:0 0 4px'>%s</div>" % (size - 4, C["pink"], md(it["h"]))) if it.get("h") else ""
+        out.append("<div style='%sbackground:%s;border-left:7px solid %s;border-radius:10px;padding:12px 20px;color:%s;"
+                   "font-size:%dpx;line-height:1.28;font-weight:%s'>%s%s</div>" % ("visibility:hidden;" if i > k else "", bg, bar, col_, size,
+                                                                                   700 if now else 400, h, md(it["t"])))
+    return "".join(out)
+
+
+def seq_body(items, k, size=34, vis_w=1040, dark=False, gap=14):
+    v = None
+    for it in items[:k + 1]:
+        if it.get("v"):
+            v = it["v"]
+    lst = div(seq_list(items, k, size, dark), "flex:1;display:flex;flex-direction:column;gap:%dpx;justify-content:flex-start" % gap)
+    return row(div(v or "", "flex:0 0 %dpx;display:flex" % vis_w), lst, gap=40, style="flex:1")
+
+
+def seq_slide(lesson, title, items, size=34, vis_w=1040, theme="light", gap=14, **kw):
+    """Her madde ayrı bir adımda açılır; soldaki görsel o maddenin görseli (yoksa bir öncekinin)."""
+    lesson.add(title=title, seq=[{"note": it["note"], "dur": it["dur"]} for it in items], theme=theme,
+               body_fn=lambda k: seq_body(items, k, size, vis_w, theme == "dark", gap), **kw)
+
+
+def stat(big, small, color=None):
+    """Fotoğrafı olmayan madde için büyük rakam kartı."""
+    return ("<div style='flex:1;border-radius:16px;background:%s;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px'>"
+            "<div style='font:700 150px/1 Lora;color:%s'>%s</div><div style='font:700 36px/1.3 Lato;color:%s;margin-top:30px;text-align:center'>%s</div></div>") % (
+        C["lilac"], color or C["pink"], E(big), C["navy"], md(small))
