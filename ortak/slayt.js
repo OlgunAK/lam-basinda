@@ -227,12 +227,16 @@
       ".sl .kt.koyu{background:var(--vurgu);color:var(--vurgu-ust)}",
       ".sl .kt.pembe{background:var(--simdi-acik)}",
       ".sl .kt.vurgu{background:var(--simdi-acik);flex:none}",
-      ".sl .kt h3{margin:0;font:600 34px/1.2 Literata,serif}",
-      ".sl .kt ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:28px;line-height:1.25}",
+      ".sl .kt h3{margin:0;font:600 1.2em/1.2 Literata,serif}",
+      ".sl .kt ul,.sl .kt ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.36em;font-size:1em;line-height:1.25}",
+      ".sl .kt ol{gap:.6em;flex:1;justify-content:space-evenly}",
+      ".sl .kt ol li{padding-left:1.6em}",
+      ".sl .kt ol li::before{content:attr(data-n);left:0;top:0;width:auto;height:auto;border-radius:0;background:none;opacity:1;font:600 1em/1.25 Literata,serif;color:var(--simdi)}",
+      ".sl .kt.koyu ol li::before{color:#F283AA}",
       ".sl .kt li{padding-left:24px;position:relative}",
       ".sl .kt li::before{content:'';position:absolute;left:2px;top:.5em;width:9px;height:9px;border-radius:50%;background:currentColor;opacity:.55}",
-      ".sl .kt p{margin:0;font-size:28px;line-height:1.3}",
-      ".sl .kt table{border-collapse:collapse;font-size:24px;line-height:1.25}",
+      ".sl .kt p{margin:0;font-size:1em;line-height:1.3}",
+      ".sl .kt table{border-collapse:collapse;font-size:.86em;line-height:1.25}",
       ".sl .kt td{padding:9px 0;border-top:1px solid color-mix(in oklab,currentColor 18%,transparent);vertical-align:top}",
       ".sl .kt tr:first-child td{border-top:0}",
       ".sl .kt td:first-child{font-weight:700;width:180px;padding-right:18px}",
@@ -391,12 +395,13 @@
       var kt = function (k) {
         var idx = ks.indexOf(k);
         var ic = k.tablo ? "<table>" + k.tablo.map(function (rw) { return "<tr>" + rw.map(function (c) { return "<td>" + md(c) + "</td>"; }).join("") + "</tr>"; }).join("") + "</table>"
+          : k.numara ? "<ol>" + (k.maddeler || []).map(function (m, mi) { return "<li data-n='" + (k.numara + mi) + "'>" + md(m) + "</li>"; }).join("") + "</ol>"
           : (k.maddeler || []).length > 1 || k.baslik ? "<ul>" + (k.maddeler || []).map(function (m) { return "<li>" + md(m) + "</li>"; }).join("") + "</ul>"
             : "<p>" + md((k.maddeler || [])[0] || "") + "</p>";
         return "<div class='kt " + esc(k.ton || "mor") + (idx > f.k ? " gizli" : "") + "'" + (k.genislik ? " style='flex:0 0 " + (+k.genislik) + "px'" : "") + ">" +
           (k.baslik ? "<h3>" + md(k.baslik) + "</h3>" : "") + ic + "</div>";
       };
-      govde = "<div class='kutular' data-kutu data-sigdir='28'><div class='ust3'>" + ust.map(kt).join("") + "</div>" + alt.map(kt).join("") + "</div>";
+      govde = "<div class='kutular' data-kutu data-sigdir='" + (s.yazi || 28) + "'><div class='ust3'>" + ust.map(kt).join("") + "</div>" + alt.map(kt).join("") + "</div>";
     } else if (s.tip === "tablo") {
       var th = (s.tabloBaslik || "").split("→").map(function (x) { return x.trim(); });
       govde = "<div style='flex:1' data-kutu data-sigdir='30'><table class='tablo'>" + (th.length === 2 ? "<tr><th>" + esc(th[0][0].toUpperCase() + th[0].slice(1)) + "</th><th>" + esc(th[1][0].toUpperCase() + th[1].slice(1)) + "</th></tr>" : "") +

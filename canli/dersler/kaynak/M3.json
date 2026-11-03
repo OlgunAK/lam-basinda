@@ -17,6 +17,154 @@
  "quiz": "../quiz/#yd",
  "sorular": [
   {
+   "id": "A1",
+   "type": "MCQ",
+   "label": "Ana madde 1: fibrom",
+   "q": "Yanak mukozasında ısırma hattında 1 cm, sert, pembe, ağrısız, yıllardır duran nodül. En olası tanı?",
+   "scored": true,
+   "opts": [
+    "Lipom",
+    "Piyojenik granülom",
+    "Fibrom",
+    "Mukosel",
+    "Schwannom"
+   ],
+   "a": 2,
+   "exp": "Isırma hattında sert, pembe, ağrısız nodül fibromdur: ağzın en sık yumuşak doku kitlesi, reaktif. Lipom yumuşak ve sarımsı, piyojenik granülom kırmızı ve kanar, mukosel mavimsi ve dalgalanır.",
+   "t": 30
+  },
+  {
+   "id": "A2",
+   "type": "MCQ",
+   "label": "Ana madde 2: diş eti kitleleri",
+   "q": "26 yaşında gebe kadın. Üst ön diş etinde birkaç haftada büyüyen, kırmızı, dokununca kanayan kitle. En olası tanı?",
+   "scored": true,
+   "opts": [
+    "Piyojenik granülom",
+    "Periferik ossifiye fibrom",
+    "Fibrom",
+    "Kaposi sarkomu",
+    "Periferik dev hücreli granülom"
+   ],
+   "a": 0,
+   "exp": "Gebelikte hızla büyüyen, kırmızı, kolay kanayan diş eti kitlesi piyojenik granülomdur (gebelik tümörü). Doğumdan sonra küçülebilir; çıkarılırsa irritan da temizlenir.",
+   "t": 30
+  },
+  {
+   "id": "A3",
+   "type": "MCQ",
+   "label": "Ana madde 3: protez kitleleri",
+   "q": "Alt total protez kullanan hastada ön vestibülde protez kenarına oturan, katlantılı, sert doku. En doğru yaklaşım?",
+   "scored": true,
+   "opts": [
+    "Yalnız antifungal tedavi",
+    "Radyoterapi",
+    "Hiçbir şey yapma; kendiliğinden geçer",
+    "Eksizyon, patolojik inceleme ve protezin düzeltilmesi",
+    "Kriyoterapi; patoloji gerekmez"
+   ],
+   "a": 3,
+   "exp": "Epulis fissuratum: fibröz dokuyu çıkarıp patolojiye gönderin ve protezi düzeltin ya da yenileyin; yoksa yeniden oluşur.",
+   "t": 30
+  },
+  {
+   "id": "A4",
+   "type": "MCQ",
+   "label": "Ana madde 4: travmatik nöroma",
+   "q": "Alt total protez kullanan hasta. Premolar bölgede alveol kretinde küçük nodül; protez bastırınca elektrik çarpar gibi ağrıyor. Yıllar önce çekim öyküsü var. En olası tanı?",
+   "scored": true,
+   "opts": [
+    "Fibrom",
+    "Travmatik nöroma",
+    "Schwannom",
+    "Periferik dev hücreli granülom",
+    "Epulis fissuratum"
+   ],
+   "a": 1,
+   "exp": "Mental foramen bölgesinde, çekim öyküsü olan ve basınca ağrıyan nodül travmatik nöromadır. Tedavi sinirin ucuyla birlikte eksizyon.",
+   "t": 30
+  },
+  {
+   "id": "A5",
+   "type": "MCQ",
+   "label": "Ana madde 5: nodüler fasiitis",
+   "q": "Nodüler fasiitisi sarkomdan ayıran bulgu hangisi?",
+   "scored": true,
+   "opts": [
+    "Hızlı büyümesi",
+    "Bol mitoz",
+    "Ağrılı olması",
+    "Genç hastada görülmesi",
+    "Atipik mitoz ve pleomorfizm olmaması"
+   ],
+   "a": 4,
+   "exp": "Hızlı büyüme ve bol mitoz sarkomu düşündürür; ayıran bulgu atipik mitozun ve pleomorfizmin olmaması. Yerel eksizyon yeterli.",
+   "t": 30
+  },
+  {
+   "id": "A6",
+   "type": "MCQ",
+   "label": "Ana madde 6: schwannom ve nörofibrom",
+   "q": "Hangisi schwannomun özelliğidir?",
+   "scored": true,
+   "opts": [
+    "Kapsülsüzdür, sinirle iç içe büyür",
+    "Kendiliğinden geriler",
+    "Kapsüllüdür; Antoni A ve B alanları vardır",
+    "En sık diş etinde görülür",
+    "S100 negatiftir"
+   ],
+   "a": 2,
+   "exp": "Schwannom kapsüllüdür; Antoni A (palizat çekirdekler, Verocay cisimcikleri) ve Antoni B alanları vardır, S100 yaygın pozitiftir. Kapsülsüz ve sinirle iç içe olan nörofibromdur.",
+   "t": 30
+  },
+  {
+   "id": "A7",
+   "type": "MCQ",
+   "label": "Ana madde 7: NF1 ve MEN 2B",
+   "q": "Genç hastanın dil ucunda ve dudaklarında çok sayıda küçük nodül; biyopsi mukozal nöroma. Diş hekiminin en önemli adımı?",
+   "scored": true,
+   "opts": [
+    "Nodülleri lazerle silip takibi bırakmak",
+    "Medüller tiroid karsinomu için endokrinolojiye yönlendirmek",
+    "HIV testi istemek",
+    "Antiviral başlamak",
+    "Yalnız ağız hijyeni eğitimi"
+   ],
+   "a": 1,
+   "exp": "Çok sayıda mukozal nöroma MEN 2B'yi gösterir; hastaların neredeyse hepsinde medüller tiroid karsinomu gelişir. Erken yönlendirme hayat kurtarır.",
+   "t": 30
+  },
+  {
+   "id": "A8",
+   "type": "MCQ",
+   "label": "Ana madde 8: hemanjiyom ve malformasyon",
+   "q": "Mandibulada çok gözlü radyolüsensi; üstündeki diş sallanıyor, diş eti cebinden sızıntı gibi kanama var. Çekimden ya da biyopsiden önce ne yapılmalı?",
+   "scored": true,
+   "opts": [
+    "Dişi hemen çekmek",
+    "İnsizyonel biyopsi",
+    "Antibiyotik başlamak",
+    "İğne aspirasyonu",
+    "Küretaj"
+   ],
+   "a": 3,
+   "exp": "Kemik içi damar lezyonu düşünülmeli: önce iğneyle aspire edin. Kan gelirse çekim ya da biyopsi ölümcül kanamaya yol açabilir; hastayı hastaneye yönlendirin.",
+   "t": 30
+  },
+  {
+   "id": "K1",
+   "type": "POLL",
+   "label": "Tamam mı, devam mı?",
+   "q": "8 ana maddeyi bitirdik. Ne yapalım?",
+   "scored": false,
+   "opts": [
+    "Tamam: bugünlük bu kadar",
+    "Devam: ayrıntılara geçelim"
+   ],
+   "t": 30
+  },
+  {
    "id": "W1",
    "type": "POLL",
    "label": "Açılış vakası: tahminin ne?",
@@ -144,6 +292,451 @@
    "not": "Günaydın. Bugün iki ders arka arkaya: önce ağzın yumuşak doku hastalıkları, sonra tükürük bezleri. Sağdaki görüntü bir schwannom; dersin ortasında mikroskopta tanıyacaksınız. Karekod perdede: okutun; hesap yok, uygulama yok. Takma ad isterseniz yazın; dersin sonunda liderlik tablosu var. Herkes girince → ile vakaya geçiyoruz. (L: katılım ekranını gizle/göster.)",
    "katilim": true,
    "numarasiz": true
+  },
+  {
+   "tip": "kutular",
+   "baslik": "Bugün akılda kalacak 8 madde",
+   "kutular": [
+    {
+     "ton": "koyu",
+     "maddeler": [
+      "Fibrom: en sık kitle, aslında reaktif",
+      "Diş eti kitleleri: PG, PDHG, POF",
+      "Protez kitleleri",
+      "Travmatik nöroma"
+     ],
+     "numara": 1
+    },
+    {
+     "ton": "mor",
+     "maddeler": [
+      "Nodüler fasiitis: sarkom sanılan iyi huylu",
+      "Schwannom ve nörofibrom",
+      "NF1 ve MEN 2B: sendromu yakala",
+      "Hemanjiyom mu, malformasyon mu?"
+     ],
+     "numara": 5
+    }
+   ],
+   "adimlar": [
+    {
+     "sure": 12,
+     "not": "Bugün çok konu var; ama aklınızda kalması gereken sekiz madde bunlar. İlk dördü reaktif kitleler ve sinir."
+    },
+    {
+     "sure": 12,
+     "not": "Son dördü: yalancı sarkom, iki sinir tümörü, sendromlar ve damar lezyonları. Her maddeden sonra telefondan bir soru."
+    }
+   ],
+   "yazi": 46
+  },
+  {
+   "tip": "adim",
+   "baslik": "Fibrom: ağzın en sık kitlesi",
+   "etiket": "Ana madde 1/8",
+   "yazi": 40,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
+    {
+     "metin": "Ağızda en sık görülen yumuşak doku kitlesi",
+     "sure": 10,
+     "not": "İlk madde fibrom. Ağızda en sık gördüğünüz yumuşak doku kitlesi bu olacak.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-1.jpg",
+       "yazi": "Fibrom",
+       "alt": "Yanakta ısırma hattı"
+      }
+     ]
+    },
+    {
+     "metin": "Gerçek tümör değil: travmaya yanıt olarak biriken kollajen",
+     "sure": 10,
+     "not": "Adı tümör gibi ama gerçek tümör değil; tekrarlayan travmaya yanıt olarak kollajen birikir."
+    },
+    {
+     "metin": "Yanakta ısırma hattında sert, pembe, ağrısız nodül: eksizyon, nüks nadir",
+     "sure": 12,
+     "not": "Akılda kalacak cümle: yanakta ısırma hattında sert, pembe, ağrısız nodül fibromdur. Eksizyon yeterli, nüks nadir.",
+     "ust": "Akılda kalsın"
+    }
+   ]
+  },
+  {
+   "tip": "soru",
+   "baslik": "Ana madde 1: soru",
+   "soru": "A1",
+   "tema": "koyu",
+   "sure": 30,
+   "not": "Fibrom: telefondan cevapla. (Sonuç.) Doğru C: fibrom; ısırma hattında sert, pembe, ağrısız."
+  },
+  {
+   "tip": "adim",
+   "baslik": "Diş etinde kitle: üç reaktif lezyon",
+   "etiket": "Ana madde 2/8",
+   "yazi": 40,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
+    {
+     "metin": "Kırmızı, kolay kanayan, hızla büyüyen kitle; gebelikte sık",
+     "sure": 10,
+     "not": "Diş etinde üç reaktif kitle. Birincisi piyojenik granülom: kırmızı, kolay kanar, hızla büyür, gebelikte sık.",
+     "ust": "Piyojenik granülom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-34.jpg",
+       "yazi": "Piyojenik granülom",
+       "alt": "Üst ön diş eti"
+      }
+     ]
+    },
+    {
+     "metin": "Mor-mavi; yalnız diş eti ve alveol kretinde",
+     "sure": 9,
+     "not": "İkincisi periferik dev hücreli granülom: mor-mavi renkte ve yalnız diş eti ya da alveol kretinde olur.",
+     "ust": "Periferik dev hücreli granülom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-41.jpg",
+       "yazi": "Periferik dev hücreli granülom"
+      }
+     ]
+    },
+    {
+     "metin": "Yalnız diş etinde; içinde kemik; genç kadında",
+     "sure": 9,
+     "not": "Üçüncüsü periferik ossifiye fibrom: yalnız diş etinde, içinde kemik yapar, genç kadında sık.",
+     "ust": "Periferik ossifiye fibrom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-46.jpg",
+       "yazi": "Periferik ossifiye fibrom"
+      }
+     ]
+    },
+    {
+     "metin": "Üçü de nüksedebilir: çıkarırken tartar ve irritanı da temizle",
+     "sure": 8,
+     "not": "Akılda kalsın: üçü de çıkarıldıktan sonra nüksedebilir; tartarı ve irritanı da temizleyin.",
+     "ust": "Akılda kalsın"
+    }
+   ]
+  },
+  {
+   "tip": "soru",
+   "baslik": "Ana madde 2: soru",
+   "soru": "A2",
+   "tema": "koyu",
+   "sure": 30,
+   "not": "(Sonuç.) Doğru A: piyojenik granülom; gebelikte sık, kırmızı, kanar."
+  },
+  {
+   "tip": "adim",
+   "baslik": "Protezin yaptığı kitleler",
+   "etiket": "Ana madde 3/8",
+   "yazi": 40,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
+    {
+     "metin": "Uyumsuz protez kenarının vestibülde açtığı katlantılı fibröz büyüme",
+     "sure": 10,
+     "not": "Uyumsuz protez kenarı vestibülde katlantılı bir fibröz büyüme yapar: epulis fissuratum.",
+     "ust": "Epulis fissuratum",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-13.jpg",
+       "yazi": "Epulis fissuratum",
+       "alt": "Ön vestibül"
+      }
+     ]
+    },
+    {
+     "metin": "Protez altında sert damakta çakıl taşı görünümü; gece protez takmak, kötü hijyen",
+     "sure": 10,
+     "not": "Protezin altında, sert damakta çakıl taşı görünümü: inflamatuvar papiller hiperplazi. Gece protez takmak ve kötü hijyen hazırlar.",
+     "ust": "İnflamatuvar papiller hiperplazi",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-18.jpg",
+       "yazi": "İnflamatuvar papiller hiperplazi",
+       "alt": "Sert damak"
+      }
+     ]
+    },
+    {
+     "metin": "Protezi düzelt ya da yenile; çıkarılan dokuyu patolojiye gönder",
+     "sure": 10,
+     "not": "Akılda kalsın: protezi düzeltin ya da yenileyin, çıkardığınız dokuyu mutlaka patolojiye gönderin.",
+     "ust": "Akılda kalsın"
+    }
+   ]
+  },
+  {
+   "tip": "soru",
+   "baslik": "Ana madde 3: soru",
+   "soru": "A3",
+   "tema": "koyu",
+   "sure": 30,
+   "not": "(Sonuç.) Doğru D: eksizyon, patoloji ve protezin düzeltilmesi."
+  },
+  {
+   "tip": "adim",
+   "baslik": "Travmatik nöroma",
+   "etiket": "Ana madde 4/8",
+   "yazi": 40,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
+    {
+     "metin": "Kesilen sinirin düzensiz iyileşmesi: akson, Schwann hücresi ve skar",
+     "sure": 10,
+     "not": "Kesilen sinir düzensiz iyileşir; akson, Schwann hücresi ve skar bir arada nodül yapar.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-54.jpg",
+       "yazi": "Mental sinir boyunca nodül",
+       "alt": "Ameliyat sırasında"
+      }
+     ]
+    },
+    {
+     "metin": "En sık mental foramen bölgesi, dil ve alt dudak; çekim ya da cerrahi öyküsü",
+     "sure": 10,
+     "not": "En sık mental foramen bölgesinde, dilde ve alt dudakta; hastada çekim ya da cerrahi öyküsü vardır."
+    },
+    {
+     "metin": "Protez bastırınca ağrıyan nodül: travmatik nöroma; tedavi eksizyon",
+     "sure": 10,
+     "not": "Akılda kalsın: mental foramen üstünde protez bastırınca ağrıyan nodül travmatik nöromadır; tedavi eksizyon.",
+     "ust": "Akılda kalsın",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-55.jpg",
+       "yazi": "Skar içinde sinir demetleri"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tip": "soru",
+   "baslik": "Ana madde 4: soru",
+   "soru": "A4",
+   "tema": "koyu",
+   "sure": 30,
+   "not": "(Sonuç.) Doğru B: travmatik nöroma; çekim öyküsü ve basınca ağrı."
+  },
+  {
+   "tip": "adim",
+   "baslik": "Nodüler fasiitis: sarkom sanılır, iyi huyludur",
+   "etiket": "Ana madde 5/8",
+   "yazi": 40,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
+    {
+     "metin": "Genç erişkin; birkaç haftada hızla büyüyen, sıklıkla ağrılı kitle",
+     "sure": 10,
+     "not": "Nodüler fasiitis genç erişkinde birkaç haftada hızla büyüyen, çoğu zaman ağrılı bir kitle.",
+     "gorsel": [
+      {
+       "foto": "img/M3/nf_yanak.jpg",
+       "yazi": "Yanakta kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Mikroskopta bol mitoz: klinikte de mikroskopta da sarkom sanılır",
+     "sure": 10,
+     "not": "Mikroskopta mitoz boldur; bu yüzden hem klinikte hem mikroskopta sarkom sanılır.",
+     "gorsel": [
+      {
+       "foto": "img/M3/nf_mikroskop.jpg",
+       "yazi": "Miksoid zeminde iğsi hücreler"
+      }
+     ]
+    },
+    {
+     "metin": "Atipik mitoz ve pleomorfizm yok: iyi huylu, yerel eksizyon yeterli",
+     "sure": 10,
+     "not": "Akılda kalsın: atipik mitoz ve pleomorfizm yok; iyi huylu, yerel eksizyon yeterli. Bu hastaya geniş ameliyat yapmayız.",
+     "ust": "Akılda kalsın"
+    }
+   ]
+  },
+  {
+   "tip": "soru",
+   "baslik": "Ana madde 5: soru",
+   "soru": "A5",
+   "tema": "koyu",
+   "sure": 30,
+   "not": "(Sonuç.) Doğru E: atipik mitoz ve pleomorfizm yok."
+  },
+  {
+   "tip": "adim",
+   "baslik": "Schwannom ve nörofibrom",
+   "etiket": "Ana madde 6/8",
+   "yazi": 40,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
+    {
+     "metin": "Kapsüllü, yavaş büyür; ağızda en sık dil",
+     "sure": 10,
+     "not": "Schwannom kapsüllüdür ve yavaş büyür; ağızda en sık dilde görülür.",
+     "ust": "Schwannom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-60.jpg",
+       "yazi": "Ağız tabanında kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Antoni A (palizat çekirdekler) ve Antoni B (gevşek alan); S100 pozitif",
+     "sure": 10,
+     "not": "Mikroskopta Antoni A alanında çekirdekler sıra sıra dizilir, Antoni B gevşektir; S100 pozitif.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-61.jpg",
+       "yazi": "Antoni A ve B"
+      }
+     ]
+    },
+    {
+     "metin": "Kapsülsüz, sinirle iç içe büyür; periferik sinir kılıfının en sık tümörü",
+     "sure": 10,
+     "not": "Nörofibrom ise kapsülsüzdür, sinirle iç içe büyür ve periferik sinir kılıfının en sık tümörüdür.",
+     "ust": "Nörofibrom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-62.jpg",
+       "yazi": "Üst çene diş etinde nodül"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tip": "soru",
+   "baslik": "Ana madde 6: soru",
+   "soru": "A6",
+   "tema": "koyu",
+   "sure": 30,
+   "not": "(Sonuç.) Doğru C: kapsüllü, Antoni A ve B. Kapsülsüz olan nörofibrom."
+  },
+  {
+   "tip": "adim",
+   "baslik": "NF1 ve MEN 2B: ağızdan sendromu yakala",
+   "etiket": "Ana madde 7/8",
+   "yazi": 40,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
+    {
+     "metin": "Nörofibrom görürsen hastayı NF1 için muayene et",
+     "sure": 9,
+     "not": "Ağızda nörofibrom görürseniz hastayı nörofibromatozis tip 1 için muayene edin.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-69.jpg",
+       "yazi": "Dilin tek taraflı büyümesi",
+       "alt": "NF1"
+      }
+     ]
+    },
+    {
+     "metin": "NF1: café-au-lait lekeleri, koltuk altı çillenme, Lisch nodülleri; sarkom riski %8–13",
+     "sure": 11,
+     "not": "Café-au-lait lekeleri, koltuk altında çillenme, irisde Lisch nodülleri. Malign periferik sinir kılıfı tümörü riski yüzde 8 ila 13.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-68.jpg",
+       "yazi": "Café-au-lait lekeleri"
+      }
+     ]
+    },
+    {
+     "metin": "Dil ucunda çok sayıda nöroma: medüller tiroid karsinomu, endokrinolojiye yönlendir",
+     "sure": 10,
+     "not": "Akılda kalsın: dil ucunda ve dudakta çok sayıda nöroma MEN 2B'dir; medüller tiroid karsinomu gelişir. Hastayı hemen endokrinolojiye yönlendirin.",
+     "ust": "MEN 2B",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-74.jpg",
+       "yazi": "MEN 2B: dil ucunda nöromalar"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tip": "soru",
+   "baslik": "Ana madde 7: soru",
+   "soru": "A7",
+   "tema": "koyu",
+   "sure": 30,
+   "not": "(Sonuç.) Doğru B: MEN 2B, medüller tiroid karsinomu; endokrinoloji."
+  },
+  {
+   "tip": "adim",
+   "baslik": "Hemanjiyom mu, vasküler malformasyon mu?",
+   "etiket": "Ana madde 8/8",
+   "yazi": 40,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
+    {
+     "metin": "Doğumdan sonraki haftalarda çıkar, hızla büyür, sonra geriler (9 yaşta %90)",
+     "sure": 10,
+     "not": "Hemanjiyom bir tümördür: doğumdan sonraki haftalarda çıkar, hızla büyür, sonra geriler; dokuz yaşında yüzde 90'ı kaybolur.",
+     "ust": "Hemanjiyom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-93.jpg",
+       "yazi": "İnfantil hemanjiyom",
+       "alt": "Üst dudak"
+      }
+     ]
+    },
+    {
+     "metin": "Doğumda vardır, çocukla büyür, gerilemez; mor-mavi, bastırınca söner",
+     "sure": 10,
+     "not": "Vasküler malformasyon doğumda vardır, çocukla birlikte büyür, gerilemez; mor-mavi renkte, bastırınca söner.",
+     "ust": "Vasküler malformasyon",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-94.jpg",
+       "yazi": "Venöz malformasyon",
+       "alt": "Dil"
+      }
+     ]
+    },
+    {
+     "metin": "Çenede kemik içi damar lezyonunda çekim ve biyopsiden önce iğne aspirasyonu: ölümcül kanama riski",
+     "sure": 12,
+     "not": "Akılda kalsın: çenede kemik içi damar lezyonunda dişi çekmeden ya da biyopsi almadan önce iğneyle aspire edin; ölümcül kanama olabilir.",
+     "ust": "Akılda kalsın",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-95.jpg",
+       "yazi": "Kemik içi venöz malformasyon"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tip": "soru",
+   "baslik": "Ana madde 8: soru",
+   "soru": "A8",
+   "tema": "koyu",
+   "sure": 30,
+   "not": "(Sonuç.) Doğru D: iğne aspirasyonu; kanama riski."
+  },
+  {
+   "tip": "soru",
+   "baslik": "Tamam mı, devam mı?",
+   "soru": "K1",
+   "tema": "koyu",
+   "sure": 40,
+   "aciklama": "Tamam çıkarsa çıkış biletine geçiyoruz; devam çıkarsa açılış vakasıyla ayrıntılara giriyoruz.",
+   "not": "Ana maddeler bitti. Sonucu gösteriyorum. TAMAM çıkarsa kumandada Slaytlar menüsünden 'Çıkış bileti'ne atla (sonra liderlik ve kaynaklar). DEVAM çıkarsa → ile açılış vakasından sürdür; ayrıntılı bölüm bu maddeleri derinleştirir."
   },
   {
    "tip": "adim",
