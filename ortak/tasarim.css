@@ -1,0 +1,118 @@
+/* Lam Başında tasarım sistemi.
+   Dünya: H&E boyalı bir lam. Hematoksilen (mor) yapıyı ve ana eylemi taşır,
+   eozin (pembe) "şu an"ı (canlı soru, açık adım, seçili şey), kehribar yalnız
+   "dikkat"i (DUS, tempo uyarısı). Ayrıntı: DESIGN.md.
+   Bileşenler yalnız rol token'larını kullanır (--c-*), ham renk yazılmaz. */
+
+@font-face{font-family:"Literata";font-style:normal;font-weight:400 700;font-display:swap;src:url("fontlar/literata-normal-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Literata";font-style:normal;font-weight:400 700;font-display:swap;src:url("fontlar/literata-normal-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Literata";font-style:italic;font-weight:400 700;font-display:swap;src:url("fontlar/literata-italic-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Literata";font-style:italic;font-weight:400 700;font-display:swap;src:url("fontlar/literata-italic-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400 800;font-display:swap;src:url("fontlar/figtree-normal-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400 800;font-display:swap;src:url("fontlar/figtree-normal-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Figtree";font-style:italic;font-weight:400 800;font-display:swap;src:url("fontlar/figtree-italic-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Figtree";font-style:italic;font-weight:400 800;font-display:swap;src:url("fontlar/figtree-italic-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+
+:root{
+  /* İlkel renkler (bileşenlerde kullanılmaz) */
+  --hema-900:#22163A; --hema-700:#4A2C82; --hema-300:#BBA3F0; --hema-100:#EEE7F8;
+  --eosin-700:#B0275B; --eosin-300:#F283AA; --eosin-100:#FBE8EF;
+  --amber-400:#F2B705;
+  --glass-50:#FAF7FB; --glass-100:#F1ECF6; --glass-200:#E4DAEC; --glass-400:#8F80A3; --glass-600:#5E5070;
+  --night-950:#160F21; --night-900:#211830; --night-800:#2D2243; --night-600:#4A3D60; --night-500:#6E5F84; --night-300:#AFA1C2; --night-50:#F3EDF8;
+
+  /* Roller: açık tema */
+  --c-bg:var(--glass-50);
+  --c-surface:#FFFFFF;
+  --c-surface-2:var(--glass-100);
+  --c-text:var(--hema-900);
+  --c-text-2:var(--glass-600);
+  --c-line:var(--glass-200);
+  --c-line-strong:var(--glass-400);
+  --c-accent:var(--hema-700);
+  --c-accent-soft:var(--hema-100);
+  --c-on-accent:#FFFFFF;
+  --c-now:var(--eosin-700);
+  --c-now-soft:var(--eosin-100);
+  --c-on-now:#FFFFFF;
+  --c-attn:var(--amber-400);
+  --c-on-attn:var(--hema-900);
+  --c-ok:#17744E; --c-ok-soft:#E3F3EB;
+  --c-bad:#A8302B; --c-bad-soft:#FBE8E6;
+  --c-scrim:rgb(22 15 33 / .55);
+  --c-img-edge:rgb(0 0 0 / .1);
+
+  /* Yazı */
+  --f-display:"Literata",Georgia,"Times New Roman",serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --t-xs:.8125rem; --t-sm:.875rem; --t-md:1rem; --t-lg:1.125rem; --t-xl:1.375rem; --t-2xl:1.75rem; --t-3xl:2.5rem;
+
+  /* Boşluk, köşe, gölge, hareket */
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:24px; --s-6:32px; --s-7:48px;
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-pill:999px;
+  --shadow-1:0 1px 2px rgb(34 22 58 / .06),0 2px 8px rgb(34 22 58 / .06);
+  --shadow-2:0 4px 12px rgb(34 22 58 / .10),0 12px 32px rgb(34 22 58 / .14);
+  --ease:cubic-bezier(.2,0,0,1);
+  --tap:44px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --c-bg:var(--night-950); --c-surface:var(--night-900); --c-surface-2:var(--night-800);
+  --c-text:var(--night-50); --c-text-2:var(--night-300); --c-line:var(--night-600); --c-line-strong:var(--night-500);
+  --c-accent:var(--hema-300); --c-accent-soft:var(--night-800); --c-on-accent:var(--night-950);
+  --c-now:var(--eosin-300); --c-now-soft:#3A1E2C; --c-on-now:var(--night-950);
+  --c-ok:#5FCB97; --c-ok-soft:#173327; --c-bad:#F47D74; --c-bad-soft:#3B1C1B;
+  --c-img-edge:rgb(255 255 255 / .1);
+  --shadow-1:0 1px 2px rgb(0 0 0 / .3); --shadow-2:0 8px 32px rgb(0 0 0 / .5);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --c-bg:var(--night-950); --c-surface:var(--night-900); --c-surface-2:var(--night-800);
+  --c-text:var(--night-50); --c-text-2:var(--night-300); --c-line:var(--night-600); --c-line-strong:var(--night-500);
+  --c-accent:var(--hema-300); --c-accent-soft:var(--night-800); --c-on-accent:var(--night-950);
+  --c-now:var(--eosin-300); --c-now-soft:#3A1E2C; --c-on-now:var(--night-950);
+  --c-ok:#5FCB97; --c-ok-soft:#173327; --c-bad:#F47D74; --c-bad-soft:#3B1C1B;
+  --c-img-edge:rgb(255 255 255 / .1);
+  --shadow-1:0 1px 2px rgb(0 0 0 / .3); --shadow-2:0 8px 32px rgb(0 0 0 / .5);
+  color-scheme:dark}
+
+/* Taban */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{margin:0}
+body{background:var(--c-bg);color:var(--c-text);font-family:var(--f-body);font-size:var(--t-md);line-height:1.5;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}
+h1,h2,h3{font-family:var(--f-display);font-weight:650;line-height:1.2;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0;text-wrap:pretty}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;touch-action:manipulation}
+img{max-width:100%}
+a{color:var(--c-accent);text-underline-offset:.18em;text-decoration-thickness:from-font}
+::selection{background:var(--c-now);color:var(--c-on-now)}
+:focus-visible{outline:3px solid var(--c-accent);outline-offset:2px;border-radius:4px}
+.num,.tnum{font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hidden{display:none!important}
+
+/* İşaret: lam üzerinde boyalı doku */
+.mark{flex:none;display:block;width:40px;height:40px}
+
+/* Düğmeler: tek dolu ana eylem, diğerleri sakin */
+.ui-btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s-2);min-height:var(--tap);padding:10px 18px;border-radius:var(--r-md);border:1px solid transparent;font-weight:650;font-size:var(--t-md);line-height:1.2;text-decoration:none;text-align:center;background:var(--c-accent);color:var(--c-on-accent);transition-property:background-color,border-color,color,scale;transition-duration:150ms;transition-timing-function:ease-out}
+.ui-btn.quiet{background:var(--c-surface);color:var(--c-text);border-color:var(--c-line-strong)}
+.ui-btn:not(:disabled):active{scale:.96}
+.ui-btn:disabled{opacity:.45;cursor:default}
+@media (hover:hover){.ui-btn:not(:disabled):hover{background:color-mix(in oklab,var(--c-accent) 88%,var(--c-text))}.ui-btn.quiet:not(:disabled):hover{background:var(--c-surface-2);border-color:var(--c-accent)}}
+.ui-btn svg{width:18px;height:18px;flex:none}
+
+/* Sakin bağlantı satırı */
+.ui-links{display:flex;gap:var(--s-2);flex-wrap:wrap}
+.ui-link{display:inline-flex;align-items:center;gap:6px;min-height:var(--tap);padding:0 14px;border-radius:var(--r-pill);border:1px solid var(--c-line);background:var(--c-surface);color:var(--c-text);text-decoration:none;font-weight:600;font-size:var(--t-sm);transition:border-color 150ms ease-out,background-color 150ms ease-out}
+@media (hover:hover){.ui-link:hover{border-color:var(--c-accent)}}
+.ui-link svg{width:16px;height:16px;color:var(--c-accent)}
+
+/* Kart */
+.ui-card{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-lg);padding:var(--s-4)}
+
+/* Görsel kenarı */
+.ui-img{outline:1px solid var(--c-img-edge);outline-offset:-1px}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:1ms!important;animation-iteration-count:1!important;transition-duration:1ms!important;scroll-behavior:auto!important}}

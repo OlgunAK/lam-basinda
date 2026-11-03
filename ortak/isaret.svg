@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="Lam Başında">
+  <rect x="2" y="9" width="36" height="22" rx="4" fill="#EEE7F8" stroke="#4A2C82" stroke-width="1.5"/>
+  <rect x="4.5" y="11.5" width="8" height="17" rx="2" fill="#4A2C82" opacity=".16"/>
+  <path d="M16 21.5c0-5 4-8 9-7.6 5 .4 9 3 8.6 7-.4 4.4-4.6 6.3-9 6.1-5-.2-8.6-1.5-8.6-5.5z" fill="#F283AA"/>
+  <circle cx="21" cy="19" r="1.7" fill="#4A2C82"/>
+  <circle cx="26.5" cy="17.4" r="1.5" fill="#4A2C82"/>
+  <circle cx="29.5" cy="22.2" r="1.7" fill="#4A2C82"/>
+  <circle cx="23.4" cy="24" r="1.4" fill="#4A2C82"/>
+</svg>

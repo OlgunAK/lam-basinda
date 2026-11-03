@@ -14,6 +14,7 @@ Tüm sayfalar GitHub Pages üzerinden yayınlanır. Aşağıdaki bağlantılar �
 | Kumanda | https://olgunak.github.io/lam-basinda/canli/kumanda.html | Dersi yöneten hoca |
 | Quiz (evde tekrar) | https://olgunak.github.io/lam-basinda/quiz/ | Öğrenciler (isteğe bağlı) |
 | Dersler (PowerPoint, internetsiz) | https://olgunak.github.io/lam-basinda/indir/ | Öğrenciler, hoca |
+| Düzenleyici | https://olgunak.github.io/lam-basinda/duzenle/ | Hoca: slaytların yazısı, görseli, sorusu ve notu tarayıcıdan düzenlenir, tek tuşla yayınlanır |
 | Ders günü flaş paketi | https://olgunak.github.io/lam-basinda/indir/flas.zip | Hoca: kısayollar (perde, kumanda, öğrenci), BASLAT.html (kumanda karekodu, kontrol listesi) ve dört dersin PowerPoint'i; `tools/slaytlar/yeni/flas_yap.py` ile üretilir (pptx_yap.py'den sonra) |
 
 ### Nasıl kullanılır
@@ -66,6 +67,22 @@ Hesabın e-postasını değiştirmek için `canli/config.js` içindeki `PERDE_EP
 - **Öğrenci ekranı**: Karekodu okutan öğrenci formsuz, anında içeri girer (anonim). Telefon perdedeki slaytı aynalar; üstteki **Perde: açık/kapalı** düğmesi aynayı kapatır (tercih telefonda saklanır, kapalıyken eski "Perdeye bak" ekranı ve soru kartları) (`dersler/<ders>.json` yüklenir, `slide` alanı izlenir; slayta dokununca yatay tam ekran). Soru açılınca şıklar gelir; vaka slaytı gibi `qopen` slaytlarında slaytın küçüğü şıkların üstünde durur. İşaretleyince telefon slayta döner, altta "Cevabın: B · Değiştir" şeridi kalır; Değiştir ile oylama kapanana kadar güncellenir. Dağılım slaytlarında (`q`) soru ekranı ve durum yazısı kalır; liderlik ve bitiş ekranları eskisi gibi. Üstteki **Ad ekle** ile sonradan takma ad + PIN alınır: o ana kadarki cevaplar adına taşınır, anonim katılımcı kaydı `gone` ile işaretlenir (perde ve kumanda saymaz). Elle kod yazanlar için eski form duruyor. Tek sütun, telefon öncelikli tasarlanmıştır.
   Takma ad yazan öğrenci 4 haneli bir PIN de belirler: ad o derste ona ait olur, aynı adı ikinci kişi alamaz. Kayıt bir kez açıldıktan sonra PIN eşleşmeden kimse (adın şu anki telefonu bile) o adla giremez ya da PIN'i değiştiremez; yanlış PIN "ad başkasında" uyarısı alır. Blok derste yeni oturum bir öncekini hatırlar (`prev`): birinci derste PIN ile alınmış ad ikinci derste de yalnız aynı PIN ile alınabilir, önce gelen biri başka PIN ile o adı kapamaz. Kimlik ad üzerinden yürür: aynı ad + PIN ile başka cihazdan girince kayıt (cevaplar, puan) oradan devam eder, eski cihaz "Başka cihazdan giriş yapıldı" ekranı görür ve cevap yazamaz; liderlik tablosunda kişi tek satırdır. Üstteki sarı **Skor** düğmesi (ya da oturum kodu) puan durumunu açar: ad, cevaplanan ve doğru sayısı, sıra ve ilk 10; her cevap açıklamasında perde puan durumunu yeniler. Yeni soru açılınca bu pencere kendiliğinden kapanır. Blok geçişinde ad ve PIN telefonda saklı kaldığı için yeni oturumda da aynı ad kendiliğinden alınır.
 
+## Düzenleyici
+
+`duzenle/` (https://olgunak.github.io/lam-basinda/duzenle/) bilgisayarda tarayıcıda açılır; kurulum gerekmez.
+
+- **Kaynaklı dersler (M3, M4 ve düzenleyicide açılan yeni dersler):** slayt ekle, sil, taşı, çoğalt; başlık, maddeler, görseller (dersteki görsellerden seç ya da bilgisayardan yükle; en çok 1800 px'e küçültülür), soru bağlantısı, DUS ve "zaman kalırsa" etiketleri, alt şerit, süre ve konuşma notu. Önizleme yayındaki slaytın aynısıdır.
+- **Hazır dersler (M1, M2):** slayt resimleri sabittir; resim değiştirilebilir (16:9 JPG/PNG), başlık, konuşma notu ve sorular düzenlenir.
+- **Sorular** sekmesi: tür, metin, şıklar, doğru cevap, açıklama, görsel, süre; eşleştirme soruları; öteki türler için JSON alanı.
+- **Kaydet ve yayınla:** değişen slaytlar tarayıcıda yeniden çizilir ve bütün dosyalar tek commit ile `main` dalına yazılır; site 1–2 dakikada güncellenir. Ardından `.github/workflows/pptx.yml` değişen derslerin PowerPoint'ini, indirme sayfasını ve flaş paketini yeniden üretir.
+- Bunun için bir kez **Ayarlar**'a GitHub anahtarı girilir: github.com/settings/personal-access-tokens/new → yalnız `lam-basinda` deposu → *Contents: Read and write*. Anahtar yalnız o tarayıcıda saklanır.
+- Anahtar yoksa **Bilgisayara indir** değişen dosyaları zip olarak verir (GitHub'da *Add file → Upload files* ile aynı yollara yüklenir).
+- Değişiklikler yayınlanana kadar o bilgisayarda taslak olarak saklanır; sayfa yeniden açılınca taslak sorulur. **Geri al** (Ctrl+Z) son değişiklikleri geri alır.
+
+## Tasarım
+
+Görsel kurallar `DESIGN.md` içinde, token'lar `ortak/tasarim.css` içinde (H&E dünyası: hematoksilen moru ana eylem, eozin pembesi "şu an", kehribar yalnız DUS ve tempo uyarısı; Literata başlıklar, Figtree arayüz; fontlar `ortak/fontlar/` altında, internetten çekilmez). Bütün sayfalar ve M3/M4 slaytları bu sistemi kullanır. Canlı oturumun JS paketleri (`canli/*.js`) derlenmiş olduğu için sayfalar yalnız CSS ile yeniden düzenlendi; paketlerin içine gömülü birkaç renk (kelime bulutu, eşleştirme ızgarası) eski paletle kalır.
+
 ## Güvenlik ve Firestore kuralları
 
 - `canli/config.js` içindeki Firebase web anahtarı gizli değildir; tarayıcıya gitmek için tasarlanmıştır ve sitede zaten herkes görür. GitHub'ın `AIza…` uyarısı bu yüzden "False positive" olarak kapatılabilir. Yine de Google Cloud Console → APIs & Services → Credentials altında anahtara **Website restrictions** (`olgunak.github.io/*`, `lam-basinda.firebaseapp.com/*`) ve **API restrictions** (Identity Toolkit, Cloud Firestore, Firebase Installations) ekleyin.
@@ -99,7 +116,9 @@ Slaytlar `tools/slaytlar/build.py` + `build2.py` ile orijinal görsellerden yeni
 
 **M3 ve M4 (17 Kasım 2026, blok ders):** Yumuşak doku hastalıkları ve tükürük bezi hastalıkları, her biri 25 dakika. Akış mukozal derslerle aynı: açılış vakası, çerçeve, bloklar, DUS molası (Neville 5. baskının kitap sonundaki örnek sınav sorularından), vakaya dönüş, çıkış bileti; her derste bir "Patoloğun notu" kutusu (M3: granüler hücreli tümörde yüzeysel biyopsi tuzağı, M4: nekrotizan sialometaplazide istek formu). M3 fakültenin ders notunun sırasını izler: neoplastik olmayan kitleler, iyi huylu tümörler, sarkomlar (açılış vakası dil sırtında granüler hücreli tümör; Neville'de olmayan juvenil hiyalen fibromatozis, fibromatozis colli, keloid ders notundan, nodüler fasiitis WHO 2022'den; ders notuyla Neville'in ayrıldığı yerler slaytta ve notlarda belirtilir). M3'ün bütün içerik slaytları adım adım açılır (`seq`): her madde tek cümle, ayrı bir kare olarak gelir, soldaki görsel o maddenin görseli; kumandadaki not o adımın cümlesidir, başlıkta `· 2/5` sayacı görünür. PowerPoint'e her slaytın yalnız son (tam) hâli girer. Neville'de fotoğrafı olmayan juvenil hiyalen fibromatozis, fibromatozis colli ve nodüler fasiitis görselleri ders notundan (`tools/slaytlar/yeni/resmi/`). M4 de ders notunun sırasını izler (genel bilgi, tümör dışı hastalıklar, iyi huylu, kötü huylu tümörler); bütün içerik slaytları adım adım açılır; Neville'de görseli olmayan konuların görselleri ders notundan. Adım adım slayt yardımcıları (`seq_slide`, `stat`) `deck.py` içinde. M4 açılışta M3'ün çıkış biletini gösterir. Ders sonunda öğrenciler `quiz/` sayfasına yönlendirilir: Neville'in örnek sınav soruları Türkçe, cevap açıklamalı. Dört set var: M1 (24 soru; bölüm 7, 9, 16), M2 (28 soru; bölüm 6, 7, 9, 10, 16), M3 (bölüm 12, 24 soru), M4 (bölüm 11, 20 soru). Sorular `quiz/sorular_mukoza.js` ve `quiz/sorular.js` içinde; puan yalnız öğrencinin tarayıcısında tutulur. PowerPoint sürümleri `python3 tools/slaytlar/yeni/pptx_yap.py` ile üretilir: her slayt tam sayfa görsel, konuşma notları (canlı yönergeler çıkarılarak) ve soruların doğru cevabı not bölümünde; liderlik ve kelime bulutu slaytları dosyada yok. Slaytlar değişince betik yeniden çalıştırılmalı. Ders JSON'undaki `quiz` alanı (ör. `"../quiz/#m1"`) varsa ders bitince öğrencinin telefonunda **Quiz: kendini sına** düğmesi çıkar ve perdenin bitiş karekodu quize gider; `#m1`, `#m2`, `#yd`, `#tb` ilgili seti doğrudan açar. Rakamlar ve adlar Neville 5. baskı (2024) ve WHO 2022'den; klinik fotoğraflar Neville 5 ve Laskaris 4. baskıdan.
 
-Bu iki dersin slaytları HTML olarak kurulup tarayıcıda JPG'ye çevrilir: `tools/slaytlar/yeni/` (`deck.py` bileşenler ve ders JSON'u, `render.mjs` Playwright ile çizim ve taşma denetimi, `foto.py` kitap PDF'lerinden fotoğraf kesme, `m3.py`, `m4.py` ders içerikleri). Yeniden üretmek için kitap PDF'leri (`neville5.pdf`, `laskaris.pdf`) bir klasörde olmalı ve Lora/Lato fontları `tools/slaytlar/fonts/` altında: `KITAP=/kitap/klasoru python3 tools/slaytlar/yeni/m3.py` (yalnız bazı slaytlar için sonuna numara: `m3.py 5 6`). Kitaplar ve fontlar repoda değildir.
+**M3 ve M4 artık veri dosyasından üretilir.** Her dersin bütün içeriği (slayt türü, başlık, adım adım maddeler, görseller, notlar, süreler, sorular) `canli/dersler/kaynak/<ID>.json` içindedir; görseller `canli/img/<ID>/` altında (kitap fotoğrafları eski slaytlardan kesilip repoya alındı, kitap PDF'leri artık gerekmez). Slaytları `ortak/slayt.js` çizer: aynı kod hem düzenleyicide önizleme ve JPG üretimi yapar hem de canlı oturumun okuduğu `canli/dersler/<ID>.json` dosyasını (zaman damgaları, CANLI satırları, adım başlıkları) eskisiyle birebir aynı biçimde yazar. Toplu yeniden çizim: `node tools/slaytlar/ciz.mjs M3 M4` (yalnız bazı slaytlar: `M3:05,06`). Eski `m3.py`/`m4.py` yalnız içeriğin ilk kaynağı olarak duruyor; çalıştırılmamalı.
+
+Slayt türleri: `kapak` (katılım ekranı), `adim` (maddeler sırayla açılır, her maddenin solda görseli olabilir: fotoğraf, büyük rakam, kutu, patoloğun notu, çubuk grafik), `soru`, `kutular` (plan), `tablo`, `kaynaklar`, `liderlik`, `bulut`. Metinlerde `**kalın**`, `*italik*` ve `->` (ok) yazılabilir.
 
 
 | Kod | Ders | Tarih |
@@ -112,18 +131,21 @@ Bu iki dersin slaytları HTML olarak kurulup tarayıcıda JPG'ye çevrilir: `too
 ## Klasör yapısı
 
 ```
+ortak/              Ortak tasarım (tasarim.css, fontlar, işaret) ve slayt motoru (slayt.js)
+duzenle/            Düzenleyici (tarayıcıda; GitHub'a kaydeder)
+DESIGN.md           Tasarım kuralları
 index.html          Ana sayfa: derslerin PowerPoint sürümleri ve quizler (pptx_yap.py üretir)
 indir/              Derslerin PowerPoint sürümleri ve indirme sayfası (tools/slaytlar/yeni/pptx_yap.py üretir)
 quiz/               Evde tekrar quizi (index.html, sorular_mukoza.js, sorular.js)
 firestore.rules     Firestore güvenlik kuralları (Actions ile yayınlanır)
 firebase.json       Firebase CLI ayarı (kural dosyasının yeri)
 .github/workflows/  Kuralları Firebase'e yayınlayan iş akışı
-tools/slaytlar/     Slayt üreticileri (build.py/build2.py: M1–M2; yeni/: M3–M4)
+tools/slaytlar/     Slayt üreticileri (ciz.mjs: kaynak JSON'dan çizim; build.py/build2.py: M1–M2; yeni/: PowerPoint, flaş paketi, eski M3–M4 betikleri)
 canli/
   index.html        Öğrenci ekranı
   perde.html        Perde
   kumanda.html      Kumanda
-  dersler/          Ders ve soru tanımları (M1–M4.json, index.json)
+  dersler/          Ders ve soru tanımları (M1–M4.json, index.json; kaynak/: M3, M4 düzenlenebilir kaynak)
   slaytlar/         Ders slaytları (M1–M4)
   img/              Soru görselleri
 ```

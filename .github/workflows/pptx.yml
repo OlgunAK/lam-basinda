@@ -1,0 +1,56 @@
+name: PowerPoint dosyalarını yenile
+
+# Düzenleyici (duzenle/) ya da elle yapılan bir değişiklik slaytları veya ders dosyalarını
+# değiştirince, değişen derslerin PowerPoint'i, indirme sayfası ve ders günü flaş paketi yeniden üretilir.
+on:
+  push:
+    branches: [main]
+    paths:
+      - canli/slaytlar/**
+      - canli/dersler/*.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pptx
+  cancel-in-progress: false
+
+jobs:
+  pptx:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install python-pptx pillow qrcode
+      - name: Değişen dersleri bul
+        id: dersler
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            IDS=""
+          else
+            IDS=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} \
+              | sed -nE 's#^canli/slaytlar/([A-Za-z0-9]+)/.*#\1#p; s#^canli/dersler/([A-Za-z0-9]+)\.json$#\1#p' \
+              | grep -v '^index$' | sort -u | tr '\n' ' ')
+          fi
+          echo "ids=$IDS" >> "$GITHUB_OUTPUT"
+          echo "Dersler: ${IDS:-hepsi}"
+      - name: PowerPoint ve flaş paketi
+        working-directory: tools/slaytlar/yeni
+        run: |
+          python pptx_yap.py ${{ steps.dersler.outputs.ids }}
+          python flas_yap.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add indir index.html
+          if git diff --cached --quiet; then echo "Değişiklik yok"; exit 0; fi
+          git commit -m "PowerPoint dosyaları yenilendi"
+          git pull --rebase origin main
+          git push origin HEAD:main

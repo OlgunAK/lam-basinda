@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Slayt çizimi</title>
+<style>html,body{margin:0;background:#000}#sahne{width:1920px;height:1080px}</style></head>
+<body><div id="sahne"></div>
+<script src="../ortak/slayt.js"></script>
+<script>
+/* Toplu çizim için yardımcı sayfa (tools/slaytlar/ciz.mjs açar). ?ders=M3 */
+window.DERS = null;
+window.yukle = async function (id) {
+  const r = await fetch("../canli/dersler/kaynak/" + id + ".json?t=" + Date.now());
+  window.DERS = await r.json();
+  const st = document.createElement("style"); st.textContent = Slayt.css("../ortak/fontlar/"); document.head.appendChild(st);
+  await document.fonts.load("600 40px Literata"); await document.fonts.load("400 40px Figtree"); await document.fonts.load("700 40px Figtree");
+  return Slayt.kareler(window.DERS).map(f => ({ ad: Slayt.dosyaAdi(f), gorsel: Slayt.gorselVar(f) }));
+};
+window.goster = async function (i) {
+  const f = Slayt.kareler(window.DERS)[i];
+  const sahne = document.getElementById("sahne");
+  sahne.innerHTML = Slayt.html(window.DERS, f, { kok: "../canli/" });
+  await Promise.all([...sahne.querySelectorAll("img")].map(im => im.complete ? 0 : new Promise(r => { im.onload = im.onerror = r; })));
+  await document.fonts.ready;
+  Slayt.sigdir(sahne.firstChild);
+  // taşma denetimi
+  const u = [], g = sahne.querySelector(".govde");
+  if (g) { const gb = g.getBoundingClientRect(); sahne.querySelectorAll(".govde *").forEach(el => { const b = el.getBoundingClientRect(); if (b.width && (b.bottom > gb.bottom + 2 || b.right > gb.right + 2) && getComputedStyle(el).visibility !== "hidden") u.push((el.className || el.tagName) + ": " + (el.textContent || "").slice(0, 40)); }); }
+  const h1 = sahne.querySelector("h1"); if (h1 && h1.getBoundingClientRect().bottom > 200) u.push("başlık uzun");
+  return u.slice(0, 2);
+};
+window.canliJSON = () => Slayt.canli(window.DERS);
+</script></body></html>

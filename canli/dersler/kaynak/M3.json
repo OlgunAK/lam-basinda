@@ -1,0 +1,2063 @@
+{
+ "id": "M3",
+ "baslik": "Yumuşak Doku Hastalıkları",
+ "kisa": "Yumuşak Doku Hastalıkları",
+ "tarih": "17 Kasım 2026",
+ "surum": "4",
+ "cerceve": "Üç grup: neoplastik olmayan kitleler, iyi huylu tümörler, sarkomlar",
+ "serit": {
+  "ad": "Üç grup",
+  "gruplar": [
+   "1 Neoplastik olmayan",
+   "2 İyi huylu",
+   "3 Sarkom"
+  ]
+ },
+ "cta": "24 Kasım'a kadar isteyen Neville'in örnek sorularını Türkçe quiz olarak çözsün: olgunak.github.io/lam-basinda/quiz. İlk üçü gelecek derste burada anarım.",
+ "quiz": "../quiz/#yd",
+ "sorular": [
+  {
+   "id": "W1",
+   "type": "POLL",
+   "label": "Açılış vakası: tahminin ne?",
+   "q": "Bu hastada ön tanın ne?",
+   "scored": false,
+   "img": "img/m3_vaka.jpg",
+   "opts": [
+    "Granüler hücreli tümör",
+    "Skuamöz hücreli karsinom",
+    "Schwannom",
+    "Lipom",
+    "Travmatik nöroma"
+   ],
+   "hide": true,
+   "t": 45
+  },
+  {
+   "id": "W2",
+   "type": "IMGMCQ",
+   "label": "Dört mikroskop görüntüsü",
+   "q": "Dört mikroskop görüntüsü. Hangisi schwannom?",
+   "scored": true,
+   "img": "img/m3_mikroskop.jpg",
+   "opts": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "a": 1,
+   "exp": "B: Antoni A alanı; iğsi hücrelerin çekirdekleri sıra sıra dizilir (palizat), aralarındaki pembe alanlar Verocay cisimcikleri. A nörofibrom (dalgalı çekirdekli, düzensiz iğsi hücreler), C leiomiyom (küt uçlu çekirdekli düz kas demetleri), D oral fokal müsinozis (gevşek, miksoid bağ dokusu).",
+   "t": 30
+  },
+  {
+   "id": "W3",
+   "type": "MCQ",
+   "label": "DUS Molası 1/2",
+   "scored": true,
+   "q": "Aşağıdaki tümörlerden hangisi belirgin bir kadın baskınlığı gösterir?",
+   "opts": [
+    "Konjenital epulis",
+    "Granüler hücreli tümör",
+    "İnverted papillom",
+    "Lenfatik malformasyon",
+    "Schwannom"
+   ],
+   "a": 0,
+   "exp": "Konjenital epulisin yaklaşık %90'ı kız bebeklerde görülür (WHO: K:E 7,7:1). Granüler hücreli tümör de kadında sıktır (3:1), ama bu kadar belirgin değil.",
+   "t": 30
+  },
+  {
+   "id": "W4",
+   "type": "MCQ",
+   "label": "DUS Molası 2/2",
+   "scored": true,
+   "q": "Lisch nodülleri hangisiyle ilişkilidir?",
+   "opts": [
+    "Embriyonal rabdomiyosarkom",
+    "Granüler hücreli tümör",
+    "Kaposi sarkomu",
+    "Nörofibromatozis tip 1",
+    "Sturge-Weber sendromu"
+   ],
+   "a": 3,
+   "exp": "Lisch nodülleri irisin pigmentli hamartomlarıdır; NF1 hastalarının neredeyse hepsinde bulunur.",
+   "t": 30
+  },
+  {
+   "id": "W5",
+   "type": "MCQ",
+   "label": "Patolog gibi düşün",
+   "scored": true,
+   "q": "29 yaşında erkek. Yanakta üç haftada 2 cm'ye ulaşan, ağrılı kitle. Biyopsi raporu: atipisi olmayan iğsi hücreler, mitoz bol ama atipik mitoz yok, gevşek miksoid zemin, ekstravaze eritrositler. En olası tanı ve yaklaşım?",
+   "opts": [
+    "Fibrosarkom; geniş sınırla rezeksiyon",
+    "Nodüler fasiitis; yerel eksizyon yeterli",
+    "Embriyonal rabdomiyosarkom; kemoterapi",
+    "Kaposi sarkomu; HIV testi",
+    "Leiomiyosarkom; radyoterapi"
+   ],
+   "a": 1,
+   "exp": "Hızlı büyüme ve bol mitoz sarkomu düşündürür, ama atipik mitoz ve pleomorfizm yok; gevşek zemin ve ekstravaze eritrositler nodüler fasiitisin tipik bulguları. Yerel eksizyon yeterli, nüks nadir. Bu tabloyu sarkom sanıp hastaya geniş rezeksiyon yapmak en büyük hata olur.",
+   "t": 30
+  },
+  {
+   "id": "W6",
+   "type": "POLL",
+   "label": "Vakaya dönüş: şimdi ne diyorsun?",
+   "q": "Dersin başındaki hasta: şimdi ön tanın ne?",
+   "scored": false,
+   "img": "img/m3_vaka_donus.jpg",
+   "opts": [
+    "Granüler hücreli tümör",
+    "Skuamöz hücreli karsinom",
+    "Schwannom",
+    "Lipom",
+    "Travmatik nöroma"
+   ],
+   "a": 0,
+   "compare": "W1",
+   "t": 45
+  },
+  {
+   "id": "W7",
+   "type": "WORDCLOUD",
+   "label": "Çıkış bileti",
+   "q": "Bugün en çok kafanı karıştıran konu hangisiydi? (Tek kelime ya da kısa ifade)",
+   "scored": false,
+   "t": 45
+  }
+ ],
+ "slaytlar": [
+  {
+   "tip": "kapak",
+   "baslik": "Yumuşak Doku Hastalıkları",
+   "alt": "Neoplastik olmayan kitleler, iyi huylu tümörler ve sarkomlar",
+   "tarih": "17 Kasım 2026  ·  Uzm. Dr. M. Olgun Ak",
+   "ust": "4. Sınıf Patoloji · Diş Hekimliği",
+   "vaka": "42 yaşında kadın, dil sırtında bir yıldır büyüyen ağrısız nodül.",
+   "gorsel": {
+    "foto": "img/M3/n12-61.jpg"
+   },
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "sure": 60,
+   "not": "Günaydın. Bugün iki ders arka arkaya: önce ağzın yumuşak doku hastalıkları, sonra tükürük bezleri. Sağdaki görüntü bir schwannom; dersin ortasında mikroskopta tanıyacaksınız. Karekod perdede: okutun; hesap yok, uygulama yok. Takma ad isterseniz yazın; dersin sonunda liderlik tablosu var. Herkes girince → ile vakaya geçiyoruz. (L: katılım ekranını gizle/göster.)",
+   "katilim": true,
+   "numarasiz": true
+  },
+  {
+   "tip": "adim",
+   "baslik": "Açılış vakası: dil sırtında nodül",
+   "maddeler": [
+    {
+     "metin": "42 yaşında kadın",
+     "sure": 10,
+     "not": "Hastamız 42 yaşında bir kadın.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-84.jpg",
+       "yazi": "Dil sırtı"
+      },
+      {
+       "soruIsareti": "Devamı dersin sonunda"
+      },
+      {
+       "kutu": "Tahminini telefondan gir. Cevap dersin sonunda.",
+       "ton": "vurgu"
+      }
+     ]
+    },
+    {
+     "metin": "Dil sırtında 1 cm, sert, sarımsı nodül",
+     "sure": 12,
+     "not": "Dil sırtında bir santimetrelik, sert, sarımsı bir nodül var."
+    },
+    {
+     "metin": "Bir yıldır yavaş büyüyor; ağrısız",
+     "sure": 12,
+     "not": "Bir yıldır yavaş yavaş büyüyor ve ağrımıyor."
+    },
+    {
+     "metin": "Üstündeki mukoza sağlam; travma öyküsü yok",
+     "sure": 12,
+     "not": "Üstündeki mukoza sağlam; ısırma ya da travma öyküsü yok."
+    },
+    {
+     "metin": "Sigara ve alkol kullanmıyor",
+     "sure": 11,
+     "not": "Sigara ve alkol kullanmıyor. Fotoğrafa bakın ve tahmininizi telefondan girin; şıklar açık. Cevabı dersin sonunda açacağım."
+    }
+   ],
+   "soruAc": "W1",
+   "tema": "koyu",
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "soru",
+   "baslik": "Açılış vakası: tahminin ne?",
+   "soru": "W1",
+   "sure": 35,
+   "not": "Sonuçları gösteriyorum ama yorum yapmıyorum. Şıklardan biri kötü huylu, dördü iyi huylu ya da reaktif. Dersin sonunda biyopsi sonucuyla birlikte aynı soruyu yeniden soracağım.",
+   "gorsel": [
+    {
+     "foto": "img/M3/n12-84.jpg"
+    }
+   ],
+   "devam": true,
+   "tema": "koyu",
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "kutular",
+   "baslik": "Dersin planı: üç grup",
+   "kutular": [
+    {
+     "baslik": "1 · Neoplastik olmayan kitleler",
+     "ton": "koyu",
+     "maddeler": [
+      "Hamartom ve koristom",
+      "Juvenil hiyalen fibromatozis",
+      "Fibromatozis colli (tortikollis)",
+      "Keloid ve hipertrofik skar",
+      "Nodüler fasiitis",
+      "Oral fokal müsinozis",
+      "Travmatik nöroma"
+     ]
+    },
+    {
+     "baslik": "2 · İyi huylu tümörler",
+     "ton": "mor",
+     "tablo": [
+      [
+       "Lif, histiyosit",
+       "fibröz histiyositom, fibromatozis, miyofibrom, soliter fibröz tümör"
+      ],
+      [
+       "Yağ",
+       "lipom"
+      ],
+      [
+       "Sinir",
+       "palizatlı kapsüllü nöroma, schwannom, nörofibrom, paragangliom, granüler hücreli tümör, konjenital epulis"
+      ],
+      [
+       "Damar",
+       "hemanjiyom, lenfanjiyom, nazofarengeal anjiyofibrom"
+      ],
+      [
+       "Kas",
+       "leiomiyom, rabdomiyom"
+      ]
+     ]
+    },
+    {
+     "baslik": "3 · Sarkomlar",
+     "ton": "pembe",
+     "maddeler": [
+      "Pleomorfik sarkom, fibrosarkom, liposarkom",
+      "Malign periferik sinir kılıfı tümörü, olfaktör nöroblastom",
+      "Anjiyosarkom, Kaposi sarkomu",
+      "Leiomiyosarkom, rabdomiyosarkom",
+      "Sinovyal sarkom, alveoler yumuşak doku sarkomu"
+     ]
+    },
+    {
+     "baslik": null,
+     "ton": "vurgu",
+     "maddeler": [
+      "Her hastalıkta aynı dört soru: **hangi dokudan** köken alıyor, **kaç yaşında**, **ağızda nerede**, **mikroskopta ne görülür**."
+     ]
+    }
+   ],
+   "adimlar": [
+    {
+     "sure": 12,
+     "not": "Üç grup. Birincisi neoplastik olmayan kitleler; tümör gibi görünürler ama gerçek tümör değildirler."
+    },
+    {
+     "sure": 12,
+     "not": "İkincisi iyi huylu tümörler; köken aldıkları dokuya göre sıraladım: lif, yağ, sinir, damar, kas."
+    },
+    {
+     "sure": 10,
+     "not": "Üçüncüsü sarkomlar, yani yumuşak dokunun kötü huylu tümörleri."
+    },
+    {
+     "sure": 11,
+     "not": "Her hastalıkta aynı dört soruyu soracağız: hangi doku, kaç yaş, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5. baskıdan; kaynakların ayrıldığı yerleri ayrıca söyleyeceğim."
+    }
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Hamartom ve koristom",
+   "maddeler": [
+    {
+     "metin": "O bölgede normalde bulunan dokunun düzensiz büyümesi",
+     "sure": 8,
+     "not": "Hamartom: o bölgede normalde bulunan dokunun düzensiz büyümesi.",
+     "ust": "Hamartom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-116.jpg",
+       "yazi": "Leiomiyomatöz hamartom",
+       "alt": "7 yaşında çocuk, üst alveol kreti"
+      }
+     ]
+    },
+    {
+     "metin": "Sürekli büyümez; gerçek tümör değildir",
+     "sure": 5,
+     "not": "Tümör gibi sürekli büyümez."
+    },
+    {
+     "metin": "Ağızda örnek: leiomiyomatöz hamartom; üst ön diş eti ya da dil sırtı",
+     "sure": 7,
+     "not": "Ağızdaki örneği leiomiyomatöz hamartom: üst ön diş etinde ya da dil sırtının orta hattında; doğumda varsa konjenital epulis sanılabilir."
+    },
+    {
+     "metin": "Normal doku, olmaması gereken bir yerde",
+     "sure": 7,
+     "not": "Koristom: normal doku ama olmaması gereken bir yerde.",
+     "ust": "Koristom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-127.jpg",
+       "yazi": "Kemik koristomu",
+       "alt": "Dil kökünde sert nodül"
+      }
+     ]
+    },
+    {
+     "metin": "Ağızda en sık kemik ve kıkırdak; %85'i dilde, foramen çekum çevresinde",
+     "sure": 8,
+     "not": "Ağızda en sık kemik ve kıkırdak koristomu görülür; Neville'e göre yüzde 85'i dilde, çoğu foramen çekum çevresinde. Hasta öğürmeden yakınabilir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-128.jpg",
+       "yazi": "Epitel altında olgun lameller kemik"
+      }
+     ]
+    },
+    {
+     "metin": "Tedavi eksizyon; nüks bildirilmemiş",
+     "sure": 5,
+     "not": "Eksizyon yeterli; nüks bildirilmemiş."
+    }
+   ],
+   "serit": [
+    1
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Juvenil hiyalen fibromatozis",
+   "maddeler": [
+    {
+     "metin": "Otozomal resesif; akraba evliliğinde sık",
+     "sure": 6,
+     "not": "Bu konu patoloji kaynaklarında böyle geçiyor; Neville'de ayrı başlık olarak doğrulayamadım. Juvenil hiyalen fibromatozis otozomal resesif bir hastalık; akraba evliliğinde daha sık.",
+     "gorsel": [
+      {
+       "foto": "img/M3/jhf_yuz.jpg",
+       "yazi": "Yüzde ve kulakta nodüller"
+      }
+     ]
+    },
+    {
+     "metin": "2–5 yaşta başlar; baş-boyunda papül ve nodüller",
+     "sure": 6,
+     "not": "İki ile beş yaş arasında başlar; baş-boyunda milimetreden beş santimetreye kadar nodüller yapar."
+    },
+    {
+     "metin": "Ağızda en sık bulgu: diş eti büyümesi",
+     "sure": 6,
+     "not": "Ağızda en sık bulgu diş eti büyümesi.",
+     "gorsel": [
+      {
+       "foto": "img/M3/jhf_dis_eti.jpg",
+       "yazi": "Diş eti büyümesi"
+      }
+     ]
+    },
+    {
+     "metin": "Eklem kontraktürleri eşlik edebilir",
+     "sure": 4,
+     "not": "Eklemlerde kontraktür eşlik edebilir."
+    },
+    {
+     "metin": "Mikroskop: hücreden fakir, camsı (hiyalin) matriks; PAS ve Alcian mavisi pozitif",
+     "sure": 8,
+     "not": "Mikroskopta hücreden fakir, camsı bir matriks görürüz; PAS ve Alcian mavisi ile boyanır.",
+     "gorsel": [
+      {
+       "foto": "img/M3/jhf_mikroskop.jpg",
+       "yazi": "Hiyalinize matriks"
+      }
+     ]
+    }
+   ],
+   "serit": [
+    1
+   ],
+   "dus": true,
+   "kaynak": "Fakülte ders notları"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Fibromatozis colli (tortikollis)",
+   "maddeler": [
+    {
+     "metin": "Sternokleidomastoid kasın alt bölümünde fibröz kitle",
+     "sure": 6,
+     "not": "Bu da Neville'de doğrulayamadığım, patoloji kaynaklarındaki bir konu. Fibromatozis colli sternokleidomastoid kasın alt bölümünde bir fibröz kitle.",
+     "gorsel": [
+      {
+       "foto": "img/M3/colli_bebek.jpg",
+       "yazi": "Yenidoğanda boyunda şişlik"
+      }
+     ]
+    },
+    {
+     "metin": "Doğumdan 2–4 hafta sonra boyunda şişlik",
+     "sure": 5,
+     "not": "Doğumdan iki ile dört hafta sonra boyunda şişlik olarak fark edilir."
+    },
+    {
+     "metin": "Zor doğumda travma ve kanamayla ilişkili; tümör değil, onarım süreci",
+     "sure": 7,
+     "not": "Zor doğumdaki travma ve kanamayla ilişkili; gerçek tümör değil, bir onarım süreci."
+    },
+    {
+     "metin": "Kas kısalır, baş lezyon tarafına eğilir",
+     "sure": 5,
+     "not": "Fibröz doku çekince kas kısalır ve baş lezyon tarafına eğilir."
+    },
+    {
+     "metin": "Mikroskop: kası infiltre eden fibroblastlar; atipi yok",
+     "sure": 6,
+     "not": "Mikroskopta kas lifleri arasına giren fibroblastlar; atipi yok, zamanla kollajen artar.",
+     "gorsel": [
+      {
+       "foto": "img/M3/colli_mikroskop.jpg",
+       "yazi": "Kas lifleri arasında fibroblastlar"
+      }
+     ]
+    },
+    {
+     "metin": "Fizik tedavi; kendiliğinden gerileyebilir",
+     "sure": 6,
+     "not": "Tedavi fizik tedavi; kendiliğinden gerileyebilir. Tedavi edilmezse ileride yüzde asimetri kalabilir."
+    }
+   ],
+   "serit": [
+    1
+   ],
+   "dus": true,
+   "kaynak": "Fakülte ders notları"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Keloid ve hipertrofik skar",
+   "maddeler": [
+    {
+     "metin": "İkisi de yara iyileşmesinde aşırı kollajen birikimi",
+     "sure": 6,
+     "not": "Keloid ve hipertrofik skar da Neville'in bu bölümünde yok; genel patolojiden anlatıyorum. İkisi de yara iyileşirken aşırı kollajen birikmesi.",
+     "gorsel": [
+      {
+       "cizim": "keloid",
+       "asama": 0
+      }
+     ]
+    },
+    {
+     "metin": "Hipertrofik skar yaranın sınırları içinde kalır, zamanla yumuşar",
+     "sure": 6,
+     "not": "Hipertrofik skar yaranın sınırları içinde kalır ve zamanla yumuşar.",
+     "gorsel": [
+      {
+       "cizim": "keloid",
+       "asama": 1
+      }
+     ]
+    },
+    {
+     "metin": "Keloid yaranın sınırını aşar; çıkarılınca sık nükseder",
+     "sure": 6,
+     "not": "Keloid yaranın sınırını aşar; çıkarılınca sık nükseder.",
+     "gorsel": [
+      {
+       "cizim": "keloid",
+       "asama": 2
+      }
+     ]
+    },
+    {
+     "metin": "Mikroskop: keloidde kalın, camsı kollajen demetleri",
+     "sure": 5,
+     "not": "Mikroskopta keloidde kalın, camsı kollajen demetleri görürüz."
+    }
+   ],
+   "serit": [
+    1
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Nodüler fasiitis: hızlı büyür ama iyi huyludur",
+   "maddeler": [
+    {
+     "metin": "Genç erişkin; birkaç haftada hızla büyüyen, sıklıkla ağrılı kitle",
+     "sure": 8,
+     "not": "Nodüler fasiitis genç erişkinde birkaç haftada hızla büyüyen, sıklıkla ağrılı bir kitle.",
+     "gorsel": [
+      {
+       "foto": "img/M3/nf_yanak.jpg",
+       "yazi": "Yanakta kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Çoğu 3 cm'den küçük; ağızda herhangi bir yerde",
+     "sure": 6,
+     "not": "Çoğu üç santimetreden küçük; ağızda herhangi bir yerde olabilir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/nf_retromolar.jpg",
+       "yazi": "Retromolar bölgede kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Hızlı büyüdüğü için klinikte sarkom sanılır",
+     "sure": 5,
+     "not": "Hızlı büyüdüğü için klinikte sarkom sanılır; bu lezyonu bilmenin nedeni bu."
+    },
+    {
+     "metin": "Mikroskop: düzensiz demetler yapan iğsi-yıldızsı miyofibroblastlar",
+     "sure": 7,
+     "not": "Mikroskopta gevşek, miksoid bir zeminde düzensiz demetler yapan iğsi ve yıldızsı miyofibroblastlar.",
+     "gorsel": [
+      {
+       "foto": "img/M3/nf_mikroskop.jpg",
+       "yazi": "Miksoid zeminde iğsi hücreler"
+      }
+     ]
+    },
+    {
+     "metin": "Mitoz bol olabilir ama atipik mitoz ve pleomorfizm yok",
+     "sure": 7,
+     "not": "Mitoz bol olabilir; ama atipik mitoz yok, hücrelerde pleomorfizm yok. Sarkomdan ayıran bu."
+    },
+    {
+     "metin": "Ekstravaze eritrositler, lenfosit ve makrofajlar",
+     "sure": 5,
+     "not": "Zeminde ekstravaze eritrositler, lenfosit ve makrofajlar var."
+    },
+    {
+     "metin": "WHO 2022: USP6 nedeniyle kendiliğinden geçen bir neoplazi; nüks nadir",
+     "sure": 8,
+     "not": "Patoloji kaynaklarında genellikle neoplastik olmayan lezyonlar arasında sayılır; WHO 2022 ise USP6 gen değişikliği nedeniyle kendiliğinden geçen bir neoplazi diyor. Tedavi değişmiyor: yerel eksizyon yeterli, nüks nadir. Şimdi telefon."
+    }
+   ],
+   "serit": [
+    1
+   ],
+   "dus": true,
+   "kaynak": "Fakülte ders notları"
+  },
+  {
+   "tip": "soru",
+   "baslik": "Patolog gibi düşün",
+   "soru": "W5",
+   "sure": 60,
+   "not": "Rapor geldi. Ne dersiniz, ne yaparsınız? (Sonuç.) Doğru B: nodüler fasiitis, yerel eksizyon yeterli. Hızlı büyüme ve bol mitoz sizi sarkoma götürebilir; ama atipik mitoz yok, pleomorfizm yok ve ekstravaze eritrositler var. Bu hastaya geniş rezeksiyon yapmak en büyük hata olur.",
+   "tema": "koyu",
+   "serit": [
+    1
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Oral fokal müsinozis",
+   "maddeler": [
+    {
+     "metin": "Derinin fokal müsinozisinin ağızdaki karşılığı",
+     "sure": 5,
+     "not": "Oral fokal müsinozis derinin fokal müsinozisinin ağızdaki karşılığı.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-31.jpg",
+       "yazi": "Diş etinde nodül",
+       "alt": "Alt azı dişleri arası"
+      }
+     ]
+    },
+    {
+     "metin": "Genç erişkin; kadında 2 kat sık",
+     "sure": 4,
+     "not": "Genç erişkinde, kadında iki kat sık."
+    },
+    {
+     "metin": "Yarıdan fazlası diş etinde; sonra sert damak",
+     "sure": 5,
+     "not": "Yarıdan fazlası diş etinde, sonra sert damakta."
+    },
+    {
+     "metin": "Mikroskop: iyi sınırlı miksoid alan; Alcian mavisi pozitif",
+     "sure": 7,
+     "not": "Mikroskopta iyi sınırlı, gevşek, miksoid bir alan; içindeki hiyalüronik asit Alcian mavisiyle boyanır.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-33.jpg",
+       "yazi": "Gevşek, miksoid bağ dokusu"
+      }
+     ]
+    },
+    {
+     "metin": "Eksizyon; nüks yok",
+     "sure": 4,
+     "not": "Eksizyon yeterli, nüks etmez."
+    }
+   ],
+   "serit": [
+    1
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Travmatik nöroma",
+   "maddeler": [
+    {
+     "metin": "Kesilen sinirin düzensiz iyileşmesi: akson, Schwann hücresi ve skar",
+     "sure": 7,
+     "not": "Travmatik nöroma kesilen bir sinirin düzensiz iyileşmesi: akson, Schwann hücresi ve fibroblastlardan oluşan bir skar.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-54.jpg",
+       "yazi": "Mental sinir boyunca nodül",
+       "alt": "Ameliyat sırasında"
+      }
+     ]
+    },
+    {
+     "metin": "En sık mental foramen bölgesi, dil, alt dudak",
+     "sure": 5,
+     "not": "En sık mental foramen bölgesinde, dilde ve alt dudakta."
+    },
+    {
+     "metin": "Diş çekimi ya da cerrahi öyküsü var",
+     "sure": 4,
+     "not": "Hastada diş çekimi ya da cerrahi öyküsü vardır."
+    },
+    {
+     "metin": "Yalnız ¼–⅓'i ağrılı; mental sinirdeki protez bastırınca ağrır",
+     "sure": 7,
+     "not": "Patolojide 'ağrılı tümör' diye geçer; ama Neville'e göre yalnız dörtte biri ile üçte biri ağrılı. Mental sinirdekiler protez bastırınca ağrır."
+    },
+    {
+     "metin": "Mikroskop: skar içinde düzensiz sinir demetleri",
+     "sure": 5,
+     "not": "Mikroskopta fibröz doku içinde gelişigüzel sinir demetleri.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-55.jpg",
+       "yazi": "Fibröz doku içinde sinir demetleri"
+      }
+     ]
+    },
+    {
+     "metin": "Tedavi: sinirin proksimal ucuyla birlikte eksizyon",
+     "sure": 5,
+     "not": "Tedavi sinirin proksimal ucuyla birlikte eksizyon. Sırada iyi huylu tümörler."
+    }
+   ],
+   "serit": [
+    1
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Diş eti ve protezle ilişkili reaktif kitleler",
+   "maddeler": [
+    {
+     "metin": "Piyojenik granülom: kırmızı, kolay kanayan, hızla büyüyen kitle; gebelikte sık",
+     "sure": 8,
+     "not": "Neville'in bu bölümündeki reaktif kitleler; her birine bir cümle. Piyojenik granülom: kırmızı, kolay kanayan, hızla büyüyen bir diş eti kitlesi; gebelikte sık, doğumdan sonra küçülebilir.",
+     "ust": "Diş eti",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-34.jpg",
+       "yazi": "Piyojenik granülom",
+       "alt": "Üst ön diş eti"
+      }
+     ]
+    },
+    {
+     "metin": "Periferik dev hücreli granülom: mor-mavi; yalnız diş eti ve alveol kretinde",
+     "sure": 7,
+     "not": "Periferik dev hücreli granülom mor-mavi renktedir ve yalnız diş etinde ya da dişsiz alveol kretinde görülür; mikroskopta çok çekirdekli dev hücreler.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-41.jpg",
+       "yazi": "Periferik dev hücreli granülom"
+      }
+     ]
+    },
+    {
+     "metin": "Periferik ossifiye fibrom: yalnız diş etinde; içinde kemik; genç kadında",
+     "sure": 7,
+     "not": "Periferik ossifiye fibrom da yalnız diş etinde, diş arası papilladan çıkar; içinde kemik ya da kalsifikasyon vardır, çoğu genç kadında.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-46.jpg",
+       "yazi": "Periferik ossifiye fibrom"
+      }
+     ]
+    },
+    {
+     "metin": "Fibrom: ağzın en sık 'tümörü'; aslında reaktif, en sık yanakta ısırma hattında",
+     "sure": 7,
+     "not": "Fibrom ağzın en sık tümörü sayılır ama aslında reaktif bir hiperplazi; en sık yanakta, ısırma hattında. Diş eti lezyonlarında kural: periosta kadar çıkar, komşu dişleri temizle.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-1.jpg",
+       "yazi": "Fibrom",
+       "alt": "Yanakta ısırma hattı"
+      }
+     ]
+    },
+    {
+     "metin": "Epulis fissuratum: uyumsuz protez kenarının açtığı kıvrımlar",
+     "sure": 7,
+     "not": "Epulis fissuratum uyumsuz bir protez kenarının açtığı kıvrımlar; protez kenarı iki kıvrım arasındaki yarığa oturur.",
+     "ust": "Protez",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-13.jpg",
+       "yazi": "Epulis fissuratum",
+       "alt": "Ön vestibül"
+      }
+     ]
+    },
+    {
+     "metin": "İnflamatuvar papiller hiperplazi: protez altında, sert damakta çakıl taşı görünümü",
+     "sure": 8,
+     "not": "İnflamatuvar papiller hiperplazi protezin altında, sert damakta çakıl taşı gibi papiller. İkisinde de protez düzeltilmezse lezyon geri gelir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-18.jpg",
+       "yazi": "İnflamatuvar papiller hiperplazi",
+       "alt": "Sert damak"
+      }
+     ]
+    }
+   ],
+   "serit": [
+    1
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Lif ve histiyosit kökenli iyi huylu tümörler",
+   "maddeler": [
+    {
+     "metin": "**Fibröz histiyositom:** deride sık, ağızda nadir",
+     "sure": 6,
+     "not": "İyi huylu tümörlere lif ve histiyosit kökenlilerle başlıyoruz. Fibröz histiyositom deride dermatofibrom adıyla sık, ağızda nadir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-21.jpg",
+       "yazi": "Fibröz histiyositom",
+       "alt": "Dil sırtı"
+      }
+     ]
+    },
+    {
+     "metin": "İğsi hücreler girdap gibi (storiform) dizilir",
+     "sure": 5,
+     "not": "Mikroskopta iğsi hücreler girdap gibi dizilir; buna storiform desen diyoruz.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-22.jpg",
+       "yazi": "Storiform desen"
+      }
+     ]
+    },
+    {
+     "metin": "**Fibromatozis (desmoid):** iyi huylu ama lokal agresif; metastaz yapmaz",
+     "sure": 8,
+     "not": "Fibromatozis, desmoid tip: iyi huylu ama lokal agresif; metastaz yapmaz. 'Gingival fibromatozis' adı kalıtsal diş eti büyümesiyle karışmasın; burada diş etindeki desmoid tip kastediliyor.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-26.jpg",
+       "yazi": "Fibromatozis",
+       "alt": "Alt çene lingual diş eti"
+      }
+     ]
+    },
+    {
+     "metin": "Nükleer β-katenin; nüks ~%30",
+     "sure": 5,
+     "not": "Nükleer beta-katenin pozitif; yaklaşık üçte biri nükseder.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-27.jpg",
+       "yazi": "Uzun demetler yapan fibroblastlar"
+      }
+     ]
+    },
+    {
+     "metin": "**Miyofibrom:** genç hasta; ağızda en sık alt çene",
+     "sure": 5,
+     "not": "Miyofibrom genç hastada; ağızda en sık alt çenede.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-28.jpg",
+       "yazi": "Miyofibrom",
+       "alt": "Üst çene diş eti"
+      }
+     ]
+    },
+    {
+     "metin": "SMA pozitif; bebekte çok odaklı form (miyofibromatozis)",
+     "sure": 5,
+     "not": "SMA pozitif; bebeklerde çok odaklı formu var, miyofibromatozis.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-30.jpg",
+       "yazi": "İğsi hücreler; SMA"
+      }
+     ]
+    },
+    {
+     "metin": "**Soliter fibröz tümör:** ağızda en sık yanak; eski 'hemanjiyoperisitomların' çoğu",
+     "sure": 7,
+     "not": "Soliter fibröz tümör ağızda en sık yanakta; eskiden hemanjiyoperisitom denen tümörlerin çoğu bu.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-24.jpg",
+       "yazi": "Soliter fibröz tümör",
+       "alt": "Retromolar bölge"
+      }
+     ]
+    },
+    {
+     "metin": "Geyik boynuzu damarlar; CD34 ve STAT6 pozitif",
+     "sure": 5,
+     "not": "Geyik boynuzu gibi dallanan damarlar; CD34 ve STAT6 pozitif.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-25.jpg",
+       "yazi": "Geyik boynuzu damarlar",
+       "konum": "50% 100%"
+      }
+     ]
+    }
+   ],
+   "serit": [
+    2
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Lipom",
+   "maddeler": [
+    {
+     "metin": "Yağ dokusunun iyi huylu tümörü; ağız-çene tümörlerinin yalnız %1–4'ü",
+     "sure": 7,
+     "not": "Lipom yağ dokusunun iyi huylu tümörü; ağızda beklenenden az, ağız-çene tümörlerinin yüzde 1 ila 4'ü.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-50.jpg",
+       "yazi": "Yanak mukozasında nodül"
+      }
+     ]
+    },
+    {
+     "metin": "Yumuşak, sarımsı, ağrısız; çoğu 40 yaş üstü",
+     "sure": 5,
+     "not": "Yumuşak, sarımsı, ağrısız bir nodül; çoğu 40 yaşın üstünde."
+    },
+    {
+     "metin": "Ağızda en sık yanak ve vestibül (~yarısı)",
+     "sure": 6,
+     "not": "Bazı kaynaklar en sık yeri dil olarak sıralar; Neville'e göre yanak ve vestibül olguların yaklaşık yarısı."
+    },
+    {
+     "metin": "Mikroskop: ince kapsüllü olgun yağ dokusu",
+     "sure": 5,
+     "not": "Mikroskopta ince bir kapsülle çevrili olgun yağ dokusu.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-52.jpg",
+       "yazi": "Olgun yağ hücreleri"
+      }
+     ]
+    },
+    {
+     "metin": "Tipler: fibrolipom (en sık), iğsi hücreli, anjiyolipom, miksoid, pleomorfik",
+     "sure": 6,
+     "not": "Tiplerinden en sık fibrolipom; iğsi hücreli lipom CD34 pozitif."
+    },
+    {
+     "metin": "Atipi varsa MDM2/CDK4 ile liposarkom dışlanır",
+     "sure": 6,
+     "not": "Hücrelerde atipi görürsek MDM2 ve CDK4 boyalarıyla iyi diferansiye liposarkomu dışlarız. Tedavi eksizyon; nüks nadir."
+    }
+   ],
+   "serit": [
+    2
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Palizatlı kapsüllü nöroma ve schwannom",
+   "maddeler": [
+    {
+     "metin": "Küçük, ağrısız, kapsüllü nodül; %90'ı yüzde",
+     "sure": 7,
+     "not": "Sinir kökenli tümörler. Palizatlı kapsüllü nöroma küçük, ağrısız, kapsüllü bir nodül; yüzde 90'ı yüzde.",
+     "ust": "Palizatlı kapsüllü nöroma",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-57.jpg",
+       "yazi": "Sert damakta nodül"
+      }
+     ]
+    },
+    {
+     "metin": "Ağızda sert damak, diş eti, dudak; travma öyküsü yok",
+     "sure": 6,
+     "not": "Ağızda sert damakta, diş etinde, dudakta. Travmatik nöromadan farkı: travma öyküsü yok."
+    },
+    {
+     "metin": "NF ve MEN 2B ile ilişkisi yok",
+     "sure": 5,
+     "not": "Nörofibromatozis ve MEN 2B ile ilişkisi yok.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-58.jpg",
+       "yazi": "İyi sınırlı nöral proliferasyon"
+      }
+     ]
+    },
+    {
+     "metin": "Schwann hücresinden; kapsüllü, yavaş büyür",
+     "sure": 6,
+     "not": "Schwannom Schwann hücresinden köken alan, kapsüllü, yavaş büyüyen bir tümör.",
+     "ust": "Schwannom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-60.jpg",
+       "yazi": "Ağız tabanında kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Ağızda en sık dil; kemik içinde alt çene arka bölge",
+     "sure": 6,
+     "not": "Ağızda en sık dilde; kemik içindekiler alt çenenin arka bölgesinde, mandibular kanal boyunca."
+    },
+    {
+     "metin": "Antoni A: palizat çekirdekler, Verocay cisimcikleri",
+     "sure": 8,
+     "not": "Mikroskopta iki alan var. Antoni A'da çekirdekler sıra sıra dizilir; iki sıra arasındaki pembe alana Verocay cisimciği denir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-61.jpg",
+       "yazi": "Antoni A ve B"
+      }
+     ]
+    },
+    {
+     "metin": "Antoni B: gevşek, miksoid; S100 yaygın pozitif",
+     "sure": 7,
+     "not": "Antoni B gevşek ve miksoiddir. S100 yaygın pozitif; kötü huylu dönüşüm neredeyse hiç olmaz."
+    }
+   ],
+   "serit": [
+    2
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Nörofibrom ve nörofibromatozis tip 1",
+   "maddeler": [
+    {
+     "metin": "Periferik sinir kılıfının en sık tümörü",
+     "sure": 6,
+     "not": "Nörofibrom periferik sinir kılıfının en sık tümörü.",
+     "ust": "Nörofibrom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-62.jpg",
+       "yazi": "Üst çene diş etinde nodül"
+      }
+     ]
+    },
+    {
+     "metin": "Kapsülsüz; sinirle iç içe büyür",
+     "sure": 5,
+     "not": "Schwannomdan farkı: kapsülü yok, sinirle iç içe büyür."
+    },
+    {
+     "metin": "Mikroskop: dalgalı çekirdekli iğsi hücreler, mast hücreleri",
+     "sure": 6,
+     "not": "Mikroskopta dalgalı çekirdekli iğsi hücreler ve aralarda mast hücreleri.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-65.jpg",
+       "yazi": "Dalgalı çekirdekler"
+      }
+     ]
+    },
+    {
+     "metin": "Nörofibrom görürsen hastayı NF1 için muayene et",
+     "sure": 6,
+     "not": "Bir nörofibrom gördüğünüzde hastayı nörofibromatozis tip 1 için muayene edin.",
+     "ust": "NF1",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-68.jpg",
+       "yazi": "Café-au-lait lekeleri"
+      }
+     ]
+    },
+    {
+     "metin": "Otozomal dominant; café-au-lait, aksiller çillenme, Lisch nodülleri",
+     "sure": 8,
+     "not": "NF1 otozomal dominant; deride café-au-lait lekeleri, koltuk altında çillenme, gözde Lisch nodülleri."
+    },
+    {
+     "metin": "Malign periferik sinir kılıfı tümörü riski %8–13",
+     "sure": 7,
+     "not": "Hastaların yüzde 8 ila 13'ünde malign periferik sinir kılıfı tümörü gelişir; büyüyen ya da ağrıyan bir nörofibrom beklemez.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-69.jpg",
+       "yazi": "Dilin tek taraflı büyümesi"
+      }
+     ]
+    },
+    {
+     "metin": "Dil ucunda çok sayıda nöroma → medüller tiroid karsinomu",
+     "sure": 8,
+     "not": "Bir not: dil ucunda ve dudaklarda çok sayıda küçük nöroma MEN 2B'yi düşündürür; bu hastaların hepsinde medüller tiroid karsinomu gelişir. Endokrinolojiye yönlendirin.",
+     "ust": "Ayrıca: MEN 2B",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-74.jpg",
+       "yazi": "MEN 2B: dil ucunda nöromalar"
+      }
+     ]
+    }
+   ],
+   "serit": [
+    2
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "soru",
+   "baslik": "Dört mikroskop görüntüsü: hangisi schwannom?",
+   "soru": "W2",
+   "sure": 40,
+   "not": "Dört mikroskop görüntüsü. Hangisi schwannom? (Sonuç.) Doğru B: çekirdeklerin sıra sıra dizildiği Antoni A alanı. A nörofibrom: dalgalı çekirdekli, düzensiz iğsi hücreler. C leiomiyom: küt uçlu çekirdekli düz kas demetleri. D oral fokal müsinozis: gevşek, miksoid bağ dokusu.",
+   "gorsel": [
+    {
+     "foto": "img/M3/n12-65.jpg",
+     "etiket": "A"
+    },
+    {
+     "foto": "img/M3/n12-61.jpg",
+     "etiket": "B"
+    },
+    {
+     "foto": "img/M3/n12-118.jpg",
+     "etiket": "C"
+    },
+    {
+     "foto": "img/M3/n12-33.jpg",
+     "etiket": "D"
+    }
+   ],
+   "tema": "koyu",
+   "serit": [
+    2
+   ],
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Granüler hücreli tümör ve konjenital epulis",
+   "maddeler": [
+    {
+     "metin": "En sık ağızda (ve deride); ağızda ⅓–½'i dil sırtında",
+     "sure": 8,
+     "not": "Granüler hücreli tümör vücutta en sık ağızda ve deride görülür; ağızda üçte biri ile yarısı dil sırtında.",
+     "ust": "Granüler hücreli tümör",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-85.jpg",
+       "yazi": "Yanakta nodül"
+      }
+     ]
+    },
+    {
+     "metin": "4.–6. dekat; kadında 3 kat sık; çoğu <2 cm",
+     "sure": 6,
+     "not": "Kırk ile altmış yaş arasında, kadında üç kat sık; çoğu iki santimetreden küçük."
+    },
+    {
+     "metin": "İri, poligonal, granüler sitoplazmalı hücreler; PAS ve S100 pozitif",
+     "sure": 8,
+     "not": "Hücreler iri, poligonal ve sitoplazmaları ince pembe granüllerle dolu; PAS ve S100 pozitif, yani Schwann hücresi özellikleri taşıyor.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-86.jpg",
+       "yazi": "Granüler hücreler"
+      }
+     ]
+    },
+    {
+     "metin": "Yarısına kadarında yüzeyde psödoepitelyomatöz hiperplazi",
+     "sure": 8,
+     "not": "Olguların yarısına kadarında üstteki epitel aşağı doğru dallar yapar; buna psödoepitelyomatöz hiperplazi diyoruz. Bunu dersin sonunda tekrar göreceğiz.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-87.jpg",
+       "yazi": "Epitelde aşağı uzanan dallar"
+      }
+     ]
+    },
+    {
+     "metin": "Yenidoğanın alveol kretinde; ~%90'ı kız",
+     "sure": 7,
+     "not": "Yenidoğandaki benzeri konjenital epulis: doğumda alveol kretinde polipoid kitle; yaklaşık yüzde 90'ı kız bebek.",
+     "ust": "Konjenital epulis",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-88.jpg",
+       "yazi": "Yenidoğan, üst alveol kreti"
+      }
+     ]
+    },
+    {
+     "metin": "Benzer hücreler ama S100 negatif; reteler atrofik",
+     "sure": 7,
+     "not": "Hücreleri benzer ama S100 negatif; yüzeyde hiperplazi yok, reteler incelmiş.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-89.jpg",
+       "yazi": "İnce yüzey epiteli"
+      }
+     ]
+    },
+    {
+     "metin": "Nüksetmez; kendiliğinden gerileyebilir",
+     "sure": 5,
+     "not": "Nüksetmez; hatta kendiliğinden küçülebilir."
+    }
+   ],
+   "serit": [
+    2
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "soru",
+   "baslik": "DUS Molası 1/2",
+   "soru": "W3",
+   "sure": 45,
+   "not": "İlk DUS sorusu, Neville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Konjenital epulis: yaklaşık yüzde 90'ı kız bebek. Granüler hücreli tümör de kadında sık, ama oran üçe bir.",
+   "tema": "koyu"
+  },
+  {
+   "tip": "soru",
+   "baslik": "DUS Molası 2/2",
+   "soru": "W4",
+   "sure": 40,
+   "not": "İkinci soru. (Sonuç.) Nörofibromatozis tip 1. Lisch nodülleri irisin pigmentli hamartomları; NF1 hastalarının neredeyse hepsinde var. Sırada damar kökenli tümörler.",
+   "tema": "koyu"
+  },
+  {
+   "tip": "liderlik",
+   "baslik": "Ara liderlik: ilk 5",
+   "sure": 15,
+   "not": "On saniye: ilk beş. (→ ile devam.)",
+   "ilk": 5
+  },
+  {
+   "tip": "adim",
+   "baslik": "Hemanjiyom mu, vasküler malformasyon mu?",
+   "maddeler": [
+    {
+     "metin": "Çoğu doğumda yok; ilk haftalarda çıkar, hızla büyür",
+     "sure": 8,
+     "not": "Damar lezyonlarında iki ayrı grup var. Hemanjiyom bir tümör: çoğu doğumda yoktur, ilk haftalarda çıkar ve hızla büyür.",
+     "ust": "Hemanjiyom (tümör)",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-93.jpg",
+       "yazi": "İnfantil hemanjiyom",
+       "alt": "4 yaşında çocuk, üst dudak"
+      }
+     ]
+    },
+    {
+     "metin": "Sonra geriler: 5 yaşta %50, 9 yaşta %90",
+     "sure": 7,
+     "not": "Sonra geriler: yarısı beş yaşında, yüzde 90'ı dokuz yaşında kaybolur."
+    },
+    {
+     "metin": "GLUT1 pozitif; çoğu beklenir, gerekirse propranolol",
+     "sure": 8,
+     "not": "GLUT1 pozitiftir. Çoğunu bekleriz; gerekirse propranolol veririz.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-99.jpg",
+       "yazi": "Hücreden zengin endotel proliferasyonu"
+      }
+     ]
+    },
+    {
+     "metin": "Doğumda var; çocukla büyür, gerilemez; GLUT1 negatif",
+     "sure": 9,
+     "not": "Malformasyon damar yapısının gelişim bozukluğu: doğumda vardır, çocukla birlikte büyür ve gerilemez; GLUT1 negatif.",
+     "ust": "Vasküler malformasyon",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-94.jpg",
+       "yazi": "Venöz malformasyon",
+       "alt": "Dil"
+      }
+     ]
+    },
+    {
+     "metin": "Venöz malformasyon mor-mavi; bastırınca söner",
+     "sure": 7,
+     "not": "Venöz malformasyon mor-mavidir ve bastırınca kolayca söner.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-101.jpg",
+       "yazi": "Genişlemiş büyük damarlar"
+      }
+     ]
+    },
+    {
+     "metin": "ISSVA sınıflaması tümörü malformasyondan ayırır",
+     "sure": 6,
+     "not": "ISSVA sınıflaması bu iki grubu ayırır: vasküler tümörler ve vasküler malformasyonlar."
+    },
+    {
+     "metin": "Kemik içi lezyonda biyopsiden önce iğne aspirasyonu: ölümcül kanama riski",
+     "sure": 15,
+     "not": "Neville'den pratik uyarı: tanısı konmamış kemik içi bir lezyonda biyopsiden önce iğneyle aspirasyon yapın. Malformasyonun yanında diş çekiminden sonra ölümcül kanamalar bildirildi.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-95.jpg",
+       "yazi": "Kemik içi venöz malformasyon"
+      }
+     ]
+    }
+   ],
+   "serit": [
+    2
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Sturge-Weber ve melanotik nöroektodermal tümör",
+   "maddeler": [
+    {
+     "metin": "Yüzde trigeminal dağılımda porto şarabı lekesi",
+     "sure": 6,
+     "not": "Sturge-Weber sendromu: yüzde trigeminal sinir dağılımında porto şarabı lekesi; leke birinci dalı tutuyorsa risk yüzde 15 ila 20.",
+     "ust": "Sturge-Weber sendromu",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-103.jpg",
+       "yazi": "Porto şarabı lekesi",
+       "alt": "Trigeminal birinci dal"
+      }
+     ]
+    },
+    {
+     "metin": "Aynı tarafta beyin zarında damar anomalisi: nöbet, zihinsel yetersizlik",
+     "sure": 7,
+     "not": "Aynı tarafta beyin zarında damar anomalisi olur: nöbet ve zihinsel yetersizlik. Ağızda o bölgede cerrahi ciddi kanayabilir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-104.jpg",
+       "yazi": "Kafa grafisinde 'tramvay rayı' kalsifikasyonları"
+      }
+     ]
+    },
+    {
+     "metin": "1 yaşın altında, üst çene ön bölgede hızla büyüyen kitle",
+     "sure": 7,
+     "not": "Bebeğin melanotik nöroektodermal tümörü: bir yaşın altında, üst çene ön bölgede hızla büyüyen, mavi-siyah bir kitle; idrarda vanilmandelik asit yüksek olabilir.",
+     "ust": "Bebeğin melanotik nöroektodermal tümörü",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-77.jpg",
+       "yazi": "Üst çene ön bölgede kitle",
+       "alt": "Bebek"
+      }
+     ]
+    }
+   ],
+   "serit": [
+    2
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Lenfanjiyom ve nazofarengeal anjiyofibrom",
+   "maddeler": [
+    {
+     "metin": "Neville 5: lenfatik malformasyon; WHO 2022: lenfanjiyom",
+     "sure": 7,
+     "not": "Lenfanjiyom Neville'in yeni baskısında lenfatik malformasyon adıyla geçiyor; WHO hâlâ lenfanjiyom diyor. İkisini de bilin.",
+     "ust": "Lenfanjiyom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-110.jpg",
+       "yazi": "Dilde lenfatik malformasyon",
+       "alt": "Kabarcıklı yüzey"
+      }
+     ]
+    },
+    {
+     "metin": "Yarısı doğumda, %90'ı 2 yaşa kadar ortaya çıkar",
+     "sure": 6,
+     "not": "Yarısı doğumda vardır, yüzde 90'ı iki yaşına kadar ortaya çıkar."
+    },
+    {
+     "metin": "Ağızda en sık dilin ön ⅔'ü: dil büyür, yüzey kabarcıklı",
+     "sure": 8,
+     "not": "Ağızda en sık dilin ön üçte ikisinde; damarlar epitelin hemen altında olduğu için yüzey küçük, saydam kabarcıklarla kaplıdır ve dil büyür.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-112.jpg",
+       "yazi": "Epitel altında genişlemiş lenf damarları"
+      }
+     ]
+    },
+    {
+     "metin": "Boyunda kistik higroma: havayolunu tıkayabilir",
+     "sure": 7,
+     "not": "Boyundaki büyük kistli formuna kistik higroma deniyor; yenidoğanda havayolunu tıkayabilir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-109.jpg",
+       "yazi": "Kistik higroma",
+       "konum": "50% 30%"
+      }
+     ]
+    },
+    {
+     "metin": "Neredeyse yalnız ergen erkek; burun tıkanıklığı ve kanama",
+     "sure": 8,
+     "not": "Nazofarengeal anjiyofibrom neredeyse yalnız ergen erkeklerde görülür: burun tıkanıklığı ve tekrarlayan burun kanaması. Hücreleri androjen reseptörü taşır.",
+     "ust": "Nazofarengeal anjiyofibrom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-106.jpg",
+       "yazi": "BT: nazofarenkste kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Damar duvarında kas eksik, elastik lif yok: çok kanar",
+     "sure": 7,
+     "not": "Damar duvarlarında kas tabakası eksik ve elastik lif yok; bu yüzden çok kanar.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-108.jpg",
+       "yazi": "Fibröz doku içinde ince duvarlı damarlar"
+      }
+     ]
+    },
+    {
+     "metin": "Ameliyattan önce embolizasyon; nüks %20–40",
+     "sure": 7,
+     "not": "Ameliyattan önce embolizasyon yapılır; yüzde 20 ila 40 nükseder. WHO 2022'deki adı sinonazal anjiyofibrom.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-107.jpg",
+       "yazi": "Anjiyografi: yoğun damarlanma"
+      }
+     ]
+    }
+   ],
+   "serit": [
+    2
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Kas kökenli iyi huylu tümörler ve diğerleri",
+   "maddeler": [
+    {
+     "metin": "Düz kas tümörü; ağızda nadir, ~%75'i anjiyomiyom",
+     "sure": 7,
+     "not": "İyi huylu tümörlerin sonuncusu kas. Leiomiyom düz kas tümörü; ağızda nadir ve dörtte üçü damar duvarındaki kastan, yani anjiyomiyom.",
+     "ust": "Leiomiyom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-115.jpg",
+       "yazi": "Sert damakta pembe-kırmızı nodül"
+      }
+     ]
+    },
+    {
+     "metin": "Dudak, dil, damak, yanak; anjiyomiyom ağrılı olabilir",
+     "sure": 5,
+     "not": "Dudak, dil, damak ve yanakta görülür; anjiyomiyom ağrılı olabilir."
+    },
+    {
+     "metin": "Küt uçlu çekirdekler; SMA pozitif",
+     "sure": 5,
+     "not": "Mikroskopta küt uçlu, puro biçimli çekirdekler; SMA pozitif.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-118.jpg",
+       "yazi": "Düz kas demetleri"
+      }
+     ]
+    },
+    {
+     "metin": "Erişkin tip: orta-ileri yaş, %80 erkek; ağız tabanı, yumuşak damak",
+     "sure": 7,
+     "not": "Rabdomiyom çizgili kas tümörü: erişkin tip orta ve ileri yaşta, yüzde 80'i erkekte; ağız tabanında, yumuşak damakta, dil kökünde.",
+     "ust": "Rabdomiyom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-121.jpg",
+       "yazi": "Yanakta kitle (ok)"
+      }
+     ]
+    },
+    {
+     "metin": "Vakuollü sitoplazma: örümcek ağı görünümü",
+     "sure": 6,
+     "not": "Hücrelerin sitoplazması vakuollüdür, örümcek ağı gibi görünür. Çocuktaki fetal tipi rabdomiyosarkomla karışabilir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-123.jpg",
+       "yazi": "Geniş eozinofilik sitoplazmalı hücreler"
+      }
+     ]
+    },
+    {
+     "metin": "Paragangliom: en sık karotis cisimciği; hücre yuvaları (zellballen)",
+     "sure": 7,
+     "not": "Paragangliom en sık karotis cisimciğinde; hücreler yuvalar yapar, buna zellballen denir. Üçte biri kadarı kalıtsal.",
+     "ust": "Tek satır",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-83.jpg",
+       "yazi": "Paragangliom: hücre yuvaları"
+      }
+     ]
+    },
+    {
+     "metin": "Tendon kılıfının dev hücreli tümörü: ağızda çok nadir",
+     "sure": 5,
+     "not": "Tendon kılıfının dev hücreli tümörü patoloji kaynaklarında geçer ama ağızda çok nadir; Neville'de bu başlığı doğrulayamadım."
+    }
+   ],
+   "serit": [
+    2
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Sarkomlar: ortak özellikler",
+   "maddeler": [
+    {
+     "metin": "Ağız-çene bölgesi kanserlerinin %1'inden azı",
+     "sure": 6,
+     "not": "Üçüncü grup: sarkomlar, yumuşak dokunun kötü huylu tümörleri. Ağız ve çene bölgesinde nadir: Neville'e göre bu bölgedeki kanserlerin yüzde birinden azı.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-129.jpg",
+       "yazi": "Fibrosarkom",
+       "alt": "Çocukta damak ve alveol kretinde kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Lokal agresif büyür; önce çevre dokuyu yıkar",
+     "sure": 5,
+     "not": "Lokal agresif büyür; önce çevre dokuyu yıkar."
+    },
+    {
+     "metin": "Lenf noduna az gider; uzak metastaz en sık akciğere",
+     "sure": 6,
+     "not": "Karsinomların aksine lenf noduna az gider; uzak metastaz en sık akciğere."
+    },
+    {
+     "metin": "Risk: eski radyoterapi, kronik travma, yanık skarı, metal implant",
+     "sure": 7,
+     "not": "Risk etkenleri: yıllar önce alınmış radyoterapi, kronik travma, yanık skarı, metal implant."
+    },
+    {
+     "metin": "Kalıtsal zemin: nörofibromatozis, retinoblastom",
+     "sure": 6,
+     "not": "Kalıtsal zemin: nörofibromatozis ve retinoblastom.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-70.jpg",
+       "yazi": "NF1'li hastada yanakta MPNST"
+      }
+     ]
+    },
+    {
+     "metin": "Davranışı tip, derece, boyut ve cerrahi sınır belirler; baş-boyunda nüks sık",
+     "sure": 10,
+     "not": "Davranışını tipi, derecesi, boyutu, evresi ve cerrahi sınır belirler. Baş-boyunda geniş sınır bırakmak zor; yerel nüks sık."
+    }
+   ],
+   "serit": [
+    3
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Pleomorfik sarkom, fibrosarkom, liposarkom",
+   "maddeler": [
+    {
+     "metin": "Eski adı malign fibröz histiyositom; yaşlıda",
+     "sure": 7,
+     "not": "İndiferansiye pleomorfik sarkom, eski adıyla malign fibröz histiyositom: yaşlı hastada, daha çok bacakta ve gövdede.",
+     "ust": "İndiferansiye pleomorfik sarkom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-131.jpg",
+       "yazi": "Belirgin pleomorfizm, mitozlar"
+      }
+     ]
+    },
+    {
+     "metin": "Storiform demetler ve tuhaf, çok çekirdekli dev hücreler",
+     "sure": 6,
+     "not": "Mikroskopta girdap gibi demetler ve tuhaf, çok çekirdekli dev hücreler."
+    },
+    {
+     "metin": "Baş-boyunda sinonazal; bir kısmı radyoterapiden sonra; nüks %40",
+     "sure": 7,
+     "not": "Baş-boyunda burun ve sinüslerde; bir kısmı radyoterapiden yıllar sonra gelişir. Yüzde 40'ı nükseder."
+    },
+    {
+     "metin": "Bugün bir dışlama tanısı; baş-boyunda %10–19",
+     "sure": 6,
+     "not": "Fibrosarkom bugün bir dışlama tanısı; olguların yüzde 10 ila 19'u baş-boyunda.",
+     "ust": "Fibrosarkom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-129.jpg",
+       "yazi": "Çocukta damakta kitle"
+      }
+     ]
+    },
+    {
+     "metin": "İğsi hücreler balık kılçığı (herringbone) deseninde",
+     "sure": 6,
+     "not": "İğsi hücreler balık kılçığı deseninde dizilir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-130.jpg",
+       "yazi": "İğsi hücre demetleri"
+      }
+     ]
+    },
+    {
+     "metin": "Ağızda dil ve yanak; ağızdakilerin %67'si iyi diferansiye",
+     "sure": 7,
+     "not": "Liposarkom ağızda en sık dilde ve yanakta; ağızdakilerin üçte ikisi iyi diferansiye tip.",
+     "ust": "Liposarkom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-132.jpg",
+       "yazi": "Vakuollü lipoblastlar"
+      }
+     ]
+    },
+    {
+     "metin": "Lipoblastlar; MDM2/CDK4 pozitif; ağızdakiler iyi seyirli",
+     "sure": 6,
+     "not": "Lipoma benzer ama lipoblast ve atipik hücreler içerir; MDM2 ve CDK4 pozitif. Ağızdakiler iyi seyirli."
+    },
+    {
+     "metin": "En sık sarkom: eski kaynaklarda pleomorfik sarkom; Neville 5'e göre bugün liposarkom",
+     "sure": 15,
+     "not": "Bir uyuşmazlık: patoloji kaynaklarında en sık sarkom olarak pleomorfik sarkom geçer. Neville 5'e göre bu eski bilgi; malign fibröz histiyositom denen tümörlerin çoğu başka sarkomlara ayrıldı ve bugün en sık sarkom liposarkom."
+    }
+   ],
+   "serit": [
+    3
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Sinir ve damar kökenli sarkomlar",
+   "maddeler": [
+    {
+     "metin": "Dörtte biri ile yarısı NF1'li hastada",
+     "sure": 7,
+     "not": "Malign periferik sinir kılıfı tümörü, eski adıyla malign schwannom: dörtte biri ile yarısı NF1'li hastalarda gelişir; NF1'de büyüyen kitle hemen biyopsi ister.",
+     "ust": "Malign periferik sinir kılıfı tümörü",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-71.jpg",
+       "yazi": "NF1'li hastada yanak"
+      }
+     ]
+    },
+    {
+     "metin": "Dalgalı çekirdekli atipik iğsi hücreler; prognoz kötü",
+     "sure": 6,
+     "not": "Mikroskopta dalgalı çekirdekli atipik iğsi hücreler; prognozu kötü.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-72.jpg",
+       "yazi": "Atipik iğsi hücreler"
+      }
+     ]
+    },
+    {
+     "metin": "Burun tavanında; çocukta değil erişkinde (ort. 45–56 yaş)",
+     "sure": 7,
+     "not": "Olfaktör nöroblastom burun tavanında koku epitelinden köken alır; adına rağmen çocukta değil erişkinde görülür.",
+     "ust": "Olfaktör nöroblastom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-133.jpg",
+       "yazi": "MR: burun tavanında kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Küçük yuvarlak mavi hücreler, rozetler; kromogranin, sinaptofizin",
+     "sure": 6,
+     "not": "Mikroskopta küçük, yuvarlak, mavi hücreler ve rozetler; kromogranin ve sinaptofizin pozitif.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-134.jpg",
+       "yazi": "Küçük, bazofilik hücreler"
+      }
+     ]
+    },
+    {
+     "metin": "Yarısı baş-boyunda, en sık saçlı deri; ağızda çok nadir",
+     "sure": 7,
+     "not": "Anjiyosarkomun yarısı baş-boyunda, en sık saçlı deride ve alında; ağızda çok nadir.",
+     "ust": "Anjiyosarkom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-136.jpg",
+       "yazi": "Atipik endotelle döşeli kanallar"
+      }
+     ]
+    },
+    {
+     "metin": "Erken lezyon morluk gibi; CD31 ve ERG pozitif",
+     "sure": 5,
+     "not": "Erken dönemde morluk gibi görünür, bu yüzden tanı gecikir; CD31 ve ERG pozitif."
+    },
+    {
+     "metin": "HHV-8; dört form: klasik, endemik, nakil, AIDS",
+     "sure": 8,
+     "not": "Kaposi sarkomu HHV-8 ile ilişkili; dört formu var. Bazı kaynaklar endemik formu HIV ve HHV-8 ile ilişkilendirir; Neville'e göre dört formun hepsinin etkeni HHV-8, HIV yalnız AIDS formunda.",
+     "ust": "Kaposi sarkomu",
+     "gorsel": [
+      {
+       "foto": "img/M3/n7-42.jpg",
+       "yazi": "HIV; sert damakta nodüler büyüme"
+      }
+     ]
+    },
+    {
+     "metin": "AIDS'li hastaların ~%70'inde ağız lezyonu; en sık sert damak",
+     "sure": 6,
+     "not": "AIDS'li hastaların yaklaşık yüzde 70'inde ağız lezyonu olur, en sık sert damakta."
+    },
+    {
+     "metin": "İğsi hücreler, yarık benzeri damarlar, ekstravaze eritrositler",
+     "sure": 8,
+     "not": "Mikroskopta iğsi hücreler, yarık benzeri damarlar ve ekstravaze eritrositler.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-139.jpg",
+       "yazi": "İğsi hücreler ve yarık benzeri damarlar"
+      }
+     ]
+    }
+   ],
+   "serit": [
+    3
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Kas kökenli sarkomlar ve diğerleri",
+   "maddeler": [
+    {
+     "metin": "Ağızda nadir; üçte biri alt çenede",
+     "sure": 6,
+     "not": "Leiomiyosarkom düz kas sarkomu; ağızda nadir, üçte biri alt çenede.",
+     "ust": "Leiomiyosarkom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-140.jpg",
+       "yazi": "Üst alveol kretinde ülserli kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Puro biçimli çekirdekler; 10 BBA'da ≥5 mitoz malign",
+     "sure": 6,
+     "not": "Çekirdekler puro biçimli; on büyük büyütme alanında beş ya da daha fazla mitoz varsa malign kabul edilir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-141.jpg",
+       "yazi": "Pleomorfik iğsi hücreler"
+      }
+     ]
+    },
+    {
+     "metin": "Çocuk yumuşak doku sarkomlarının yarısı; en sık baş-boyun",
+     "sure": 7,
+     "not": "Rabdomiyosarkom çocukların sarkomu: çocukluk çağı yumuşak doku sarkomlarının yarısı, en sık baş-boyunda.",
+     "ust": "Rabdomiyosarkom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-142.jpg",
+       "yazi": "Çocukta maksillada kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Embriyonal en sık (ilk 10 yıl); alveoler ergen ve gençte",
+     "sure": 6,
+     "not": "Embriyonal tip en sık ve ilk on yaşta; alveoler tip ergenlik ve gençlikte; pleomorfik tip erişkinde.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-144.jpg",
+       "yazi": "Küçük yuvarlak hücreler"
+      }
+     ]
+    },
+    {
+     "metin": "Ağız içinde en sık damak; desmin ve miyogenin pozitif",
+     "sure": 6,
+     "not": "Ağız içinde en sık damakta; desmin ve miyogenin pozitif.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-145.jpg",
+       "yazi": "Desmin pozitif rabdomiyoblastlar"
+      }
+     ]
+    },
+    {
+     "metin": "Eklem çevresinde ama sinovyadan köken almaz; baş-boyunda parafarenks",
+     "sure": 8,
+     "not": "Sinovyal sarkom eklem çevresinde görülür ama adına rağmen sinovyadan köken almaz; baş-boyunda en sık parafarenkste.",
+     "ust": "Sinovyal sarkom",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-146.jpg",
+       "yazi": "İğsi hücreler ve bez benzeri yapılar"
+      }
+     ]
+    },
+    {
+     "metin": "SS18::SSX füzyonu; Neville'e göre monofazik tip daha sık",
+     "sure": 6,
+     "not": "Tanıyı SS18::SSX füzyonu koydurur. Kaynaklarda genellikle bifazik diye geçer; Neville'e göre monofazik tip daha sık."
+    },
+    {
+     "metin": "Çocukta baş-boyunda: orbita ve dil",
+     "sure": 6,
+     "not": "Alveoler yumuşak doku sarkomu nadir; çocukta baş-boyunda en sık orbitada ve dilde.",
+     "ust": "Alveoler yumuşak doku sarkomu",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-147.jpg",
+       "yazi": "Alveol benzeri yuvalar"
+      }
+     ]
+    },
+    {
+     "metin": "PAS pozitif, diastaza dirençli kristaller; TFE3 pozitif",
+     "sure": 5,
+     "not": "Hücrelerde PAS pozitif, diastaza dirençli kristaller; TFE3 pozitif."
+    }
+   ],
+   "serit": [
+    3
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Ağız yumuşak dokusuna metastaz",
+   "maddeler": [
+    {
+     "metin": "En sık diş eti (%54); piyojenik granülom gibi görünebilir",
+     "sure": 7,
+     "not": "Son olarak metastaz. Ağız yumuşak dokusuna gelen metastazların yarıdan fazlası diş etinde ve piyojenik granülom gibi görünebilir.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-148.jpg",
+       "yazi": "Melanom metastazı",
+       "alt": "Alt çene diş eti"
+      }
+     ]
+    },
+    {
+     "metin": "Erkekte akciğer, kadında meme; %25'inde kanserin ilk bulgusu",
+     "sure": 8,
+     "not": "Erkekte en sık akciğerden, kadında memeden gelir; hastaların dörtte birinde ağızdaki lezyon kanserin ilk bulgusu. Bu yüzden çıkardığınız her doku patolojiye gider.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-150.jpg",
+       "yazi": "Kolon adenokarsinomu metastazı",
+       "alt": "Retromolar bölge"
+      }
+     ]
+    }
+   ],
+   "serit": [
+    3
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Açılış vakası: biyopsi sonucu",
+   "maddeler": [
+    {
+     "metin": "42 yaşında kadın; dil sırtında ağrısız, sarımsı nodül",
+     "sure": 8,
+     "not": "Dersin başındaki hastamıza dönüyoruz: dil sırtında ağrısız, sarımsı nodül.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-87.jpg",
+       "yazi": "Biyopsi: epitelde aşağı uzanan dallar"
+      },
+      {
+       "kutu": "Karsinom mu? Tahminin değişti mi?",
+       "ton": "vurgu"
+      }
+     ]
+    },
+    {
+     "metin": "Yüzeysel insizyonel biyopsi yapıldı",
+     "sure": 7,
+     "not": "Yüzeysel bir insizyonel biyopsi yapıldı."
+    },
+    {
+     "metin": "Rapor: yüzeyde psödoepitelyomatöz hiperplazi; invaziv karsinom dışlanamadı",
+     "sure": 15,
+     "not": "Rapor: yüzeyde psödoepitelyomatöz hiperplazi, invaziv karsinom dışlanamadı. Epitel aşağı doğru dallar yapıyor ve karsinoma benziyor. Tahmininizi yenileyin; sıradaki slaytta ilk tahminle karşılaştıracağız."
+    }
+   ],
+   "tema": "koyu",
+   "etiket": "Vakaya dönüş",
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "soru",
+   "baslik": "Vakaya dönüş: şimdi ne diyorsun?",
+   "soru": "W6",
+   "sure": 40,
+   "not": "Aynı soru, aynı şıklar. Dersin başındaki dağılımı hatırlayın. (İki sonucu yan yana göster.)",
+   "gorsel": [
+    {
+     "foto": "img/M3/n12-87.jpg",
+     "yazi": "Yüzeysel biyopsi"
+    }
+   ],
+   "tema": "koyu",
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Tanı: granüler hücreli tümör",
+   "maddeler": [
+    {
+     "metin": "Dil sırtı: granüler hücreli tümörün en sık yeri; ağız kanserinin olağan yeri değil",
+     "sure": 10,
+     "not": "Kanıtları sırayla koyalım. Yer: dil sırtı; granüler hücreli tümörün en sık yeri, ama ağız kanserinin olağan yeri değil.",
+     "ust": "Yer",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-84.jpg",
+       "yazi": "Dil sırtında nodül"
+      }
+     ]
+    },
+    {
+     "metin": "Ağrısız, sert, sarımsı nodül; kadın, 4.–6. dekat",
+     "sure": 7,
+     "not": "Klinik: ağrısız, sert, sarımsı nodül; orta yaşta kadın.",
+     "ust": "Klinik"
+    },
+    {
+     "metin": "Psödoepitelyomatöz hiperplazi: karsinoma benzer",
+     "sure": 9,
+     "not": "Yüzeysel biyopsi epitelin aşağı uzanan dallarını gösterdi; psödoepitelyomatöz hiperplazi karsinoma çok benzer.",
+     "ust": "Yüzeysel biyopsi",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-87.jpg",
+       "yazi": "Yüzeyde psödoepitelyomatöz hiperplazi"
+      }
+     ]
+    },
+    {
+     "metin": "İri, poligonal, granüler sitoplazmalı hücreler; S100 ve PAS pozitif",
+     "sure": 9,
+     "not": "Derin biyopsi altındaki asıl tümörü gösterdi: iri, granüler sitoplazmalı hücreler, S100 ve PAS pozitif. Tanı granüler hücreli tümör.",
+     "ust": "Derin biyopsi",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-86.jpg",
+       "yazi": "Derin biyopsi: granüler hücreler"
+      }
+     ]
+    },
+    {
+     "metin": "Konservatif eksizyon; nüks nadir",
+     "sure": 6,
+     "not": "Tedavi konservatif eksizyon; nüks nadir.",
+     "ust": "Yönetim"
+    },
+    {
+     "metin": "Yüzeysel biyopsi karsinom sanılabilir: dil sırtındaki nodülde biyopsiyi derin al, istek formuna yeri ve kliniği yaz",
+     "sure": 19,
+     "not": "Patoloğun notu: Neville bu görüntü yüzünden karsinom tanısı konup gereksiz kanser ameliyatı yapılan hastalardan söz ediyor. Dil sırtındaki bir nodülde biyopsiyi derin alın ve istek formuna yeri ve kliniği yazın.",
+     "ust": "Patoloğun notu",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-86.jpg",
+       "yazi": "Derin biyopsi: granüler hücreler"
+      },
+      {
+       "not": {
+        "baslik": "Yüzeysel biyopsi tuzağı",
+        "metin": "Neville: psödoepitelyomatöz hiperplazi bazen o kadar belirgindir ki karsinom tanısı konup **gereksiz kanser ameliyatı** yapılabilir."
+       }
+      }
+     ]
+    }
+   ],
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "tablo",
+   "baslik": "Eski ad, yeni ad",
+   "tabloBaslik": "Eski ad → güncel ad",
+   "satirlar": [
+    [
+     "Malign fibröz histiyositom",
+     "İndiferansiye pleomorfik sarkom"
+    ],
+    [
+     "Hemanjiyoperisitom",
+     "Soliter fibröz tümör"
+    ],
+    [
+     "Malign schwannom",
+     "Malign periferik sinir kılıfı tümörü"
+    ],
+    [
+     "Estezyonöroblastom",
+     "Olfaktör nöroblastom"
+    ],
+    [
+     "Nazofarengeal anjiyofibrom",
+     "Sinonazal anjiyofibrom (WHO 2022)"
+    ],
+    [
+     "Lenfanjiyom",
+     "Lenfatik malformasyon (Neville 5; WHO hâlâ lenfanjiyom)"
+    ],
+    [
+     "Nodüler fasiitis",
+     "WHO 2022: kendiliğinden geçen neoplazi (USP6)"
+    ]
+   ],
+   "sure": 40,
+   "not": "Zaman kalırsa; yoksa atlayın. Adı değişen tümörler; sınavda iki adı da görebilirsiniz.",
+   "opsiyonel": true
+  },
+  {
+   "tip": "soru",
+   "baslik": "Çıkış bileti",
+   "soru": "W7",
+   "sure": 40,
+   "not": "Son kelime bulutu. Hangi konu kafanızı karıştırdı? En büyük çıkan kelimeyle hemen sonraki derse, tükürük bezlerine başlayacağım.",
+   "aciklama": "Tek kelime ya da kısa ifade. En büyük çıkan kelimeyle bir sonraki derse başlıyorum.",
+   "tema": "koyu"
+  },
+  {
+   "tip": "liderlik",
+   "baslik": "Liderlik tablosu",
+   "sure": 25,
+   "not": "Liderlik tablosu. İlk üçü alkışlayalım. Eşit puanda hızlı olan önde."
+  },
+  {
+   "tip": "kaynaklar",
+   "baslik": "Kaynaklar ve evde tekrar",
+   "maddeler": [
+    "Neville BW, Damm DD, Allen CM, Chi AC. *Oral and Maxillofacial Pathology.* 5. baskı. Elsevier; 2024. Bölüm 12: Yumuşak doku tümörleri.",
+    "WHO Classification of Tumours Editorial Board. *Head and Neck Tumours.* 5. baskı. IARC; 2022. Bölüm 10 (yumuşak doku).",
+    "Laskaris G. *Color Atlas of Oral Diseases.* 4. baskı. Thieme; 2017. (Klinik fotoğraflar)",
+    "Kahyaoğlu Akkaya Z. Yumuşak doku hastalıkları patolojisi. Fakülte ders notu (sıra ve bazı görseller)."
+   ],
+   "quizMetni": "24 soru: Neville'in örnek sınav soruları, Türkçe, cevap açıklamalı.",
+   "quizAdres": "olgunak.github.io/lam-basinda/quiz",
+   "cagri": "İlk üçü 24 Kasım'da burada anarım.",
+   "sure": 10,
+   "not": "Kaynaklar burada. Evde tekrar için quiz: Neville'in örnek sınav soruları Türkçe, cevap açıklamalı; isteyen karekodu okutup çözsün. İlk üçü gelecek derste burada anarım. On dakika ara; sonra tükürük bezleri. Telefonlarınızı kapatmayın: aynı adla 'Sıradaki derse geç' düğmesi çıkacak."
+  }
+ ]
+}

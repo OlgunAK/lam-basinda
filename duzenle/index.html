@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lam Başında · Düzenleyici</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../ortak/tasarim.css">
+<link rel="stylesheet" href="duzenle.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-yukari" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+  <symbol id="i-asagi" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-sol" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-sag" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-kopya" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+  <symbol id="i-sil" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></symbol>
+  <symbol id="i-arti" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-yukle" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></symbol>
+  <symbol id="i-indir" viewBox="0 0 24 24"><path d="M12 4v12M7 11l5 5 5-5M4 20h16"/></symbol>
+  <symbol id="i-ayar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></symbol>
+  <symbol id="i-geri" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+  <symbol id="i-gorsel" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></symbol>
+</svg>
+
+<header class="ust-cubuk">
+  <a class="marka" href="../" title="Siteye dön"><img class="mark" src="../ortak/isaret.svg" alt=""><span>Düzenleyici</span></a>
+  <label class="ders-sec"><span class="sr">Ders</span><select id="ders"></select></label>
+  <p id="durum" class="durum" role="status"></p>
+  <div class="ust-eylem">
+    <button class="ui-btn quiet" id="geriAl" type="button" title="Son değişikliği geri al (Ctrl+Z)" disabled><svg><use href="#i-geri"/></svg><span>Geri al</span></button>
+    <button class="ui-btn quiet" id="ayarlarAc" type="button"><svg><use href="#i-ayar"/></svg><span>Ayarlar</span></button>
+    <button class="ui-btn quiet" id="zipIndir" type="button" disabled><svg><use href="#i-indir"/></svg><span>Bilgisayara indir</span></button>
+    <button class="ui-btn" id="kaydet" type="button" disabled><svg><use href="#i-yukle"/></svg><span>Kaydet ve yayınla</span></button>
+  </div>
+</header>
+
+<main class="ana">
+  <nav class="sol" aria-label="Slaytlar">
+    <div class="sol-ust">
+      <h2>Slaytlar</h2>
+      <div class="ekle">
+        <label class="sr" for="yeniTip">Eklenecek slayt türü</label>
+        <select id="yeniTip">
+          <option value="adim">Adım adım</option>
+          <option value="soru">Soru</option>
+          <option value="kutular">Plan / kutular</option>
+          <option value="tablo">Tablo</option>
+          <option value="kaynaklar">Kaynaklar</option>
+          <option value="kapak">Kapak</option>
+          <option value="liderlik">Liderlik tablosu</option>
+          <option value="bulut">Kelime bulutu (geçen ders)</option>
+        </select>
+        <button class="ikon-btn" id="slaytEkle" type="button" title="Seçili slaytın arkasına ekle"><svg><use href="#i-arti"/></svg><span class="sr">Slayt ekle</span></button>
+      </div>
+    </div>
+    <ol id="slaytlar" class="slaytlar"></ol>
+  </nav>
+
+  <section class="orta" aria-label="Önizleme">
+    <div class="cerceve" id="cerceve"><div id="sahne" class="sahne"></div></div>
+    <div class="adim-cubuk">
+      <button class="ikon-btn" id="oncekiAdim" type="button" title="Önceki adım (←)"><svg><use href="#i-sol"/></svg><span class="sr">Önceki adım</span></button>
+      <span id="adimYazi" class="tnum"></span>
+      <button class="ikon-btn" id="sonrakiAdim" type="button" title="Sonraki adım (→)"><svg><use href="#i-sag"/></svg><span class="sr">Sonraki adım</span></button>
+    </div>
+    <p class="ipucu">Metinlerde <b>**kalın**</b>, <i>*italik*</i> ve <span class="tnum">-&gt;</span> (ok) yazabilirsiniz. Değişiklikler bu bilgisayarda taslak olarak saklanır; yayınlamak için <b>Kaydet ve yayınla</b>.</p>
+  </section>
+
+  <aside class="sag" aria-label="Düzenleme">
+    <div class="sekmeler" role="tablist">
+      <button role="tab" id="sk-slayt" aria-selected="true" type="button">Slayt</button>
+      <button role="tab" id="sk-soru" aria-selected="false" type="button">Sorular</button>
+      <button role="tab" id="sk-ders" aria-selected="false" type="button">Ders</button>
+    </div>
+    <div id="form" class="form" role="tabpanel"></div>
+  </aside>
+</main>
+
+<dialog id="ayarlar" class="pencere">
+  <form method="dialog" class="pencere-ic">
+    <h2>Ayarlar</h2>
+    <p class="aciklama">Kaydedince değişiklikler doğrudan GitHub'daki siteye yazılır ve 1–2 dakika içinde yayına girer. Bunun için bir kez GitHub anahtarı (token) girmeniz gerekir. Anahtar yalnız bu tarayıcıda saklanır; ortak bilgisayarda kullanmayın.</p>
+    <ol class="adimlar-liste">
+      <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> sayfasını açın.</li>
+      <li>Ad verin, süre seçin. <b>Repository access</b>: <i>Only select repositories</i> → <b>lam-basinda</b>.</li>
+      <li><b>Permissions → Repository permissions → Contents</b>: <i>Read and write</i>. <b>Generate token</b>.</li>
+      <li>Çıkan anahtarı aşağıya yapıştırın.</li>
+    </ol>
+    <label class="alan"><span>GitHub anahtarı</span><input id="ayAnahtar" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…"></label>
+    <div class="iki">
+      <label class="alan"><span>Depo</span><input id="ayDepo" type="text" spellcheck="false"></label>
+      <label class="alan"><span>Dal</span><input id="ayDal" type="text" spellcheck="false"></label>
+    </div>
+    <div class="pencere-alt">
+      <button class="ui-btn quiet" value="iptal" type="submit">Vazgeç</button>
+      <button class="ui-btn" value="kaydet" id="ayKaydet" type="submit">Kaydet</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="galeri" class="pencere genis">
+  <div class="pencere-ic">
+    <h2>Görsel seç</h2>
+    <p class="aciklama">Bu dersteki görseller. Yeni fotoğraf yüklerseniz en çok 1800 piksele küçültülür.</p>
+    <div class="galeri-ust">
+      <label class="ui-btn"><svg><use href="#i-yukle"/></svg><span>Bilgisayardan yükle</span><input id="galeriDosya" type="file" accept="image/*" class="sr"></label>
+    </div>
+    <div id="galeriIzgara" class="galeri-izgara"></div>
+    <div class="pencere-alt"><button class="ui-btn quiet" id="galeriKapat" type="button">Vazgeç</button></div>
+  </div>
+</dialog>
+
+<dialog id="kayit" class="pencere">
+  <div class="pencere-ic">
+    <h2 id="kayitBaslik">Kaydediliyor</h2>
+    <progress id="kayitCubuk" max="1" value="0"></progress>
+    <p id="kayitYazi" class="aciklama" aria-live="polite"></p>
+    <div class="pencere-alt"><button class="ui-btn" id="kayitKapat" type="button" hidden>Tamam</button></div>
+  </div>
+</dialog>
+
+<div id="cizimSahne" class="cizim-sahne" aria-hidden="true"></div>
+
+<script src="../ortak/slayt.js"></script>
+<script src="disa.js"></script>
+<script src="github.js"></script>
+<script src="duzenle.js"></script>
+</body>
+</html>

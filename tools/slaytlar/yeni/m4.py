@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+# ESKİ: Bu ders artık canli/dersler/kaynak/ içindeki JSON'dan üretiliyor (düzenleyici: duzenle/,
+# toplu çizim: node tools/slaytlar/ciz.mjs). Bu betik yalnız içeriğin ilk kaynağı olarak duruyor;
+# çalıştırılırsa yeni tasarımın ve düzenleyicide yapılan değişikliklerin üstüne yazar.
 """M4 · Tükürük Bezi Hastalıkları ve Tümörleri (17 Kasım 2026, blok dersin ikincisi, 25 dk).
 
 Sıra fakültenin ders notunu izler (9. hafta, Tükürük Bezi Hastalıkları

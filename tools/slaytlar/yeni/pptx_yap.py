@@ -74,31 +74,41 @@ def build(lid):
 
 
 def page(info):
-    """indir/index.html and the site home page (index.html) list the same decks."""
-    import html
+    """indir/index.html and the site home page (index.html) list the same decks.
+
+    The template marks home-only blocks with <!--EV-->...<!--/EV--> and
+    download-page-only blocks with <!--INDIR-->...<!--/INDIR-->."""
+    import html, re
     tpl = open(os.path.join(HERE, "indir_sablon.html"), encoding="utf-8").read()
-    for out, f, r, url, ust in [
-            (os.path.join(OUT, "index.html"), "", "../", "olgunak.github.io/lam-basinda/indir", ""),
-            (os.path.join(REPO, "index.html"), "indir/", "", "olgunak.github.io/lam-basinda",
-             '<nav class="top-acts"><a href="canli/">← Canlı derse katıl</a><a href="quiz/">Quizler →</a></nav>')]:
+    for out, f, r, url, home in [
+            (os.path.join(OUT, "index.html"), "", "../", "olgunak.github.io/lam-basinda/indir", False),
+            (os.path.join(REPO, "index.html"), "indir/", "", "olgunak.github.io/lam-basinda", True)]:
         cards = []
         for i in info:
             q = i.get("quiz", "").replace("../", r)
-            quiz = ('<a class="btn ghost" href="%s">Quiz: kendini sına</a>' % html.escape(q)) if q else ""
-            cards.append('<article class="set"><span class="eyebrow">%s</span><h2>%s</h2><span class="s">%d slayt · %s MB · PowerPoint</span>'
-                         '<div class="acts"><a class="btn" href="%s" download>İndir (.pptx)</a>%s</div></article>'
-                         % (html.escape(i["date"]), html.escape(i["title"]), i["slides"], str(i["mb"]).replace(".", ","), html.escape(f + i["file"]), quiz))
-        t = tpl.replace("<!--DERSLER-->", "\n".join(cards)).replace("{{R}}", r).replace("{{URL}}", url).replace("<!--UST-->", ust)
-        if not ust:
-            t = t.replace("Lam Başında · Dersler</h1>", "Lam Başında · Dersler</h1>")
-        else:
+            quiz = ('<a class="ui-btn quiet" href="%s"><svg aria-hidden="true"><use href="#i-quiz"/></svg>Quiz: kendini sına</a>'
+                    % html.escape(q)) if q else ""
+            cards.append('<li><article class="lesson ui-card"><h3>%s</h3><p class="meta">%s · %d slayt · %s MB</p>'
+                         '<div class="acts"><a class="ui-btn" href="%s" download><svg aria-hidden="true"><use href="#i-dl"/></svg>İndir (.pptx)</a>%s</div></article></li>'
+                         % (html.escape(i["title"]), html.escape(i["date"]), i["slides"], str(i["mb"]).replace(".", ","), html.escape(f + i["file"]), quiz))
+        t = tpl.replace("<!--DERSLER-->", "\n".join(cards)).replace("{{R}}", r).replace("{{URL}}", url)
+        keep, drop = ("EV", "INDIR") if home else ("INDIR", "EV")
+        t = re.sub(r"<!--%s-->.*?<!--/%s-->\n?" % (drop, drop), "", t, flags=re.S)
+        t = t.replace("<!--%s-->\n" % keep, "").replace("<!--/%s-->\n" % keep, "")
+        if home:
             t = t.replace("<title>Lam Başında · Dersler</title>", "<title>Lam Başında</title>").replace("Lam Başında · Dersler</h1>", "Lam Başında</h1>")
         open(out, "w", encoding="utf-8").write(t)
 
 
 if __name__ == "__main__":
-    ids = sys.argv[1:] or [e["id"] for e in json.load(open(os.path.join(CANLI, "dersler", "index.json"), encoding="utf-8"))]
-    info = [build(i) for i in ids]
+    hepsi = [e["id"] for e in json.load(open(os.path.join(CANLI, "dersler", "index.json"), encoding="utf-8"))]
+    ids = sys.argv[1:] or hepsi
+    yeni = {i: build(i) for i in ids}
+    # Yalnız bazı dersler üretildiyse ötekilerin bilgisi eski listeden korunur.
+    eski = {}
+    if os.path.exists(os.path.join(OUT, "dersler.json")):
+        eski = {e["id"]: e for e in json.load(open(os.path.join(OUT, "dersler.json"), encoding="utf-8"))}
+    info = [yeni.get(i) or eski.get(i) for i in hepsi if (yeni.get(i) or eski.get(i))]
     json.dump(info, open(os.path.join(OUT, "dersler.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     page(info)
     for i in info:
