@@ -41,32 +41,54 @@ def qr_svg(u):
 
 
 def page(info):
+    # Flaştaki zip'ten internetsiz açılır: site dosyalarına (ortak/tasarim.css, fontlar)
+    # bağlanmaz. Rol token'ları ortak/tasarim.css'teki değerlerin kopyası; yazı sistem yazıları.
     cards = "\n".join(
-        '<li><span class="d">%s</span> <b>%s</b> · %d slayt <a href="PowerPoint/%s">Aç</a></li>'
-        % (html.escape(i["date"]), html.escape(i["title"]), i["slides"], i["file"]) for i in info)
+        '<li><span class="b"><b>%s</b><span class="meta">%s · %d slayt</span></span><a class="btn q sm" href="PowerPoint/%s">Aç</a></li>'
+        % (html.escape(i["title"]), html.escape(i["date"]), i["slides"], i["file"]) for i in info)
     return """<!doctype html>
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lam Başında · Başlat</title>
 <style>
-:root{--bg:#FBF8FC;--card:#fff;--ink:#24163A;--muted:#6B5D7B;--line:#E6DCEE;--hema:#4A2C82;--hema-soft:#EFE8FA;--eosin:#C2366A}
-@media (prefers-color-scheme: dark){:root{--bg:#150E1E;--card:#20172C;--ink:#F2EBF7;--muted:#A898B9;--line:#382A49;--hema:#B9A0EE;--hema-soft:#2C2142;--eosin:#F27CA3;color-scheme:dark}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.wrap{max-width:860px;margin:0 auto;padding:24px 16px 48px;display:flex;flex-direction:column;gap:18px}
-h1{margin:0;font:700 1.7rem Georgia,serif}h2{margin:0 0 8px;font:700 1.15rem Georgia,serif}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
-.big{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
-.btn{display:block;text-decoration:none;text-align:center;border-radius:12px;padding:18px 14px;font-weight:700;font-size:1.15rem;background:var(--hema);color:var(--bg)}
-.btn.g{background:var(--hema-soft);color:var(--hema);border:1px solid var(--line)}
-.btn small{display:block;font-weight:500;font-size:.8rem;opacity:.85}
-.row{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.row img{width:170px;height:170px;background:#fff;border-radius:10px;padding:6px}
-.m{color:var(--muted);font-size:.9rem}ul{margin:0;padding-left:20px}li{margin:4px 0}.d{color:var(--eosin);font-weight:700;font-size:.85rem}
-a{color:var(--hema)}code{background:var(--hema-soft);padding:1px 6px;border-radius:6px}
+:root{--c-bg:#FAF7FB;--c-surface:#FFFFFF;--c-surface-2:#F1ECF6;--c-text:#22163A;--c-text-2:#5E5070;--c-line:#E4DAEC;--c-line-strong:#8F80A3;
+--c-accent:#4A2C82;--c-accent-soft:#EEE7F8;--c-on-accent:#FFFFFF;--c-now:#B0275B;--c-qr-bg:#FFFFFF;
+--f-display:Georgia,"Times New Roman",serif;--f-body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+--s-1:4px;--s-2:8px;--s-3:12px;--s-4:16px;--s-5:24px;--s-6:32px;--s-7:48px;--r-sm:8px;--r-md:12px;--r-lg:16px;color-scheme:light}
+@media (prefers-color-scheme: dark){:root{--c-bg:#160F21;--c-surface:#211830;--c-surface-2:#2D2243;--c-text:#F3EDF8;--c-text-2:#AFA1C2;--c-line:#4A3D60;--c-line-strong:#6E5F84;
+--c-accent:#BBA3F0;--c-accent-soft:#2D2243;--c-on-accent:#160F21;--c-now:#F283AA;color-scheme:dark}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--c-bg);color:var(--c-text);font:16px/1.5 var(--f-body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:var(--s-6) var(--s-4) var(--s-7);display:flex;flex-direction:column;gap:var(--s-4)}
+h1,h2{margin:0;font-family:var(--f-display);font-weight:700;line-height:1.2;letter-spacing:-.01em;text-wrap:balance}
+h1{font-size:1.75rem;margin-bottom:var(--s-2)}h2{font-size:1.125rem;margin-bottom:var(--s-3)}
+p{margin:0;text-wrap:pretty;max-width:65ch}
+.card{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-lg);padding:var(--s-5)}
+.big{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--s-2)}
+.btn{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:44px;text-decoration:none;text-align:center;border-radius:var(--r-md);border:1px solid transparent;padding:var(--s-4) var(--s-3);font-weight:700;font-size:1.125rem;line-height:1.25;background:var(--c-accent);color:var(--c-on-accent);transition-property:background-color,border-color,scale;transition-duration:150ms;transition-timing-function:ease-out}
+.btn.q{background:var(--c-surface);color:var(--c-text);border-color:var(--c-line-strong)}
+.btn:active{scale:.96}
+@media (hover:hover){.btn:hover{background:color-mix(in oklab,var(--c-accent) 88%%,var(--c-text))}.btn.q:hover{background:var(--c-surface-2);border-color:var(--c-accent)}}
+.btn small{font-weight:500;font-size:.8125rem;opacity:.85}
+.btn.sm{flex:none;padding:0 var(--s-4);font-size:.875rem}
+.row{display:flex;gap:var(--s-5);align-items:center;flex-wrap:wrap}
+.row img{width:170px;height:170px;background:var(--c-qr-bg);border-radius:var(--r-md);padding:6px}
+.row div{display:flex;flex-direction:column;gap:var(--s-2)}
+.m,.meta{color:var(--c-text-2);font-size:.875rem}.meta{font-variant-numeric:tabular-nums}
+ul{margin:0;padding-left:20px}li{margin:var(--s-1) 0}li::marker{color:var(--c-text-2)}
+ul.decks{list-style:none;padding:0;margin-top:var(--s-3);display:flex;flex-direction:column}
+ul.decks li{display:flex;align-items:center;gap:var(--s-3);margin:0;padding:var(--s-3) 0;border-top:1px solid var(--c-line)}
+ul.decks .b{flex:1;display:flex;flex-direction:column}
+a{color:var(--c-accent);text-underline-offset:.18em}
+a:focus-visible{outline:3px solid var(--c-accent);outline-offset:2px}
+::selection{background:var(--c-now);color:var(--c-on-accent)}
+kbd{font:inherit;font-size:.875rem;font-weight:650;background:var(--c-surface-2);border:1px solid var(--c-line);border-radius:6px;padding:0 6px;font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){*{transition-duration:1ms!important}}
 </style></head><body><main class="wrap">
 <h1>Lam Başında · Ders günü</h1>
 <section class="card"><h2>1 · Sınıf bilgisayarında</h2><div class="big">
 <a class="btn" href="%(perde)s">Perdeyi aç<small>açılınca F11 ile tam ekran</small></a>
-<a class="btn g" href="%(ogrenci)s">Öğrenci sayfası<small>öğrencilerin gördüğü</small></a>
-<a class="btn g" href="%(ana)s">Slaytlar ve quizler<small>ana sayfa</small></a>
+<a class="btn q" href="%(ogrenci)s">Öğrenci sayfası<small>öğrencilerin gördüğü</small></a>
+<a class="btn q" href="%(ana)s">Slaytlar ve quizler<small>ana sayfa</small></a>
 </div></section>
 <section class="card"><h2>2 · Telefonunda kumanda</h2><div class="row">
 <img alt="Kumanda karekodu" src="%(qr)s">
@@ -74,16 +96,15 @@ a{color:var(--hema)}code{background:var(--hema-soft);padding:1px 6px;border-radi
 <p class="m">Adres: <a href="%(kumanda)s">%(kumanda)s</a></p></div></div></section>
 <section class="card"><h2>İnternet yoksa: PowerPoint</h2>
 <p class="m">Canlı ders (sorular, karekod, liderlik) internetsiz çalışmaz. Bu durumda dersi PowerPoint'ten anlat; sorular ve doğru cevaplar not bölümünde.</p>
-<ul>%(cards)s</ul></section>
+<ul class="decks">%(cards)s</ul></section>
 <section class="card"><h2>Kontrol listesi</h2><ul>
 <li>Perde ilk kez açılıyorsa <b>Perde hesabıyla gir</b> kutusuna perde şifresini yaz (tarayıcı sonra hatırlar).</li>
 <li>Telefonda kumanda Google hesabıyla girişli olsun; şarj ve internet (mobil veri yedek).</li>
-<li>Perdede <code>F11</code> tam ekran, <code>→</code> <code>←</code> slayt, <code>L</code> katılım ekranı, <code>.</code> karartma.</li>
+<li>Perdede <kbd>F11</kbd> tam ekran, <kbd>→</kbd> <kbd>←</kbd> slayt, <kbd>L</kbd> katılım ekranı, <kbd>.</kbd> karartma.</li>
 <li>Blok derste birinci ders bitince ikinci dersin oturumunu aç; öğrenciler tek dokunuşla geçer.</li>
 <li>HDMI adaptörü ve tıklayıcı.</li>
 </ul></section>
 </main></body></html>""" % dict(U, qr=qr_svg(U["kumanda"]), cards=cards)
-
 
 def oku():
     s = """LAM BASINDA - DERS GUNU FLASI

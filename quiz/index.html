@@ -5,74 +5,77 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Lam Başında · Quiz</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../ortak/tasarim.css">
 <style>
-/* Ana sayfayla aynı dil: H&E renkleri, tek sütun, telefon öncelikli. */
-:root{
-  --bg:#FBF8FC; --card:#FFFFFF; --ink:#24163A; --muted:#6B5D7B; --line:#E6DCEE;
-  --hema:#4A2C82; --hema-soft:#EFE8FA; --eosin:#C2366A; --eosin-soft:#FBE9F0;
-  --ok:#17744E; --ok-soft:#E3F4EC; --bad:#B02E2A; --bad-soft:#FBE7E6;
-  --f-display:"Literata",Georgia,"Times New Roman",serif;
-  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --r:14px;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#150E1E; --card:#20172C; --ink:#F2EBF7; --muted:#A898B9; --line:#382A49;
-  --hema:#B9A0EE; --hema-soft:#2C2142; --eosin:#F27CA3; --eosin-soft:#3A1E2C;
-  --ok:#55C792; --ok-soft:#173327; --bad:#F3776F; --bad-soft:#3B1C1B; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#150E1E; --card:#20172C; --ink:#F2EBF7; --muted:#A898B9; --line:#382A49;
-  --hema:#B9A0EE; --hema-soft:#2C2142; --eosin:#F27CA3; --eosin-soft:#3A1E2C;
-  --ok:#55C792; --ok-soft:#173327; --bad:#F3776F; --bad-soft:#3B1C1B; color-scheme:dark}
-*{box-sizing:border-box}
-html,body{margin:0}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
-.wrap{max-width:640px;margin:0 auto;padding:20px 16px 48px;display:flex;flex-direction:column;gap:20px}
-h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.2}
-p{margin:0}
-button{font:inherit;color:inherit;cursor:pointer}
-button:focus-visible,a:focus-visible{outline:3px solid var(--hema);outline-offset:2px}
-.top{display:flex;align-items:center;gap:12px}
-.mark{width:44px;height:44px;flex:none;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--eosin) 0 22%,transparent 23%),radial-gradient(circle at 66% 60%,var(--hema) 0 16%,transparent 17%),var(--eosin-soft);border:1px solid var(--line)}
-.brand h1{font-size:1.5rem}
-.brand p{color:var(--muted);font-size:.85rem}
-.note{color:var(--muted);font-size:.88rem}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
-.set{display:flex;flex-direction:column;gap:6px;text-align:left;width:100%;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
-.set:hover{border-color:var(--hema)}
-.eyebrow{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--eosin);font-weight:700}
-.set h2{font-size:1.2rem}
-.set .s{color:var(--muted);font-size:.9rem}
-.set .prog{font-size:.85rem;font-weight:600;color:var(--hema)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.back{background:none;border:0;padding:6px 0;color:var(--hema);font-weight:600}
-.count{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
-.track{height:6px;border-radius:99px;background:var(--hema-soft);overflow:hidden}
-.track i{display:block;height:100%;background:var(--hema);border-radius:99px;transition:width .25s}
-.qtext{font-family:var(--f-display);font-size:1.2rem;font-weight:500;line-height:1.35}
-.opts{display:flex;flex-direction:column;gap:8px}
-.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
-.opt:hover:not(:disabled){border-color:var(--hema)}
-.opt b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--hema-soft);color:var(--hema);display:flex;align-items:center;justify-content:center;font-size:.9rem}
-.opt span{padding-top:2px}
+/* Renk, yazı, boşluk: ortak/tasarim.css. Burada yalnız sayfaya özgü düzen; yalnız rol token'ları. */
+.wrap{max-width:680px;margin:0 auto;padding:var(--s-5) var(--s-4) var(--s-7);display:flex;flex-direction:column;gap:var(--s-5)}
+.top{display:flex;align-items:center;gap:var(--s-3)}
+.top h1{font-size:var(--t-xl)}
+.top p{color:var(--c-text-2);font-size:var(--t-sm)}
+.note{color:var(--c-text-2);font-size:var(--t-sm);max-width:65ch}
+.ico{width:20px;height:20px;flex:none}
+
+/* Ders listesi */
+.sets{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--s-3)}
+.set{display:flex;align-items:center;gap:var(--s-4);width:100%;text-align:left;background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-lg);padding:var(--s-4) var(--s-4) var(--s-4) var(--s-5);color:var(--c-text);transition-property:border-color,background-color,scale;transition-duration:150ms;transition-timing-function:ease-out}
+.set:active{scale:.98}
+.set .b{flex:1;display:flex;flex-direction:column;gap:var(--s-1)}
+.set .t{font-family:var(--f-display);font-weight:650;font-size:var(--t-xl);line-height:1.2;letter-spacing:-.01em;text-wrap:balance}
+.meta{color:var(--c-text-2);font-size:var(--t-sm);font-variant-numeric:tabular-nums}
+.best{align-self:flex-start;margin-top:var(--s-1);font-size:var(--t-xs);font-weight:650;color:var(--c-accent);background:var(--c-accent-soft);border-radius:var(--r-pill);padding:2px 10px;font-variant-numeric:tabular-nums}
+.set .ico{color:var(--c-text-2)}
+@media (hover:hover){.set:hover{border-color:var(--c-accent)}.set:hover .ico{color:var(--c-accent)}}
+
+/* Soru ekranı */
+.bar{display:flex;align-items:center;justify-content:space-between;gap:var(--s-3)}
+.back{display:inline-flex;align-items:center;gap:var(--s-1);min-height:var(--tap);margin-left:calc(-1 * var(--s-2));padding:0 var(--s-3) 0 var(--s-1);background:none;border:0;border-radius:var(--r-md);color:var(--c-accent);font-weight:650;transition-property:background-color,scale;transition-duration:150ms;transition-timing-function:ease-out}
+.back:active{scale:.96}
+@media (hover:hover){.back:hover{background:var(--c-accent-soft)}}
+.prog{display:flex;flex-direction:column;gap:var(--s-2)}
+.prog .row{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s-3);font-size:var(--t-sm);color:var(--c-text-2)}
+.prog .row b{color:var(--c-text);font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap}
+.track{height:6px;border-radius:var(--r-pill);background:var(--c-line);overflow:hidden}
+.track i{display:block;height:100%;background:var(--c-accent);border-radius:var(--r-pill);transition:width 250ms var(--ease)}
+.qtext{font-family:var(--f-display);font-size:var(--t-xl);font-weight:550;line-height:1.35;max-width:65ch}
+.opts{display:flex;flex-direction:column;gap:var(--s-2)}
+.opt{display:flex;gap:var(--s-3);align-items:flex-start;text-align:left;width:100%;min-height:var(--tap);background:var(--c-surface);border:1px solid var(--c-line-strong);border-radius:var(--r-md);padding:var(--s-3) var(--s-4) var(--s-3) var(--s-3);color:var(--c-text);transition-property:border-color,background-color,scale;transition-duration:150ms;transition-timing-function:ease-out}
+.opt:not(:disabled):active{scale:.98}
+@media (hover:hover){.opt:not(:disabled):hover{border-color:var(--c-accent);background:var(--c-surface-2)}}
+.opt .l{flex:none;width:28px;height:28px;border-radius:50%;background:var(--c-accent-soft);color:var(--c-accent);display:flex;align-items:center;justify-content:center;font-size:var(--t-sm);font-weight:700}
+.opt .l svg{width:16px;height:16px}
+.opt .x{flex:1;padding-top:2px}
+.opt .tag{flex:none;align-self:center;font-size:var(--t-xs);font-weight:700}
 .opt:disabled{cursor:default}
-.opt.ok{border-color:var(--ok);background:var(--ok-soft)}
-.opt.ok b{background:var(--ok);color:var(--bg)}
-.opt.bad{border-color:var(--bad);background:var(--bad-soft)}
-.opt.bad b{background:var(--bad);color:var(--bg)}
-.exp{border-radius:12px;padding:14px;background:var(--hema-soft);display:flex;flex-direction:column;gap:6px}
-.exp .v{font-weight:700}
-.exp .v.ok{color:var(--ok)} .exp .v.bad{color:var(--bad)}
-.btn{border:0;border-radius:10px;padding:13px 18px;font-weight:700;background:var(--hema);color:var(--bg);width:100%}
-.btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink);font-weight:600}
-.score{font-family:var(--f-display);font-size:3rem;font-weight:700;color:var(--hema);line-height:1}
-.wrongs{display:flex;flex-direction:column;gap:10px}
-.wrongs .card p+p{margin-top:4px}
-.small{font-size:.88rem}
-.k{color:var(--ok);font-weight:600}
-footer{color:var(--muted);font-size:.8rem;text-align:center}
+.opt:disabled:not(.ok):not(.bad){color:var(--c-text-2);border-color:var(--c-line)}
+.opt.ok{border-color:var(--c-ok);background:var(--c-ok-soft)}
+.opt.ok .l{background:var(--c-ok);color:var(--c-bg)}
+.opt.ok .tag{color:var(--c-ok)}
+.opt.bad{border-color:var(--c-bad);background:var(--c-bad-soft)}
+.opt.bad .l{background:var(--c-bad);color:var(--c-bg)}
+.opt.bad .tag{color:var(--c-bad)}
+.exp{border-radius:var(--r-lg);padding:var(--s-4);background:var(--c-surface-2);display:flex;flex-direction:column;gap:var(--s-2)}
+.v{display:flex;align-items:center;gap:var(--s-2);font-weight:700}
+.v.ok{color:var(--c-ok)} .v.bad{color:var(--c-bad)}
+.v svg{width:18px;height:18px;flex:none}
+.small{font-size:var(--t-sm);max-width:65ch}
+.wide{width:100%}
+
+/* Sonuç */
+.res{display:flex;flex-direction:column;gap:var(--s-3);padding:var(--s-5)}
+.res h2{font-size:var(--t-xl)}
+.score{font-family:var(--f-display);font-weight:650;font-size:4rem;line-height:1;letter-spacing:-.02em;color:var(--c-accent);font-variant-numeric:tabular-nums lining-nums}
+.score small{font-size:var(--t-2xl);color:var(--c-text-2);font-weight:500;letter-spacing:0}
+.acts{display:flex;flex-direction:column;gap:var(--s-2)}
+@media (min-width:560px){.acts{flex-direction:row}.acts .ui-btn{flex:1}}
+.wrongs{display:flex;flex-direction:column;gap:var(--s-3)}
+.wrongs h3{font-size:var(--t-lg)}
+.wrongs .ui-card{display:flex;flex-direction:column;gap:var(--s-2)}
+.wrongs .q{font-weight:600}
+.k{display:flex;gap:var(--s-2);align-items:flex-start;color:var(--c-ok);font-weight:650}
+.k svg{width:18px;height:18px;flex:none;margin-top:2px}
+footer{color:var(--c-text-2);font-size:var(--t-xs);border-top:1px solid var(--c-line);padding-top:var(--s-4)}
+@media (min-width:760px){.wrap{padding-top:var(--s-6)}.qtext{font-size:var(--t-2xl)}}
 </style>
 </head>
 <body>
@@ -89,22 +92,33 @@ footer{color:var(--muted);font-size:.8rem;text-align:center}
   var SETS=(window.QUIZ_MUKOZA||[]).concat(window.QUIZ||[]);
   var S=null; // {set, order, i, ans:{qi:choice}}
 
+  // Tek çizgi kalınlığında (1.75) ikonlar, renk currentColor.
+  var IC={
+    back:'<path d="m15 6-6 6 6 6"/>',
+    go:'<path d="m9 6 6 6-6 6"/>',
+    ok:'<path d="m5 12.5 4.5 4.5L19 7.5"/>',
+    bad:'<path d="M7 7l10 10"/><path d="M17 7 7 17"/>'
+  };
+  function ic(n,c){return '<svg class="'+(c||'ico')+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+IC[n]+'</svg>'}
+  var MARK='<svg class="mark" aria-hidden="true" viewBox="0 0 40 40"><rect x="2" y="9" width="36" height="22" rx="4" fill="#EEE7F8" stroke="#4A2C82" stroke-width="1.5"/><rect x="4.5" y="11.5" width="8" height="17" rx="2" fill="#4A2C82" opacity=".16"/><path d="M16 21.5c0-5 4-8 9-7.6 5 .4 9 3 8.6 7-.4 4.4-4.6 6.3-9 6.1-5-.2-8.6-1.5-8.6-5.5z" fill="#F283AA"/><circle cx="21" cy="19" r="1.7" fill="#4A2C82"/><circle cx="26.5" cy="17.4" r="1.5" fill="#4A2C82"/><circle cx="29.5" cy="22.2" r="1.7" fill="#4A2C82"/><circle cx="23.4" cy="24" r="1.4" fill="#4A2C82"/></svg>';
+
   function home(){
     S=null;
     if(location.hash){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}
-    var h='<div class="top"><div class="mark" aria-hidden="true"></div><div class="brand"><h1>Lam Başında · Quiz</h1><p>4. Sınıf Patoloji · Diş Hekimliği</p></div></div>'+
-      '<p class="note">İsteyen çözsün; puan kaydedilmez, kimse görmez. Sorular Neville, <i>Oral and Maxillofacial Pathology</i> 5. baskının örnek sınav sorularından Türkçeye çevrildi; eski adlar WHO 2022\'ye göre güncellendi.</p>';
-    app.innerHTML=h;
-    SETS.forEach(function(set){
+    var h='<header class="top">'+MARK+'<div><h1>Lam Başında · Quiz</h1><p>4. Sınıf Patoloji · Diş Hekimliği</p></div></header>'+
+      '<p class="note">İsteyen çözsün; puan kaydedilmez, kimse görmez. Sorular Neville, <i>Oral and Maxillofacial Pathology</i> 5. baskının örnek sınav sorularından Türkçeye çevrildi; eski adlar WHO 2022\'ye göre güncellendi.</p>'+
+      '<ul class="sets">';
+    SETS.forEach(function(set,k){
       var last=store.get('best_'+set.id);
-      var b=document.createElement('button'); b.className='set';
-      b.innerHTML='<span class="eyebrow">'+esc(set.ders)+'</span><h2>'+esc(set.title)+'</h2><span class="s">'+esc(set.sub)+'</span>'+
-        (last!=null?'<span class="prog">En iyi sonucun: '+last+' / '+set.qs.length+'</span>':'');
-      b.onclick=function(){start(set,null)};
-      app.appendChild(b);
+      h+='<li><button class="set" data-k="'+k+'"><span class="b"><span class="t">'+esc(set.title)+'</span>'+
+        '<span class="meta">'+esc(set.ders)+' · '+esc(set.sub)+'</span>'+
+        (last!=null?'<span class="best">En iyi sonucun: '+last+' / '+set.qs.length+'</span>':'')+
+        '</span>'+ic('go')+'</button></li>';
     });
-    app.appendChild(el('<p class="note">Derslerin slaytları (internetsiz, PowerPoint): <a href="../indir/" style="color:var(--hema)">indir</a></p>').firstChild);
-    app.appendChild(el('<footer>olgunak.github.io/lam-basinda/quiz</footer>').firstChild);
+    h+='</ul><p class="note">Derslerin slaytları (internetsiz, PowerPoint): <a href="../indir/">indir</a></p>'+
+      '<footer>olgunak.github.io/lam-basinda/quiz</footer>';
+    app.innerHTML=h;
+    [].forEach.call(app.querySelectorAll('.set'),function(b){b.onclick=function(){start(SETS[+b.dataset.k],null)}});
     window.scrollTo(0,0);
   }
 
@@ -114,25 +128,34 @@ footer{color:var(--muted);font-size:.8rem;text-align:center}
     show();
   }
 
+  function bar(right){
+    return '<div class="bar"><button class="back" id="bk">'+ic('back')+'Dersler</button>'+(right||'')+'</div>';
+  }
+
   function show(){
     var set=S.set, qi=S.order[S.i], q=set.qs[qi], n=S.order.length, done=S.ans.hasOwnProperty(qi);
-    var h='<div class="bar"><button class="back" id="bk">← Dersler</button><span class="count">'+(S.i+1)+' / '+n+(S.retry?' · tekrar':'')+'</span></div>'+
-      '<div class="track"><i style="width:'+Math.round(100*S.i/n)+'%"></i></div>'+
-      '<p class="eyebrow">'+esc(set.title)+'</p><p class="qtext">'+esc(q.q)+'</p><div class="opts">';
+    var h=bar()+
+      '<div class="prog"><div class="row"><span>'+esc(set.title)+(S.retry?' · tekrar':'')+'</span><b>'+(S.i+1)+' / '+n+'</b></div>'+
+      '<div class="track" role="progressbar" aria-label="İlerleme" aria-valuemin="0" aria-valuemax="'+n+'" aria-valuenow="'+S.i+'"><i style="width:'+Math.round(100*S.i/n)+'%"></i></div></div>'+
+      '<p class="qtext">'+esc(q.q)+'</p><div class="opts">';
     q.o.forEach(function(o,j){
-      var c=''; if(done){ if(j===q.a)c=' ok'; else if(j===S.ans[qi])c=' bad'; }
-      h+='<button class="opt'+c+'" data-j="'+j+'"'+(done?' disabled':'')+'><b>'+L[j]+'</b><span>'+esc(o)+'</span></button>';
+      var c='', d=L[j], tag='';
+      if(done){
+        if(j===q.a){c=' ok'; d=ic('ok','x0'); tag='<span class="tag">'+(j===S.ans[qi]?'Senin cevabın · doğru':'Doğru cevap')+'</span>';}
+        else if(j===S.ans[qi]){c=' bad'; d=ic('bad','x0'); tag='<span class="tag">Senin cevabın</span>';}
+      }
+      h+='<button class="opt'+c+'" data-j="'+j+'"'+(done?' disabled':'')+'><span class="l">'+(d===L[j]?d:d+'<span class="sr">'+L[j]+'</span>')+'</span><span class="x">'+esc(o)+'</span>'+tag+'</button>';
     });
     h+='</div>';
     if(done){
       var ok=S.ans[qi]===q.a;
-      h+='<div class="exp"><span class="v '+(ok?'ok':'bad')+'">'+(ok?'Doğru':'Yanlış · doğru cevap '+L[q.a])+'</span><p class="small">'+esc(q.e)+'</p></div>'+
-         '<button class="btn" id="nx">'+(S.i+1<n?'Sonraki soru':'Sonucu gör')+'</button>';
+      h+='<div class="exp" role="status"><span class="v '+(ok?'ok':'bad')+'">'+ic(ok?'ok':'bad','x0')+(ok?'Doğru':'Yanlış · doğru cevap '+L[q.a])+'</span><p class="small">'+esc(q.e)+'</p></div>'+
+         '<button class="ui-btn wide" id="nx">'+(S.i+1<n?'Sonraki soru':'Sonucu gör')+'</button>';
     }
     app.innerHTML=h;
     document.getElementById('bk').onclick=home;
     [].forEach.call(app.querySelectorAll('.opt'),function(b){b.onclick=function(){S.ans[qi]=+b.dataset.j;show()}});
-    var nx=document.getElementById('nx'); if(nx){nx.onclick=function(){if(S.i+1<n){S.i++;show();window.scrollTo(0,0)}else result()};nx.focus()}
+    var nx=document.getElementById('nx'); if(nx){nx.onclick=function(){if(S.i+1<n){S.i++;show();window.scrollTo(0,0)}else result()};nx.focus({preventScroll:true})}
   }
 
   function result(){
@@ -140,16 +163,17 @@ footer{color:var(--muted);font-size:.8rem;text-align:center}
     S.order.forEach(function(qi){ if(S.ans[qi]===set.qs[qi].a) right++; else wrong.push(qi); });
     if(!S.retry){var best=store.get('best_'+set.id); if(best==null||right>best) store.set('best_'+set.id,right);}
     var n=S.order.length;
-    var h='<div class="bar"><button class="back" id="bk">← Dersler</button><span class="count">'+esc(set.title)+'</span></div>'+
-      '<div class="card" style="display:flex;flex-direction:column;gap:8px;align-items:flex-start"><span class="eyebrow">Sonuç</span>'+
-      '<span class="score">'+right+' / '+n+'</span><p class="note">'+(right===n?'Hepsi doğru. Tebrikler.':wrong.length+' yanlış. Aşağıda doğru cevaplarla birlikte.')+'</p></div>';
+    var h=bar('<span class="meta">Sonuç</span>')+
+      '<section class="ui-card res"><h2>'+esc(set.title)+'</h2>'+
+      '<p class="score" aria-label="'+right+' / '+n+' doğru">'+right+' <small>/ '+n+'</small></p><p class="note">'+(right===n?'Hepsi doğru. Tebrikler.':wrong.length+' yanlış. Aşağıda doğru cevaplarla birlikte.')+'</p>'+
+      '<div class="acts">'+(wrong.length?'<button class="ui-btn" id="rt">Yanlışları tekrar çöz</button>':'')+
+      '<button class="ui-btn quiet" id="again">Baştan çöz</button></div></section>';
     if(wrong.length){
-      h+='<button class="btn" id="rt">Yanlışları tekrar çöz</button><div class="wrongs">';
+      h+='<section class="wrongs"><h3>Yanlışların</h3>';
       wrong.forEach(function(qi){var q=set.qs[qi];
-        h+='<div class="card"><p class="small" style="font-weight:600">'+esc(q.q)+'</p><p class="small"><span class="k">'+L[q.a]+') '+esc(q.o[q.a])+'</span></p><p class="small note">'+esc(q.e)+'</p></div>';});
-      h+='</div>';
+        h+='<div class="ui-card"><p class="small q">'+esc(q.q)+'</p><p class="small k">'+ic('ok','x0')+'<span>'+L[q.a]+') '+esc(q.o[q.a])+'</span></p><p class="small note">'+esc(q.e)+'</p></div>';});
+      h+='</section>';
     }
-    h+='<button class="btn ghost" id="again">Baştan çöz</button>';
     app.innerHTML=h; window.scrollTo(0,0);
     document.getElementById('bk').onclick=home;
     document.getElementById('again').onclick=function(){start(set,null)};
