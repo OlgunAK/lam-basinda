@@ -118,7 +118,9 @@ Slaytlar `tools/slaytlar/build.py` + `build2.py` ile orijinal görsellerden yeni
 
 **M3 ve M4 artık veri dosyasından üretilir.** Her dersin bütün içeriği (slayt türü, başlık, adım adım maddeler, görseller, notlar, süreler, sorular) `canli/dersler/kaynak/<ID>.json` içindedir; görseller `canli/img/<ID>/` altında (kitap fotoğrafları eski slaytlardan kesilip repoya alındı, kitap PDF'leri artık gerekmez). Slaytları `ortak/slayt.js` çizer: aynı kod hem düzenleyicide önizleme ve JPG üretimi yapar hem de canlı oturumun okuduğu `canli/dersler/<ID>.json` dosyasını (zaman damgaları, CANLI satırları, adım başlıkları) eskisiyle birebir aynı biçimde yazar. Toplu yeniden çizim: `node tools/slaytlar/ciz.mjs M3 M4` (yalnız bazı slaytlar: `M3:05,06`). Eski `m3.py`/`m4.py` yalnız içeriğin ilk kaynağı olarak duruyor; çalıştırılmamalı.
 
-Slayt türleri: `kapak` (katılım ekranı), `adim` (maddeler sırayla açılır, her maddenin solda görseli olabilir: fotoğraf, büyük rakam, kutu, patoloğun notu, çubuk grafik), `soru`, `kutular` (plan), `tablo`, `kaynaklar`, `liderlik`, `bulut`. Metinlerde `**kalın**`, `*italik*` ve `->` (ok) yazılabilir.
+**Ders akışı (M3, M4):** kapak → "Bugün akılda kalacak 8 madde" → 8 ana madde, her birinin ardından telefondan soru (A1–A8) → sentez (`ozet`) → "Tamam mı, devam mı?" anketi (K1; Tamam çıkarsa kumandadan Çıkış biletine atlanır) → kısaltılmış ayrıntı (ana maddeleri tekrar eden slaytlar çıkarıldı; nadir konular "Zaman kalırsa") → çıkış bileti, liderlik, kaynaklar. Ana bölüm ~10 dk, ayrıntı "zaman kalırsa" hariç 12–14 dk. Bütün slaytlar açık zeminde (aydınlık amfi). Ürün bilgisi `PRODUCT.md`, görsel ve dil kuralları `DESIGN.md` içinde.
+
+Slayt türleri: `kapak` (katılım ekranı), `ozet` (iki sütunlu numaralı sentez), `adim` (maddeler sırayla açılır, her maddenin solda görseli olabilir: fotoğraf, büyük rakam, kutu, patoloğun notu, çubuk grafik), `soru`, `kutular` (plan), `tablo`, `kaynaklar`, `liderlik`, `bulut`. Metinlerde `**kalın**`, `*italik*` ve `->` (ok) yazılabilir.
 
 
 | Kod | Ders | Tarih |

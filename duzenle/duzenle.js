@@ -8,7 +8,7 @@
   "use strict";
   var $ = function (s, k) { return (k || document).querySelector(s); };
   var KOK = "../canli/";
-  var TIPLER = { adim: "Adım adım", soru: "Soru", kutular: "Plan / kutular", tablo: "Tablo", kaynaklar: "Kaynaklar", kapak: "Kapak",
+  var TIPLER = { adim: "Adım adım", soru: "Soru", kutular: "Plan / kutular", tablo: "Tablo", kaynaklar: "Kaynaklar", kapak: "Kapak", ozet: "Özet (sentez)",
     liderlik: "Liderlik", bulut: "Kelime bulutu", resim: "Resim" };
   var SORU_TUR = ["MCQ", "POLL", "IMGMCQ", "WORDCLOUD", "OPEN", "MATCH", "SCT", "FINDIMG", "SORTGROUP", "SORTORDER"];
   var TONLAR = [["mor", "Mor (açık)"], ["pembe", "Pembe (açık)"], ["koyu", "Koyu mor"], ["vurgu", "Vurgu (pembe dolu)"]];
@@ -330,10 +330,9 @@
   function ortakAlanlar(f, s, i) {
     f.append(metin("Başlık", s, "baslik", i));
     if (s.tip !== "kapak" && s.tip !== "liderlik" && s.tip !== "bulut") {
-      var tema = h("div", { class: "iki" }, [secim("Zemin", s, "tema", [["koyu", "Koyu"]], i, "Açık"),
-        metin("Etiket (sağ üstte)", s, "etiket", i, { yer: "ör. Vakaya dönüş" })]);
-      f.append(tema);
-      f.append(h("div", { class: "satir" }, [kutucuk("DUS etiketi", s, "dus", i), kutucuk("Zaman kalırsa (isteğe bağlı slayt)", s, "opsiyonel", i)]));
+      f.append(h("div", { class: "iki" }, [secim("Zemin", s, "tema", [["koyu", "Koyu (karanlık sınıf)"]], i, "Açık")]));
+      f.append(h("div", { class: "satir" }, [kutucuk("DUS etiketi", s, "dus", i), kutucuk("Zaman kalırsa (isteğe bağlı slayt)", s, "opsiyonel", i),
+        kutucuk("Renk alanı zemini (dikkat çeken slayt)", s, "alan", i)]));
       var gr = (S.D.serit && S.D.serit.gruplar) || [];
       if (gr.length) {
         var kut = gr.map(function (g, gi) {
@@ -388,6 +387,16 @@
         f.append(b);
       });
       f.append(kucukBtn("arti", "Kutu ekle", function () { gecmiseYaz(); s.kutular.push({ baslik: "Yeni grup", ton: "mor", maddeler: ["Konu"] }); s.adimlar.push({ sure: 10, not: "" }); degisti(i); formCiz(); }));
+    } else if (s.tip === "ozet") {
+      f.append(h("p", { class: "aciklama", text: "İki sütunlu numaralı liste: her satır bir konu ve akılda kalacak cümlesi." }));
+      (s.maddeler = s.maddeler || []).forEach(function (m, mi) {
+        var b = h("div", { class: "blok" }, [h("div", { class: "blok-ust" }, [h("b", { text: String(mi + 1) }),
+          ikonBtn("sil", "Satırı sil", function () { gecmiseYaz(); s.maddeler.splice(mi, 1); degisti(i); formCiz(); }, "tehlike")])]);
+        b.append(metin("Konu", m, "ust", i)); b.append(metin("Akılda kalacak cümle", m, "metin", i, { cok: true, satir: 2 }));
+        f.append(b);
+      });
+      f.append(kucukBtn("arti", "Satır ekle", function () { gecmiseYaz(); s.maddeler.push({ ust: "Konu", metin: "" }); degisti(i); formCiz(); }));
+      sureNot(f, s, i);
     } else if (s.tip === "tablo") {
       f.append(metin("Sütun başlıkları", s, "tabloBaslik", i, { not: "İki başlığı → ile ayırın: Eski ad → Güncel ad" }));
       f.append(tabloAlan("Satırlar", s, "satirlar", i));

@@ -4,6 +4,154 @@
  "date": "17 Kasım 2026",
  "questions": [
   {
+   "id": "A1",
+   "type": "MCQ",
+   "label": "Ana madde 1: mukosel",
+   "q": "Alt dudakta iki haftadır büyüyüp küçülen, mavimsi, yumuşak, 8 mm şişlik; hasta dudağını ısırıyor. En olası tanı ve tedavi?",
+   "scored": true,
+   "opts": [
+    "Mukosel; iğneyle boşaltmak yeterli",
+    "Hemanjiyom; skleroterapi",
+    "Mukosel; altındaki küçük bezlerle birlikte eksizyon",
+    "Mukoepidermoid karsinom; geniş rezeksiyon",
+    "Lipom; takip"
+   ],
+   "a": 2,
+   "exp": "Alt dudakta mavimsi, dalgalanan şişlik mukoseldir. Boşaltmak yetmez, yeniden dolar; besleyen küçük bezlerle birlikte çıkarılır.",
+   "t": 30
+  },
+  {
+   "id": "A2",
+   "type": "MCQ",
+   "label": "Ana madde 2: taş ve sialadenit",
+   "q": "Yemek yerken çenesinin altında şişlik ve ağrı oluyor, yemekten sonra yavaş yavaş geçiyor. En olası tanı ve ilk görüntüleme?",
+   "scored": true,
+   "opts": [
+    "Submandibuler bez taşı; okluzal film",
+    "Parotis taşı; panoramik",
+    "Kabakulak; seroloji",
+    "Pleomorfik adenom; MR",
+    "Ranula; biyopsi"
+   ],
+   "a": 0,
+   "exp": "Yemekle artan ağrı ve şişlik taşı gösterir; en sık submandibuler bezde. Okluzal film taşı en iyi gösterir.",
+   "t": 30
+  },
+  {
+   "id": "A3",
+   "type": "MCQ",
+   "label": "Ana madde 3: Sjögren",
+   "q": "Sjögren şüphesinde tanıda en değerli biyopsi hangisi?",
+   "scored": true,
+   "opts": [
+    "Parotis eksizyonu",
+    "Dil kenarından insizyonel biyopsi",
+    "Diş eti biyopsisi",
+    "Alt dudaktan küçük tükürük bezi biyopsisi",
+    "Submandibuler bez eksizyonu"
+   ],
+   "a": 3,
+   "exp": "Alt dudağın iç yüzünden alınan küçük tükürük bezlerinde 4 mm²'de ≥50 lenfositlik odak (odak skoru ≥1) ACR/EULAR ölçütlerinde 3 puan.",
+   "t": 30
+  },
+  {
+   "id": "A4",
+   "type": "MCQ",
+   "label": "Ana madde 4: nekrotizan sialometaplazi",
+   "q": "Damağa anestezi yapıldıktan 2 hafta sonra arka sert damakta 1,5 cm krater gibi ülser. Biyopside lobül yapısı korunmuş; nekroz ve kanallarda skuamöz metaplazi. En olası tanı?",
+   "scored": true,
+   "opts": [
+    "Skuamöz hücreli karsinom",
+    "Nekrotizan sialometaplazi",
+    "Mukoepidermoid karsinom",
+    "Herpes",
+    "Adenoid kistik karsinom"
+   ],
+   "a": 1,
+   "exp": "Enjeksiyon öyküsü, arka damak, korunmuş lobül yapısı ve skuamöz metaplazi nekrotizan sialometaplazidir; 5–6 haftada kendiliğinden iyileşir.",
+   "t": 30
+  },
+  {
+   "id": "A5",
+   "type": "MCQ",
+   "label": "Ana madde 5: bez ve kötü huylu olasılığı",
+   "q": "Hangi bezden gelen bir tümörün kötü huylu olma olasılığı en yüksektir?",
+   "scored": true,
+   "opts": [
+    "Parotis",
+    "Submandibuler bez",
+    "Damaktaki küçük bezler",
+    "Hepsi eşit",
+    "Sublingual bez"
+   ],
+   "a": 4,
+   "exp": "Bez küçüldükçe kötü huylu olasılığı artar: parotis %15–32, submandibuler %26–45, küçük bezler ~%50, sublingual %70–97.",
+   "t": 30
+  },
+  {
+   "id": "A6",
+   "type": "MCQ",
+   "label": "Ana madde 6: pleomorfik adenom",
+   "q": "Pleomorfik adenomda neden enükleasyon yapılmaz?",
+   "scored": true,
+   "opts": [
+    "Radyoterapiye çok duyarlıdır",
+    "Her zaman kötü huyludur",
+    "Kapsül eksik olabilir, tümör dışarı uzanır; nükseder",
+    "Kendiliğinden geriler",
+    "Enükleasyon yüz sinirini kesin keser"
+   ],
+   "a": 2,
+   "exp": "Kapsül eksik ya da ince olabilir ve tümör uzantıları dışarı taşar; enükleasyon nükse yol açar. Sağlam sınırla çıkarılır (parotiste yüzeyel parotidektomi).",
+   "t": 30
+  },
+  {
+   "id": "A7",
+   "type": "MCQ",
+   "label": "Ana madde 7: Warthin",
+   "q": "60 yaşında, 40 yıldır sigara içen hasta. İki parotis kuyruğunda yavaş büyüyen, yumuşak kitleler. En olası tanı?",
+   "scored": true,
+   "opts": [
+    "Pleomorfik adenom",
+    "Warthin tümörü",
+    "Mukoepidermoid karsinom",
+    "Kabakulak",
+    "Adenoid kistik karsinom"
+   ],
+   "a": 1,
+   "exp": "Yaşlı, sigara içen hastada iki taraflı parotis kuyruğu kitleleri Warthin tümörüdür; iki taraflı ve çok sayıda olma olasılığı en yüksek tümör.",
+   "t": 30
+  },
+  {
+   "id": "A8",
+   "type": "MCQ",
+   "label": "Ana madde 8: adenoid kistik karsinom",
+   "q": "Adenoid kistik karsinomun en karakteristik yayılım yolu hangisi?",
+   "scored": true,
+   "opts": [
+    "Erken boyun lenf nodu metastazı",
+    "Kemik iliği",
+    "Hiç yayılmaz",
+    "Sinir boyunca (perinöral invazyon)",
+    "Deri yoluyla"
+   ],
+   "a": 3,
+   "exp": "Perinöral invazyon: ağrı, uyuşma, yüz felci. Lenf noduna az gider; uzak metastaz akciğere ve geç olur.",
+   "t": 30
+  },
+  {
+   "id": "K1",
+   "type": "POLL",
+   "label": "Tamam mı, devam mı?",
+   "q": "8 ana maddeyi bitirdik. Ne yapalım?",
+   "scored": false,
+   "opts": [
+    "Tamam: bugünlük bu kadar",
+    "Devam: ayrıntılara geçelim"
+   ],
+   "t": 30
+  },
+  {
    "id": "W1",
    "type": "POLL",
    "label": "Açılış vakası: tahminin ne?",
@@ -159,1237 +307,1098 @@
   },
   {
    "img": "slaytlar/M4/03a.jpg?v=5",
+   "title": "Bugün akılda kalacak 8 madde · 1/2",
+   "step": [
+    1,
+    2
+   ],
+   "notes": "[1:20–1:32]\nTükürük bezlerinde aklınızda kalması gereken sekiz madde. İlk dördü tümör dışı hastalıklar."
+  },
+  {
+   "img": "slaytlar/M4/03b.jpg?v=5",
+   "title": "Bugün akılda kalacak 8 madde · 2/2",
+   "step": [
+    2,
+    2
+   ],
+   "notes": "[1:32–1:44]\nSon dördü tümörler: bir genel kural, iki iyi huylu, bir kötü huylu. Her maddeden sonra telefondan bir soru."
+  },
+  {
+   "img": "slaytlar/M4/04a.jpg?v=5",
+   "title": "Mukosel · 1/3",
+   "step": [
+    1,
+    3
+   ],
+   "notes": "[1:44–1:54]\nMukoselde küçük bir kanal yırtılır, müsin dokuya dökülür. Etrafında epitel yok; gerçek kist değil."
+  },
+  {
+   "img": "slaytlar/M4/04b.jpg?v=5",
+   "title": "Mukosel · 2/3",
+   "step": [
+    2,
+    3
+   ],
+   "notes": "[1:54–2:04]\nYüzde 82'si alt dudakta. Üst dudakta neredeyse hiç görülmez; birazdan bunu tümörlerde kullanacağız."
+  },
+  {
+   "img": "slaytlar/M4/04c.jpg?v=5",
+   "title": "Mukosel · 3/3",
+   "step": [
+    3,
+    3
+   ],
+   "notes": "[2:04–2:14]\nAkılda kalsın: altındaki küçük bezlerle birlikte çıkarın; yalnız boşaltırsanız yeniden dolar."
+  },
+  {
+   "img": "slaytlar/M4/05.jpg?v=5",
+   "title": "Soru · Mukosel",
+   "q": "A1",
+   "notes": "[2:14–2:44]\n(Sonuç.) Doğru C: mukosel; bezlerle birlikte eksizyon.\n\nCANLI (A1, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: C. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+  },
+  {
+   "img": "slaytlar/M4/06a.jpg?v=5",
+   "title": "Taş ve sialadenit · 1/3",
+   "step": [
+    1,
+    3
+   ],
+   "notes": "[2:44–2:54]\nTükürük bezi taşı en sık submandibuler bezde olur; Wharton kanalı uzun ve yukarı kıvrılır."
+  },
+  {
+   "img": "slaytlar/M4/06b.jpg?v=5",
+   "title": "Taş ve sialadenit · 2/3",
+   "step": [
+    2,
+    3
+   ],
+   "notes": "[2:54–3:04]\nYemek yerken artan ağrı ve şişlik tipik. En iyi okluzal filmde görülür; panoramikte kemik lezyonu sanılabilir."
+  },
+  {
+   "img": "slaytlar/M4/06c.jpg?v=5",
+   "title": "Taş ve sialadenit · 3/3",
+   "step": [
+    3,
+    3
+   ],
+   "notes": "[3:04–3:15]\nAkılda kalsın: kabakulak iki taraflı parotis şişliği yapar. Akış azalınca, örneğin sıvı kaybı ya da ameliyat sonrası, Staphylococcus aureus ile irinli sialadenit gelişir."
+  },
+  {
+   "img": "slaytlar/M4/07.jpg?v=5",
+   "title": "Soru · Taş ve sialadenit",
+   "q": "A2",
+   "notes": "[3:15–3:45]\n(Sonuç.) Doğru A: submandibuler taş; okluzal film.\n\nCANLI (A2, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+  },
+  {
+   "img": "slaytlar/M4/08a.jpg?v=5",
+   "title": "Sjögren sendromu · 1/3",
+   "step": [
+    1,
+    3
+   ],
+   "notes": "[3:45–3:55]\nSjögren sistemik otoimmün bir hastalık: ağız ve göz kurur. Kadında dokuz kat sık."
+  },
+  {
+   "img": "slaytlar/M4/08b.jpg?v=5",
+   "title": "Sjögren sendromu · 2/3",
+   "step": [
+    2,
+    3
+   ],
+   "notes": "[3:55–4:05]\nTanıda en değerli biyopsi alt dudaktan küçük tükürük bezi biyopsisi; odak skoru bir ve üstü anlamlı."
+  },
+  {
+   "img": "slaytlar/M4/08c.jpg?v=5",
+   "title": "Sjögren sendromu · 3/3",
+   "step": [
+    3,
+    3
+   ],
+   "notes": "[4:05–4:16]\nAkılda kalsın: kandida ve kök çürüğü sık. Lenfoma riski 15 ila 20 kat; kalıcı parotis büyümesi uyarı işareti."
+  },
+  {
+   "img": "slaytlar/M4/09.jpg?v=5",
+   "title": "Soru · Sjögren",
+   "q": "A3",
+   "notes": "[4:16–4:46]\n(Sonuç.) Doğru D: alt dudaktan küçük tükürük bezi biyopsisi.\n\nCANLI (A3, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+  },
+  {
+   "img": "slaytlar/M4/10a.jpg?v=5",
+   "title": "Nekrotizan sialometaplazi: kanser sanılır · 1/3",
+   "step": [
+    1,
+    3
+   ],
+   "notes": "[4:46–4:56]\nNekrotizan sialometaplazi küçük tükürük bezlerinin enfarktı; en sık arka sert damakta."
+  },
+  {
+   "img": "slaytlar/M4/10b.jpg?v=5",
+   "title": "Nekrotizan sialometaplazi: kanser sanılır · 2/3",
+   "step": [
+    2,
+    3
+   ],
+   "notes": "[4:56–5:06]\nİki üç haftada krater gibi bir ülsere döner; hem klinikte hem mikroskopta kansere benzer."
+  },
+  {
+   "img": "slaytlar/M4/10c.jpg?v=5",
+   "title": "Nekrotizan sialometaplazi: kanser sanılır · 3/3",
+   "step": [
+    3,
+    3
+   ],
+   "notes": "[5:06–5:17]\nAkılda kalsın: kendiliğinden beş altı haftada iyileşir. İstek formuna anestezi iğnesini, protezi, ani başlangıcı yazın; gereksiz kanser ameliyatını bu önler."
+  },
+  {
+   "img": "slaytlar/M4/11.jpg?v=5",
+   "title": "Soru · Nekrotizan sialometaplazi",
+   "q": "A4",
+   "notes": "[5:17–5:47]\n(Sonuç.) Doğru B: nekrotizan sialometaplazi; istek formu önemli.\n\nCANLI (A4, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+  },
+  {
+   "img": "slaytlar/M4/12a.jpg?v=5",
+   "title": "Bez küçüldükçe kötü huylu olasılığı artar · 1/3",
+   "step": [
+    1,
+    3
+   ],
+   "notes": "[5:47–5:57]\nTümörlerin çoğu parotiste ve çoğu iyi huylu; parotiste kötü huylu oranı yüzde 15 ila 32."
+  },
+  {
+   "img": "slaytlar/M4/12b.jpg?v=5",
+   "title": "Bez küçüldükçe kötü huylu olasılığı artar · 2/3",
+   "step": [
+    2,
+    3
+   ],
+   "notes": "[5:57–6:07]\nSubmandibulerde yüzde 26 ila 45, küçük bezlerde yaklaşık yarısı."
+  },
+  {
+   "img": "slaytlar/M4/12c.jpg?v=5",
+   "title": "Bez küçüldükçe kötü huylu olasılığı artar · 3/3",
+   "step": [
+    3,
+    3
+   ],
+   "notes": "[6:07–6:19]\nAkılda kalsın: sublingualde yüzde 70'in üstünde. Bez küçüldükçe kötü huylu olasılığı artar; damaktaki kitleyi izlemeyin, biyopsi alın."
+  },
+  {
+   "img": "slaytlar/M4/13.jpg?v=5",
+   "title": "Soru · Bez ve kötü huylu olasılığı",
+   "q": "A5",
+   "notes": "[6:19–6:49]\n(Sonuç.) Doğru E: sublingual bez.\n\nCANLI (A5, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: E. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+  },
+  {
+   "img": "slaytlar/M4/14a.jpg?v=5",
+   "title": "Pleomorfik adenom · 1/3",
+   "step": [
+    1,
+    3
+   ],
+   "notes": "[6:49–6:59]\nPleomorfik adenom en sık tükürük bezi tümörü; çoğu parotiste."
+  },
+  {
+   "img": "slaytlar/M4/14b.jpg?v=5",
+   "title": "Pleomorfik adenom · 2/3",
+   "step": [
+    2,
+    3
+   ],
+   "notes": "[6:59–7:09]\nYavaş büyüyen, ağrısız, sert, hareketli bir kitle. Mikroskopta epitel, miyoepitel ve kıkırdak benzeri stroma."
+  },
+  {
+   "img": "slaytlar/M4/14c.jpg?v=5",
+   "title": "Pleomorfik adenom · 3/3",
+   "step": [
+    3,
+    3
+   ],
+   "notes": "[7:09–7:20]\nAkılda kalsın: kapsül eksik olabilir, enükleasyon yaparsanız nükseder; sağlam sınırla çıkarılır. Yıllarca kalırsa kötü huylu tümöre dönebilir."
+  },
+  {
+   "img": "slaytlar/M4/15.jpg?v=5",
+   "title": "Soru · Pleomorfik adenom",
+   "q": "A6",
+   "notes": "[7:20–7:50]\n(Sonuç.) Doğru C: kapsül eksik olabilir; nüks.\n\nCANLI (A6, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: C. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+  },
+  {
+   "img": "slaytlar/M4/16a.jpg?v=5",
+   "title": "Warthin tümörü · 1/3",
+   "step": [
+    1,
+    3
+   ],
+   "notes": "[7:50–8:00]\nWarthin ikinci en sık iyi huylu tümör; neredeyse yalnız parotiste, çoğu kuyrukta."
+  },
+  {
+   "img": "slaytlar/M4/16b.jpg?v=5",
+   "title": "Warthin tümörü · 2/3",
+   "step": [
+    2,
+    3
+   ],
+   "notes": "[8:00–8:09]\nSigara içende sekiz kat sık; altmışlı yetmişli yaşlarda."
+  },
+  {
+   "img": "slaytlar/M4/16c.jpg?v=5",
+   "title": "Warthin tümörü · 3/3",
+   "step": [
+    3,
+    3
+   ],
+   "notes": "[8:09–8:20]\nAkılda kalsın: iki taraflı ve çok sayıda olabilen tümör bu. Mikroskopta iki sıra pembe onkositik epitel ve lenfoid stroma."
+  },
+  {
+   "img": "slaytlar/M4/17.jpg?v=5",
+   "title": "Soru · Warthin tümörü",
+   "q": "A7",
+   "notes": "[8:20–8:50]\n(Sonuç.) Doğru B: Warthin tümörü.\n\nCANLI (A7, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+  },
+  {
+   "img": "slaytlar/M4/18a.jpg?v=5",
+   "title": "Adenoid kistik karsinom: sinir boyunca yayılır · 1/3",
+   "step": [
+    1,
+    3
+   ],
+   "notes": "[8:50–9:00]\nAdenoid kistik karsinom küçük bezlerde ve parotiste; damakta yavaş büyüyen bir kitle olarak gelir."
+  },
+  {
+   "img": "slaytlar/M4/18b.jpg?v=5",
+   "title": "Adenoid kistik karsinom: sinir boyunca yayılır · 2/3",
+   "step": [
+    2,
+    3
+   ],
+   "notes": "[9:00–9:10]\nEn önemli özelliği sinir boyunca yayılması: ağrı, uyuşma, yüz felci. Ağrı şişlikten önce gelebilir."
+  },
+  {
+   "img": "slaytlar/M4/18c.jpg?v=5",
+   "title": "Adenoid kistik karsinom: sinir boyunca yayılır · 3/3",
+   "step": [
+    3,
+    3
+   ],
+   "notes": "[9:10–9:21]\nAkılda kalsın: akciğere geç metastaz yapar; beş yıllık sağkalım iyi görünür ama yirmi yılda düşer. Ömür boyu takip."
+  },
+  {
+   "img": "slaytlar/M4/19.jpg?v=5",
+   "title": "Soru · Adenoid kistik karsinom",
+   "q": "A8",
+   "notes": "[9:21–9:51]\n(Sonuç.) Doğru D: perinöral invazyon.\n\nCANLI (A8, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+  },
+  {
+   "img": "slaytlar/M4/20.jpg?v=5",
+   "title": "8 maddede bugünkü ders",
+   "notes": "[9:51–10:31]\nToparlayalım: sekiz madde, her birinin akılda kalacak cümlesi. Fotoğrafını çekmek isteyen çeksin; PowerPoint'te de var. Şimdi karar sizin: devam mı, tamam mı?"
+  },
+  {
+   "img": "slaytlar/M4/21.jpg?v=5",
+   "title": "Tamam mı, devam mı?",
+   "q": "K1",
+   "notes": "[10:31–11:11]\nAna maddeler bitti. Sonucu gösteriyorum. TAMAM çıkarsa kumandada Slaytlar menüsünden 'Çıkış bileti'ne atla (sonra liderlik ve kaynaklar). DEVAM çıkarsa → ile açılış vakasından sürdür; ayrıntılı bölüm bu maddeleri derinleştirir.\n\nCANLI (K1, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+  },
+  {
+   "img": "slaytlar/M4/22a.jpg?v=5",
    "title": "Açılış vakası: damakta kitle · 1/5",
    "step": [
     1,
     5
    ],
-   "notes": "[1:20–1:29]\nHastamız 45 yaşında bir kadın."
+   "notes": "[11:11–11:20]\nHastamız 45 yaşında bir kadın."
   },
   {
-   "img": "slaytlar/M4/03b.jpg?v=5",
+   "img": "slaytlar/M4/22b.jpg?v=5",
    "title": "Açılış vakası: damakta kitle · 2/5",
    "step": [
     2,
     5
    ],
-   "notes": "[1:29–1:41]\nSert damakta, orta hattın yanında bir kitle var."
+   "notes": "[11:20–11:32]\nSert damakta, orta hattın yanında bir kitle var."
   },
   {
-   "img": "slaytlar/M4/03c.jpg?v=5",
+   "img": "slaytlar/M4/22c.jpg?v=5",
    "title": "Açılış vakası: damakta kitle · 3/5",
    "step": [
     3,
     5
    ],
-   "notes": "[1:41–1:53]\nİki yıldır yavaş büyüyor ve ağrımıyor."
+   "notes": "[11:32–11:44]\nİki yıldır yavaş büyüyor ve ağrımıyor."
   },
   {
-   "img": "slaytlar/M4/03d.jpg?v=5",
+   "img": "slaytlar/M4/22d.jpg?v=5",
    "title": "Açılış vakası: damakta kitle · 4/5",
    "step": [
     4,
     5
    ],
-   "notes": "[1:53–2:05]\nÜstündeki mukoza sağlam, ülser yok."
+   "notes": "[11:44–11:56]\nÜstündeki mukoza sağlam, ülser yok."
   },
   {
-   "img": "slaytlar/M4/03e.jpg?v=5",
+   "img": "slaytlar/M4/22e.jpg?v=5",
    "title": "Açılış vakası: damakta kitle · 5/5",
    "step": [
     5,
     5
    ],
    "qopen": "W1",
-   "notes": "[2:05–2:19]\nSert, lastiksi kıvamda; kemiğe yapışık değil. Tahmininizi telefondan girin; cevabı dersin sonunda açacağım.\n\nCANLI (W1, Anket): Soru bu slayta gelince telefonlarda açılır; perde slaytı göstermeye devam eder. Oylama bir sonraki slayta (dağılım) kadar açık kalır, geri gelsen de kapanmaz. → sonraki slayt. T: 45 sn."
+   "notes": "[11:56–12:10]\nSert, lastiksi kıvamda; kemiğe yapışık değil. Tahmininizi telefondan girin; cevabı dersin sonunda açacağım.\n\nCANLI (W1, Anket): Soru bu slayta gelince telefonlarda açılır; perde slaytı göstermeye devam eder. Oylama bir sonraki slayta (dağılım) kadar açık kalır, geri gelsen de kapanmaz. → sonraki slayt. T: 45 sn."
   },
   {
-   "img": "slaytlar/M4/04.jpg?v=5",
+   "img": "slaytlar/M4/23.jpg?v=5",
    "title": "Açılış vakası: tahminin ne?",
    "q": "W1",
-   "notes": "[2:19–2:54]\nDağılımı gösteriyorum, yorum yok. Beş şıktan biri tümör değil, biri iyi huylu, üçü kötü huylu. Dersin sonunda hastanın söylemediği bir şikâyeti öğreneceğiz.\n\nCANLI (W1, Anket): Soru önceki slaytta açıldı, oylama hâlâ açık. → oylamayı kapatıp dağılımı gösterir, → sonraki slayt."
+   "notes": "[12:10–12:45]\nDağılımı gösteriyorum, yorum yok. Beş şıktan biri tümör değil, biri iyi huylu, üçü kötü huylu. Dersin sonunda hastanın söylemediği bir şikâyeti öğreneceğiz.\n\nCANLI (W1, Anket): Soru önceki slaytta açıldı, oylama hâlâ açık. → oylamayı kapatıp dağılımı gösterir, → sonraki slayt."
   },
   {
-   "img": "slaytlar/M4/05a.jpg?v=5",
+   "img": "slaytlar/M4/24a.jpg?v=5",
    "title": "Dersin planı: üç grup · 1/4",
    "step": [
     1,
     4
    ],
-   "notes": "[2:54–3:04]\nBirinci grup tümör dışı hastalıklar: gelişim bozuklukları, kistler, taş, iltihap, otoimmün hastalıklar."
+   "notes": "[12:45–12:55]\nBirinci grup tümör dışı hastalıklar: gelişim bozuklukları, kistler, taş, iltihap, otoimmün hastalıklar."
   },
   {
-   "img": "slaytlar/M4/05b.jpg?v=5",
+   "img": "slaytlar/M4/24b.jpg?v=5",
    "title": "Dersin planı: üç grup · 2/4",
    "step": [
     2,
     4
    ],
-   "notes": "[3:04–3:12]\nİkinci grup iyi huylu tümörler; en sık olanı pleomorfik adenom."
+   "notes": "[12:55–13:03]\nİkinci grup iyi huylu tümörler; en sık olanı pleomorfik adenom."
   },
   {
-   "img": "slaytlar/M4/05c.jpg?v=5",
+   "img": "slaytlar/M4/24c.jpg?v=5",
    "title": "Dersin planı: üç grup · 3/4",
    "step": [
     3,
     4
    ],
-   "notes": "[3:12–3:20]\nÜçüncü grup kötü huylu tümörler; en sık olanı mukoepidermoid karsinom."
+   "notes": "[13:03–13:11]\nÜçüncü grup kötü huylu tümörler; en sık olanı mukoepidermoid karsinom."
   },
   {
-   "img": "slaytlar/M4/05d.jpg?v=5",
+   "img": "slaytlar/M4/24d.jpg?v=5",
    "title": "Dersin planı: üç grup · 4/4",
    "step": [
     4,
     4
    ],
-   "notes": "[3:20–3:29]\nHer hastalıkta aynı dört soruyu soracağız: hangi bez, kaç yaşında, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5 ve WHO 2022'den."
+   "notes": "[13:11–13:20]\nHer hastalıkta aynı dört soruyu soracağız: hangi bez, kaç yaşında, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5 ve WHO 2022'den."
   },
   {
-   "img": "slaytlar/M4/06a.jpg?v=5",
+   "img": "slaytlar/M4/25a.jpg?v=5",
    "title": "Tükürük bezleri: yapı ve salgı · 1/6",
    "step": [
     1,
     6
    ],
-   "notes": "[3:29–3:37]\nÖnce kısa bir hatırlatma. Üç çift majör bez var: parotis, submandibuler ve sublingual; ayrıca ağız ve orofarenkste yüzlerce küçük bez."
+   "notes": "[13:20–13:28]\nÖnce kısa bir hatırlatma. Üç çift majör bez var: parotis, submandibuler ve sublingual; ayrıca ağız ve orofarenkste yüzlerce küçük bez."
   },
   {
-   "img": "slaytlar/M4/06b.jpg?v=5",
+   "img": "slaytlar/M4/25b.jpg?v=5",
    "title": "Tükürük bezleri: yapı ve salgı · 2/6",
    "step": [
     2,
     6
    ],
-   "notes": "[3:37–3:43]\nGünde yaklaşık bir litre tükürük üretilir; sabah az, akşamüstü çoktur."
+   "notes": "[13:28–13:34]\nGünde yaklaşık bir litre tükürük üretilir; sabah az, akşamüstü çoktur."
   },
   {
-   "img": "slaytlar/M4/06c.jpg?v=5",
+   "img": "slaytlar/M4/25c.jpg?v=5",
    "title": "Tükürük bezleri: yapı ve salgı · 3/6",
    "step": [
     3,
     6
    ],
-   "notes": "[3:43–3:51]\nSalgı birimi asinus: seröz, müköz ya da karışık olabilir. Asinusu ve ara kanalı miyoepitel hücreleri sarar; kasılarak salgıyı iter. Tümörlerin çoğu bu iki hücreden çıkar."
+   "notes": "[13:34–13:42]\nSalgı birimi asinus: seröz, müköz ya da karışık olabilir. Asinusu ve ara kanalı miyoepitel hücreleri sarar; kasılarak salgıyı iter. Tümörlerin çoğu bu iki hücreden çıkar."
   },
   {
-   "img": "slaytlar/M4/06d.jpg?v=5",
+   "img": "slaytlar/M4/25d.jpg?v=5",
    "title": "Tükürük bezleri: yapı ve salgı · 4/6",
    "step": [
     4,
     6
    ],
-   "notes": "[3:51–3:58]\nParotis en büyük bez, saf seröz salgı yapar; Stensen kanalı üst ikinci büyük azı hizasında açılır."
+   "notes": "[13:42–13:49]\nParotis en büyük bez, saf seröz salgı yapar; Stensen kanalı üst ikinci büyük azı hizasında açılır."
   },
   {
-   "img": "slaytlar/M4/06e.jpg?v=5",
+   "img": "slaytlar/M4/25e.jpg?v=5",
    "title": "Tükürük bezleri: yapı ve salgı · 5/6",
    "step": [
     5,
     6
    ],
-   "notes": "[3:58–4:05]\nSubmandibuler bez karışık salgı yapar; Wharton kanalı dil altında, frenulumun yanında açılır."
+   "notes": "[13:49–13:56]\nSubmandibuler bez karışık salgı yapar; Wharton kanalı dil altında, frenulumun yanında açılır."
   },
   {
-   "img": "slaytlar/M4/06f.jpg?v=5",
+   "img": "slaytlar/M4/25f.jpg?v=5",
    "title": "Tükürük bezleri: yapı ve salgı · 6/6",
    "step": [
     6,
     6
    ],
-   "notes": "[4:05–4:11]\nSublingual bez ve küçük bezlerin çoğu müköz salgı yapar."
+   "notes": "[13:56–14:02]\nSublingual bez ve küçük bezlerin çoğu müköz salgı yapar."
   },
   {
-   "img": "slaytlar/M4/07a.jpg?v=5",
-   "title": "Gelişim bozuklukları: aplazi, hipoplazi, ektopi · 1/4",
+   "img": "slaytlar/M4/26a.jpg?v=5",
+   "title": "(Zaman kalırsa) Gelişim bozuklukları: aplazi, hipoplazi, ektopi · 1/4",
    "step": [
     1,
     4
    ],
-   "notes": "[4:11–4:20]\nAplazide bez hiç yoktur, hipoplazide az gelişmiştir; nadir ve erkekte iki kat sık. Treacher Collins gibi sendromlarla birlikte olabilir."
+   "notes": "[14:02–14:11] ZAMAN KALIRSA; yoksa → ile atla.\nAplazide bez hiç yoktur, hipoplazide az gelişmiştir; nadir ve erkekte iki kat sık. Treacher Collins gibi sendromlarla birlikte olabilir."
   },
   {
-   "img": "slaytlar/M4/07b.jpg?v=5",
-   "title": "Gelişim bozuklukları: aplazi, hipoplazi, ektopi · 2/4",
+   "img": "slaytlar/M4/26b.jpg?v=5",
+   "title": "(Zaman kalırsa) Gelişim bozuklukları: aplazi, hipoplazi, ektopi · 2/4",
    "step": [
     2,
     4
    ],
-   "notes": "[4:20–4:27]\nSonuç ağır ağız kuruluğu: dil deri gibi olur, çürük ve diş erozyonu artar."
+   "notes": "[14:11–14:18] ZAMAN KALIRSA; yoksa → ile atla.\nSonuç ağır ağız kuruluğu: dil deri gibi olur, çürük ve diş erozyonu artar."
   },
   {
-   "img": "slaytlar/M4/07c.jpg?v=5",
-   "title": "Gelişim bozuklukları: aplazi, hipoplazi, ektopi · 3/4",
+   "img": "slaytlar/M4/26c.jpg?v=5",
+   "title": "(Zaman kalırsa) Gelişim bozuklukları: aplazi, hipoplazi, ektopi · 3/4",
    "step": [
     3,
     4
    ],
-   "notes": "[4:27–4:36]\nEktopi patoloji kaynaklarında böyle geçiyor; Neville'de ayrıntısını doğrulayamadım. Ektopide tükürük bezi dokusu normal yeri dışında bulunur; en sık boyundaki lenf nodlarının içinde. Mandibulada kemik içinde de olabilir."
+   "notes": "[14:18–14:27] ZAMAN KALIRSA; yoksa → ile atla.\nEktopi patoloji kaynaklarında böyle geçiyor; Neville'de ayrıntısını doğrulayamadım. Ektopide tükürük bezi dokusu normal yeri dışında bulunur; en sık boyundaki lenf nodlarının içinde. Mandibulada kemik içinde de olabilir."
   },
   {
-   "img": "slaytlar/M4/07d.jpg?v=5",
-   "title": "Gelişim bozuklukları: aplazi, hipoplazi, ektopi · 4/4",
+   "img": "slaytlar/M4/26d.jpg?v=5",
+   "title": "(Zaman kalırsa) Gelişim bozuklukları: aplazi, hipoplazi, ektopi · 4/4",
    "step": [
     4,
     4
    ],
-   "notes": "[4:36–4:43]\nEktopik bezden de normal bezde olduğu gibi kist ve tümör gelişebilir."
+   "notes": "[14:27–14:34] ZAMAN KALIRSA; yoksa → ile atla.\nEktopik bezden de normal bezde olduğu gibi kist ve tümör gelişebilir."
   },
   {
-   "img": "slaytlar/M4/08a.jpg?v=5",
+   "img": "slaytlar/M4/27a.jpg?v=5",
    "title": "Mukosel, ranula ve tükürük kanalı kisti · 1/6",
    "step": [
     1,
     6
    ],
-   "notes": "[4:43–4:51]\nAğızda en sık gördüğünüz şişlik: mukosel. Alt dudağı ısırırsınız, küçük bir kanal yırtılır, müsin dokuya dökülür."
+   "notes": "[14:34–14:42]\nAğızda en sık gördüğünüz şişlik: mukosel. Alt dudağı ısırırsınız, küçük bir kanal yırtılır, müsin dokuya dökülür."
   },
   {
-   "img": "slaytlar/M4/08b.jpg?v=5",
+   "img": "slaytlar/M4/27b.jpg?v=5",
    "title": "Mukosel, ranula ve tükürük kanalı kisti · 2/6",
    "step": [
     2,
     6
    ],
-   "notes": "[4:51–4:58]\nNeville'in 1715 olguluk serisinde yüzde 82'si alt dudakta, üst dudakta bir tane bile yok. Bu cümleyi tümörlerde kullanacağız."
+   "notes": "[14:42–14:49]\nNeville'in 1715 olguluk serisinde yüzde 82'si alt dudakta, üst dudakta bir tane bile yok. Bu cümleyi tümörlerde kullanacağız."
   },
   {
-   "img": "slaytlar/M4/08c.jpg?v=5",
+   "img": "slaytlar/M4/27c.jpg?v=5",
    "title": "Mukosel, ranula ve tükürük kanalı kisti · 3/6",
    "step": [
     3,
     6
    ],
-   "notes": "[4:58–5:06]\nMikroskopta epitel yok; müsin ve köpüklü makrofajlar var, bu yüzden gerçek kist değil. Besleyen küçük bezleri de çıkarın, yoksa nükseder."
+   "notes": "[14:49–14:57]\nMikroskopta epitel yok; müsin ve köpüklü makrofajlar var, bu yüzden gerçek kist değil. Besleyen küçük bezleri de çıkarın, yoksa nükseder."
   },
   {
-   "img": "slaytlar/M4/08d.jpg?v=5",
+   "img": "slaytlar/M4/27d.jpg?v=5",
    "title": "Mukosel, ranula ve tükürük kanalı kisti · 4/6",
    "step": [
     4,
     6
    ],
-   "notes": "[5:06–5:13]\nRanula ağız tabanındaki mukosel; sublingual bezden gelir."
+   "notes": "[14:57–15:04]\nRanula ağız tabanındaki mukosel; sublingual bezden gelir."
   },
   {
-   "img": "slaytlar/M4/08e.jpg?v=5",
+   "img": "slaytlar/M4/27e.jpg?v=5",
    "title": "Mukosel, ranula ve tükürük kanalı kisti · 5/6",
    "step": [
     5,
     6
    ],
-   "notes": "[5:13–5:21]\nMilohyoid kası geçerse boyunda şişlik yapar; buna dalan ranula deniyor. Tedavide en önemli adım sublingual bezi çıkarmak."
+   "notes": "[15:04–15:12]\nMilohyoid kası geçerse boyunda şişlik yapar; buna dalan ranula deniyor. Tedavide en önemli adım sublingual bezi çıkarmak."
   },
   {
-   "img": "slaytlar/M4/08f.jpg?v=5",
+   "img": "slaytlar/M4/27f.jpg?v=5",
    "title": "Mukosel, ranula ve tükürük kanalı kisti · 6/6",
    "step": [
     6,
     6
    ],
-   "notes": "[5:21–5:28]\nTükürük kanalı kisti ise epitelle döşeli gerçek bir kist; erişkinde görülür ve nüks etmez."
+   "notes": "[15:12–15:19]\nTükürük kanalı kisti ise epitelle döşeli gerçek bir kist; erişkinde görülür ve nüks etmez."
   },
   {
-   "img": "slaytlar/M4/09a.jpg?v=5",
-   "title": "Tükürük bezi taşı (sialolitiazis) · 1/5",
-   "step": [
-    1,
-    5
-   ],
-   "notes": "[5:28–5:36]\nTaşlar en sık submandibuler bezde. Nedeni anatomi: Wharton kanalı uzun ve yukarı doğru kıvrılıyor, salgı da daha koyu."
-  },
-  {
-   "img": "slaytlar/M4/09b.jpg?v=5",
-   "title": "Tükürük bezi taşı (sialolitiazis) · 2/5",
-   "step": [
-    2,
-    5
-   ],
-   "notes": "[5:36–5:43]\nHücre artığı, bakteri ya da koyu mukustan oluşan bir çekirdeğin çevresinde kalsiyum katman katman çöker."
-  },
-  {
-   "img": "slaytlar/M4/09c.jpg?v=5",
-   "title": "Tükürük bezi taşı (sialolitiazis) · 3/5",
-   "step": [
-    3,
-    5
-   ],
-   "notes": "[5:43–5:49]\nHasta yemek sırasında ağrıyan ve şişen bir bezle gelir."
-  },
-  {
-   "img": "slaytlar/M4/09d.jpg?v=5",
-   "title": "Tükürük bezi taşı (sialolitiazis) · 4/5",
-   "step": [
-    4,
-    5
-   ],
-   "notes": "[5:49–5:57]\nOkluzal film en iyi gösterir. Panoramikte kemiğin üstüne düşen taş kemik içi lezyon sanılabilir; her taş radyoopak da değildir."
-  },
-  {
-   "img": "slaytlar/M4/09e.jpg?v=5",
-   "title": "Tükürük bezi taşı (sialolitiazis) · 5/5",
-   "step": [
-    5,
-    5
-   ],
-   "notes": "[5:57–6:04]\nMikroskopta kanal genişler, çevresinde iltihap ve fibrozis olur; kanal epitelinde en sık skuamöz metaplazi görülür."
-  },
-  {
-   "img": "slaytlar/M4/10a.jpg?v=5",
-   "title": "Sialadenit: akut ve kronik · 1/4",
-   "step": [
-    1,
-    4
-   ],
-   "notes": "[6:04–6:12]\nAkut sialadenitin en sık nedeni viral: kabakulak, paramiksovirüs. Şişlik önce bir parotiste başlar, birkaç gün sonra diğerinde de görülür."
-  },
-  {
-   "img": "slaytlar/M4/10b.jpg?v=5",
-   "title": "Sialadenit: akut ve kronik · 2/4",
-   "step": [
-    2,
-    4
-   ],
-   "notes": "[6:12–6:20]\nAkut bakteriyel sialadenit tükürük akışı azalınca olur: sıvı kaybı, ameliyat sonrası, kanal tıkanması. Bezi masaj yapınca Stensen kanalından irin gelir."
-  },
-  {
-   "img": "slaytlar/M4/10c.jpg?v=5",
-   "title": "Sialadenit: akut ve kronik · 3/4",
-   "step": [
-    3,
-    4
-   ],
-   "notes": "[6:20–6:26]\nEn sık etken Staphylococcus aureus; tedavi antibiyotik, sıvı ve gerekirse drenaj."
-  },
-  {
-   "img": "slaytlar/M4/10d.jpg?v=5",
-   "title": "Sialadenit: akut ve kronik · 4/4",
-   "step": [
-    4,
-    4
-   ],
-   "notes": "[6:26–6:34]\nKronik sialadenit yavaş gelişen tıkanma ve taşla olur: bezde fibrozis ve parankim atrofisi gelişir. İleri evrede bez çıkarılır."
-  },
-  {
-   "img": "slaytlar/M4/11a.jpg?v=5",
+   "img": "slaytlar/M4/28a.jpg?v=5",
    "title": "Kronik sklerozan ve granülomatöz sialadenit · 1/4",
    "step": [
     1,
     4
    ],
-   "notes": "[6:34–6:43]\nKronik sklerozan sialadenit, eski adıyla Küttner tümörü: submandibuler bezde sert bir kitle; klinikte tümör sanılır."
+   "notes": "[15:19–15:28]\nKronik sklerozan sialadenit, eski adıyla Küttner tümörü: submandibuler bezde sert bir kitle; klinikte tümör sanılır."
   },
   {
-   "img": "slaytlar/M4/11b.jpg?v=5",
+   "img": "slaytlar/M4/28b.jpg?v=5",
    "title": "Kronik sklerozan ve granülomatöz sialadenit · 2/4",
    "step": [
     2,
     4
    ],
-   "notes": "[6:43–6:51]\nBugün bu olguların çoğu IgG4 ilişkili hastalığın parçası sayılıyor; çoğu iki taraflı."
+   "notes": "[15:28–15:36]\nBugün bu olguların çoğu IgG4 ilişkili hastalığın parçası sayılıyor; çoğu iki taraflı."
   },
   {
-   "img": "slaytlar/M4/11c.jpg?v=5",
+   "img": "slaytlar/M4/28c.jpg?v=5",
    "title": "Kronik sklerozan ve granülomatöz sialadenit · 3/4",
    "step": [
     3,
     4
    ],
-   "notes": "[6:51–6:59]\nMikroskopta IgG4 pozitif plazma hücreleri ve storiform fibrozis; steroide hızlı yanıt verir. Sjögren'in dışlama ölçütlerinden biri."
+   "notes": "[15:36–15:44]\nMikroskopta IgG4 pozitif plazma hücreleri ve storiform fibrozis; steroide hızlı yanıt verir. Sjögren'in dışlama ölçütlerinden biri."
   },
   {
-   "img": "slaytlar/M4/11d.jpg?v=5",
+   "img": "slaytlar/M4/28d.jpg?v=5",
    "title": "Kronik sklerozan ve granülomatöz sialadenit · 4/4",
    "step": [
     4,
     4
    ],
-   "notes": "[6:59–7:10]\nGranülomatöz sialadenit: tüberküloz, sarkoidoz ve mantarlar. Sarkoidozda parotis büyümesi, üveit, yüz felci ve ateş birlikte olursa Heerfordt sendromu."
+   "notes": "[15:44–15:55]\nGranülomatöz sialadenit: tüberküloz, sarkoidoz ve mantarlar. Sarkoidozda parotis büyümesi, üveit, yüz felci ve ateş birlikte olursa Heerfordt sendromu."
   },
   {
-   "img": "slaytlar/M4/12a.jpg?v=5",
+   "img": "slaytlar/M4/29a.jpg?v=5",
    "title": "Sialore, kserostomi ve sialadenoz · 1/7",
    "step": [
     1,
     7
    ],
-   "notes": "[7:10–7:17]\nSialore aşırı tükürük üretimi; dört yaşından sonra sürüyorsa anormal kabul edilir."
+   "notes": "[15:55–16:02]\nSialore aşırı tükürük üretimi; dört yaşından sonra sürüyorsa anormal kabul edilir."
   },
   {
-   "img": "slaytlar/M4/12b.jpg?v=5",
+   "img": "slaytlar/M4/29b.jpg?v=5",
    "title": "Sialore, kserostomi ve sialadenoz · 2/7",
    "step": [
     2,
     7
    ],
-   "notes": "[7:17–7:24]\nNedenleri: aft gibi ağız yaraları, yeni protez, kuduz, ağır metal zehirlenmesi, klozapin gibi ilaçlar."
+   "notes": "[16:02–16:09]\nNedenleri: aft gibi ağız yaraları, yeni protez, kuduz, ağır metal zehirlenmesi, klozapin gibi ilaçlar."
   },
   {
-   "img": "slaytlar/M4/12c.jpg?v=5",
+   "img": "slaytlar/M4/29c.jpg?v=5",
    "title": "Sialore, kserostomi ve sialadenoz · 3/7",
    "step": [
     3,
     7
    ],
-   "notes": "[7:24–7:31]\nSerebral palsi ya da Parkinson hastasında sorun çoğu zaman salya fazlası değil, yutma kontrolünün bozulması."
+   "notes": "[16:09–16:16]\nSerebral palsi ya da Parkinson hastasında sorun çoğu zaman salya fazlası değil, yutma kontrolünün bozulması."
   },
   {
-   "img": "slaytlar/M4/12d.jpg?v=5",
+   "img": "slaytlar/M4/29d.jpg?v=5",
    "title": "Sialore, kserostomi ve sialadenoz · 4/7",
    "step": [
     4,
     7
    ],
-   "notes": "[7:31–7:38]\nKserostomi öznel bir ağız kuruluğu yakınması; yaşlıların dörtte birinde var."
+   "notes": "[16:16–16:23]\nKserostomi öznel bir ağız kuruluğu yakınması; yaşlıların dörtte birinde var."
   },
   {
-   "img": "slaytlar/M4/12e.jpg?v=5",
+   "img": "slaytlar/M4/29e.jpg?v=5",
    "title": "Sialore, kserostomi ve sialadenoz · 5/7",
    "step": [
     5,
     7
    ],
-   "notes": "[7:38–7:45]\nYaşlıda nedeni çoğu zaman yaşlanma değil, ilaçlar: 500'den fazla ilaç kuruluk yapar ve ilaç sayısı arttıkça kuruluk artar."
+   "notes": "[16:23–16:30]\nYaşlıda nedeni çoğu zaman yaşlanma değil, ilaçlar: 500'den fazla ilaç kuruluk yapar ve ilaç sayısı arttıkça kuruluk artar."
   },
   {
-   "img": "slaytlar/M4/12f.jpg?v=5",
+   "img": "slaytlar/M4/29f.jpg?v=5",
    "title": "Sialore, kserostomi ve sialadenoz · 6/7",
    "step": [
     6,
     7
    ],
-   "notes": "[7:45–7:52]\nSonuçları: kandida, kök çürüğü, çiğneme ve protez güçlüğü."
+   "notes": "[16:30–16:37]\nSonuçları: kandida, kök çürüğü, çiğneme ve protez güçlüğü."
   },
   {
-   "img": "slaytlar/M4/12g.jpg?v=5",
+   "img": "slaytlar/M4/29g.jpg?v=5",
    "title": "Sialore, kserostomi ve sialadenoz · 7/7",
    "step": [
     7,
     7
    ],
-   "notes": "[7:52–8:01]\nSialadenoz: iltihapsız, iki taraflı parotis büyümesi; diyabet, alkolizm, bulimia ve kötü beslenmede görülür."
+   "notes": "[16:37–16:46]\nSialadenoz: iltihapsız, iki taraflı parotis büyümesi; diyabet, alkolizm, bulimia ve kötü beslenmede görülür."
   },
   {
-   "img": "slaytlar/M4/13a.jpg?v=5",
+   "img": "slaytlar/M4/30a.jpg?v=5",
    "title": "Lenfoepitelyal sialadenit · 1/5",
    "step": [
     1,
     5
    ],
-   "notes": "[8:01–8:09]\nLenfoepitelyal sialadenit, eski adıyla benign lenfoepitelyal lezyon: otoimmün bir sialadenit; çoğu Sjögren hastasında."
+   "notes": "[16:46–16:54]\nLenfoepitelyal sialadenit, eski adıyla benign lenfoepitelyal lezyon: otoimmün bir sialadenit; çoğu Sjögren hastasında."
   },
   {
-   "img": "slaytlar/M4/13b.jpg?v=5",
+   "img": "slaytlar/M4/30b.jpg?v=5",
    "title": "Lenfoepitelyal sialadenit · 2/5",
    "step": [
     2,
     5
    ],
-   "notes": "[8:09–8:15]\nÇoğu iki taraflı ve simetrik bez büyümesi; ileri yaşta kadında sık."
+   "notes": "[16:54–17:00]\nÇoğu iki taraflı ve simetrik bez büyümesi; ileri yaşta kadında sık."
   },
   {
-   "img": "slaytlar/M4/13c.jpg?v=5",
+   "img": "slaytlar/M4/30c.jpg?v=5",
    "title": "Lenfoepitelyal sialadenit · 3/5",
    "step": [
     3,
     5
    ],
-   "notes": "[8:15–8:22]\nMikroskopta asinusları silen yoğun lenfosit infiltrasyonu; germinal merkezli foliküller."
+   "notes": "[17:00–17:07]\nMikroskopta asinusları silen yoğun lenfosit infiltrasyonu; germinal merkezli foliküller."
   },
   {
-   "img": "slaytlar/M4/13d.jpg?v=5",
+   "img": "slaytlar/M4/30d.jpg?v=5",
    "title": "Lenfoepitelyal sialadenit · 4/5",
    "step": [
     4,
     5
    ],
-   "notes": "[8:22–8:29]\nKanallar korunur; çevrelerinde epitel ve miyoepitel hücreleri çoğalır: epimiyoepitelyal adalar."
+   "notes": "[17:07–17:14]\nKanallar korunur; çevrelerinde epitel ve miyoepitel hücreleri çoğalır: epimiyoepitelyal adalar."
   },
   {
-   "img": "slaytlar/M4/13e.jpg?v=5",
+   "img": "slaytlar/M4/30e.jpg?v=5",
    "title": "Lenfoepitelyal sialadenit · 5/5",
    "step": [
     5,
     5
    ],
-   "notes": "[8:29–8:36]\nBu zeminde lenfoma riski artar; en sık MALT tipi düşük dereceli lenfoma, sonra diffüz büyük B hücreli lenfoma."
+   "notes": "[17:14–17:21]\nBu zeminde lenfoma riski artar; en sık MALT tipi düşük dereceli lenfoma, sonra diffüz büyük B hücreli lenfoma."
   },
   {
-   "img": "slaytlar/M4/14a.jpg?v=5",
-   "title": "Sjögren sendromu · 1/8",
-   "step": [
-    1,
-    8
-   ],
-   "notes": "[8:36–8:43]\nSjögren sendromu sistemik bir otoimmün hastalık; öncelikle tükürük ve gözyaşı bezlerini tutar: ağız ve göz kuruluğu."
-  },
-  {
-   "img": "slaytlar/M4/14b.jpg?v=5",
-   "title": "Sjögren sendromu · 2/8",
-   "step": [
-    2,
-    8
-   ],
-   "notes": "[8:43–8:51]\nPrimer Sjögren tek başınadır; sekonder Sjögren başka bir otoimmün hastalıkla birliktedir: romatoid artritlilerin yüzde 15'i, lupuslu hastaların yüzde 30'u."
-  },
-  {
-   "img": "slaytlar/M4/14c.jpg?v=5",
-   "title": "Sjögren sendromu · 3/8",
-   "step": [
-    3,
-    8
-   ],
-   "notes": "[8:51–8:57]\nHastaların onda dokuzu kadın; orta yaşta."
-  },
-  {
-   "img": "slaytlar/M4/14d.jpg?v=5",
-   "title": "Sjögren sendromu · 4/8",
-   "step": [
-    4,
-    8
-   ],
-   "notes": "[8:57–9:05]\nAğızda kuruluk, kandida, boyun çürükleri; hastaların üçte biri ile yarısında majör bez büyümesi. Kaynaklarda tek taraflı diye geçer; Neville'e göre büyüme çoğu zaman iki taraflı."
-  },
-  {
-   "img": "slaytlar/M4/14e.jpg?v=5",
-   "title": "Sjögren sendromu · 5/8",
-   "step": [
-    5,
-    8
-   ],
-   "notes": "[9:05–9:11]\nSialografide kanal dalları kaybolur, uçlarda noktasal genişlemeler kalır: meyveli dalsız ağaç."
-  },
-  {
-   "img": "slaytlar/M4/14f.jpg?v=5",
-   "title": "Sjögren sendromu · 6/8",
-   "step": [
-    6,
-    8
-   ],
-   "notes": "[9:11–9:20]\nDiş hekiminin tanı aracı: normal görünen alt dudaktan en az beş küçük bez alınır. Dört milimetrekarede en az 50 lenfositlik bir odak, odak skoru 1 demek."
-  },
-  {
-   "img": "slaytlar/M4/14g.jpg?v=5",
-   "title": "Sjögren sendromu · 7/8",
-   "step": [
-    7,
-    8
-   ],
-   "notes": "[9:20–9:29]\nSınıflama ACR/EULAR 2016'ya göre: biyopsi 3 puan, anti-SSA 3 puan, göz ve tükürük testleri birer puan. Toplam dört ve üstü primer Sjögren."
-  },
-  {
-   "img": "slaytlar/M4/14h.jpg?v=5",
-   "title": "Sjögren sendromu · 8/8",
-   "step": [
-    8,
-    8
-   ],
-   "notes": "[9:29–9:38]\nYaşam boyu lenfoma riski yüzde 5 ila 10, genel nüfusun 15 ila 20 katı; çoğu MALT. Parotis sürekli büyükse beklemeyin. Sırada telefon: puanı siz hesaplayacaksınız."
-  },
-  {
-   "img": "slaytlar/M4/15.jpg?v=5",
+   "img": "slaytlar/M4/31.jpg?v=5",
    "title": "Sjögren: puanla",
    "q": "W2",
-   "notes": "[9:38–10:23]\nHesaplayın. (Sonuç.) Doğru A: biyopsi 3, Schirmer 1, toplam 4. Anti-SSA negatif olabilir; biyopsi bu yüzden değerli. Ama önce dışlama ölçütlerine bakın: IgG4 ilişkili hastalık, radyoterapi, hepatit C, AIDS, sarkoidoz.\n\nCANLI (W2, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+   "notes": "[17:21–18:06]\nHesaplayın. (Sonuç.) Doğru A: biyopsi 3, Schirmer 1, toplam 4. Anti-SSA negatif olabilir; biyopsi bu yüzden değerli. Ama önce dışlama ölçütlerine bakın: IgG4 ilişkili hastalık, radyoterapi, hepatit C, AIDS, sarkoidoz.\n\nCANLI (W2, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
-   "img": "slaytlar/M4/16a.jpg?v=5",
-   "title": "Nekrotizan sialometaplazi · 1/6",
-   "step": [
-    1,
-    6
-   ],
-   "notes": "[10:23–10:31]\nNekrotizan sialometaplazi küçük tükürük bezlerinin enfarktı: kan akımı kesilir, bez ölür. Klinikte de mikroskopta da kansere benzer."
-  },
-  {
-   "img": "slaytlar/M4/16b.jpg?v=5",
-   "title": "Nekrotizan sialometaplazi · 2/6",
-   "step": [
-    2,
-    6
-   ],
-   "notes": "[10:31–10:37]\nYüzde 75'ten fazlası arka sert damakta; çoğu tek taraflı."
-  },
-  {
-   "img": "slaytlar/M4/16c.jpg?v=5",
-   "title": "Nekrotizan sialometaplazi · 3/6",
-   "step": [
-    3,
-    6
-   ],
-   "notes": "[10:37–10:44]\nNeden olanlar: travma, anestezi iğnesi, uyumsuz protez, yakın bir ameliyat, sigara."
-  },
-  {
-   "img": "slaytlar/M4/16d.jpg?v=5",
-   "title": "Nekrotizan sialometaplazi · 4/6",
-   "step": [
-    4,
-    6
-   ],
-   "notes": "[10:44–10:51]\nÖnce şişlik olur, iki üç hafta içinde krater gibi derin bir ülsere döner. Hasta 'damağımın bir parçası düştü' diye gelir."
-  },
-  {
-   "img": "slaytlar/M4/16e.jpg?v=5",
-   "title": "Nekrotizan sialometaplazi · 5/6",
-   "step": [
-    5,
-    6
-   ],
-   "notes": "[10:51–10:59]\nMikroskopta lobül yapısı korunur; asinuslarda nekroz, kanallarda skuamöz metaplazi ve üstteki epitelde psödoepitelyomatöz hiperplazi."
-  },
-  {
-   "img": "slaytlar/M4/16f.jpg?v=5",
-   "title": "Nekrotizan sialometaplazi · 6/6",
-   "step": [
-    6,
-    6
-   ],
-   "notes": "[10:59–11:13]\nPatoloğun notu: bu tablo skuamöz hücreli karsinom ya da mukoepidermoid karsinom sanılabilir. İstek formunu boş göndermeyin: enjeksiyon, protez, ani başlangıç. Lezyon birkaç haftada kendiliğinden iyileşir; iyileşmezse yeniden biyopsi."
-  },
-  {
-   "img": "slaytlar/M4/17a.jpg?v=5",
-   "title": "Lenfoepitelyal kistler · 1/4",
+   "img": "slaytlar/M4/32a.jpg?v=5",
+   "title": "(Zaman kalırsa) Lenfoepitelyal kistler · 1/4",
    "step": [
     1,
     4
    ],
-   "notes": "[11:13–11:20]\nBu iki lezyon patoloji kaynaklarında böyle geçiyor; Neville'de ayrıntısını doğrulayamadım. Benign lenfoepitelyal kist çoğu parotiste, ağrısız bir şişlik."
+   "notes": "[18:06–18:13] ZAMAN KALIRSA; yoksa → ile atla.\nBu iki lezyon patoloji kaynaklarında böyle geçiyor; Neville'de ayrıntısını doğrulayamadım. Benign lenfoepitelyal kist çoğu parotiste, ağrısız bir şişlik."
   },
   {
-   "img": "slaytlar/M4/17b.jpg?v=5",
-   "title": "Lenfoepitelyal kistler · 2/4",
+   "img": "slaytlar/M4/32b.jpg?v=5",
+   "title": "(Zaman kalırsa) Lenfoepitelyal kistler · 2/4",
    "step": [
     2,
     4
    ],
-   "notes": "[11:20–11:27]\nKist yassı, bazen silyalı epitelle döşeli; duvarında germinal merkezli lenfoid doku var."
+   "notes": "[18:13–18:20] ZAMAN KALIRSA; yoksa → ile atla.\nKist yassı, bazen silyalı epitelle döşeli; duvarında germinal merkezli lenfoid doku var."
   },
   {
-   "img": "slaytlar/M4/17c.jpg?v=5",
-   "title": "Lenfoepitelyal kistler · 3/4",
+   "img": "slaytlar/M4/32c.jpg?v=5",
+   "title": "(Zaman kalırsa) Lenfoepitelyal kistler · 3/4",
    "step": [
     3,
     4
    ],
-   "notes": "[11:27–11:35]\nKistik lenfoepitelyal lezyon büyük çoğunlukla HIV pozitif hastada görülür: iki taraflı, çok sayıda parotis kisti."
+   "notes": "[18:20–18:28] ZAMAN KALIRSA; yoksa → ile atla.\nKistik lenfoepitelyal lezyon büyük çoğunlukla HIV pozitif hastada görülür: iki taraflı, çok sayıda parotis kisti."
   },
   {
-   "img": "slaytlar/M4/17d.jpg?v=5",
-   "title": "Lenfoepitelyal kistler · 4/4",
+   "img": "slaytlar/M4/32d.jpg?v=5",
+   "title": "(Zaman kalırsa) Lenfoepitelyal kistler · 4/4",
    "step": [
     4,
     4
    ],
-   "notes": "[11:35–11:41]\nLenfoepitelyal kiste benzer, ek olarak epimiyoepitelyal adalar içerir. İki taraflı parotis kistlerinde HIV testi isteyin."
+   "notes": "[18:28–18:34] ZAMAN KALIRSA; yoksa → ile atla.\nLenfoepitelyal kiste benzer, ek olarak epimiyoepitelyal adalar içerir. İki taraflı parotis kistlerinde HIV testi isteyin."
   },
   {
-   "img": "slaytlar/M4/18.jpg?v=5",
+   "img": "slaytlar/M4/33.jpg?v=5",
    "title": "DUS Molası 1/2",
    "q": "W3",
-   "notes": "[11:41–12:21]\nNeville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Üst dudak. Bu cümleyi birazdan tümörlerde kullanacağız.\n\nCANLI (W3, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+   "notes": "[18:34–19:14]\nNeville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Üst dudak. Bu cümleyi birazdan tümörlerde kullanacağız.\n\nCANLI (W3, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
-   "img": "slaytlar/M4/19.jpg?v=5",
+   "img": "slaytlar/M4/34.jpg?v=5",
    "title": "DUS Molası 2/2",
    "q": "W4",
-   "notes": "[12:21–12:56]\n(Sonuç.) Lenfoma; çoğu MALT. Bu ara tümör dışı bloğu kapatıyor; sırada tümörler.\n\nCANLI (W4, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+   "notes": "[19:14–19:49]\n(Sonuç.) Lenfoma; çoğu MALT. Bu ara tümör dışı bloğu kapatıyor; sırada tümörler.\n\nCANLI (W4, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
    "board": true,
    "title": "Ara liderlik: ilk 5",
-   "notes": "[12:56–13:11]\nOn saniye: ilk beş. (→ ile devam.)",
+   "notes": "[19:49–20:04]\nOn saniye: ilk beş. (→ ile devam.)",
    "top": 5
   },
   {
-   "img": "slaytlar/M4/21a.jpg?v=5",
-   "title": "Tükürük bezi tümörleri: genel · 1/7",
-   "step": [
-    1,
-    7
-   ],
-   "notes": "[13:11–13:18]\nTükürük bezi tümörleri baş-boyun tümörlerinin yüzde 2 ila 6'sı. Bilinen en önemli etken radyasyon."
-  },
-  {
-   "img": "slaytlar/M4/21b.jpg?v=5",
-   "title": "Tükürük bezi tümörleri: genel · 2/7",
-   "step": [
-    2,
-    7
-   ],
-   "notes": "[13:18–13:24]\nÇoğu parotiste, sonra submandibuler bezde."
-  },
-  {
-   "img": "slaytlar/M4/21c.jpg?v=5",
-   "title": "Tükürük bezi tümörleri: genel · 3/7",
-   "step": [
-    3,
-    7
-   ],
-   "notes": "[13:24–13:31]\nÇoğu iyi huylu ve her bezde en sık tümör pleomorfik adenom."
-  },
-  {
-   "img": "slaytlar/M4/21d.jpg?v=5",
-   "title": "Tükürük bezi tümörleri: genel · 4/7",
-   "step": [
-    4,
-    7
-   ],
-   "notes": "[13:31–13:38]\nKötü huylu olma olasılığı beze göre değişir. Parotiste yüzde 15 ila 32."
-  },
-  {
-   "img": "slaytlar/M4/21e.jpg?v=5",
-   "title": "Tükürük bezi tümörleri: genel · 5/7",
-   "step": [
-    5,
-    7
-   ],
-   "notes": "[13:38–13:44]\nSubmandibuler bezde yüzde 26 ila 45; en sık malign tümörü adenoid kistik karsinom."
-  },
-  {
-   "img": "slaytlar/M4/21f.jpg?v=5",
-   "title": "Tükürük bezi tümörleri: genel · 6/7",
-   "step": [
-    6,
-    7
-   ],
-   "notes": "[13:44–13:51]\nKüçük bezlerde yaklaşık yarısı; en sık yer damak."
-  },
-  {
-   "img": "slaytlar/M4/21g.jpg?v=5",
-   "title": "Tükürük bezi tümörleri: genel · 7/7",
-   "step": [
-    7,
-    7
-   ],
-   "notes": "[13:51–14:00]\nSublingual bezde tümör nadir ama gördüğünüzde neredeyse hep malign. Kural: bez küçüldükçe malign olasılığı artar. Rakamlar Neville'in beş büyük serisinden."
-  },
-  {
-   "img": "slaytlar/M4/22a.jpg?v=5",
-   "title": "Pleomorfik adenom · 1/7",
-   "step": [
-    1,
-    7
-   ],
-   "notes": "[14:00–14:07]\nPleomorfik adenom, eski adıyla benign miks tümör: en sık tükürük bezi tümörü; çoğu parotiste."
-  },
-  {
-   "img": "slaytlar/M4/22b.jpg?v=5",
-   "title": "Pleomorfik adenom · 2/7",
-   "step": [
-    2,
-    7
-   ],
-   "notes": "[14:07–14:12]\nOrtalama 45 yaş; kadında biraz daha sık."
-  },
-  {
-   "img": "slaytlar/M4/22c.jpg?v=5",
-   "title": "Pleomorfik adenom · 3/7",
-   "step": [
-    3,
-    7
-   ],
-   "notes": "[14:12–14:19]\nYavaş büyüyen, ağrısız, sert, hareketli bir kitle; ağızda en sık damakta, orta hattın yanında."
-  },
-  {
-   "img": "slaytlar/M4/22d.jpg?v=5",
-   "title": "Pleomorfik adenom · 4/7",
-   "step": [
-    4,
-    7
-   ],
-   "notes": "[14:19–14:25]\nMakroskopide iyi sınırlı, lobüllü, parlak krem-beyaz bir kitle."
-  },
-  {
-   "img": "slaytlar/M4/22e.jpg?v=5",
-   "title": "Pleomorfik adenom · 5/7",
-   "step": [
-    5,
-    7
-   ],
-   "notes": "[14:25–14:33]\nMikroskopta üç bileşen: kanal yapan epitel, dıştaki miyoepitel hücreleri ve miyoepitelin yaptığı miksoid ya da kıkırdak benzeri stroma. Adındaki pleomorfizm hücrelerin değil, yapının."
-  },
-  {
-   "img": "slaytlar/M4/22f.jpg?v=5",
-   "title": "Pleomorfik adenom · 6/7",
-   "step": [
-    6,
-    7
-   ],
-   "notes": "[14:33–14:41]\nKapsül eksik olabilir; tümör kapsülün dışına uzanır. Bu yüzden enükleasyon yapılmaz, tümör yatağına ekilir ve nükseder. Parotiste yüzeyel parotidektomi."
-  },
-  {
-   "img": "slaytlar/M4/22g.jpg?v=5",
-   "title": "Pleomorfik adenom · 7/7",
-   "step": [
-    7,
-    7
-   ],
-   "notes": "[14:41–14:48]\nUzun süre bırakılırsa yüzde 3 ila 4'üne kadar malign dönüşür ve risk süreyle artar. Gen değişikliği PLAG1 ya da HMGA2."
-  },
-  {
-   "img": "slaytlar/M4/23a.jpg?v=5",
-   "title": "Warthin tümörü · 1/5",
-   "step": [
-    1,
-    5
-   ],
-   "notes": "[14:48–14:55]\nWarthin tümörü ikinci en sık iyi huylu tümör; neredeyse yalnız parotiste, kuyruk bölümünde."
-  },
-  {
-   "img": "slaytlar/M4/23b.jpg?v=5",
-   "title": "Warthin tümörü · 2/5",
-   "step": [
-    2,
-    5
-   ],
-   "notes": "[14:55–15:02]\nSigarayla en güçlü ilişkili tükürük bezi tümörü: risk sekiz kat. Çoğu 60'lı ve 70'li yaşlarda."
-  },
-  {
-   "img": "slaytlar/M4/23c.jpg?v=5",
-   "title": "Warthin tümörü · 3/5",
-   "step": [
-    3,
-    5
-   ],
-   "notes": "[15:02–15:09]\nİki taraflı ve çok odaklı olma olasılığı en yüksek tükürük bezi tümörü; yüzde 5 ila 17'si iki taraflı."
-  },
-  {
-   "img": "slaytlar/M4/23d.jpg?v=5",
-   "title": "Warthin tümörü · 4/5",
-   "step": [
-    4,
-    5
-   ],
-   "notes": "[15:09–15:16]\nPatoloji kaynaklarında erkekte sık diye geçer; Neville'e göre bu eskide kaldı, kadınlar sigara içtikçe oran eşitlendi."
-  },
-  {
-   "img": "slaytlar/M4/23e.jpg?v=5",
-   "title": "Warthin tümörü · 5/5",
-   "step": [
-    5,
-    5
-   ],
-   "notes": "[15:16–15:23]\nMikroskopta papiller kistik yapılar: iki sıra pembe onkositik hücre ve altında germinal merkezli lenfoid doku."
-  },
-  {
-   "img": "slaytlar/M4/24a.jpg?v=5",
+   "img": "slaytlar/M4/36a.jpg?v=5",
    "title": "Onkositom, bazal hücreli ve kanaliküler adenom · 1/6",
    "step": [
     1,
     6
    ],
-   "notes": "[15:23–15:30]\nOnkositom nadir, tümörlerin yaklaşık yüzde biri; yaşlıda, çoğu parotiste."
+   "notes": "[20:04–20:11]\nOnkositom nadir, tümörlerin yaklaşık yüzde biri; yaşlıda, çoğu parotiste."
   },
   {
-   "img": "slaytlar/M4/24b.jpg?v=5",
+   "img": "slaytlar/M4/36b.jpg?v=5",
    "title": "Onkositom, bazal hücreli ve kanaliküler adenom · 2/6",
    "step": [
     2,
     6
    ],
-   "notes": "[15:30–15:36]\nHücreleri mitokondriyle dolu, iri ve pembe: onkosit."
+   "notes": "[20:11–20:17]\nHücreleri mitokondriyle dolu, iri ve pembe: onkosit."
   },
   {
-   "img": "slaytlar/M4/24c.jpg?v=5",
+   "img": "slaytlar/M4/36c.jpg?v=5",
    "title": "Onkositom, bazal hücreli ve kanaliküler adenom · 3/6",
    "step": [
     3,
     6
    ],
-   "notes": "[15:36–15:43]\nBazal hücreli adenom çoğu parotiste; ileri yaşta, kadında sık."
+   "notes": "[20:17–20:24]\nBazal hücreli adenom çoğu parotiste; ileri yaşta, kadında sık."
   },
   {
-   "img": "slaytlar/M4/24d.jpg?v=5",
+   "img": "slaytlar/M4/36d.jpg?v=5",
    "title": "Onkositom, bazal hücreli ve kanaliküler adenom · 4/6",
    "step": [
     4,
     6
    ],
-   "notes": "[15:43–15:50]\nBazaloid hücre adaları, aralarında bazal membran maddesi; solid, trabeküler, tübüler ve membranöz tipleri var."
+   "notes": "[20:24–20:31]\nBazaloid hücre adaları, aralarında bazal membran maddesi; solid, trabeküler, tübüler ve membranöz tipleri var."
   },
   {
-   "img": "slaytlar/M4/24e.jpg?v=5",
+   "img": "slaytlar/M4/36e.jpg?v=5",
    "title": "Onkositom, bazal hücreli ve kanaliküler adenom · 5/6",
    "step": [
     5,
     6
    ],
-   "notes": "[15:50–15:57]\nKanaliküler adenom neredeyse yalnız küçük bezlerde; yüzde 66 ila 78'i üst dudakta."
+   "notes": "[20:31–20:38]\nKanaliküler adenom neredeyse yalnız küçük bezlerde; yüzde 66 ila 78'i üst dudakta."
   },
   {
-   "img": "slaytlar/M4/24f.jpg?v=5",
+   "img": "slaytlar/M4/36f.jpg?v=5",
    "title": "Onkositom, bazal hücreli ve kanaliküler adenom · 6/6",
    "step": [
     6,
     6
    ],
-   "notes": "[15:57–16:04]\nYaşlı kadında mavimsi bir nodül olarak gelir ve mukosel sanılabilir. Sırada telefon: üst dudakta bir nodül."
+   "notes": "[20:38–20:45]\nYaşlı kadında mavimsi bir nodül olarak gelir ve mukosel sanılabilir. Sırada telefon: üst dudakta bir nodül."
   },
   {
-   "img": "slaytlar/M4/25.jpg?v=5",
+   "img": "slaytlar/M4/37.jpg?v=5",
    "title": "Üst dudakta nodül",
    "q": "W5",
-   "notes": "[16:04–16:44]\n(Sonuç.) Doğru B: kanaliküler adenom. İki ipucu: üst dudak ve yaş. Mukosel üst dudakta neredeyse hiç olmaz; DUS sorusunu hatırlayın.\n\nCANLI (W5, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+   "notes": "[20:45–21:25]\n(Sonuç.) Doğru B: kanaliküler adenom. İki ipucu: üst dudak ve yaş. Mukosel üst dudakta neredeyse hiç olmaz; DUS sorusunu hatırlayın.\n\nCANLI (W5, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
-   "img": "slaytlar/M4/26a.jpg?v=5",
+   "img": "slaytlar/M4/38a.jpg?v=5",
    "title": "Mukoepidermoid karsinom · 1/7",
    "step": [
     1,
     7
    ],
-   "notes": "[16:44–16:51]\nMukoepidermoid karsinom en sık kötü huylu tükürük bezi tümörü; çocukta da en sık malign tümör."
+   "notes": "[21:25–21:32]\nMukoepidermoid karsinom en sık kötü huylu tükürük bezi tümörü; çocukta da en sık malign tümör."
   },
   {
-   "img": "slaytlar/M4/26b.jpg?v=5",
+   "img": "slaytlar/M4/38b.jpg?v=5",
    "title": "Mukoepidermoid karsinom · 2/7",
    "step": [
     2,
     7
    ],
-   "notes": "[16:51–16:57]\nÇoğu parotiste; ağızda en sık damakta."
+   "notes": "[21:32–21:38]\nÇoğu parotiste; ağızda en sık damakta."
   },
   {
-   "img": "slaytlar/M4/26c.jpg?v=5",
+   "img": "slaytlar/M4/38c.jpg?v=5",
    "title": "Mukoepidermoid karsinom · 3/7",
    "step": [
     3,
     7
    ],
-   "notes": "[16:57–17:03]\nAğızda mavi-kırmızı ve yumuşak olunca mukosel sanılır."
+   "notes": "[21:38–21:44]\nAğızda mavi-kırmızı ve yumuşak olunca mukosel sanılır."
   },
   {
-   "img": "slaytlar/M4/26d.jpg?v=5",
+   "img": "slaytlar/M4/38d.jpg?v=5",
    "title": "Mukoepidermoid karsinom · 4/7",
    "step": [
     4,
     7
    ],
-   "notes": "[17:03–17:10]\nAdı hücrelerinden: mukus hücreleri, epidermoid hücreler ve aradaki ara hücreler."
+   "notes": "[21:44–21:51]\nAdı hücrelerinden: mukus hücreleri, epidermoid hücreler ve aradaki ara hücreler."
   },
   {
-   "img": "slaytlar/M4/26e.jpg?v=5",
+   "img": "slaytlar/M4/38e.jpg?v=5",
    "title": "Mukoepidermoid karsinom · 5/7",
    "step": [
     5,
     7
    ],
-   "notes": "[17:10–17:19]\nDüşük dereceli tümör kistik ve mukus hücresi bol; yüksek dereceli olan solid, skuamöz hücreli karsinoma benzer. Beş yıllık sağkalım düşük derecede yüzde 90, yüksek derecede yüzde 55."
+   "notes": "[21:51–22:00]\nDüşük dereceli tümör kistik ve mukus hücresi bol; yüksek dereceli olan solid, skuamöz hücreli karsinoma benzer. Beş yıllık sağkalım düşük derecede yüzde 90, yüksek derecede yüzde 55."
   },
   {
-   "img": "slaytlar/M4/26f.jpg?v=5",
+   "img": "slaytlar/M4/38f.jpg?v=5",
    "title": "Mukoepidermoid karsinom · 6/7",
    "step": [
     6,
     7
    ],
-   "notes": "[17:19–17:26]\nKemik içinde de görülür: santral mukoepidermoid karsinom, arka mandibulada çok gözlü radyolüsensi."
+   "notes": "[22:00–22:07]\nKemik içinde de görülür: santral mukoepidermoid karsinom, arka mandibulada çok gözlü radyolüsensi."
   },
   {
-   "img": "slaytlar/M4/26g.jpg?v=5",
+   "img": "slaytlar/M4/38g.jpg?v=5",
    "title": "Mukoepidermoid karsinom · 7/7",
    "step": [
     7,
     7
    ],
-   "notes": "[17:26–17:31]\nGen değişikliği CRTC1 ya da 3 ile MAML2 füzyonu."
+   "notes": "[22:07–22:12]\nGen değişikliği CRTC1 ya da 3 ile MAML2 füzyonu."
   },
   {
-   "img": "slaytlar/M4/27a.jpg?v=5",
-   "title": "Adenoid kistik karsinom · 1/6",
-   "step": [
-    1,
-    6
-   ],
-   "notes": "[17:31–17:39]\nAdenoid kistik karsinom küçük bezlerde ve parotiste görülür; submandibuler bezin en sık kötü huylu tümörü."
-  },
-  {
-   "img": "slaytlar/M4/27b.jpg?v=5",
-   "title": "Adenoid kistik karsinom · 2/6",
-   "step": [
-    2,
-    6
-   ],
-   "notes": "[17:39–17:44]\nYavaş büyür; erişkin ve ileri yaşta."
-  },
-  {
-   "img": "slaytlar/M4/27c.jpg?v=5",
-   "title": "Adenoid kistik karsinom · 3/6",
-   "step": [
-    3,
-    6
-   ],
-   "notes": "[17:44–17:53]\nEn önemli özelliği sinirlere yayılması. Ağrı, uyuşma ve yüz felci en sık bu tümörde; ağrı şişlikten önce bile başlayabilir."
-  },
-  {
-   "img": "slaytlar/M4/27d.jpg?v=5",
-   "title": "Adenoid kistik karsinom · 4/6",
-   "step": [
-    4,
-    6
-   ],
-   "notes": "[17:53–18:00]\nMikroskopta üç desen: kribriform, yani delikli adalar; tübüler; ve solid. Solid desen en kötü prognozlu. Başlık slaytındaki görüntü buydu."
-  },
-  {
-   "img": "slaytlar/M4/27e.jpg?v=5",
-   "title": "Adenoid kistik karsinom · 5/6",
-   "step": [
-    5,
-    6
-   ],
-   "notes": "[18:00–18:09]\nLenf noduna az gider ama yıllar sonra akciğere gider. Neville'in cümlesi: beş yıllık sağkalım bu tümörde şifa demek değil; yirmi yılda hastaların yarısından fazlası kaybedilir."
-  },
-  {
-   "img": "slaytlar/M4/27f.jpg?v=5",
-   "title": "Adenoid kistik karsinom · 6/6",
-   "step": [
-    6,
-    6
-   ],
-   "notes": "[18:09–18:15]\nGen değişikliği MYB::NFIB."
-  },
-  {
-   "img": "slaytlar/M4/28a.jpg?v=5",
-   "title": "Asinik hücreli karsinom ve sekretuar karsinom · 1/5",
+   "img": "slaytlar/M4/39a.jpg?v=5",
+   "title": "(Zaman kalırsa) Asinik hücreli karsinom ve sekretuar karsinom · 1/5",
    "step": [
     1,
     5
    ],
-   "notes": "[18:15–18:23]\nAsinik hücreli karsinomun hücreleri seröz asinus hücresine benzer; yüzde 80 ila 90'ı parotiste."
+   "notes": "[22:12–22:20] ZAMAN KALIRSA; yoksa → ile atla.\nAsinik hücreli karsinomun hücreleri seröz asinus hücresine benzer; yüzde 80 ila 90'ı parotiste."
   },
   {
-   "img": "slaytlar/M4/28b.jpg?v=5",
-   "title": "Asinik hücreli karsinom ve sekretuar karsinom · 2/5",
+   "img": "slaytlar/M4/39b.jpg?v=5",
+   "title": "(Zaman kalırsa) Asinik hücreli karsinom ve sekretuar karsinom · 2/5",
    "step": [
     2,
     5
    ],
-   "notes": "[18:23–18:30]\nSitoplazma bazofilik ve granüllü; zimojen granülleri PAS pozitif."
+   "notes": "[22:20–22:27] ZAMAN KALIRSA; yoksa → ile atla.\nSitoplazma bazofilik ve granüllü; zimojen granülleri PAS pozitif."
   },
   {
-   "img": "slaytlar/M4/28c.jpg?v=5",
-   "title": "Asinik hücreli karsinom ve sekretuar karsinom · 3/5",
+   "img": "slaytlar/M4/39c.jpg?v=5",
+   "title": "(Zaman kalırsa) Asinik hücreli karsinom ve sekretuar karsinom · 3/5",
    "step": [
     3,
     5
    ],
-   "notes": "[18:30–18:35]\nDüşük dereceli bir tümör; prognozu iyi."
+   "notes": "[22:27–22:32] ZAMAN KALIRSA; yoksa → ile atla.\nDüşük dereceli bir tümör; prognozu iyi."
   },
   {
-   "img": "slaytlar/M4/28d.jpg?v=5",
-   "title": "Asinik hücreli karsinom ve sekretuar karsinom · 4/5",
+   "img": "slaytlar/M4/39d.jpg?v=5",
+   "title": "(Zaman kalırsa) Asinik hücreli karsinom ve sekretuar karsinom · 4/5",
    "step": [
     4,
     5
    ],
-   "notes": "[18:35–18:44]\nSekretuar karsinom memenin sekretuar karsinomuyla aynı ETV6::NTRK3 füzyonunu taşır; 2010'dan önce çoğu asinik hücreli karsinom sanılıyordu."
+   "notes": "[22:32–22:41] ZAMAN KALIRSA; yoksa → ile atla.\nSekretuar karsinom memenin sekretuar karsinomuyla aynı ETV6::NTRK3 füzyonunu taşır; 2010'dan önce çoğu asinik hücreli karsinom sanılıyordu."
   },
   {
-   "img": "slaytlar/M4/28e.jpg?v=5",
-   "title": "Asinik hücreli karsinom ve sekretuar karsinom · 5/5",
+   "img": "slaytlar/M4/39e.jpg?v=5",
+   "title": "(Zaman kalırsa) Asinik hücreli karsinom ve sekretuar karsinom · 5/5",
    "step": [
     5,
     5
    ],
-   "notes": "[18:44–18:50]\nBu füzyon TRK inhibitörü ilaçlar için bir hedef olabilir."
+   "notes": "[22:41–22:47] ZAMAN KALIRSA; yoksa → ile atla.\nBu füzyon TRK inhibitörü ilaçlar için bir hedef olabilir."
   },
   {
-   "img": "slaytlar/M4/29a.jpg?v=5",
+   "img": "slaytlar/M4/40a.jpg?v=5",
    "title": "Polimorf adenokarsinom ve karsinom ex PA · 1/5",
    "step": [
     1,
     5
    ],
-   "notes": "[18:50–18:58]\nPolimorf adenokarsinom, eski adıyla polimorf düşük dereceli adenokarsinom: neredeyse yalnız küçük bezlerde, çoğu damakta; üçte ikisi kadın."
+   "notes": "[22:47–22:55]\nPolimorf adenokarsinom, eski adıyla polimorf düşük dereceli adenokarsinom: neredeyse yalnız küçük bezlerde, çoğu damakta; üçte ikisi kadın."
   },
   {
-   "img": "slaytlar/M4/29b.jpg?v=5",
+   "img": "slaytlar/M4/40b.jpg?v=5",
    "title": "Polimorf adenokarsinom ve karsinom ex PA · 2/5",
    "step": [
     2,
     5
    ],
-   "notes": "[18:58–19:06]\nHücreler tek tip ama desen çok çeşitli; hücreler tek sıra dizilir ve sinir çevresine yayılır. Yine de prognozu iyi."
+   "notes": "[22:55–23:03]\nHücreler tek tip ama desen çok çeşitli; hücreler tek sıra dizilir ve sinir çevresine yayılır. Yine de prognozu iyi."
   },
   {
-   "img": "slaytlar/M4/29c.jpg?v=5",
+   "img": "slaytlar/M4/40c.jpg?v=5",
    "title": "Polimorf adenokarsinom ve karsinom ex PA · 3/5",
    "step": [
     3,
     5
    ],
-   "notes": "[19:06–19:15]\nKarsinom ex pleomorfik adenom: pleomorfik adenom zemininde gelişen karsinom. Yıllardır duran bir kitle birden hızla büyümeye başlarsa düşünün."
+   "notes": "[23:03–23:12]\nKarsinom ex pleomorfik adenom: pleomorfik adenom zemininde gelişen karsinom. Yıllardır duran bir kitle birden hızla büyümeye başlarsa düşünün."
   },
   {
-   "img": "slaytlar/M4/29d.jpg?v=5",
+   "img": "slaytlar/M4/40d.jpg?v=5",
    "title": "Polimorf adenokarsinom ve karsinom ex PA · 4/5",
    "step": [
     4,
     5
    ],
-   "notes": "[19:15–19:22]\nHasta pleomorfik adenomlu hastalardan 10 ila 15 yaş büyük; en sık parotiste."
+   "notes": "[23:12–23:19]\nHasta pleomorfik adenomlu hastalardan 10 ila 15 yaş büyük; en sık parotiste."
   },
   {
-   "img": "slaytlar/M4/29e.jpg?v=5",
+   "img": "slaytlar/M4/40e.jpg?v=5",
    "title": "Polimorf adenokarsinom ve karsinom ex PA · 5/5",
    "step": [
     5,
     5
    ],
-   "notes": "[19:22–19:30]\nPrognozu kapsül invazyonu belirler: kapsül içinde kalan iyi, çevre dokuya yaygın yayılan kötü seyirli."
+   "notes": "[23:19–23:27]\nPrognozu kapsül invazyonu belirler: kapsül içinde kalan iyi, çevre dokuya yaygın yayılan kötü seyirli."
   },
   {
-   "img": "slaytlar/M4/30a.jpg?v=5",
-   "title": "Diğer kötü huylu tümörler · 1/5",
+   "img": "slaytlar/M4/41a.jpg?v=5",
+   "title": "(Zaman kalırsa) Diğer kötü huylu tümörler · 1/5",
    "step": [
     1,
     5
    ],
-   "notes": "[19:30–19:38]\nBazal hücreli adenokarsinom bazal hücreli adenomun malign karşılığı; adenomdan ayıran nodüler infiltrasyon, atipi ve mitoz."
+   "notes": "[23:27–23:35] ZAMAN KALIRSA; yoksa → ile atla.\nBazal hücreli adenokarsinom bazal hücreli adenomun malign karşılığı; adenomdan ayıran nodüler infiltrasyon, atipi ve mitoz."
   },
   {
-   "img": "slaytlar/M4/30b.jpg?v=5",
-   "title": "Diğer kötü huylu tümörler · 2/5",
+   "img": "slaytlar/M4/41b.jpg?v=5",
+   "title": "(Zaman kalırsa) Diğer kötü huylu tümörler · 2/5",
    "step": [
     2,
     5
    ],
-   "notes": "[19:38–19:47]\nBu slayttaki son dört tümörün ayrıntısını Neville'de doğrulayamadım; patoloji kaynaklarındaki bilgiyi veriyorum. Tükürük bezi duktus karsinomu yüksek dereceli bir tümör; yaşlı erkekte, parotiste. Memenin duktal karsinomuna benzer; yüzde 90'ından fazlası androjen reseptörü pozitif; prognozu kötü."
+   "notes": "[23:35–23:44] ZAMAN KALIRSA; yoksa → ile atla.\nBu slayttaki son dört tümörün ayrıntısını Neville'de doğrulayamadım; patoloji kaynaklarındaki bilgiyi veriyorum. Tükürük bezi duktus karsinomu yüksek dereceli bir tümör; yaşlı erkekte, parotiste. Memenin duktal karsinomuna benzer; yüzde 90'ından fazlası androjen reseptörü pozitif; prognozu kötü."
   },
   {
-   "img": "slaytlar/M4/30c.jpg?v=5",
-   "title": "Diğer kötü huylu tümörler · 3/5",
+   "img": "slaytlar/M4/41c.jpg?v=5",
+   "title": "(Zaman kalırsa) Diğer kötü huylu tümörler · 3/5",
    "step": [
     3,
     5
    ],
-   "notes": "[19:47–19:56]\nLenfoepitelyal karsinom EBV ile ilişkili; nazofarenks karsinomunun benzeri. Tanıdan önce nazofarenkste bir tümör dışlanmalı."
+   "notes": "[23:44–23:53] ZAMAN KALIRSA; yoksa → ile atla.\nLenfoepitelyal karsinom EBV ile ilişkili; nazofarenks karsinomunun benzeri. Tanıdan önce nazofarenkste bir tümör dışlanmalı."
   },
   {
-   "img": "slaytlar/M4/30d.jpg?v=5",
-   "title": "Diğer kötü huylu tümörler · 4/5",
+   "img": "slaytlar/M4/41d.jpg?v=5",
+   "title": "(Zaman kalırsa) Diğer kötü huylu tümörler · 4/5",
    "step": [
     4,
     5
    ],
-   "notes": "[19:56–20:04]\nEpitelyal-miyoepitelyal karsinom çoğu parotiste; iç sırada kanal hücreleri, dış sırada glikojenden berrak görünen miyoepitel hücreleri. Düşük derecelidir."
+   "notes": "[23:53–24:01] ZAMAN KALIRSA; yoksa → ile atla.\nEpitelyal-miyoepitelyal karsinom çoğu parotiste; iç sırada kanal hücreleri, dış sırada glikojenden berrak görünen miyoepitel hücreleri. Düşük derecelidir."
   },
   {
-   "img": "slaytlar/M4/30e.jpg?v=5",
-   "title": "Diğer kötü huylu tümörler · 5/5",
+   "img": "slaytlar/M4/41e.jpg?v=5",
+   "title": "(Zaman kalırsa) Diğer kötü huylu tümörler · 5/5",
    "step": [
     5,
     5
    ],
-   "notes": "[20:04–20:11]\nAdenokarsinom NOS başka hiçbir sınıfa girmeyen adenokarsinomlar; dışlama tanısı. Sırada telefon: tümörleri genleriyle eşleştireceksiniz."
+   "notes": "[24:01–24:08] ZAMAN KALIRSA; yoksa → ile atla.\nAdenokarsinom NOS başka hiçbir sınıfa girmeyen adenokarsinomlar; dışlama tanısı. Sırada telefon: tümörleri genleriyle eşleştireceksiniz."
   },
   {
-   "img": "slaytlar/M4/31.jpg?v=5",
+   "img": "slaytlar/M4/42.jpg?v=5",
    "title": "Tümör ve gen",
    "q": "W6",
-   "notes": "[20:11–21:06]\nTelefonda dört tümör, dört gen. Eşleştirin. (Sonuç.) Pleomorfik adenom PLAG1 ya da HMGA2; mukoepidermoid karsinom MAML2; adenoid kistik karsinom MYB::NFIB; sekretuar karsinom ETV6::NTRK3. Küçük bir biyopside patolog tanıyı bu genlerle doğruluyor.\n\nCANLI (W6, Eşleştirme): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. T: 60 sn (perdede T düğmesi bu soruda 60 sn sayar)."
+   "notes": "[24:08–25:03]\nTelefonda dört tümör, dört gen. Eşleştirin. (Sonuç.) Pleomorfik adenom PLAG1 ya da HMGA2; mukoepidermoid karsinom MAML2; adenoid kistik karsinom MYB::NFIB; sekretuar karsinom ETV6::NTRK3. Küçük bir biyopside patolog tanıyı bu genlerle doğruluyor.\n\nCANLI (W6, Eşleştirme): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. T: 60 sn (perdede T düğmesi bu soruda 60 sn sayar)."
   },
   {
-   "img": "slaytlar/M4/32a.jpg?v=5",
+   "img": "slaytlar/M4/43a.jpg?v=5",
    "title": "Açılış vakası: hastanın söylemediği · 1/3",
    "step": [
     1,
     3
    ],
-   "notes": "[21:06–21:14]\nDersin başındaki hastamıza dönüyoruz: sert damakta, orta hattın yanında kitle."
+   "notes": "[25:03–25:11]\nDersin başındaki hastamıza dönüyoruz: sert damakta, orta hattın yanında kitle."
   },
   {
-   "img": "slaytlar/M4/32b.jpg?v=5",
+   "img": "slaytlar/M4/43b.jpg?v=5",
    "title": "Açılış vakası: hastanın söylemediği · 2/3",
    "step": [
     2,
     3
    ],
-   "notes": "[21:14–21:21]\nİki yıldır yavaş büyüyor; mukoza sağlam."
+   "notes": "[25:11–25:18]\nİki yıldır yavaş büyüyor; mukoza sağlam."
   },
   {
-   "img": "slaytlar/M4/32c.jpg?v=5",
+   "img": "slaytlar/M4/43c.jpg?v=5",
    "title": "Açılış vakası: hastanın söylemediği · 3/3",
    "step": [
     3,
     3
    ],
-   "notes": "[21:21–21:35]\nHasta başta söylemedi: son iki ayda damağında karıncalanma ve uyuşma var. Bu bir sinir bulgusu. Tahmininizi yenileyin."
+   "notes": "[25:18–25:32]\nHasta başta söylemedi: son iki ayda damağında karıncalanma ve uyuşma var. Bu bir sinir bulgusu. Tahmininizi yenileyin."
   },
   {
-   "img": "slaytlar/M4/33.jpg?v=5",
+   "img": "slaytlar/M4/44.jpg?v=5",
    "title": "Vakaya dönüş: şimdi ne diyorsun?",
    "q": "W7",
-   "notes": "[21:35–22:10]\nAynı şıklar. Dersin başındaki dağılımı hatırlayın. (İki sonucu yan yana göster.)\n\nCANLI (W7, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: C. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
+   "notes": "[25:32–26:07]\nAynı şıklar. Dersin başındaki dağılımı hatırlayın. (İki sonucu yan yana göster.)\n\nCANLI (W7, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: C. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
   },
   {
-   "img": "slaytlar/M4/34a.jpg?v=5",
+   "img": "slaytlar/M4/45a.jpg?v=5",
    "title": "En olası tanı: adenoid kistik karsinom · 1/5",
    "step": [
     1,
     5
    ],
-   "notes": "[22:10–22:19]\nKanıtları sırayla koyalım. Yer: sert damak; küçük bezlerin en sık yeri ve buradaki tümörlerin yaklaşık yarısı malign."
+   "notes": "[26:07–26:16]\nKanıtları sırayla koyalım. Yer: sert damak; küçük bezlerin en sık yeri ve buradaki tümörlerin yaklaşık yarısı malign."
   },
   {
-   "img": "slaytlar/M4/34b.jpg?v=5",
+   "img": "slaytlar/M4/45b.jpg?v=5",
    "title": "En olası tanı: adenoid kistik karsinom · 2/5",
    "step": [
     2,
     5
    ],
-   "notes": "[22:19–22:27]\nKlinik pleomorfik adenomu düşündürüyordu ve başta en olası tanı oydu."
+   "notes": "[26:16–26:24]\nKlinik pleomorfik adenomu düşündürüyordu ve başta en olası tanı oydu."
   },
   {
-   "img": "slaytlar/M4/34c.jpg?v=5",
+   "img": "slaytlar/M4/45c.jpg?v=5",
    "title": "En olası tanı: adenoid kistik karsinom · 3/5",
    "step": [
     3,
     5
    ],
-   "notes": "[22:27–22:35]\nAma karıncalanma ve uyuşma sinir tutulumu demek; damakta bu adenoid kistik karsinomu, daha az olasılıkla polimorf adenokarsinomu düşündürür."
+   "notes": "[26:24–26:32]\nAma karıncalanma ve uyuşma sinir tutulumu demek; damakta bu adenoid kistik karsinomu, daha az olasılıkla polimorf adenokarsinomu düşündürür."
   },
   {
-   "img": "slaytlar/M4/34d.jpg?v=5",
+   "img": "slaytlar/M4/45d.jpg?v=5",
    "title": "En olası tanı: adenoid kistik karsinom · 4/5",
    "step": [
     4,
     5
    ],
-   "notes": "[22:35–22:43]\nTanıyı insizyonel biyopsi koyar: kribriform yapı ve perinöral invazyon."
+   "notes": "[26:32–26:40]\nTanıyı insizyonel biyopsi koyar: kribriform yapı ve perinöral invazyon."
   },
   {
-   "img": "slaytlar/M4/34e.jpg?v=5",
+   "img": "slaytlar/M4/45e.jpg?v=5",
    "title": "En olası tanı: adenoid kistik karsinom · 5/5",
    "step": [
     5,
     5
    ],
-   "notes": "[22:43–22:52]\nTedavi geniş cerrahi, gerekirse radyoterapi. Geç akciğer metastazı için bu hastayı yirmi yıl izleyeceğiz."
+   "notes": "[26:40–26:49]\nTedavi geniş cerrahi, gerekirse radyoterapi. Geç akciğer metastazı için bu hastayı yirmi yıl izleyeceğiz."
   },
   {
-   "img": "slaytlar/M4/35.jpg?v=5",
+   "img": "slaytlar/M4/46.jpg?v=5",
    "title": "(Zaman kalırsa) Eski ad, yeni ad: WHO 2022",
-   "notes": "[22:52–23:32] ZAMAN KALIRSA; yoksa → ile atla.\nZaman kalırsa; yoksa atlayın. Adı değişen tümörler; sınavda iki adı da görebilirsiniz."
+   "notes": "[26:49–27:29] ZAMAN KALIRSA; yoksa → ile atla.\nZaman kalırsa; yoksa atlayın. Adı değişen tümörler; sınavda iki adı da görebilirsiniz."
   },
   {
-   "img": "slaytlar/M4/36.jpg?v=5",
+   "img": "slaytlar/M4/47.jpg?v=5",
    "title": "Çıkış bileti",
    "q": "W8",
-   "notes": "[23:32–24:02]\nSon kelime bulutu. Hangi konu kafanızı karıştırdı? En büyük kelimeyle 24 Kasım'da başlayacağım.\n\nCANLI (W8, Kelime bulutu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Bulut canlı akar. → kapatır, → sonraki slayt. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
+   "notes": "[27:29–27:59]\nSon kelime bulutu. Hangi konu kafanızı karıştırdı? En büyük kelimeyle 24 Kasım'da başlayacağım.\n\nCANLI (W8, Kelime bulutu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Bulut canlı akar. → kapatır, → sonraki slayt. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
   },
   {
    "board": true,
    "title": "Liderlik tablosu",
-   "notes": "[24:02–24:22]\nLiderlik tablosu. İlk üçü alkışlayalım. Eşit puanda hızlı olan önde."
+   "notes": "[27:59–28:19]\nLiderlik tablosu. İlk üçü alkışlayalım. Eşit puanda hızlı olan önde."
   },
   {
-   "img": "slaytlar/M4/38.jpg?v=5",
+   "img": "slaytlar/M4/49.jpg?v=5",
    "title": "Kaynaklar ve evde tekrar",
-   "notes": "[24:22–24:32]\nKaynaklar burada. Evde tekrar için quiz: Neville'in örnek sınav soruları Türkçe, cevap açıklamalı; isteyen karekodu okutup çözsün. İlk üçü gelecek derste burada anarım."
+   "notes": "[28:19–28:29]\nKaynaklar burada. Evde tekrar için quiz: Neville'in örnek sınav soruları Türkçe, cevap açıklamalı; isteyen karekodu okutup çözsün. İlk üçü gelecek derste burada anarım."
   }
  ],
- "duration": "24:32",
+ "duration": "28:29",
  "cta": "24 Kasım'a kadar isteyen Neville'in örnek sorularını Türkçe quiz olarak çözsün: olgunak.github.io/lam-basinda/quiz. İlk üçü gelecek derste burada anarım.",
  "frame": "Üç grup: tümör dışı hastalıklar, iyi huylu tümörler, kötü huylu tümörler",
  "quiz": "../quiz/#tb"
