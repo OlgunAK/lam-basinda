@@ -220,23 +220,6 @@
    "t": 30
   },
   {
-   "id": "W5",
-   "type": "MCQ",
-   "label": "Patolog gibi düşün",
-   "scored": true,
-   "q": "29 yaşında erkek. Yanakta üç haftada 2 cm'ye ulaşan, ağrılı kitle. Biyopsi raporu: atipisi olmayan iğsi hücreler, mitoz bol ama atipik mitoz yok, gevşek miksoid zemin, ekstravaze eritrositler. En olası tanı ve yaklaşım?",
-   "opts": [
-    "Fibrosarkom; geniş sınırla rezeksiyon",
-    "Nodüler fasiitis; yerel eksizyon yeterli",
-    "Embriyonal rabdomiyosarkom; kemoterapi",
-    "Kaposi sarkomu; HIV testi",
-    "Leiomiyosarkom; radyoterapi"
-   ],
-   "a": 1,
-   "exp": "Hızlı büyüme ve bol mitoz sarkomu düşündürür, ama atipik mitoz ve pleomorfizm yok; gevşek zemin ve ekstravaze eritrositler nodüler fasiitisin tipik bulguları. Yerel eksizyon yeterli, nüks nadir. Bu tabloyu sarkom sanıp hastaya geniş rezeksiyon yapmak en büyük hata olur.",
-   "t": 30
-  },
-  {
    "id": "W6",
    "type": "POLL",
    "label": "Vakaya dönüş: şimdi ne diyorsun?",
@@ -317,7 +300,7 @@
   },
   {
    "img": "slaytlar/M3/04.jpg?v=4",
-   "title": "Ana madde 1: soru",
+   "title": "Soru · Fibrom",
    "q": "A1",
    "notes": "[1:56–2:26]\nFibrom: telefondan cevapla. (Sonuç.) Doğru C: fibrom; ısırma hattında sert, pembe, ağrısız.\n\nCANLI (A1, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: C. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
@@ -359,7 +342,7 @@
   },
   {
    "img": "slaytlar/M3/06.jpg?v=4",
-   "title": "Ana madde 2: soru",
+   "title": "Soru · Diş eti kitleleri",
    "q": "A2",
    "notes": "[3:02–3:32]\n(Sonuç.) Doğru A: piyojenik granülom; gebelikte sık, kırmızı, kanar.\n\nCANLI (A2, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
@@ -392,7 +375,7 @@
   },
   {
    "img": "slaytlar/M3/08.jpg?v=4",
-   "title": "Ana madde 3: soru",
+   "title": "Soru · Protez kitleleri",
    "q": "A3",
    "notes": "[4:02–4:32]\n(Sonuç.) Doğru D: eksizyon, patoloji ve protezin düzeltilmesi.\n\nCANLI (A3, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
@@ -425,7 +408,7 @@
   },
   {
    "img": "slaytlar/M3/10.jpg?v=4",
-   "title": "Ana madde 4: soru",
+   "title": "Soru · Travmatik nöroma",
    "q": "A4",
    "notes": "[5:02–5:32]\n(Sonuç.) Doğru B: travmatik nöroma; çekim öyküsü ve basınca ağrı.\n\nCANLI (A4, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
@@ -458,7 +441,7 @@
   },
   {
    "img": "slaytlar/M3/12.jpg?v=4",
-   "title": "Ana madde 5: soru",
+   "title": "Soru · Nodüler fasiitis",
    "q": "A5",
    "notes": "[6:02–6:32]\n(Sonuç.) Doğru E: atipik mitoz ve pleomorfizm yok.\n\nCANLI (A5, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: E. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
@@ -491,7 +474,7 @@
   },
   {
    "img": "slaytlar/M3/14.jpg?v=4",
-   "title": "Ana madde 6: soru",
+   "title": "Soru · Schwannom ve nörofibrom",
    "q": "A6",
    "notes": "[7:02–7:32]\n(Sonuç.) Doğru C: kapsüllü, Antoni A ve B. Kapsülsüz olan nörofibrom.\n\nCANLI (A6, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: C. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
@@ -524,7 +507,7 @@
   },
   {
    "img": "slaytlar/M3/16.jpg?v=4",
-   "title": "Ana madde 7: soru",
+   "title": "Soru · NF1 ve MEN 2B",
    "q": "A7",
    "notes": "[8:02–8:32]\n(Sonuç.) Doğru B: MEN 2B, medüller tiroid karsinomu; endokrinoloji.\n\nCANLI (A7, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
@@ -557,1486 +540,1125 @@
   },
   {
    "img": "slaytlar/M3/18.jpg?v=4",
-   "title": "Ana madde 8: soru",
+   "title": "Soru · Hemanjiyom ve malformasyon",
    "q": "A8",
    "notes": "[9:04–9:34]\n(Sonuç.) Doğru D: iğne aspirasyonu; kanama riski.\n\nCANLI (A8, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
    "img": "slaytlar/M3/19.jpg?v=4",
-   "title": "Tamam mı, devam mı?",
-   "q": "K1",
-   "notes": "[9:34–10:14]\nAna maddeler bitti. Sonucu gösteriyorum. TAMAM çıkarsa kumandada Slaytlar menüsünden 'Çıkış bileti'ne atla (sonra liderlik ve kaynaklar). DEVAM çıkarsa → ile açılış vakasından sürdür; ayrıntılı bölüm bu maddeleri derinleştirir.\n\nCANLI (K1, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+   "title": "8 maddede bugünkü ders",
+   "notes": "[9:34–10:14]\nToparlayalım: sekiz madde, her birinin akılda kalacak cümlesi. Fotoğrafını çekmek isteyen çeksin; PowerPoint'te de var. Şimdi karar sizin: devam mı, tamam mı?"
   },
   {
-   "img": "slaytlar/M3/20a.jpg?v=4",
+   "img": "slaytlar/M3/20.jpg?v=4",
+   "title": "Tamam mı, devam mı?",
+   "q": "K1",
+   "notes": "[10:14–10:54]\nAna maddeler bitti. Sonucu gösteriyorum. TAMAM çıkarsa kumandada Slaytlar menüsünden 'Çıkış bileti'ne atla (sonra liderlik ve kaynaklar). DEVAM çıkarsa → ile açılış vakasından sürdür; ayrıntılı bölüm bu maddeleri derinleştirir.\n\nCANLI (K1, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+  },
+  {
+   "img": "slaytlar/M3/21a.jpg?v=4",
    "title": "Açılış vakası: dil sırtında nodül · 1/5",
    "step": [
     1,
     5
    ],
-   "notes": "[10:14–10:24]\nHastamız 42 yaşında bir kadın."
+   "notes": "[10:54–11:04]\nHastamız 42 yaşında bir kadın."
   },
   {
-   "img": "slaytlar/M3/20b.jpg?v=4",
+   "img": "slaytlar/M3/21b.jpg?v=4",
    "title": "Açılış vakası: dil sırtında nodül · 2/5",
    "step": [
     2,
     5
    ],
-   "notes": "[10:24–10:36]\nDil sırtında bir santimetrelik, sert, sarımsı bir nodül var."
+   "notes": "[11:04–11:16]\nDil sırtında bir santimetrelik, sert, sarımsı bir nodül var."
   },
   {
-   "img": "slaytlar/M3/20c.jpg?v=4",
+   "img": "slaytlar/M3/21c.jpg?v=4",
    "title": "Açılış vakası: dil sırtında nodül · 3/5",
    "step": [
     3,
     5
    ],
-   "notes": "[10:36–10:48]\nBir yıldır yavaş yavaş büyüyor ve ağrımıyor."
+   "notes": "[11:16–11:28]\nBir yıldır yavaş yavaş büyüyor ve ağrımıyor."
   },
   {
-   "img": "slaytlar/M3/20d.jpg?v=4",
+   "img": "slaytlar/M3/21d.jpg?v=4",
    "title": "Açılış vakası: dil sırtında nodül · 4/5",
    "step": [
     4,
     5
    ],
-   "notes": "[10:48–11:00]\nÜstündeki mukoza sağlam; ısırma ya da travma öyküsü yok."
+   "notes": "[11:28–11:40]\nÜstündeki mukoza sağlam; ısırma ya da travma öyküsü yok."
   },
   {
-   "img": "slaytlar/M3/20e.jpg?v=4",
+   "img": "slaytlar/M3/21e.jpg?v=4",
    "title": "Açılış vakası: dil sırtında nodül · 5/5",
    "step": [
     5,
     5
    ],
    "qopen": "W1",
-   "notes": "[11:00–11:11]\nSigara ve alkol kullanmıyor. Fotoğrafa bakın ve tahmininizi telefondan girin; şıklar açık. Cevabı dersin sonunda açacağım.\n\nCANLI (W1, Anket): Soru bu slayta gelince telefonlarda açılır; perde slaytı göstermeye devam eder. Oylama bir sonraki slayta (dağılım) kadar açık kalır, geri gelsen de kapanmaz. → sonraki slayt. T: 45 sn."
+   "notes": "[11:40–11:51]\nSigara ve alkol kullanmıyor. Fotoğrafa bakın ve tahmininizi telefondan girin; şıklar açık. Cevabı dersin sonunda açacağım.\n\nCANLI (W1, Anket): Soru bu slayta gelince telefonlarda açılır; perde slaytı göstermeye devam eder. Oylama bir sonraki slayta (dağılım) kadar açık kalır, geri gelsen de kapanmaz. → sonraki slayt. T: 45 sn."
   },
   {
-   "img": "slaytlar/M3/21.jpg?v=4",
+   "img": "slaytlar/M3/22.jpg?v=4",
    "title": "Açılış vakası: tahminin ne?",
    "q": "W1",
-   "notes": "[11:11–11:46]\nSonuçları gösteriyorum ama yorum yapmıyorum. Şıklardan biri kötü huylu, dördü iyi huylu ya da reaktif. Dersin sonunda biyopsi sonucuyla birlikte aynı soruyu yeniden soracağım.\n\nCANLI (W1, Anket): Soru önceki slaytta açıldı, oylama hâlâ açık. → oylamayı kapatıp dağılımı gösterir, → sonraki slayt."
+   "notes": "[11:51–12:26]\nSonuçları gösteriyorum ama yorum yapmıyorum. Şıklardan biri kötü huylu, dördü iyi huylu ya da reaktif. Dersin sonunda biyopsi sonucuyla birlikte aynı soruyu yeniden soracağım.\n\nCANLI (W1, Anket): Soru önceki slaytta açıldı, oylama hâlâ açık. → oylamayı kapatıp dağılımı gösterir, → sonraki slayt."
   },
   {
-   "img": "slaytlar/M3/22a.jpg?v=4",
+   "img": "slaytlar/M3/23a.jpg?v=4",
    "title": "Dersin planı: üç grup · 1/4",
    "step": [
     1,
     4
    ],
-   "notes": "[11:46–11:58]\nÜç grup. Birincisi neoplastik olmayan kitleler; tümör gibi görünürler ama gerçek tümör değildirler."
+   "notes": "[12:26–12:38]\nÜç grup. Birincisi neoplastik olmayan kitleler; tümör gibi görünürler ama gerçek tümör değildirler."
   },
   {
-   "img": "slaytlar/M3/22b.jpg?v=4",
+   "img": "slaytlar/M3/23b.jpg?v=4",
    "title": "Dersin planı: üç grup · 2/4",
    "step": [
     2,
     4
    ],
-   "notes": "[11:58–12:10]\nİkincisi iyi huylu tümörler; köken aldıkları dokuya göre sıraladım: lif, yağ, sinir, damar, kas."
+   "notes": "[12:38–12:50]\nİkincisi iyi huylu tümörler; köken aldıkları dokuya göre sıraladım: lif, yağ, sinir, damar, kas."
   },
   {
-   "img": "slaytlar/M3/22c.jpg?v=4",
+   "img": "slaytlar/M3/23c.jpg?v=4",
    "title": "Dersin planı: üç grup · 3/4",
    "step": [
     3,
     4
    ],
-   "notes": "[12:10–12:20]\nÜçüncüsü sarkomlar, yani yumuşak dokunun kötü huylu tümörleri."
+   "notes": "[12:50–13:00]\nÜçüncüsü sarkomlar, yani yumuşak dokunun kötü huylu tümörleri."
   },
   {
-   "img": "slaytlar/M3/22d.jpg?v=4",
+   "img": "slaytlar/M3/23d.jpg?v=4",
    "title": "Dersin planı: üç grup · 4/4",
    "step": [
     4,
     4
    ],
-   "notes": "[12:20–12:31]\nHer hastalıkta aynı dört soruyu soracağız: hangi doku, kaç yaş, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5. baskıdan; kaynakların ayrıldığı yerleri ayrıca söyleyeceğim."
+   "notes": "[13:00–13:11]\nHer hastalıkta aynı dört soruyu soracağız: hangi doku, kaç yaş, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5. baskıdan; kaynakların ayrıldığı yerleri ayrıca söyleyeceğim."
   },
   {
-   "img": "slaytlar/M3/23a.jpg?v=4",
+   "img": "slaytlar/M3/24a.jpg?v=4",
    "title": "Hamartom ve koristom · 1/6",
    "step": [
     1,
     6
    ],
-   "notes": "[12:31–12:39]\nHamartom: o bölgede normalde bulunan dokunun düzensiz büyümesi."
+   "notes": "[13:11–13:19]\nHamartom: o bölgede normalde bulunan dokunun düzensiz büyümesi."
   },
   {
-   "img": "slaytlar/M3/23b.jpg?v=4",
+   "img": "slaytlar/M3/24b.jpg?v=4",
    "title": "Hamartom ve koristom · 2/6",
    "step": [
     2,
     6
    ],
-   "notes": "[12:39–12:44]\nTümör gibi sürekli büyümez."
+   "notes": "[13:19–13:24]\nTümör gibi sürekli büyümez."
   },
   {
-   "img": "slaytlar/M3/23c.jpg?v=4",
+   "img": "slaytlar/M3/24c.jpg?v=4",
    "title": "Hamartom ve koristom · 3/6",
    "step": [
     3,
     6
    ],
-   "notes": "[12:44–12:51]\nAğızdaki örneği leiomiyomatöz hamartom: üst ön diş etinde ya da dil sırtının orta hattında; doğumda varsa konjenital epulis sanılabilir."
+   "notes": "[13:24–13:31]\nAğızdaki örneği leiomiyomatöz hamartom: üst ön diş etinde ya da dil sırtının orta hattında; doğumda varsa konjenital epulis sanılabilir."
   },
   {
-   "img": "slaytlar/M3/23d.jpg?v=4",
+   "img": "slaytlar/M3/24d.jpg?v=4",
    "title": "Hamartom ve koristom · 4/6",
    "step": [
     4,
     6
    ],
-   "notes": "[12:51–12:58]\nKoristom: normal doku ama olmaması gereken bir yerde."
+   "notes": "[13:31–13:38]\nKoristom: normal doku ama olmaması gereken bir yerde."
   },
   {
-   "img": "slaytlar/M3/23e.jpg?v=4",
+   "img": "slaytlar/M3/24e.jpg?v=4",
    "title": "Hamartom ve koristom · 5/6",
    "step": [
     5,
     6
    ],
-   "notes": "[12:58–13:06]\nAğızda en sık kemik ve kıkırdak koristomu görülür; Neville'e göre yüzde 85'i dilde, çoğu foramen çekum çevresinde. Hasta öğürmeden yakınabilir."
+   "notes": "[13:38–13:46]\nAğızda en sık kemik ve kıkırdak koristomu görülür; Neville'e göre yüzde 85'i dilde, çoğu foramen çekum çevresinde. Hasta öğürmeden yakınabilir."
   },
   {
-   "img": "slaytlar/M3/23f.jpg?v=4",
+   "img": "slaytlar/M3/24f.jpg?v=4",
    "title": "Hamartom ve koristom · 6/6",
    "step": [
     6,
     6
    ],
-   "notes": "[13:06–13:11]\nEksizyon yeterli; nüks bildirilmemiş."
-  },
-  {
-   "img": "slaytlar/M3/24a.jpg?v=4",
-   "title": "Juvenil hiyalen fibromatozis · 1/5",
-   "step": [
-    1,
-    5
-   ],
-   "notes": "[13:11–13:17]\nBu konu patoloji kaynaklarında böyle geçiyor; Neville'de ayrı başlık olarak doğrulayamadım. Juvenil hiyalen fibromatozis otozomal resesif bir hastalık; akraba evliliğinde daha sık."
-  },
-  {
-   "img": "slaytlar/M3/24b.jpg?v=4",
-   "title": "Juvenil hiyalen fibromatozis · 2/5",
-   "step": [
-    2,
-    5
-   ],
-   "notes": "[13:17–13:23]\nİki ile beş yaş arasında başlar; baş-boyunda milimetreden beş santimetreye kadar nodüller yapar."
-  },
-  {
-   "img": "slaytlar/M3/24c.jpg?v=4",
-   "title": "Juvenil hiyalen fibromatozis · 3/5",
-   "step": [
-    3,
-    5
-   ],
-   "notes": "[13:23–13:29]\nAğızda en sık bulgu diş eti büyümesi."
-  },
-  {
-   "img": "slaytlar/M3/24d.jpg?v=4",
-   "title": "Juvenil hiyalen fibromatozis · 4/5",
-   "step": [
-    4,
-    5
-   ],
-   "notes": "[13:29–13:33]\nEklemlerde kontraktür eşlik edebilir."
-  },
-  {
-   "img": "slaytlar/M3/24e.jpg?v=4",
-   "title": "Juvenil hiyalen fibromatozis · 5/5",
-   "step": [
-    5,
-    5
-   ],
-   "notes": "[13:33–13:41]\nMikroskopta hücreden fakir, camsı bir matriks görürüz; PAS ve Alcian mavisi ile boyanır."
+   "notes": "[13:46–13:51]\nEksizyon yeterli; nüks bildirilmemiş."
   },
   {
    "img": "slaytlar/M3/25a.jpg?v=4",
-   "title": "Fibromatozis colli (tortikollis) · 1/6",
+   "title": "(Zaman kalırsa) Juvenil hiyalen fibromatozis · 1/5",
    "step": [
     1,
-    6
+    5
    ],
-   "notes": "[13:41–13:47]\nBu da Neville'de doğrulayamadığım, patoloji kaynaklarındaki bir konu. Fibromatozis colli sternokleidomastoid kasın alt bölümünde bir fibröz kitle."
+   "notes": "[13:51–13:57] ZAMAN KALIRSA; yoksa → ile atla.\nBu konu patoloji kaynaklarında böyle geçiyor; Neville'de ayrı başlık olarak doğrulayamadım. Juvenil hiyalen fibromatozis otozomal resesif bir hastalık; akraba evliliğinde daha sık."
   },
   {
    "img": "slaytlar/M3/25b.jpg?v=4",
-   "title": "Fibromatozis colli (tortikollis) · 2/6",
+   "title": "(Zaman kalırsa) Juvenil hiyalen fibromatozis · 2/5",
    "step": [
     2,
-    6
+    5
    ],
-   "notes": "[13:47–13:52]\nDoğumdan iki ile dört hafta sonra boyunda şişlik olarak fark edilir."
+   "notes": "[13:57–14:03] ZAMAN KALIRSA; yoksa → ile atla.\nİki ile beş yaş arasında başlar; baş-boyunda milimetreden beş santimetreye kadar nodüller yapar."
   },
   {
    "img": "slaytlar/M3/25c.jpg?v=4",
-   "title": "Fibromatozis colli (tortikollis) · 3/6",
+   "title": "(Zaman kalırsa) Juvenil hiyalen fibromatozis · 3/5",
    "step": [
     3,
-    6
+    5
    ],
-   "notes": "[13:52–13:59]\nZor doğumdaki travma ve kanamayla ilişkili; gerçek tümör değil, bir onarım süreci."
+   "notes": "[14:03–14:09] ZAMAN KALIRSA; yoksa → ile atla.\nAğızda en sık bulgu diş eti büyümesi."
   },
   {
    "img": "slaytlar/M3/25d.jpg?v=4",
-   "title": "Fibromatozis colli (tortikollis) · 4/6",
+   "title": "(Zaman kalırsa) Juvenil hiyalen fibromatozis · 4/5",
    "step": [
     4,
-    6
+    5
    ],
-   "notes": "[13:59–14:04]\nFibröz doku çekince kas kısalır ve baş lezyon tarafına eğilir."
+   "notes": "[14:09–14:13] ZAMAN KALIRSA; yoksa → ile atla.\nEklemlerde kontraktür eşlik edebilir."
   },
   {
    "img": "slaytlar/M3/25e.jpg?v=4",
-   "title": "Fibromatozis colli (tortikollis) · 5/6",
+   "title": "(Zaman kalırsa) Juvenil hiyalen fibromatozis · 5/5",
    "step": [
     5,
-    6
+    5
    ],
-   "notes": "[14:04–14:10]\nMikroskopta kas lifleri arasına giren fibroblastlar; atipi yok, zamanla kollajen artar."
-  },
-  {
-   "img": "slaytlar/M3/25f.jpg?v=4",
-   "title": "Fibromatozis colli (tortikollis) · 6/6",
-   "step": [
-    6,
-    6
-   ],
-   "notes": "[14:10–14:16]\nTedavi fizik tedavi; kendiliğinden gerileyebilir. Tedavi edilmezse ileride yüzde asimetri kalabilir."
+   "notes": "[14:13–14:21] ZAMAN KALIRSA; yoksa → ile atla.\nMikroskopta hücreden fakir, camsı bir matriks görürüz; PAS ve Alcian mavisi ile boyanır."
   },
   {
    "img": "slaytlar/M3/26a.jpg?v=4",
-   "title": "Keloid ve hipertrofik skar · 1/4",
+   "title": "(Zaman kalırsa) Fibromatozis colli (tortikollis) · 1/6",
    "step": [
     1,
-    4
+    6
    ],
-   "notes": "[14:16–14:22]\nKeloid ve hipertrofik skar da Neville'in bu bölümünde yok; genel patolojiden anlatıyorum. İkisi de yara iyileşirken aşırı kollajen birikmesi."
+   "notes": "[14:21–14:27] ZAMAN KALIRSA; yoksa → ile atla.\nBu da Neville'de doğrulayamadığım, patoloji kaynaklarındaki bir konu. Fibromatozis colli sternokleidomastoid kasın alt bölümünde bir fibröz kitle."
   },
   {
    "img": "slaytlar/M3/26b.jpg?v=4",
-   "title": "Keloid ve hipertrofik skar · 2/4",
+   "title": "(Zaman kalırsa) Fibromatozis colli (tortikollis) · 2/6",
    "step": [
     2,
-    4
+    6
    ],
-   "notes": "[14:22–14:28]\nHipertrofik skar yaranın sınırları içinde kalır ve zamanla yumuşar."
+   "notes": "[14:27–14:32] ZAMAN KALIRSA; yoksa → ile atla.\nDoğumdan iki ile dört hafta sonra boyunda şişlik olarak fark edilir."
   },
   {
    "img": "slaytlar/M3/26c.jpg?v=4",
-   "title": "Keloid ve hipertrofik skar · 3/4",
+   "title": "(Zaman kalırsa) Fibromatozis colli (tortikollis) · 3/6",
    "step": [
     3,
-    4
+    6
    ],
-   "notes": "[14:28–14:34]\nKeloid yaranın sınırını aşar; çıkarılınca sık nükseder."
+   "notes": "[14:32–14:39] ZAMAN KALIRSA; yoksa → ile atla.\nZor doğumdaki travma ve kanamayla ilişkili; gerçek tümör değil, bir onarım süreci."
   },
   {
    "img": "slaytlar/M3/26d.jpg?v=4",
-   "title": "Keloid ve hipertrofik skar · 4/4",
+   "title": "(Zaman kalırsa) Fibromatozis colli (tortikollis) · 4/6",
+   "step": [
+    4,
+    6
+   ],
+   "notes": "[14:39–14:44] ZAMAN KALIRSA; yoksa → ile atla.\nFibröz doku çekince kas kısalır ve baş lezyon tarafına eğilir."
+  },
+  {
+   "img": "slaytlar/M3/26e.jpg?v=4",
+   "title": "(Zaman kalırsa) Fibromatozis colli (tortikollis) · 5/6",
+   "step": [
+    5,
+    6
+   ],
+   "notes": "[14:44–14:50] ZAMAN KALIRSA; yoksa → ile atla.\nMikroskopta kas lifleri arasına giren fibroblastlar; atipi yok, zamanla kollajen artar."
+  },
+  {
+   "img": "slaytlar/M3/26f.jpg?v=4",
+   "title": "(Zaman kalırsa) Fibromatozis colli (tortikollis) · 6/6",
+   "step": [
+    6,
+    6
+   ],
+   "notes": "[14:50–14:56] ZAMAN KALIRSA; yoksa → ile atla.\nTedavi fizik tedavi; kendiliğinden gerileyebilir. Tedavi edilmezse ileride yüzde asimetri kalabilir."
+  },
+  {
+   "img": "slaytlar/M3/27a.jpg?v=4",
+   "title": "(Zaman kalırsa) Keloid ve hipertrofik skar · 1/4",
+   "step": [
+    1,
+    4
+   ],
+   "notes": "[14:56–15:02] ZAMAN KALIRSA; yoksa → ile atla.\nKeloid ve hipertrofik skar da Neville'in bu bölümünde yok; genel patolojiden anlatıyorum. İkisi de yara iyileşirken aşırı kollajen birikmesi."
+  },
+  {
+   "img": "slaytlar/M3/27b.jpg?v=4",
+   "title": "(Zaman kalırsa) Keloid ve hipertrofik skar · 2/4",
+   "step": [
+    2,
+    4
+   ],
+   "notes": "[15:02–15:08] ZAMAN KALIRSA; yoksa → ile atla.\nHipertrofik skar yaranın sınırları içinde kalır ve zamanla yumuşar."
+  },
+  {
+   "img": "slaytlar/M3/27c.jpg?v=4",
+   "title": "(Zaman kalırsa) Keloid ve hipertrofik skar · 3/4",
+   "step": [
+    3,
+    4
+   ],
+   "notes": "[15:08–15:14] ZAMAN KALIRSA; yoksa → ile atla.\nKeloid yaranın sınırını aşar; çıkarılınca sık nükseder."
+  },
+  {
+   "img": "slaytlar/M3/27d.jpg?v=4",
+   "title": "(Zaman kalırsa) Keloid ve hipertrofik skar · 4/4",
    "step": [
     4,
     4
    ],
-   "notes": "[14:34–14:39]\nMikroskopta keloidde kalın, camsı kollajen demetleri görürüz."
+   "notes": "[15:14–15:19] ZAMAN KALIRSA; yoksa → ile atla.\nMikroskopta keloidde kalın, camsı kollajen demetleri görürüz."
   },
   {
-   "img": "slaytlar/M3/27a.jpg?v=4",
-   "title": "Nodüler fasiitis: hızlı büyür ama iyi huyludur · 1/7",
-   "step": [
-    1,
-    7
-   ],
-   "notes": "[14:39–14:47]\nNodüler fasiitis genç erişkinde birkaç haftada hızla büyüyen, sıklıkla ağrılı bir kitle."
-  },
-  {
-   "img": "slaytlar/M3/27b.jpg?v=4",
-   "title": "Nodüler fasiitis: hızlı büyür ama iyi huyludur · 2/7",
-   "step": [
-    2,
-    7
-   ],
-   "notes": "[14:47–14:53]\nÇoğu üç santimetreden küçük; ağızda herhangi bir yerde olabilir."
-  },
-  {
-   "img": "slaytlar/M3/27c.jpg?v=4",
-   "title": "Nodüler fasiitis: hızlı büyür ama iyi huyludur · 3/7",
-   "step": [
-    3,
-    7
-   ],
-   "notes": "[14:53–14:58]\nHızlı büyüdüğü için klinikte sarkom sanılır; bu lezyonu bilmenin nedeni bu."
-  },
-  {
-   "img": "slaytlar/M3/27d.jpg?v=4",
-   "title": "Nodüler fasiitis: hızlı büyür ama iyi huyludur · 4/7",
-   "step": [
-    4,
-    7
-   ],
-   "notes": "[14:58–15:05]\nMikroskopta gevşek, miksoid bir zeminde düzensiz demetler yapan iğsi ve yıldızsı miyofibroblastlar."
-  },
-  {
-   "img": "slaytlar/M3/27e.jpg?v=4",
-   "title": "Nodüler fasiitis: hızlı büyür ama iyi huyludur · 5/7",
-   "step": [
-    5,
-    7
-   ],
-   "notes": "[15:05–15:12]\nMitoz bol olabilir; ama atipik mitoz yok, hücrelerde pleomorfizm yok. Sarkomdan ayıran bu."
-  },
-  {
-   "img": "slaytlar/M3/27f.jpg?v=4",
-   "title": "Nodüler fasiitis: hızlı büyür ama iyi huyludur · 6/7",
-   "step": [
-    6,
-    7
-   ],
-   "notes": "[15:12–15:17]\nZeminde ekstravaze eritrositler, lenfosit ve makrofajlar var."
-  },
-  {
-   "img": "slaytlar/M3/27g.jpg?v=4",
-   "title": "Nodüler fasiitis: hızlı büyür ama iyi huyludur · 7/7",
-   "step": [
-    7,
-    7
-   ],
-   "notes": "[15:17–15:25]\nPatoloji kaynaklarında genellikle neoplastik olmayan lezyonlar arasında sayılır; WHO 2022 ise USP6 gen değişikliği nedeniyle kendiliğinden geçen bir neoplazi diyor. Tedavi değişmiyor: yerel eksizyon yeterli, nüks nadir. Şimdi telefon."
-  },
-  {
-   "img": "slaytlar/M3/28.jpg?v=4",
-   "title": "Patolog gibi düşün",
-   "q": "W5",
-   "notes": "[15:25–16:25]\nRapor geldi. Ne dersiniz, ne yaparsınız? (Sonuç.) Doğru B: nodüler fasiitis, yerel eksizyon yeterli. Hızlı büyüme ve bol mitoz sizi sarkoma götürebilir; ama atipik mitoz yok, pleomorfizm yok ve ekstravaze eritrositler var. Bu hastaya geniş rezeksiyon yapmak en büyük hata olur.\n\nCANLI (W5, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
-  },
-  {
-   "img": "slaytlar/M3/29a.jpg?v=4",
+   "img": "slaytlar/M3/28a.jpg?v=4",
    "title": "Oral fokal müsinozis · 1/5",
    "step": [
     1,
     5
    ],
-   "notes": "[16:25–16:30]\nOral fokal müsinozis derinin fokal müsinozisinin ağızdaki karşılığı."
+   "notes": "[15:19–15:24]\nOral fokal müsinozis derinin fokal müsinozisinin ağızdaki karşılığı."
   },
   {
-   "img": "slaytlar/M3/29b.jpg?v=4",
+   "img": "slaytlar/M3/28b.jpg?v=4",
    "title": "Oral fokal müsinozis · 2/5",
    "step": [
     2,
     5
    ],
-   "notes": "[16:30–16:34]\nGenç erişkinde, kadında iki kat sık."
+   "notes": "[15:24–15:28]\nGenç erişkinde, kadında iki kat sık."
   },
   {
-   "img": "slaytlar/M3/29c.jpg?v=4",
+   "img": "slaytlar/M3/28c.jpg?v=4",
    "title": "Oral fokal müsinozis · 3/5",
    "step": [
     3,
     5
    ],
-   "notes": "[16:34–16:39]\nYarıdan fazlası diş etinde, sonra sert damakta."
+   "notes": "[15:28–15:33]\nYarıdan fazlası diş etinde, sonra sert damakta."
   },
   {
-   "img": "slaytlar/M3/29d.jpg?v=4",
+   "img": "slaytlar/M3/28d.jpg?v=4",
    "title": "Oral fokal müsinozis · 4/5",
    "step": [
     4,
     5
    ],
-   "notes": "[16:39–16:46]\nMikroskopta iyi sınırlı, gevşek, miksoid bir alan; içindeki hiyalüronik asit Alcian mavisiyle boyanır."
+   "notes": "[15:33–15:40]\nMikroskopta iyi sınırlı, gevşek, miksoid bir alan; içindeki hiyalüronik asit Alcian mavisiyle boyanır."
   },
   {
-   "img": "slaytlar/M3/29e.jpg?v=4",
+   "img": "slaytlar/M3/28e.jpg?v=4",
    "title": "Oral fokal müsinozis · 5/5",
    "step": [
     5,
     5
    ],
-   "notes": "[16:46–16:50]\nEksizyon yeterli, nüks etmez."
+   "notes": "[15:40–15:44]\nEksizyon yeterli, nüks etmez."
   },
   {
-   "img": "slaytlar/M3/30a.jpg?v=4",
-   "title": "Travmatik nöroma · 1/6",
-   "step": [
-    1,
-    6
-   ],
-   "notes": "[16:50–16:57]\nTravmatik nöroma kesilen bir sinirin düzensiz iyileşmesi: akson, Schwann hücresi ve fibroblastlardan oluşan bir skar."
-  },
-  {
-   "img": "slaytlar/M3/30b.jpg?v=4",
-   "title": "Travmatik nöroma · 2/6",
-   "step": [
-    2,
-    6
-   ],
-   "notes": "[16:57–17:02]\nEn sık mental foramen bölgesinde, dilde ve alt dudakta."
-  },
-  {
-   "img": "slaytlar/M3/30c.jpg?v=4",
-   "title": "Travmatik nöroma · 3/6",
-   "step": [
-    3,
-    6
-   ],
-   "notes": "[17:02–17:06]\nHastada diş çekimi ya da cerrahi öyküsü vardır."
-  },
-  {
-   "img": "slaytlar/M3/30d.jpg?v=4",
-   "title": "Travmatik nöroma · 4/6",
-   "step": [
-    4,
-    6
-   ],
-   "notes": "[17:06–17:13]\nPatolojide 'ağrılı tümör' diye geçer; ama Neville'e göre yalnız dörtte biri ile üçte biri ağrılı. Mental sinirdekiler protez bastırınca ağrır."
-  },
-  {
-   "img": "slaytlar/M3/30e.jpg?v=4",
-   "title": "Travmatik nöroma · 5/6",
-   "step": [
-    5,
-    6
-   ],
-   "notes": "[17:13–17:18]\nMikroskopta fibröz doku içinde gelişigüzel sinir demetleri."
-  },
-  {
-   "img": "slaytlar/M3/30f.jpg?v=4",
-   "title": "Travmatik nöroma · 6/6",
-   "step": [
-    6,
-    6
-   ],
-   "notes": "[17:18–17:23]\nTedavi sinirin proksimal ucuyla birlikte eksizyon. Sırada iyi huylu tümörler."
-  },
-  {
-   "img": "slaytlar/M3/31a.jpg?v=4",
-   "title": "Diş eti ve protezle ilişkili reaktif kitleler · 1/6",
-   "step": [
-    1,
-    6
-   ],
-   "notes": "[17:23–17:31]\nNeville'in bu bölümündeki reaktif kitleler; her birine bir cümle. Piyojenik granülom: kırmızı, kolay kanayan, hızla büyüyen bir diş eti kitlesi; gebelikte sık, doğumdan sonra küçülebilir."
-  },
-  {
-   "img": "slaytlar/M3/31b.jpg?v=4",
-   "title": "Diş eti ve protezle ilişkili reaktif kitleler · 2/6",
-   "step": [
-    2,
-    6
-   ],
-   "notes": "[17:31–17:38]\nPeriferik dev hücreli granülom mor-mavi renktedir ve yalnız diş etinde ya da dişsiz alveol kretinde görülür; mikroskopta çok çekirdekli dev hücreler."
-  },
-  {
-   "img": "slaytlar/M3/31c.jpg?v=4",
-   "title": "Diş eti ve protezle ilişkili reaktif kitleler · 3/6",
-   "step": [
-    3,
-    6
-   ],
-   "notes": "[17:38–17:45]\nPeriferik ossifiye fibrom da yalnız diş etinde, diş arası papilladan çıkar; içinde kemik ya da kalsifikasyon vardır, çoğu genç kadında."
-  },
-  {
-   "img": "slaytlar/M3/31d.jpg?v=4",
-   "title": "Diş eti ve protezle ilişkili reaktif kitleler · 4/6",
-   "step": [
-    4,
-    6
-   ],
-   "notes": "[17:45–17:52]\nFibrom ağzın en sık tümörü sayılır ama aslında reaktif bir hiperplazi; en sık yanakta, ısırma hattında. Diş eti lezyonlarında kural: periosta kadar çıkar, komşu dişleri temizle."
-  },
-  {
-   "img": "slaytlar/M3/31e.jpg?v=4",
-   "title": "Diş eti ve protezle ilişkili reaktif kitleler · 5/6",
-   "step": [
-    5,
-    6
-   ],
-   "notes": "[17:52–17:59]\nEpulis fissuratum uyumsuz bir protez kenarının açtığı kıvrımlar; protez kenarı iki kıvrım arasındaki yarığa oturur."
-  },
-  {
-   "img": "slaytlar/M3/31f.jpg?v=4",
-   "title": "Diş eti ve protezle ilişkili reaktif kitleler · 6/6",
-   "step": [
-    6,
-    6
-   ],
-   "notes": "[17:59–18:07]\nİnflamatuvar papiller hiperplazi protezin altında, sert damakta çakıl taşı gibi papiller. İkisinde de protez düzeltilmezse lezyon geri gelir."
-  },
-  {
-   "img": "slaytlar/M3/32a.jpg?v=4",
-   "title": "Lif ve histiyosit kökenli iyi huylu tümörler · 1/8",
+   "img": "slaytlar/M3/29a.jpg?v=4",
+   "title": "(Zaman kalırsa) Lif ve histiyosit kökenli iyi huylu tümörler · 1/8",
    "step": [
     1,
     8
    ],
-   "notes": "[18:07–18:13]\nİyi huylu tümörlere lif ve histiyosit kökenlilerle başlıyoruz. Fibröz histiyositom deride dermatofibrom adıyla sık, ağızda nadir."
+   "notes": "[15:44–15:50] ZAMAN KALIRSA; yoksa → ile atla.\nİyi huylu tümörlere lif ve histiyosit kökenlilerle başlıyoruz. Fibröz histiyositom deride dermatofibrom adıyla sık, ağızda nadir."
   },
   {
-   "img": "slaytlar/M3/32b.jpg?v=4",
-   "title": "Lif ve histiyosit kökenli iyi huylu tümörler · 2/8",
+   "img": "slaytlar/M3/29b.jpg?v=4",
+   "title": "(Zaman kalırsa) Lif ve histiyosit kökenli iyi huylu tümörler · 2/8",
    "step": [
     2,
     8
    ],
-   "notes": "[18:13–18:18]\nMikroskopta iğsi hücreler girdap gibi dizilir; buna storiform desen diyoruz."
+   "notes": "[15:50–15:55] ZAMAN KALIRSA; yoksa → ile atla.\nMikroskopta iğsi hücreler girdap gibi dizilir; buna storiform desen diyoruz."
   },
   {
-   "img": "slaytlar/M3/32c.jpg?v=4",
-   "title": "Lif ve histiyosit kökenli iyi huylu tümörler · 3/8",
+   "img": "slaytlar/M3/29c.jpg?v=4",
+   "title": "(Zaman kalırsa) Lif ve histiyosit kökenli iyi huylu tümörler · 3/8",
    "step": [
     3,
     8
    ],
-   "notes": "[18:18–18:26]\nFibromatozis, desmoid tip: iyi huylu ama lokal agresif; metastaz yapmaz. 'Gingival fibromatozis' adı kalıtsal diş eti büyümesiyle karışmasın; burada diş etindeki desmoid tip kastediliyor."
+   "notes": "[15:55–16:03] ZAMAN KALIRSA; yoksa → ile atla.\nFibromatozis, desmoid tip: iyi huylu ama lokal agresif; metastaz yapmaz. 'Gingival fibromatozis' adı kalıtsal diş eti büyümesiyle karışmasın; burada diş etindeki desmoid tip kastediliyor."
   },
   {
-   "img": "slaytlar/M3/32d.jpg?v=4",
-   "title": "Lif ve histiyosit kökenli iyi huylu tümörler · 4/8",
+   "img": "slaytlar/M3/29d.jpg?v=4",
+   "title": "(Zaman kalırsa) Lif ve histiyosit kökenli iyi huylu tümörler · 4/8",
    "step": [
     4,
     8
    ],
-   "notes": "[18:26–18:31]\nNükleer beta-katenin pozitif; yaklaşık üçte biri nükseder."
+   "notes": "[16:03–16:08] ZAMAN KALIRSA; yoksa → ile atla.\nNükleer beta-katenin pozitif; yaklaşık üçte biri nükseder."
   },
   {
-   "img": "slaytlar/M3/32e.jpg?v=4",
-   "title": "Lif ve histiyosit kökenli iyi huylu tümörler · 5/8",
+   "img": "slaytlar/M3/29e.jpg?v=4",
+   "title": "(Zaman kalırsa) Lif ve histiyosit kökenli iyi huylu tümörler · 5/8",
    "step": [
     5,
     8
    ],
-   "notes": "[18:31–18:36]\nMiyofibrom genç hastada; ağızda en sık alt çenede."
+   "notes": "[16:08–16:13] ZAMAN KALIRSA; yoksa → ile atla.\nMiyofibrom genç hastada; ağızda en sık alt çenede."
   },
   {
-   "img": "slaytlar/M3/32f.jpg?v=4",
-   "title": "Lif ve histiyosit kökenli iyi huylu tümörler · 6/8",
+   "img": "slaytlar/M3/29f.jpg?v=4",
+   "title": "(Zaman kalırsa) Lif ve histiyosit kökenli iyi huylu tümörler · 6/8",
    "step": [
     6,
     8
    ],
-   "notes": "[18:36–18:41]\nSMA pozitif; bebeklerde çok odaklı formu var, miyofibromatozis."
+   "notes": "[16:13–16:18] ZAMAN KALIRSA; yoksa → ile atla.\nSMA pozitif; bebeklerde çok odaklı formu var, miyofibromatozis."
   },
   {
-   "img": "slaytlar/M3/32g.jpg?v=4",
-   "title": "Lif ve histiyosit kökenli iyi huylu tümörler · 7/8",
+   "img": "slaytlar/M3/29g.jpg?v=4",
+   "title": "(Zaman kalırsa) Lif ve histiyosit kökenli iyi huylu tümörler · 7/8",
    "step": [
     7,
     8
    ],
-   "notes": "[18:41–18:48]\nSoliter fibröz tümör ağızda en sık yanakta; eskiden hemanjiyoperisitom denen tümörlerin çoğu bu."
+   "notes": "[16:18–16:25] ZAMAN KALIRSA; yoksa → ile atla.\nSoliter fibröz tümör ağızda en sık yanakta; eskiden hemanjiyoperisitom denen tümörlerin çoğu bu."
   },
   {
-   "img": "slaytlar/M3/32h.jpg?v=4",
-   "title": "Lif ve histiyosit kökenli iyi huylu tümörler · 8/8",
+   "img": "slaytlar/M3/29h.jpg?v=4",
+   "title": "(Zaman kalırsa) Lif ve histiyosit kökenli iyi huylu tümörler · 8/8",
    "step": [
     8,
     8
    ],
-   "notes": "[18:48–18:53]\nGeyik boynuzu gibi dallanan damarlar; CD34 ve STAT6 pozitif."
+   "notes": "[16:25–16:30] ZAMAN KALIRSA; yoksa → ile atla.\nGeyik boynuzu gibi dallanan damarlar; CD34 ve STAT6 pozitif."
   },
   {
-   "img": "slaytlar/M3/33a.jpg?v=4",
+   "img": "slaytlar/M3/30a.jpg?v=4",
    "title": "Lipom · 1/6",
    "step": [
     1,
     6
    ],
-   "notes": "[18:53–19:00]\nLipom yağ dokusunun iyi huylu tümörü; ağızda beklenenden az, ağız-çene tümörlerinin yüzde 1 ila 4'ü."
+   "notes": "[16:30–16:37]\nLipom yağ dokusunun iyi huylu tümörü; ağızda beklenenden az, ağız-çene tümörlerinin yüzde 1 ila 4'ü."
   },
   {
-   "img": "slaytlar/M3/33b.jpg?v=4",
+   "img": "slaytlar/M3/30b.jpg?v=4",
    "title": "Lipom · 2/6",
    "step": [
     2,
     6
    ],
-   "notes": "[19:00–19:05]\nYumuşak, sarımsı, ağrısız bir nodül; çoğu 40 yaşın üstünde."
+   "notes": "[16:37–16:42]\nYumuşak, sarımsı, ağrısız bir nodül; çoğu 40 yaşın üstünde."
   },
   {
-   "img": "slaytlar/M3/33c.jpg?v=4",
+   "img": "slaytlar/M3/30c.jpg?v=4",
    "title": "Lipom · 3/6",
    "step": [
     3,
     6
    ],
-   "notes": "[19:05–19:11]\nBazı kaynaklar en sık yeri dil olarak sıralar; Neville'e göre yanak ve vestibül olguların yaklaşık yarısı."
+   "notes": "[16:42–16:48]\nBazı kaynaklar en sık yeri dil olarak sıralar; Neville'e göre yanak ve vestibül olguların yaklaşık yarısı."
   },
   {
-   "img": "slaytlar/M3/33d.jpg?v=4",
+   "img": "slaytlar/M3/30d.jpg?v=4",
    "title": "Lipom · 4/6",
    "step": [
     4,
     6
    ],
-   "notes": "[19:11–19:16]\nMikroskopta ince bir kapsülle çevrili olgun yağ dokusu."
+   "notes": "[16:48–16:53]\nMikroskopta ince bir kapsülle çevrili olgun yağ dokusu."
   },
   {
-   "img": "slaytlar/M3/33e.jpg?v=4",
+   "img": "slaytlar/M3/30e.jpg?v=4",
    "title": "Lipom · 5/6",
    "step": [
     5,
     6
    ],
-   "notes": "[19:16–19:22]\nTiplerinden en sık fibrolipom; iğsi hücreli lipom CD34 pozitif."
+   "notes": "[16:53–16:59]\nTiplerinden en sık fibrolipom; iğsi hücreli lipom CD34 pozitif."
   },
   {
-   "img": "slaytlar/M3/33f.jpg?v=4",
+   "img": "slaytlar/M3/30f.jpg?v=4",
    "title": "Lipom · 6/6",
    "step": [
     6,
     6
    ],
-   "notes": "[19:22–19:28]\nHücrelerde atipi görürsek MDM2 ve CDK4 boyalarıyla iyi diferansiye liposarkomu dışlarız. Tedavi eksizyon; nüks nadir."
+   "notes": "[16:59–17:05]\nHücrelerde atipi görürsek MDM2 ve CDK4 boyalarıyla iyi diferansiye liposarkomu dışlarız. Tedavi eksizyon; nüks nadir."
   },
   {
-   "img": "slaytlar/M3/34a.jpg?v=4",
-   "title": "Palizatlı kapsüllü nöroma ve schwannom · 1/7",
-   "step": [
-    1,
-    7
-   ],
-   "notes": "[19:28–19:35]\nSinir kökenli tümörler. Palizatlı kapsüllü nöroma küçük, ağrısız, kapsüllü bir nodül; yüzde 90'ı yüzde."
-  },
-  {
-   "img": "slaytlar/M3/34b.jpg?v=4",
-   "title": "Palizatlı kapsüllü nöroma ve schwannom · 2/7",
-   "step": [
-    2,
-    7
-   ],
-   "notes": "[19:35–19:41]\nAğızda sert damakta, diş etinde, dudakta. Travmatik nöromadan farkı: travma öyküsü yok."
-  },
-  {
-   "img": "slaytlar/M3/34c.jpg?v=4",
-   "title": "Palizatlı kapsüllü nöroma ve schwannom · 3/7",
-   "step": [
-    3,
-    7
-   ],
-   "notes": "[19:41–19:46]\nNörofibromatozis ve MEN 2B ile ilişkisi yok."
-  },
-  {
-   "img": "slaytlar/M3/34d.jpg?v=4",
-   "title": "Palizatlı kapsüllü nöroma ve schwannom · 4/7",
-   "step": [
-    4,
-    7
-   ],
-   "notes": "[19:46–19:52]\nSchwannom Schwann hücresinden köken alan, kapsüllü, yavaş büyüyen bir tümör."
-  },
-  {
-   "img": "slaytlar/M3/34e.jpg?v=4",
-   "title": "Palizatlı kapsüllü nöroma ve schwannom · 5/7",
-   "step": [
-    5,
-    7
-   ],
-   "notes": "[19:52–19:58]\nAğızda en sık dilde; kemik içindekiler alt çenenin arka bölgesinde, mandibular kanal boyunca."
-  },
-  {
-   "img": "slaytlar/M3/34f.jpg?v=4",
-   "title": "Palizatlı kapsüllü nöroma ve schwannom · 6/7",
-   "step": [
-    6,
-    7
-   ],
-   "notes": "[19:58–20:06]\nMikroskopta iki alan var. Antoni A'da çekirdekler sıra sıra dizilir; iki sıra arasındaki pembe alana Verocay cisimciği denir."
-  },
-  {
-   "img": "slaytlar/M3/34g.jpg?v=4",
-   "title": "Palizatlı kapsüllü nöroma ve schwannom · 7/7",
-   "step": [
-    7,
-    7
-   ],
-   "notes": "[20:06–20:13]\nAntoni B gevşek ve miksoiddir. S100 yaygın pozitif; kötü huylu dönüşüm neredeyse hiç olmaz."
-  },
-  {
-   "img": "slaytlar/M3/35a.jpg?v=4",
-   "title": "Nörofibrom ve nörofibromatozis tip 1 · 1/7",
-   "step": [
-    1,
-    7
-   ],
-   "notes": "[20:13–20:19]\nNörofibrom periferik sinir kılıfının en sık tümörü."
-  },
-  {
-   "img": "slaytlar/M3/35b.jpg?v=4",
-   "title": "Nörofibrom ve nörofibromatozis tip 1 · 2/7",
-   "step": [
-    2,
-    7
-   ],
-   "notes": "[20:19–20:24]\nSchwannomdan farkı: kapsülü yok, sinirle iç içe büyür."
-  },
-  {
-   "img": "slaytlar/M3/35c.jpg?v=4",
-   "title": "Nörofibrom ve nörofibromatozis tip 1 · 3/7",
-   "step": [
-    3,
-    7
-   ],
-   "notes": "[20:24–20:30]\nMikroskopta dalgalı çekirdekli iğsi hücreler ve aralarda mast hücreleri."
-  },
-  {
-   "img": "slaytlar/M3/35d.jpg?v=4",
-   "title": "Nörofibrom ve nörofibromatozis tip 1 · 4/7",
-   "step": [
-    4,
-    7
-   ],
-   "notes": "[20:30–20:36]\nBir nörofibrom gördüğünüzde hastayı nörofibromatozis tip 1 için muayene edin."
-  },
-  {
-   "img": "slaytlar/M3/35e.jpg?v=4",
-   "title": "Nörofibrom ve nörofibromatozis tip 1 · 5/7",
-   "step": [
-    5,
-    7
-   ],
-   "notes": "[20:36–20:44]\nNF1 otozomal dominant; deride café-au-lait lekeleri, koltuk altında çillenme, gözde Lisch nodülleri."
-  },
-  {
-   "img": "slaytlar/M3/35f.jpg?v=4",
-   "title": "Nörofibrom ve nörofibromatozis tip 1 · 6/7",
-   "step": [
-    6,
-    7
-   ],
-   "notes": "[20:44–20:51]\nHastaların yüzde 8 ila 13'ünde malign periferik sinir kılıfı tümörü gelişir; büyüyen ya da ağrıyan bir nörofibrom beklemez."
-  },
-  {
-   "img": "slaytlar/M3/35g.jpg?v=4",
-   "title": "Nörofibrom ve nörofibromatozis tip 1 · 7/7",
-   "step": [
-    7,
-    7
-   ],
-   "notes": "[20:51–20:59]\nBir not: dil ucunda ve dudaklarda çok sayıda küçük nöroma MEN 2B'yi düşündürür; bu hastaların hepsinde medüller tiroid karsinomu gelişir. Endokrinolojiye yönlendirin."
-  },
-  {
-   "img": "slaytlar/M3/36.jpg?v=4",
+   "img": "slaytlar/M3/31.jpg?v=4",
    "title": "Dört mikroskop görüntüsü: hangisi schwannom?",
    "q": "W2",
-   "notes": "[20:59–21:39]\nDört mikroskop görüntüsü. Hangisi schwannom? (Sonuç.) Doğru B: çekirdeklerin sıra sıra dizildiği Antoni A alanı. A nörofibrom: dalgalı çekirdekli, düzensiz iğsi hücreler. C leiomiyom: küt uçlu çekirdekli düz kas demetleri. D oral fokal müsinozis: gevşek, miksoid bağ dokusu.\n\nCANLI (W2, Görselli çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+   "notes": "[17:05–17:45]\nDört mikroskop görüntüsü. Hangisi schwannom? (Sonuç.) Doğru B: çekirdeklerin sıra sıra dizildiği Antoni A alanı. A nörofibrom: dalgalı çekirdekli, düzensiz iğsi hücreler. C leiomiyom: küt uçlu çekirdekli düz kas demetleri. D oral fokal müsinozis: gevşek, miksoid bağ dokusu.\n\nCANLI (W2, Görselli çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: B. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
-   "img": "slaytlar/M3/37a.jpg?v=4",
+   "img": "slaytlar/M3/32a.jpg?v=4",
    "title": "Granüler hücreli tümör ve konjenital epulis · 1/7",
    "step": [
     1,
     7
    ],
-   "notes": "[21:39–21:47]\nGranüler hücreli tümör vücutta en sık ağızda ve deride görülür; ağızda üçte biri ile yarısı dil sırtında."
+   "notes": "[17:45–17:53]\nGranüler hücreli tümör vücutta en sık ağızda ve deride görülür; ağızda üçte biri ile yarısı dil sırtında."
   },
   {
-   "img": "slaytlar/M3/37b.jpg?v=4",
+   "img": "slaytlar/M3/32b.jpg?v=4",
    "title": "Granüler hücreli tümör ve konjenital epulis · 2/7",
    "step": [
     2,
     7
    ],
-   "notes": "[21:47–21:53]\nKırk ile altmış yaş arasında, kadında üç kat sık; çoğu iki santimetreden küçük."
+   "notes": "[17:53–17:59]\nKırk ile altmış yaş arasında, kadında üç kat sık; çoğu iki santimetreden küçük."
   },
   {
-   "img": "slaytlar/M3/37c.jpg?v=4",
+   "img": "slaytlar/M3/32c.jpg?v=4",
    "title": "Granüler hücreli tümör ve konjenital epulis · 3/7",
    "step": [
     3,
     7
    ],
-   "notes": "[21:53–22:01]\nHücreler iri, poligonal ve sitoplazmaları ince pembe granüllerle dolu; PAS ve S100 pozitif, yani Schwann hücresi özellikleri taşıyor."
+   "notes": "[17:59–18:07]\nHücreler iri, poligonal ve sitoplazmaları ince pembe granüllerle dolu; PAS ve S100 pozitif, yani Schwann hücresi özellikleri taşıyor."
   },
   {
-   "img": "slaytlar/M3/37d.jpg?v=4",
+   "img": "slaytlar/M3/32d.jpg?v=4",
    "title": "Granüler hücreli tümör ve konjenital epulis · 4/7",
    "step": [
     4,
     7
    ],
-   "notes": "[22:01–22:09]\nOlguların yarısına kadarında üstteki epitel aşağı doğru dallar yapar; buna psödoepitelyomatöz hiperplazi diyoruz. Bunu dersin sonunda tekrar göreceğiz."
+   "notes": "[18:07–18:15]\nOlguların yarısına kadarında üstteki epitel aşağı doğru dallar yapar; buna psödoepitelyomatöz hiperplazi diyoruz. Bunu dersin sonunda tekrar göreceğiz."
   },
   {
-   "img": "slaytlar/M3/37e.jpg?v=4",
+   "img": "slaytlar/M3/32e.jpg?v=4",
    "title": "Granüler hücreli tümör ve konjenital epulis · 5/7",
    "step": [
     5,
     7
    ],
-   "notes": "[22:09–22:16]\nYenidoğandaki benzeri konjenital epulis: doğumda alveol kretinde polipoid kitle; yaklaşık yüzde 90'ı kız bebek."
+   "notes": "[18:15–18:22]\nYenidoğandaki benzeri konjenital epulis: doğumda alveol kretinde polipoid kitle; yaklaşık yüzde 90'ı kız bebek."
   },
   {
-   "img": "slaytlar/M3/37f.jpg?v=4",
+   "img": "slaytlar/M3/32f.jpg?v=4",
    "title": "Granüler hücreli tümör ve konjenital epulis · 6/7",
    "step": [
     6,
     7
    ],
-   "notes": "[22:16–22:23]\nHücreleri benzer ama S100 negatif; yüzeyde hiperplazi yok, reteler incelmiş."
+   "notes": "[18:22–18:29]\nHücreleri benzer ama S100 negatif; yüzeyde hiperplazi yok, reteler incelmiş."
   },
   {
-   "img": "slaytlar/M3/37g.jpg?v=4",
+   "img": "slaytlar/M3/32g.jpg?v=4",
    "title": "Granüler hücreli tümör ve konjenital epulis · 7/7",
    "step": [
     7,
     7
    ],
-   "notes": "[22:23–22:28]\nNüksetmez; hatta kendiliğinden küçülebilir."
+   "notes": "[18:29–18:34]\nNüksetmez; hatta kendiliğinden küçülebilir."
   },
   {
-   "img": "slaytlar/M3/38.jpg?v=4",
+   "img": "slaytlar/M3/33.jpg?v=4",
    "title": "DUS Molası 1/2",
    "q": "W3",
-   "notes": "[22:28–23:13]\nİlk DUS sorusu, Neville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Konjenital epulis: yaklaşık yüzde 90'ı kız bebek. Granüler hücreli tümör de kadında sık, ama oran üçe bir.\n\nCANLI (W3, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+   "notes": "[18:34–19:19]\nİlk DUS sorusu, Neville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Konjenital epulis: yaklaşık yüzde 90'ı kız bebek. Granüler hücreli tümör de kadında sık, ama oran üçe bir.\n\nCANLI (W3, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
-   "img": "slaytlar/M3/39.jpg?v=4",
+   "img": "slaytlar/M3/34.jpg?v=4",
    "title": "DUS Molası 2/2",
    "q": "W4",
-   "notes": "[23:13–23:53]\nİkinci soru. (Sonuç.) Nörofibromatozis tip 1. Lisch nodülleri irisin pigmentli hamartomları; NF1 hastalarının neredeyse hepsinde var. Sırada damar kökenli tümörler.\n\nCANLI (W4, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
+   "notes": "[19:19–19:59]\nİkinci soru. (Sonuç.) Nörofibromatozis tip 1. Lisch nodülleri irisin pigmentli hamartomları; NF1 hastalarının neredeyse hepsinde var. Sırada damar kökenli tümörler.\n\nCANLI (W4, Çoktan seçmeli): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: D. T: 30 sn (perdede T düğmesi bu soruda 30 sn sayar)."
   },
   {
    "board": true,
    "title": "Ara liderlik: ilk 5",
-   "notes": "[23:53–24:08]\nOn saniye: ilk beş. (→ ile devam.)",
+   "notes": "[19:59–20:14]\nOn saniye: ilk beş. (→ ile devam.)",
    "top": 5
   },
   {
-   "img": "slaytlar/M3/41a.jpg?v=4",
-   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 1/7",
-   "step": [
-    1,
-    7
-   ],
-   "notes": "[24:08–24:16]\nDamar lezyonlarında iki ayrı grup var. Hemanjiyom bir tümör: çoğu doğumda yoktur, ilk haftalarda çıkar ve hızla büyür."
-  },
-  {
-   "img": "slaytlar/M3/41b.jpg?v=4",
-   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 2/7",
-   "step": [
-    2,
-    7
-   ],
-   "notes": "[24:16–24:23]\nSonra geriler: yarısı beş yaşında, yüzde 90'ı dokuz yaşında kaybolur."
-  },
-  {
-   "img": "slaytlar/M3/41c.jpg?v=4",
-   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 3/7",
-   "step": [
-    3,
-    7
-   ],
-   "notes": "[24:23–24:31]\nGLUT1 pozitiftir. Çoğunu bekleriz; gerekirse propranolol veririz."
-  },
-  {
-   "img": "slaytlar/M3/41d.jpg?v=4",
-   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 4/7",
-   "step": [
-    4,
-    7
-   ],
-   "notes": "[24:31–24:40]\nMalformasyon damar yapısının gelişim bozukluğu: doğumda vardır, çocukla birlikte büyür ve gerilemez; GLUT1 negatif."
-  },
-  {
-   "img": "slaytlar/M3/41e.jpg?v=4",
-   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 5/7",
-   "step": [
-    5,
-    7
-   ],
-   "notes": "[24:40–24:47]\nVenöz malformasyon mor-mavidir ve bastırınca kolayca söner."
-  },
-  {
-   "img": "slaytlar/M3/41f.jpg?v=4",
-   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 6/7",
-   "step": [
-    6,
-    7
-   ],
-   "notes": "[24:47–24:53]\nISSVA sınıflaması bu iki grubu ayırır: vasküler tümörler ve vasküler malformasyonlar."
-  },
-  {
-   "img": "slaytlar/M3/41g.jpg?v=4",
-   "title": "Hemanjiyom mu, vasküler malformasyon mu? · 7/7",
-   "step": [
-    7,
-    7
-   ],
-   "notes": "[24:53–25:08]\nNeville'den pratik uyarı: tanısı konmamış kemik içi bir lezyonda biyopsiden önce iğneyle aspirasyon yapın. Malformasyonun yanında diş çekiminden sonra ölümcül kanamalar bildirildi."
-  },
-  {
-   "img": "slaytlar/M3/42a.jpg?v=4",
-   "title": "Sturge-Weber ve melanotik nöroektodermal tümör · 1/3",
+   "img": "slaytlar/M3/36a.jpg?v=4",
+   "title": "(Zaman kalırsa) Sturge-Weber ve melanotik nöroektodermal tümör · 1/3",
    "step": [
     1,
     3
    ],
-   "notes": "[25:08–25:14]\nSturge-Weber sendromu: yüzde trigeminal sinir dağılımında porto şarabı lekesi; leke birinci dalı tutuyorsa risk yüzde 15 ila 20."
+   "notes": "[20:14–20:20] ZAMAN KALIRSA; yoksa → ile atla.\nSturge-Weber sendromu: yüzde trigeminal sinir dağılımında porto şarabı lekesi; leke birinci dalı tutuyorsa risk yüzde 15 ila 20."
   },
   {
-   "img": "slaytlar/M3/42b.jpg?v=4",
-   "title": "Sturge-Weber ve melanotik nöroektodermal tümör · 2/3",
+   "img": "slaytlar/M3/36b.jpg?v=4",
+   "title": "(Zaman kalırsa) Sturge-Weber ve melanotik nöroektodermal tümör · 2/3",
    "step": [
     2,
     3
    ],
-   "notes": "[25:14–25:21]\nAynı tarafta beyin zarında damar anomalisi olur: nöbet ve zihinsel yetersizlik. Ağızda o bölgede cerrahi ciddi kanayabilir."
+   "notes": "[20:20–20:27] ZAMAN KALIRSA; yoksa → ile atla.\nAynı tarafta beyin zarında damar anomalisi olur: nöbet ve zihinsel yetersizlik. Ağızda o bölgede cerrahi ciddi kanayabilir."
   },
   {
-   "img": "slaytlar/M3/42c.jpg?v=4",
-   "title": "Sturge-Weber ve melanotik nöroektodermal tümör · 3/3",
+   "img": "slaytlar/M3/36c.jpg?v=4",
+   "title": "(Zaman kalırsa) Sturge-Weber ve melanotik nöroektodermal tümör · 3/3",
    "step": [
     3,
     3
    ],
-   "notes": "[25:21–25:28]\nBebeğin melanotik nöroektodermal tümörü: bir yaşın altında, üst çene ön bölgede hızla büyüyen, mavi-siyah bir kitle; idrarda vanilmandelik asit yüksek olabilir."
+   "notes": "[20:27–20:34] ZAMAN KALIRSA; yoksa → ile atla.\nBebeğin melanotik nöroektodermal tümörü: bir yaşın altında, üst çene ön bölgede hızla büyüyen, mavi-siyah bir kitle; idrarda vanilmandelik asit yüksek olabilir."
   },
   {
-   "img": "slaytlar/M3/43a.jpg?v=4",
+   "img": "slaytlar/M3/37a.jpg?v=4",
    "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 1/7",
    "step": [
     1,
     7
    ],
-   "notes": "[25:28–25:35]\nLenfanjiyom Neville'in yeni baskısında lenfatik malformasyon adıyla geçiyor; WHO hâlâ lenfanjiyom diyor. İkisini de bilin."
+   "notes": "[20:34–20:41]\nLenfanjiyom Neville'in yeni baskısında lenfatik malformasyon adıyla geçiyor; WHO hâlâ lenfanjiyom diyor. İkisini de bilin."
   },
   {
-   "img": "slaytlar/M3/43b.jpg?v=4",
+   "img": "slaytlar/M3/37b.jpg?v=4",
    "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 2/7",
    "step": [
     2,
     7
    ],
-   "notes": "[25:35–25:41]\nYarısı doğumda vardır, yüzde 90'ı iki yaşına kadar ortaya çıkar."
+   "notes": "[20:41–20:47]\nYarısı doğumda vardır, yüzde 90'ı iki yaşına kadar ortaya çıkar."
   },
   {
-   "img": "slaytlar/M3/43c.jpg?v=4",
+   "img": "slaytlar/M3/37c.jpg?v=4",
    "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 3/7",
    "step": [
     3,
     7
    ],
-   "notes": "[25:41–25:49]\nAğızda en sık dilin ön üçte ikisinde; damarlar epitelin hemen altında olduğu için yüzey küçük, saydam kabarcıklarla kaplıdır ve dil büyür."
+   "notes": "[20:47–20:55]\nAğızda en sık dilin ön üçte ikisinde; damarlar epitelin hemen altında olduğu için yüzey küçük, saydam kabarcıklarla kaplıdır ve dil büyür."
   },
   {
-   "img": "slaytlar/M3/43d.jpg?v=4",
+   "img": "slaytlar/M3/37d.jpg?v=4",
    "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 4/7",
    "step": [
     4,
     7
    ],
-   "notes": "[25:49–25:56]\nBoyundaki büyük kistli formuna kistik higroma deniyor; yenidoğanda havayolunu tıkayabilir."
+   "notes": "[20:55–21:02]\nBoyundaki büyük kistli formuna kistik higroma deniyor; yenidoğanda havayolunu tıkayabilir."
   },
   {
-   "img": "slaytlar/M3/43e.jpg?v=4",
+   "img": "slaytlar/M3/37e.jpg?v=4",
    "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 5/7",
    "step": [
     5,
     7
    ],
-   "notes": "[25:56–26:04]\nNazofarengeal anjiyofibrom neredeyse yalnız ergen erkeklerde görülür: burun tıkanıklığı ve tekrarlayan burun kanaması. Hücreleri androjen reseptörü taşır."
+   "notes": "[21:02–21:10]\nNazofarengeal anjiyofibrom neredeyse yalnız ergen erkeklerde görülür: burun tıkanıklığı ve tekrarlayan burun kanaması. Hücreleri androjen reseptörü taşır."
   },
   {
-   "img": "slaytlar/M3/43f.jpg?v=4",
+   "img": "slaytlar/M3/37f.jpg?v=4",
    "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 6/7",
    "step": [
     6,
     7
    ],
-   "notes": "[26:04–26:11]\nDamar duvarlarında kas tabakası eksik ve elastik lif yok; bu yüzden çok kanar."
+   "notes": "[21:10–21:17]\nDamar duvarlarında kas tabakası eksik ve elastik lif yok; bu yüzden çok kanar."
   },
   {
-   "img": "slaytlar/M3/43g.jpg?v=4",
+   "img": "slaytlar/M3/37g.jpg?v=4",
    "title": "Lenfanjiyom ve nazofarengeal anjiyofibrom · 7/7",
    "step": [
     7,
     7
    ],
-   "notes": "[26:11–26:18]\nAmeliyattan önce embolizasyon yapılır; yüzde 20 ila 40 nükseder. WHO 2022'deki adı sinonazal anjiyofibrom."
+   "notes": "[21:17–21:24]\nAmeliyattan önce embolizasyon yapılır; yüzde 20 ila 40 nükseder. WHO 2022'deki adı sinonazal anjiyofibrom."
   },
   {
-   "img": "slaytlar/M3/44a.jpg?v=4",
-   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 1/7",
+   "img": "slaytlar/M3/38a.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli iyi huylu tümörler ve diğerleri · 1/7",
    "step": [
     1,
     7
    ],
-   "notes": "[26:18–26:25]\nİyi huylu tümörlerin sonuncusu kas. Leiomiyom düz kas tümörü; ağızda nadir ve dörtte üçü damar duvarındaki kastan, yani anjiyomiyom."
+   "notes": "[21:24–21:31] ZAMAN KALIRSA; yoksa → ile atla.\nİyi huylu tümörlerin sonuncusu kas. Leiomiyom düz kas tümörü; ağızda nadir ve dörtte üçü damar duvarındaki kastan, yani anjiyomiyom."
   },
   {
-   "img": "slaytlar/M3/44b.jpg?v=4",
-   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 2/7",
+   "img": "slaytlar/M3/38b.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli iyi huylu tümörler ve diğerleri · 2/7",
    "step": [
     2,
     7
    ],
-   "notes": "[26:25–26:30]\nDudak, dil, damak ve yanakta görülür; anjiyomiyom ağrılı olabilir."
+   "notes": "[21:31–21:36] ZAMAN KALIRSA; yoksa → ile atla.\nDudak, dil, damak ve yanakta görülür; anjiyomiyom ağrılı olabilir."
   },
   {
-   "img": "slaytlar/M3/44c.jpg?v=4",
-   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 3/7",
+   "img": "slaytlar/M3/38c.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli iyi huylu tümörler ve diğerleri · 3/7",
    "step": [
     3,
     7
    ],
-   "notes": "[26:30–26:35]\nMikroskopta küt uçlu, puro biçimli çekirdekler; SMA pozitif."
+   "notes": "[21:36–21:41] ZAMAN KALIRSA; yoksa → ile atla.\nMikroskopta küt uçlu, puro biçimli çekirdekler; SMA pozitif."
   },
   {
-   "img": "slaytlar/M3/44d.jpg?v=4",
-   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 4/7",
+   "img": "slaytlar/M3/38d.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli iyi huylu tümörler ve diğerleri · 4/7",
    "step": [
     4,
     7
    ],
-   "notes": "[26:35–26:42]\nRabdomiyom çizgili kas tümörü: erişkin tip orta ve ileri yaşta, yüzde 80'i erkekte; ağız tabanında, yumuşak damakta, dil kökünde."
+   "notes": "[21:41–21:48] ZAMAN KALIRSA; yoksa → ile atla.\nRabdomiyom çizgili kas tümörü: erişkin tip orta ve ileri yaşta, yüzde 80'i erkekte; ağız tabanında, yumuşak damakta, dil kökünde."
   },
   {
-   "img": "slaytlar/M3/44e.jpg?v=4",
-   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 5/7",
+   "img": "slaytlar/M3/38e.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli iyi huylu tümörler ve diğerleri · 5/7",
    "step": [
     5,
     7
    ],
-   "notes": "[26:42–26:48]\nHücrelerin sitoplazması vakuollüdür, örümcek ağı gibi görünür. Çocuktaki fetal tipi rabdomiyosarkomla karışabilir."
+   "notes": "[21:48–21:54] ZAMAN KALIRSA; yoksa → ile atla.\nHücrelerin sitoplazması vakuollüdür, örümcek ağı gibi görünür. Çocuktaki fetal tipi rabdomiyosarkomla karışabilir."
   },
   {
-   "img": "slaytlar/M3/44f.jpg?v=4",
-   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 6/7",
+   "img": "slaytlar/M3/38f.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli iyi huylu tümörler ve diğerleri · 6/7",
    "step": [
     6,
     7
    ],
-   "notes": "[26:48–26:55]\nParagangliom en sık karotis cisimciğinde; hücreler yuvalar yapar, buna zellballen denir. Üçte biri kadarı kalıtsal."
+   "notes": "[21:54–22:01] ZAMAN KALIRSA; yoksa → ile atla.\nParagangliom en sık karotis cisimciğinde; hücreler yuvalar yapar, buna zellballen denir. Üçte biri kadarı kalıtsal."
   },
   {
-   "img": "slaytlar/M3/44g.jpg?v=4",
-   "title": "Kas kökenli iyi huylu tümörler ve diğerleri · 7/7",
+   "img": "slaytlar/M3/38g.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli iyi huylu tümörler ve diğerleri · 7/7",
    "step": [
     7,
     7
    ],
-   "notes": "[26:55–27:00]\nTendon kılıfının dev hücreli tümörü patoloji kaynaklarında geçer ama ağızda çok nadir; Neville'de bu başlığı doğrulayamadım."
+   "notes": "[22:01–22:06] ZAMAN KALIRSA; yoksa → ile atla.\nTendon kılıfının dev hücreli tümörü patoloji kaynaklarında geçer ama ağızda çok nadir; Neville'de bu başlığı doğrulayamadım."
   },
   {
-   "img": "slaytlar/M3/45a.jpg?v=4",
+   "img": "slaytlar/M3/39a.jpg?v=4",
    "title": "Sarkomlar: ortak özellikler · 1/6",
    "step": [
     1,
     6
    ],
-   "notes": "[27:00–27:06]\nÜçüncü grup: sarkomlar, yumuşak dokunun kötü huylu tümörleri. Ağız ve çene bölgesinde nadir: Neville'e göre bu bölgedeki kanserlerin yüzde birinden azı."
+   "notes": "[22:06–22:12]\nÜçüncü grup: sarkomlar, yumuşak dokunun kötü huylu tümörleri. Ağız ve çene bölgesinde nadir: Neville'e göre bu bölgedeki kanserlerin yüzde birinden azı."
   },
   {
-   "img": "slaytlar/M3/45b.jpg?v=4",
+   "img": "slaytlar/M3/39b.jpg?v=4",
    "title": "Sarkomlar: ortak özellikler · 2/6",
    "step": [
     2,
     6
    ],
-   "notes": "[27:06–27:11]\nLokal agresif büyür; önce çevre dokuyu yıkar."
+   "notes": "[22:12–22:17]\nLokal agresif büyür; önce çevre dokuyu yıkar."
   },
   {
-   "img": "slaytlar/M3/45c.jpg?v=4",
+   "img": "slaytlar/M3/39c.jpg?v=4",
    "title": "Sarkomlar: ortak özellikler · 3/6",
    "step": [
     3,
     6
    ],
-   "notes": "[27:11–27:17]\nKarsinomların aksine lenf noduna az gider; uzak metastaz en sık akciğere."
+   "notes": "[22:17–22:23]\nKarsinomların aksine lenf noduna az gider; uzak metastaz en sık akciğere."
   },
   {
-   "img": "slaytlar/M3/45d.jpg?v=4",
+   "img": "slaytlar/M3/39d.jpg?v=4",
    "title": "Sarkomlar: ortak özellikler · 4/6",
    "step": [
     4,
     6
    ],
-   "notes": "[27:17–27:24]\nRisk etkenleri: yıllar önce alınmış radyoterapi, kronik travma, yanık skarı, metal implant."
+   "notes": "[22:23–22:30]\nRisk etkenleri: yıllar önce alınmış radyoterapi, kronik travma, yanık skarı, metal implant."
   },
   {
-   "img": "slaytlar/M3/45e.jpg?v=4",
+   "img": "slaytlar/M3/39e.jpg?v=4",
    "title": "Sarkomlar: ortak özellikler · 5/6",
    "step": [
     5,
     6
    ],
-   "notes": "[27:24–27:30]\nKalıtsal zemin: nörofibromatozis ve retinoblastom."
+   "notes": "[22:30–22:36]\nKalıtsal zemin: nörofibromatozis ve retinoblastom."
   },
   {
-   "img": "slaytlar/M3/45f.jpg?v=4",
+   "img": "slaytlar/M3/39f.jpg?v=4",
    "title": "Sarkomlar: ortak özellikler · 6/6",
    "step": [
     6,
     6
    ],
-   "notes": "[27:30–27:40]\nDavranışını tipi, derecesi, boyutu, evresi ve cerrahi sınır belirler. Baş-boyunda geniş sınır bırakmak zor; yerel nüks sık."
+   "notes": "[22:36–22:46]\nDavranışını tipi, derecesi, boyutu, evresi ve cerrahi sınır belirler. Baş-boyunda geniş sınır bırakmak zor; yerel nüks sık."
   },
   {
-   "img": "slaytlar/M3/46a.jpg?v=4",
-   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 1/8",
+   "img": "slaytlar/M3/40a.jpg?v=4",
+   "title": "(Zaman kalırsa) Pleomorfik sarkom, fibrosarkom, liposarkom · 1/8",
    "step": [
     1,
     8
    ],
-   "notes": "[27:40–27:47]\nİndiferansiye pleomorfik sarkom, eski adıyla malign fibröz histiyositom: yaşlı hastada, daha çok bacakta ve gövdede."
+   "notes": "[22:46–22:53] ZAMAN KALIRSA; yoksa → ile atla.\nİndiferansiye pleomorfik sarkom, eski adıyla malign fibröz histiyositom: yaşlı hastada, daha çok bacakta ve gövdede."
   },
   {
-   "img": "slaytlar/M3/46b.jpg?v=4",
-   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 2/8",
+   "img": "slaytlar/M3/40b.jpg?v=4",
+   "title": "(Zaman kalırsa) Pleomorfik sarkom, fibrosarkom, liposarkom · 2/8",
    "step": [
     2,
     8
    ],
-   "notes": "[27:47–27:53]\nMikroskopta girdap gibi demetler ve tuhaf, çok çekirdekli dev hücreler."
+   "notes": "[22:53–22:59] ZAMAN KALIRSA; yoksa → ile atla.\nMikroskopta girdap gibi demetler ve tuhaf, çok çekirdekli dev hücreler."
   },
   {
-   "img": "slaytlar/M3/46c.jpg?v=4",
-   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 3/8",
+   "img": "slaytlar/M3/40c.jpg?v=4",
+   "title": "(Zaman kalırsa) Pleomorfik sarkom, fibrosarkom, liposarkom · 3/8",
    "step": [
     3,
     8
    ],
-   "notes": "[27:53–28:00]\nBaş-boyunda burun ve sinüslerde; bir kısmı radyoterapiden yıllar sonra gelişir. Yüzde 40'ı nükseder."
+   "notes": "[22:59–23:06] ZAMAN KALIRSA; yoksa → ile atla.\nBaş-boyunda burun ve sinüslerde; bir kısmı radyoterapiden yıllar sonra gelişir. Yüzde 40'ı nükseder."
   },
   {
-   "img": "slaytlar/M3/46d.jpg?v=4",
-   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 4/8",
+   "img": "slaytlar/M3/40d.jpg?v=4",
+   "title": "(Zaman kalırsa) Pleomorfik sarkom, fibrosarkom, liposarkom · 4/8",
    "step": [
     4,
     8
    ],
-   "notes": "[28:00–28:06]\nFibrosarkom bugün bir dışlama tanısı; olguların yüzde 10 ila 19'u baş-boyunda."
+   "notes": "[23:06–23:12] ZAMAN KALIRSA; yoksa → ile atla.\nFibrosarkom bugün bir dışlama tanısı; olguların yüzde 10 ila 19'u baş-boyunda."
   },
   {
-   "img": "slaytlar/M3/46e.jpg?v=4",
-   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 5/8",
+   "img": "slaytlar/M3/40e.jpg?v=4",
+   "title": "(Zaman kalırsa) Pleomorfik sarkom, fibrosarkom, liposarkom · 5/8",
    "step": [
     5,
     8
    ],
-   "notes": "[28:06–28:12]\nİğsi hücreler balık kılçığı deseninde dizilir."
+   "notes": "[23:12–23:18] ZAMAN KALIRSA; yoksa → ile atla.\nİğsi hücreler balık kılçığı deseninde dizilir."
   },
   {
-   "img": "slaytlar/M3/46f.jpg?v=4",
-   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 6/8",
+   "img": "slaytlar/M3/40f.jpg?v=4",
+   "title": "(Zaman kalırsa) Pleomorfik sarkom, fibrosarkom, liposarkom · 6/8",
    "step": [
     6,
     8
    ],
-   "notes": "[28:12–28:19]\nLiposarkom ağızda en sık dilde ve yanakta; ağızdakilerin üçte ikisi iyi diferansiye tip."
+   "notes": "[23:18–23:25] ZAMAN KALIRSA; yoksa → ile atla.\nLiposarkom ağızda en sık dilde ve yanakta; ağızdakilerin üçte ikisi iyi diferansiye tip."
   },
   {
-   "img": "slaytlar/M3/46g.jpg?v=4",
-   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 7/8",
+   "img": "slaytlar/M3/40g.jpg?v=4",
+   "title": "(Zaman kalırsa) Pleomorfik sarkom, fibrosarkom, liposarkom · 7/8",
    "step": [
     7,
     8
    ],
-   "notes": "[28:19–28:25]\nLipoma benzer ama lipoblast ve atipik hücreler içerir; MDM2 ve CDK4 pozitif. Ağızdakiler iyi seyirli."
+   "notes": "[23:25–23:31] ZAMAN KALIRSA; yoksa → ile atla.\nLipoma benzer ama lipoblast ve atipik hücreler içerir; MDM2 ve CDK4 pozitif. Ağızdakiler iyi seyirli."
   },
   {
-   "img": "slaytlar/M3/46h.jpg?v=4",
-   "title": "Pleomorfik sarkom, fibrosarkom, liposarkom · 8/8",
+   "img": "slaytlar/M3/40h.jpg?v=4",
+   "title": "(Zaman kalırsa) Pleomorfik sarkom, fibrosarkom, liposarkom · 8/8",
    "step": [
     8,
     8
    ],
-   "notes": "[28:25–28:40]\nBir uyuşmazlık: patoloji kaynaklarında en sık sarkom olarak pleomorfik sarkom geçer. Neville 5'e göre bu eski bilgi; malign fibröz histiyositom denen tümörlerin çoğu başka sarkomlara ayrıldı ve bugün en sık sarkom liposarkom."
+   "notes": "[23:31–23:46] ZAMAN KALIRSA; yoksa → ile atla.\nBir uyuşmazlık: patoloji kaynaklarında en sık sarkom olarak pleomorfik sarkom geçer. Neville 5'e göre bu eski bilgi; malign fibröz histiyositom denen tümörlerin çoğu başka sarkomlara ayrıldı ve bugün en sık sarkom liposarkom."
   },
   {
-   "img": "slaytlar/M3/47a.jpg?v=4",
-   "title": "Sinir ve damar kökenli sarkomlar · 1/9",
+   "img": "slaytlar/M3/41a.jpg?v=4",
+   "title": "(Zaman kalırsa) Sinir ve damar kökenli sarkomlar · 1/9",
    "step": [
     1,
     9
    ],
-   "notes": "[28:40–28:47]\nMalign periferik sinir kılıfı tümörü, eski adıyla malign schwannom: dörtte biri ile yarısı NF1'li hastalarda gelişir; NF1'de büyüyen kitle hemen biyopsi ister."
+   "notes": "[23:46–23:53] ZAMAN KALIRSA; yoksa → ile atla.\nMalign periferik sinir kılıfı tümörü, eski adıyla malign schwannom: dörtte biri ile yarısı NF1'li hastalarda gelişir; NF1'de büyüyen kitle hemen biyopsi ister."
   },
   {
-   "img": "slaytlar/M3/47b.jpg?v=4",
-   "title": "Sinir ve damar kökenli sarkomlar · 2/9",
+   "img": "slaytlar/M3/41b.jpg?v=4",
+   "title": "(Zaman kalırsa) Sinir ve damar kökenli sarkomlar · 2/9",
    "step": [
     2,
     9
    ],
-   "notes": "[28:47–28:53]\nMikroskopta dalgalı çekirdekli atipik iğsi hücreler; prognozu kötü."
+   "notes": "[23:53–23:59] ZAMAN KALIRSA; yoksa → ile atla.\nMikroskopta dalgalı çekirdekli atipik iğsi hücreler; prognozu kötü."
   },
   {
-   "img": "slaytlar/M3/47c.jpg?v=4",
-   "title": "Sinir ve damar kökenli sarkomlar · 3/9",
+   "img": "slaytlar/M3/41c.jpg?v=4",
+   "title": "(Zaman kalırsa) Sinir ve damar kökenli sarkomlar · 3/9",
    "step": [
     3,
     9
    ],
-   "notes": "[28:53–29:00]\nOlfaktör nöroblastom burun tavanında koku epitelinden köken alır; adına rağmen çocukta değil erişkinde görülür."
+   "notes": "[23:59–24:06] ZAMAN KALIRSA; yoksa → ile atla.\nOlfaktör nöroblastom burun tavanında koku epitelinden köken alır; adına rağmen çocukta değil erişkinde görülür."
   },
   {
-   "img": "slaytlar/M3/47d.jpg?v=4",
-   "title": "Sinir ve damar kökenli sarkomlar · 4/9",
+   "img": "slaytlar/M3/41d.jpg?v=4",
+   "title": "(Zaman kalırsa) Sinir ve damar kökenli sarkomlar · 4/9",
    "step": [
     4,
     9
    ],
-   "notes": "[29:00–29:06]\nMikroskopta küçük, yuvarlak, mavi hücreler ve rozetler; kromogranin ve sinaptofizin pozitif."
+   "notes": "[24:06–24:12] ZAMAN KALIRSA; yoksa → ile atla.\nMikroskopta küçük, yuvarlak, mavi hücreler ve rozetler; kromogranin ve sinaptofizin pozitif."
   },
   {
-   "img": "slaytlar/M3/47e.jpg?v=4",
-   "title": "Sinir ve damar kökenli sarkomlar · 5/9",
+   "img": "slaytlar/M3/41e.jpg?v=4",
+   "title": "(Zaman kalırsa) Sinir ve damar kökenli sarkomlar · 5/9",
    "step": [
     5,
     9
    ],
-   "notes": "[29:06–29:13]\nAnjiyosarkomun yarısı baş-boyunda, en sık saçlı deride ve alında; ağızda çok nadir."
+   "notes": "[24:12–24:19] ZAMAN KALIRSA; yoksa → ile atla.\nAnjiyosarkomun yarısı baş-boyunda, en sık saçlı deride ve alında; ağızda çok nadir."
   },
   {
-   "img": "slaytlar/M3/47f.jpg?v=4",
-   "title": "Sinir ve damar kökenli sarkomlar · 6/9",
+   "img": "slaytlar/M3/41f.jpg?v=4",
+   "title": "(Zaman kalırsa) Sinir ve damar kökenli sarkomlar · 6/9",
    "step": [
     6,
     9
    ],
-   "notes": "[29:13–29:18]\nErken dönemde morluk gibi görünür, bu yüzden tanı gecikir; CD31 ve ERG pozitif."
+   "notes": "[24:19–24:24] ZAMAN KALIRSA; yoksa → ile atla.\nErken dönemde morluk gibi görünür, bu yüzden tanı gecikir; CD31 ve ERG pozitif."
   },
   {
-   "img": "slaytlar/M3/47g.jpg?v=4",
-   "title": "Sinir ve damar kökenli sarkomlar · 7/9",
+   "img": "slaytlar/M3/41g.jpg?v=4",
+   "title": "(Zaman kalırsa) Sinir ve damar kökenli sarkomlar · 7/9",
    "step": [
     7,
     9
    ],
-   "notes": "[29:18–29:26]\nKaposi sarkomu HHV-8 ile ilişkili; dört formu var. Bazı kaynaklar endemik formu HIV ve HHV-8 ile ilişkilendirir; Neville'e göre dört formun hepsinin etkeni HHV-8, HIV yalnız AIDS formunda."
+   "notes": "[24:24–24:32] ZAMAN KALIRSA; yoksa → ile atla.\nKaposi sarkomu HHV-8 ile ilişkili; dört formu var. Bazı kaynaklar endemik formu HIV ve HHV-8 ile ilişkilendirir; Neville'e göre dört formun hepsinin etkeni HHV-8, HIV yalnız AIDS formunda."
   },
   {
-   "img": "slaytlar/M3/47h.jpg?v=4",
-   "title": "Sinir ve damar kökenli sarkomlar · 8/9",
+   "img": "slaytlar/M3/41h.jpg?v=4",
+   "title": "(Zaman kalırsa) Sinir ve damar kökenli sarkomlar · 8/9",
    "step": [
     8,
     9
    ],
-   "notes": "[29:26–29:32]\nAIDS'li hastaların yaklaşık yüzde 70'inde ağız lezyonu olur, en sık sert damakta."
+   "notes": "[24:32–24:38] ZAMAN KALIRSA; yoksa → ile atla.\nAIDS'li hastaların yaklaşık yüzde 70'inde ağız lezyonu olur, en sık sert damakta."
   },
   {
-   "img": "slaytlar/M3/47i.jpg?v=4",
-   "title": "Sinir ve damar kökenli sarkomlar · 9/9",
+   "img": "slaytlar/M3/41i.jpg?v=4",
+   "title": "(Zaman kalırsa) Sinir ve damar kökenli sarkomlar · 9/9",
    "step": [
     9,
     9
    ],
-   "notes": "[29:32–29:40]\nMikroskopta iğsi hücreler, yarık benzeri damarlar ve ekstravaze eritrositler."
+   "notes": "[24:38–24:46] ZAMAN KALIRSA; yoksa → ile atla.\nMikroskopta iğsi hücreler, yarık benzeri damarlar ve ekstravaze eritrositler."
   },
   {
-   "img": "slaytlar/M3/48a.jpg?v=4",
-   "title": "Kas kökenli sarkomlar ve diğerleri · 1/9",
+   "img": "slaytlar/M3/42a.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli sarkomlar ve diğerleri · 1/9",
    "step": [
     1,
     9
    ],
-   "notes": "[29:40–29:46]\nLeiomiyosarkom düz kas sarkomu; ağızda nadir, üçte biri alt çenede."
+   "notes": "[24:46–24:52] ZAMAN KALIRSA; yoksa → ile atla.\nLeiomiyosarkom düz kas sarkomu; ağızda nadir, üçte biri alt çenede."
   },
   {
-   "img": "slaytlar/M3/48b.jpg?v=4",
-   "title": "Kas kökenli sarkomlar ve diğerleri · 2/9",
+   "img": "slaytlar/M3/42b.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli sarkomlar ve diğerleri · 2/9",
    "step": [
     2,
     9
    ],
-   "notes": "[29:46–29:52]\nÇekirdekler puro biçimli; on büyük büyütme alanında beş ya da daha fazla mitoz varsa malign kabul edilir."
+   "notes": "[24:52–24:58] ZAMAN KALIRSA; yoksa → ile atla.\nÇekirdekler puro biçimli; on büyük büyütme alanında beş ya da daha fazla mitoz varsa malign kabul edilir."
   },
   {
-   "img": "slaytlar/M3/48c.jpg?v=4",
-   "title": "Kas kökenli sarkomlar ve diğerleri · 3/9",
+   "img": "slaytlar/M3/42c.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli sarkomlar ve diğerleri · 3/9",
    "step": [
     3,
     9
    ],
-   "notes": "[29:52–29:59]\nRabdomiyosarkom çocukların sarkomu: çocukluk çağı yumuşak doku sarkomlarının yarısı, en sık baş-boyunda."
+   "notes": "[24:58–25:05] ZAMAN KALIRSA; yoksa → ile atla.\nRabdomiyosarkom çocukların sarkomu: çocukluk çağı yumuşak doku sarkomlarının yarısı, en sık baş-boyunda."
   },
   {
-   "img": "slaytlar/M3/48d.jpg?v=4",
-   "title": "Kas kökenli sarkomlar ve diğerleri · 4/9",
+   "img": "slaytlar/M3/42d.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli sarkomlar ve diğerleri · 4/9",
    "step": [
     4,
     9
    ],
-   "notes": "[29:59–30:05]\nEmbriyonal tip en sık ve ilk on yaşta; alveoler tip ergenlik ve gençlikte; pleomorfik tip erişkinde."
+   "notes": "[25:05–25:11] ZAMAN KALIRSA; yoksa → ile atla.\nEmbriyonal tip en sık ve ilk on yaşta; alveoler tip ergenlik ve gençlikte; pleomorfik tip erişkinde."
   },
   {
-   "img": "slaytlar/M3/48e.jpg?v=4",
-   "title": "Kas kökenli sarkomlar ve diğerleri · 5/9",
+   "img": "slaytlar/M3/42e.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli sarkomlar ve diğerleri · 5/9",
    "step": [
     5,
     9
    ],
-   "notes": "[30:05–30:11]\nAğız içinde en sık damakta; desmin ve miyogenin pozitif."
+   "notes": "[25:11–25:17] ZAMAN KALIRSA; yoksa → ile atla.\nAğız içinde en sık damakta; desmin ve miyogenin pozitif."
   },
   {
-   "img": "slaytlar/M3/48f.jpg?v=4",
-   "title": "Kas kökenli sarkomlar ve diğerleri · 6/9",
+   "img": "slaytlar/M3/42f.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli sarkomlar ve diğerleri · 6/9",
    "step": [
     6,
     9
    ],
-   "notes": "[30:11–30:19]\nSinovyal sarkom eklem çevresinde görülür ama adına rağmen sinovyadan köken almaz; baş-boyunda en sık parafarenkste."
+   "notes": "[25:17–25:25] ZAMAN KALIRSA; yoksa → ile atla.\nSinovyal sarkom eklem çevresinde görülür ama adına rağmen sinovyadan köken almaz; baş-boyunda en sık parafarenkste."
   },
   {
-   "img": "slaytlar/M3/48g.jpg?v=4",
-   "title": "Kas kökenli sarkomlar ve diğerleri · 7/9",
+   "img": "slaytlar/M3/42g.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli sarkomlar ve diğerleri · 7/9",
    "step": [
     7,
     9
    ],
-   "notes": "[30:19–30:25]\nTanıyı SS18::SSX füzyonu koydurur. Kaynaklarda genellikle bifazik diye geçer; Neville'e göre monofazik tip daha sık."
+   "notes": "[25:25–25:31] ZAMAN KALIRSA; yoksa → ile atla.\nTanıyı SS18::SSX füzyonu koydurur. Kaynaklarda genellikle bifazik diye geçer; Neville'e göre monofazik tip daha sık."
   },
   {
-   "img": "slaytlar/M3/48h.jpg?v=4",
-   "title": "Kas kökenli sarkomlar ve diğerleri · 8/9",
+   "img": "slaytlar/M3/42h.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli sarkomlar ve diğerleri · 8/9",
    "step": [
     8,
     9
    ],
-   "notes": "[30:25–30:31]\nAlveoler yumuşak doku sarkomu nadir; çocukta baş-boyunda en sık orbitada ve dilde."
+   "notes": "[25:31–25:37] ZAMAN KALIRSA; yoksa → ile atla.\nAlveoler yumuşak doku sarkomu nadir; çocukta baş-boyunda en sık orbitada ve dilde."
   },
   {
-   "img": "slaytlar/M3/48i.jpg?v=4",
-   "title": "Kas kökenli sarkomlar ve diğerleri · 9/9",
+   "img": "slaytlar/M3/42i.jpg?v=4",
+   "title": "(Zaman kalırsa) Kas kökenli sarkomlar ve diğerleri · 9/9",
    "step": [
     9,
     9
    ],
-   "notes": "[30:31–30:36]\nHücrelerde PAS pozitif, diastaza dirençli kristaller; TFE3 pozitif."
+   "notes": "[25:37–25:42] ZAMAN KALIRSA; yoksa → ile atla.\nHücrelerde PAS pozitif, diastaza dirençli kristaller; TFE3 pozitif."
   },
   {
-   "img": "slaytlar/M3/49a.jpg?v=4",
+   "img": "slaytlar/M3/43a.jpg?v=4",
    "title": "Ağız yumuşak dokusuna metastaz · 1/2",
    "step": [
     1,
     2
    ],
-   "notes": "[30:36–30:43]\nSon olarak metastaz. Ağız yumuşak dokusuna gelen metastazların yarıdan fazlası diş etinde ve piyojenik granülom gibi görünebilir."
+   "notes": "[25:42–25:49]\nSon olarak metastaz. Ağız yumuşak dokusuna gelen metastazların yarıdan fazlası diş etinde ve piyojenik granülom gibi görünebilir."
   },
   {
-   "img": "slaytlar/M3/49b.jpg?v=4",
+   "img": "slaytlar/M3/43b.jpg?v=4",
    "title": "Ağız yumuşak dokusuna metastaz · 2/2",
    "step": [
     2,
     2
    ],
-   "notes": "[30:43–30:51]\nErkekte en sık akciğerden, kadında memeden gelir; hastaların dörtte birinde ağızdaki lezyon kanserin ilk bulgusu. Bu yüzden çıkardığınız her doku patolojiye gider."
+   "notes": "[25:49–25:57]\nErkekte en sık akciğerden, kadında memeden gelir; hastaların dörtte birinde ağızdaki lezyon kanserin ilk bulgusu. Bu yüzden çıkardığınız her doku patolojiye gider."
   },
   {
-   "img": "slaytlar/M3/50a.jpg?v=4",
+   "img": "slaytlar/M3/44a.jpg?v=4",
    "title": "Açılış vakası: biyopsi sonucu · 1/3",
    "step": [
     1,
     3
    ],
-   "notes": "[30:51–30:59]\nDersin başındaki hastamıza dönüyoruz: dil sırtında ağrısız, sarımsı nodül."
+   "notes": "[25:57–26:05]\nDersin başındaki hastamıza dönüyoruz: dil sırtında ağrısız, sarımsı nodül."
   },
   {
-   "img": "slaytlar/M3/50b.jpg?v=4",
+   "img": "slaytlar/M3/44b.jpg?v=4",
    "title": "Açılış vakası: biyopsi sonucu · 2/3",
    "step": [
     2,
     3
    ],
-   "notes": "[30:59–31:06]\nYüzeysel bir insizyonel biyopsi yapıldı."
+   "notes": "[26:05–26:12]\nYüzeysel bir insizyonel biyopsi yapıldı."
   },
   {
-   "img": "slaytlar/M3/50c.jpg?v=4",
+   "img": "slaytlar/M3/44c.jpg?v=4",
    "title": "Açılış vakası: biyopsi sonucu · 3/3",
    "step": [
     3,
     3
    ],
-   "notes": "[31:06–31:21]\nRapor: yüzeyde psödoepitelyomatöz hiperplazi, invaziv karsinom dışlanamadı. Epitel aşağı doğru dallar yapıyor ve karsinoma benziyor. Tahmininizi yenileyin; sıradaki slaytta ilk tahminle karşılaştıracağız."
+   "notes": "[26:12–26:27]\nRapor: yüzeyde psödoepitelyomatöz hiperplazi, invaziv karsinom dışlanamadı. Epitel aşağı doğru dallar yapıyor ve karsinoma benziyor. Tahmininizi yenileyin; sıradaki slaytta ilk tahminle karşılaştıracağız."
   },
   {
-   "img": "slaytlar/M3/51.jpg?v=4",
+   "img": "slaytlar/M3/45.jpg?v=4",
    "title": "Vakaya dönüş: şimdi ne diyorsun?",
    "q": "W6",
-   "notes": "[31:21–32:01]\nAynı soru, aynı şıklar. Dersin başındaki dağılımı hatırlayın. (İki sonucu yan yana göster.)\n\nCANLI (W6, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
+   "notes": "[26:27–27:07]\nAynı soru, aynı şıklar. Dersin başındaki dağılımı hatırlayın. (İki sonucu yan yana göster.)\n\nCANLI (W6, Anket): Bu slayta gelince soru telefonlarda kendiliğinden açılır. → oylamayı kapatıp sonuçları gösterir, → doğru cevabı ve açıklamayı açar, → sonraki slayt. Doğru: A. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
   },
   {
-   "img": "slaytlar/M3/52a.jpg?v=4",
+   "img": "slaytlar/M3/46a.jpg?v=4",
    "title": "Tanı: granüler hücreli tümör · 1/6",
    "step": [
     1,
     6
    ],
-   "notes": "[32:01–32:11]\nKanıtları sırayla koyalım. Yer: dil sırtı; granüler hücreli tümörün en sık yeri, ama ağız kanserinin olağan yeri değil."
+   "notes": "[27:07–27:17]\nKanıtları sırayla koyalım. Yer: dil sırtı; granüler hücreli tümörün en sık yeri, ama ağız kanserinin olağan yeri değil."
   },
   {
-   "img": "slaytlar/M3/52b.jpg?v=4",
+   "img": "slaytlar/M3/46b.jpg?v=4",
    "title": "Tanı: granüler hücreli tümör · 2/6",
    "step": [
     2,
     6
    ],
-   "notes": "[32:11–32:18]\nKlinik: ağrısız, sert, sarımsı nodül; orta yaşta kadın."
+   "notes": "[27:17–27:24]\nKlinik: ağrısız, sert, sarımsı nodül; orta yaşta kadın."
   },
   {
-   "img": "slaytlar/M3/52c.jpg?v=4",
+   "img": "slaytlar/M3/46c.jpg?v=4",
    "title": "Tanı: granüler hücreli tümör · 3/6",
    "step": [
     3,
     6
    ],
-   "notes": "[32:18–32:27]\nYüzeysel biyopsi epitelin aşağı uzanan dallarını gösterdi; psödoepitelyomatöz hiperplazi karsinoma çok benzer."
+   "notes": "[27:24–27:33]\nYüzeysel biyopsi epitelin aşağı uzanan dallarını gösterdi; psödoepitelyomatöz hiperplazi karsinoma çok benzer."
   },
   {
-   "img": "slaytlar/M3/52d.jpg?v=4",
+   "img": "slaytlar/M3/46d.jpg?v=4",
    "title": "Tanı: granüler hücreli tümör · 4/6",
    "step": [
     4,
     6
    ],
-   "notes": "[32:27–32:36]\nDerin biyopsi altındaki asıl tümörü gösterdi: iri, granüler sitoplazmalı hücreler, S100 ve PAS pozitif. Tanı granüler hücreli tümör."
+   "notes": "[27:33–27:42]\nDerin biyopsi altındaki asıl tümörü gösterdi: iri, granüler sitoplazmalı hücreler, S100 ve PAS pozitif. Tanı granüler hücreli tümör."
   },
   {
-   "img": "slaytlar/M3/52e.jpg?v=4",
+   "img": "slaytlar/M3/46e.jpg?v=4",
    "title": "Tanı: granüler hücreli tümör · 5/6",
    "step": [
     5,
     6
    ],
-   "notes": "[32:36–32:42]\nTedavi konservatif eksizyon; nüks nadir."
+   "notes": "[27:42–27:48]\nTedavi konservatif eksizyon; nüks nadir."
   },
   {
-   "img": "slaytlar/M3/52f.jpg?v=4",
+   "img": "slaytlar/M3/46f.jpg?v=4",
    "title": "Tanı: granüler hücreli tümör · 6/6",
    "step": [
     6,
     6
    ],
-   "notes": "[32:42–33:01]\nPatoloğun notu: Neville bu görüntü yüzünden karsinom tanısı konup gereksiz kanser ameliyatı yapılan hastalardan söz ediyor. Dil sırtındaki bir nodülde biyopsiyi derin alın ve istek formuna yeri ve kliniği yazın."
+   "notes": "[27:48–28:07]\nPatoloğun notu: Neville bu görüntü yüzünden karsinom tanısı konup gereksiz kanser ameliyatı yapılan hastalardan söz ediyor. Dil sırtındaki bir nodülde biyopsiyi derin alın ve istek formuna yeri ve kliniği yazın."
   },
   {
-   "img": "slaytlar/M3/53.jpg?v=4",
+   "img": "slaytlar/M3/47.jpg?v=4",
    "title": "(Zaman kalırsa) Eski ad, yeni ad",
-   "notes": "[33:01–33:41] ZAMAN KALIRSA; yoksa → ile atla.\nZaman kalırsa; yoksa atlayın. Adı değişen tümörler; sınavda iki adı da görebilirsiniz."
+   "notes": "[28:07–28:47] ZAMAN KALIRSA; yoksa → ile atla.\nZaman kalırsa; yoksa atlayın. Adı değişen tümörler; sınavda iki adı da görebilirsiniz."
   },
   {
-   "img": "slaytlar/M3/54.jpg?v=4",
+   "img": "slaytlar/M3/48.jpg?v=4",
    "title": "Çıkış bileti",
    "q": "W7",
-   "notes": "[33:41–34:21]\nSon kelime bulutu. Hangi konu kafanızı karıştırdı? En büyük çıkan kelimeyle hemen sonraki derse, tükürük bezlerine başlayacağım.\n\nCANLI (W7, Kelime bulutu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Bulut canlı akar. → kapatır, → sonraki slayt. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
+   "notes": "[28:47–29:27]\nSon kelime bulutu. Hangi konu kafanızı karıştırdı? En büyük çıkan kelimeyle hemen sonraki derse, tükürük bezlerine başlayacağım.\n\nCANLI (W7, Kelime bulutu): Bu slayta gelince soru telefonlarda kendiliğinden açılır. Bulut canlı akar. → kapatır, → sonraki slayt. T: 45 sn (perdede T düğmesi bu soruda 45 sn sayar)."
   },
   {
    "board": true,
    "title": "Liderlik tablosu",
-   "notes": "[34:21–34:46]\nLiderlik tablosu. İlk üçü alkışlayalım. Eşit puanda hızlı olan önde."
+   "notes": "[29:27–29:52]\nLiderlik tablosu. İlk üçü alkışlayalım. Eşit puanda hızlı olan önde."
   },
   {
-   "img": "slaytlar/M3/56.jpg?v=4",
+   "img": "slaytlar/M3/50.jpg?v=4",
    "title": "Kaynaklar ve evde tekrar",
-   "notes": "[34:46–34:56]\nKaynaklar burada. Evde tekrar için quiz: Neville'in örnek sınav soruları Türkçe, cevap açıklamalı; isteyen karekodu okutup çözsün. İlk üçü gelecek derste burada anarım. On dakika ara; sonra tükürük bezleri. Telefonlarınızı kapatmayın: aynı adla 'Sıradaki derse geç' düğmesi çıkacak."
+   "notes": "[29:52–30:02]\nKaynaklar burada. Evde tekrar için quiz: Neville'in örnek sınav soruları Türkçe, cevap açıklamalı; isteyen karekodu okutup çözsün. İlk üçü gelecek derste burada anarım. On dakika ara; sonra tükürük bezleri. Telefonlarınızı kapatmayın: aynı adla 'Sıradaki derse geç' düğmesi çıkacak."
   }
  ],
- "duration": "34:56",
+ "duration": "30:02",
  "cta": "24 Kasım'a kadar isteyen Neville'in örnek sorularını Türkçe quiz olarak çözsün: olgunak.github.io/lam-basinda/quiz. İlk üçü gelecek derste burada anarım.",
  "frame": "Üç grup: neoplastik olmayan kitleler, iyi huylu tümörler, sarkomlar",
  "quiz": "../quiz/#yd"

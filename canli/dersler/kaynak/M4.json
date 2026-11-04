@@ -87,7 +87,7 @@
   {
    "id": "A5",
    "type": "MCQ",
-   "label": "Ana madde 5: bez ve malignite",
+   "label": "Ana madde 5: bez ve kötü huylu olasılığı",
    "q": "Hangi bezden gelen bir tümörün kötü huylu olma olasılığı en yüksektir?",
    "scored": true,
    "opts": [
@@ -347,7 +347,7 @@
     {
      "ton": "mor",
      "maddeler": [
-      "Bez küçüldükçe malignite artar",
+      "Bez küçüldükçe kötü huylu olasılığı artar",
       "Pleomorfik adenom: enükleasyon yok",
       "Warthin: parotis, sigara, iki taraflı",
       "Adenoid kistik karsinom: sinir boyunca"
@@ -370,7 +370,6 @@
   {
    "tip": "adim",
    "baslik": "Mukosel",
-   "etiket": "Ana madde 1/8",
    "yazi": 40,
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
@@ -402,20 +401,26 @@
       }
      ]
     }
+   ],
+   "ilerleme": [
+    1,
+    8
    ]
   },
   {
    "tip": "soru",
-   "baslik": "Ana madde 1: soru",
+   "baslik": "Soru · Mukosel",
    "soru": "A1",
-   "tema": "koyu",
    "sure": 30,
-   "not": "(Sonuç.) Doğru C: mukosel; bezlerle birlikte eksizyon."
+   "not": "(Sonuç.) Doğru C: mukosel; bezlerle birlikte eksizyon.",
+   "ilerleme": [
+    1,
+    8
+   ]
   },
   {
    "tip": "adim",
    "baslik": "Taş ve sialadenit",
-   "etiket": "Ana madde 2/8",
    "yazi": 40,
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
@@ -454,20 +459,26 @@
       }
      ]
     }
+   ],
+   "ilerleme": [
+    2,
+    8
    ]
   },
   {
    "tip": "soru",
-   "baslik": "Ana madde 2: soru",
+   "baslik": "Soru · Taş ve sialadenit",
    "soru": "A2",
-   "tema": "koyu",
    "sure": 30,
-   "not": "(Sonuç.) Doğru A: submandibuler taş; okluzal film."
+   "not": "(Sonuç.) Doğru A: submandibuler taş; okluzal film.",
+   "ilerleme": [
+    2,
+    8
+   ]
   },
   {
    "tip": "adim",
    "baslik": "Sjögren sendromu",
-   "etiket": "Ana madde 3/8",
    "yazi": 40,
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
@@ -499,20 +510,26 @@
      "not": "Akılda kalsın: kandida ve kök çürüğü sık. Lenfoma riski 15 ila 20 kat; kalıcı parotis büyümesi uyarı işareti.",
      "ust": "Akılda kalsın"
     }
+   ],
+   "ilerleme": [
+    3,
+    8
    ]
   },
   {
    "tip": "soru",
-   "baslik": "Ana madde 3: soru",
+   "baslik": "Soru · Sjögren",
    "soru": "A3",
-   "tema": "koyu",
    "sure": 30,
-   "not": "(Sonuç.) Doğru D: alt dudaktan küçük tükürük bezi biyopsisi."
+   "not": "(Sonuç.) Doğru D: alt dudaktan küçük tükürük bezi biyopsisi.",
+   "ilerleme": [
+    3,
+    8
+   ]
   },
   {
    "tip": "adim",
    "baslik": "Nekrotizan sialometaplazi: kanser sanılır",
-   "etiket": "Ana madde 4/8",
    "yazi": 40,
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
@@ -544,20 +561,26 @@
      "not": "Akılda kalsın: kendiliğinden beş altı haftada iyileşir. İstek formuna anestezi iğnesini, protezi, ani başlangıcı yazın; gereksiz kanser ameliyatını bu önler.",
      "ust": "Akılda kalsın"
     }
+   ],
+   "ilerleme": [
+    4,
+    8
    ]
   },
   {
    "tip": "soru",
-   "baslik": "Ana madde 4: soru",
+   "baslik": "Soru · Nekrotizan sialometaplazi",
    "soru": "A4",
-   "tema": "koyu",
    "sure": 30,
-   "not": "(Sonuç.) Doğru B: nekrotizan sialometaplazi; istek formu önemli."
+   "not": "(Sonuç.) Doğru B: nekrotizan sialometaplazi; istek formu önemli.",
+   "ilerleme": [
+    4,
+    8
+   ]
   },
   {
    "tip": "adim",
-   "baslik": "Bez küçüldükçe malignite artar",
-   "etiket": "Ana madde 5/8",
+   "baslik": "Bez küçüldükçe kötü huylu olasılığı artar",
    "yazi": 40,
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
@@ -685,20 +708,26 @@
       }
      ]
     }
+   ],
+   "ilerleme": [
+    5,
+    8
    ]
   },
   {
    "tip": "soru",
-   "baslik": "Ana madde 5: soru",
+   "baslik": "Soru · Bez ve kötü huylu olasılığı",
    "soru": "A5",
-   "tema": "koyu",
    "sure": 30,
-   "not": "(Sonuç.) Doğru E: sublingual bez."
+   "not": "(Sonuç.) Doğru E: sublingual bez.",
+   "ilerleme": [
+    5,
+    8
+   ]
   },
   {
    "tip": "adim",
    "baslik": "Pleomorfik adenom",
-   "etiket": "Ana madde 6/8",
    "yazi": 40,
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
@@ -730,20 +759,26 @@
      "not": "Akılda kalsın: kapsül eksik olabilir, enükleasyon yaparsanız nükseder; sağlam sınırla çıkarılır. Yıllarca kalırsa kötü huylu tümöre dönebilir.",
      "ust": "Akılda kalsın"
     }
+   ],
+   "ilerleme": [
+    6,
+    8
    ]
   },
   {
    "tip": "soru",
-   "baslik": "Ana madde 6: soru",
+   "baslik": "Soru · Pleomorfik adenom",
    "soru": "A6",
-   "tema": "koyu",
    "sure": 30,
-   "not": "(Sonuç.) Doğru C: kapsül eksik olabilir; nüks."
+   "not": "(Sonuç.) Doğru C: kapsül eksik olabilir; nüks.",
+   "ilerleme": [
+    6,
+    8
+   ]
   },
   {
    "tip": "adim",
    "baslik": "Warthin tümörü",
-   "etiket": "Ana madde 7/8",
    "yazi": 40,
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
@@ -775,20 +810,26 @@
       }
      ]
     }
+   ],
+   "ilerleme": [
+    7,
+    8
    ]
   },
   {
    "tip": "soru",
-   "baslik": "Ana madde 7: soru",
+   "baslik": "Soru · Warthin tümörü",
    "soru": "A7",
-   "tema": "koyu",
    "sure": 30,
-   "not": "(Sonuç.) Doğru B: Warthin tümörü."
+   "not": "(Sonuç.) Doğru B: Warthin tümörü.",
+   "ilerleme": [
+    7,
+    8
+   ]
   },
   {
    "tip": "adim",
    "baslik": "Adenoid kistik karsinom: sinir boyunca yayılır",
-   "etiket": "Ana madde 8/8",
    "yazi": 40,
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
@@ -826,24 +867,72 @@
       }
      ]
     }
+   ],
+   "ilerleme": [
+    8,
+    8
    ]
   },
   {
    "tip": "soru",
-   "baslik": "Ana madde 8: soru",
+   "baslik": "Soru · Adenoid kistik karsinom",
    "soru": "A8",
-   "tema": "koyu",
    "sure": 30,
-   "not": "(Sonuç.) Doğru D: perinöral invazyon."
+   "not": "(Sonuç.) Doğru D: perinöral invazyon.",
+   "ilerleme": [
+    8,
+    8
+   ]
+  },
+  {
+   "tip": "ozet",
+   "baslik": "8 maddede bugünkü ders",
+   "maddeler": [
+    {
+     "ust": "Mukosel",
+     "metin": "Besleyen küçük bezlerle birlikte çıkar; yoksa nükseder"
+    },
+    {
+     "ust": "Taş ve sialadenit",
+     "metin": "Yemekte ağrı ve şişlik: submandibuler taş, okluzal film; akış azalınca *S. aureus* ile süpüratif sialadenit"
+    },
+    {
+     "ust": "Sjögren",
+     "metin": "Kandida ve kök çürüğü sık; lenfoma riski 15–20 kat: kalıcı parotis büyümesi uyarıdır"
+    },
+    {
+     "ust": "Nekrotizan sialometaplazi",
+     "metin": "Kendiliğinden 5–6 haftada iyileşir; istek formuna anestezi, protez, ani başlangıcı yaz"
+    },
+    {
+     "ust": "Bez ve kötü huylu olasılığı",
+     "metin": "Sublingualde %70–97: bez küçüldükçe kötü huylu olasılığı artar; damakta kitleye biyopsi"
+    },
+    {
+     "ust": "Pleomorfik adenom",
+     "metin": "Kapsül eksik olabilir: enükleasyon değil, sınırla çıkar; uzun kalırsa kötü huyluya döner"
+    },
+    {
+     "ust": "Warthin tümörü",
+     "metin": "İki taraflı ve çok sayıda olabilir: iki sıra onkositik epitel + lenfoid stroma"
+    },
+    {
+     "ust": "Adenoid kistik karsinom",
+     "metin": "Akciğere geç metastaz: 5 yılda iyi görünür, 20 yılda kötü; ömür boyu takip"
+    }
+   ],
+   "sure": 40,
+   "not": "Toparlayalım: sekiz madde, her birinin akılda kalacak cümlesi. Fotoğrafını çekmek isteyen çeksin; PowerPoint'te de var. Şimdi karar sizin: devam mı, tamam mı?"
   },
   {
    "tip": "soru",
    "baslik": "Tamam mı, devam mı?",
    "soru": "K1",
-   "tema": "koyu",
    "sure": 40,
    "aciklama": "Tamam çıkarsa çıkış biletine geçiyoruz; devam çıkarsa açılış vakasıyla ayrıntılara giriyoruz.",
-   "not": "Ana maddeler bitti. Sonucu gösteriyorum. TAMAM çıkarsa kumandada Slaytlar menüsünden 'Çıkış bileti'ne atla (sonra liderlik ve kaynaklar). DEVAM çıkarsa → ile açılış vakasından sürdür; ayrıntılı bölüm bu maddeleri derinleştirir."
+   "not": "Ana maddeler bitti. Sonucu gösteriyorum. TAMAM çıkarsa kumandada Slaytlar menüsünden 'Çıkış bileti'ne atla (sonra liderlik ve kaynaklar). DEVAM çıkarsa → ile açılış vakasından sürdür; ayrıntılı bölüm bu maddeleri derinleştirir.",
+   "alan": true,
+   "yazi": 84
   },
   {
    "tip": "adim",
@@ -889,7 +978,6 @@
     }
    ],
    "soruAc": "W1",
-   "tema": "koyu",
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
@@ -904,7 +992,6 @@
     }
    ],
    "devam": true,
-   "tema": "koyu",
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
@@ -1065,7 +1152,8 @@
    "serit": [
     1
    ],
-   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları"
+   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları",
+   "opsiyonel": true
   },
   {
    "tip": "adim",
@@ -1139,111 +1227,6 @@
     1
    ],
    "dus": true,
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
-  },
-  {
-   "tip": "adim",
-   "baslik": "Tükürük bezi taşı (sialolitiazis)",
-   "maddeler": [
-    {
-     "metin": "En sık submandibuler bezde; uzun, yukarı kıvrılan Wharton kanalı",
-     "sure": 8,
-     "not": "Taşlar en sık submandibuler bezde. Nedeni anatomi: Wharton kanalı uzun ve yukarı doğru kıvrılıyor, salgı da daha koyu.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-13.jpg",
-       "yazi": "Wharton kanalı ağzında taş"
-      }
-     ]
-    },
-    {
-     "metin": "Bir çekirdek çevresinde kalsiyum katman katman çöker",
-     "sure": 7,
-     "not": "Hücre artığı, bakteri ya da koyu mukustan oluşan bir çekirdeğin çevresinde kalsiyum katman katman çöker.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-17.jpg",
-       "yazi": "Kanal içinde katmanlı taş"
-      }
-     ]
-    },
-    {
-     "metin": "Yemek sırasında artan ağrı ve bezde şişlik",
-     "sure": 6,
-     "not": "Hasta yemek sırasında ağrıyan ve şişen bir bezle gelir."
-    },
-    {
-     "metin": "Okluzal film en iyi gösterir; panoramikte kemik içi lezyon sanılabilir",
-     "sure": 8,
-     "not": "Okluzal film en iyi gösterir. Panoramikte kemiğin üstüne düşen taş kemik içi lezyon sanılabilir; her taş radyoopak da değildir.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-14.jpg",
-       "yazi": "Mandibula açısında radyoopak kitle"
-      }
-     ]
-    },
-    {
-     "metin": "Mikroskop: kanalda genişleme, çevresinde iltihap, skuamöz metaplazi",
-     "sure": 7,
-     "not": "Mikroskopta kanal genişler, çevresinde iltihap ve fibrozis olur; kanal epitelinde en sık skuamöz metaplazi görülür."
-    }
-   ],
-   "serit": [
-    1
-   ],
-   "dus": true,
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
-  },
-  {
-   "tip": "adim",
-   "baslik": "Sialadenit: akut ve kronik",
-   "maddeler": [
-    {
-     "metin": "Paramiksovirüs; önce bir parotis, birkaç gün sonra diğeri",
-     "sure": 8,
-     "not": "Akut sialadenitin en sık nedeni viral: kabakulak, paramiksovirüs. Şişlik önce bir parotiste başlar, birkaç gün sonra diğerinde de görülür.",
-     "ust": "Kabakulak",
-     "gorsel": [
-      {
-       "foto": "img/M4/l15-26.jpg",
-       "yazi": "Kabakulak: parotis şişliği"
-      }
-     ]
-    },
-    {
-     "metin": "Akış azalınca: sıvı kaybı, ameliyat sonrası, kanal tıkanması",
-     "sure": 8,
-     "not": "Akut bakteriyel sialadenit tükürük akışı azalınca olur: sıvı kaybı, ameliyat sonrası, kanal tıkanması. Bezi masaj yapınca Stensen kanalından irin gelir.",
-     "ust": "Akut süpüratif sialadenit",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-19.jpg",
-       "yazi": "Stensen kanalından irin"
-      }
-     ]
-    },
-    {
-     "metin": "En sık etken *S. aureus*; tedavi antibiyotik ve sıvı",
-     "sure": 6,
-     "not": "En sık etken Staphylococcus aureus; tedavi antibiyotik, sıvı ve gerekirse drenaj."
-    },
-    {
-     "metin": "Yavaş tıkanma ve taş: fibrozis, parankim atrofisi",
-     "sure": 8,
-     "not": "Kronik sialadenit yavaş gelişen tıkanma ve taşla olur: bezde fibrozis ve parankim atrofisi gelişir. İleri evrede bez çıkarılır.",
-     "ust": "Kronik sialadenit",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-20.jpg",
-       "yazi": "Sialografi: daralmanın gerisinde genişleme"
-      }
-     ]
-    }
-   ],
-   "serit": [
-    1
-   ],
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
@@ -1435,156 +1418,14 @@
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
-   "tip": "adim",
-   "baslik": "Sjögren sendromu",
-   "maddeler": [
-    {
-     "metin": "Sistemik otoimmün hastalık: tükürük ve gözyaşı bezleri",
-     "sure": 7,
-     "not": "Sjögren sendromu sistemik bir otoimmün hastalık; öncelikle tükürük ve gözyaşı bezlerini tutar: ağız ve göz kuruluğu.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-25.jpg",
-       "yazi": "Kuru, fissürlü dil"
-      }
-     ]
-    },
-    {
-     "metin": "Primer: tek başına; sekonder: romatoid artrit (%15), lupus (%30)",
-     "sure": 8,
-     "not": "Primer Sjögren tek başınadır; sekonder Sjögren başka bir otoimmün hastalıkla birliktedir: romatoid artritlilerin yüzde 15'i, lupuslu hastaların yüzde 30'u."
-    },
-    {
-     "metin": "Kadın:erkek 9:1; orta yaş",
-     "sure": 6,
-     "not": "Hastaların onda dokuzu kadın; orta yaşta."
-    },
-    {
-     "metin": "Bulgular: kuruluk, kandida, boyun çürükleri; hastaların ⅓–½'inde bez büyümesi",
-     "sure": 8,
-     "not": "Ağızda kuruluk, kandida, boyun çürükleri; hastaların üçte biri ile yarısında majör bez büyümesi. Kaynaklarda tek taraflı diye geçer; Neville'e göre büyüme çoğu zaman iki taraflı."
-    },
-    {
-     "metin": "Sialografi: 'meyveli dalsız ağaç'",
-     "sure": 6,
-     "not": "Sialografide kanal dalları kaybolur, uçlarda noktasal genişlemeler kalır: meyveli dalsız ağaç.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-27.jpg",
-       "yazi": "Noktasal sialektazi"
-      }
-     ]
-    },
-    {
-     "metin": "Dudak biyopsisi: ≥50 lenfositlik odak / 4 mm² = odak skoru ≥1",
-     "sure": 9,
-     "not": "Diş hekiminin tanı aracı: normal görünen alt dudaktan en az beş küçük bez alınır. Dört milimetrekarede en az 50 lenfositlik bir odak, odak skoru 1 demek.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-29.jpg",
-       "yazi": "Dudak bezlerinde lenfosit odakları"
-      }
-     ]
-    },
-    {
-     "metin": "ACR/EULAR 2016: biyopsi 3, anti-SSA 3, göz ve tükürük testleri 1'er; toplam ≥4",
-     "sure": 9,
-     "not": "Sınıflama ACR/EULAR 2016'ya göre: biyopsi 3 puan, anti-SSA 3 puan, göz ve tükürük testleri birer puan. Toplam dört ve üstü primer Sjögren."
-    },
-    {
-     "metin": "Lenfoma riski %5–10 (15–20 kat); kalıcı parotis büyümesi uyarıdır",
-     "sure": 9,
-     "not": "Yaşam boyu lenfoma riski yüzde 5 ila 10, genel nüfusun 15 ila 20 katı; çoğu MALT. Parotis sürekli büyükse beklemeyin. Sırada telefon: puanı siz hesaplayacaksınız."
-    }
-   ],
-   "serit": [
-    1
-   ],
-   "dus": true,
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
-  },
-  {
    "tip": "soru",
    "baslik": "Sjögren: puanla",
    "soru": "W2",
    "sure": 45,
    "not": "Hesaplayın. (Sonuç.) Doğru A: biyopsi 3, Schirmer 1, toplam 4. Anti-SSA negatif olabilir; biyopsi bu yüzden değerli. Ama önce dışlama ölçütlerine bakın: IgG4 ilişkili hastalık, radyoterapi, hepatit C, AIDS, sarkoidoz.",
-   "tema": "koyu",
    "serit": [
     1
    ]
-  },
-  {
-   "tip": "adim",
-   "baslik": "Nekrotizan sialometaplazi",
-   "maddeler": [
-    {
-     "metin": "Küçük bezlerin enfarktı; klinikte ve mikroskopta kansere benzer",
-     "sure": 8,
-     "not": "Nekrotizan sialometaplazi küçük tükürük bezlerinin enfarktı: kan akımı kesilir, bez ölür. Klinikte de mikroskopta da kansere benzer.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-31.jpg",
-       "yazi": "Erken: arka damakta şişlik"
-      }
-     ]
-    },
-    {
-     "metin": "%75'ten fazlası arka sert damakta; çoğu tek taraflı",
-     "sure": 6,
-     "not": "Yüzde 75'ten fazlası arka sert damakta; çoğu tek taraflı."
-    },
-    {
-     "metin": "Neden: travma, anestezi iğnesi, protez, yakın cerrahi, sigara",
-     "sure": 7,
-     "not": "Neden olanlar: travma, anestezi iğnesi, uyumsuz protez, yakın bir ameliyat, sigara."
-    },
-    {
-     "metin": "Önce şişlik, 2–3 hafta içinde krater gibi derin ülser",
-     "sure": 7,
-     "not": "Önce şişlik olur, iki üç hafta içinde krater gibi derin bir ülsere döner. Hasta 'damağımın bir parçası düştü' diye gelir.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-32.jpg",
-       "yazi": "2–3 hafta sonra: krater ülser"
-      }
-     ]
-    },
-    {
-     "metin": "Mikroskop: lobül yapısı korunur; nekroz + kanallarda skuamöz metaplazi",
-     "sure": 8,
-     "not": "Mikroskopta lobül yapısı korunur; asinuslarda nekroz, kanallarda skuamöz metaplazi ve üstteki epitelde psödoepitelyomatöz hiperplazi.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-33.jpg",
-       "yazi": "Nekroz ve duktal skuamöz metaplazi"
-      }
-     ]
-    },
-    {
-     "metin": "Skuamöz ya da mukoepidermoid karsinom sanılabilir: istek formuna enjeksiyonu, protezi, ani başlangıcı yaz",
-     "sure": 14,
-     "not": "Patoloğun notu: bu tablo skuamöz hücreli karsinom ya da mukoepidermoid karsinom sanılabilir. İstek formunu boş göndermeyin: enjeksiyon, protez, ani başlangıç. Lezyon birkaç haftada kendiliğinden iyileşir; iyileşmezse yeniden biyopsi.",
-     "ust": "Patoloğun notu",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-33.jpg",
-       "yazi": "Nekroz ve duktal skuamöz metaplazi"
-      },
-      {
-       "not": {
-        "baslik": "Formu boş gönderme",
-        "metin": "'İki hafta önce bu bölgeye anestezi yapıldı', 'yeni protez', 'birden başladı': patoloğun karşısındaki en değerli bilgi."
-       }
-      }
-     ]
-    }
-   ],
-   "serit": [
-    1
-   ],
-   "dus": true,
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
    "tip": "adim",
@@ -1628,23 +1469,22 @@
    "serit": [
     1
    ],
-   "kaynak": "Fakülte ders notları"
+   "kaynak": "Fakülte ders notları",
+   "opsiyonel": true
   },
   {
    "tip": "soru",
    "baslik": "DUS Molası 1/2",
    "soru": "W3",
    "sure": 40,
-   "not": "Neville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Üst dudak. Bu cümleyi birazdan tümörlerde kullanacağız.",
-   "tema": "koyu"
+   "not": "Neville'in kitap sonundaki örnek sınav sorularından. 30 saniye. (Sonuç.) Üst dudak. Bu cümleyi birazdan tümörlerde kullanacağız."
   },
   {
    "tip": "soru",
    "baslik": "DUS Molası 2/2",
    "soru": "W4",
    "sure": 35,
-   "not": "(Sonuç.) Lenfoma; çoğu MALT. Bu ara tümör dışı bloğu kapatıyor; sırada tümörler.",
-   "tema": "koyu"
+   "not": "(Sonuç.) Lenfoma; çoğu MALT. Bu ara tümör dışı bloğu kapatıyor; sırada tümörler."
   },
   {
    "tip": "liderlik",
@@ -1652,320 +1492,6 @@
    "sure": 15,
    "not": "On saniye: ilk beş. (→ ile devam.)",
    "ilk": 5
-  },
-  {
-   "tip": "adim",
-   "baslik": "Tükürük bezi tümörleri: genel",
-   "maddeler": [
-    {
-     "metin": "Baş-boyun tümörlerinin %2–6'sı; en bilinen etken radyasyon",
-     "sure": 7,
-     "not": "Tükürük bezi tümörleri baş-boyun tümörlerinin yüzde 2 ila 6'sı. Bilinen en önemli etken radyasyon.",
-     "gorsel": [
-      {
-       "rakam": "%2–6",
-       "aciklama": "Baş-boyun tümörleri içinde"
-      }
-     ]
-    },
-    {
-     "metin": "Çoğu parotiste; sonra submandibuler bez",
-     "sure": 6,
-     "not": "Çoğu parotiste, sonra submandibuler bezde."
-    },
-    {
-     "metin": "Çoğu iyi huylu; her bezde en sık tümör pleomorfik adenom",
-     "sure": 7,
-     "not": "Çoğu iyi huylu ve her bezde en sık tümör pleomorfik adenom."
-    },
-    {
-     "metin": "Parotiste malign oranı %15–32",
-     "sure": 7,
-     "not": "Kötü huylu olma olasılığı beze göre değişir. Parotiste yüzde 15 ila 32.",
-     "gorsel": [
-      {
-       "cubuklar": [
-        {
-         "ad": "Parotis",
-         "alt": 15,
-         "ust": 32,
-         "vurgu": false,
-         "not": "tümörlerin %61–80'i"
-        },
-        {
-         "ad": "Submandibuler",
-         "alt": 26,
-         "ust": 45,
-         "vurgu": false,
-         "not": "tümörlerin ~%10'u"
-        },
-        {
-         "ad": "Küçük bezler",
-         "alt": 38,
-         "ust": 54,
-         "vurgu": true,
-         "not": "en sık damak"
-        },
-        {
-         "ad": "Sublingual",
-         "alt": 70,
-         "ust": 97,
-         "vurgu": true,
-         "not": "nadir"
-        }
-       ],
-       "baslik": "Tümörün kötü huylu olma olasılığı",
-       "kadar": 0
-      }
-     ]
-    },
-    {
-     "metin": "Submandibulerde %26–45",
-     "sure": 6,
-     "not": "Submandibuler bezde yüzde 26 ila 45; en sık malign tümörü adenoid kistik karsinom.",
-     "gorsel": [
-      {
-       "cubuklar": [
-        {
-         "ad": "Parotis",
-         "alt": 15,
-         "ust": 32,
-         "vurgu": false,
-         "not": "tümörlerin %61–80'i"
-        },
-        {
-         "ad": "Submandibuler",
-         "alt": 26,
-         "ust": 45,
-         "vurgu": false,
-         "not": "tümörlerin ~%10'u"
-        },
-        {
-         "ad": "Küçük bezler",
-         "alt": 38,
-         "ust": 54,
-         "vurgu": true,
-         "not": "en sık damak"
-        },
-        {
-         "ad": "Sublingual",
-         "alt": 70,
-         "ust": 97,
-         "vurgu": true,
-         "not": "nadir"
-        }
-       ],
-       "baslik": "Tümörün kötü huylu olma olasılığı",
-       "kadar": 1
-      }
-     ]
-    },
-    {
-     "metin": "Küçük bezlerde %38–54; en sık yer damak",
-     "sure": 7,
-     "not": "Küçük bezlerde yaklaşık yarısı; en sık yer damak.",
-     "gorsel": [
-      {
-       "cubuklar": [
-        {
-         "ad": "Parotis",
-         "alt": 15,
-         "ust": 32,
-         "vurgu": false,
-         "not": "tümörlerin %61–80'i"
-        },
-        {
-         "ad": "Submandibuler",
-         "alt": 26,
-         "ust": 45,
-         "vurgu": false,
-         "not": "tümörlerin ~%10'u"
-        },
-        {
-         "ad": "Küçük bezler",
-         "alt": 38,
-         "ust": 54,
-         "vurgu": true,
-         "not": "en sık damak"
-        },
-        {
-         "ad": "Sublingual",
-         "alt": 70,
-         "ust": 97,
-         "vurgu": true,
-         "not": "nadir"
-        }
-       ],
-       "baslik": "Tümörün kötü huylu olma olasılığı",
-       "kadar": 2
-      }
-     ]
-    },
-    {
-     "metin": "Sublingualde %70–97: bez küçüldükçe malign olasılığı artar",
-     "sure": 9,
-     "not": "Sublingual bezde tümör nadir ama gördüğünüzde neredeyse hep malign. Kural: bez küçüldükçe malign olasılığı artar. Rakamlar Neville'in beş büyük serisinden.",
-     "gorsel": [
-      {
-       "cubuklar": [
-        {
-         "ad": "Parotis",
-         "alt": 15,
-         "ust": 32,
-         "vurgu": false,
-         "not": "tümörlerin %61–80'i"
-        },
-        {
-         "ad": "Submandibuler",
-         "alt": 26,
-         "ust": 45,
-         "vurgu": false,
-         "not": "tümörlerin ~%10'u"
-        },
-        {
-         "ad": "Küçük bezler",
-         "alt": 38,
-         "ust": 54,
-         "vurgu": true,
-         "not": "en sık damak"
-        },
-        {
-         "ad": "Sublingual",
-         "alt": 70,
-         "ust": 97,
-         "vurgu": true,
-         "not": "nadir"
-        }
-       ],
-       "baslik": "Tümörün kötü huylu olma olasılığı",
-       "kadar": 3
-      }
-     ]
-    }
-   ],
-   "serit": [
-    2
-   ],
-   "dus": true
-  },
-  {
-   "tip": "adim",
-   "baslik": "Pleomorfik adenom",
-   "maddeler": [
-    {
-     "metin": "En sık tükürük bezi tümörü; çoğu parotiste",
-     "sure": 7,
-     "not": "Pleomorfik adenom, eski adıyla benign miks tümör: en sık tükürük bezi tümörü; çoğu parotiste.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-34.jpg",
-       "yazi": "Kulak altında küçük nodül"
-      }
-     ]
-    },
-    {
-     "metin": "Ortalama 45 yaş; kadında biraz sık",
-     "sure": 5,
-     "not": "Ortalama 45 yaş; kadında biraz daha sık."
-    },
-    {
-     "metin": "Yavaş büyüyen, ağrısız, sert, hareketli kitle",
-     "sure": 7,
-     "not": "Yavaş büyüyen, ağrısız, sert, hareketli bir kitle; ağızda en sık damakta, orta hattın yanında.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-38.jpg",
-       "yazi": "Damakta, orta hattın yanında"
-      }
-     ]
-    },
-    {
-     "metin": "Makroskopi: iyi sınırlı, lobüllü, parlak krem-beyaz",
-     "sure": 6,
-     "not": "Makroskopide iyi sınırlı, lobüllü, parlak krem-beyaz bir kitle.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-40.jpg",
-       "yazi": "Kapsüllü, sınırlı kitle"
-      }
-     ]
-    },
-    {
-     "metin": "Üç bileşen: epitel (kanal), miyoepitel, miksoid-kondroid stroma",
-     "sure": 8,
-     "not": "Mikroskopta üç bileşen: kanal yapan epitel, dıştaki miyoepitel hücreleri ve miyoepitelin yaptığı miksoid ya da kıkırdak benzeri stroma. Adındaki pleomorfizm hücrelerin değil, yapının.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-43.jpg",
-       "yazi": "Kondroid madde ve epitel"
-      }
-     ]
-    },
-    {
-     "metin": "Kapsül eksik olabilir: enükleasyon yapma, yüzeyel parotidektomi",
-     "sure": 8,
-     "not": "Kapsül eksik olabilir; tümör kapsülün dışına uzanır. Bu yüzden enükleasyon yapılmaz, tümör yatağına ekilir ve nükseder. Parotiste yüzeyel parotidektomi."
-    },
-    {
-     "metin": "Uzun süre kalırsa malign dönüşüm: %3–4'e kadar; PLAG1/HMGA2",
-     "sure": 7,
-     "not": "Uzun süre bırakılırsa yüzde 3 ila 4'üne kadar malign dönüşür ve risk süreyle artar. Gen değişikliği PLAG1 ya da HMGA2."
-    }
-   ],
-   "serit": [
-    2
-   ],
-   "dus": true,
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
-  },
-  {
-   "tip": "adim",
-   "baslik": "Warthin tümörü",
-   "maddeler": [
-    {
-     "metin": "İkinci en sık iyi huylu tümör; neredeyse yalnız parotis",
-     "sure": 7,
-     "not": "Warthin tümörü ikinci en sık iyi huylu tümör; neredeyse yalnız parotiste, kuyruk bölümünde.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-47.jpg",
-       "yazi": "Parotis kuyruğunda kitle",
-       "konum": "50% 30%"
-      }
-     ]
-    },
-    {
-     "metin": "Sigara içende 8 kat risk; 6.–7. dekat",
-     "sure": 7,
-     "not": "Sigarayla en güçlü ilişkili tükürük bezi tümörü: risk sekiz kat. Çoğu 60'lı ve 70'li yaşlarda."
-    },
-    {
-     "metin": "İki taraflı ve çok sayıda olma olasılığı en yüksek tümör (%5–17)",
-     "sure": 7,
-     "not": "İki taraflı ve çok odaklı olma olasılığı en yüksek tükürük bezi tümörü; yüzde 5 ila 17'si iki taraflı."
-    },
-    {
-     "metin": "Eski kaynaklar erkekte sık der; Neville: kadınlar sigara içtikçe oran eşitlendi",
-     "sure": 7,
-     "not": "Patoloji kaynaklarında erkekte sık diye geçer; Neville'e göre bu eskide kaldı, kadınlar sigara içtikçe oran eşitlendi."
-    },
-    {
-     "metin": "Mikroskop: iki sıra onkositik epitel + germinal merkezli lenfoid stroma",
-     "sure": 7,
-     "not": "Mikroskopta papiller kistik yapılar: iki sıra pembe onkositik hücre ve altında germinal merkezli lenfoid doku.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-49.jpg",
-       "yazi": "İki sıra onkositik epitel"
-      }
-     ]
-    }
-   ],
-   "serit": [
-    2
-   ],
-   "dus": true,
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
    "tip": "adim",
@@ -2046,7 +1572,6 @@
    "soru": "W5",
    "sure": 40,
    "not": "(Sonuç.) Doğru B: kanaliküler adenom. İki ipucu: üst dudak ve yaş. Mukosel üst dudakta neredeyse hiç olmaz; DUS sorusunu hatırlayın.",
-   "tema": "koyu",
    "serit": [
     2
    ]
@@ -2123,71 +1648,6 @@
   },
   {
    "tip": "adim",
-   "baslik": "Adenoid kistik karsinom",
-   "maddeler": [
-    {
-     "metin": "Küçük bezlerde ve parotiste; submandibuler bezin en sık malign tümörü",
-     "sure": 8,
-     "not": "Adenoid kistik karsinom küçük bezlerde ve parotiste görülür; submandibuler bezin en sık kötü huylu tümörü.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-74.jpg",
-       "yazi": "Damakta silik bir şişlik"
-      }
-     ]
-    },
-    {
-     "metin": "Yavaş büyür; erişkin ve ileri yaşta",
-     "sure": 5,
-     "not": "Yavaş büyür; erişkin ve ileri yaşta."
-    },
-    {
-     "metin": "Perinöral invazyon: ağrı, uyuşma, yüz felci; ağrı şişlikten önce olabilir",
-     "sure": 9,
-     "not": "En önemli özelliği sinirlere yayılması. Ağrı, uyuşma ve yüz felci en sık bu tümörde; ağrı şişlikten önce bile başlayabilir.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-79.jpg",
-       "yazi": "Perinöral invazyon"
-      }
-     ]
-    },
-    {
-     "metin": "Desen: kribriform, tübüler, solid; solid en kötü",
-     "sure": 7,
-     "not": "Mikroskopta üç desen: kribriform, yani delikli adalar; tübüler; ve solid. Solid desen en kötü prognozlu. Başlık slaytındaki görüntü buydu.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-77.jpg",
-       "yazi": "Kribriform desen"
-      }
-     ]
-    },
-    {
-     "metin": "Lenf noduna az, akciğere geç metastaz; 5 yıl %68–89, 20 yıl %25–40",
-     "sure": 9,
-     "not": "Lenf noduna az gider ama yıllar sonra akciğere gider. Neville'in cümlesi: beş yıllık sağkalım bu tümörde şifa demek değil; yirmi yılda hastaların yarısından fazlası kaybedilir."
-    },
-    {
-     "metin": "Gen: MYB::NFIB",
-     "sure": 6,
-     "not": "Gen değişikliği MYB::NFIB.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-76.jpg",
-       "yazi": "BT: damaktan yayılan büyük tümör"
-      }
-     ]
-    }
-   ],
-   "serit": [
-    3
-   ],
-   "dus": true,
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
-  },
-  {
-   "tip": "adim",
    "baslik": "Asinik hücreli karsinom ve sekretuar karsinom",
    "maddeler": [
     {
@@ -2240,7 +1700,8 @@
    "serit": [
     3
    ],
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "opsiyonel": true
   },
   {
    "tip": "adim",
@@ -2372,7 +1833,8 @@
    "serit": [
     3
    ],
-   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları"
+   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları",
+   "opsiyonel": true
   },
   {
    "tip": "soru",
@@ -2380,7 +1842,6 @@
    "soru": "W6",
    "sure": 55,
    "not": "Telefonda dört tümör, dört gen. Eşleştirin. (Sonuç.) Pleomorfik adenom PLAG1 ya da HMGA2; mukoepidermoid karsinom MAML2; adenoid kistik karsinom MYB::NFIB; sekretuar karsinom ETV6::NTRK3. Küçük bir biyopside patolog tanıyı bu genlerle doğruluyor.",
-   "tema": "koyu",
    "serit": [
     3
    ]
@@ -2418,8 +1879,6 @@
      "not": "Hasta başta söylemedi: son iki ayda damağında karıncalanma ve uyuşma var. Bu bir sinir bulgusu. Tahmininizi yenileyin."
     }
    ],
-   "tema": "koyu",
-   "etiket": "Vakaya dönüş",
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
@@ -2433,7 +1892,6 @@
      "foto": "img/M4/n11-38.jpg"
     }
    ],
-   "tema": "koyu",
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
@@ -2535,8 +1993,7 @@
    "soru": "W8",
    "sure": 30,
    "not": "Son kelime bulutu. Hangi konu kafanızı karıştırdı? En büyük kelimeyle 24 Kasım'da başlayacağım.",
-   "aciklama": "Tek kelime ya da kısa ifade. En büyük çıkan kelimeyle 24 Kasım'da başlıyorum.",
-   "tema": "koyu"
+   "aciklama": "Tek kelime ya da kısa ifade. En büyük çıkan kelimeyle 24 Kasım'da başlıyorum."
   },
   {
    "tip": "liderlik",

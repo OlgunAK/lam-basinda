@@ -21,8 +21,8 @@
   "id": "M3",
   "title": "Yumuşak Doku Hastalıkları",
   "date": "17 Kasım 2026",
-  "slides": 54,
-  "mb": 10.5,
+  "slides": 48,
+  "mb": 9.3,
   "file": "M3.pptx",
   "quiz": "../quiz/#yd"
  },
@@ -30,8 +30,8 @@
   "id": "M4",
   "title": "Tükürük Bezi Hastalıkları ve Tümörleri",
   "date": "17 Kasım 2026",
-  "slides": 53,
-  "mb": 9.6,
+  "slides": 46,
+  "mb": 8.5,
   "file": "M4.pptx",
   "quiz": "../quiz/#tb"
  }

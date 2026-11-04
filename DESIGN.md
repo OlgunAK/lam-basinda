@@ -44,9 +44,23 @@ Ad "lam başında": mikroskop lamı ve H&E boyası. Renkler boyadan gelir ve her
 - Durum değişimi 150 ms `ease-out`; basılan düğme `0.96` ölçek, devre dışı düğme ölçeklenmez.
 - `prefers-reduced-motion` açıksa hareket yok.
 
+## Ses ve ton
+
+| Özellik | Ne demek | Böyle | Böyle değil |
+|---|---|---|---|
+| Klinik | Cümle hastanın başında kurulur | "Protez bastırınca ağrıyan nodül: travmatik nöroma" | "Sinirin isyanı" |
+| Mecazsız | Benzetme yerine bulgu | "Kırmızı, kolay kanayan, hızla büyüyen kitle" | "Ağzın volkanı" |
+| Dürüst | Kaynak farkı açıkça söylenir | "Patoloji kaynaklarında böyle geçer; Neville'de doğrulayamadım" | "Resmi slayta göre" |
+| Tek terim | Bir kavrama tek ad | "kötü huylu" (slayt boyunca) | "malignite" ile karışık |
+| Açık kısaltma | Öğrenciye ilk kez geçen kısaltma açılır | "Periferik dev hücreli granülom" | "PDHG" (açılmadan) |
+
 ## Slaytlar
 
-- Açık tema içerik, koyu tema soru ve vaka.
-- Adım adım slayt: geçmiş maddeler soluk, o anki madde eozin tonlu zeminde ve kalın, gelecek maddeler yer tutar ama görünmez. Görsel solda, altyazısı görselin altında (üstüne binmez).
-- Alt şerit: ders adı, çerçevenin grupları (o anki grup hematoksilen dolu), sayfa numarası, kaynak.
-- Soru slaytı: üstte "Telefonda açık" hapı (eozin nokta), soru Literata, şıklar mor harf dairesiyle.
+- **Aydınlık amfi:** bütün içerik, soru ve vaka slaytları açık zeminde; koyu zemin yalnız kapakta (ve düzenleyicide "karanlık sınıf" seçeneğiyle).
+- **Token'lar üç katman** (`ortak/slayt.js`): ilkel `--p-*` (boyanın kendisi) → anlamsal `--bg`, `--yazi`, `--vurgu`, `--simdi`, `--dikkat` (tema değiştirir) → bileşen `--madde-*`, `--not-*`, `--kapak-*`, `--alan-zemin`. Kurallarda ham renk yok; istisna logo SVG'si.
+- **Ders akışı:** kapak → "Bugün akılda kalacak 8 madde" → her madde için slayt + telefondan soru → **sentez** (iki sütunlu numaralı özet) → **karar** ("Tamam mı, devam mı?", renk alanı zemininde; destenin ortasındaki kalıp kırıcı) → kısaltılmış ayrıntı (nadir konular "Zaman kalırsa") → çıkış bileti, liderlik, kaynaklar.
+- **Adım adım slayt:** geçmiş maddeler soluk, o anki madde eozin tonlu zeminde ve kalın, gelecek maddeler yer tutar ama görünmez. Terim ya da "Akılda kalsın" cümlenin başında kalın giriş olarak yazılır (üstünde ayrı etiket değil). Görsel solda, altyazısı görselin altında.
+- **Başlık üstünde ya da yanında hap/rozet yok.** Tek istisna DUS (kehribar, dikkat rengi). "Zaman kalırsa" alt şeritte yazılır; ana madde ilerlemesi alt şeritte noktalarla (o anki uzun, geçenler dolu) gösterilir, numara yazılmaz.
+- **Soru slaytı:** soru Literata 58–68 px, şıklar ~%73'ü, mor harf dairesi; altta "Telefondan cevapla · tür" satırı (eozin nokta). Doğru şık her soruda başka harfte.
+- **Alt şerit:** ders adı, (zaman kalırsa), çerçevenin grupları ya da ana madde noktaları, kaynak, sayfa numarası.
+- Bilinçli istisnalar: mor/eflatun palet ve 16 px köşe H&E markasından gelir (Taste'in palet yasağı burada uygulanmaz); çubuk grafik Chart.js değil CSS ile çizilir, çünkü düzenleyici kareyi foreignObject ile JPG'ye çevirir ve canvas bu yolla aktarılamaz.
