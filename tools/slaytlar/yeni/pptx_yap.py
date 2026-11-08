@@ -103,7 +103,9 @@ def page(info):
 if __name__ == "__main__":
     hepsi = [e["id"] for e in json.load(open(os.path.join(CANLI, "dersler", "index.json"), encoding="utf-8"))]
     ids = sys.argv[1:] or hepsi
-    yeni = {i: build(i) for i in ids}
+    from pptx_perde import build_perde
+    PERDE = {"M3", "M4"}           # perdedeki akışla: her adım, cevap slaytları, Tamam/Devam düğmeleri
+    yeni = {i: (build_perde(i) if i in PERDE else build(i)) for i in ids}
     # Yalnız bazı dersler üretildiyse ötekilerin bilgisi eski listeden korunur.
     eski = {}
     if os.path.exists(os.path.join(OUT, "dersler.json")):
