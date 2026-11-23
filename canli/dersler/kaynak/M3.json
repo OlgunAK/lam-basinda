@@ -1839,14 +1839,15 @@
        "Kas",
        "leiomiyom, rabdomiyom"
       ]
-     ]
+     ],
+     "maddeler": []
     },
     {
      "baslik": "3 · Sarkomlar (yumuşak dokunun kötü huylu tümörleri)",
      "ton": "pembe",
      "maddeler": [
       "Lif ve yağ dokusu sarkomları: pleomorfik sarkom, fibrosarkom ve liposarkom",
-      "Sinir kökenli sarkomlar: malign periferik sinir kılıfı tümörü ve olfaktör nöroblastom",
+      "Sinir kökenli sarkomlar: kötü huylu periferik sinir kılıfı tümörü ve olfaktör nöroblastom",
       "Damar kökenli sarkomlar: anjiyosarkom ve Kaposi sarkomu",
       "Kas kökenli sarkomlar: leiomiyosarkom (düz kas) ve rabdomiyosarkom (çizgili kas)",
       "Diğer sarkomlar: sinovyal sarkom ve alveoler yumuşak doku sarkomu"
@@ -1877,7 +1878,8 @@
      "sure": 11,
      "not": "Her hastalıkta aynı dört soruyu soracağız: hangi doku, kaç yaş, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5. baskıdan; kaynakların ayrıldığı yerleri ayrıca söyleyeceğim."
     }
-   ]
+   ],
+   "yazi": 23
   },
   {
    "tip": "adim",
@@ -2928,7 +2930,7 @@
      "metin": "Bu tümörlerin dörtte biri ile yarısı nörofibromatozis tip 1 (NF1) hastalarında gelişir; NF1'li hastada büyüyen kitleye hemen biyopsi yapılmalıdır.",
      "sure": 7,
      "not": "Malign periferik sinir kılıfı tümörü, eski adıyla malign schwannom: dörtte biri ile yarısı NF1'li hastalarda gelişir; NF1'de büyüyen kitle hemen biyopsi ister.",
-     "ust": "Malign periferik sinir kılıfı tümörü",
+     "ust": "Kötü huylu periferik sinir kılıfı tümörü",
      "gorsel": [
       {
        "foto": "img/M3/n12-71.jpg",
@@ -3420,7 +3422,7 @@
     ],
     [
      "Malign schwannom",
-     "Malign periferik sinir kılıfı tümörü"
+     "Kötü huylu periferik sinir kılıfı tümörü (MPNST)"
     ],
     [
      "Estezyonöroblastom",

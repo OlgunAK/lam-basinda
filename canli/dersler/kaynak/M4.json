@@ -481,7 +481,7 @@
     {
      "ton": "vurgu",
      "maddeler": [
-      "Her başlıkta üç soru: hangi bez, mikroskopta ne var, nasıl tedavi edilir?"
+      "Her hastalıkta üç soru soracağız: hangi bezde görülür, mikroskopta ne vardır ve nasıl tedavi edilir?"
      ]
     }
    ],
@@ -503,20 +503,20 @@
     {
      "ton": "koyu",
      "maddeler": [
-      "Mukosel: alt dudak",
-      "Taş ve sialadenit",
-      "Sjögren: kuruluk, biyopsi, lenfoma",
-      "Nekrotizan sialometaplazi: kanser sanılır"
+      "Mukosel en sık alt dudakta görülür; üst dudakta neredeyse hiç olmaz.",
+      "Taş en sık submandibuler bezde oluşur; tükürük akışı azalınca bezde süpüratif sialadenit gelişebilir.",
+      "Sjögren sendromu ağız ve göz kuruluğu yapar; tanıda dudak biyopsisi kullanılır ve lenfoma riski artar.",
+      "Nekrotizan sialometaplazi klinikte ve mikroskopta kanser sanılabilir, ama kendiliğinden iyileşir."
      ],
      "numara": 1
     },
     {
      "ton": "mor",
      "maddeler": [
-      "Bez küçüldükçe kötü huylu olasılığı artar",
-      "Pleomorfik adenom: enükleasyon yok",
-      "Warthin: parotis, sigara, iki taraflı",
-      "Adenoid kistik karsinom: sinir boyunca"
+      "Tükürük bezi küçüldükçe o bezdeki tümörün kötü huylu olma olasılığı artar.",
+      "Pleomorfik adenom enükleasyonla çıkarılmaz, çünkü yatağında kalan tümör nükseder.",
+      "Warthin tümörü neredeyse yalnız parotiste görülür, sigara içenlerde sıktır ve iki taraflı olabilir.",
+      "Adenoid kistik karsinom sinir boyunca yayılır ve ağrı, uyuşma yapabilir."
      ],
      "numara": 5
     }
@@ -540,7 +540,7 @@
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
     {
-     "metin": "Dudağı ısırma: küçük kanal yırtılır, müsin dokuya dökülür",
+     "metin": "Dudak ısırılınca küçük bir tükürük bezi kanalı yırtılır ve müsin çevredeki dokuya dökülür.",
      "sure": 9,
      "not": "İlk madde mukosel. Dudak ısırılır, küçük bir tükürük bezi kanalı yırtılır ve müsin dokuya dökülür.",
      "gorsel": [
@@ -555,7 +555,7 @@
      ]
     },
     {
-     "metin": "%82'si alt dudakta; üst dudakta neredeyse hiç yok; dil altı ve yanakta da olur",
+     "metin": "Neville'in 1715 olguluk serisinde mukosellerin yüzde 82'si alt dudaktadır; üst dudakta neredeyse hiç görülmez. Dilin alt yüzünde ve yanakta da olur.",
      "sure": 9,
      "not": "Neville'in 1715 olguluk serisinde yüzde 82'si alt dudakta; üst dudakta neredeyse hiç yok. Dilin alt yüzünde ve yanakta da görülür.",
      "gorsel": [
@@ -568,9 +568,21 @@
        "yazi": "Yumuşak damakta yüzeysel mukosel"
       }
      ]
-    },
+    }
+   ],
+   "ilerleme": [
+    1,
+    8
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Mukosel (devam)",
+   "yazi": 34,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
     {
-     "metin": "Mikroskop: müsin gölü, köpüklü makrofajlar, granülasyon dokusu; epitel yok",
+     "metin": "Mikroskopta müsin gölü, köpüklü makrofajlar ve granülasyon dokusu görülür; epitel döşeli duvar olmadığı için gerçek kist değildir.",
      "sure": 10,
      "not": "Tanı: mikroskopta müsin gölü, köpüklü makrofajlar ve granülasyon dokusu; epitel döşeli duvar yok, yani gerçek kist değil.",
      "ust": "Tanı",
@@ -586,13 +598,13 @@
      ]
     },
     {
-     "metin": "Besleyen küçük bezlerle birlikte eksizyon; yalnız boşaltılırsa nükseder",
+     "metin": "Lezyon, altındaki besleyen küçük bezlerle birlikte çıkarılır; yalnız boşaltılırsa ya da yalnız kesesi alınırsa nükseder.",
      "sure": 9,
      "not": "Tedavi: altındaki besleyen küçük bezlerle birlikte eksizyon. İğneyle boşaltırsanız ya da yalnız kesesini alırsanız nükseder.",
      "ust": "Tedavi"
     },
     {
-     "metin": "Ağız tabanında büyük mukosel: ranula; tedavi sublingual bezi çıkarmak",
+     "metin": "Ağız tabanındaki büyük mukosele ranula denir ve sublingual bezden gelir; tedavide sublingual bez çıkarılır.",
      "sure": 9,
      "not": "Ağız tabanındaki büyük mukosele ranula denir; sublingual bezden gelir. Tedavide en önemli adım sublingual bezi çıkarmak.",
      "ust": "Ranula",
@@ -642,10 +654,9 @@
    "kaynak": "Neville 5. baskı (2024) · Laskaris 4. baskı (2017)",
    "maddeler": [
     {
-     "metin": "En sık submandibuler bezde: uzun, yukarı kıvrılan Wharton kanalı, koyu salgı",
+     "metin": "Taş en sık submandibuler bezde oluşur, çünkü Wharton kanalı uzun ve yukarı kıvrımlıdır, salgısı da koyudur.",
      "sure": 9,
      "not": "Taşlar en sık submandibuler bezde; çünkü Wharton kanalı uzun ve yukarı kıvrılır, salgı da koyudur.",
-     "ust": "Taş",
      "gorsel": [
       {
        "foto": "img/M4/n11-13.jpg",
@@ -658,7 +669,7 @@
      ]
     },
     {
-     "metin": "Yemekte ağrılı şişlik; okluzal film; panoramikte kemik içi lezyon sanılabilir",
+     "metin": "Taş yemek sırasında ağrılı şişlik yapar ve en iyi okluzal filmde görülür; panoramik filmde kemik içi lezyon sanılabilir.",
      "sure": 9,
      "not": "Yemek sırasında ağrılı şişlik. Okluzal film en iyi gösterir; panoramikte kemiğin üstüne düşen taş kemik içi lezyon sanılabilir.",
      "gorsel": [
@@ -671,9 +682,21 @@
        "yazi": "Periapikal ve okluzal film"
       }
      ]
-    },
+    }
+   ],
+   "ilerleme": [
+    2,
+    8
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Taş ve sialadenit (devam)",
+   "yazi": 34,
+   "kaynak": "Neville 5. baskı (2024) · Laskaris 4. baskı (2017)",
+   "maddeler": [
     {
-     "metin": "Mikroskop: katman katman kalsifikasyon; kanalda skuamöz metaplazi ve iltihap",
+     "metin": "Mikroskopta taş katman katman kalsifiye görünür; çevresindeki kanalda skuamöz metaplazi ve iltihap bulunur.",
      "sure": 8,
      "not": "Tanı: taş katman katman kalsifiye; çevresindeki kanalda skuamöz metaplazi ve iltihap.",
      "ust": "Tanı",
@@ -685,16 +708,15 @@
      ]
     },
     {
-     "metin": "Küçük taş masajla ya da kanaldan çıkarılır; tekrarlarsa bez çıkarılır",
+     "metin": "Küçük taşlar masajla ya da kanal ağzından çıkarılır; taş tekrarlarsa bezin kendisi çıkarılır.",
      "sure": 9,
      "not": "Tedavi: küçük taşlar masajla ya da kanal ağzından çıkarılır; sialendoskopi bezi korur. Tekrarlayan olguda bez çıkarılır.",
      "ust": "Tedavi"
     },
     {
-     "metin": "Kabakulak: paramiksovirüs; önce bir parotis, sonra diğeri",
+     "metin": "Sialadenitin en sık viral nedeni, paramiksovirüsün yaptığı kabakulaktır; şişlik önce bir parotiste başlar, birkaç gün sonra diğerine geçer.",
      "sure": 8,
      "not": "Sialadenitte en sık neden viral: kabakulak. Şişlik önce bir parotiste başlar, birkaç gün sonra diğerinde.",
-     "ust": "Sialadenit",
      "gorsel": [
       {
        "foto": "img/M4/l15-26.jpg",
@@ -707,7 +729,7 @@
      ]
     },
     {
-     "metin": "1963: Hilleman kızı Jeryl Lynn'den aldığı virüsle kabakulak aşısını geliştirdi",
+     "metin": "Maurice Hilleman'ın 1963'te kızı Jeryl Lynn'in boğazından aldığı virüs, bugün kullanılan kabakulak aşısının temeli oldu.",
      "sure": 8,
      "not": "Tarihten: bugün dünyada kullanılan kabakulak aşısının virüsü 1963'te Maurice Hilleman'ın beş yaşındaki kızı Jeryl Lynn'in boğazından alındı; suşun adı hâlâ Jeryl Lynn.",
      "ust": "Tarihten",
@@ -717,16 +739,16 @@
        "yazi": "Kabakulak: parotis şişliği"
       },
       {
-       "kutu": "1963: kabakulak aşısının virüsü Hilleman'ın kızı Jeryl Lynn'den alındı.",
+       "kutu": "1963'te Hilleman'ın kızı Jeryl Lynn'den alınan virüs, kabakulak aşısının temeli oldu.",
        "ton": "pembe"
       }
      ]
     },
     {
-     "metin": "Akış azalınca süpüratif sialadenit: *S. aureus*; antibiyotik, sıvı, gerekirse drenaj",
+     "metin": "Tükürük akışı azalınca (sıvı kaybı, ameliyat sonrası) süpüratif sialadenit gelişir; en sık etken *Staphylococcus aureus*'tur. Antibiyotik, sıvı ve gerekirse drenaj uygulanır.",
      "sure": 10,
      "not": "Akut süpüratif sialadenit tükürük akışı azalınca olur: sıvı kaybı, ameliyat sonrası. En sık etken Staphylococcus aureus; Stensen kanalından irin gelir. Tedavi antibiyotik, sıvı, gerekirse drenaj.",
-     "ust": "Tedavi",
+     "ust": "Süpüratif sialadenit",
      "gorsel": [
       {
        "foto": "img/M4/n11-19.jpg",
@@ -769,7 +791,7 @@
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
     {
-     "metin": "Sistemik otoimmün hastalık: ağız ve göz kuruluğu; kadın:erkek 9:1",
+     "metin": "Sjögren sendromu ağız ve göz kuruluğu yapan sistemik otoimmün bir hastalıktır; hastaların onda dokuzu kadındır.",
      "sure": 9,
      "not": "Sjögren sendromu sistemik otoimmün bir hastalık; ağız ve göz kuruluğu yapar, hastaların onda dokuzu kadın.",
      "gorsel": [
@@ -784,7 +806,7 @@
      ]
     },
     {
-     "metin": "2011: Venus Williams tanısını açıklayıp ABD Açık'tan çekildi",
+     "metin": "Tenisçi Venus Williams 2011'de Sjögren tanısını açıkladı ve ABD Açık turnuvasından çekildi.",
      "sure": 7,
      "not": "Ünlü bir hasta: tenisçi Venus Williams 2011'de Sjögren tanısını açıkladı ve ABD Açık'tan çekildi; yorgunluk ve eklem ağrısı da bu hastalığın parçası.",
      "ust": "Ünlü hasta",
@@ -794,13 +816,13 @@
        "yazi": "Kuru, fissürlü dil"
       },
       {
-       "kutu": "2011: Venus Williams Sjögren tanısını açıkladı ve ABD Açık'tan çekildi.",
+       "kutu": "Venus Williams 2011'de Sjögren tanısını açıkladı ve ABD Açık'tan çekildi.",
        "ton": "pembe"
       }
      ]
     },
     {
-     "metin": "Alt dudaktan ≥5 küçük bez: ≥50 lenfositlik odak / 4 mm² = odak skoru ≥1",
+     "metin": "Alt dudaktan en az beş küçük bez alınır; 4 mm² dokuda 50 lenfositlik en az bir odak bulunması (odak skoru 1 ve üstü) tanıyı destekler.",
      "sure": 10,
      "not": "Tanı: diş hekiminin elindeki en değerli test alt dudak biyopsisi. Normal görünen mukozadan en az beş küçük bez; dört milimetrekarede en az 50 lenfositlik bir odak, odak skoru 1 demek.",
      "ust": "Tanı",
@@ -814,9 +836,21 @@
        "yazi": "Lenfoepitelyal lezyon"
       }
      ]
-    },
+    }
+   ],
+   "ilerleme": [
+    3,
+    8
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Sjögren sendromu (devam)",
+   "yazi": 34,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
     {
-     "metin": "Sialografi: meyveli dalsız ağaç; anti-SSA, ANA",
+     "metin": "Sialografide kanal dalları kaybolur, uçlarda noktasal genişlemeler kalır; kanda anti-SSA ve ANA antikorlarına bakılır.",
      "sure": 8,
      "not": "Sialografide dallar kaybolur, uçlarda noktasal genişlemeler kalır; kanda anti-SSA ve ANA bakılır.",
      "gorsel": [
@@ -827,13 +861,13 @@
      ]
     },
     {
-     "metin": "Tükürük yerine geçenler, pilokarpin, flor, antifungal",
+     "metin": "Yakınmaları gidermek için tükürük yerine geçen ürünler, pilokarpin, çürüğe karşı flor ve kandidaya karşı antifungal ilaç kullanılır.",
      "sure": 8,
      "not": "Tedavi yakınmaya yönelik: tükürük yerine geçenler, pilokarpin, flor ile çürük koruması, kandida için antifungal.",
      "ust": "Tedavi"
     },
     {
-     "metin": "Lenfoma riski 15–20 kat: kalıcı parotis büyümesi uyarıdır",
+     "metin": "Sjögren hastasında lenfoma riski genel nüfusun 15–20 katıdır; parotisin kalıcı büyümesi lenfoma için uyarı bulgusudur.",
      "sure": 9,
      "not": "Akılda kalsın: lenfoma riski genel nüfusun 15 ila 20 katı, çoğu MALT. Parotis kalıcı ve sert büyürse biyopsi.",
      "ust": "Akılda kalsın"
@@ -873,7 +907,7 @@
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
     {
-     "metin": "Küçük bezlerin enfarktı; en sık arka sert damak",
+     "metin": "Nekrotizan sialometaplazi küçük tükürük bezlerinin enfarktıdır ve en sık arka sert damakta görülür.",
      "sure": 8,
      "not": "Nekrotizan sialometaplazi küçük tükürük bezlerinin enfarktı; en sık arka sert damakta.",
      "gorsel": [
@@ -884,12 +918,12 @@
      ]
     },
     {
-     "metin": "Neden: anestezi iğnesi, travma, protez, yakın cerrahi, sigara",
+     "metin": "Bezin kan akımını bozan anestezi iğnesi, travma, protez, yakındaki bir ameliyat ve sigara bu enfarkta yol açabilir.",
      "sure": 8,
      "not": "Kan akımını kesen her şey: anestezi iğnesi, travma, protez, yakın bir ameliyat, sigara."
     },
     {
-     "metin": "Önce şişlik, 2–3 haftada krater gibi derin ülser",
+     "metin": "Lezyon önce şişlik olarak başlar, iki üç hafta içinde krater gibi derin bir ülsere dönüşür.",
      "sure": 8,
      "not": "Önce şişlik olur, iki üç hafta içinde krater gibi derin bir ülsere döner; hasta 'damağımın bir parçası düştü' der.",
      "gorsel": [
@@ -898,9 +932,21 @@
        "yazi": "2–3 hafta sonra: krater ülser"
       }
      ]
-    },
+    }
+   ],
+   "ilerleme": [
+    4,
+    8
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Nekrotizan sialometaplazi: kanser sanılır (devam)",
+   "yazi": 34,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
     {
-     "metin": "Mikroskop: lobül yapısı korunur; asinus nekrozu, kanallarda skuamöz metaplazi",
+     "metin": "Mikroskopta lobül yapısı korunur, asinuslarda nekroz ve kanallarda skuamöz metaplazi görülür; bu tablo karsinom sanılabilir.",
      "sure": 10,
      "not": "Tanı: mikroskopta lobül yapısı korunur; asinuslarda nekroz, kanallarda skuamöz metaplazi. Bu tablo skuamöz ya da mukoepidermoid karsinom sanılabilir.",
      "ust": "Tanı",
@@ -912,7 +958,7 @@
      ]
     },
     {
-     "metin": "1973'te 'karsinomu taklit eden' bir hastalık olarak tanımlandı",
+     "metin": "Hastalık 1973'te, karsinomu taklit eden ve gereksiz kanser ameliyatlarına yol açan bir lezyon olarak tanımlandı.",
      "sure": 7,
      "not": "Tarihten: bu hastalık 1973'te, gereksiz kanser ameliyatlarına yol açan, karsinomu taklit eden bir lezyon olarak tanımlandı.",
      "ust": "Tarihten",
@@ -922,13 +968,13 @@
        "yazi": "Nekroz ve duktal skuamöz metaplazi"
       },
       {
-       "kutu": "1973: karsinomu taklit eden lezyon olarak tanımlandı.",
+       "kutu": "Nekrotizan sialometaplazi 1973'te karsinomu taklit eden bir lezyon olarak tanımlandı.",
        "ton": "pembe"
       }
      ]
     },
     {
-     "metin": "Biyopsiyle kanseri dışla; tedavi gerekmez, 5–6 haftada iyileşir",
+     "metin": "Biyopsiyle kanser dışlandıktan sonra ek bir işlem gerekmez; lezyon beş altı haftada kendiliğinden iyileşir.",
      "sure": 10,
      "not": "Tedavi: biyopsiyle kanseri dışladıktan sonra tedavi gerekmez; beş altı haftada kendiliğinden iyileşir. İstek formuna anesteziyi, protezi, ani başlangıcı yazın.",
      "ust": "Tedavi"
@@ -968,7 +1014,7 @@
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
     {
-     "metin": "Parotis tümörlerinin yalnız %15–32'si kötü huylu",
+     "metin": "Parotis tümörlerinin yalnız yüzde 15–32'si kötü huyludur; yani parotisteki tümörlerin çoğu iyi huyludur.",
      "sure": 10,
      "not": "Tümörlerin çoğu parotiste ve çoğu iyi huylu; parotiste kötü huylu oranı yüzde 15 ila 32.",
      "gorsel": [
@@ -1009,7 +1055,7 @@
      ]
     },
     {
-     "metin": "Submandibulerde %26–45, küçük bezlerde yaklaşık yarısı",
+     "metin": "Submandibuler bez tümörlerinin yüzde 26–45'i, küçük tükürük bezi tümörlerinin ise yaklaşık yarısı kötü huyludur.",
      "sure": 10,
      "not": "Submandibulerde yüzde 26 ila 45, küçük bezlerde yaklaşık yarısı.",
      "gorsel": [
@@ -1050,7 +1096,7 @@
      ]
     },
     {
-     "metin": "Sublingualde %70–97: bez küçüldükçe kötü huylu olasılığı artar; damakta kitleye biyopsi",
+     "metin": "Sublingual bez tümörlerinin yüzde 70–97'si kötü huyludur; bez küçüldükçe bu olasılık artar, bu yüzden damaktaki kitleden biyopsi alınır.",
      "sure": 12,
      "not": "Akılda kalsın: sublingualde yüzde 70'in üstünde. Bez küçüldükçe kötü huylu olasılığı artar; damaktaki kitleyi izlemeyin, biyopsi alın.",
      "ust": "Akılda kalsın",
@@ -1092,7 +1138,7 @@
      ]
     },
     {
-     "metin": "Parotiste ince iğne aspirasyonu; damakta insizyonel biyopsi; enükleasyon yok",
+     "metin": "Parotiste ince iğne aspirasyonu, damakta insizyonel biyopsi yapılır; tanı kesinleşmeden tümör enükleasyonla çıkarılmaz.",
      "sure": 9,
      "not": "Tanıda: parotiste ince iğne aspirasyonu, ağızda insizyonel biyopsi. Tanı kesinleşmeden enükleasyon yapılmaz.",
      "ust": "Tanı ve tedavi"
@@ -1132,7 +1178,7 @@
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
     {
-     "metin": "En sık tükürük bezi tümörü; parotiste kulak altında, ağızda damakta",
+     "metin": "Pleomorfik adenom en sık tükürük bezi tümörüdür; parotiste kulak altında, ağızda en sık damakta orta hattın yanında görülür.",
      "sure": 9,
      "not": "Pleomorfik adenom en sık tükürük bezi tümörü; parotiste kulak altında, ağızda en sık damakta, orta hattın yanında.",
      "gorsel": [
@@ -1147,7 +1193,7 @@
      ]
     },
     {
-     "metin": "Yavaş büyüyen, ağrısız, sert, hareketli; hasta yıllarca bekler",
+     "metin": "Tümör yavaş büyür, ağrısız, sert ve hareketlidir; bu yüzden hasta yıllarca bekler ve kitle çok büyüyebilir.",
      "sure": 8,
      "not": "Yavaş büyür, ağrısızdır, serttir ve hareketlidir; bu yüzden hasta yıllarca bekler ve tümör çok büyüyebilir.",
      "gorsel": [
@@ -1162,7 +1208,7 @@
      ]
     },
     {
-     "metin": "Mikroskop: kanal epiteli + miyoepitel + miksoid-kondroid stroma",
+     "metin": "Mikroskopta kanal yapan epitel, miyoepitel hücreleri ve miyoepitelin yaptığı miksoid ya da kıkırdak benzeri stroma birlikte görülür.",
      "sure": 10,
      "not": "Tanı: üç bileşen; kanal yapan epitel, miyoepitel hücreleri ve miyoepitelin yaptığı miksoid ya da kıkırdak benzeri stroma. Adındaki pleomorfizm hücrelerin değil yapının.",
      "ust": "Tanı",
@@ -1176,9 +1222,21 @@
        "yazi": "Kondroid madde ve epitel"
       }
      ]
-    },
+    }
+   ],
+   "ilerleme": [
+    6,
+    8
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Pleomorfik adenom (devam)",
+   "yazi": 34,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
     {
-     "metin": "Plazmasitoid miyoepitel; kapsül eksik olabilir, tümör kapsülü aşar",
+     "metin": "Miyoepitel hücreleri plazma hücresine benzeyebilir; kapsül yer yer eksiktir ve tümör kapsülün dışına uzanabilir.",
      "sure": 8,
      "not": "Miyoepitel hücreleri plazma hücresine benzeyebilir; kapsül yer yer eksiktir ve tümör kapsülün dışına uzanır.",
      "gorsel": [
@@ -1193,13 +1251,13 @@
      ]
     },
     {
-     "metin": "Enükleasyon yok: yüzeyel parotidektomi; damakta mukozayla periosta kadar",
+     "metin": "Enükleasyon yapılmaz, çünkü tümör yatağında kalır ve nükseder; parotiste yüzeyel parotidektomi, damakta mukozayla birlikte periosta kadar eksizyon yapılır.",
      "sure": 10,
      "not": "Tedavi: enükleasyon yapılmaz, tümör yatağına ekilir ve nükseder. Parotiste yüzeyel parotidektomi, damakta üstündeki mukozayla birlikte periosta kadar eksizyon.",
      "ust": "Tedavi"
     },
     {
-     "metin": "Uzun kalırsa kötü huylu dönüşüm (%3–4'e kadar)",
+     "metin": "Uzun süre bırakılan pleomorfik adenomların yüzde 3–4'üne kadarı kötü huylu tümöre dönüşür; bu risk süreyle artar.",
      "sure": 8,
      "not": "Akılda kalsın: uzun süre bırakılırsa yüzde 3 ila 4'üne kadar kötü huylu dönüşür; risk süreyle artar.",
      "ust": "Akılda kalsın"
@@ -1245,7 +1303,7 @@
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
     {
-     "metin": "İkinci en sık iyi huylu tümör; neredeyse yalnız parotis kuyruğu",
+     "metin": "Warthin tümörü ikinci en sık iyi huylu tükürük bezi tümörüdür ve neredeyse yalnız parotisin kuyruk bölümünde görülür.",
      "sure": 9,
      "not": "Warthin tümörü ikinci en sık iyi huylu tükürük bezi tümörü; neredeyse yalnız parotisin kuyruk bölümünde.",
      "gorsel": [
@@ -1256,12 +1314,24 @@
      ]
     },
     {
-     "metin": "Sigara içende 8 kat; 60–70 yaş; %5–17'si iki taraflı",
+     "metin": "Sigara içenlerde Warthin tümörü riski sekiz kat yüksektir; hastaların çoğu 60–70 yaşlarındadır ve olguların yüzde 5–17'si iki taraflıdır.",
      "sure": 9,
      "not": "Sigarayla en güçlü ilişkili tükürük bezi tümörü: risk sekiz kat. Çoğu 60'lı ve 70'li yaşlarda; yüzde 5 ila 17'si iki taraflı."
-    },
+    }
+   ],
+   "ilerleme": [
+    7,
+    8
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Warthin tümörü (devam)",
+   "yazi": 34,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
     {
-     "metin": "Mikroskop: iki sıra onkositik epitel + germinal merkezli lenfoid stroma",
+     "metin": "Mikroskopta papiller kistik yapıları iki sıra pembe onkositik epitel döşer; altında germinal merkezli lenfoid doku bulunur.",
      "sure": 10,
      "not": "Tanı: mikroskopta papiller kistik yapılar; iki sıra pembe onkositik hücre ve altında germinal merkezli lenfoid doku.",
      "ust": "Tanı",
@@ -1277,13 +1347,13 @@
      ]
     },
     {
-     "metin": "Cerrahi eksizyon; kötü huylu dönüşüm çok nadir",
+     "metin": "Tümör cerrahi olarak çıkarılır; Warthin tümöründe kötü huylu dönüşüm çok nadirdir.",
      "sure": 8,
      "not": "Tedavi cerrahi eksizyon; kötü huylu dönüşüm çok nadir.",
      "ust": "Tedavi"
     },
     {
-     "metin": "Aldred Warthin 1913'te bir terzinin ailesini inceledi: Lynch sendromunun başlangıcı",
+     "metin": "Tümöre adını veren Aldred Warthin, 1913'te bir terzinin ailesindeki kanserleri inceledi; bu çalışma Lynch sendromunun ilk tanımı oldu.",
      "sure": 8,
      "not": "Tarihten: tümöre adını veren Amerikalı patolog Aldred Warthin, 1913'te terzi Pauline Gross'un ailesindeki kanserleri inceledi; bu çalışma bugün Lynch sendromu dediğimiz kalıtsal kanserin ilk tanımı oldu.",
      "ust": "Tarihten",
@@ -1293,7 +1363,7 @@
        "yazi": "İki sıra onkositik epitel"
       },
       {
-       "kutu": "1913: Warthin'in aile çalışması, Lynch sendromunun ilk tanımı.",
+       "kutu": "Warthin'in 1913'teki aile çalışması, Lynch sendromunun ilk tanımı oldu.",
        "ton": "pembe"
       }
      ]
@@ -1339,7 +1409,7 @@
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "maddeler": [
     {
-     "metin": "Küçük bezlerde ve parotiste; submandibuler bezin en sık kötü huylu tümörü",
+     "metin": "Adenoid kistik karsinom küçük bezlerde ve parotiste görülür; submandibuler bezin en sık kötü huylu tümörüdür.",
      "sure": 9,
      "not": "Adenoid kistik karsinom küçük bezlerde ve parotiste; submandibuler bezin en sık kötü huylu tümörü.",
      "gorsel": [
@@ -1354,7 +1424,7 @@
      ]
     },
     {
-     "metin": "Perinöral invazyon: ağrı, uyuşma, yüz felci; ağrı şişlikten önce olabilir",
+     "metin": "Tümör sinir boyunca yayılır (perinöral invazyon) ve ağrı, uyuşma, yüz felci yapar; ağrı şişlikten önce başlayabilir.",
      "sure": 9,
      "not": "En önemli özelliği sinir boyunca yayılması: ağrı, uyuşma, yüz felci; ağrı şişlikten önce başlayabilir.",
      "gorsel": [
@@ -1365,7 +1435,7 @@
      ]
     },
     {
-     "metin": "Mikroskop: kribriform, tübüler, solid; solid en kötü",
+     "metin": "Mikroskopta kribriform (delikli adalar), tübüler ve solid desenler görülür; solid desen en kötü prognozu gösterir.",
      "sure": 9,
      "not": "Tanı: mikroskopta kribriform, yani delikli adalar; tübüler ve solid desenler. Solid desen en kötü prognozlu.",
      "ust": "Tanı",
@@ -1379,9 +1449,21 @@
        "yazi": "Hiyalin madde"
       }
      ]
-    },
+    }
+   ],
+   "ilerleme": [
+    8,
+    8
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Adenoid kistik karsinom: sinir boyunca yayılır (devam)",
+   "yazi": 34,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "maddeler": [
     {
-     "metin": "Geniş cerrahi ± radyoterapi; sinir boyunca kafa tabanına uzanabilir",
+     "metin": "Geniş cerrahi yapılır, gerekirse radyoterapi eklenir; damaktaki tümör sinir boyunca kafa tabanına kadar uzanabilir.",
      "sure": 9,
      "not": "Tedavi geniş cerrahi, gerekirse radyoterapi; damaktaki tümör sinir boyunca kafa tabanına uzanabilir.",
      "ust": "Tedavi",
@@ -1393,7 +1475,7 @@
      ]
     },
     {
-     "metin": "Peter Tork (The Monkees) ve Blythe Danner tanılarını kendileri açıkladı",
+     "metin": "The Monkees grubundan Peter Tork 2009'da, aktris Blythe Danner 2018'de adenoid kistik karsinom tanılarını kendileri açıkladı.",
      "sure": 7,
      "not": "Ünlü hastalar: The Monkees grubundan Peter Tork 2009'da, aktris Blythe Danner 2018'de adenoid kistik karsinom tanılarını kendileri açıkladı.",
      "ust": "Ünlü hastalar",
@@ -1403,13 +1485,13 @@
        "yazi": "Perinöral invazyon"
       },
       {
-       "kutu": "2009 Peter Tork · 2018 Blythe Danner: tanılarını kendileri açıkladı.",
+       "kutu": "Peter Tork 2009'da, Blythe Danner 2018'de tanılarını kendileri açıkladı.",
        "ton": "pembe"
       }
      ]
     },
     {
-     "metin": "Akciğere geç metastaz: 5 yılda iyi, 20 yılda kötü; ömür boyu takip",
+     "metin": "Akciğer metastazı yıllar sonra çıkabilir; beş yıllık sağkalım iyi görünse de 20 yılda belirgin düşer, bu yüzden hasta ömür boyu izlenir.",
      "sure": 9,
      "not": "Akılda kalsın: lenf noduna az, akciğere geç gider. Beş yıllık sağkalım şifa demek değil; ömür boyu takip.",
      "ust": "Akılda kalsın"
@@ -1448,35 +1530,35 @@
    "maddeler": [
     {
      "ust": "Mukosel",
-     "metin": "Besleyen küçük bezlerle birlikte çıkar; yoksa nükseder"
+     "metin": "Mukosel besleyen küçük bezlerle birlikte çıkarılır; yalnız boşaltılırsa nükseder."
     },
     {
      "ust": "Taş ve sialadenit",
-     "metin": "Yemekte ağrı ve şişlik: submandibuler taş, okluzal film; akış azalınca *S. aureus* ile süpüratif sialadenit"
+     "metin": "Yemekte ağrılı şişlik submandibuler taşı düşündürür ve okluzal filmde görülür. Tükürük akışı azalınca süpüratif sialadenit gelişir; en sık etken *S. aureus*'tur."
     },
     {
      "ust": "Sjögren",
-     "metin": "Kandida ve kök çürüğü sık; lenfoma riski 15–20 kat: kalıcı parotis büyümesi uyarıdır"
+     "metin": "Ağız kuruluğu nedeniyle kandida ve kök çürüğü sıktır; lenfoma riski 15–20 kat arttığı için kalıcı parotis büyümesi uyarı bulgusudur."
     },
     {
      "ust": "Nekrotizan sialometaplazi",
-     "metin": "Kendiliğinden 5–6 haftada iyileşir; istek formuna anestezi, protez, ani başlangıcı yaz"
+     "metin": "Kanser dışlandıktan sonra lezyon 5–6 haftada kendiliğinden iyileşir; biyopsi istek formuna anestezi, protez ve ani başlangıç yazılır."
     },
     {
      "ust": "Bez ve kötü huylu olasılığı",
-     "metin": "Sublingualde %70–97: bez küçüldükçe kötü huylu olasılığı artar; damakta kitleye biyopsi"
+     "metin": "Sublingual bez tümörlerinin yüzde 70–97'si kötü huyludur; bez küçüldükçe olasılık artar, bu yüzden damaktaki kitleden biyopsi alınır."
     },
     {
      "ust": "Pleomorfik adenom",
-     "metin": "Kapsül eksik olabilir: enükleasyon değil, sınırla çıkar; uzun kalırsa kötü huyluya döner"
+     "metin": "Kapsül yer yer eksik olduğu için tümör enükleasyonla değil, sağlam doku sınırıyla çıkarılır; uzun kalırsa kötü huylu tümöre dönüşebilir."
     },
     {
      "ust": "Warthin tümörü",
-     "metin": "İki taraflı ve çok sayıda olabilir: iki sıra onkositik epitel + lenfoid stroma"
+     "metin": "Tümör iki taraflı ve çok sayıda olabilir; mikroskopta iki sıra onkositik epitel ve lenfoid stroma görülür."
     },
     {
      "ust": "Adenoid kistik karsinom",
-     "metin": "Akciğere geç metastaz: 5 yılda iyi görünür, 20 yılda kötü; ömür boyu takip"
+     "metin": "Akciğer metastazı geç çıkar; beş yılda sonuç iyi görünse de 20 yılda kötüleşir, bu yüzden hasta ömür boyu izlenir."
     }
    ],
    "sure": 40,
@@ -1495,7 +1577,7 @@
     {
      "ton": "vurgu",
      "maddeler": [
-      "Şişlik mi, tümör mü? Tümörse hangi bez? Tanıyı mikroskop, tedaviyi tümörün tipi belirler."
+      "Önce şişliğin tümör olup olmadığını, tümörse hangi bezde olduğunu sorarız; tanıyı mikroskop, tedaviyi tümörün tipi belirler."
      ]
     }
    ],
@@ -1525,7 +1607,7 @@
    "baslik": "Açılış vakası: damakta kitle",
    "maddeler": [
     {
-     "metin": "45 yaşında kadın",
+     "metin": "Hastamız 45 yaşında bir kadındır.",
      "sure": 9,
      "not": "Hastamız 45 yaşında bir kadın.",
      "gorsel": [
@@ -1537,28 +1619,28 @@
        "soruIsareti": "Devamı dersin sonunda"
       },
       {
-       "kutu": "Tahminini telefondan gir. Cevap dersin sonunda.",
+       "kutu": "Tahmininizi telefondan girin; cevap dersin sonunda açıklanacak.",
        "ton": "vurgu"
       }
      ]
     },
     {
-     "metin": "Sert damakta, orta hattın yanında kitle",
+     "metin": "Hastanın sert damağında, orta hattın yanında bir kitle var.",
      "sure": 12,
      "not": "Sert damakta, orta hattın yanında bir kitle var."
     },
     {
-     "metin": "İki yıldır yavaş büyüyor; ağrısız",
+     "metin": "Kitle iki yıldır yavaş büyüyor ve ağrı yapmıyor.",
      "sure": 12,
      "not": "İki yıldır yavaş büyüyor ve ağrımıyor."
     },
     {
-     "metin": "Üstündeki mukoza sağlam, ülser yok",
+     "metin": "Kitlenin üstündeki mukoza sağlam, ülser yok.",
      "sure": 12,
      "not": "Üstündeki mukoza sağlam, ülser yok."
     },
     {
-     "metin": "Sert, lastiksi; kemiğe yapışık değil",
+     "metin": "Kitle sert ve lastik kıvamında; alttaki kemiğe yapışık değil.",
      "sure": 14,
      "not": "Sert, lastiksi kıvamda; kemiğe yapışık değil. Tahmininizi telefondan girin; cevabı dersin sonunda açacağım."
     }
@@ -1588,43 +1670,43 @@
      "baslik": "1 · Tümör dışı hastalıklar",
      "ton": "koyu",
      "maddeler": [
-      "Gelişim bozuklukları: aplazi, hipoplazi, ektopi",
-      "Mukosel, ranula, kanal kisti",
-      "Taş ve sialadenitler",
-      "Sialore ve kserostomi",
-      "Lenfoepitelyal sialadenit, Sjögren",
-      "Nekrotizan sialometaplazi",
-      "Lenfoepitelyal kistler"
+      "Gelişim bozukluklarında bez hiç olmayabilir (aplazi), az gelişebilir (hipoplazi) ya da başka yerde bulunabilir (ektopi).",
+      "Mukosel ve ranula dokuya dökülen müsinden oluşur; tükürük kanalı kisti ise epitelle döşeli gerçek kisttir.",
+      "Tükürük bezi taşlarını ve bezin iltihabı olan sialadenitleri göreceğiz.",
+      "Aşırı tükürük (sialore) ve ağız kuruluğu (kserostomi) yakınmalarının nedenlerini ele alacağız.",
+      "Lenfoepitelyal sialadenit ve Sjögren sendromu tükürük bezlerini tutan otoimmün hastalıklardır.",
+      "Nekrotizan sialometaplazi küçük bezlerin enfarktıdır ve klinikte kanser sanılabilir.",
+      "Lenfoepitelyal kistler çoğunlukla parotiste görülür; iki taraflı ve çok sayıda olanlar HIV'i düşündürür."
      ]
     },
     {
      "baslik": "2 · İyi huylu tümörler",
      "ton": "mor",
      "maddeler": [
-      "Pleomorfik adenom",
-      "Warthin tümörü",
-      "Onkositom",
-      "Bazal hücreli adenom",
-      "Kanaliküler adenom"
+      "Pleomorfik adenom en sık görülen tükürük bezi tümörüdür.",
+      "Warthin tümörü parotiste ve özellikle sigara içenlerde görülür.",
+      "Onkositom, mitokondriyle dolu iri pembe hücrelerden oluşan nadir bir tümördür.",
+      "Bazal hücreli adenom çoğunlukla parotiste görülen, bazaloid hücrelerden oluşan bir tümördür.",
+      "Kanaliküler adenom en sık üst dudakta görülür ve mukosel sanılabilir."
      ]
     },
     {
      "baslik": "3 · Kötü huylu tümörler",
      "ton": "pembe",
      "maddeler": [
-      "Mukoepidermoid karsinom",
-      "Adenoid kistik karsinom",
-      "Asinik hücreli ve sekretuar karsinom",
-      "Polimorf adenokarsinom",
-      "Karsinom ex pleomorfik adenom",
-      "Bazal hücreli adenokarsinom, duktus karsinomu, diğerleri"
+      "Mukoepidermoid karsinom en sık görülen kötü huylu tükürük bezi tümörüdür.",
+      "Adenoid kistik karsinom sinir boyunca yayılır ve yıllar sonra akciğere metastaz yapabilir.",
+      "Asinik hücreli karsinom ve sekretuar karsinom çoğunlukla parotiste görülür.",
+      "Polimorf adenokarsinom neredeyse yalnız küçük bezlerde, en çok damakta görülür.",
+      "Karsinom ex pleomorfik adenom, uzun süredir duran bir pleomorfik adenomun zemininde gelişir.",
+      "Bazal hücreli adenokarsinom, duktus karsinomu ve diğer nadir kötü huylu tümörleri kısaca göreceğiz."
      ]
     },
     {
      "baslik": null,
      "ton": "vurgu",
      "maddeler": [
-      "Her hastalıkta aynı dört soru: **hangi bez**, **kaç yaşında**, **ağızda nerede**, **mikroskopta ne görülür**."
+      "Her hastalıkta aynı dört soruyu soracağız: **hangi bezde**, **kaç yaşında**, **ağızda nerede** görülür ve **mikroskopta ne görülür**?"
      ]
     }
    ],
@@ -1645,14 +1727,15 @@
      "sure": 9,
      "not": "Her hastalıkta aynı dört soruyu soracağız: hangi bez, kaç yaşında, ağızda nerede, mikroskopta ne var. Rakamlar Neville 5 ve WHO 2022'den."
     }
-   ]
+   ],
+   "yazi": 21
   },
   {
    "tip": "adim",
    "baslik": "Tükürük bezleri: yapı ve salgı",
    "maddeler": [
     {
-     "metin": "Majör bezler: parotis, submandibuler, sublingual; ayrıca yüzlerce küçük bez",
+     "metin": "Üç çift majör tükürük bezi vardır: parotis, submandibuler ve sublingual; ayrıca ağızda yüzlerce küçük bez bulunur.",
      "sure": 8,
      "not": "Önce kısa bir hatırlatma. Üç çift majör bez var: parotis, submandibuler ve sublingual; ayrıca ağız ve orofarenkste yüzlerce küçük bez.",
      "gorsel": [
@@ -1663,12 +1746,19 @@
      ]
     },
     {
-     "metin": "Günde yaklaşık 1 litre tükürük; sabah az, akşamüstü çok",
+     "metin": "Günde yaklaşık 1 litre tükürük üretilir; üretim sabah az, akşamüstü fazladır.",
      "sure": 6,
      "not": "Günde yaklaşık bir litre tükürük üretilir; sabah az, akşamüstü çoktur."
-    },
+    }
+   ],
+   "kaynak": "Fakülte ders notları"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Tükürük bezleri: yapı ve salgı (devam)",
+   "maddeler": [
     {
-     "metin": "Asinus: seröz, müköz ya da karışık; dışında miyoepitel hücreleri",
+     "metin": "Salgı birimi olan asinus seröz, müköz ya da karışık olabilir; dışını, kasılarak salgıyı iten miyoepitel hücreleri sarar.",
      "sure": 8,
      "not": "Salgı birimi asinus: seröz, müköz ya da karışık olabilir. Asinusu ve ara kanalı miyoepitel hücreleri sarar; kasılarak salgıyı iter. Tümörlerin çoğu bu iki hücreden çıkar.",
      "gorsel": [
@@ -1679,17 +1769,17 @@
      ]
     },
     {
-     "metin": "Parotis: saf seröz; Stensen kanalı üst 2. büyük azı hizasında açılır",
+     "metin": "Parotis saf seröz salgı yapar; Stensen kanalı yanakta, üst ikinci büyük azı dişin hizasında açılır.",
      "sure": 7,
      "not": "Parotis en büyük bez, saf seröz salgı yapar; Stensen kanalı üst ikinci büyük azı hizasında açılır."
     },
     {
-     "metin": "Submandibuler: karışık; Wharton kanalı dil altında, frenulumun yanında",
+     "metin": "Submandibuler bez karışık salgı yapar; Wharton kanalı dil altında, frenulumun yanında açılır.",
      "sure": 7,
      "not": "Submandibuler bez karışık salgı yapar; Wharton kanalı dil altında, frenulumun yanında açılır."
     },
     {
-     "metin": "Sublingual ve küçük bezler: çoğu müköz",
+     "metin": "Sublingual bez ve küçük tükürük bezlerinin çoğu müköz salgı yapar.",
      "sure": 6,
      "not": "Sublingual bez ve küçük bezlerin çoğu müköz salgı yapar."
     }
@@ -1701,7 +1791,7 @@
    "baslik": "Gelişim bozuklukları: aplazi, hipoplazi, ektopi",
    "maddeler": [
     {
-     "metin": "Bezin hiç olmaması ya da az gelişmesi; erkekte 2 kat",
+     "metin": "Aplazide bez hiç yoktur, hipoplazide az gelişmiştir; bu nadir durum erkekte kadına göre iki kat sık görülür.",
      "sure": 9,
      "not": "Aplazide bez hiç yoktur, hipoplazide az gelişmiştir; nadir ve erkekte iki kat sık. Treacher Collins gibi sendromlarla birlikte olabilir.",
      "ust": "Aplazi, hipoplazi",
@@ -1713,12 +1803,12 @@
      ]
     },
     {
-     "metin": "Sonuç: ağır kuruluk, çürük ve diş erozyonu",
+     "metin": "Bezin yokluğu ağır ağız kuruluğuna yol açar; buna bağlı olarak çürük ve diş erozyonu artar.",
      "sure": 7,
      "not": "Sonuç ağır ağız kuruluğu: dil deri gibi olur, çürük ve diş erozyonu artar."
     },
     {
-     "metin": "Bez dokusu başka yerde; en sık lenf nodunda",
+     "metin": "Tükürük bezi dokusu normal yeri dışında bulunabilir; en sık boyundaki lenf nodlarının içinde görülür.",
      "sure": 9,
      "not": "Ektopi patoloji kaynaklarında böyle geçiyor; Neville'de ayrıntısını doğrulayamadım. Ektopide tükürük bezi dokusu normal yeri dışında bulunur; en sık boyundaki lenf nodlarının içinde. Mandibulada kemik içinde de olabilir.",
      "ust": "Ektopi",
@@ -1730,7 +1820,7 @@
      ]
     },
     {
-     "metin": "Ektopik bezden de kist ve tümör gelişebilir",
+     "metin": "Ektopik bez dokusundan da normal bezde olduğu gibi kist ve tümör gelişebilir.",
      "sure": 7,
      "not": "Ektopik bezden de normal bezde olduğu gibi kist ve tümör gelişebilir."
     }
@@ -1746,7 +1836,7 @@
    "baslik": "Mukosel, ranula ve tükürük kanalı kisti",
    "maddeler": [
     {
-     "metin": "Küçük kanal yırtılır, müsin dokuya dökülür",
+     "metin": "Küçük bir tükürük bezi kanalı yırtılınca müsin çevredeki dokuya dökülür ve şişlik oluşur.",
      "sure": 8,
      "not": "Ağızda en sık gördüğünüz şişlik: mukosel. Alt dudağı ısırırsınız, küçük bir kanal yırtılır, müsin dokuya dökülür.",
      "ust": "Mukosel",
@@ -1758,12 +1848,12 @@
      ]
     },
     {
-     "metin": "%82'si alt dudakta; üst dudakta neredeyse hiç yok",
+     "metin": "Neville'in 1715 olguluk serisinde mukosellerin yüzde 82'si alt dudaktadır; üst dudakta neredeyse hiç görülmez.",
      "sure": 7,
      "not": "Neville'in 1715 olguluk serisinde yüzde 82'si alt dudakta, üst dudakta bir tane bile yok. Bu cümleyi tümörlerde kullanacağız."
     },
     {
-     "metin": "Epitel yok: gerçek kist değil; besleyen bezlerle birlikte çıkar",
+     "metin": "Mukoselin epitel döşeli duvarı olmadığı için gerçek kist değildir; besleyen küçük bezlerle birlikte çıkarılmalıdır.",
      "sure": 8,
      "not": "Mikroskopta epitel yok; müsin ve köpüklü makrofajlar var, bu yüzden gerçek kist değil. Besleyen küçük bezleri de çıkarın, yoksa nükseder.",
      "gorsel": [
@@ -1772,12 +1862,22 @@
        "yazi": "Dökülmüş müsin; epitel yok"
       }
      ]
-    },
+    }
+   ],
+   "serit": [
+    1
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Mukosel, ranula ve tükürük kanalı kisti (devam)",
+   "maddeler": [
     {
-     "metin": "Ağız tabanında mukosel; sublingual bezden",
+     "metin": "Ranula, ağız tabanında görülen ve sublingual bezden kaynaklanan bir mukoseldir.",
      "sure": 7,
      "not": "Ranula ağız tabanındaki mukosel; sublingual bezden gelir.",
-     "ust": "Ranula",
      "gorsel": [
       {
        "foto": "img/M4/n11-8.jpg",
@@ -1786,7 +1886,7 @@
      ]
     },
     {
-     "metin": "Milohyoidi geçerse boyunda şişlik; tedavi sublingual bezi çıkarmak",
+     "metin": "Müsin milohyoid kası geçerse boyunda şişlik yapar (dalan ranula); tedavide sublingual bez çıkarılır.",
      "sure": 8,
      "not": "Milohyoid kası geçerse boyunda şişlik yapar; buna dalan ranula deniyor. Tedavide en önemli adım sublingual bezi çıkarmak.",
      "gorsel": [
@@ -1797,7 +1897,7 @@
      ]
     },
     {
-     "metin": "Epitelle döşeli gerçek kist; erişkinde",
+     "metin": "Bu lezyon epitelle döşeli gerçek bir kisttir; erişkinde görülür ve çıkarıldıktan sonra nüks etmez.",
      "sure": 7,
      "not": "Tükürük kanalı kisti ise epitelle döşeli gerçek bir kist; erişkinde görülür ve nüks etmez.",
      "ust": "Tükürük kanalı kisti",
@@ -1820,7 +1920,7 @@
    "baslik": "Kronik sklerozan ve granülomatöz sialadenit",
    "maddeler": [
     {
-     "metin": "Submandibuler bezde tek taraflı sert kitle; tümör sanılır",
+     "metin": "Bu hastalık submandibuler bezde tek taraflı sert bir kitle yapar ve klinikte tümör sanılır.",
      "sure": 9,
      "not": "Kronik sklerozan sialadenit, eski adıyla Küttner tümörü: submandibuler bezde sert bir kitle; klinikte tümör sanılır.",
      "ust": "Kronik sklerozan sialadenit (Küttner tümörü)",
@@ -1832,7 +1932,7 @@
      ]
     },
     {
-     "metin": "Bugün çoğu IgG4 ilişkili hastalığın parçası",
+     "metin": "Bugün bu olguların çoğu IgG4 ilişkili hastalığın bir parçası sayılır ve çoğu iki taraflıdır.",
      "sure": 8,
      "not": "Bugün bu olguların çoğu IgG4 ilişkili hastalığın parçası sayılıyor; çoğu iki taraflı.",
      "gorsel": [
@@ -1843,7 +1943,7 @@
      ]
     },
     {
-     "metin": "IgG4+ plazma hücreleri, storiform fibrozis; steroide hızlı yanıt",
+     "metin": "Mikroskopta IgG4 pozitif plazma hücreleri ve storiform fibrozis görülür; hastalık steroid tedavisine hızla yanıt verir.",
      "sure": 8,
      "not": "Mikroskopta IgG4 pozitif plazma hücreleri ve storiform fibrozis; steroide hızlı yanıt verir. Sjögren'in dışlama ölçütlerinden biri.",
      "gorsel": [
@@ -1854,7 +1954,7 @@
      ]
     },
     {
-     "metin": "Tüberküloz, sarkoidoz, mantar; sarkoidozda parotis + üveit + yüz felci (Heerfordt)",
+     "metin": "Tüberküloz, sarkoidoz ve mantar enfeksiyonları granülomatöz sialadenit yapar. Sarkoidozda parotis büyümesi, üveit ve yüz felci birlikteliğine Heerfordt sendromu denir.",
      "sure": 11,
      "not": "Granülomatöz sialadenit: tüberküloz, sarkoidoz ve mantarlar. Sarkoidozda parotis büyümesi, üveit, yüz felci ve ateş birlikte olursa Heerfordt sendromu.",
      "ust": "Granülomatöz sialadenit",
@@ -1877,7 +1977,7 @@
    "baslik": "Sialore, kserostomi ve sialadenoz",
    "maddeler": [
     {
-     "metin": "4 yaşından sonra süren aşırı tükürük",
+     "metin": "Aşırı tükürük üretimi dört yaşından sonra da sürüyorsa anormal kabul edilir.",
      "sure": 7,
      "not": "Sialore aşırı tükürük üretimi; dört yaşından sonra sürüyorsa anormal kabul edilir.",
      "ust": "Sialore",
@@ -1889,17 +1989,27 @@
      ]
     },
     {
-     "metin": "Neden: aft, yeni protez, kuduz, ağır metal, ilaçlar (klozapin)",
+     "metin": "Aft gibi ağız yaraları, yeni protez, kuduz, ağır metal zehirlenmesi ve klozapin gibi ilaçlar sialoreye yol açar.",
      "sure": 7,
      "not": "Nedenleri: aft gibi ağız yaraları, yeni protez, kuduz, ağır metal zehirlenmesi, klozapin gibi ilaçlar."
     },
     {
-     "metin": "Nörolojik hastada sorun çoğu zaman salya fazlası değil, yutma kontrolü",
+     "metin": "Serebral palsi ya da Parkinson hastasında salya akmasının nedeni çoğu zaman tükürük fazlası değil, yutma kontrolünün bozulmasıdır.",
      "sure": 7,
      "not": "Serebral palsi ya da Parkinson hastasında sorun çoğu zaman salya fazlası değil, yutma kontrolünün bozulması."
-    },
+    }
+   ],
+   "serit": [
+    1
+   ],
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Sialore, kserostomi ve sialadenoz (devam)",
+   "maddeler": [
     {
-     "metin": "Öznel ağız kuruluğu; yaşlıların %25'inde",
+     "metin": "Hastanın kendisinin hissettiği ağız kuruluğu yakınmasıdır ve yaşlıların yaklaşık dörtte birinde görülür.",
      "sure": 7,
      "not": "Kserostomi öznel bir ağız kuruluğu yakınması; yaşlıların dörtte birinde var.",
      "ust": "Kserostomi",
@@ -1911,7 +2021,7 @@
      ]
     },
     {
-     "metin": "En sık neden ilaçlar: 500'den fazla ilaç kuruluk yapar",
+     "metin": "Yaşlıda ağız kuruluğunun en sık nedeni yaşlanma değil ilaçlardır; 500'den fazla ilacın kuruluk yaptığı bilinir.",
      "sure": 7,
      "not": "Yaşlıda nedeni çoğu zaman yaşlanma değil, ilaçlar: 500'den fazla ilaç kuruluk yapar ve ilaç sayısı arttıkça kuruluk artar.",
      "gorsel": [
@@ -1922,7 +2032,7 @@
      ]
     },
     {
-     "metin": "Sonuç: kandida, kök çürüğü, protez güçlüğü",
+     "metin": "Ağız kuruluğu kandida enfeksiyonuna, kök çürüğüne, çiğneme ve protez kullanma güçlüğüne yol açar.",
      "sure": 7,
      "not": "Sonuçları: kandida, kök çürüğü, çiğneme ve protez güçlüğü.",
      "gorsel": [
@@ -1933,7 +2043,7 @@
      ]
     },
     {
-     "metin": "İltihapsız, iki taraflı parotis büyümesi: diyabet, alkol, bulimia",
+     "metin": "Bu durumda iltihap olmadan iki taraflı parotis büyümesi olur; diyabet, alkolizm, bulimia ve kötü beslenmeyle birlikte görülür.",
      "sure": 9,
      "not": "Sialadenoz: iltihapsız, iki taraflı parotis büyümesi; diyabet, alkolizm, bulimia ve kötü beslenmede görülür.",
      "ust": "Sialadenoz",
@@ -1955,7 +2065,7 @@
    "baslik": "Lenfoepitelyal sialadenit",
    "maddeler": [
     {
-     "metin": "Eski adı benign lenfoepitelyal lezyon (miyoepitelyal sialadenit); otoimmün",
+     "metin": "Lenfoepitelyal sialadenit (eski adıyla benign lenfoepitelyal lezyon ya da miyoepitelyal sialadenit) otoimmün bir sialadenittir; çoğu Sjögren hastasında görülür.",
      "sure": 8,
      "not": "Lenfoepitelyal sialadenit, eski adıyla benign lenfoepitelyal lezyon: otoimmün bir sialadenit; çoğu Sjögren hastasında.",
      "gorsel": [
@@ -1966,12 +2076,22 @@
      ]
     },
     {
-     "metin": "Çoğu iki taraflı bez büyümesi; ileri yaş kadın",
+     "metin": "Hastalık çoğunlukla iki taraflı bez büyümesi yapar ve en sık ileri yaştaki kadınlarda görülür.",
      "sure": 6,
      "not": "Çoğu iki taraflı ve simetrik bez büyümesi; ileri yaşta kadında sık."
-    },
+    }
+   ],
+   "serit": [
+    1
+   ],
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Lenfoepitelyal sialadenit (devam)",
+   "maddeler": [
     {
-     "metin": "Asinusları silen yoğun lenfosit infiltrasyonu",
+     "metin": "Mikroskopta yoğun lenfosit infiltrasyonu asinusları ortadan kaldırır; germinal merkezli foliküller görülebilir.",
      "sure": 7,
      "not": "Mikroskopta asinusları silen yoğun lenfosit infiltrasyonu; germinal merkezli foliküller.",
      "gorsel": [
@@ -1982,7 +2102,7 @@
      ]
     },
     {
-     "metin": "Kanal çevresinde epimiyoepitelyal adalar",
+     "metin": "Korunan kanalların çevresinde epitel ve miyoepitel hücreleri çoğalarak epimiyoepitelyal adaları oluşturur.",
      "sure": 7,
      "not": "Kanallar korunur; çevrelerinde epitel ve miyoepitel hücreleri çoğalır: epimiyoepitelyal adalar.",
      "gorsel": [
@@ -1993,7 +2113,7 @@
      ]
     },
     {
-     "metin": "Lenfoma riski: en sık MALT lenfoması",
+     "metin": "Bu zeminde lenfoma riski artar; en sık gelişen, mukozayla ilişkili lenfoid doku (MALT) lenfomasıdır.",
      "sure": 7,
      "not": "Bu zeminde lenfoma riski artar; en sık MALT tipi düşük dereceli lenfoma, sonra diffüz büyük B hücreli lenfoma."
     }
@@ -2018,7 +2138,7 @@
    "baslik": "Lenfoepitelyal kistler",
    "maddeler": [
     {
-     "metin": "Çoğu parotiste; ağrısız şişlik",
+     "metin": "Bu kist çoğunlukla parotiste görülür ve ağrısız bir şişlik yapar.",
      "sure": 7,
      "not": "Bu iki lezyon patoloji kaynaklarında böyle geçiyor; Neville'de ayrıntısını doğrulayamadım. Benign lenfoepitelyal kist çoğu parotiste, ağrısız bir şişlik.",
      "ust": "Benign lenfoepitelyal kist",
@@ -2030,12 +2150,12 @@
      ]
     },
     {
-     "metin": "Yassı epitelle döşeli kist; duvarında germinal merkezli lenfoid doku",
+     "metin": "Kist yassı epitelle döşelidir; duvarında germinal merkezli lenfoid doku bulunur.",
      "sure": 7,
      "not": "Kist yassı, bazen silyalı epitelle döşeli; duvarında germinal merkezli lenfoid doku var."
     },
     {
-     "metin": "Çoğu HIV pozitif hastada; iki taraflı, çok sayıda parotis kisti",
+     "metin": "Bu lezyon büyük çoğunlukla HIV pozitif hastada görülür ve parotiste iki taraflı, çok sayıda kist yapar.",
      "sure": 8,
      "not": "Kistik lenfoepitelyal lezyon büyük çoğunlukla HIV pozitif hastada görülür: iki taraflı, çok sayıda parotis kisti.",
      "ust": "HIV'de kistik lenfoepitelyal lezyon",
@@ -2047,7 +2167,7 @@
      ]
     },
     {
-     "metin": "Ek olarak epimiyoepitelyal adalar içerir",
+     "metin": "Lenfoepitelyal kistten farkı, lenfoid doku içinde ayrıca epimiyoepitelyal adalar bulunmasıdır.",
      "sure": 6,
      "not": "Lenfoepitelyal kiste benzer, ek olarak epimiyoepitelyal adalar içerir. İki taraflı parotis kistlerinde HIV testi isteyin."
     }
@@ -2084,7 +2204,7 @@
    "baslik": "Onkositom, bazal hücreli ve kanaliküler adenom",
    "maddeler": [
     {
-     "metin": "Nadir (~%1); yaşlıda, %85–90'ı parotiste",
+     "metin": "Tükürük bezi tümörlerinin yaklaşık yüzde 1'ini oluşturan nadir bir tümördür; yaşlıda görülür ve yüzde 85–90'ı parotistedir.",
      "sure": 7,
      "not": "Onkositom nadir, tümörlerin yaklaşık yüzde biri; yaşlıda, çoğu parotiste.",
      "ust": "Onkositom",
@@ -2096,12 +2216,12 @@
      ]
     },
     {
-     "metin": "Mitokondriyle dolu, iri pembe hücreler (onkosit)",
+     "metin": "Tümör hücreleri mitokondriyle dolu, iri ve pembe hücrelerdir; bunlara onkosit denir.",
      "sure": 6,
      "not": "Hücreleri mitokondriyle dolu, iri ve pembe: onkosit."
     },
     {
-     "metin": "Çoğu parotiste; ileri yaş, kadında sık",
+     "metin": "Bu tümör çoğunlukla parotiste görülür; ileri yaşta ve kadınlarda daha sıktır.",
      "sure": 7,
      "not": "Bazal hücreli adenom çoğu parotiste; ileri yaşta, kadında sık.",
      "ust": "Bazal hücreli adenom",
@@ -2111,9 +2231,19 @@
        "yazi": "Bazaloid hücre kordonları"
       }
      ]
-    },
+    }
+   ],
+   "serit": [
+    2
+   ],
+   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Onkositom, bazal hücreli ve kanaliküler adenom (devam)",
+   "maddeler": [
     {
-     "metin": "Bazaloid hücre adaları; solid, trabeküler, tübüler, membranöz tip",
+     "metin": "Mikroskopta bazaloid hücre adaları görülür; tümörün solid, trabeküler, tübüler ve membranöz tipleri vardır.",
      "sure": 7,
      "not": "Bazaloid hücre adaları, aralarında bazal membran maddesi; solid, trabeküler, tübüler ve membranöz tipleri var.",
      "gorsel": [
@@ -2124,7 +2254,7 @@
      ]
     },
     {
-     "metin": "Küçük bezlerde, özellikle üst dudakta (%66–78)",
+     "metin": "Tümör neredeyse yalnız küçük bezlerde görülür; olguların yüzde 66–78'i üst dudaktadır.",
      "sure": 7,
      "not": "Kanaliküler adenom neredeyse yalnız küçük bezlerde; yüzde 66 ila 78'i üst dudakta.",
      "ust": "Kanaliküler adenom",
@@ -2136,7 +2266,7 @@
      ]
     },
     {
-     "metin": "Yaşlı kadında mavimsi nodül; mukosel sanılabilir",
+     "metin": "Yaşlı kadında mavimsi bir nodül olarak ortaya çıkar ve mukosel sanılabilir.",
      "sure": 7,
      "not": "Yaşlı kadında mavimsi bir nodül olarak gelir ve mukosel sanılabilir. Sırada telefon: üst dudakta bir nodül.",
      "gorsel": [
@@ -2167,7 +2297,7 @@
    "baslik": "Mukoepidermoid karsinom",
    "maddeler": [
     {
-     "metin": "En sık kötü huylu tükürük bezi tümörü; çocukta da en sık",
+     "metin": "Mukoepidermoid karsinom en sık kötü huylu tükürük bezi tümörüdür; çocuklarda da en sık görülen kötü huylu tükürük bezi tümörüdür.",
      "sure": 7,
      "not": "Mukoepidermoid karsinom en sık kötü huylu tükürük bezi tümörü; çocukta da en sık malign tümör.",
      "gorsel": [
@@ -2178,17 +2308,28 @@
      ]
     },
     {
-     "metin": "Çoğu parotiste; ağızda en sık damak",
+     "metin": "Tümör çoğunlukla parotiste görülür; ağız içindeki en sık yeri damaktır.",
      "sure": 6,
      "not": "Çoğu parotiste; ağızda en sık damakta."
     },
     {
-     "metin": "Mavi-kırmızı ve yumuşak olunca mukosel sanılır",
+     "metin": "Ağız içindeki tümör mavi-kırmızı renkli ve yumuşak olduğunda mukosel sanılabilir.",
      "sure": 6,
      "not": "Ağızda mavi-kırmızı ve yumuşak olunca mukosel sanılır."
-    },
+    }
+   ],
+   "serit": [
+    3
+   ],
+   "dus": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Mukoepidermoid karsinom (devam)",
+   "maddeler": [
     {
-     "metin": "Üç hücre: mukus, epidermoid ve ara hücreler",
+     "metin": "Tümör üç tür hücreden oluşur: mukus hücreleri, epidermoid hücreler ve ara hücreler.",
      "sure": 7,
      "not": "Adı hücrelerinden: mukus hücreleri, epidermoid hücreler ve aradaki ara hücreler.",
      "gorsel": [
@@ -2199,7 +2340,7 @@
      ]
     },
     {
-     "metin": "Düşük derece kistik, yüksek derece solid; 5 yıl sağkalım %90 / %55",
+     "metin": "Düşük dereceli tümör kistik, yüksek dereceli tümör soliddir. Düşük derecede hastaların yüzde 90'ından fazlası iyileşir, yüksek derecede yalnız yüzde 30–64'ü yaşar.",
      "sure": 9,
      "not": "Düşük dereceli tümör kistik ve mukus hücresi bol; yüksek dereceli olan solid, skuamöz hücreli karsinoma benzer. Beş yıllık sağkalım düşük derecede yüzde 90, yüksek derecede yüzde 55.",
      "gorsel": [
@@ -2210,7 +2351,7 @@
      ]
     },
     {
-     "metin": "Kemik içinde de olur: arka mandibula, çok gözlü radyolüsensi",
+     "metin": "Tümör çene kemiği içinde de gelişebilir (santral mukoepidermoid karsinom); arka mandibulada çok gözlü radyolüsensi yapar.",
      "sure": 7,
      "not": "Kemik içinde de görülür: santral mukoepidermoid karsinom, arka mandibulada çok gözlü radyolüsensi.",
      "gorsel": [
@@ -2221,7 +2362,7 @@
      ]
     },
     {
-     "metin": "Gen: CRTC1/3::MAML2",
+     "metin": "Tümörlerin çoğunda CRTC1 ya da CRTC3 geninin MAML2 geniyle füzyonu bulunur.",
      "sure": 5,
      "not": "Gen değişikliği CRTC1 ya da 3 ile MAML2 füzyonu."
     }
@@ -2237,7 +2378,7 @@
    "baslik": "Asinik hücreli karsinom ve sekretuar karsinom",
    "maddeler": [
     {
-     "metin": "Seröz asinus hücresine benzeyen hücreler; %80–90 parotiste",
+     "metin": "Tümör hücreleri seröz asinus hücresine benzer; olguların yüzde 85–90'ı parotistedir.",
      "sure": 8,
      "not": "Asinik hücreli karsinomun hücreleri seröz asinus hücresine benzer; yüzde 80 ila 90'ı parotiste.",
      "ust": "Asinik hücreli karsinom",
@@ -2249,7 +2390,7 @@
      ]
     },
     {
-     "metin": "Bazofilik, granüllü sitoplazma; PAS+ zimojen granülleri",
+     "metin": "Hücrelerin sitoplazması bazofilik ve granüllüdür; bu zimojen granülleri PAS boyasıyla pozitif boyanır.",
      "sure": 7,
      "not": "Sitoplazma bazofilik ve granüllü; zimojen granülleri PAS pozitif.",
      "gorsel": [
@@ -2260,12 +2401,12 @@
      ]
     },
     {
-     "metin": "Düşük dereceli; prognoz iyi",
+     "metin": "Asinik hücreli karsinom düşük dereceli bir tümördür ve prognozu iyidir.",
      "sure": 5,
      "not": "Düşük dereceli bir tümör; prognozu iyi."
     },
     {
-     "metin": "ETV6::NTRK3; memenin sekretuar karsinomuna benzer",
+     "metin": "Memenin sekretuar karsinomu gibi ETV6::NTRK3 gen füzyonu taşır; 2010'dan önce çoğu asinik hücreli karsinom sanılıyordu.",
      "sure": 9,
      "not": "Sekretuar karsinom memenin sekretuar karsinomuyla aynı ETV6::NTRK3 füzyonunu taşır; 2010'dan önce çoğu asinik hücreli karsinom sanılıyordu.",
      "ust": "Sekretuar karsinom",
@@ -2278,7 +2419,7 @@
      ]
     },
     {
-     "metin": "TRK inhibitörleri için olası hedef",
+     "metin": "Bu gen füzyonu, TRK inhibitörü ilaçlar için olası bir tedavi hedefidir.",
      "sure": 6,
      "not": "Bu füzyon TRK inhibitörü ilaçlar için bir hedef olabilir."
     }
@@ -2294,7 +2435,7 @@
    "baslik": "Polimorf adenokarsinom ve karsinom ex PA",
    "maddeler": [
     {
-     "metin": "Neredeyse yalnız küçük bezler; %60–65'i damakta; ⅔ kadın",
+     "metin": "Tümör neredeyse yalnız küçük bezlerde görülür; yaklaşık yüzde 65'i damaktadır ve olguların üçte ikisi kadındır.",
      "sure": 8,
      "not": "Polimorf adenokarsinom, eski adıyla polimorf düşük dereceli adenokarsinom: neredeyse yalnız küçük bezlerde, çoğu damakta; üçte ikisi kadın.",
      "ust": "Polimorf adenokarsinom",
@@ -2306,7 +2447,7 @@
      ]
     },
     {
-     "metin": "Hücreler tek tip, desen çok çeşitli; tek sıra dizilim, perinöral invazyon",
+     "metin": "Hücreler tek tip ama dizilim deseni çok çeşitlidir; hücreler tek sıra dizilir ve sinir çevresine yayılır.",
      "sure": 8,
      "not": "Hücreler tek tip ama desen çok çeşitli; hücreler tek sıra dizilir ve sinir çevresine yayılır. Yine de prognozu iyi.",
      "gorsel": [
@@ -2315,9 +2456,20 @@
        "yazi": "Tek sıra dizilen hücreler"
       }
      ]
-    },
+    }
+   ],
+   "serit": [
+    3
+   ],
+   "dus": true,
+   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Polimorf adenokarsinom ve karsinom ex PA (devam)",
+   "maddeler": [
     {
-     "metin": "Pleomorfik adenom zemininde karsinom; yıllardır duran kitle hızla büyür",
+     "metin": "Pleomorfik adenom zemininde gelişen karsinomdur; yıllardır duran bir kitle birden hızla büyümeye başlarsa düşünülür.",
      "sure": 9,
      "not": "Karsinom ex pleomorfik adenom: pleomorfik adenom zemininde gelişen karsinom. Yıllardır duran bir kitle birden hızla büyümeye başlarsa düşünün.",
      "ust": "Karsinom ex pleomorfik adenom",
@@ -2329,7 +2481,7 @@
      ]
     },
     {
-     "metin": "Hasta pleomorfik adenomdan 10–15 yaş büyük; en sık parotis",
+     "metin": "Hastalar pleomorfik adenomlu hastalardan 10–15 yaş büyüktür; tümör en sık parotiste görülür.",
      "sure": 7,
      "not": "Hasta pleomorfik adenomlu hastalardan 10 ila 15 yaş büyük; en sık parotiste.",
      "gorsel": [
@@ -2340,7 +2492,7 @@
      ]
     },
     {
-     "metin": "Kapsül invazyonu prognozu belirler: kapsül içi iyi, yaygın invaziv kötü",
+     "metin": "Prognozu kapsül invazyonu belirler: kapsül içinde kalan tümörün seyri iyi, çevre dokuya yaygın yayılanınki kötüdür.",
      "sure": 8,
      "not": "Prognozu kapsül invazyonu belirler: kapsül içinde kalan iyi, çevre dokuya yaygın yayılan kötü seyirli."
     }
@@ -2356,7 +2508,7 @@
    "baslik": "Diğer kötü huylu tümörler",
    "maddeler": [
     {
-     "metin": "Bazal hücreli adenomun malign karşılığı; nodüller hâlinde infiltrasyon",
+     "metin": "Bazal hücreli adenomun kötü huylu karşılığıdır; çevre dokuya nodüller hâlinde yayılması onu adenomdan ayırır.",
      "sure": 8,
      "not": "Bazal hücreli adenokarsinom bazal hücreli adenomun malign karşılığı; adenomdan ayıran nodüler infiltrasyon, atipi ve mitoz.",
      "ust": "Bazal hücreli adenokarsinom",
@@ -2368,7 +2520,7 @@
      ]
     },
     {
-     "metin": "Yüksek dereceli; yaşlı erkek, parotis; memenin duktal karsinomuna benzer",
+     "metin": "Yüksek dereceli bu tümör en sık yaşlı erkekte, parotiste görülür ve memenin duktal karsinomuna benzer.",
      "sure": 9,
      "not": "Bu slayttaki son dört tümörün ayrıntısını Neville'de doğrulayamadım; patoloji kaynaklarındaki bilgiyi veriyorum. Tükürük bezi duktus karsinomu yüksek dereceli bir tümör; yaşlı erkekte, parotiste. Memenin duktal karsinomuna benzer; yüzde 90'ından fazlası androjen reseptörü pozitif; prognozu kötü.",
      "ust": "Tükürük bezi duktus karsinomu",
@@ -2378,9 +2530,20 @@
        "yazi": "Pleomorfik hücreler"
       }
      ]
-    },
+    }
+   ],
+   "serit": [
+    3
+   ],
+   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları",
+   "opsiyonel": true
+  },
+  {
+   "tip": "adim",
+   "baslik": "Diğer kötü huylu tümörler (devam)",
+   "maddeler": [
     {
-     "metin": "EBV ilişkili; nazofarenks karsinomunun benzeri; önce nazofarenksi dışla",
+     "metin": "Epstein-Barr virüsüyle ilişkili, nazofarenks karsinomuna benzeyen bir tümördür; tanıdan önce nazofarenkste tümör dışlanmalıdır.",
      "sure": 9,
      "not": "Lenfoepitelyal karsinom EBV ile ilişkili; nazofarenks karsinomunun benzeri. Tanıdan önce nazofarenkste bir tümör dışlanmalı.",
      "ust": "Lenfoepitelyal karsinom",
@@ -2392,7 +2555,7 @@
      ]
     },
     {
-     "metin": "Parotiste (%70); iç sıra kanal hücresi, dış sıra berrak miyoepitel",
+     "metin": "Olguların yaklaşık yüzde 70'i parotistedir; iç sırada kanal hücreleri, dış sırada berrak miyoepitel hücreleri dizilir.",
      "sure": 8,
      "not": "Epitelyal-miyoepitelyal karsinom çoğu parotiste; iç sırada kanal hücreleri, dış sırada glikojenden berrak görünen miyoepitel hücreleri. Düşük derecelidir.",
      "ust": "Epitelyal-miyoepitelyal karsinom",
@@ -2404,10 +2567,10 @@
      ]
     },
     {
-     "metin": "Başka bir sınıfa girmeyen adenokarsinom; dışlama tanısı",
+     "metin": "Başka hiçbir sınıfa girmeyen adenokarsinomlara bu ad verilir; tanı ancak diğer tümörler dışlanarak konur.",
      "sure": 7,
      "not": "Adenokarsinom NOS başka hiçbir sınıfa girmeyen adenokarsinomlar; dışlama tanısı. Sırada telefon: tümörleri genleriyle eşleştireceksiniz.",
-     "ust": "Adenokarsinom, NOS",
+     "ust": "Adenokarsinom, NOS (başka türlü sınıflanamayan)",
      "gorsel": [
       {
        "foto": "img/M4/n11-85.jpg",
@@ -2437,7 +2600,7 @@
    "baslik": "Açılış vakası: hastanın söylemediği",
    "maddeler": [
     {
-     "metin": "45 yaşında kadın; sert damakta, orta hattın yanında kitle",
+     "metin": "Hastamız 45 yaşında bir kadın; sert damakta, orta hattın yanında bir kitlesi var.",
      "sure": 8,
      "not": "Dersin başındaki hastamıza dönüyoruz: sert damakta, orta hattın yanında kitle.",
      "gorsel": [
@@ -2449,18 +2612,18 @@
        "soruIsareti": "Bu bulgu ne anlatıyor?"
       },
       {
-       "kutu": "Yeni bulgu: karıncalanma. Tahminin değişti mi?",
+       "kutu": "Yeni bulgu karıncalanma ve uyuşma; bu bilgiyle tahmininiz değişti mi?",
        "ton": "vurgu"
       }
      ]
     },
     {
-     "metin": "İki yıldır yavaş büyüyor; mukoza sağlam",
+     "metin": "Kitle iki yıldır yavaş büyüyor ve üstündeki mukoza sağlam.",
      "sure": 7,
      "not": "İki yıldır yavaş büyüyor; mukoza sağlam."
     },
     {
-     "metin": "Son iki ayda damakta karıncalanma ve uyuşma",
+     "metin": "Hasta, son iki ayda damağında karıncalanma ve uyuşma olduğunu başta söylememişti.",
      "sure": 14,
      "not": "Hasta başta söylemedi: son iki ayda damağında karıncalanma ve uyuşma var. Bu bir sinir bulgusu. Tahmininizi yenileyin."
     }
@@ -2485,7 +2648,7 @@
    "baslik": "En olası tanı: adenoid kistik karsinom",
    "maddeler": [
     {
-     "metin": "Sert damak, lateral: küçük bezlerin en sık yeri; yaklaşık yarısı malign",
+     "metin": "Kitle, küçük bez tümörlerinin en sık yeri olan sert damağın yan tarafında; buradaki tümörlerin yaklaşık yarısı kötü huyludur.",
      "sure": 9,
      "not": "Kanıtları sırayla koyalım. Yer: sert damak; küçük bezlerin en sık yeri ve buradaki tümörlerin yaklaşık yarısı malign.",
      "ust": "Yer",
@@ -2497,13 +2660,13 @@
      ]
     },
     {
-     "metin": "Yavaş büyüyen, ağrısız, sağlam mukoza: pleomorfik adenom gibi",
+     "metin": "Yavaş büyüme, ağrısızlık ve sağlam mukoza başta pleomorfik adenomu düşündürüyordu.",
      "sure": 8,
      "not": "Klinik pleomorfik adenomu düşündürüyordu ve başta en olası tanı oydu.",
      "ust": "Klinik"
     },
     {
-     "metin": "Karıncalanma, uyuşma: perinöral invazyon",
+     "metin": "Karıncalanma ve uyuşma sinir tutulumunu, yani perinöral invazyonu gösterir; bu da adenoid kistik karsinomu düşündürür.",
      "sure": 8,
      "not": "Ama karıncalanma ve uyuşma sinir tutulumu demek; damakta bu adenoid kistik karsinomu, daha az olasılıkla polimorf adenokarsinomu düşündürür.",
      "ust": "Yeni bulgu",
@@ -2515,7 +2678,7 @@
      ]
     },
     {
-     "metin": "İnsizyonel; kribriform yapı ve perinöral invazyon tanıyı koyar",
+     "metin": "İnsizyonel biyopside kribriform yapı ve perinöral invazyonun görülmesi tanıyı koyar.",
      "sure": 8,
      "not": "Tanıyı insizyonel biyopsi koyar: kribriform yapı ve perinöral invazyon.",
      "ust": "Biyopsi",
@@ -2527,7 +2690,7 @@
      ]
     },
     {
-     "metin": "Geniş cerrahi ± radyoterapi; geç akciğer metastazı için uzun takip",
+     "metin": "Geniş cerrahi yapılır, gerekirse radyoterapi eklenir; geç akciğer metastazı nedeniyle hasta uzun yıllar izlenir.",
      "sure": 9,
      "not": "Tedavi geniş cerrahi, gerekirse radyoterapi. Geç akciğer metastazı için bu hastayı yirmi yıl izleyeceğiz.",
      "ust": "Yönetim"
