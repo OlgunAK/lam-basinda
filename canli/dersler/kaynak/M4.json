@@ -3,7 +3,7 @@
  "baslik": "Tükürük Bezi Hastalıkları ve Tümörleri",
  "kisa": "Tükürük Bezi Hastalıkları",
  "tarih": "17 Kasım 2026",
- "surum": "6",
+ "surum": "2611232330",
  "cerceve": "Üç grup: tümör dışı hastalıklar, iyi huylu tümörler, kötü huylu tümörler",
  "serit": {
   "ad": "Üç grup",
@@ -1111,6 +1111,10 @@
        ],
        "baslik": "Tümörün kötü huylu olma olasılığı",
        "kadar": 0
+      },
+      {
+       "foto": "img/M4/ekran-g-r-nt-s-2026-11-23-2323-mwtprd4s.jpg",
+       "sigdir": true
       }
      ]
     },
@@ -1152,6 +1156,10 @@
        ],
        "baslik": "Tümörün kötü huylu olma olasılığı",
        "kadar": 2
+      },
+      {
+       "foto": "img/M4/ekran-g-r-nt-s-2026-11-23-2323-mwtprd4s.jpg",
+       "sigdir": true
       }
      ]
     },
@@ -1194,6 +1202,10 @@
        ],
        "baslik": "Tümörün kötü huylu olma olasılığı",
        "kadar": 3
+      },
+      {
+       "foto": "img/M4/ekran-g-r-nt-s-2026-11-23-2323-mwtprd4s.jpg",
+       "sigdir": true
       }
      ]
     },
@@ -1218,7 +1230,8 @@
    "ilerleme": [
     5,
     8
-   ]
+   ],
+   "gorsel": []
   },
   {
    "tip": "soru",
@@ -1229,7 +1242,8 @@
    "ilerleme": [
     5,
     8
-   ]
+   ],
+   "gorsel": []
   },
   {
    "tip": "adim",
