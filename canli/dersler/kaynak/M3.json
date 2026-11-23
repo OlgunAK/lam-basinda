@@ -1379,7 +1379,7 @@
    "tip": "adim",
    "baslik": "NF1 ve MEN 2B: ağızdan sendromu yakala",
    "yazi": 34,
-   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları",
+   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları · Merrick fotoğrafı 1889 (kamu malı)",
    "maddeler": [
     {
      "metin": "Ağızda nörofibrom görülen her hasta nörofibromatozis tip 1 (NF1) açısından muayene edilmelidir.",
@@ -1415,16 +1415,17 @@
     {
      "metin": "Hastalığı 1882'de von Recklinghausen tanımladı; \"Fil Adam\" Joseph Merrick'e uzun süre NF1 dendi, bugün büyük olasılıkla Proteus sendromu olduğu düşünülüyor.",
      "sure": 9,
-     "not": "Tarihten: hastalığı 1882'de Alman patolog von Recklinghausen tanımladı. 'Fil Adam' Joseph Merrick'e uzun süre NF1 dendi; Neville de bugün Proteus sendromu olduğunu düşünüyor.",
+     "not": "Tarihten: hastalığı 1882'de Alman patolog von Recklinghausen tanımladı. Soldaki fotoğraf 'Fil Adam' Joseph Merrick; uzun süre NF1 sanıldı. Ama sağdaki gerçek NF1 hastasıyla karşılaştırın: Merrick'te café-au-lait lekesi ve deri nörofibromları değil, kemik ve yumuşak dokuda tek taraflı, düzensiz aşırı büyüme var. 1986'dan beri büyük olasılıkla Proteus sendromu olduğu düşünülüyor; Neville de bu görüşte.",
      "ust": "Tarihten",
      "gorsel": [
       {
-       "foto": "img/M3/r_nf1_sirt.jpg",
-       "yazi": "Sırtta çok sayıda nörofibrom"
+       "foto": "img/M3/merrick.jpg",
+       "yazi": "Joseph Merrick, 'Fil Adam' (1862–1890)",
+       "alt": "Büyük olasılıkla Proteus sendromu"
       },
       {
-       "kutu": "NF1'i 1882'de von Recklinghausen tanımladı; \"Fil Adam\" Joseph Merrick'te büyük olasılıkla NF1 değil Proteus sendromu vardı.",
-       "ton": "pembe"
+       "foto": "img/M3/r_nf1_sirt.jpg",
+       "yazi": "Gerçek NF1: sırtta çok sayıda nörofibrom"
       }
      ]
     }
@@ -1606,7 +1607,7 @@
      ]
     },
     {
-     "metin": "Yüzdeki porto şarabı lekesi bir kapiller malformasyondur; Gorbaçov'un alnındaki leke de böyle bir malformasyondu.",
+     "metin": "Yüzdeki porto şarabı lekesi bir kapiller malformasyondur; Mihail Gorbaçov'un alnındaki leke de böyle bir malformasyondur.",
      "sure": 8,
      "not": "Yüzdeki porto şarabı lekesi bir kapiller malformasyon; Gorbaçov'un alnındaki leke de buydu. Trigeminal birinci dalı tutarsa Sturge-Weber açısından bakın.",
      "gorsel": [
@@ -1615,8 +1616,10 @@
        "yazi": "Porto şarabı lekesi"
       },
       {
-       "foto": "img/M3/n12-103.jpg",
-       "yazi": "Sturge-Weber"
+       "foto": "img/M3/gorbacov.jpg",
+       "yazi": "Mihail Gorbaçov",
+       "alt": "Alında porto şarabı lekesi",
+       "konum": "50% 30%"
       }
      ]
     },
