@@ -1071,13 +1071,18 @@
    "tip": "adim",
    "baslik": "Bez küçüldükçe kötü huylu olasılığı artar",
    "yazi": 40,
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024) · bez çizimi: şematik",
    "maddeler": [
     {
      "metin": "Parotis tümörlerinin yalnız yüzde 15–32'si kötü huyludur; yani parotisteki tümörlerin çoğu iyi huyludur.",
      "sure": 10,
      "not": "Tümörlerin çoğu parotiste ve çoğu iyi huylu; parotiste kötü huylu oranı yüzde 15 ila 32.",
      "gorsel": [
+      {
+       "foto": "img/M4/bezler_parotis.svg",
+       "sigdir": true,
+       "genislik": 500
+      },
       {
        "cubuklar": [
         {
@@ -1119,6 +1124,11 @@
      "sure": 10,
      "not": "Submandibulerde yüzde 26 ila 45, küçük bezlerde yaklaşık yarısı.",
      "gorsel": [
+      {
+       "foto": "img/M4/bezler_submandibuler_kucuk.svg",
+       "sigdir": true,
+       "genislik": 500
+      },
       {
        "cubuklar": [
         {
@@ -1162,6 +1172,11 @@
      "ust": "Akılda kalsın",
      "gorsel": [
       {
+       "foto": "img/M4/bezler_sublingual.svg",
+       "sigdir": true,
+       "genislik": 500
+      },
+      {
        "cubuklar": [
         {
          "ad": "Parotis",
@@ -1201,7 +1216,48 @@
      "metin": "Parotiste ince iğne aspirasyonu, damakta insizyonel biyopsi yapılır; tanı kesinleşmeden tümör enükleasyonla çıkarılmaz.",
      "sure": 9,
      "not": "Tanıda: parotiste ince iğne aspirasyonu, ağızda insizyonel biyopsi. Tanı kesinleşmeden enükleasyon yapılmaz.",
-     "ust": "Tanı ve tedavi"
+     "ust": "Tanı ve tedavi",
+     "gorsel": [
+      {
+       "foto": "img/M4/bezler_hepsi.svg",
+       "sigdir": true,
+       "genislik": 500
+      },
+      {
+       "cubuklar": [
+        {
+         "ad": "Parotis",
+         "alt": 15,
+         "ust": 32,
+         "not": "tümörlerin %61–80'i",
+         "vurgu": false
+        },
+        {
+         "ad": "Submandibuler",
+         "alt": 26,
+         "ust": 45,
+         "not": "tümörlerin ~%10'u",
+         "vurgu": false
+        },
+        {
+         "ad": "Küçük bezler",
+         "alt": 38,
+         "ust": 54,
+         "not": "en sık damak",
+         "vurgu": true
+        },
+        {
+         "ad": "Sublingual",
+         "alt": 70,
+         "ust": 97,
+         "not": "nadir",
+         "vurgu": true
+        }
+       ],
+       "baslik": "Tümörün kötü huylu olma olasılığı",
+       "kadar": 3
+      }
+     ]
     }
    ],
    "ilerleme": [

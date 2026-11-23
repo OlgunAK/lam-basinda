@@ -331,7 +331,7 @@
     var src = yol(o, p.foto);
     var pos = p.konum ? "object-position:" + esc(p.konum) : "";
     var cap = p.yazi ? "<figcaption>" + md(p.yazi) + (p.alt ? "<small>" + md(p.alt) + "</small>" : "") + "</figcaption>" : "";
-    return "<figure class='" + (p.sigdir ? "sig" : "") + "'><div class='cer'><img src='" + esc(src) + "' alt='' style='" + pos + "'>" +
+    return "<figure class='" + (p.sigdir ? "sig" : "") + "'" + (p.genislik ? " style='flex:0 0 " + (+p.genislik) + "px'" : "") + "><div class='cer'><img src='" + esc(src) + "' alt='' style='" + pos + "'>" +
       (p.etiket ? "<div class='lab'>" + esc(p.etiket) + "</div>" : "") + "</div>" + cap + "</figure>";
   }
 
@@ -347,7 +347,7 @@
           var dis = c.ust < 70;
           return "<div class='sat" + (c.vurgu ? " sic" : "") + (i > kadar ? " gizli" : "") + "'><div class='ad'>" + esc(c.ad) + (c.not ? " <small>· " + md(c.not) + "</small>" : "") + "</div>" +
             "<div class='iz'><div class='dol' style='left:" + c.alt + "%;width:" + (c.ust - c.alt) + "%'></div>" +
-            "<div class='deg" + (dis ? "" : " ic") + "' style='left:calc(" + (dis ? c.ust : c.alt) + "% + 16px)'>%" + c.alt + "–" + c.ust + "</div></div></div>";
+            "<div class='deg' style='" + (dis ? "left:calc(" + c.ust + "% + 16px)" : "right:calc(" + (100 - c.alt) + "% + 16px)") + "'>%" + c.alt + "–" + c.ust + "</div></div></div>";
         }).join("") + "</div>");
       }
       else if (p.cizim === "keloid") medya.push("<div class='cizim'>" + keloid(p.asama || 0) + "</div>");
