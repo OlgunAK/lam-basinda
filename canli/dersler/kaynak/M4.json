@@ -3,7 +3,7 @@
  "baslik": "Tükürük Bezi Hastalıkları ve Tümörleri",
  "kisa": "Tükürük Bezi Hastalıkları",
  "tarih": "17 Kasım 2026",
- "surum": "6",
+ "surum": "2611232330",
  "cerceve": "Üç grup: tümör dışı hastalıklar, iyi huylu tümörler, kötü huylu tümörler",
  "serit": {
   "ad": "Üç grup",
@@ -1274,7 +1274,8 @@
    "ilerleme": [
     5,
     8
-   ]
+   ],
+   "gorsel": []
   },
   {
    "tip": "soru",
@@ -1285,7 +1286,8 @@
    "ilerleme": [
     5,
     8
-   ]
+   ],
+   "gorsel": []
   },
   {
    "tip": "adim",
