@@ -305,7 +305,7 @@
   {
    "id": "W1",
    "type": "POLL",
-   "label": "Açılış vakası: tahminin ne?",
+   "label": "Günün vakası: tahminin ne?",
    "q": "Bu hastada en olası tanı ne?",
    "scored": false,
    "img": "img/m4_vaka.jpg",
@@ -418,7 +418,7 @@
    "id": "W7",
    "type": "POLL",
    "label": "Vakaya dönüş: şimdi ne diyorsun?",
-   "q": "Dersin başındaki hasta damakta karıncalanma ve uyuşma tarifliyor. Şimdi en olası tanı?",
+   "q": "Günün vakasındaki hasta damakta karıncalanma ve uyuşma tarifliyor. Şimdi en olası tanı?",
    "scored": false,
    "img": "img/m4_vaka.jpg",
    "opts": [
@@ -495,6 +495,66 @@
      "not": "Her başlıkta aynı üç soru: hangi bez, mikroskopta ne var, nasıl tedavi edilir. Her maddeden sonra telefondan iki soru."
     }
    ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Günün vakası: damakta kitle",
+   "maddeler": [
+    {
+     "metin": "Hastamız 45 yaşında bir kadındır.",
+     "sure": 9,
+     "not": "Hastamız 45 yaşında bir kadın.",
+     "gorsel": [
+      {
+       "foto": "img/M4/n11-38.jpg",
+       "yazi": "Sert damak, lateral"
+      },
+      {
+       "soruIsareti": "Devamı 8 maddenin sonunda"
+      },
+      {
+       "kutu": "Tahmininizi telefondan girin; cevap sekiz maddenin sonunda açıklanacak.",
+       "ton": "vurgu"
+      }
+     ]
+    },
+    {
+     "metin": "Hastanın sert damağında, orta hattın yanında bir kitle var.",
+     "sure": 12,
+     "not": "Sert damakta, orta hattın yanında bir kitle var."
+    },
+    {
+     "metin": "Kitle iki yıldır yavaş büyüyor ve ağrı yapmıyor.",
+     "sure": 12,
+     "not": "İki yıldır yavaş büyüyor ve ağrımıyor."
+    },
+    {
+     "metin": "Kitlenin üstündeki mukoza sağlam, ülser yok.",
+     "sure": 12,
+     "not": "Üstündeki mukoza sağlam, ülser yok."
+    },
+    {
+     "metin": "Kitle sert ve lastik kıvamında; alttaki kemiğe yapışık değil.",
+     "sure": 14,
+     "not": "Sert, lastiksi kıvamda; kemiğe yapışık değil. Tahmininizi telefondan girin; cevabı sekiz maddenin sonunda açacağım."
+    }
+   ],
+   "soruAc": "W1",
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "soru",
+   "baslik": "Günün vakası: tahminin ne?",
+   "soru": "W1",
+   "sure": 35,
+   "not": "Dağılımı gösteriyorum, yorum yok. Beş şıktan biri tümör değil, biri iyi huylu, üçü kötü huylu. Sekiz maddenin sonunda hastanın söylemediği bir şikâyeti öğreneceğiz.",
+   "gorsel": [
+    {
+     "foto": "img/M4/n11-38.jpg"
+    }
+   ],
+   "devam": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
    "tip": "kutular",
@@ -1525,6 +1585,109 @@
    ]
   },
   {
+   "tip": "adim",
+   "baslik": "Günün vakası: hastanın söylemediği",
+   "maddeler": [
+    {
+     "metin": "Hastamız 45 yaşında bir kadın; sert damakta, orta hattın yanında bir kitlesi var.",
+     "sure": 8,
+     "not": "Günün vakasına dönüyoruz: sert damakta, orta hattın yanında kitle.",
+     "gorsel": [
+      {
+       "foto": "img/M4/n11-38.jpg",
+       "yazi": "Sert damak, lateral"
+      },
+      {
+       "soruIsareti": "Bu bulgu ne anlatıyor?"
+      },
+      {
+       "kutu": "Yeni bulgu karıncalanma ve uyuşma; bu bilgiyle tahmininiz değişti mi?",
+       "ton": "vurgu"
+      }
+     ]
+    },
+    {
+     "metin": "Kitle iki yıldır yavaş büyüyor ve üstündeki mukoza sağlam.",
+     "sure": 7,
+     "not": "İki yıldır yavaş büyüyor; mukoza sağlam."
+    },
+    {
+     "metin": "Hasta, son iki ayda damağında karıncalanma ve uyuşma olduğunu başta söylememişti.",
+     "sure": 14,
+     "not": "Hasta başta söylemedi: son iki ayda damağında karıncalanma ve uyuşma var. Bu bir sinir bulgusu. Tahmininizi yenileyin."
+    }
+   ],
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "soru",
+   "baslik": "Vakaya dönüş: şimdi ne diyorsun?",
+   "soru": "W7",
+   "sure": 35,
+   "not": "Aynı şıklar. İlk dağılımı hatırlayın. (İki sonucu yan yana göster.)",
+   "gorsel": [
+    {
+     "foto": "img/M4/n11-38.jpg"
+    }
+   ],
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "adim",
+   "baslik": "En olası tanı: adenoid kistik karsinom",
+   "maddeler": [
+    {
+     "metin": "Kitle, küçük bez tümörlerinin en sık yeri olan sert damağın yan tarafında; buradaki tümörlerin yaklaşık yarısı kötü huyludur.",
+     "sure": 9,
+     "not": "Kanıtları sırayla koyalım. Yer: sert damak; küçük bezlerin en sık yeri ve buradaki tümörlerin yaklaşık yarısı malign.",
+     "ust": "Yer",
+     "gorsel": [
+      {
+       "foto": "img/M4/n11-38.jpg",
+       "yazi": "Sert damakta kitle"
+      }
+     ]
+    },
+    {
+     "metin": "Yavaş büyüme, ağrısızlık ve sağlam mukoza başta pleomorfik adenomu düşündürüyordu.",
+     "sure": 8,
+     "not": "Klinik pleomorfik adenomu düşündürüyordu ve başta en olası tanı oydu.",
+     "ust": "Klinik"
+    },
+    {
+     "metin": "Karıncalanma ve uyuşma sinir tutulumunu, yani perinöral invazyonu gösterir; bu da adenoid kistik karsinomu düşündürür.",
+     "sure": 8,
+     "not": "Ama karıncalanma ve uyuşma sinir tutulumu demek; damakta bu adenoid kistik karsinomu, daha az olasılıkla polimorf adenokarsinomu düşündürür.",
+     "ust": "Yeni bulgu",
+     "gorsel": [
+      {
+       "foto": "img/M4/n11-79.jpg",
+       "yazi": "Perinöral invazyon"
+      }
+     ]
+    },
+    {
+     "metin": "İnsizyonel biyopside kribriform yapı ve perinöral invazyonun görülmesi tanıyı koyar.",
+     "sure": 8,
+     "not": "Tanıyı insizyonel biyopsi koyar: kribriform yapı ve perinöral invazyon.",
+     "ust": "Biyopsi",
+     "gorsel": [
+      {
+       "foto": "img/M4/n11-77.jpg",
+       "yazi": "Kribriform desen"
+      }
+     ]
+    },
+    {
+     "metin": "Geniş cerrahi yapılır, gerekirse radyoterapi eklenir; geç akciğer metastazı nedeniyle hasta uzun yıllar izlenir.",
+     "sure": 9,
+     "not": "Tedavi geniş cerrahi, gerekirse radyoterapi. Geç akciğer metastazı için bu hastayı yirmi yıl izleyeceğiz.",
+     "ust": "Yönetim"
+    }
+   ],
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
    "tip": "ozet",
    "baslik": "8 maddede bugünkü ders",
    "maddeler": [
@@ -1597,70 +1760,10 @@
    "baslik": "Tamam mı, devam mı?",
    "soru": "K1",
    "sure": 40,
-   "aciklama": "Tamam çıkarsa çıkış biletine geçiyoruz; devam çıkarsa açılış vakasıyla ayrıntılara giriyoruz.",
-   "not": "Ana maddeler bitti. Sonucu gösteriyorum. TAMAM çıkarsa kumandada Slaytlar menüsünden 'Çıkış bileti'ne atla (sonra liderlik ve kaynaklar). DEVAM çıkarsa → ile açılış vakasından sürdür; ayrıntılı bölüm bu maddeleri derinleştirir.",
+   "aciklama": "Tamam çıkarsa çıkış biletine geçiyoruz; devam çıkarsa ayrıntılı bölüme geçiyoruz.",
+   "not": "Ana maddeler bitti. Sonucu gösteriyorum. TAMAM çıkarsa kumandada Slaytlar menüsünden 'Çıkış bileti'ne atla (sonra liderlik ve kaynaklar). DEVAM çıkarsa → ile ayrıntılı bölüme geç; bu bölüm sekiz maddeyi derinleştirir.",
    "alan": true,
    "yazi": 84
-  },
-  {
-   "tip": "adim",
-   "baslik": "Açılış vakası: damakta kitle",
-   "maddeler": [
-    {
-     "metin": "Hastamız 45 yaşında bir kadındır.",
-     "sure": 9,
-     "not": "Hastamız 45 yaşında bir kadın.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-38.jpg",
-       "yazi": "Sert damak, lateral"
-      },
-      {
-       "soruIsareti": "Devamı dersin sonunda"
-      },
-      {
-       "kutu": "Tahmininizi telefondan girin; cevap dersin sonunda açıklanacak.",
-       "ton": "vurgu"
-      }
-     ]
-    },
-    {
-     "metin": "Hastanın sert damağında, orta hattın yanında bir kitle var.",
-     "sure": 12,
-     "not": "Sert damakta, orta hattın yanında bir kitle var."
-    },
-    {
-     "metin": "Kitle iki yıldır yavaş büyüyor ve ağrı yapmıyor.",
-     "sure": 12,
-     "not": "İki yıldır yavaş büyüyor ve ağrımıyor."
-    },
-    {
-     "metin": "Kitlenin üstündeki mukoza sağlam, ülser yok.",
-     "sure": 12,
-     "not": "Üstündeki mukoza sağlam, ülser yok."
-    },
-    {
-     "metin": "Kitle sert ve lastik kıvamında; alttaki kemiğe yapışık değil.",
-     "sure": 14,
-     "not": "Sert, lastiksi kıvamda; kemiğe yapışık değil. Tahmininizi telefondan girin; cevabı dersin sonunda açacağım."
-    }
-   ],
-   "soruAc": "W1",
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
-  },
-  {
-   "tip": "soru",
-   "baslik": "Açılış vakası: tahminin ne?",
-   "soru": "W1",
-   "sure": 35,
-   "not": "Dağılımı gösteriyorum, yorum yok. Beş şıktan biri tümör değil, biri iyi huylu, üçü kötü huylu. Dersin sonunda hastanın söylemediği bir şikâyeti öğreneceğiz.",
-   "gorsel": [
-    {
-     "foto": "img/M4/n11-38.jpg"
-    }
-   ],
-   "devam": true,
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
    "tip": "kutular",
@@ -2594,109 +2697,6 @@
    "serit": [
     3
    ]
-  },
-  {
-   "tip": "adim",
-   "baslik": "Açılış vakası: hastanın söylemediği",
-   "maddeler": [
-    {
-     "metin": "Hastamız 45 yaşında bir kadın; sert damakta, orta hattın yanında bir kitlesi var.",
-     "sure": 8,
-     "not": "Dersin başındaki hastamıza dönüyoruz: sert damakta, orta hattın yanında kitle.",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-38.jpg",
-       "yazi": "Sert damak, lateral"
-      },
-      {
-       "soruIsareti": "Bu bulgu ne anlatıyor?"
-      },
-      {
-       "kutu": "Yeni bulgu karıncalanma ve uyuşma; bu bilgiyle tahmininiz değişti mi?",
-       "ton": "vurgu"
-      }
-     ]
-    },
-    {
-     "metin": "Kitle iki yıldır yavaş büyüyor ve üstündeki mukoza sağlam.",
-     "sure": 7,
-     "not": "İki yıldır yavaş büyüyor; mukoza sağlam."
-    },
-    {
-     "metin": "Hasta, son iki ayda damağında karıncalanma ve uyuşma olduğunu başta söylememişti.",
-     "sure": 14,
-     "not": "Hasta başta söylemedi: son iki ayda damağında karıncalanma ve uyuşma var. Bu bir sinir bulgusu. Tahmininizi yenileyin."
-    }
-   ],
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
-  },
-  {
-   "tip": "soru",
-   "baslik": "Vakaya dönüş: şimdi ne diyorsun?",
-   "soru": "W7",
-   "sure": 35,
-   "not": "Aynı şıklar. Dersin başındaki dağılımı hatırlayın. (İki sonucu yan yana göster.)",
-   "gorsel": [
-    {
-     "foto": "img/M4/n11-38.jpg"
-    }
-   ],
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
-  },
-  {
-   "tip": "adim",
-   "baslik": "En olası tanı: adenoid kistik karsinom",
-   "maddeler": [
-    {
-     "metin": "Kitle, küçük bez tümörlerinin en sık yeri olan sert damağın yan tarafında; buradaki tümörlerin yaklaşık yarısı kötü huyludur.",
-     "sure": 9,
-     "not": "Kanıtları sırayla koyalım. Yer: sert damak; küçük bezlerin en sık yeri ve buradaki tümörlerin yaklaşık yarısı malign.",
-     "ust": "Yer",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-38.jpg",
-       "yazi": "Sert damakta kitle"
-      }
-     ]
-    },
-    {
-     "metin": "Yavaş büyüme, ağrısızlık ve sağlam mukoza başta pleomorfik adenomu düşündürüyordu.",
-     "sure": 8,
-     "not": "Klinik pleomorfik adenomu düşündürüyordu ve başta en olası tanı oydu.",
-     "ust": "Klinik"
-    },
-    {
-     "metin": "Karıncalanma ve uyuşma sinir tutulumunu, yani perinöral invazyonu gösterir; bu da adenoid kistik karsinomu düşündürür.",
-     "sure": 8,
-     "not": "Ama karıncalanma ve uyuşma sinir tutulumu demek; damakta bu adenoid kistik karsinomu, daha az olasılıkla polimorf adenokarsinomu düşündürür.",
-     "ust": "Yeni bulgu",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-79.jpg",
-       "yazi": "Perinöral invazyon"
-      }
-     ]
-    },
-    {
-     "metin": "İnsizyonel biyopside kribriform yapı ve perinöral invazyonun görülmesi tanıyı koyar.",
-     "sure": 8,
-     "not": "Tanıyı insizyonel biyopsi koyar: kribriform yapı ve perinöral invazyon.",
-     "ust": "Biyopsi",
-     "gorsel": [
-      {
-       "foto": "img/M4/n11-77.jpg",
-       "yazi": "Kribriform desen"
-      }
-     ]
-    },
-    {
-     "metin": "Geniş cerrahi yapılır, gerekirse radyoterapi eklenir; geç akciğer metastazı nedeniyle hasta uzun yıllar izlenir.",
-     "sure": 9,
-     "not": "Tedavi geniş cerrahi, gerekirse radyoterapi. Geç akciğer metastazı için bu hastayı yirmi yıl izleyeceğiz.",
-     "ust": "Yönetim"
-    }
-   ],
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
    "tip": "tablo",

@@ -339,7 +339,7 @@
   {
    "id": "W1",
    "type": "POLL",
-   "label": "Açılış vakası: tahminin ne?",
+   "label": "Günün vakası: tahminin ne?",
    "q": "Bu hastada ön tanın ne?",
    "scored": false,
    "img": "img/M3/n12-60.jpg",
@@ -408,7 +408,7 @@
    "id": "W6",
    "type": "POLL",
    "label": "Vakaya dönüş: şimdi ne diyorsun?",
-   "q": "Dersin başındaki hasta: eksizyon raporundan sonra tanın ne?",
+   "q": "Günün vakasındaki hasta: eksizyon raporundan sonra tanın ne?",
    "scored": false,
    "img": "img/M3/r_schw2.jpg",
    "opts": [
@@ -444,7 +444,7 @@
    },
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)",
    "sure": 60,
-   "not": "Günaydın. Bugün iki ders arka arkaya: önce ağzın yumuşak doku hastalıkları, sonra tükürük bezleri. Sağdaki görüntü diş etindeki bir kitlenin mikroskobu; ne olduğunu ilk on dakikada göreceğiz. Karekod perdede: okutun; hesap yok, uygulama yok. Takma ad isterseniz yazın; dersin sonunda liderlik tablosu var. Herkes girince → ile vakaya geçiyoruz. (L: katılım ekranını gizle/göster.)",
+   "not": "Günaydın. Bugün iki ders arka arkaya: önce ağzın yumuşak doku hastalıkları, sonra tükürük bezleri. Sağdaki görüntü diş etindeki bir kitlenin mikroskobu; ne olduğunu ilk on dakikada göreceğiz. Karekod perdede: okutun; hesap yok, uygulama yok. Takma ad isterseniz yazın; dersin sonunda liderlik tablosu var. Herkes girince → ile önce ana fikre, sonra günün vakasına geçiyoruz. (L: katılım ekranını gizle/göster.)",
    "katilim": true,
    "numarasiz": true
   },
@@ -475,6 +475,66 @@
      "not": "Her başlıkta aynı üç soruyu soracağız: nasıl görünür, mikroskopta ne var, nasıl tedavi edilir. Her maddeden sonra telefondan iki soru."
     }
    ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Günün vakası: ağız tabanında nodül",
+   "maddeler": [
+    {
+     "metin": "Hastamız 38 yaşında bir erkektir.",
+     "sure": 9,
+     "not": "Hastamız 38 yaşında bir erkek.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-60.jpg",
+       "yazi": "Ağız tabanı"
+      },
+      {
+       "soruIsareti": "Devamı 8 maddenin sonunda"
+      },
+      {
+       "kutu": "Tahminini telefondan gir; doğru cevap sekiz maddenin sonunda açıklanacak.",
+       "ton": "vurgu"
+      }
+     ]
+    },
+    {
+     "metin": "Ağız tabanında, dilin altında 2 santimetrelik, düzgün yüzeyli ve lastik kıvamında bir nodül vardır.",
+     "sure": 11,
+     "not": "Ağız tabanında, dilin altında iki santimetrelik, düzgün yüzeyli, lastik kıvamında bir nodül."
+    },
+    {
+     "metin": "Nodül üç yıldır çok yavaş büyümektedir ve ağrısızdır.",
+     "sure": 10,
+     "not": "Üç yıldır çok yavaş büyüyor ve ağrımıyor."
+    },
+    {
+     "metin": "Bastırınca hafif hassastır; üstündeki mukoza sağlamdır ve ülser yoktur.",
+     "sure": 10,
+     "not": "Bastırınca hafif hassas; üstündeki mukoza sağlam, ülser yok."
+    },
+    {
+     "metin": "Hastada travma, sigara ya da alkol öyküsü yoktur.",
+     "sure": 10,
+     "not": "Travma, sigara ve alkol öyküsü yok. Fotoğrafa bakın ve tahmininizi telefondan girin; cevabı sekiz maddenin sonunda açacağım."
+    }
+   ],
+   "soruAc": "W1",
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
+  },
+  {
+   "tip": "soru",
+   "baslik": "Günün vakası: tahminin ne?",
+   "soru": "W1",
+   "sure": 35,
+   "not": "Sonuçları gösteriyorum ama yorum yapmıyorum. Şıklardan biri kötü huylu, dördü iyi huylu ya da reaktif. Sekiz maddenin sonunda biyopsi sonucuyla birlikte aynı soruyu yeniden soracağım.",
+   "gorsel": [
+    {
+     "foto": "img/M3/n12-60.jpg"
+    }
+   ],
+   "devam": true,
+   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
    "tip": "kutular",
@@ -1664,6 +1724,147 @@
    ]
   },
   {
+   "tip": "adim",
+   "baslik": "Günün vakası: eksizyon sonucu",
+   "maddeler": [
+    {
+     "metin": "Hasta 38 yaşında bir erkektir; ağız tabanında üç yıldır yavaş büyüyen, ağrısız bir nodülü vardır.",
+     "sure": 8,
+     "not": "Günün vakasına dönüyoruz: ağız tabanında üç yıldır yavaş büyüyen, ağrısız nodül.",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-60.jpg",
+       "yazi": "Ağız tabanı"
+      },
+      {
+       "kutu": "Eksizyon raporu geldi. Bu bulgularla tahminin değişti mi?",
+       "ton": "vurgu"
+      }
+     ]
+    },
+    {
+     "metin": "Kitle kapsülüyle birlikte tek parça halinde çıkarıldı; bir sinir dalına tutunuyor ve siniri kenara itmiş.",
+     "sure": 9,
+     "not": "Kitle kapsülüyle birlikte tek parça çıktı; bir sinir dalına tutunuyor ve siniri kenara itmiş."
+    },
+    {
+     "metin": "Mikroskopta iğsi hücrelerin çekirdekleri çit gibi dizilmiş, aralarında pembe cisimcikler var; yer yer gevşek alanlar görülüyor.",
+     "sure": 10,
+     "not": "Mikroskopta iğsi hücrelerin çekirdekleri çit gibi sıra sıra dizilmiş, aralarında pembe cisimcikler var; yer yer gevşek, miksoid alanlar.",
+     "gorsel": [
+      {
+       "foto": "img/M3/r_schw2.jpg",
+       "yazi": "Sıra sıra dizilen çekirdekler"
+      },
+      {
+       "foto": "img/M3/r_schw1.jpg",
+       "yazi": "Hücreden zengin alan"
+      }
+     ]
+    },
+    {
+     "metin": "Bazı alanlarda kanama, hemosiderin ve büyük, düzensiz çekirdekler var; bu yüzden asistan 'sarkom olabilir mi?' diye soruyor.",
+     "sure": 11,
+     "not": "Bazı alanlarda kanama, hemosiderin ve büyük, düzensiz çekirdekler de var; asistan 'sarkom olabilir mi?' diye soruyor. Tahmininizi yenileyin."
+    }
+   ],
+   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları"
+  },
+  {
+   "tip": "soru",
+   "baslik": "Vakaya dönüş: şimdi ne diyorsun?",
+   "soru": "W6",
+   "sure": 40,
+   "not": "Aynı soru, aynı şıklar. İlk dağılımı hatırlayın. (İki sonucu yan yana göster.)",
+   "gorsel": [
+    {
+     "foto": "img/M3/r_schw2.jpg",
+     "yazi": "Eksizyon"
+    }
+   ],
+   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları"
+  },
+  {
+   "tip": "adim",
+   "baslik": "Tanı: schwannom",
+   "yazi": 32,
+   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları",
+   "maddeler": [
+    {
+     "metin": "Dil ve ağız tabanı, schwannomun ağızda en sık görüldüğü yerlerdir.",
+     "sure": 9,
+     "not": "Kanıtları sırayla koyalım. Yer: dil ve ağız tabanı; ağızda schwannomun en sık yeri.",
+     "ust": "Yer",
+     "gorsel": [
+      {
+       "foto": "img/M3/n12-60.jpg",
+       "yazi": "Ağız tabanında nodül"
+      }
+     ]
+    },
+    {
+     "metin": "Kitle yavaş büyüyen, ağrısız ve kapsüllüdür; sinirden çıkar ama siniri içine almaz, kenara iter.",
+     "sure": 9,
+     "not": "Klinik: yavaş büyüyen, ağrısız, kapsüllü bir kitle; sinirden çıkar ama siniri içine almaz, kenara iter.",
+     "ust": "Klinik"
+    }
+   ]
+  },
+  {
+   "tip": "adim",
+   "baslik": "Tanı: schwannom (devam)",
+   "yazi": 32,
+   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları",
+   "maddeler": [
+    {
+     "metin": "Antoni A alanlarında çit gibi dizilen çekirdekler ve Verocay cisimcikleri, Antoni B alanlarında gevşek doku görülür; S100 yaygın boyanır.",
+     "sure": 10,
+     "not": "Mikroskop: Antoni A alanında çit gibi dizilen çekirdekler ve aralarında Verocay cisimcikleri; Antoni B gevşek. S100 yaygın pozitif. Tanı schwannom.",
+     "ust": "Mikroskop",
+     "gorsel": [
+      {
+       "foto": "img/M3/r_schw1.jpg",
+       "yazi": "Antoni A"
+      },
+      {
+       "foto": "img/M3/n12-61.jpg",
+       "yazi": "Antoni A ve B"
+      }
+     ]
+    },
+    {
+     "metin": "Kanama, hemosiderin ve çekirdek atipisi eski (dejeneratif) schwannomda görülen değişikliklerdir; tümör yine iyi huyludur.",
+     "sure": 9,
+     "not": "Kanama, hemosiderin ve düzensiz çekirdekler eski schwannomda görülen dejeneratif değişiklikler; tümör yine iyi huylu.",
+     "ust": "Tuzak"
+    },
+    {
+     "metin": "Kapsülüyle birlikte eksizyon yapılır; nüks beklenmez ve kötü huylu dönüşüm yok denecek kadar nadirdir.",
+     "sure": 9,
+     "not": "Tedavi kapsülüyle eksizyon; Neville'e göre nüks etmemeli, kötü huylu dönüşüm yok ya da son derece nadir. Çok sayıda schwannom varsa NF2 ya da schwannomatozu düşünün.",
+     "ust": "Tedavi"
+    },
+    {
+     "metin": "Eski schwannomdaki atipi sarkom sanılabilir; bu yüzden istek formuna 'yıllardır yavaş büyüyor, kapsüllü çıktı' bilgisini yazın.",
+     "sure": 12,
+     "not": "Patoloğun notu: Neville açıkça uyarıyor; eski schwannomdaki kanama, fibrozis ve çekirdek atipisi sarkom sanılmamalı. 'Yıllardır, yavaş büyüyor, kapsüllü çıktı' cümlesi patoloğun en değerli bilgisi.",
+     "ust": "Patoloğun notu",
+     "gorsel": [
+      {
+       "foto": "img/M3/r_schw2.jpg",
+       "yazi": "Sıra sıra dizilen çekirdekler"
+      },
+      {
+       "not": {
+        "baslik": "Eski schwannom",
+        "metin": "Kanama, hemosiderin, fibrozis ve çekirdek atipisi dejeneratif değişikliktir; tümör iyi huyludur. Sarkom tanısı konmamalı."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
    "tip": "ozet",
    "baslik": "8 maddede bugünkü ders",
    "maddeler": [
@@ -1736,70 +1937,10 @@
    "baslik": "Tamam mı, devam mı?",
    "soru": "K1",
    "sure": 40,
-   "aciklama": "Tamam çıkarsa çıkış biletine geçiyoruz; devam çıkarsa açılış vakasıyla ayrıntılara giriyoruz.",
-   "not": "Ana maddeler bitti. Sonucu gösteriyorum. TAMAM çıkarsa kumandada Slaytlar menüsünden 'Çıkış bileti'ne atla (sonra liderlik ve kaynaklar). DEVAM çıkarsa → ile açılış vakasından sürdür; ayrıntılı bölüm bu maddeleri derinleştirir.",
+   "aciklama": "Tamam çıkarsa çıkış biletine geçiyoruz; devam çıkarsa ayrıntılı bölüme geçiyoruz.",
+   "not": "Ana maddeler bitti. Sonucu gösteriyorum. TAMAM çıkarsa kumandada Slaytlar menüsünden 'Çıkış bileti'ne atla (sonra liderlik ve kaynaklar). DEVAM çıkarsa → ile ayrıntılı bölüme geç; bu bölüm sekiz maddeyi derinleştirir.",
    "alan": true,
    "yazi": 84
-  },
-  {
-   "tip": "adim",
-   "baslik": "Açılış vakası: ağız tabanında nodül",
-   "maddeler": [
-    {
-     "metin": "Hastamız 38 yaşında bir erkektir.",
-     "sure": 9,
-     "not": "Hastamız 38 yaşında bir erkek.",
-     "gorsel": [
-      {
-       "foto": "img/M3/n12-60.jpg",
-       "yazi": "Ağız tabanı"
-      },
-      {
-       "soruIsareti": "Devamı dersin sonunda"
-      },
-      {
-       "kutu": "Tahminini telefondan gir; doğru cevap dersin sonunda açıklanacak.",
-       "ton": "vurgu"
-      }
-     ]
-    },
-    {
-     "metin": "Ağız tabanında, dilin altında 2 santimetrelik, düzgün yüzeyli ve lastik kıvamında bir nodül vardır.",
-     "sure": 11,
-     "not": "Ağız tabanında, dilin altında iki santimetrelik, düzgün yüzeyli, lastik kıvamında bir nodül."
-    },
-    {
-     "metin": "Nodül üç yıldır çok yavaş büyümektedir ve ağrısızdır.",
-     "sure": 10,
-     "not": "Üç yıldır çok yavaş büyüyor ve ağrımıyor."
-    },
-    {
-     "metin": "Bastırınca hafif hassastır; üstündeki mukoza sağlamdır ve ülser yoktur.",
-     "sure": 10,
-     "not": "Bastırınca hafif hassas; üstündeki mukoza sağlam, ülser yok."
-    },
-    {
-     "metin": "Hastada travma, sigara ya da alkol öyküsü yoktur.",
-     "sure": 10,
-     "not": "Travma, sigara ve alkol öyküsü yok. Fotoğrafa bakın ve tahmininizi telefondan girin; cevabı dersin sonunda açacağım."
-    }
-   ],
-   "soruAc": "W1",
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
-  },
-  {
-   "tip": "soru",
-   "baslik": "Açılış vakası: tahminin ne?",
-   "soru": "W1",
-   "sure": 35,
-   "not": "Sonuçları gösteriyorum ama yorum yapmıyorum. Şıklardan biri kötü huylu, dördü iyi huylu ya da reaktif. Dersin sonunda biyopsi sonucuyla birlikte aynı soruyu yeniden soracağım.",
-   "gorsel": [
-    {
-     "foto": "img/M3/n12-60.jpg"
-    }
-   ],
-   "devam": true,
-   "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
   },
   {
    "tip": "kutular",
@@ -2383,7 +2524,7 @@
     {
      "metin": "Olguların yarısına kadarında üstteki epitel aşağı doğru uzanır; buna psödoepitelyomatöz hiperplazi denir.",
      "sure": 8,
-     "not": "Olguların yarısına kadarında üstteki epitel aşağı doğru dallar yapar; buna psödoepitelyomatöz hiperplazi diyoruz. Bunu dersin sonunda tekrar göreceğiz.",
+     "not": "Olguların yarısına kadarında üstteki epitel aşağı doğru dallar yapar; buna psödoepitelyomatöz hiperplazi diyoruz.",
      "gorsel": [
       {
        "foto": "img/M3/n12-87.jpg",
@@ -3268,147 +3409,6 @@
    ],
    "dus": true,
    "kaynak": "Neville ve ark., *Oral and Maxillofacial Pathology*, 5. baskı (Elsevier, 2024)"
-  },
-  {
-   "tip": "adim",
-   "baslik": "Açılış vakası: eksizyon sonucu",
-   "maddeler": [
-    {
-     "metin": "Hasta 38 yaşında bir erkektir; ağız tabanında üç yıldır yavaş büyüyen, ağrısız bir nodülü vardır.",
-     "sure": 8,
-     "not": "Dersin başındaki hastamıza dönüyoruz: ağız tabanında üç yıldır yavaş büyüyen, ağrısız nodül.",
-     "gorsel": [
-      {
-       "foto": "img/M3/n12-60.jpg",
-       "yazi": "Ağız tabanı"
-      },
-      {
-       "kutu": "Eksizyon raporu geldi. Bu bulgularla tahminin değişti mi?",
-       "ton": "vurgu"
-      }
-     ]
-    },
-    {
-     "metin": "Kitle kapsülüyle birlikte tek parça halinde çıkarıldı; bir sinir dalına tutunuyor ve siniri kenara itmiş.",
-     "sure": 9,
-     "not": "Kitle kapsülüyle birlikte tek parça çıktı; bir sinir dalına tutunuyor ve siniri kenara itmiş."
-    },
-    {
-     "metin": "Mikroskopta iğsi hücrelerin çekirdekleri çit gibi dizilmiş, aralarında pembe cisimcikler var; yer yer gevşek alanlar görülüyor.",
-     "sure": 10,
-     "not": "Mikroskopta iğsi hücrelerin çekirdekleri çit gibi sıra sıra dizilmiş, aralarında pembe cisimcikler var; yer yer gevşek, miksoid alanlar.",
-     "gorsel": [
-      {
-       "foto": "img/M3/r_schw2.jpg",
-       "yazi": "Sıra sıra dizilen çekirdekler"
-      },
-      {
-       "foto": "img/M3/r_schw1.jpg",
-       "yazi": "Hücreden zengin alan"
-      }
-     ]
-    },
-    {
-     "metin": "Bazı alanlarda kanama, hemosiderin ve büyük, düzensiz çekirdekler var; bu yüzden asistan 'sarkom olabilir mi?' diye soruyor.",
-     "sure": 11,
-     "not": "Bazı alanlarda kanama, hemosiderin ve büyük, düzensiz çekirdekler de var; asistan 'sarkom olabilir mi?' diye soruyor. Tahmininizi yenileyin."
-    }
-   ],
-   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları"
-  },
-  {
-   "tip": "soru",
-   "baslik": "Vakaya dönüş: şimdi ne diyorsun?",
-   "soru": "W6",
-   "sure": 40,
-   "not": "Aynı soru, aynı şıklar. Dersin başındaki dağılımı hatırlayın. (İki sonucu yan yana göster.)",
-   "gorsel": [
-    {
-     "foto": "img/M3/r_schw2.jpg",
-     "yazi": "Eksizyon"
-    }
-   ],
-   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları"
-  },
-  {
-   "tip": "adim",
-   "baslik": "Tanı: schwannom",
-   "yazi": 32,
-   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları",
-   "maddeler": [
-    {
-     "metin": "Dil ve ağız tabanı, schwannomun ağızda en sık görüldüğü yerlerdir.",
-     "sure": 9,
-     "not": "Kanıtları sırayla koyalım. Yer: dil ve ağız tabanı; ağızda schwannomun en sık yeri.",
-     "ust": "Yer",
-     "gorsel": [
-      {
-       "foto": "img/M3/n12-60.jpg",
-       "yazi": "Ağız tabanında nodül"
-      }
-     ]
-    },
-    {
-     "metin": "Kitle yavaş büyüyen, ağrısız ve kapsüllüdür; sinirden çıkar ama siniri içine almaz, kenara iter.",
-     "sure": 9,
-     "not": "Klinik: yavaş büyüyen, ağrısız, kapsüllü bir kitle; sinirden çıkar ama siniri içine almaz, kenara iter.",
-     "ust": "Klinik"
-    }
-   ]
-  },
-  {
-   "tip": "adim",
-   "baslik": "Tanı: schwannom (devam)",
-   "yazi": 32,
-   "kaynak": "Neville 5. baskı (2024) · fakülte ders notları",
-   "maddeler": [
-    {
-     "metin": "Antoni A alanlarında çit gibi dizilen çekirdekler ve Verocay cisimcikleri, Antoni B alanlarında gevşek doku görülür; S100 yaygın boyanır.",
-     "sure": 10,
-     "not": "Mikroskop: Antoni A alanında çit gibi dizilen çekirdekler ve aralarında Verocay cisimcikleri; Antoni B gevşek. S100 yaygın pozitif. Tanı schwannom.",
-     "ust": "Mikroskop",
-     "gorsel": [
-      {
-       "foto": "img/M3/r_schw1.jpg",
-       "yazi": "Antoni A"
-      },
-      {
-       "foto": "img/M3/n12-61.jpg",
-       "yazi": "Antoni A ve B"
-      }
-     ]
-    },
-    {
-     "metin": "Kanama, hemosiderin ve çekirdek atipisi eski (dejeneratif) schwannomda görülen değişikliklerdir; tümör yine iyi huyludur.",
-     "sure": 9,
-     "not": "Kanama, hemosiderin ve düzensiz çekirdekler eski schwannomda görülen dejeneratif değişiklikler; tümör yine iyi huylu.",
-     "ust": "Tuzak"
-    },
-    {
-     "metin": "Kapsülüyle birlikte eksizyon yapılır; nüks beklenmez ve kötü huylu dönüşüm yok denecek kadar nadirdir.",
-     "sure": 9,
-     "not": "Tedavi kapsülüyle eksizyon; Neville'e göre nüks etmemeli, kötü huylu dönüşüm yok ya da son derece nadir. Çok sayıda schwannom varsa NF2 ya da schwannomatozu düşünün.",
-     "ust": "Tedavi"
-    },
-    {
-     "metin": "Eski schwannomdaki atipi sarkom sanılabilir; bu yüzden istek formuna 'yıllardır yavaş büyüyor, kapsüllü çıktı' bilgisini yazın.",
-     "sure": 12,
-     "not": "Patoloğun notu: Neville açıkça uyarıyor; eski schwannomdaki kanama, fibrozis ve çekirdek atipisi sarkom sanılmamalı. 'Yıllardır, yavaş büyüyor, kapsüllü çıktı' cümlesi patoloğun en değerli bilgisi.",
-     "ust": "Patoloğun notu",
-     "gorsel": [
-      {
-       "foto": "img/M3/r_schw2.jpg",
-       "yazi": "Sıra sıra dizilen çekirdekler"
-      },
-      {
-       "not": {
-        "baslik": "Eski schwannom",
-        "metin": "Kanama, hemosiderin, fibrozis ve çekirdek atipisi dejeneratif değişikliktir; tümör iyi huyludur. Sarkom tanısı konmamalı."
-       }
-      }
-     ]
-    }
-   ]
   },
   {
    "tip": "tablo",
