@@ -139,17 +139,17 @@
    "id": "A8",
    "type": "MCQ",
    "label": "Ana madde 8: hemanjiyom ve malformasyon",
-   "q": "Mandibulada çok gözlü radyolüsensi; üstündeki diş sallanıyor, diş eti cebinden sızıntı gibi kanama var. Çekimden ya da biyopsiden önce ne yapılmalı?",
+   "q": "Mandibulada çok gözlü radyolüsensi; üstündeki diş sallanıyor, diş eti cebinden kan sızıyor. Diş hekiminin ilk adımı ne olmalı?",
    "scored": true,
    "opts": [
     "Dişi hemen çekmek",
     "İnsizyonel biyopsi",
-    "Antibiyotik başlamak",
-    "İğne aspirasyonu",
-    "Küretaj"
+    "Antibiyotik başlayıp iki hafta izlemek",
+    "Muayenehanede iğne aspirasyonu",
+    "Hiçbir girişim yapmadan, damar lezyonu şüphesiyle hastaneye yönlendirmek"
    ],
-   "a": 3,
-   "exp": "Kemik içi damar lezyonu düşünülmeli: önce iğneyle aspire edin. Kan gelirse çekim ya da biyopsi ölümcül kanamaya yol açabilir; hastayı hastaneye yönlendirin.",
+   "a": 4,
+   "exp": "Kemik içi damar lezyonunda çekim ya da biyopsi ölümcül kanamaya yol açabilir; iğne de kanatabilir. Tanıyı görüntüleme koyar (Doppler ultrason, BT ya da MR anjiyografi, gerekirse anjiyografi); aspirasyon gerekiyorsa hastanede yapılır. Tedavi embolizasyon ya da skleroterapidir.",
    "t": 30
   },
   {
@@ -732,9 +732,9 @@
      ]
     },
     {
-     "metin": "Çenede kemik içi damar lezyonunda çekim ve biyopsiden önce iğne aspirasyonu: ölümcül kanama riski",
-     "sure": 12,
-     "not": "Akılda kalsın: çenede kemik içi damar lezyonunda dişi çekmeden ya da biyopsi almadan önce iğneyle aspire edin; ölümcül kanama olabilir.",
+     "metin": "Çenede kemik içi damar lezyonu şüphesinde dokunma: çekim, biyopsi ve aspirasyon hastanede; önce görüntüleme",
+     "sure": 15,
+     "not": "Akılda kalsın: çenede kemik içi damar lezyonundan şüphelenirseniz muayenehanede dokunmayın. Çekim ya da biyopsi ölümcül kanamaya yol açabilir; iğne aspirasyonu da kanatabilir. Hastayı girişimsel radyolojisi olan bir hastaneye yönlendirin: tanıyı Doppler ultrason, BT ya da MR anjiyografi koyar, tedavi embolizasyon ya da skleroterapi.",
      "ust": "Akılda kalsın",
      "gorsel": [
       {
@@ -754,7 +754,7 @@
    "baslik": "Soru · Hemanjiyom ve malformasyon",
    "soru": "A8",
    "sure": 30,
-   "not": "(Sonuç.) Doğru D: iğne aspirasyonu; kanama riski.",
+   "not": "(Sonuç.) Doğru E: girişim yapmadan hastaneye yönlendirmek. Aspirasyon doğru bir adım ama yeri muayenehane değil; iğne de kanatabilir.",
    "ilerleme": [
     8,
     8
@@ -794,7 +794,7 @@
     },
     {
      "ust": "Hemanjiyom ve malformasyon",
-     "metin": "Çenede kemik içi damar lezyonunda çekim ve biyopsiden önce iğne aspirasyonu: ölümcül kanama riski"
+     "metin": "Çenede kemik içi damar lezyonu şüphesinde dokunma: çekim, biyopsi ve aspirasyon hastanede; önce görüntüleme"
     }
    ],
    "sure": 40,
