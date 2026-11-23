@@ -130,8 +130,18 @@ Adresler:
     return s.replace("\n", "\r\n").encode()
 
 
+AY = {"Ocak": 1, "Şubat": 2, "Mart": 3, "Nisan": 4, "Mayıs": 5, "Haziran": 6, "Temmuz": 7, "Ağustos": 8, "Eylül": 9, "Ekim": 10, "Kasım": 11, "Aralık": 12}
+
+
+def gecti(t):
+    """Tarihi iki haftadan eski ders: PowerPoint'i pakete girmez (GitHub 100 MB sınırı); sayfadan indirilir."""
+    import datetime
+    g, a, y = t.split()[:3]
+    return datetime.date(int(y), AY[a], int(g)) < datetime.date.today() - datetime.timedelta(days=14)
+
+
 def main():
-    info = json.load(open(os.path.join(OUT, "dersler.json"), encoding="utf-8"))
+    info = [i for i in json.load(open(os.path.join(OUT, "dersler.json"), encoding="utf-8")) if not gecti(i["date"])]
     path = os.path.join(OUT, "flas.zip")
     with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
         z.writestr(D + "BASLAT.html", page(info).encode())
@@ -143,8 +153,7 @@ def main():
         z.writestr(D + "4 - Slaytlar ve quizler.url", url_file(U["ana"]))
         for i in info:
             z.write(os.path.join(OUT, i["file"]), D + "PowerPoint/" + i["file"])
-    print(path, round(os.path.getsize(path) / 1e6, 1), "MB")
-
+    print(path, round(os.path.getsize(path) / 1e6, 1), "MB", [i["id"] for i in info])
 
 if __name__ == "__main__":
     main()

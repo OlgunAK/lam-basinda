@@ -306,19 +306,21 @@
     "<circle cx='21' cy='19' r='1.7' fill='#4A2C82'/><circle cx='26.5' cy='17.4' r='1.5' fill='#4A2C82'/><circle cx='29.5' cy='22.2' r='1.7' fill='#4A2C82'/><circle cx='23.4' cy='24' r='1.4' fill='#4A2C82'/></svg>";
 
   function keloid(asama) {
+    /* Üç sütun: normal skar (düz), hipertrofik skar (sınır içinde kabarık), keloid (sınırı aşar); asama 0-2 sırayla doldurur. */
     var st = function (v) { return " style='fill:var(" + v + ")'"; };
     var p = ["<svg viewBox='0 0 1000 780' preserveAspectRatio='xMidYMid meet'>"];
     p.push("<text x='500' y='110' text-anchor='middle' font-family='Figtree' font-size='30'" + st("--yazi2") + ">Kesikli çizgi: yaranın sınırı</text>");
-    [[250, "Hipertrofik skar"], [750, "Keloid"]].forEach(function (a) {
+    [[170, "Normal skar"], [500, "Hipertrofik"], [830, "Keloid"]].forEach(function (a, i) {
       var x = a[0];
-      p.push("<rect x='" + (x - 210) + "' y='320' width='420' height='300' rx='16'" + st("--cizim-deri") + "/>");
-      p.push("<line x1='" + (x - 90) + "' y1='320' x2='" + (x + 90) + "' y2='320' style='stroke:var(--yazi)' stroke-width='4' stroke-dasharray='10 8'/>");
-      p.push("<text x='" + x + "' y='690' text-anchor='middle' font-family='Literata' font-weight='600' font-size='38'" + st("--yazi") + ">" + a[1] + "</text>");
+      p.push("<rect x='" + (x - 150) + "' y='340' width='300' height='280' rx='16'" + st("--cizim-deri") + "/>");
+      p.push("<line x1='" + (x - 65) + "' y1='340' x2='" + (x + 65) + "' y2='340' style='stroke:var(--yazi)' stroke-width='4' stroke-dasharray='10 8'/>");
+      p.push("<text x='" + x + "' y='690' text-anchor='middle' font-family='Literata' font-weight='600' font-size='" + (i === asama ? 40 : 34) + "'" + st(i === asama ? "--yazi" : "--yazi2") + ">" + a[1] + "</text>");
     });
-    if (asama >= 1) p.push("<path d='M160 320 Q250 220 340 320 Z'" + st("--cizim-skar") + "/>");
+    p.push("<rect x='105' y='334' width='130' height='10' rx='5'" + st("--cizim-skar") + "/>");
+    if (asama >= 1) p.push("<path d='M435 340 Q500 240 565 340 Z'" + st("--cizim-skar") + "/>");
     if (asama >= 2) {
-      p.push("<path d='M540 320 Q600 140 750 160 Q900 140 960 320 Z'" + st("--cizim-skar") + "/>");
-      p.push("<text x='750' y='255' text-anchor='middle' font-family='Figtree' font-weight='700' font-size='30'" + st("--p-beyaz") + ">sınırı aşar</text>");
+      p.push("<path d='M690 340 Q735 170 830 185 Q925 170 970 340 Z'" + st("--cizim-skar") + "/>");
+      p.push("<text x='830' y='280' text-anchor='middle' font-family='Figtree' font-weight='700' font-size='26'" + st("--p-beyaz") + ">sınırı aşar</text>");
     }
     p.push("</svg>");
     return p.join("");

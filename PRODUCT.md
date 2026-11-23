@@ -26,7 +26,7 @@ Ders kitabının (Neville 5. baskı, WHO 2022) sınıf içi, etkileşimli karş�
 
 ## Operating Context
 
-- Blok ders (M3 + M4 arka arkaya, 17 Kasım 2026). Her ders başı: kapak ve katılım, 8 ana madde (her biri slayt + telefondan soru, ~8–9 dk), "Tamam mı, devam mı?" anketi, isteğe bağlı kısaltılmış ayrıntı, çıkış bileti, liderlik.
+- Blok ders (M3 + M4 arka arkaya, 17 Kasım 2026). Her ders başı: kapak ve katılım, ana fikir, 8 ana madde (her biri klinik, tanı, tedavi + telefondan iki soru, ~15 dk), ana fikre dönüş, "Tamam mı, devam mı?" anketi, isteğe bağlı kısaltılmış ayrıntı, çıkış bileti, liderlik.
 - Hoca konuşma notlarını kumandada okur; notlardaki zaman damgaları tempo göstergesini besler.
 - Ders dışında öğrenciler PowerPoint (internetsiz) ve quiz sayfasını kullanır.
 
